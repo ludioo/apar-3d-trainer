@@ -1,0 +1,25 @@
+---
+description: Dipakai saat user minta bantuan testing/validasi sebuah task, atau saat AI baru selesai mengerjakan sebuah task dari docs/implementation-plan.md
+globs:
+alwaysApply: false
+---
+
+# Validasi Task
+
+## Setelah selesai mengerjakan sebuah task
+
+- Cari task ID yang baru dikerjakan di `docs/acceptance-criteria.md`, lalu **tampilkan ulang checklist-nya ke user** — jangan asumsikan user hafal.
+- Sebutkan alamat yang harus dibuka (mis. `http://localhost:5173/#train`, atau `?debug`) dan langkah klik/geser yang harus dilakukan, termasuk cara cek di HP (alamat jaringan lokal dari `npm run dev -- --host` atau URL preview Vercel).
+- Untuk task performa (T3.1) laporkan angka nyata: ukuran `apar.glb`, total transfer awal, skor Lighthouse mobile.
+- Jangan klaim task "selesai" atau menyarankan lanjut sebelum user mengonfirmasi validasi berhasil.
+
+## Kalau user melaporkan bug/error saat validasi
+
+- Minta detail dalam bahasa sederhana: apa yang terlihat, di HP atau desktop, langkahnya, screenshot atau isi Console (jelaskan cara membuka: klik kanan → Inspect → Console).
+- Cek dulu apakah penyebabnya penyimpangan dari `docs/architecture.md` atau masalah yang sudah ada di `docs/known-issues.md` sebelum menambah kode baru.
+- Perbaikan kecil boleh langsung; kalau perlu mengubah pendekatan di `docs/implementation-plan.md`, beri tahu user dulu.
+
+## Sebelum mulai fase baru
+
+- Pastikan semua task fase sebelumnya berstatus ✅ di `docs/progress.md`.
+- Baca ulang bagian `docs/architecture.md` dan `docs/user-flows.md` yang relevan dengan fase baru.

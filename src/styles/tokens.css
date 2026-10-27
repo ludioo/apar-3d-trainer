@@ -1,0 +1,48 @@
+:root {
+  /* Colors — design-system.md */
+  --bg: #0e1013;
+  --bg-grad: #1a1d22;
+  --surface: rgba(22, 25, 30, 0.72);
+  --surface-solid: #16191e;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #f2f3f5;
+  --text-muted: #9aa1ac;
+  --accent: #ffc629;
+  --accent-ink: #111111;
+  --brand-red: #d7263d;
+  --success: #2bc48a;
+  --danger: #ff5a5f;
+
+  /* Typography scale */
+  --fs-12: 12px;
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-20: 20px;
+  --fs-28: 28px;
+  --fs-40: 40px;
+
+  /* Spacing (4px grid) */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+
+  /* Radius */
+  --radius-8: 8px;
+  --radius-14: 14px;
+  --radius-pill: 999px;
+
+  /* Shadow */
+  --shadow-panel: 0 8px 32px rgba(0, 0, 0, 0.35);
+
+  /* Motion */
+  --dur-ui-min: 150ms;
+  --dur-ui-max: 250ms;
+  --dur-cam-min: 600ms;
+  --dur-cam-max: 800ms;
+}
+
+/* backdrop-filter: blur(12px) applied on panel components later; solid fallback = --surface-solid */

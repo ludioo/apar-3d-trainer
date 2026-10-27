@@ -1,0 +1,30 @@
+---
+description: Aturan teks UI bilingual EN/ID, konten K3 (hotspot, PASS, kuis), harga ilustrasi, dan PDF
+globs: src/i18n/**,src/data/**,src/features/pdf/**,index.html
+alwaysApply: false
+---
+
+# Teks, Bahasa & Konten
+
+## i18n
+
+- Setiap string yang terlihat user wajib punya key di **kedua** file `src/i18n/en.json` dan `src/i18n/id.json` — tidak boleh ada key yang hanya di satu bahasa.
+- Di HTML pakai atribut `data-i18n="key"`; di JS pakai `t('key')`. Jangan hardcode teks.
+- Data bilingual di `src/data/*.json` memakai objek `{ "en": "...", "id": "..." }`.
+- Ganti bahasa tanpa reload (event `lang:change`); pilihan disimpan di `apar3d:lang`.
+- Tone copy mengikuti `docs/design-system.md`: EN kalimat aktif singkat, ID baku santai.
+
+## Konten K3
+
+- Teks hotspot, langkah PASS, 8 soal kuis, dan disclaimer disalin **persis** dari `docs/content-and-assets.md` beserta sumbernya (USFA, Permenakertrans PER.04/MEN/1980).
+- Jangan menambah fakta keselamatan baru. Jika perlu, tambahkan dengan `"needsReview": true` dan laporkan ke user.
+- Disclaimer dan nomor darurat (113 & 112, sumber Komdigi, dari `src/data/emergency.json`) wajib tampil di Train, Results, About, dan PDF.
+
+## Harga & Spek
+
+- Harga dan spek berlabel "Illustrative price" / "Harga ilustrasi". Mata uang: IDR saat ID, USD saat EN.
+- Format angka pakai `Intl.NumberFormat` sesuai bahasa aktif.
+
+## PDF
+
+- Isi PDF mengikuti bahasa aktif. Hindari emoji/karakter non-Latin di PDF (font default jsPDF).

@@ -1,0 +1,33 @@
+---
+description: Pola arsitektur & konvensi kode untuk vanilla three.js + Vite (scene, loader, hotspot, fitur, storage, styling)
+globs: src/**/*.js,src/**/*.css,index.html,vite.config.js,vercel.json,scripts/**/*.sh
+alwaysApply: false
+---
+
+# Konvensi Arsitektur
+
+## Struktur & Penamaan
+
+- Struktur folder mengikuti `docs/architecture.md` persis: `src/core/`, `src/features/<fitur>/`, `src/data/`, `src/i18n/`, `src/ui/`, `src/styles/`.
+- Nama file kebab-case (`saved-configs.js`), variabel/fungsi camelCase, konstanta UPPER_SNAKE_CASE.
+- Setiap fitur (`configurator`, `training`, `quiz`, `results`) mengekspor `enter()` dan `exit()` yang dipanggil `src/core/router.js` — jangan biarkan dua mode aktif bersamaan.
+- Komunikasi antar modul lewat `src/core/events.js` (mis. `load:done`, `lang:change`), bukan import silang antar fitur.
+
+## Scene & 3D
+
+- Hanya ada **satu** renderer, scene, dan kamera, dibuat di `src/core/scene.js`. Fitur memakai API dari situ — jangan `new WebGLRenderer()` di tempat lain.
+- Semua load model lewat `src/core/loader.js` (GLTFLoader + DRACOLoader + KTX2Loader, decoder dari `public/decoders/`).
+- Model dianggap **satu mesh**. Bagian APAR = hotspot posisi di `src/data/hotspots.json` (koordinat lokal model + radius). Pemilihan bagian lewat `src/core/picking.js` (hotspot terdekat), highlight lewat `src/core/highlight.js`.
+- Ganti warna body via color multiplier pada material `bodyMaterialName` — jangan menghapus `map` tekstur.
+- Gerak kamera hanya lewat `src/core/cameraTween.js`.
+
+## Storage
+
+- Semua akses `localStorage` lewat `src/core/storage.js`: prefix `apar3d:`, `schemaVersion: 1`, try/catch, batas (configs 10, attempts 20) sesuai `docs/data-model.md`.
+- Mengubah bentuk data = naikkan `schemaVersion` + migrasi sederhana, catat di `docs/decisions.md`.
+
+## Styling
+
+- Warna, spacing, radius, font hanya lewat CSS custom properties di `src/styles/tokens.css` (dari `docs/design-system.md`) — jangan hex hardcoded di komponen.
+- Mobile-first: style default untuk HP, baru `@media (min-width: 1024px)` untuk desktop. Target sentuh minimal 44×44px.
+- Hormati `prefers-reduced-motion` (matikan auto-rotate & pulse).

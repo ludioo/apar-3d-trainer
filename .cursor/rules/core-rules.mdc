@@ -1,0 +1,42 @@
+---
+description: Core rules - selalu aktif di setiap request, tidak peduli file apa yang sedang dikerjakan
+globs:
+alwaysApply: true
+---
+
+# APAR 3D Trainer — Aturan Utama
+
+## WAJIB dibaca sebelum menulis kode apa pun
+
+- Ikuti `AGENTS.md` di root. Sebelum task apa pun, baca `docs/progress.md`, `docs/known-issues.md`, task terkait di `docs/implementation-plan.md` (ID mis. `T1.3`), dan dokumen yang dirujuk task tersebut.
+- Struktur folder, modul, dan alur data **harus** mengikuti `docs/architecture.md` — jangan berimprovisasi struktur baru.
+- Kalau ada permintaan yang tampak bertentangan dengan `docs/PRD.md` (scope MVP vs Later) atau `docs/decisions.md`, **tanyakan dulu** — jangan diam-diam mengubah scope atau membalik keputusan.
+- Kerjakan **satu task ID per prompt**, urut sesuai `docs/implementation-plan.md`. Jangan lompat task.
+
+## Prinsip Kode
+
+- Vanilla JavaScript (ES modules) + three.js + Vite. **Tanpa** framework UI (React/Vue/Svelte), TypeScript, atau Tailwind.
+- Modularitas: satu file = satu tanggung jawab, maks ~300 baris (lihat `docs/architecture.md`).
+- Data produk, hotspot, langkah PASS, dan kuis **hanya** di `src/data/*.json`; teks UI **hanya** di `src/i18n/en.json` & `id.json`.
+- Logic (harga, skor, lulus ≥75%) di modul fitur (`pricing.js`, `quiz.js`), bukan di handler DOM.
+
+## Workflow
+
+- Pemilik project (Barkah) tidak membaca kode. Selalu jelaskan hasil dalam Bahasa Indonesia sederhana + langkah klik untuk mengecek.
+- Di akhir **setiap** task: `npm run build` sukses, update `docs/progress.md`, catat keputusan teknis non-trivial di `docs/decisions.md` (tanggal + alasan 1-2 kalimat), catat bug/solusi di `docs/known-issues.md`, sarankan commit message.
+- Jangan otomatis lanjut ke task berikutnya — tunggu Barkah mengonfirmasi acceptance criteria lolos.
+- Kalau ragu antara beberapa pendekatan yang berdampak besar, tampilkan 2-3 opsi singkat beserta rekomendasi.
+
+## Non-negotiable
+
+- Biaya Rp0: hanya aset CC0/OFL/MIT/ISC yang tercatat di `docs/content-and-assets.md`; hosting Vercel Hobby; tanpa layanan berbayar.
+- Tanpa backend, login, atau database. Penyimpanan hanya `localStorage` via `src/core/storage.js`.
+- Tidak ada secret di repo; env var hanya `VITE_UMAMI_WEBSITE_ID` (nilai di Vercel / `.env.local`).
+- Teks K3 (hotspot, PASS, kuis, disclaimer) disalin **persis** dari `docs/content-and-assets.md` — jangan mengarang fakta keselamatan.
+
+## Yang TIDAK boleh dilakukan tanpa persetujuan eksplisit
+
+- Menambah dependency yang tidak ada di `docs/tech-stack.md`.
+- Mengerjakan fitur Later (sensor dummy, WebXR, alat lain, pemisahan mesh/animasi bagian L4).
+- Memotong/memisah mesh model atau memakai Blender.
+- Menghapus/menulis ulang dokumen di `docs/` selain update yang diminta.

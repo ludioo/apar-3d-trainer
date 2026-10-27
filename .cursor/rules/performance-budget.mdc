@@ -1,0 +1,24 @@
+---
+description: Anggaran performa 3D & web (load <3 dtk, HP lancar), aset GLB Draco/KTX2, render on demand
+globs: src/core/**,src/features/training/effects.js,public/**,scripts/**,vite.config.js,vercel.json
+alwaysApply: false
+---
+
+# Anggaran Performa
+
+## Target (dari `docs/PRD.md`)
+
+- APAR tampil < 3 dtk di HP dengan 4G; total transfer awal < 3 MB; `apar.glb` < 2 MB.
+- Lighthouse mobile Performance ≥ 85, Accessibility ≥ 90.
+- 60 fps desktop, ≥ 30 fps HP mid-range.
+
+## Aturan
+
+- Model hanya dari `public/models/apar.glb` hasil `scripts/optimize-model.sh` (Draco + KTX2, tekstur maks 1024). Fallback WebP hanya jika `toktx` tidak tersedia, dan dicatat di `docs/known-issues.md`.
+- Render on demand: render hanya saat kamera/state berubah atau animasi aktif. Hentikan loop efek saat tidak dipakai.
+- `renderer.setPixelRatio(Math.min(devicePixelRatio, isMobile ? 1.5 : 2))`.
+- Satu directional light + HDRI 1K; jangan tambah shadow map berat atau post-processing tanpa persetujuan.
+- Library berat (jsPDF) wajib lazy `import()` saat dibutuhkan. Script analytics dimuat setelah `load:done` + idle.
+- Partikel api/semprotan: sprite/Points sederhana, jumlah partikel dibatasi (sebutkan angkanya di kode).
+- Setiap menambah aset atau dependency, laporkan dampak ukuran (KB) ke user.
+- `stats.js` hanya aktif dengan `?debug`, tidak ikut bundle produksi utama.
