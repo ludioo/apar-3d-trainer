@@ -1,1 +1,12 @@
-{}
+{
+  "id": "apar",
+  "bodyMaterialName": "korean_fire_extinguisher_01_body",
+  "options": {
+    "color": [
+      { "id": "red", "hex": "#C8102E", "label": { "en": "Red", "id": "Merah" } },
+      { "id": "yellow", "hex": "#FFC629", "label": { "en": "Yellow", "id": "Kuning" } },
+      { "id": "silver", "hex": "#C0C0C0", "label": { "en": "Silver", "id": "Perak" } }
+    ],
+    "bracket": {}
+  }
+}

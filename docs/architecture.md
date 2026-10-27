@@ -29,12 +29,12 @@ apar-3d-trainer/
 │  ├─ i18n/ i18n.js en.json id.json
 │  ├─ data/ product.json hotspots.json pass-steps.json quiz.json emergency.json
 │  ├─ features/
-│  │  ├─ configurator/ configurator.js pricing.js hotspots.js saved-configs.js
+│  │  ├─ configurator/ configurator.js appearance.js pricing.js hotspots.js saved-configs.js
 │  │  ├─ training/ training.js effects.js (api, semprotan partikel)
 │  │  ├─ quiz/ quiz.js
 │  │  ├─ results/ results.js
 │  │  └─ pdf/ pdf-report.js pdf-spec.js
-│  ├─ ui/ toast.js modal.js components.css hotspot-pins.js hotspots.css
+│  ├─ ui/ toast.js modal.js components.css hotspot-pins.js hotspots.css configurator.css
 │  └─ styles/ tokens.css base.css layout.css
 ├─ vite.config.js  package.json  vercel.json  README.md  LICENSE (MIT)
 ```
@@ -42,10 +42,12 @@ apar-3d-trainer/
 ## Alur data
 1. `main.js` load i18n (bahasa dari storage → navigator.language → `en`) lalu buat scene, mulai load model.
 2. `loader.js` emit `load:progress`, `load:done`(gltf), `load:error`.
-3. Model Poly Haven diperlakukan sebagai **satu mesh**. Bagian (pin, handle, nozzle, gauge, label, body) didefinisikan sebagai **hotspot posisi** di `hotspots.json` (koordinat lokal model + radius klik). Klik → raycast ke model → titik kena dibandingkan ke hotspot terdekat dalam radius. Ganti warna memakai `material.color` multiplier pada material body.
+3. Model Poly Haven diperlakukan sebagai **satu mesh**. Bagian (pin, handle, nozzle, gauge, label, body) didefinisikan sebagai **hotspot posisi** di `hotspots.json` (koordinat lokal model + radius klik). Klik → raycast ke model → titik kena dibandingkan ke hotspot terdekat dalam radius. T1.5 memakai tint selektif pada material `bodyMaterialName` lewat `onBeforeCompile`, menggantikan multiplier global atas persetujuan Barkah: atlas sudah merah dan juga mencakup bagian noncat. `appearance.js` menetralkan hue hanya pada cat tabung/alas dengan mask dominasi merah, tinggi lokal, dan pengecualian UV label/strap/nozzle/selang. Seluruh map dan properti PBR asli tetap; merah melewati recolor untuk mengembalikan tampilan asli. Mask dikalibrasi khusus `apar.glb`, perlu diperiksa ulang bila model/atlas diganti.
 4. Fitur membaca data JSON + state, mengubah scene lewat API `scene.js`/`highlight.js`, dan menulis hasil via `storage.js`.
 5. `router.js` mengaktifkan satu fitur sekaligus (`enter()`/`exit()`), kanvas tetap.
    T1.4: `configurator.js` mengelola listener picking hanya selama Configure; `hotspots.js` mengelola kartu/sesi fokus; `ui/hotspot-pins.js` mengelola proyeksi, oklusi, dan pemisahan pin. Event internal `scene:resize` memperbarui proyeksi setelah kamera/renderer di-resize; `hotspot:pick` membawa hasil picking ke HUD debug (bukan analytics). Timer auto-rotate dapat dijeda/dilanjutkan melalui `controls.pauseAutoRotate()` / `resumeAutoRotate()`; objek kembalian tetap OrbitControls.
+   T1.5: kontrol warna/bracket mengikuti lifecycle Configure, tanpa mengubah API `enter/exit/setModel`. Desktop menampilkan kontrol di atas kartu; HP menggantinya sementara dengan kartu ketika `hotspots.js` memasang class `is-reading-hotspot` pada panel. Header judul/Tutup tetap terlihat, hanya deskripsi yang di-scroll; menutup kartu memulihkan opsi dan posisi scroll sebelumnya. Resize/breakpoint mengungkap header tanpa mengubah pilihan/hotspot/snap; keluar Configure membersihkan class dan listener. State hanya memori (default merah/bracket mati), bertahan antar tab/bahasa, reset saat refresh. `appearance.js` menambahkan group bracket setelah normalisasi sebagai child model; mesh aksesori diberi `configuratorAccessory`, raycast no-op, dan dikecualikan dari oklusi pin. Toggle hanya mengubah visibility. Penggantian model melepas bracket, membebaskan geometri/material aksesori, mengembalikan hook shader lama, dan menerapkan pilihan aktif ke model baru. Tidak menambah loop render atau tekstur.
+   Revisi UX T1.5: `ui/sheet.js` mengubah tinggi panel sebenarnya saat drag dan snap, bukan menggeser panel 80% keluar layar. CSS token menentukan snap 30%/80%, minimum ringkas 176px, maksimum ruang di bawah topbar dengan jarak 16px; `sheetBounds()` memakai ukuran viewport dan batas CSS yang sama untuk drag serta self-check. Kanvas HP memakai ruang di atas snap ringkas; ResizeObserver scene yang tersedia memperbarui kamera dan pin. Gesture pointer diproses sekali pada pointerup, sedangkan click detail 0 menangani keyboard/assistive activation. Reduced motion meniadakan transisi tinggi melalui aturan panel existing.
 6. PDF: `renderer.domElement.toDataURL()` (renderer dibuat dengan `preserveDrawingBuffer: true` hanya saat capture, atau render ulang sebelum capture) → jsPDF.
 
 ## Performa

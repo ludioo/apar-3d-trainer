@@ -15,6 +15,7 @@ Belum diverifikasi: Sketchfab dan Quaternius untuk APAR — tidak dicek dalam ri
 | Ikon UI | Lucide (https://lucide.dev, ISC) — SVG inline, hanya yang dipakai | ISC |
 | Font Inter, JetBrains Mono | @fontsource (npm) | OFL-1.1 |
 | Api/semprotan | sprite/particle dibuat procedural di kode | — |
+| Bracket T1.5 | Geometri prosedural `BoxGeometry` + `TorusGeometry` three.js di `appearance.js`; tanpa unduhan aset | kode proyek MIT |
 | OG image | screenshot dari app sendiri (1200×630) | milik Barkah |
 
 ## Copy inti (EN / ID) — disimpan di `src/i18n/*.json`

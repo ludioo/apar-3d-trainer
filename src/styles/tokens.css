@@ -44,12 +44,24 @@
   --tabs-row: 44px;
   --topbar-h: calc(var(--topbar-row) + var(--tabs-row));
   --panel-w: 360px;
+  --sheet-min-h: 176px;
+  --sheet-available-h: max(0px, calc(100vh - var(--topbar-h) - var(--space-16)));
+  --sheet-collapsed-h: min(max(30vh, var(--sheet-min-h)), var(--sheet-available-h));
+  --sheet-expanded-h: min(80vh, var(--sheet-available-h));
 
   /* Motion */
   --dur-ui-min: 150ms;
   --dur-ui-max: 250ms;
   --dur-cam-min: 600ms;
   --dur-cam-max: 800ms;
+}
+
+@supports (height: 100dvh) {
+  :root {
+    --sheet-available-h: max(0px, calc(100dvh - var(--topbar-h) - var(--space-16)));
+    --sheet-collapsed-h: min(max(30dvh, var(--sheet-min-h)), var(--sheet-available-h));
+    --sheet-expanded-h: min(80dvh, var(--sheet-available-h));
+  }
 }
 
 @media (min-width: 1024px) {

@@ -98,7 +98,7 @@ export function initHotspotPins({ container, camera, controls, hotspots, open })
     model = next;
     meshes = [];
     model.traverse((object) => {
-      if (object.isMesh && !object.userData.debugMarker) meshes.push(object);
+      if (object.isMesh && !object.userData.debugMarker && !object.userData.configuratorAccessory) meshes.push(object);
     });
     schedule();
   }

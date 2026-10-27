@@ -12,7 +12,7 @@ Status: ⬜ todo · 🟨 in progress · ✅ done · ⛔ blocked
 | T1.2 Layout UI & router | ✅ | 2026-10-27 | Topbar 3 tab + About (modal), hash router, panel kanan desktop / bottom sheet HP (30%/80%), toast & modal (toast dipakai di T1.7); build + check sukses; divalidasi Barkah. |
 | T1.3 Hotspot posisi & picking | ✅ | 2026-10-27 | hotspots.json 6 id (posisi lokal pra-skala + teks K3); picking.js + highlight.js pulse ring; ?debug HUD/markers; klik semua tab (sementara); build + check sukses; divalidasi Barkah. |
 | T1.4 Hotspot UI | ✅ | 2026-10-27 | 6 pin HTML + garis penghubung, oklusi, kamera tween/kembali, kartu EN/ID di panel; picking hanya Configure. Build + check dan 18 skenario QA Chrome desktop/HP emulasi lolos; divalidasi Barkah. T1.5 dilanjutkan pada sesi berikutnya. |
-| T1.5 Warna & bracket | ⬜ | | |
+| T1.5 Warna & bracket | ✅ | 2026-10-27 | Warna/bracket + revisi UX HP diterima Barkah. Check + build dan 129 pemeriksaan revisi UX lolos di dev/preview produksi; acceptance dikonfirmasi di chat. Commit/push ke develop diminta; T1.6 belum dimulai. |
 | T1.6 Agent, kapasitas, spek & harga | ⬜ | | |
 | T1.7 Simpan konfigurasi | ⬜ | | |
 | T2.1 Mode Train PASS | ⬜ | | |

@@ -1,0 +1,1558 @@
+{
+  "task": "T1.5",
+  "revision": "Mobile contextual hotspot panel",
+  "date": "2026-10-27",
+  "status": "accepted_by_barkah",
+  "acceptance": { "by": "Barkah", "date": "2026-10-27", "result": "passed", "deviceDetails": "not recorded" },
+  "browser": "Local Google Chrome via bundled Playwright; dev 5173 and production preview 4173",
+  "checks": [
+    {
+      "name": "390 compact body opens with immediately readable header, close and description",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "360x800 compact tap pin",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "360x800 compact tap handle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "360x800 compact tap nozzle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "360x800 compact tap gauge",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "360x800 compact tap label",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 4,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "360x800 compact tap body",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 4,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "360x800 no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "390x844 compact tap pin",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "390x844 compact tap handle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "390x844 compact tap nozzle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "390x844 compact tap gauge",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "390x844 compact tap label",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 4,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "390x844 compact tap body",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "390x844 no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "768x1024 compact tap pin",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "768x1024 compact tap handle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "768x1024 compact tap nozzle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "768x1024 compact tap gauge",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "768x1024 compact tap label",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "768x1024 compact tap body",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "768x1024 no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "844x390 compact tap pin",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "844x390 compact tap handle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "844x390 compact tap nozzle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "844x390 compact tap gauge",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "844x390 compact tap label",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "844x390 compact tap body",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "844x390 no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "close restores yellow, bracket and option scroll",
+      "status": "PASS",
+      "detail": {
+        "savedScroll": 80,
+        "restoredScroll": 80
+      }
+    },
+    {
+      "name": "200% EN 360x800 pin",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2.7142857142857144,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "200% EN 360x800 handle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2.7142857142857144,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "200% EN 360x800 nozzle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2.7142857142857144,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "200% EN 360x800 gauge",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.6904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "200% EN 360x800 label",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2.7142857142857144,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "200% EN 360x800 body",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2.7142857142857144,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "200% ID 360x800 pin",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2.7142857142857144,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "200% ID 360x800 handle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2.7142857142857144,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "200% ID 360x800 nozzle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.6904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "200% ID 360x800 gauge",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.6904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "200% ID 360x800 label",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2.7142857142857144,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "200% ID 360x800 body",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2.7142857142857144,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 800,
+        "scrollBottom": 784,
+        "viewport": 800
+      }
+    },
+    {
+      "name": "200% EN 390x844 pin",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3.0282738095238093,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "200% EN 390x844 handle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "200% EN 390x844 nozzle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3.0282738095238093,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "200% EN 390x844 gauge",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "200% EN 390x844 label",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3.0282738095238093,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "200% EN 390x844 body",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3.0282738095238093,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "200% ID 390x844 pin",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3.0282738095238093,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "200% ID 390x844 handle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "200% ID 390x844 nozzle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3.0282738095238093,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "200% ID 390x844 gauge",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2.0044642857142856,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "200% ID 390x844 label",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3.0282738095238093,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "200% ID 390x844 body",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3.0282738095238093,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "200% EN 768x1024 pin",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "200% EN 768x1024 handle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "200% EN 768x1024 nozzle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "200% EN 768x1024 gauge",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "200% EN 768x1024 label",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "200% EN 768x1024 body",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "200% ID 768x1024 pin",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "200% ID 768x1024 handle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "200% ID 768x1024 nozzle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "200% ID 768x1024 gauge",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "200% ID 768x1024 label",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 4,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "200% ID 768x1024 body",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 1024,
+        "scrollBottom": 1008,
+        "viewport": 1024
+      }
+    },
+    {
+      "name": "200% EN 844x390 pin",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.1904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "200% EN 844x390 handle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.1904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "200% EN 844x390 nozzle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.1904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "200% EN 844x390 gauge",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.1904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "200% EN 844x390 label",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.1904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "200% EN 844x390 body",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.1904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "200% ID 844x390 pin",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.1904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "200% ID 844x390 handle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.1904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "200% ID 844x390 nozzle",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.1904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "200% ID 844x390 gauge",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.1904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "200% ID 844x390 label",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.1904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "200% ID 844x390 body",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1.1904761904761905,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "long description scrolls by keyboard while close remains hittable",
+      "status": "PASS",
+      "detail": {
+        "top": 76,
+        "height": 50,
+        "scrollHeight": 126
+      }
+    },
+    {
+      "name": "long description scrolls by touch without hiding close",
+      "status": "PASS",
+      "detail": 76
+    },
+    {
+      "name": "switching hotspots resets description to start",
+      "status": "PASS"
+    },
+    {
+      "name": "About Escape preserves hotspot card",
+      "status": "PASS"
+    },
+    {
+      "name": "Escape restores configuration panel",
+      "status": "PASS"
+    },
+    {
+      "name": "390 canvas picking pin with bracket",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "390 canvas picking handle with bracket",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "390 canvas picking nozzle with bracket",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "390 canvas picking gauge with bracket",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "390 canvas picking label with bracket",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 4,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "390 canvas picking body with bracket",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "844 canvas picking pin with bracket",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "844 canvas picking handle with bracket",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "844 canvas picking nozzle with bracket",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "844 canvas picking gauge with bracket",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 1,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "844 canvas picking label with bracket",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "844 canvas picking body with bracket",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 2,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 390,
+        "scrollBottom": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "handle tap expands within space below topbar",
+      "status": "PASS"
+    },
+    {
+      "name": "touch drag adjusts actual height and snaps expanded",
+      "status": "PASS",
+      "detail": {
+        "height": 274,
+        "style": "274px",
+        "dragging": true
+      }
+    },
+    {
+      "name": "touch drag cycle 0 snaps expanded",
+      "status": "PASS"
+    },
+    {
+      "name": "touch tap cycle 0 after drag collapses",
+      "status": "PASS"
+    },
+    {
+      "name": "touch drag cycle 1 snaps expanded",
+      "status": "PASS"
+    },
+    {
+      "name": "touch tap cycle 1 after drag collapses",
+      "status": "PASS"
+    },
+    {
+      "name": "touch drag cycle 2 snaps expanded",
+      "status": "PASS"
+    },
+    {
+      "name": "touch tap cycle 2 after drag collapses",
+      "status": "PASS"
+    },
+    {
+      "name": "touch drag cycle 3 snaps expanded",
+      "status": "PASS"
+    },
+    {
+      "name": "touch tap cycle 3 after drag collapses",
+      "status": "PASS"
+    },
+    {
+      "name": "touch drag cycle 4 snaps expanded",
+      "status": "PASS"
+    },
+    {
+      "name": "touch tap cycle 4 after drag collapses",
+      "status": "PASS"
+    },
+    {
+      "name": "handle Enter expands",
+      "status": "PASS"
+    },
+    {
+      "name": "handle Space collapses",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile to desktop retains selected card and reveals configuration",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop to mobile keeps card readable and hides configuration",
+      "status": "PASS"
+    },
+    {
+      "name": "expanding while reading keeps close and description visible",
+      "status": "PASS"
+    },
+    {
+      "name": "expanded landscape stays below topbar and keeps header visible",
+      "status": "PASS"
+    },
+    {
+      "name": "language changes selected card without changing snap",
+      "status": "PASS"
+    },
+    {
+      "name": "close preserves expanded snap and previous selections",
+      "status": "PASS"
+    },
+    {
+      "name": "leaving Configure clears reading state and card",
+      "status": "PASS"
+    },
+    {
+      "name": "returning Configure restores options and selected variant",
+      "status": "PASS"
+    },
+    {
+      "name": "mouse click expands mobile handle",
+      "status": "PASS"
+    },
+    {
+      "name": "mouse click collapses mobile handle",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop keeps configuration plus readable hotspot after normal tween",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop color yellow keeps card open",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop color silver keeps card open",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop color red keeps card open",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop bracket remains functional alongside card",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop selected card translates",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop close restores card, camera and focus path",
+      "status": "PASS"
+    },
+    {
+      "name": "production compact hotspot is readable without expanding",
+      "status": "PASS",
+      "detail": {
+        "headerVisible": true,
+        "closeVisible": true,
+        "closeHittable": true,
+        "descriptionLines": 3,
+        "optionsHidden": true,
+        "expanded": false,
+        "panelBottom": 844,
+        "scrollBottom": 828,
+        "viewport": 844
+      }
+    },
+    {
+      "name": "production handle expands at actual height",
+      "status": "PASS"
+    },
+    {
+      "name": "production retains original T1.5 configuration controls",
+      "status": "PASS"
+    }
+  ],
+  "resolvedIssues": [
+    {
+      "name": "Post-drag first tap failed to change snap in touch QA",
+      "fix": "Pointer release handles tap/drag once; click handles only keyboard or assistive activation."
+    }
+  ],
+  "initialCompactMetrics": {
+    "viewport": 844,
+    "expanded": false,
+    "panel": {
+      "top": 590.8125,
+      "bottom": 844,
+      "height": 253.1875
+    },
+    "card": {
+      "top": 635.8125,
+      "bottom": 828,
+      "height": 192.1875
+    },
+    "header": {
+      "top": 635.8125,
+      "bottom": 679.8125,
+      "height": 44
+    },
+    "description": {
+      "top": 691.8125,
+      "bottom": 754.8125,
+      "height": 63
+    },
+    "close": {
+      "top": 635.8125,
+      "bottom": 679.8125,
+      "height": 44
+    },
+    "optionsHidden": true
+  },
+  "finalProductionReadability": {
+    "headerVisible": true,
+    "closeVisible": true,
+    "closeHittable": true,
+    "descriptionLines": 3,
+    "optionsHidden": true,
+    "expanded": false,
+    "panelBottom": 844,
+    "scrollBottom": 828,
+    "viewport": 844
+  },
+  "expectedBefore": {
+    "viewportHeight": 844,
+    "cardTop": 846,
+    "closeTop": 957,
+    "closeBottom": 1001
+  },
+  "normalErrors": [],
+  "evidence": {
+    "before": ".cursor/t1.5-ux-after-hotspot.png",
+    "after": ".cursor/t1.5-ux-after-revision.png",
+    "desktop": ".cursor/t1.5-ux-revised-desktop.png",
+    "landscape200": ".cursor/t1.5-ux-landscape-200.png"
+  },
+  "build": {
+    "jsKb": 734.84,
+    "jsGzipKb": 199.09,
+    "cssKb": 13.53,
+    "cssGzipKb": 3.02,
+    "warning": "Existing chunk >500 KB warning"
+  },
+  "limitations": [
+    "Physical phone not tested",
+    "Lighthouse/hardware performance remain T3.1"
+  ]
+}

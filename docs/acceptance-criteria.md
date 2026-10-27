@@ -41,8 +41,19 @@ Uji di Chrome desktop + 1 HP Android/iPhone.
 Dikonfirmasi lolos oleh Barkah pada 27 Okt 2026.
 
 ## T1.5
-- [ ] Ganti warna → body berubah instan, detail tekstur tetap.
-- [ ] Toggle bracket muncul/hilang.
+- [x] Ganti warna → body berubah instan, detail tekstur tetap.
+- [x] Toggle bracket muncul/hilang.
+
+Revisi UX HP (rencana dan acceptance disetujui Barkah, 27 Okt 2026):
+- [x] Dari panel ringkas, tap keenam hotspot langsung memperlihatkan judul, tombol Tutup, dan awal deskripsi.
+- [x] Deskripsi panjang dapat di-scroll tanpa menyembunyikan tombol Tutup.
+- [x] Menutup kartu mengembalikan pengaturan dan pilihan sebelumnya.
+- [x] Drag/tap handle, pergantian hotspot, EN/ID, About/Escape, dan perpindahan tab tetap bekerja.
+- [x] Ukuran 360×800, 390×844, 768×1024, dan 844×390 tidak memotong header atau menimbulkan overflow horizontal.
+- [x] Teks 200%, keyboard, reduced motion, dan perubahan breakpoint saat kartu terbuka tetap dapat digunakan.
+- [x] Desktop, tiga warna, bracket, picking, dan oklusi hotspot tetap lolos.
+
+Dikonfirmasi lolos oleh Barkah pada 27 Okt 2026. Rincian perangkat pemeriksaan Barkah tidak dicatat; matriks ukuran layar di atas diuji AI melalui emulasi Chrome.
 
 ## T1.6
 - [ ] Ganti kapasitas → ukuran & harga berubah.

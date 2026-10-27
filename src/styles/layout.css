@@ -69,8 +69,8 @@
   z-index: 50;
   display: flex;
   flex-direction: column;
-  height: 80vh;
-  height: 80dvh;
+  height: var(--sheet-collapsed-h);
+  max-height: var(--sheet-available-h);
   padding: 0 var(--space-16) var(--space-16);
   background: var(--surface-solid);
   border: 1px solid var(--border);
@@ -79,13 +79,11 @@
   box-shadow: var(--shadow-panel);
   color: var(--text);
   font-family: Inter, system-ui, sans-serif;
-  transform: translateY(50vh);
-  transform: translateY(50dvh);
-  transition: transform var(--dur-ui-max) ease;
+  transition: height var(--dur-ui-max) ease;
 }
 
 .panel.is-expanded {
-  transform: none;
+  height: var(--sheet-expanded-h);
 }
 
 .panel.is-dragging {
@@ -93,7 +91,8 @@
 }
 
 @supports (backdrop-filter: blur(12px)) {
-  .panel {
+  .panel,
+  .panel.is-expanded {
     background: var(--surface);
     backdrop-filter: blur(12px);
   }
@@ -134,9 +133,9 @@
     left: auto;
     width: var(--panel-w);
     height: auto;
+    max-height: none;
     padding: var(--space-16);
     border-bottom: 1px solid var(--border);
     border-radius: var(--radius-14);
-    transform: none;
   }
 }

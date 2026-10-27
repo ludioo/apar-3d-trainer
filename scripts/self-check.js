@@ -1,12 +1,14 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseHash } from '../src/core/router.js';
-import { nearestSnap } from '../src/ui/sheet.js';
+import { nearestSnap, sheetBounds } from '../src/ui/sheet.js';
 import { nearestHotspot } from '../src/core/picking.js';
 import hotspots from '../src/data/hotspots.json' with { type: 'json' };
-import { BoxGeometry, Mesh, MeshBasicMaterial, PerspectiveCamera, Vector3 } from 'three';
+import { BoxGeometry, Group, Mesh, MeshBasicMaterial, MeshStandardMaterial, PerspectiveCamera, Raycaster, ShaderLib, Texture, Vector3 } from 'three';
 import { projectPin, placePin } from '../src/ui/hotspot-pins.js';
 import { initCameraTween } from '../src/core/cameraTween.js';
+import { initAppearance } from '../src/features/configurator/appearance.js';
+import product from '../src/data/product.json' with { type: 'json' };
 
 const load = (lang) => JSON.parse(readFileSync(new URL(`../src/i18n/${lang}.json`, import.meta.url), 'utf8'));
 const en = load('en');
@@ -28,6 +30,12 @@ assert.equal(parseHash('#toString', modes), 'configure');
 
 assert.equal(nearestSnap(300, [240, 640]), 240);
 assert.equal(nearestSnap(500, [240, 640]), 640);
+assert.deepEqual(sheetBounds(844, 728, 176), [253.2, 675.2]);
+assert.deepEqual(sheetBounds(390, 274, 176), [176, 274], 'landscape keeps room below topbar');
+assert.deepEqual(sheetBounds(240, 124, 176), [124, 124], 'both snaps fit a very short viewport');
+assert.deepEqual(sheetBounds(800, 684, 176), [240, 640]);
+assert.equal(nearestSnap(180, sheetBounds(390, 274, 176)), 176);
+assert.equal(nearestSnap(260, sheetBounds(390, 274, 176)), 274);
 
 assert.equal(hotspots.length, 6);
 assert.deepEqual(
@@ -156,4 +164,72 @@ try {
   cube.material.dispose();
 }
 
-console.log(`self-check ok: ${Object.keys(en).length} i18n keys, router, sheet, ${hotspots.length} hotspots, K3 copy, occlusion, pin layout, camera tween`);
+assert.deepEqual(product.options.color.map((color) => color.id), ['red', 'yellow', 'silver']);
+for (const option of product.options.color) {
+  assert.match(option.hex, /^#[\da-f]{6}$/i);
+  for (const lang of ['en', 'id']) assert.equal(option.label[lang], load(lang)[`config.color.${option.id}`]);
+}
+const paintedModel = new Group();
+const paint = new MeshStandardMaterial();
+paint.name = product.bodyMaterialName;
+paint.map = new Texture();
+paint.normalMap = new Texture();
+paint.roughnessMap = new Texture();
+paint.metalnessMap = new Texture();
+const maps = [paint.map, paint.normalMap, paint.roughnessMap, paint.metalnessMap];
+const originalCompile = paint.onBeforeCompile;
+const originalCacheKey = paint.customProgramCacheKey;
+const untouched = new MeshStandardMaterial({ color: 0xabcdef });
+const otherCompile = untouched.onBeforeCompile;
+paintedModel.add(new Mesh(new BoxGeometry(), paint), new Mesh(new BoxGeometry(), untouched));
+let renderRequests = 0;
+const appearance = initAppearance(product, () => renderRequests++);
+assert.ok(appearance.setModel(paintedModel));
+const shader = { uniforms: {}, vertexShader: ShaderLib.standard.vertexShader, fragmentShader: ShaderLib.standard.fragmentShader };
+paint.onBeforeCompile(shader);
+assert.ok(shader.vertexShader.includes('vAparHeight = position.y;'));
+assert.ok(shader.fragmentShader.includes('sampledDiffuseColor'));
+assert.equal(shader.uniforms.aparRecolor.value, 0, 'default red bypasses recoloring');
+const bracket = paintedModel.getObjectByName('configurator-bracket');
+assert.equal(bracket.visible, false);
+for (const option of product.options.color) {
+  appearance.apply(option.id, true);
+  assert.equal(shader.uniforms.aparTint.value.getHexString(), option.hex.slice(1).toLowerCase());
+  assert.equal(shader.uniforms.aparRecolor.value, option.id === 'red' ? 0 : 1);
+  assert.equal(bracket.visible, true);
+}
+assert.equal(paint.color.getHex(), 0xffffff, 'global multiplier stays neutral');
+assert.deepEqual([paint.map, paint.normalMap, paint.roughnessMap, paint.metalnessMap], maps);
+assert.equal(untouched.onBeforeCompile, otherCompile);
+assert.equal(untouched.color.getHex(), 0xabcdef);
+appearance.apply('silver', false);
+assert.equal(bracket.visible, false);
+assert.equal(renderRequests, 4);
+appearance.apply('unknown', true);
+assert.equal(renderRequests, 4, 'unknown product option is ignored');
+for (const mesh of bracket.children) {
+  assert.equal(mesh.userData.configuratorAccessory, true);
+  const hits = [];
+  mesh.raycast(new Raycaster(), hits);
+  assert.equal(hits.length, 0, 'accessories cannot intercept hotspot picking');
+}
+let disposedGeometry = 0;
+let disposedMaterial = 0;
+bracket.children.forEach((mesh) => mesh.geometry.addEventListener('dispose', () => disposedGeometry++));
+bracket.children[0].material.addEventListener('dispose', () => disposedMaterial++);
+assert.ok(appearance.setModel(paintedModel));
+assert.equal(disposedGeometry, 3);
+assert.equal(disposedMaterial, 1);
+assert.equal(bracket.parent, null);
+assert.equal(paintedModel.children.filter((object) => object.name === 'configurator-bracket').length, 1);
+assert.equal(appearance.setModel(new Group()), false, 'missing body material does not prevent bracket use');
+assert.equal(paint.onBeforeCompile, originalCompile);
+assert.equal(paint.customProgramCacheKey, originalCacheKey);
+appearance.apply('yellow', true);
+assert.equal(appearance.setModel(null), false);
+maps.forEach((map) => map.dispose());
+paintedModel.children.forEach((mesh) => mesh.geometry.dispose());
+paint.dispose();
+untouched.dispose();
+
+console.log(`self-check ok: ${Object.keys(en).length} i18n keys, router, sheet, ${hotspots.length} hotspots, K3 copy, occlusion, pin layout, camera tween, selective paint, bracket lifecycle`);

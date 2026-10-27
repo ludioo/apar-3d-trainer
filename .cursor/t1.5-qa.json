@@ -1,0 +1,425 @@
+{
+  "task": "T1.5",
+  "date": "2026-10-27",
+  "status": "accepted_by_barkah",
+  "acceptance": { "by": "Barkah", "date": "2026-10-27", "result": "passed", "includes": "T1.5 and mobile UX revision", "deviceDetails": "not recorded" },
+  "browser": "Local Google Chrome via bundled Playwright; dev and production preview",
+  "checks": [
+    {
+      "name": "red restores identical rendered pixels after yellow/silver cycle",
+      "status": "PASS",
+      "detail": {
+        "changedChannels": 0
+      }
+    },
+    {
+      "name": "no shader or page errors",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "bracket toggles without duplicates",
+      "status": "PASS"
+    },
+    {
+      "name": "Configure controls and pins leave Train",
+      "status": "PASS"
+    },
+    {
+      "name": "state retained across Train/Results",
+      "status": "PASS"
+    },
+    {
+      "name": "EN updates names and keeps selection",
+      "status": "PASS"
+    },
+    {
+      "name": "hotspot card coexists with options",
+      "status": "PASS"
+    },
+    {
+      "name": "color change keeps hotspot card open",
+      "status": "PASS"
+    },
+    {
+      "name": "About escape preserves hotspot card",
+      "status": "PASS"
+    },
+    {
+      "name": "second Escape closes hotspot only",
+      "status": "PASS"
+    },
+    {
+      "name": "chip Enter selects",
+      "status": "PASS"
+    },
+    {
+      "name": "chip Space selects",
+      "status": "PASS"
+    },
+    {
+      "name": "native switch keyboard toggles",
+      "status": "PASS"
+    },
+    {
+      "name": "visible focus indicator",
+      "status": "PASS"
+    },
+    {
+      "name": "refresh resets red and bracket off",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile taps select yellow and bracket",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile layout 360x800",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile layout 390x844",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile layout 768x1024",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile layout 844x390",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile hotspot card and options coexist",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile language retains silver and bracket",
+      "status": "PASS"
+    },
+    {
+      "name": "reduced motion keeps auto rotate off",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile no JS shader errors",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "protected front label/gauge/hose/handle/strap pixels unchanged",
+      "status": "PASS",
+      "detail": [
+        {
+          "part": "label",
+          "color": "yellow",
+          "maxDelta": 0
+        },
+        {
+          "part": "label",
+          "color": "silver",
+          "maxDelta": 0
+        },
+        {
+          "part": "gauge",
+          "color": "yellow",
+          "maxDelta": 0
+        },
+        {
+          "part": "gauge",
+          "color": "silver",
+          "maxDelta": 0
+        },
+        {
+          "part": "hose",
+          "color": "yellow",
+          "maxDelta": 0
+        },
+        {
+          "part": "hose",
+          "color": "silver",
+          "maxDelta": 0
+        },
+        {
+          "part": "handle",
+          "color": "yellow",
+          "maxDelta": 0
+        },
+        {
+          "part": "handle",
+          "color": "silver",
+          "maxDelta": 0
+        },
+        {
+          "part": "strap",
+          "color": "yellow",
+          "maxDelta": 0
+        },
+        {
+          "part": "strap",
+          "color": "silver",
+          "maxDelta": 0
+        }
+      ]
+    },
+    {
+      "name": "final calibrated shader compiles without errors",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "bracket on: pin and model picking pin",
+      "status": "PASS"
+    },
+    {
+      "name": "bracket on: pin and model picking handle",
+      "status": "PASS"
+    },
+    {
+      "name": "bracket on: pin and model picking nozzle",
+      "status": "PASS"
+    },
+    {
+      "name": "bracket on: pin and model picking gauge",
+      "status": "PASS"
+    },
+    {
+      "name": "bracket on: pin and model picking label",
+      "status": "PASS"
+    },
+    {
+      "name": "bracket on: pin and model picking body",
+      "status": "PASS"
+    },
+    {
+      "name": "one bracket group after hotspot regression",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile actual doubled text wraps within panel",
+      "status": "PASS"
+    },
+    {
+      "name": "loading disables actual color and bracket controls",
+      "status": "PASS"
+    },
+    {
+      "name": "loading message translates to ID",
+      "status": "PASS"
+    },
+    {
+      "name": "network failure shows translated error and retry",
+      "status": "PASS"
+    },
+    {
+      "name": "retry restores controls without duplicate UI",
+      "status": "PASS"
+    },
+    {
+      "name": "missing body disables colors while explaining fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "missing body still toggles bracket and localizes message",
+      "status": "PASS"
+    },
+    {
+      "name": "final narrowed mask preserves protected sample pixels",
+      "status": "PASS",
+      "detail": [
+        {
+          "part": "label",
+          "color": "yellow",
+          "maxDelta": 0
+        },
+        {
+          "part": "label",
+          "color": "silver",
+          "maxDelta": 0
+        },
+        {
+          "part": "gauge",
+          "color": "yellow",
+          "maxDelta": 0
+        },
+        {
+          "part": "gauge",
+          "color": "silver",
+          "maxDelta": 0
+        },
+        {
+          "part": "hose",
+          "color": "yellow",
+          "maxDelta": 0
+        },
+        {
+          "part": "hose",
+          "color": "silver",
+          "maxDelta": 0
+        },
+        {
+          "part": "handle",
+          "color": "yellow",
+          "maxDelta": 0
+        },
+        {
+          "part": "handle",
+          "color": "silver",
+          "maxDelta": 0
+        },
+        {
+          "part": "strap",
+          "color": "yellow",
+          "maxDelta": 0
+        },
+        {
+          "part": "strap",
+          "color": "silver",
+          "maxDelta": 0
+        }
+      ]
+    },
+    {
+      "name": "final shader red restores exact canvas pixels",
+      "status": "PASS"
+    },
+    {
+      "name": "UI contrast meets AA",
+      "status": "PASS",
+      "detail": {
+        "textOnSurface": 15.868757233675552,
+        "mutedOnSurface": 6.768660625226347,
+        "accentOnSurface": 11.210244946725082,
+        "inkOnAccent": 12.014709434605603
+      }
+    },
+    {
+      "name": "keyboard Tab order follows chips",
+      "status": "PASS"
+    },
+    {
+      "name": "keyboard Tab reaches bracket after chips",
+      "status": "PASS"
+    },
+    {
+      "name": "bracket leaves original pin occlusion unchanged front",
+      "status": "PASS",
+      "detail": [
+        "body",
+        "gauge",
+        "nozzle",
+        "pin"
+      ]
+    },
+    {
+      "name": "bracket leaves original pin occlusion unchanged side",
+      "status": "PASS",
+      "detail": [
+        "body",
+        "gauge",
+        "handle"
+      ]
+    },
+    {
+      "name": "bracket leaves original pin occlusion unchanged back",
+      "status": "PASS",
+      "detail": [
+        "handle",
+        "label"
+      ]
+    },
+    {
+      "name": "production bundle loads, recolors and toggles bracket",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "production localization and silver shader remain functional",
+      "status": "PASS"
+    },
+    {
+      "name": "reduced motion mobile stays still after idle",
+      "status": "PASS"
+    }
+  ],
+  "protectedSamples": [
+    {
+      "part": "label",
+      "color": "yellow",
+      "maxDelta": 0
+    },
+    {
+      "part": "label",
+      "color": "silver",
+      "maxDelta": 0
+    },
+    {
+      "part": "gauge",
+      "color": "yellow",
+      "maxDelta": 0
+    },
+    {
+      "part": "gauge",
+      "color": "silver",
+      "maxDelta": 0
+    },
+    {
+      "part": "hose",
+      "color": "yellow",
+      "maxDelta": 0
+    },
+    {
+      "part": "hose",
+      "color": "silver",
+      "maxDelta": 0
+    },
+    {
+      "part": "handle",
+      "color": "yellow",
+      "maxDelta": 0
+    },
+    {
+      "part": "handle",
+      "color": "silver",
+      "maxDelta": 0
+    },
+    {
+      "part": "strap",
+      "color": "yellow",
+      "maxDelta": 0
+    },
+    {
+      "part": "strap",
+      "color": "silver",
+      "maxDelta": 0
+    }
+  ],
+  "triangleCounts": {
+    "total": 10225,
+    "accessory": 312
+  },
+  "contrasts": {
+    "textOnSurface": 15.868757233675552,
+    "mutedOnSurface": 6.768660625226347,
+    "accentOnSurface": 11.210244946725082,
+    "inkOnAccent": 12.014709434605603
+  },
+  "console": {
+    "normalErrors": [],
+    "productionErrors": [],
+    "expected": "Model-network failure deliberately injected; initial missing favicon 404 predates T1.5."
+  },
+  "build": {
+    "jsKb": 733.98,
+    "jsGzipKb": 198.83,
+    "baselineJsGzipKb": 196.72,
+    "cssKb": 11.9,
+    "cssGzipKb": 2.75,
+    "modelBytes": 695084
+  },
+  "limitations": [
+    "Physical phone not tested",
+    "Lighthouse and hardware performance remain T3.1",
+    "Paint mask calibrated specifically for current apar.glb"
+  ]
+}
