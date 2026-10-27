@@ -34,6 +34,7 @@ Project ini berdiri sendiri; project barkahmauludi.com (Next.js) tidak disentuh.
 6. Mulai sekarang setiap AI melakukan push ke GitHub branch `main`, Vercel otomatis deploy ulang.
 
 ## 6. Pasang subdomain `trainer.barkahmauludi.com`
+> Update T0.4 (27 Okt 2026): DNS barkahmauludi.com ternyata di **Rumahweb**, jadi yang dipakai adalah jalur **Fallback** di bawah. Di form "Tambah Record" Rumahweb: Domain = `trainer` (akhiran `.barkahmauludi.com` sudah otomatis), Tipe = CNAME, **Hostname = nilai CNAME dari Vercel** (kolom ini = tujuan). Sudah terpasang dan Valid.
 Karena barkahmauludi.com sudah dikelola di Vercel (DNS di Vercel), biasanya **tidak perlu mengubah apa pun di Rumahweb**.
 1. Di Vercel buka project **apar-3d-trainer** (bukan project situs utama) → **Settings** → **Domains**.
 2. Klik **Add Domain** → ketik `trainer.barkahmauludi.com` → konfirmasi/Add. (Jika muncul pilihan environment, pilih Production.)
@@ -58,7 +59,7 @@ Batas paket Hobby (dicek 27 Okt 2026, https://umami.is/pricing): 100K events/bul
 Lihat prompt T3.5 (dikerjakan di repo situs utama / Sanity Studio).
 
 ## 9. vercel.json
-Header `Cache-Control: public, max-age=31536000, immutable` untuk `/models/*`, `/decoders/*`, `/assets/*`.
+`Cache-Control: public, max-age=31536000, immutable` untuk `/assets/*` (nama file ber-hash). `Cache-Control: public, max-age=86400` (1 hari) untuk `/models/*`, `/decoders/*`, `/hdri/*` karena nama filenya tetap — lihat decisions.md (T0.4).
 
 ## 10. Kalau ada yang gagal
 Salin pesan error / screenshot ke AI di Cursor dengan prompt "Prompt perbaikan bug" di `prompts.md`. Untuk deploy gagal: Vercel → Deployments → klik yang merah → salin isi **Build Logs**.
