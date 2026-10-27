@@ -16,6 +16,7 @@ Belum diverifikasi: Sketchfab dan Quaternius untuk APAR — tidak dicek dalam ri
 | Font Inter, JetBrains Mono | @fontsource (npm) | OFL-1.1 |
 | Api/semprotan | sprite/particle dibuat procedural di kode | — |
 | Bracket T1.5 | Geometri prosedural `BoxGeometry` + `TorusGeometry` three.js di `appearance.js`; tanpa unduhan aset | kode proyek MIT |
+| Strip/label agent T1.6 | CanvasTexture prosedural 512×128 di shader body; nama agent/kapasitas bilingual, tanpa unduhan. Biru Powder, arang CO2, krem Foam, merah Water = kode visual demo, bukan standar warna APAR | kode proyek MIT |
 | OG image | screenshot dari app sendiri (1200×630) | milik Barkah |
 
 ## Copy inti (EN / ID) — disimpan di `src/i18n/*.json`
@@ -79,8 +80,10 @@ Lulus: ≥ 6/8 (75%).
 ## Disclaimer (tetap tampil di Train, Results, PDF)
 EN: "Demo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training." / ID: "Demo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat."
 
-## Konten yang masih diisi AI
-- Spek & harga ilustrasi per varian (sudah disetujui sebagai ilustrasi).
+## Konten yang diisi AI
+- T1.6: spek & harga ilustrasi 16 varian sudah diisi di `src/data/product.json` sesuai angka rencana yang disetujui Barkah, 27 Okt 2026; implementasi diterima Barkah pada tanggal yang sama. Default Powder ABC 6 kg Rp600.000/US$38; CO2 9 kg + bracket Rp1.100.000/US$71; Water 1 kg Rp200.000/US$13. Bracket Rp50.000/US$3, warna tanpa tambahan. Bukan harga pasar atau spesifikasi pabrikan; UI menampilkan “Illustrative price”/“Harga ilustrasi” dan “Illustrative specifications”/“Spek ilustrasi”.
+- T1.6: kelas agent sebagai acuan umum (Powder ABC A/B/C; CO2 B/C; Foam AFFF A/B; Water A) bersumber dari [Damkar Banda Aceh, Jenis-jenis Alat Pemadam Api Ringan (APAR), bagian 1–4](https://damkar.bandaacehkota.go.id/2020/08/09/jenis-jenis-alat-pemadam-api-ringan-apar/), dibuka 27 Okt 2026. Hanya bagian tersebut dipakai, tanpa menambahkan kelas di luar cakupan A–D. Kesesuaian umum ini bukan rating tersertifikasi untuk 16 varian dummy.
+- T1.6: catatan UI EN/ID menjelaskan spek/kode visual ilustrasi, model/nozzle/gauge yang sama untuk semua agent, konteks penjelasan bagian model dasar ABC, kapasitas seluruhnya kg sesuai brief, dan berat unit berisi tanpa bracket. Teks hotspot/PASS/kuis/disclaimer existing tetap persis sumber di atas.
 - Koordinat hotspot (diisi saat T1.3).
 
 ## Video demo 30 dtk (storyboard)

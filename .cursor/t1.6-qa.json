@@ -1,0 +1,243 @@
+{
+  "task": "T1.6",
+  "date": "2026-10-27",
+  "status": "accepted_by_barkah",
+  "acceptance": { "by": "Barkah", "date": "2026-10-27", "result": "passed", "deviceDetails": "not recorded" },
+  "browser": "Local Google Chrome via bundled Playwright; mobile checks are emulation, not a physical phone",
+  "devChecks": [
+    {
+      "name": "16 agent/capacity choices in ID and EN",
+      "count": 32,
+      "status": "PASS",
+      "detail": "Actual clicks; prices, all six spec rows, relative scale and root position matched. Two requestAnimationFrames from the click capture include a presented frame.",
+      "maxNextFrameMs": 13
+    },
+    {
+      "name": "CO2 9kg bracket USD71 and all three colors preserve price",
+      "count": 4,
+      "status": "PASS"
+    },
+    {
+      "name": "Capacity changes with body card open and close restores overview",
+      "count": 5,
+      "status": "PASS",
+      "detail": "All four scales keep the card, focus position, highlight anchor and scaled minDistance; close restores minDistance 1.5."
+    },
+    {
+      "name": "Six pin clicks and six canvas picks at each capacity",
+      "count": 48,
+      "status": "PASS",
+      "detail": "Original bilingual K3 copy preserved. Pin layer temporarily hidden only to isolate the canvas-picking path; debug HUD confirms actual raycast result."
+    },
+    {
+      "name": "Front/back occlusion at each capacity with bracket off/on",
+      "count": 8,
+      "status": "PASS",
+      "detail": "Visible pin sets identical with bracket; gauge visible from front and hidden from back."
+    },
+    {
+      "name": "Cross-tab state, translated 3D label, refresh defaults",
+      "count": 2,
+      "status": "PASS",
+      "detail": "Foam label texture updates when switching ID to EN in Train; returning through Results preserves agent/capacity/color. Refresh resets configuration and preserves language."
+    },
+    {
+      "name": "Touch hotspot cards, original option/scroll restoration, no clipping",
+      "count": 96,
+      "status": "PASS",
+      "detail": "360x800, 390x844, 768x1024, 844x390; ID/EN; 100%/200% computed text sizes; all six pins. Reduced motion context, Foam 9kg. Header inside panel/viewport, close hit-tested, description has positive height, options hidden while reading, scroll restored to 100px."
+    }
+  ],
+  "devScenarioCount": 195,
+  "notes": [
+    "Existing favicon.ico 404 is unrelated to T1.6.",
+    "A temporary timing probe queried a detached price element outside Configure and was corrected; it is not application code.",
+    "The persistent REPL timed out during an additional failure probe; completed results above are retained from returned tool outputs. Further checks are saved incrementally by t1.6-final-check.cjs."
+  ],
+  "finalChecks": [
+    {
+      "name": "Model failure disables all choices; real Retry loads and enables defaults",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Missing body material leaves capacity, agent, specs, price and bracket usable",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Keyboard Enter, Space, Tab, switch and visible focus",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "About opens and Escape closes while keeping configuration",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Fire-class source link opens the documented Damkar URL",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Capacity change during focus tween replaces its target and keeps the card",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Closing during a capacity focus tween restores overview without stale focus",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Tab exit during focus cleans the card and restores camera limits",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Production preview: 32 bilingual variant changes, price/spec and next-frame latency",
+      "status": "PASS",
+      "detail": {
+        "count": 32,
+        "maxMs": 19.600000001490116,
+        "timings": [
+          19.600000001490116,
+          12.900000005960464,
+          13.099999994039536,
+          15.899999998509884,
+          12.099999994039536,
+          12.400000005960464,
+          12.799999997019768,
+          13,
+          11.399999998509884,
+          12.600000001490116,
+          12.100000001490116,
+          13.100000001490116,
+          11.599999994039536,
+          13,
+          12,
+          12.100000001490116,
+          14.400000005960464,
+          12.799999997019768,
+          12.100000001490116,
+          12.199999995529652,
+          14.699999995529652,
+          11.399999998509884,
+          14.799999997019768,
+          12,
+          14.699999995529652,
+          12.199999995529652,
+          12.100000001490116,
+          16.69999999552965,
+          10.799999997019768,
+          11.399999998509884,
+          12.5,
+          10.5
+        ]
+      }
+    },
+    {
+      "name": "Normal desktop paths and production shader have no unexpected console/page errors",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Production touch: 32 bilingual variants and next-frame latency",
+      "status": "PASS",
+      "detail": {
+        "count": 32,
+        "maxMs": 16.399999998509884,
+        "timings": [
+          16.100000001490116,
+          14.099999994039536,
+          13.600000001490116,
+          15.200000002980232,
+          14,
+          14.100000001490116,
+          12.5,
+          13.799999997019768,
+          14.5,
+          13.399999998509884,
+          14.700000002980232,
+          16.100000001490116,
+          15.700000002980232,
+          16.399999998509884,
+          13.300000004470348,
+          14.899999998509884,
+          14.799999997019768,
+          15.899999998509884,
+          13.200000002980232,
+          14.799999997019768,
+          13.399999998509884,
+          14.099999994039536,
+          13.600000001490116,
+          14.700000002980232,
+          14,
+          13.100000001490116,
+          11.399999998509884,
+          14.600000001490116,
+          12.300000004470348,
+          13.100000001490116,
+          11.300000004470348,
+          12.399999998509884
+        ]
+      }
+    },
+    {
+      "name": "Production touch: sheet toggle, agent/capacity/color/bracket, hotspot and close",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Sheet drag still snaps to compact after expanded configuration",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "AA contrast for panel text and all four procedural strip labels",
+      "status": "PASS",
+      "detail": {
+        "ratios": [
+          {
+            "name": "UI text",
+            "ratio": 15.87
+          },
+          {
+            "name": "Muted",
+            "ratio": 6.77
+          },
+          {
+            "name": "Accent ink",
+            "ratio": 12.01
+          },
+          {
+            "name": "powder_abc",
+            "ratio": 5.17
+          },
+          {
+            "name": "co2",
+            "ratio": 11.46
+          },
+          {
+            "name": "foam_afff",
+            "ratio": 13.38
+          },
+          {
+            "name": "water",
+            "ratio": 5.88
+          }
+        ]
+      }
+    },
+    {
+      "name": "Reduced motion: focused scaled model schedules no idle animation frames",
+      "status": "PASS",
+      "detail": {
+        "before": 21,
+        "after": 21
+      }
+    }
+  ],
+  "finalStatus": "accepted_by_barkah"
+}

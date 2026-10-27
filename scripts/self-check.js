@@ -4,7 +4,8 @@ import { parseHash } from '../src/core/router.js';
 import { nearestSnap, sheetBounds } from '../src/ui/sheet.js';
 import { nearestHotspot } from '../src/core/picking.js';
 import hotspots from '../src/data/hotspots.json' with { type: 'json' };
-import { BoxGeometry, Group, Mesh, MeshBasicMaterial, MeshStandardMaterial, PerspectiveCamera, Raycaster, ShaderLib, Texture, Vector3 } from 'three';
+import { Box3, BoxGeometry, Group, Mesh, MeshBasicMaterial, MeshStandardMaterial, PerspectiveCamera, Raycaster, ShaderLib, Texture, Vector3 } from 'three';
+import './product-check.js';
 import { projectPin, placePin } from '../src/ui/hotspot-pins.js';
 import { initCameraTween } from '../src/core/cameraTween.js';
 import { initAppearance } from '../src/features/configurator/appearance.js';
@@ -170,6 +171,13 @@ for (const option of product.options.color) {
   for (const lang of ['en', 'id']) assert.equal(option.label[lang], load(lang)[`config.color.${option.id}`]);
 }
 const paintedModel = new Group();
+paintedModel.scale.setScalar(2);
+paintedModel.position.set(1, 1, -1);
+const labelWrites = [];
+const savedDocument = globalThis.document;
+globalThis.document = { createElement: () => ({ getContext: () => ({ fillRect() {}, fillText: (...args) => labelWrites.push(args) }) }) };
+const config = { agentId: 'powder_abc', capacityId: '6kg', colorId: 'red', bracketEnabled: false };
+const labels = { agent: 'Dry Powder ABC', capacity: '6 kg' };
 const paint = new MeshStandardMaterial();
 paint.name = product.bodyMaterialName;
 paint.map = new Texture();
@@ -190,10 +198,14 @@ paint.onBeforeCompile(shader);
 assert.ok(shader.vertexShader.includes('vAparHeight = position.y;'));
 assert.ok(shader.fragmentShader.includes('sampledDiffuseColor'));
 assert.equal(shader.uniforms.aparRecolor.value, 0, 'default red bypasses recoloring');
+assert.ok(shader.fragmentShader.includes('texture2D(aparLabel, agentUv)'));
+const labelTexture = shader.uniforms.aparLabel.value;
+assert.equal(labelTexture.image.width, 512);
+assert.equal(labelTexture.image.height, 128);
 const bracket = paintedModel.getObjectByName('configurator-bracket');
 assert.equal(bracket.visible, false);
 for (const option of product.options.color) {
-  appearance.apply(option.id, true);
+  appearance.apply({ ...config, colorId: option.id, bracketEnabled: true }, labels);
   assert.equal(shader.uniforms.aparTint.value.getHexString(), option.hex.slice(1).toLowerCase());
   assert.equal(shader.uniforms.aparRecolor.value, option.id === 'red' ? 0 : 1);
   assert.equal(bracket.visible, true);
@@ -202,11 +214,24 @@ assert.equal(paint.color.getHex(), 0xffffff, 'global multiplier stays neutral');
 assert.deepEqual([paint.map, paint.normalMap, paint.roughnessMap, paint.metalnessMap], maps);
 assert.equal(untouched.onBeforeCompile, otherCompile);
 assert.equal(untouched.color.getHex(), 0xabcdef);
-appearance.apply('silver', false);
+assert.equal(labelWrites.length, 4, 'color and bracket changes reuse the existing label');
+appearance.apply({ ...config, colorId: 'silver' }, labels);
 assert.equal(bracket.visible, false);
 assert.equal(renderRequests, 4);
-appearance.apply('unknown', true);
+appearance.apply({ ...config, colorId: 'unknown' }, labels);
 assert.equal(renderRequests, 4, 'unknown product option is ignored');
+for (let cycle = 0; cycle < 3; cycle++) {
+  for (const capacity of product.options.capacity) {
+    appearance.apply({ ...config, capacityId: capacity.id }, { ...labels, capacity: `${capacity.kg} kg` });
+    assert.ok(Math.abs(paintedModel.scale.x - 2 * capacity.scale) < 1e-10, 'scale is always relative to baseline');
+    assert.ok(paintedModel.position.distanceTo(new Vector3(1, 1, -1).multiplyScalar(capacity.scale)) < 1e-10);
+    assert.ok(Math.abs(new Box3().setFromObject(paintedModel).min.y) < 1e-10, 'unit stays on floor');
+  }
+}
+appearance.apply(config, { agent: 'Serbuk Kimia ABC', capacity: '6 kg' });
+assert.ok(labelWrites.some(([text]) => text === 'Serbuk Kimia ABC'), 'language updates the 3D label');
+let disposedLabel = 0;
+labelTexture.addEventListener('dispose', () => disposedLabel++);
 for (const mesh of bracket.children) {
   assert.equal(mesh.userData.configuratorAccessory, true);
   const hits = [];
@@ -220,13 +245,21 @@ bracket.children[0].material.addEventListener('dispose', () => disposedMaterial+
 assert.ok(appearance.setModel(paintedModel));
 assert.equal(disposedGeometry, 3);
 assert.equal(disposedMaterial, 1);
+assert.equal(disposedLabel, 1);
+assert.equal(paintedModel.scale.x, 2, 'reattaching the same model restores its baseline');
 assert.equal(bracket.parent, null);
 assert.equal(paintedModel.children.filter((object) => object.name === 'configurator-bracket').length, 1);
 assert.equal(appearance.setModel(new Group()), false, 'missing body material does not prevent bracket use');
 assert.equal(paint.onBeforeCompile, originalCompile);
 assert.equal(paint.customProgramCacheKey, originalCacheKey);
-appearance.apply('yellow', true);
+const fallback = new Group();
+assert.equal(appearance.setModel(fallback), false);
+appearance.apply({ ...config, colorId: 'yellow', capacityId: '1kg', bracketEnabled: true }, labels);
+assert.equal(fallback.scale.x, 0.65, 'capacity works without a body material');
+assert.equal(fallback.getObjectByName('configurator-bracket').visible, true);
 assert.equal(appearance.setModel(null), false);
+if (savedDocument) globalThis.document = savedDocument;
+else delete globalThis.document;
 maps.forEach((map) => map.dispose());
 paintedModel.children.forEach((mesh) => mesh.geometry.dispose());
 paint.dispose();

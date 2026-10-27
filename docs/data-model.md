@@ -20,6 +20,10 @@ Nilai harga & spek: **ilustrasi**, diisi AI sebagai placeholder bertanda `"illus
 
 T1.5 mengisi subset produk: `id`, `bodyMaterialName` = `korean_fire_extinguisher_01_body`, `options.color` (red `#C8102E`, yellow `#FFC629`, silver `#C0C0C0`, masing-masing label EN/ID), dan `options.bracket` kosong. Harga, agent, kapasitas, dan spek tetap T1.6. Label kontrol juga memiliki key `config.*` di kedua kamus i18n; self-check memastikan nama warna cocok data produk. State `colorId` dan `bracketEnabled` hanya di memori configurator; penyimpanan konfigurasi tetap T1.7, tidak ada perubahan skema localStorage.
 
+T1.6 melengkapi produk dengan `illustrative: true`, `basePrice`, `priceAdd` pada semua opsi, empat `options.agent` (powder_abc/co2/foam_afff/water), empat `options.capacity`, dan `specTemplate` enam kolom. Setiap agent memiliki `visual: { strip, ink, nozzle: "hose" }`, `fireClasses` sebagai acuan umum bersumber, serta `specs` berkey `1kg`/`3kg`/`6kg`/`9kg`: `{ dischargeTime, range, weight }` dalam detik/meter/kg. Semua angka spek dan harga mengikuti tabel ilustrasi yang disetujui Barkah; berat = unit berisi tanpa bracket. `sources.fireClasses` menyimpan URL Damkar Banda Aceh untuk tautan UI dan dokumentasi.
+
+Harga total = basePrice + tambahan agent + kapasitas + warna + bracket (jika aktif), dihitung independen untuk IDR dan USD. Base Water 1 kg = Rp200.000/US$13; warna tanpa tambahan, bracket Rp50.000/US$3. Skala kapasitas = 0,65/0,82/1/1,12; default Powder ABC 6 kg = Rp600.000/US$38. State kini satu objek `{ agentId, capacityId, colorId, bracketEnabled }` dalam memori; tidak ada key localStorage atau migrasi skema baru. Label pilihan agent EN/ID ada di data dan kamus UI, dijaga cocok oleh self-check.
+
 ## hotspots.json
 `[{ "id":"pin", "position":[x,y,z], "pinPosition":[x,y,z], "radius":0.04, "cameraView":{ "position":[x,y,z], "target":[x,y,z] }, "title":{en,id}, "body":{en,id}, "sources":["usfa","permenaker"] }]` — posisi dalam koordinat lokal model (meter), diisi AI dengan cara tes klik (mode `?debug` menampilkan koordinat titik yang diklik).
 

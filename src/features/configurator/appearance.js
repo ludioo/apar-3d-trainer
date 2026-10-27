@@ -1,4 +1,4 @@
-import { BoxGeometry, Color, Group, Mesh, MeshStandardMaterial, TorusGeometry } from 'three';
+import { BoxGeometry, CanvasTexture, Color, Group, Mesh, MeshStandardMaterial, SRGBColorSpace, TorusGeometry } from 'three';
 
 // shortcut: paint bounds and label UVs fit apar.glb; recalibrate when replacing the model.
 const PAINT_FRAGMENT = `
@@ -19,6 +19,12 @@ const PAINT_FRAGMENT = `
     paint *= (1.0 - inHose.x * inHose.y) * (1.0 - inHoseTop.x * inHoseTop.y) * (1.0 - inHoseEnd.x * inHoseEnd.y);
     float shade = min(1.0, max(sampledDiffuseColor.r, max(sampledDiffuseColor.g, sampledDiffuseColor.b)) * 1.8);
     diffuseColor.rgb = mix(diffuseColor.rgb, diffuse * aparTint * shade, paint * aparRecolor);
+    vec2 agentUv = vec2(fract(atan(vAparPosition.x, vAparPosition.z - 0.03) / 6.2831853 + 0.15), (vAparHeight - 0.25) / 0.06);
+    float cylinder = 1.0 - step(0.105, length(vAparPosition.xz - vec2(0.0, 0.03)));
+    float band = step(0.0, agentUv.y) * step(agentUv.y, 1.0) * cylinder;
+    band *= (1.0 - inHose.x * inHose.y) * (1.0 - inHoseTop.x * inHoseTop.y) * (1.0 - inHoseEnd.x * inHoseEnd.y);
+    band *= (1.0 - inNozzle.x * inNozzle.y) * (1.0 - inStrap);
+    diffuseColor.rgb = mix(diffuseColor.rgb, diffuse * texture2D(aparLabel, agentUv).rgb * shade, band);
   #endif
 `;
 
@@ -45,13 +51,47 @@ function createBracket() {
 }
 
 export function initAppearance(product, requestRender) {
-  const uniforms = { aparTint: { value: new Color() }, aparRecolor: { value: 0 } };
+  const uniforms = { aparTint: { value: new Color() }, aparRecolor: { value: 0 }, aparLabel: { value: null } };
+  let model = null;
+  let baseline = null;
   let material = null;
   let bracket = null;
   let originalCompile;
   let originalCacheKey;
+  let labelKey = '';
+
+  function updateLabel(agent, labels) {
+    const texture = uniforms.aparLabel.value;
+    const key = `${agent.id}:${labels.agent}:${labels.capacity}`;
+    if (!texture || labelKey === key) return;
+    labelKey = key;
+    const ctx = texture.image.getContext('2d');
+    ctx.fillStyle = agent.visual.strip;
+    ctx.fillRect(0, 0, 512, 128);
+    ctx.fillStyle = agent.visual.ink;
+    ctx.fillRect(0, 0, 512, 4);
+    ctx.fillRect(0, 124, 512, 4);
+    ctx.textAlign = 'center';
+    for (const x of [128, 384]) {
+      ctx.font = '600 26px system-ui';
+      ctx.fillText(labels.agent, x, 54, 210);
+      ctx.font = '600 24px monospace';
+      ctx.fillText(labels.capacity, x, 94, 230);
+    }
+    texture.needsUpdate = true;
+  }
 
   function detach() {
+    if (model && baseline) {
+      model.scale.copy(baseline.scale);
+      model.position.copy(baseline.position);
+      model.updateWorldMatrix(true, true);
+    }
+    model = null;
+    baseline = null;
+    uniforms.aparLabel.value?.dispose();
+    uniforms.aparLabel.value = null;
+    labelKey = '';
     if (material) {
       material.onBeforeCompile = originalCompile;
       material.customProgramCacheKey = originalCacheKey;
@@ -66,9 +106,11 @@ export function initAppearance(product, requestRender) {
     }
   }
 
-  function setModel(model) {
+  function setModel(next) {
     detach();
+    model = next;
     if (!model) return false;
+    baseline = { scale: model.scale.clone(), position: model.position.clone() };
     model.traverse((object) => {
       if (!object.isMesh) return;
       const materials = Array.isArray(object.material) ? object.material : [object.material];
@@ -77,26 +119,39 @@ export function initAppearance(product, requestRender) {
     bracket = createBracket();
     model.add(bracket);
     if (!material) return false;
+    const canvas = document.createElement('canvas');
+    canvas.width = 512;
+    canvas.height = 128;
+    uniforms.aparLabel.value = new CanvasTexture(canvas);
+    uniforms.aparLabel.value.colorSpace = SRGBColorSpace;
     originalCompile = material.onBeforeCompile;
     originalCacheKey = material.customProgramCacheKey;
     material.onBeforeCompile = (shader, renderer) => {
       originalCompile.call(material, shader, renderer);
       Object.assign(shader.uniforms, uniforms);
-      shader.vertexShader = `varying float vAparHeight;\n${shader.vertexShader}`
-        .replace('#include <begin_vertex>', '#include <begin_vertex>\nvAparHeight = position.y;');
-      shader.fragmentShader = `uniform vec3 aparTint;\nuniform float aparRecolor;\nvarying float vAparHeight;\n${shader.fragmentShader}`
+      shader.vertexShader = `varying float vAparHeight;\nvarying vec3 vAparPosition;\n${shader.vertexShader}`
+        .replace('#include <begin_vertex>', '#include <begin_vertex>\nvAparHeight = position.y;\nvAparPosition = position;');
+      shader.fragmentShader = `uniform vec3 aparTint;\nuniform float aparRecolor;\nuniform sampler2D aparLabel;\nvarying float vAparHeight;\nvarying vec3 vAparPosition;\n${shader.fragmentShader}`
         .replace('#include <map_fragment>', PAINT_FRAGMENT);
     };
-    material.customProgramCacheKey = () => 'apar-selective-paint-v1';
+    material.customProgramCacheKey = () => 'apar-selective-paint-label-v2';
     material.needsUpdate = true;
     return true;
   }
 
-  function apply(colorId, bracketEnabled) {
+  function apply({ agentId, capacityId, colorId, bracketEnabled }, labels) {
     const option = product.options.color.find((color) => color.id === colorId);
-    if (!option) return;
+    const agent = product.options.agent.find((item) => item.id === agentId);
+    const capacity = product.options.capacity.find((item) => item.id === capacityId);
+    if (!option || !agent || !capacity) return;
+    if (model) {
+      model.scale.copy(baseline.scale).multiplyScalar(capacity.scale);
+      model.position.copy(baseline.position).multiplyScalar(capacity.scale);
+      model.updateWorldMatrix(true, true);
+    }
     uniforms.aparTint.value.set(option.hex);
     uniforms.aparRecolor.value = colorId === 'red' ? 0 : 1;
+    updateLabel(agent, labels);
     if (bracket) bracket.visible = bracketEnabled;
     requestRender();
   }

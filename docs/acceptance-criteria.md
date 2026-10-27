@@ -56,9 +56,11 @@ Revisi UX HP (rencana dan acceptance disetujui Barkah, 27 Okt 2026):
 Dikonfirmasi lolos oleh Barkah pada 27 Okt 2026. Rincian perangkat pemeriksaan Barkah tidak dicatat; matriks ukuran layar di atas diuji AI melalui emulasi Chrome.
 
 ## T1.6
-- [ ] Ganti kapasitas → ukuran & harga berubah.
-- [ ] Ganti bahasa → mata uang berganti IDR/USD.
-- [ ] Ada label 'Harga ilustrasi'.
+- [x] Ganti kapasitas → ukuran & harga berubah.
+- [x] Ganti bahasa → mata uang berganti IDR/USD.
+- [x] Ada label 'Harga ilustrasi'.
+
+Dikonfirmasi lolos oleh Barkah pada 27 Okt 2026. Rincian perangkat pemeriksaan Barkah tidak dicatat; QA AI menggunakan Chrome desktop dan HP emulasi.
 
 ## T1.7
 - [ ] Save → muncul di daftar; refresh → masih ada; load → kembali ke konfigurasi itu; delete → hilang.

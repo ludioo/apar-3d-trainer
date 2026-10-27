@@ -127,5 +127,5 @@ export function initHotspotPins({ container, camera, controls, hotspots, open })
     }
   }
 
-  return { enter, exit, setModel, syncText };
+  return { enter, exit, setModel, syncText, refresh: schedule };
 }

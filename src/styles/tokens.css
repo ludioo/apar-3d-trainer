@@ -20,6 +20,7 @@
   --fs-20: 20px;
   --fs-28: 28px;
   --fs-40: 40px;
+  --font-mono: ui-monospace, 'Cascadia Mono', Consolas, monospace;
 
   /* Spacing (4px grid) */
   --space-4: 4px;

@@ -1,12 +1,68 @@
 {
   "id": "apar",
   "bodyMaterialName": "korean_fire_extinguisher_01_body",
+  "illustrative": true,
+  "basePrice": { "IDR": 200000, "USD": 13 },
   "options": {
-    "color": [
-      { "id": "red", "hex": "#C8102E", "label": { "en": "Red", "id": "Merah" } },
-      { "id": "yellow", "hex": "#FFC629", "label": { "en": "Yellow", "id": "Kuning" } },
-      { "id": "silver", "hex": "#C0C0C0", "label": { "en": "Silver", "id": "Perak" } }
+    "agent": [
+      {
+        "id": "powder_abc", "label": { "en": "Dry Powder ABC", "id": "Serbuk Kimia ABC" },
+        "fireClasses": ["A", "B", "C"], "priceAdd": { "IDR": 50000, "USD": 3 },
+        "visual": { "strip": "#2563EB", "ink": "#FFFFFF", "nozzle": "hose" },
+        "specs": {
+          "1kg": { "dischargeTime": 8, "range": 2, "weight": 2 },
+          "3kg": { "dischargeTime": 12, "range": 3, "weight": 5 },
+          "6kg": { "dischargeTime": 18, "range": 4, "weight": 9 },
+          "9kg": { "dischargeTime": 24, "range": 5, "weight": 13 }
+        }
+      },
+      {
+        "id": "co2", "label": { "en": "CO₂", "id": "CO₂" },
+        "fireClasses": ["B", "C"], "priceAdd": { "IDR": 300000, "USD": 20 },
+        "visual": { "strip": "#343A43", "ink": "#FFFFFF", "nozzle": "hose" },
+        "specs": {
+          "1kg": { "dischargeTime": 6, "range": 1, "weight": 3 },
+          "3kg": { "dischargeTime": 10, "range": 1.5, "weight": 8 },
+          "6kg": { "dischargeTime": 16, "range": 2, "weight": 15 },
+          "9kg": { "dischargeTime": 22, "range": 2.5, "weight": 22 }
+        }
+      },
+      {
+        "id": "foam_afff", "label": { "en": "Foam AFFF", "id": "Busa AFFF" },
+        "fireClasses": ["A", "B"], "priceAdd": { "IDR": 150000, "USD": 10 },
+        "visual": { "strip": "#E6D8B8", "ink": "#111111", "nozzle": "hose" },
+        "specs": {
+          "1kg": { "dischargeTime": 12, "range": 2, "weight": 2.5 },
+          "3kg": { "dischargeTime": 20, "range": 3, "weight": 5.5 },
+          "6kg": { "dischargeTime": 30, "range": 4, "weight": 10 },
+          "9kg": { "dischargeTime": 40, "range": 5, "weight": 14 }
+        }
+      },
+      {
+        "id": "water", "label": { "en": "Water", "id": "Air" },
+        "fireClasses": ["A"], "priceAdd": { "IDR": 0, "USD": 0 },
+        "visual": { "strip": "#C8102E", "ink": "#FFFFFF", "nozzle": "hose" },
+        "specs": {
+          "1kg": { "dischargeTime": 15, "range": 3, "weight": 2.5 },
+          "3kg": { "dischargeTime": 25, "range": 4, "weight": 5.5 },
+          "6kg": { "dischargeTime": 40, "range": 5, "weight": 10 },
+          "9kg": { "dischargeTime": 55, "range": 6, "weight": 14 }
+        }
+      }
     ],
-    "bracket": {}
-  }
+    "capacity": [
+      { "id": "1kg", "kg": 1, "scale": 0.65, "priceAdd": { "IDR": 0, "USD": 0 } },
+      { "id": "3kg", "kg": 3, "scale": 0.82, "priceAdd": { "IDR": 150000, "USD": 10 } },
+      { "id": "6kg", "kg": 6, "scale": 1, "priceAdd": { "IDR": 350000, "USD": 22 } },
+      { "id": "9kg", "kg": 9, "scale": 1.12, "priceAdd": { "IDR": 550000, "USD": 35 } }
+    ],
+    "color": [
+      { "id": "red", "hex": "#C8102E", "label": { "en": "Red", "id": "Merah" }, "priceAdd": { "IDR": 0, "USD": 0 } },
+      { "id": "yellow", "hex": "#FFC629", "label": { "en": "Yellow", "id": "Kuning" }, "priceAdd": { "IDR": 0, "USD": 0 } },
+      { "id": "silver", "hex": "#C0C0C0", "label": { "en": "Silver", "id": "Perak" }, "priceAdd": { "IDR": 0, "USD": 0 } }
+    ],
+    "bracket": { "priceAdd": { "IDR": 50000, "USD": 3 } }
+  },
+  "specTemplate": ["agent", "capacity", "fireClasses", "dischargeTime", "range", "weight"],
+  "sources": { "fireClasses": "https://damkar.bandaacehkota.go.id/2020/08/09/jenis-jenis-alat-pemadam-api-ringan-apar/" }
 }

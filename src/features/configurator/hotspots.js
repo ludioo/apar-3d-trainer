@@ -38,6 +38,22 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
   let active = false;
   let offLang;
   let optionsScrollTop = 0;
+  let capacityScale = 1;
+
+  function focusSelected() {
+    controls.minDistance = 0.35 * capacityScale;
+    highlight.show(model.localToWorld(new Vector3(...selected.pinPosition)));
+    tween.moveTo({
+      position: selected.cameraView.position.map((value) => value * capacityScale),
+      target: selected.cameraView.target.map((value) => value * capacityScale),
+    });
+  }
+
+  function refreshTransform(scale) {
+    capacityScale = scale;
+    pins.refresh();
+    if (active && selected && model) focusSelected();
+  }
 
   function revealCard() {
     if (!selected) return;
@@ -71,15 +87,13 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
     }
     controls.pauseAutoRotate();
     controls.enabled = true;
-    controls.minDistance = 0.35;
     selected = hotspot;
     trigger = source;
     card.hidden = false;
     hint.hidden = true;
     panel.classList.add('is-reading-hotspot');
     syncText();
-    highlight.show(model.localToWorld(new Vector3(...hotspot.pinPosition)));
-    tween.moveTo(hotspot.cameraView);
+    focusSelected();
     closeButton.focus({ preventScroll: true });
   }
 
@@ -152,5 +166,5 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
     pins.setModel(next);
   }
 
-  return { enter, exit, open, setModel };
+  return { enter, exit, open, setModel, refreshTransform };
 }
