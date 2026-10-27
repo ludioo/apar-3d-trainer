@@ -10,6 +10,7 @@ import {
   Mesh,
 } from 'three';
 import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
+import { emit } from './events.js';
 
 let renderer;
 let scene;
@@ -87,6 +88,7 @@ export function initScene(container) {
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
     renderer.setSize(w, h, false);
+    emit('scene:resize');
     requestRender();
   });
   resizeObserver.observe(container);

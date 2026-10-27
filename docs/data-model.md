@@ -19,7 +19,9 @@ Semua data statis di `src/data/*.json`; teks bilingual memakai objek `{ "en": ".
 Nilai harga & spek: **ilustrasi**, diisi AI sebagai placeholder bertanda `"illustrative": true` lalu ditampilkan dengan label "Illustrative price". Spek teknis (jarak semprot, waktu semprot) tetap ditandai ilustrasi; harga ilustrasi dikonfirmasi Barkah 27 Okt 2026.
 
 ## hotspots.json
-`[{ "id":"pin", "position":[x,y,z], "radius":0.04, "cameraView":{ "position":[x,y,z], "target":[x,y,z] }, "title":{en,id}, "body":{en,id}, "sources":["usfa","permenaker"] }]` — posisi dalam koordinat lokal model (meter), diisi AI dengan cara tes klik (mode `?debug` menampilkan koordinat titik yang diklik).
+`[{ "id":"pin", "position":[x,y,z], "pinPosition":[x,y,z], "radius":0.04, "cameraView":{ "position":[x,y,z], "target":[x,y,z] }, "title":{en,id}, "body":{en,id}, "sources":["usfa","permenaker"] }]` — posisi dalam koordinat lokal model (meter), diisi AI dengan cara tes klik (mode `?debug` menampilkan koordinat titik yang diklik).
+
+T1.4: `position` + `radius` tetap untuk picking T1.3; `pinPosition` adalah titik di permukaan bagian untuk pin HTML, oklusi, dan highlight, ditransformasikan memakai `localToWorld`. Keduanya terpisah karena titik picking dapat berada di dalam model. `cameraView.position` dan `cameraView.target` memakai koordinat dunia setelah normalisasi tinggi model 1,2. Nomor pin mengikuti urutan array: pin, handle, nozzle, gauge, label, body. Tidak ada perubahan skema localStorage.
 
 ## pass-steps.json
 `[{ "id":"pull", "hotspot":"pin", "interaction":"click|hold|drag", "title":{en,id}, "instruction":{en,id} }]`

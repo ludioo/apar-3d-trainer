@@ -35,8 +35,10 @@ Uji di Chrome desktop + 1 HP Android/iPhone.
 - [ ] Klik dekat pin/tuas/nozzle/gauge/label/tabung → ring kuning berdenyut tepat di bagian itu (bukan meleset).
 
 ## T1.4
-- [ ] 6 pin hotspot terlihat di tempat yang benar; klik → kamera mendekat + kartu info dalam bahasa aktif, teks sama dengan content-and-assets.md.
-- [ ] Pin di sisi belakang tersembunyi; pin tidak 'melayang' saat diputar.
+- [x] 6 pin hotspot terlihat di tempat yang benar; klik → kamera mendekat + kartu info dalam bahasa aktif, teks sama dengan content-and-assets.md.
+- [x] Pin di sisi belakang tersembunyi; pin tidak 'melayang' saat diputar.
+
+Dikonfirmasi lolos oleh Barkah pada 27 Okt 2026.
 
 ## T1.5
 - [ ] Ganti warna → body berubah instan, detail tekstur tetap.

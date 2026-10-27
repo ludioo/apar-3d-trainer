@@ -2,6 +2,7 @@
   {
     "id": "pin",
     "position": [0.085, 0.652, 0.03],
+    "pinPosition": [0.09043, 0.655, 0.04113],
     "radius": 0.028,
     "cameraView": {
       "position": [0.45, 1.35, 0.55],
@@ -20,6 +21,7 @@
   {
     "id": "handle",
     "position": [0, 0.612, 0],
+    "pinPosition": [0.00994, 0.61787, 0.02013],
     "radius": 0.04,
     "cameraView": {
       "position": [0.4, 1.35, 0.7],
@@ -38,10 +40,11 @@
   {
     "id": "nozzle",
     "position": [-0.08, 0.19, 0.07],
+    "pinPosition": [-0.11212, 0.17165, 0.04281],
     "radius": 0.05,
     "cameraView": {
       "position": [-0.65, 0.4, 0.55],
-      "target": [-0.146, 0.346, 0.017]
+      "target": [-0.20408, 0.31245, -0.03216]
     },
     "title": {
       "en": "Hose & nozzle",
@@ -56,6 +59,7 @@
   {
     "id": "gauge",
     "position": [0, 0.576, 0.07],
+    "pinPosition": [0.00054, 0.57619, 0.07265],
     "radius": 0.028,
     "cameraView": {
       "position": [0.15, 1.1, 0.75],
@@ -74,10 +78,11 @@
   {
     "id": "label",
     "position": [-0.055, 0.52, 0],
+    "pinPosition": [-0.0426, 0.50572, -0.03584],
     "radius": 0.055,
     "cameraView": {
-      "position": [-0.7, 1.0, 0.2],
-      "target": [-0.1, 0.95, -0.11]
+      "position": [-0.7, 1.1, -0.5],
+      "target": [-0.07754, 0.9205, -0.17531]
     },
     "title": {
       "en": "Label",
@@ -92,6 +97,7 @@
   {
     "id": "body",
     "position": [0, 0.4, 0],
+    "pinPosition": [0.06422, 0.41227, 0.09348],
     "radius": 0.15,
     "cameraView": {
       "position": [0.9, 0.9, 1.2],

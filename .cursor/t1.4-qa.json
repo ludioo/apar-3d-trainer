@@ -1,0 +1,109 @@
+{
+  "task": "T1.4",
+  "date": "2026-10-27",
+  "browser": "Local Google Chrome via bundled Playwright",
+  "status": "accepted_by_barkah",
+  "acceptance": { "by": "Barkah", "date": "2026-10-27", "result": "passed" },
+  "checks": [
+    {
+      "name": "desktop: six pin buttons, source copy and camera focus (fresh navigation)",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: switch hotspot preserves original camera; close restores position, target and bounds",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: live EN/ID copy updates without restarting camera focus",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: About Escape only closes dialog; second Escape closes card",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: model picking opens each of six cards through canvas clicks",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: close mid-tween and reopen while returning retains original snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: empty click keeps card, orbit cancels focus, close restores camera",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile 390: six pins tap to source-language cards and focus",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile: sheet toggle/drag, EN-ID, close and tab lifecycle",
+      "status": "PASS"
+    },
+    {
+      "name": "responsive: 44px targets, 4px gaps, projection and no overflow (float tolerance)",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: exit during focus restores immediately; hidden pin removal from keyboard",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: keyboard Enter opens, Escape closes, Space opens; visible focus",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop: rear occlusion hides gauge; pins track orbit and idle auto-rotate",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile: touch drag sheet and pinch does not open a card",
+      "status": "PASS"
+    },
+    {
+      "name": "reduced motion: focus/return immediate, no pulse/auto-rotate or continuous animation frames",
+      "status": "PASS"
+    },
+    {
+      "name": "loading failure: pins unavailable, translated error, Retry loads model and enables pins",
+      "status": "PASS"
+    },
+    {
+      "name": "card text enlarged 200%: wraps and remains scrollable with reachable close",
+      "status": "PASS"
+    },
+    {
+      "name": "rapid synchronous reopen plus route lifecycle (wait for hash router)",
+      "status": "PASS"
+    }
+  ],
+  "commands": {
+    "npm run check": "PASS",
+    "npm run build": "PASS; existing chunk >500kB warning",
+    "git diff --check": "PASS"
+  },
+  "unexpectedPageErrors": [],
+  "unexpectedConsoleErrors": [],
+  "contrast": {
+    "pinAndButton": 12.01,
+    "cardText": 15.87,
+    "accentSurface": 11.21
+  },
+  "antislop": {
+    "hardGate": "PASS: real K3 source, keyboard/touch, translated loading/error/empty states, measured contrast; screenshots and clicks recorded",
+    "purposeGate": "PASS: yellow for interactive parts, numbered identification and leader lines, camera motion for focus; existing panel reused",
+    "liveliness": "PASS: ENERGY 1 / RHYTHM 1 / MOTION 2; APAR focal point and numbered safety-yellow markers",
+    "craftsmanship": "PASS: 360/390/tablet/landscape/desktop layout, all T1.4 interactions, enlarged text and reduced motion checked"
+  },
+  "screenshots": [
+    "t1.4-desktop-overview.png",
+    "t1.4-desktop-gauge.png",
+    "t1.4-mobile-overview.png",
+    "t1.4-mobile-pin.png"
+  ],
+  "notes": [
+    "Initial QA harness assertions corrected: force fresh navigation between cases, tolerate subpixel rounding for 44px DOM rectangles, and wait for asynchronous hash router before inspecting cleanup. All corresponding corrected cases passed.",
+    "No physical phone test or Lighthouse audit. No production publish."
+  ]
+}

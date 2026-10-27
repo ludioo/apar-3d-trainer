@@ -50,7 +50,7 @@ export function initHighlight(scene, camera, requestRender) {
     ring.scale.setScalar(1);
     ring.visible = true;
     ring.lookAt(camera.position);
-    startLoop();
+    if (!reduceMotion) startLoop();
     requestRender();
   }
 
@@ -63,5 +63,10 @@ export function initHighlight(scene, camera, requestRender) {
     requestRender();
   }
 
-  return { show, clear, ring };
+  function update() {
+    if (!ring.visible) return;
+    ring.lookAt(camera.position);
+  }
+
+  return { show, clear, update, ring };
 }

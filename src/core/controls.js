@@ -17,6 +17,7 @@ export function initControls(camera, domElement, onChange) {
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   let idleTimer = 0;
   let rotateRaf = 0;
+  let paused = false;
 
   function stopRotate() {
     controls.autoRotate = false;
@@ -36,7 +37,7 @@ export function initControls(camera, domElement, onChange) {
   }
 
   function startRotate() {
-    if (reduceMotion || controls.autoRotate) return;
+    if (reduceMotion || paused || controls.autoRotate) return;
     controls.autoRotate = true;
     if (!rotateRaf) rotateRaf = requestAnimationFrame(rotateTick);
   }
@@ -50,7 +51,7 @@ export function initControls(camera, domElement, onChange) {
 
   function armIdle() {
     clearIdle();
-    if (reduceMotion) return;
+    if (reduceMotion || paused) return;
     idleTimer = setTimeout(startRotate, IDLE_MS);
   }
 
@@ -60,6 +61,16 @@ export function initControls(camera, domElement, onChange) {
     stopRotate();
   });
   controls.addEventListener('end', armIdle);
+
+  controls.pauseAutoRotate = () => {
+    paused = true;
+    clearIdle();
+    stopRotate();
+  };
+  controls.resumeAutoRotate = () => {
+    paused = false;
+    armIdle();
+  };
 
   armIdle();
   return controls;

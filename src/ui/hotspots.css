@@ -1,0 +1,107 @@
+.hotspot-pins {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hotspot-pins__lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.hotspot-pins__lines line {
+  stroke: var(--accent);
+  stroke-width: 1.5;
+}
+
+.hotspot-pin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent-ink);
+  font: 600 var(--fs-14)/1 Inter, system-ui, sans-serif;
+  cursor: pointer;
+  pointer-events: auto;
+  touch-action: manipulation;
+}
+
+.hotspot-pin span {
+  display: grid;
+  place-items: center;
+  width: var(--fs-28);
+  height: var(--fs-28);
+  border: 2px solid var(--accent-ink);
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+}
+
+.hotspot-pin[aria-pressed='true'] span {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.hotspot-pin:hover span,
+.hotspot-pin:active span {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.hotspot-pin:focus-visible,
+.hotspot-info__close:focus-visible,
+#canvas-root canvas:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.hotspot-info__hint,
+.hotspot-info__card p {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--fs-14);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.hotspot-info__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.hotspot-info__card h3 {
+  margin: 0;
+  color: var(--accent);
+  font-size: var(--fs-16);
+  line-height: 1.5;
+}
+
+.hotspot-info__close {
+  align-self: flex-start;
+  min-width: 44px;
+  min-height: 44px;
+  padding: var(--space-8) var(--space-12);
+  border: 0;
+  border-radius: var(--radius-8);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font: inherit;
+  font-size: var(--fs-14);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hotspot-pins[hidden],
+.hotspot-pin[hidden],
+.hotspot-info [hidden] {
+  display: none;
+}
