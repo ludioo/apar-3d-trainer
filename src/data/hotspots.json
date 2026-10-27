@@ -1,1 +1,110 @@
-{}
+[
+  {
+    "id": "pin",
+    "position": [0.085, 0.652, 0.03],
+    "radius": 0.028,
+    "cameraView": {
+      "position": [0.45, 1.35, 0.55],
+      "target": [0.155, 1.187, -0.055]
+    },
+    "title": {
+      "en": "Safety pin",
+      "id": "Pin pengaman"
+    },
+    "body": {
+      "en": "Locks the handle so it can't be squeezed by accident. Step 1 of PASS: pull the pin, keeping the nozzle pointed away from you.",
+      "id": "Mengunci tuas agar tidak tertekan tanpa sengaja. Langkah 1 PASS: cabut pin, dengan nozzle mengarah menjauhi tubuh."
+    },
+    "sources": ["usfa"]
+  },
+  {
+    "id": "handle",
+    "position": [0, 0.612, 0],
+    "radius": 0.04,
+    "cameraView": {
+      "position": [0.4, 1.35, 0.7],
+      "target": [0, 1.114, -0.11]
+    },
+    "title": {
+      "en": "Handle / lever",
+      "id": "Tuas"
+    },
+    "body": {
+      "en": "Squeeze it slowly and evenly to discharge the agent. Release it to stop.",
+      "id": "Tekan perlahan dan merata untuk menyemprotkan isi. Lepaskan untuk berhenti."
+    },
+    "sources": ["usfa"]
+  },
+  {
+    "id": "nozzle",
+    "position": [-0.08, 0.19, 0.07],
+    "radius": 0.05,
+    "cameraView": {
+      "position": [-0.65, 0.4, 0.55],
+      "target": [-0.146, 0.346, 0.017]
+    },
+    "title": {
+      "en": "Hose & nozzle",
+      "id": "Selang & nozzle"
+    },
+    "body": {
+      "en": "Aim low, at the base of the fire, and sweep side to side. Check it is not blocked, cracked or damaged.",
+      "id": "Arahkan rendah ke pangkal api, lalu sapukan ke kiri dan kanan. Pastikan tidak tersumbat, retak, atau rusak."
+    },
+    "sources": ["usfa", "permenaker"]
+  },
+  {
+    "id": "gauge",
+    "position": [0, 0.576, 0.07],
+    "radius": 0.028,
+    "cameraView": {
+      "position": [0.15, 1.1, 0.75],
+      "target": [0, 1.049, 0.017]
+    },
+    "title": {
+      "en": "Pressure gauge",
+      "id": "Indikator tekanan"
+    },
+    "body": {
+      "en": "Shows whether pressure is too high or too low. Check it during every inspection.",
+      "id": "Menunjukkan apakah tekanan terlalu tinggi atau terlalu rendah. Periksa setiap inspeksi."
+    },
+    "sources": ["usfa", "permenaker"]
+  },
+  {
+    "id": "label",
+    "position": [-0.055, 0.52, 0],
+    "radius": 0.055,
+    "cameraView": {
+      "position": [-0.7, 1.0, 0.2],
+      "target": [-0.1, 0.95, -0.11]
+    },
+    "title": {
+      "en": "Label",
+      "id": "Label"
+    },
+    "body": {
+      "en": "Shows which fire classes it can fight. A multipurpose \"A-B-C\" unit covers ordinary solids, flammable liquids/gases, and live electrical fires. Keep the label readable.",
+      "id": "Menunjukkan golongan kebakaran yang bisa dipadamkan. APAR serbaguna \"ABC\" untuk bahan padat, cairan/gas mudah terbakar, dan instalasi listrik bertegangan. Label harus selalu terbaca."
+    },
+    "sources": ["usfa", "permenaker"]
+  },
+  {
+    "id": "body",
+    "position": [0, 0.4, 0],
+    "radius": 0.15,
+    "cameraView": {
+      "position": [0.9, 0.9, 1.2],
+      "target": [0, 0.728, -0.11]
+    },
+    "title": {
+      "en": "Cylinder",
+      "id": "Tabung"
+    },
+    "body": {
+      "en": "Must be free of dents and rust. In Indonesia, APAR is inspected twice a year (6- and 12-month checks) and mounted with its top 1.2 m above the floor.",
+      "id": "Tidak boleh penyok atau berkarat. Di Indonesia, APAR diperiksa 2 kali setahun (pemeriksaan 6 dan 12 bulan) dan dipasang dengan puncak 1,2 m dari lantai."
+    },
+    "sources": ["usfa", "permenaker"]
+  }
+]
