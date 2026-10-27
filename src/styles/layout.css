@@ -1,0 +1,50 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 110;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-16);
+  height: 56px;
+  padding: 0 var(--space-16);
+  background: var(--surface-solid);
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+@supports (backdrop-filter: blur(12px)) {
+  .topbar {
+    background: var(--surface);
+    backdrop-filter: blur(12px);
+  }
+}
+
+.topbar__brand {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-12);
+  min-width: 0;
+}
+
+.topbar__name {
+  font-size: var(--fs-16);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.topbar__tagline {
+  display: none;
+  font-size: var(--fs-14);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .topbar__tagline {
+    display: inline;
+  }
+}

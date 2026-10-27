@@ -1,7 +1,27 @@
 {
   "app.name": "APAR 3D Trainer",
+  "app.title": "Pelatihan & Konfigurator APAR 3D Interaktif",
+  "app.tagline": "Konfigurasi. Pelajari PASS. Buktikan.",
+  "lang.label": "Bahasa",
+  "lang.en": "EN",
+  "lang.id": "ID",
   "splash.loading": "Memuat model 3D…",
   "splash.slow": "Koneksi lambat, masih memuat…",
   "splash.error": "Model 3D gagal dimuat. Periksa koneksi lalu coba lagi.",
-  "splash.retry": "Coba lagi"
+  "splash.retry": "Coba lagi",
+  "tabs.configure": "Konfigurasi",
+  "tabs.train": "Latihan",
+  "tabs.results": "Hasil",
+  "tabs.about": "Tentang",
+  "pass.pull": "Cabut pin pengaman.",
+  "pass.aim": "Arahkan nozzle ke pangkal api.",
+  "pass.squeeze": "Tekan tuas.",
+  "pass.sweep": "Sapukan ke kiri dan kanan.",
+  "disclaimer": "Demo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.",
+  "price.illustrative": "Harga ilustrasi",
+  "credits.assets": "3D model & HDRI: Poly Haven (CC0)",
+  "emergency.title": "Darurat kebakaran di Indonesia",
+  "emergency.fire": "Pemadam Kebakaran: 113",
+  "emergency.general": "Darurat umum: 112 (gratis, bisa saat ponsel terkunci; tersedia di daerah yang pemdanya menyelenggarakan layanan 112)",
+  "emergency.source": "Source: Komdigi — layanan112.komdigi.go.id"
 }

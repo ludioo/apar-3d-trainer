@@ -1,7 +1,27 @@
 {
   "app.name": "APAR 3D Trainer",
+  "app.title": "Interactive 3D Fire Extinguisher Trainer & Configurator",
+  "app.tagline": "Configure it. Learn PASS. Prove it.",
+  "lang.label": "Language",
+  "lang.en": "EN",
+  "lang.id": "ID",
   "splash.loading": "Loading 3D model…",
   "splash.slow": "Slow connection, still loading…",
   "splash.error": "Couldn't load the 3D model. Check your connection and try again.",
-  "splash.retry": "Retry"
+  "splash.retry": "Retry",
+  "tabs.configure": "Configure",
+  "tabs.train": "Train",
+  "tabs.results": "Results",
+  "tabs.about": "About",
+  "pass.pull": "Pull the pin.",
+  "pass.aim": "Aim the nozzle at the base of the fire.",
+  "pass.squeeze": "Squeeze the handle.",
+  "pass.sweep": "Sweep side to side.",
+  "disclaimer": "Demo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.",
+  "price.illustrative": "Illustrative price",
+  "credits.assets": "3D model & HDRI: Poly Haven (CC0)",
+  "emergency.title": "Fire emergency in Indonesia",
+  "emergency.fire": "Fire department: 113",
+  "emergency.general": "General emergency: 112 (free, works on a locked phone; available in areas whose local government runs a 112 service)",
+  "emergency.source": "Source: Komdigi — layanan112.komdigi.go.id"
 }

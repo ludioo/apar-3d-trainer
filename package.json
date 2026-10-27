@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check": "node scripts/self-check.js"
   },
   "devDependencies": {
     "@gltf-transform/cli": "4.5.1",

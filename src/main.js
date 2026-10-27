@@ -1,15 +1,27 @@
 import './styles/tokens.css';
 import './styles/base.css';
+import './styles/layout.css';
 import './ui/components.css';
 import { Box3, Vector3 } from 'three';
 import { initScene, requestRender } from './core/scene.js';
 import { initControls } from './core/controls.js';
 import { loadModel } from './core/loader.js';
 import { on } from './core/events.js';
-import strings from './i18n/en.json';
+import { initLang, getLang, setLang, t } from './i18n/i18n.js';
 
 const MODEL_HEIGHT = 1.2;
 const SLOW_LOAD_MS = 8000;
+
+const langToggle = document.querySelector('.lang-toggle');
+const langButtons = langToggle.querySelectorAll('[data-lang]');
+function syncLangToggle() {
+  langToggle.setAttribute('aria-label', t('lang.label'));
+  langButtons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === getLang())));
+}
+langButtons.forEach((b) => b.addEventListener('click', () => setLang(b.dataset.lang)));
+on('lang:change', syncLangToggle);
+initLang();
+syncLangToggle();
 
 const root = document.getElementById('canvas-root');
 const { scene, camera, renderer } = initScene(root);
@@ -17,11 +29,7 @@ const controls = initControls(camera, renderer.domElement, requestRender);
 controls.target.set(0, MODEL_HEIGHT / 2, 0);
 controls.update();
 
-// ponytail: splash reads en.json directly until the i18n engine lands in T1.1.
 const splash = document.getElementById('splash');
-splash.querySelectorAll('[data-i18n]').forEach((el) => {
-  el.textContent = strings[el.dataset.i18n];
-});
 const fill = splash.querySelector('.splash__fill');
 const percent = splash.querySelector('.splash__percent');
 const loadingEls = splash.querySelectorAll('.splash__text, .splash__bar, .splash__percent');
