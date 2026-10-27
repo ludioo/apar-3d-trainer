@@ -8,6 +8,15 @@
   <body>
     <div id="canvas-root"></div>
     <div id="app"></div>
+    <div id="splash" class="splash" role="status" aria-live="polite">
+      <p class="splash__title" data-i18n="app.name"></p>
+      <p class="splash__text" data-i18n="splash.loading"></p>
+      <div class="splash__bar"><div class="splash__fill"></div></div>
+      <p class="splash__percent"></p>
+      <p class="splash__slow" data-i18n="splash.slow" hidden></p>
+      <p class="splash__error" data-i18n="splash.error" hidden></p>
+      <button type="button" class="splash__retry" data-i18n="splash.retry" hidden></button>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

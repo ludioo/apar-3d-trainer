@@ -1,1 +1,7 @@
-{}
+{
+  "app.name": "APAR 3D Trainer",
+  "splash.loading": "Memuat model 3D…",
+  "splash.slow": "Koneksi lambat, masih memuat…",
+  "splash.error": "Model 3D gagal dimuat. Periksa koneksi lalu coba lagi.",
+  "splash.retry": "Coba lagi"
+}

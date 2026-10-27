@@ -1,1 +1,7 @@
-{}
+{
+  "app.name": "APAR 3D Trainer",
+  "splash.loading": "Loading 3D model…",
+  "splash.slow": "Slow connection, still loading…",
+  "splash.error": "Couldn't load the 3D model. Check your connection and try again.",
+  "splash.retry": "Retry"
+}
