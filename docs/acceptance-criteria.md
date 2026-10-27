@@ -81,8 +81,12 @@ Revisi Sweep disetujui setelah feedback Barkah: validasi ulang slider mulai kiri
 Dikonfirmasi lolos oleh Barkah pada 28 Okt 2026: revisi slider Sweep dinyatakan lebih jelas dan lolos, T2.1 diminta ditandai selesai serta commit/push ke develop. Seluruh checklist ditutup; rincian perangkat pemeriksaan Barkah tidak dicatat. T2.2 belum dimulai sesuai instruksi Barkah.
 
 ## T2.2
-- [ ] Api tampil, semprotan keluar dari arah nozzle, api padam di akhir Sweep.
-- [ ] Di HP tetap halus.
+- [x] Api tampil, semprotan keluar dari arah nozzle, api padam di akhir Sweep.
+- [x] Di HP tetap halus.
+
+28 Okt 2026: validasi Q1–Q5 serta planning disetujui sebelum implementasi. QA AI memeriksa api setelah Aim, hold/lepas/sukses 1 detik, semprotan mengikuti slider dan berhenti setelah diam 180ms, enam lintasan/padam 250ms, Skip dengan hitungan sebenarnya, Back/Ulangi/mode, interupsi About/blur/visibility, reduced motion, sumber nozzle, batas partikel dan resource GPU stabil. QA Chrome dev/produksi lokal mencakup viewport HP portrait/landscape, EN/ID, teks latihan 100/200%, kedua snap dan model gagal/Retry; bukti `.cursor/t2.2-*-qa.json`, `.cursor/t2.2-qa.json` serta screenshot `t2.2-*.png`. FPS emulasi diukur pada hardware desktop, bukan bukti ≥30 fps HP fisik.
+
+Dikonfirmasi lolos oleh Barkah pada 28 Okt 2026, kedua checklist ditutup dan commit/push ke develop diminta. Screenshot Squeeze yang dikirim sesuai implementasi: selang/nozzle tetap statis pada model utuh, arah semprotan mengikuti slider saat Sweep; animasi selang/bagian tetap L4. Rincian perangkat pemeriksaan Barkah tidak dicatat, sehingga acceptance tidak dianggap pengukuran ≥30 fps pada HP fisik. T2.3 tidak dimulai.
 
 ## T2.3
 - [ ] 8 soal sesuai content-and-assets.md, feedback + penjelasan, skor akhir.

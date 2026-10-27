@@ -8,6 +8,8 @@ import { initTrainingUi } from '../../ui/training.js';
 import { initTrainingTarget } from '../../ui/training-target.js';
 import { createTrainingSession, createSweep, SWEEP_STROKES } from './training-state.js';
 import { initTrainingGestures } from './training-gestures.js';
+import { initEffects } from './effects.js';
+import { trainingView } from './training-view.js';
 import steps from '../../data/pass-steps.json';
 import hotspots from '../../data/hotspots.json';
 
@@ -17,6 +19,7 @@ export function initTraining(context) {
   const sweep = createSweep();
   const tween = initCameraTween(camera, controls, requestRender);
   const target = initTrainingTarget({ container, camera, controls, panelBody });
+  const effects = initEffects(context);
   const ui = initTrainingUi(steps, {
     start() { if (!model) return; session.start(); changeStep(); },
     restart() { if (!model) return; session.restart(); sweep.reset(); saveFailed = false; changeStep(); },
@@ -37,6 +40,7 @@ export function initTraining(context) {
   let down = null;
   let offLang;
   let offAbout;
+  let offResize;
   const currentStep = () => steps[session.index];
   const currentHotspot = () => hotspots.find((h) => h.id === currentStep().hotspot);
 
@@ -54,6 +58,7 @@ export function initTraining(context) {
       done, inStep && step.id === 'pull' && session.status[0] === 'done');
     if (done || !inStep) highlight.clear();
     canvas.setAttribute('aria-label', t('training.viewer'));
+    effects.sync(session, sweep, active);
   }
   function focusStep() {
     if (!active || !model || session.phase !== 'steps') return;
@@ -61,7 +66,15 @@ export function initTraining(context) {
     controls.minDistance = 0.35;
     const hotspot = currentHotspot();
     if (!session.status[session.index]) highlight.show(model.localToWorld(new Vector3(...hotspot.pinPosition)));
-    tween.moveTo(hotspot.cameraView);
+    if (session.index === 0) tween.moveTo(hotspot.cameraView);
+    else {
+      const rect = container.getBoundingClientRect();
+      const panel = panelBody.closest('.panel').getBoundingClientRect();
+      const desktop = matchMedia('(min-width: 1024px)').matches;
+      const available = { width: desktop ? panel.left - rect.left - 16 : rect.width,
+        height: rect.height };
+      tween.moveTo(trainingView(model, effects.base, camera, rect, available));
+    }
   }
   function changeStep() {
     cancel();
@@ -82,7 +95,16 @@ export function initTraining(context) {
   function cancel() {
     down = null;
     gestures?.cancel();
+    effects.setSpray(false);
   }
+  function interrupt() { cancel(); effects.pause(); highlight.clear(); }
+  function resumeEffects() {
+    if (active && !document.hidden && !document.querySelector('dialog[open]')) {
+      effects.resume();
+      if (model && canInteract()) highlight.show(model.localToWorld(new Vector3(...currentHotspot().pinPosition)));
+    }
+  }
+  function visibility() { if (document.hidden) interrupt(); else resumeEffects(); }
   function targetClick() {
     if (currentStep().interaction === 'click') complete();
   }
@@ -109,6 +131,8 @@ export function initTraining(context) {
       minDistance: controls.minDistance, maxDistance: controls.maxDistance, enabled: controls.enabled };
     controls.pauseAutoRotate();
     setTrainingAppearance(true);
+    effects.setModel(model);
+    resumeEffects();
     panelBody.closest('.panel').classList.add('is-training');
     panelBody.appendChild(ui.element);
     ui.enter();
@@ -117,8 +141,12 @@ export function initTraining(context) {
     gestures = initTrainingGestures({ target: target.button, sweepInput: ui.sweepInput, sweep,
       canHold: () => canInteract() && currentStep().interaction === 'hold',
       canSweep: () => canInteract() && currentStep().interaction === 'drag',
-      progress: target.progress, held: () => complete(),
-      swept(count) { if (count >= SWEEP_STROKES) complete(); else sync(); },
+      progress(value) { target.progress(value); effects.setSpray(value > 0 && value < 1); },
+      held: () => complete(),
+      swept(count) {
+        if (count >= SWEEP_STROKES) complete(); else sync();
+        effects.setSpray(count < SWEEP_STROKES, true);
+      },
     });
     target.button.addEventListener('click', targetClick);
     canvas.addEventListener('pointerdown', pointerDown);
@@ -126,9 +154,12 @@ export function initTraining(context) {
     canvas.addEventListener('pointercancel', cancel);
     controls.addEventListener('start', stopFocus);
     controls.addEventListener('change', highlight.update);
-    window.addEventListener('blur', cancel);
-    document.addEventListener('visibilitychange', cancel);
-    offAbout = on('about:open', cancel);
+    window.addEventListener('blur', interrupt);
+    window.addEventListener('focus', resumeEffects);
+    document.addEventListener('visibilitychange', visibility);
+    document.addEventListener('close', resumeEffects, true);
+    offAbout = on('about:open', interrupt);
+    offResize = on('scene:resize', focusStep);
     offLang = on('lang:change', sync);
     sync();
     focusStep();
@@ -136,6 +167,8 @@ export function initTraining(context) {
   function exit() {
     active = false;
     cancel();
+    effects.pause();
+    effects.sync(session, sweep, false);
     gestures?.destroy();
     gestures = null;
     target.exit();
@@ -145,10 +178,13 @@ export function initTraining(context) {
     canvas.removeEventListener('pointercancel', cancel);
     controls.removeEventListener('start', stopFocus);
     controls.removeEventListener('change', highlight.update);
-    window.removeEventListener('blur', cancel);
-    document.removeEventListener('visibilitychange', cancel);
+    window.removeEventListener('blur', interrupt);
+    window.removeEventListener('focus', resumeEffects);
+    document.removeEventListener('visibilitychange', visibility);
+    document.removeEventListener('close', resumeEffects, true);
     offAbout?.();
     offLang?.();
+    offResize?.();
     highlight.clear();
     tween.cancel();
     if (snapshot) {
@@ -170,6 +206,7 @@ export function initTraining(context) {
     cancel();
     if (active) { tween.cancel(); highlight.clear(); }
     model = next;
+    effects.setModel(next);
     target.setModel(next);
     if (active) { sync(); focusStep(); }
   }

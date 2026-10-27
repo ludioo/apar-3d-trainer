@@ -1,0 +1,324 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://localhost:4182",
+  "checks": [
+    {
+      "name": "Native range, initial target, rail clicks, middle ignored, repeated end ignored, position and element retained across language/Back/modes",
+      "status": "PASS"
+    },
+    {
+      "name": "About/blur/visibility block late input, partial position survives, native arrows/Home/End finish three cycles without orbit or auto-advance",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeat resets, Skip keeps honest cycle count, refresh returns to intro and retains completed flag",
+      "status": "PASS"
+    },
+    {
+      "name": "Mobile track tap and partial thumb drag/release preserve value without counting an unfinished pass",
+      "status": "PASS"
+    },
+    {
+      "name": "Slider hit-tested above footer across 40 viewport/language/text/sheet combinations; partial state retained and accessible goal translated",
+      "status": "PASS",
+      "detail": [
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        }
+      ]
+    },
+    {
+      "name": "Mobile finishes remaining cycles after release, reflow and input changes",
+      "status": "PASS"
+    },
+    {
+      "name": "No unexpected browser/console errors",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "scenario": {
+    "width": 390,
+    "height": 420,
+    "lang": "id",
+    "zoom": 2,
+    "expanded": true
+  }
+}

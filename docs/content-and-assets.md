@@ -14,7 +14,7 @@ Belum diverifikasi: Sketchfab dan Quaternius untuk APAR — tidak dicek dalam ri
 | HDRI `studio_small_09` (1K .hdr) → file disk `public/hdri/studio_1k.hdr` (~1577 KB) | https://polyhaven.com/a/studio_small_09 | CC0 |
 | Ikon UI | Lucide (https://lucide.dev, ISC) — SVG inline, hanya yang dipakai | ISC |
 | Font Inter, JetBrains Mono | @fontsource (npm) | OFL-1.1 |
-| Api/semprotan | sprite/particle dibuat procedural di kode | — |
+| Api/semprotan T2.2 | `effects.js`: Points maksimal 24 api + 72 semprotan, dua CanvasTexture prosedural 64×64; garis bidik dari hotspot nozzle; palette token, tanpa unduhan aset | kode proyek MIT |
 | Bracket T1.5 | Geometri prosedural `BoxGeometry` + `TorusGeometry` three.js di `appearance.js`; tanpa unduhan aset | kode proyek MIT |
 | Strip/label agent T1.6 | CanvasTexture prosedural 512×128 di shader body; nama agent/kapasitas bilingual, tanpa unduhan. Biru Powder, arang CO2, krem Foam, merah Water = kode visual demo, bukan standar warna APAR | kode proyek MIT |
 | Overlay pin T2.1 | SVG inline digambar di `ui/training-target.js` (lingkaran + batang pin); hanya ilustrasi pin terlepas, tanpa unduhan atau animasi mesh | kode proyek MIT |

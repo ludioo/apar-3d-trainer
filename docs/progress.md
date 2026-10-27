@@ -16,7 +16,7 @@ Status: ⬜ todo · 🟨 in progress · ✅ done · ⛔ blocked
 | T1.6 Agent, kapasitas, spek & harga | ✅ | 2026-10-27 | 4 agent × 4 kapasitas, strip/label, skala, spek dan harga IDR/USD ilustrasi diterima Barkah. Check 96 konfigurasi + build dan QA desktop/HP emulasi/preview produksi lolos. Acceptance dikonfirmasi di chat; commit/push ke develop diminta. T1.7 belum dimulai. |
 | T1.7 Simpan konfigurasi | ✅ | 2026-10-28 | Simpan bernama, daftar/muat/hapus, batas 10 dengan konfirmasi penggantian, schemaVersion dan fallback storage diterima Barkah. Check 96 kombinasi + build serta 22 kelompok QA dev/11 produksi desktop dan HP emulasi lolos. Acceptance dikonfirmasi di chat; commit/push ke develop diminta. Task berikutnya belum dimulai. |
 | T2.1 Mode Train PASS | ✅ | 2026-10-28 | PASS dan revisi slider Sweep diterima Barkah: interaksi dinyatakan lebih jelas dan lolos. Checklist acceptance ditutup. Check/build, 7 kelompok QA slider (termasuk 40 kombinasi layar/bahasa/teks/snap), serta 11 kelompok regresi produksi desktop/HP emulasi lolos. Commit/push ke develop diminta; T2.2 tetap belum dimulai dan main tidak diubah. |
-| T2.2 Efek api & semprotan | ⬜ | | |
+| T2.2 Efek api & semprotan | ✅ | 2026-10-28 | Barkah mengonfirmasi pemeriksaan T2.2 lolos; kedua checklist acceptance ditutup. Efek api/semprotan, framing, pause/reduced motion dan padam enam lintasan diterima. Selang/nozzle model tetap statis sesuai batas MVP; arah semprotan mengikuti slider, animasi bagian tetap L4. Check/build dan QA dev/produksi desktop/HP emulasi lolos. Commit/push ke develop diminta; T2.3 tidak dimulai. |
 | T2.3 Kuis | ⬜ | | |
 | T2.4 Dashboard Results | ⬜ | | |
 | T2.5 Ekspor PDF | ⬜ | | |

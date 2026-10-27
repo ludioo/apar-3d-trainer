@@ -1,0 +1,326 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://localhost:4182",
+  "checks": [
+    {
+      "name": "Mobile emulation touch hold / release / active fire and spray FPS (desktop hardware)",
+      "detail": {
+        "frames": 289,
+        "ms": 1600,
+        "fps": 180.625,
+        "p95Ms": 5.700000002980232,
+        "calls": 18,
+        "memory": {
+          "geometries": 20,
+          "textures": 18
+        }
+      }
+    },
+    {
+      "name": "40 responsive combinations: fire fits collapsed canvas / slider and footer hit-tested / no overflow",
+      "detail": [
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        }
+      ]
+    },
+    {
+      "name": "Reduced motion: identical stationary canvas, static hold spray, direct shrink and extinction",
+      "detail": {
+        "root": true,
+        "fire": false,
+        "spray": false,
+        "level": 0,
+        "calls": 14,
+        "memory": {
+          "geometries": 20,
+          "textures": 18
+        }
+      }
+    },
+    {
+      "name": "Model failure keeps Start disabled / Retry recovers"
+    },
+    {
+      "name": "No unexpected browser/console errors"
+    }
+  ],
+  "errors": []
+}

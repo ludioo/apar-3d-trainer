@@ -71,7 +71,7 @@ const configurator = initConfigurator({
   panelBody: document.getElementById('panel-body'), highlight, requestRender,
 });
 const training = initTraining({
-  camera, controls, canvas: renderer.domElement, container: root,
+  scene, camera, controls, canvas: renderer.domElement, container: root,
   panelBody: document.getElementById('panel-body'), highlight, requestRender,
   setTrainingAppearance: configurator.setTrainingAppearance,
 });
@@ -158,7 +158,7 @@ on('load:done', (gltf) => {
   training.setModel(model);
   if (DEBUG) {
     addDebugMarkers();
-    window.__aparDebug = { camera, model, hotspots, Vector3, controls, requestRender };
+    window.__aparDebug = { scene, renderer, camera, model, hotspots, Vector3, controls, requestRender };
   }
   requestRender();
   splash.classList.add('is-done');

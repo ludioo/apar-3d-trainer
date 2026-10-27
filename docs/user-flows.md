@@ -24,8 +24,8 @@ Navigasi: single page dengan 3 tab di top bar — **Configure**, **Train**, **Re
 1. Layar intro: "Learn the PASS technique" + tombol Start.
 2. Step 1/4 Pull: hotspot pin berdenyut kuning, kamera fokus, instruksi teks; user klik hotspot pin → ikon pin "terlepas" (overlay 2D/sprite, bukan animasi mesh) → Next aktif.
 3. Step 2/4 Aim: hotspot nozzle berdenyut; klik → ikon api kecil muncul di depan APAR + garis bidik ke pangkal api.
-4. Step 3/4 Squeeze: hotspot tuas berdenyut; tekan & tahan 1 dtk (progress ring) → partikel semprot sederhana dari posisi nozzle.
-5. Step 4/4 Sweep: geser kiri-kanan (drag) 3 kali → arah semprotan ikut, api mengecil & padam.
+4. Step 3/4 Squeeze: hotspot tuas berdenyut; selama tekan & tahan 1 dtk (progress ring), semprotan putih keluar dari nozzle. Lepas lebih awal membatalkan hold; sukses 1 dtk menghentikan semprotan. Api belum mengecil.
+5. Step 4/4 Sweep: slider kanan→kiri tiga siklus (enam lintasan sah) → arah semprotan ikut, api mengecil per lintasan & padam pada lintasan keenam. Next tetap manual.
 6. Selesai → "Training complete" → tombol "Take the quiz".
 - Back/Next selalu ada; tombol "Skip interaction" untuk aksesibilitas.
 
@@ -33,7 +33,9 @@ Implementasi T2.1 (28 Okt 2026): Next aktif setelah interaksi/Skip dan perpindah
 
 Revisi Sweep: slider pada panel terpisah dari orbit. Mulai kiri → tujuan kanan disorot; mencapai kanan mengalihkan tujuan ke kiri, dan kembali kiri menyelesaikan satu siklus. Ulangi tiga kali hingga 3/3. Pegangan mengikuti drag, klik/tap rel, atau Arrow/Home/End; label Kiri/Kanan, zona ujung, teks Tujuan dan progres siklus memberi feedback langsung. Gerakan di tengah tidak menambah hitungan. Posisi/tujuan/progres tetap saat jari dilepas, bahasa/panel berubah atau sesi terputus. Pada 3/3 slider nonaktif dan tombol Selesai/Finish aktif; tetap klik manual. Skip menampilkan status dilewati dengan hitungan sebenarnya. Saat masuk Sweep, panel menggulir secukupnya untuk mengungkap kontrol/progres di atas footer, tanpa mengubah snap sheet; petunjuk rinci berada setelah kontrol dan bisa di-scroll.
 
-Api, garis bidik, semprotan dan padam pada urutan di atas menjadi T2.2. Untuk T2.1, klik Aim dan gesture Squeeze/Sweep memberikan feedback teks; pin terlepas memakai overlay. Kartu akhir memuat 113/112 + sumber Komdigi, tautan telepon, Ulangi latihan dan informasi kuis menyusul; tombol kuis diaktifkan saat T2.3 diimplementasikan. Status trainingDone menandai alur selesai termasuk Skip, bukan penilaian kompetensi.
+Implementasi T2.2 (diterima Barkah 28 Okt 2026): api/garis muncul setelah Aim berhasil atau dilewati, dan tetap tersedia saat masuk Squeeze/Sweep. Semprotan dari hotspot nozzle menuju pangkal api, mengikuti slider; setiap input sah memicu emisi yang berhenti setelah 180ms tanpa input. Api mengecil sesuai hitungan enam lintasan, bukan waktu menunggu; padam 250ms setelah lintasan terakhir. Skip Sweep langsung menyembunyikan efek dengan status dilewati dan hitungan asli. Back tidak mereset kondisi api; kembali Pull menyembunyikan efek, Ulangi mereset sesi, keluar/masuk Train mempertahankan progres. Kamera Pull tetap close-up; Aim–Sweep membingkai APAR/nozzle/api bersama, menyesuaikan aspek layar dan area bebas di kiri panel desktop. Snap sheet tidak berubah otomatis; ringkas sheet untuk melihat area 3D yang tertutup.
+
+About/blur/halaman tersembunyi menjeda api serta menghentikan semprotan dan pulse target. Kembali ke halaman/menutup About melanjutkan api sesuai progres; semprotan menunggu input baru. Keluar Train menyembunyikan seluruh efek. Reduced motion memakai api/semprotan statis, perubahan ukuran/arah langsung mengikuti input, tanpa loop partikel atau transisi padam. Efek prosedural tetap ilustrasi pada model/nozzle yang tidak bergerak. Pin terlepas tetap overlay T2.1. Kartu akhir memuat 113/112 + sumber Komdigi, tautan telepon, Ulangi latihan dan informasi kuis menyusul; tombol kuis diaktifkan saat T2.3 diimplementasikan. Status trainingDone menandai alur selesai termasuk Skip, bukan penilaian kompetensi.
 
 ## UF3 — Quiz (F7)
 1. 8 soal, satu per layar, progress "3/8".
