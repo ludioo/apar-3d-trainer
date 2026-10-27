@@ -17,7 +17,9 @@ export function initConfigurator(context) {
   const appearance = initAppearance(product, requestRender);
   const options = document.createElement('div');
   options.className = 'config-options';
-  const configuration = { agentId: 'powder_abc', capacityId: '6kg', colorId: 'red', bracketEnabled: false };
+  const defaultConfiguration = { agentId: 'powder_abc', capacityId: '6kg', colorId: 'red', bracketEnabled: false };
+  const configuration = { ...defaultConfiguration };
+  let trainingAppearance = false;
   const saved = initSavedConfigs({ product, getConfiguration: () => configuration,
     applyConfiguration(next) {
       Object.assign(configuration, next);
@@ -156,7 +158,12 @@ export function initConfigurator(context) {
     }
     note.textContent = t('config.illustrativeNote');
     source.textContent = t('spec.source');
-    appearance.apply(configuration, { agent: agentLabel, capacity: capacityLabel });
+    const display = trainingAppearance ? defaultConfiguration : configuration;
+    const displayCapacity = product.options.capacity.find((item) => item.id === display.capacityId);
+    appearance.apply(display, {
+      agent: t(`config.agent.${display.agentId}`),
+      capacity: `${number.format(displayCapacity.kg)} ${t('unit.kg')}`,
+    });
     saved.setReady(!!model);
   }
 
@@ -211,5 +218,9 @@ export function initConfigurator(context) {
   }
 
   on('lang:change', syncOptions);
-  return { enter, exit, setModel };
+  function setTrainingAppearance(enabled) {
+    trainingAppearance = enabled;
+    syncOptions();
+  }
+  return { enter, exit, setModel, setTrainingAppearance };
 }

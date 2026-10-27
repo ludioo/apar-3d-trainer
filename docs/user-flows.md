@@ -29,6 +29,12 @@ Navigasi: single page dengan 3 tab di top bar — **Configure**, **Train**, **Re
 6. Selesai → "Training complete" → tombol "Take the quiz".
 - Back/Next selalu ada; tombol "Skip interaction" untuk aksesibilitas.
 
+Implementasi T2.1 (28 Okt 2026): Next aktif setelah interaksi/Skip dan perpindahan tetap manual; Back menjaga status langkah. Train sementara memakai ABC 6 kg/merah/tanpa bracket dan mengembalikan pilihan Configure ketika keluar. Pindah tab menjaga sesi, refresh kembali intro; About/blur menghentikan interaksi aktif. Hold parsial diulang dari nol, sedangkan posisi/progres slider Sweep tetap. Disclaimer berada dalam konten panel yang dapat di-scroll, Back/Next di footer tetap. Pada panel diperbesar/layar sangat pendek, ringkas panel untuk memberi ruang target 3D; Fokus ke bagian mengembalikan kamera sesudah orbit.
+
+Revisi Sweep: slider pada panel terpisah dari orbit. Mulai kiri → tujuan kanan disorot; mencapai kanan mengalihkan tujuan ke kiri, dan kembali kiri menyelesaikan satu siklus. Ulangi tiga kali hingga 3/3. Pegangan mengikuti drag, klik/tap rel, atau Arrow/Home/End; label Kiri/Kanan, zona ujung, teks Tujuan dan progres siklus memberi feedback langsung. Gerakan di tengah tidak menambah hitungan. Posisi/tujuan/progres tetap saat jari dilepas, bahasa/panel berubah atau sesi terputus. Pada 3/3 slider nonaktif dan tombol Selesai/Finish aktif; tetap klik manual. Skip menampilkan status dilewati dengan hitungan sebenarnya. Saat masuk Sweep, panel menggulir secukupnya untuk mengungkap kontrol/progres di atas footer, tanpa mengubah snap sheet; petunjuk rinci berada setelah kontrol dan bisa di-scroll.
+
+Api, garis bidik, semprotan dan padam pada urutan di atas menjadi T2.2. Untuk T2.1, klik Aim dan gesture Squeeze/Sweep memberikan feedback teks; pin terlepas memakai overlay. Kartu akhir memuat 113/112 + sumber Komdigi, tautan telepon, Ulangi latihan dan informasi kuis menyusul; tombol kuis diaktifkan saat T2.3 diimplementasikan. Status trainingDone menandai alur selesai termasuk Skip, bukan penilaian kompetensi.
+
 ## UF3 — Quiz (F7)
 1. 8 soal, satu per layar, progress "3/8".
 2. Tipe A pilihan ganda; Tipe B "klik hotspot yang benar di 3D" (hotspot tampil tanpa label).

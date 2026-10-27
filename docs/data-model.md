@@ -32,6 +32,18 @@ T1.4: `position` + `radius` tetap untuk picking T1.3; `pinPosition` adalah titik
 ## pass-steps.json
 `[{ "id":"pull", "hotspot":"pin", "interaction":"click|hold|drag", "title":{en,id}, "instruction":{en,id} }]`
 
+T2.1 (28 Okt 2026): empat entri berurutan `pull/pin/click`, `aim/nozzle/click`, `squeeze/handle/hold`, `sweep/nozzle/drag`. `instruction.en/id` disalin persis dari tabel Langkah PASS di content-and-assets; `title` adalah nama pendek bilingual. Sumber instruksi USFA tetap pada dokumen sumber. Nomor target HTML mengikuti langkah 1–4, bukan urutan hotspot Configure.
+
+Sesi hanya di memori: fase intro/langkah/selesai, indeks aktif, status tiap langkah (`null`, `done`, `skipped`), serta posisi, jumlah lintasan dan target Sweep. Next memerlukan status langkah; Back mempertahankan status. Tahan satu detik dihitung terus-menerus.
+
+Revisi Sweep T2.1 (28 Okt 2026, disetujui Barkah): slider rentang 0–100, step 1, mulai 0/kiri dengan target kanan. Zona kiri 0–5, kanan 95–100; hanya masuk zona target berikutnya yang menambah satu lintasan. Kanan lalu kembali kiri = satu siklus; enam lintasan = tiga siklus. Input berulang di ujung yang sama/gerakan tengah tidak dihitung. `createSweep()` mengekspos pembacaan `value`, `count`, `cycles`, `target`, dengan operasi `update(value)` dan `reset()`. Nilai di luar rentang/non-finite ditolak; setelah enam lintasan posisi dan hitungan dibekukan. `interaction: "drag"` pada data PASS tetap menjadi kategori interaksi Sweep; drag, tap/klik rel, Arrow/Home/End semuanya diizinkan melalui kontrol range native.
+
+Posisi parsial, target dan lintasan sah dipertahankan ketika melepas pegangan, mengganti bahasa/ukuran panel, About/blur/visibilitychange, Back, atau berpindah mode. Interupsi menghentikan input aktif; event lanjutan tidak menambah progres. Ulangi latihan mereset posisi 0, target kanan dan hitungan 0; refresh menghapus sesi parsial karena hanya di memori. Skip tidak mengubah hitungan parsial menjadi 3/3, tetapi tetap memenuhi syarat Next dan menonaktifkan slider.
+
+`apar3d:trainingDone` ditulis sebagai boolean JSON `true` melalui storage.set hanya setelah Next terakhir, termasuk bila memakai Skip. Tidak dibungkus schemaVersion dan tidak berarti lulus/kompeten. Mengulang/refresh tidak menulis false atau menghapus status pernah selesai; refresh membuka intro dan tidak memulihkan progres parsial. Gagal menulis tetap menampilkan kartu selesai dengan pesan bahwa status belum tersimpan. Tidak ada migrasi atau perubahan configs/attempts.
+
+`emergency.json` diisi sesuai dokumen sumber: `{ "fire": "113", "general": "112", "sourceUrl": "https://layanan112.komdigi.go.id/tentang" }`. Train memakai nomor untuk href telepon, sedangkan copy/keterangan layanan memakai key i18n existing.
+
 ## quiz.json
 `[{ "id":"q1", "type":"choice|pick-hotspot", "question":{en,id}, "choices":[{id,label:{en,id}}], "answer":"<choiceId|hotspotId>", "explanation":{en,id} }]`
 

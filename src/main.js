@@ -14,6 +14,7 @@ import { openModal, closeModal } from './ui/modal.js';
 import { initSheet } from './ui/sheet.js';
 import { initHighlight } from './core/highlight.js';
 import { initConfigurator } from './features/configurator/configurator.js';
+import { initTraining } from './features/training/training.js';
 import hotspots from './data/hotspots.json';
 
 const MODEL_HEIGHT = 1.2;
@@ -69,7 +70,12 @@ const configurator = initConfigurator({
   camera, controls, canvas: renderer.domElement, container: root,
   panelBody: document.getElementById('panel-body'), highlight, requestRender,
 });
-initRouter({ configure: configurator, train: {}, results: {} });
+const training = initTraining({
+  camera, controls, canvas: renderer.domElement, container: root,
+  panelBody: document.getElementById('panel-body'), highlight, requestRender,
+  setTrainingAppearance: configurator.setTrainingAppearance,
+});
+initRouter({ configure: configurator, train: training, results: {} });
 let model = null;
 
 let debugHud = null;
@@ -149,6 +155,7 @@ on('load:done', (gltf) => {
   });
   scene.add(model);
   configurator.setModel(model);
+  training.setModel(model);
   if (DEBUG) {
     addDebugMarkers();
     window.__aparDebug = { camera, model, hotspots, Vector3, controls, requestRender };

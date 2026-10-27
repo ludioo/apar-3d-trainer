@@ -69,10 +69,16 @@ Dikonfirmasi lolos oleh Barkah pada 27 Okt 2026. Rincian perangkat pemeriksaan B
 Dikonfirmasi lolos oleh Barkah pada 28 Okt 2026. Rincian perangkat pemeriksaan Barkah tidak dicatat. AI menjalankan Chrome desktop + HP emulasi, termasuk EN/ID, batas 10/batal, kegagalan storage, keyboard, teks 200%, dan viewport pendek untuk simulasi ruang keyboard. AI belum menguji HP fisik/keyboard sistem. Bukti `.cursor/t1.7-qa.json` dan `.cursor/t1.7-*.png`.
 
 ## T2.1
-- [ ] Bisa menyelesaikan 4 langkah PASS dengan klik/tahan/geser; instruksi sama dengan content-and-assets.md.
-- [ ] Skip interaction berfungsi.
-- [ ] Disclaimer terlihat.
-- [ ] Kartu akhir Train menampilkan 113 & 112 + sumber; di HP `tel:` link bisa diketuk; teks ikut toggle bahasa.
+- [x] Bisa menyelesaikan 4 langkah PASS dengan klik/tahan/geser; instruksi sama dengan content-and-assets.md.
+- [x] Skip interaction berfungsi.
+- [x] Disclaimer terlihat.
+- [x] Kartu akhir Train menampilkan 113 & 112 + sumber; di HP `tel:` link bisa diketuk; teks ikut toggle bahasa.
+
+28 Okt 2026: implementasi dan QA AI dev/build produksi lokal lolos. AI menguji Chrome desktop/HP emulasi, empat langkah/Skip/Back/Ulangi, hold mouse/keyboard/sentuhan, enam lintasan Sweep, interupsi About/blur/mode, pemulihan konfigurasi, gagal model/Retry dan storage, EN/ID/teks latihan 200%/dua snap pada lima viewport. Bukti `.cursor/t2.1-qa.json`, `.cursor/t2.1-production-qa.json`, `.cursor/t2.1-final-qa.json` dan screenshot `.cursor/t2.1-*.png`. HP fisik dan pengukuran performa perangkat belum diuji oleh AI. Api/garis bidik/semprotan tetap T2.2; kuis T2.3.
+
+Revisi Sweep disetujui setelah feedback Barkah: validasi ulang slider mulai kiri/tujuan kanan, kanan→kiri tiga siklus sampai 3/3, drag/klik/tap rel/keyboard, posisi/progres bertahan saat terputus, Skip tidak memalsukan 3/3, dan Next tetap manual. Bukti revisi `.cursor/t2.1-slider-qa.json`, `.cursor/t2.1-slider-check.cjs`, `.cursor/t2.1-slider-*.png`; regresi `.cursor/t2.1-check.cjs` diperbarui untuk slider.
+
+Dikonfirmasi lolos oleh Barkah pada 28 Okt 2026: revisi slider Sweep dinyatakan lebih jelas dan lolos, T2.1 diminta ditandai selesai serta commit/push ke develop. Seluruh checklist ditutup; rincian perangkat pemeriksaan Barkah tidak dicatat. T2.2 belum dimulai sesuai instruksi Barkah.
 
 ## T2.2
 - [ ] Api tampil, semprotan keluar dari arah nozzle, api padam di akhir Sweep.

@@ -17,6 +17,7 @@ Belum diverifikasi: Sketchfab dan Quaternius untuk APAR — tidak dicek dalam ri
 | Api/semprotan | sprite/particle dibuat procedural di kode | — |
 | Bracket T1.5 | Geometri prosedural `BoxGeometry` + `TorusGeometry` three.js di `appearance.js`; tanpa unduhan aset | kode proyek MIT |
 | Strip/label agent T1.6 | CanvasTexture prosedural 512×128 di shader body; nama agent/kapasitas bilingual, tanpa unduhan. Biru Powder, arang CO2, krem Foam, merah Water = kode visual demo, bukan standar warna APAR | kode proyek MIT |
+| Overlay pin T2.1 | SVG inline digambar di `ui/training-target.js` (lingkaran + batang pin); hanya ilustrasi pin terlepas, tanpa unduhan atau animasi mesh | kode proyek MIT |
 | OG image | screenshot dari app sendiri (1200×630) | milik Barkah |
 
 ## Copy inti (EN / ID) — disimpan di `src/i18n/*.json`

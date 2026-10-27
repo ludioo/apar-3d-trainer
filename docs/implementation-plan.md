@@ -16,7 +16,7 @@
 - T1.7 Simpan/muat/hapus konfigurasi (localStorage).
 
 ## Fase 2 — MVP Training & Results
-- T2.1 Mode Train: stepper PASS + highlight + interaksi click/hold/drag.
+- T2.1 Mode Train: stepper PASS + highlight + interaksi click/hold; Sweep memakai slider berpegangan, target kiri/kanan dan tiga siklus (drag/tap rel/keyboard).
 - T2.2 Efek api & semprotan sederhana + padam.
 - T2.3 Kuis (choice + pick-hotspot, teks dari content-and-assets.md), feedback, skor, simpan attempt.
 - T2.4 Dashboard Results (skor, riwayat SVG, tabel jawaban, clear data).

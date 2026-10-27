@@ -1,1 +1,22 @@
-{}
+[
+  {
+    "id": "pull", "hotspot": "pin", "interaction": "click",
+    "title": { "en": "Pull", "id": "Cabut" },
+    "instruction": { "en": "Pull the pin. Keep the nozzle pointed away from you.", "id": "Cabut pin pengaman. Jaga nozzle mengarah menjauhi tubuh." }
+  },
+  {
+    "id": "aim", "hotspot": "nozzle", "interaction": "click",
+    "title": { "en": "Aim", "id": "Arahkan" },
+    "instruction": { "en": "Aim low, at the base of the fire.", "id": "Arahkan rendah, ke pangkal api." }
+  },
+  {
+    "id": "squeeze", "hotspot": "handle", "interaction": "hold",
+    "title": { "en": "Squeeze", "id": "Tekan" },
+    "instruction": { "en": "Squeeze the lever slowly and evenly.", "id": "Tekan tuas perlahan dan merata." }
+  },
+  {
+    "id": "sweep", "hotspot": "nozzle", "interaction": "drag",
+    "title": { "en": "Sweep", "id": "Sapukan" },
+    "instruction": { "en": "Sweep the nozzle from side to side.", "id": "Sapukan nozzle ke kiri dan kanan." }
+  }
+]
