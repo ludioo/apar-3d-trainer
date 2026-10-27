@@ -1,12 +1,23 @@
 const PREFIX = 'apar3d:';
 
-export function get(key, fallback = null) {
+export function read(key) {
+  let raw;
   try {
-    const raw = localStorage.getItem(PREFIX + key);
-    return raw === null ? fallback : JSON.parse(raw);
+    raw = localStorage.getItem(PREFIX + key);
   } catch {
-    return fallback;
+    return { status: 'unavailable' };
   }
+  if (raw === null) return { status: 'empty' };
+  try {
+    return { status: 'ok', value: JSON.parse(raw) };
+  } catch {
+    return { status: 'invalid' };
+  }
+}
+
+export function get(key, fallback = null) {
+  const result = read(key);
+  return result.status === 'ok' ? result.value : fallback;
 }
 
 export function set(key, value) {

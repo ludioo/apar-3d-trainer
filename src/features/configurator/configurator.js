@@ -4,6 +4,7 @@ import { getLang, t } from '../../i18n/i18n.js';
 import { initHotspots } from './hotspots.js';
 import { initAppearance } from './appearance.js';
 import { calculatePrice, getSpecs } from './pricing.js';
+import { initSavedConfigs } from '../../ui/saved-configs.js';
 import hotspots from '../../data/hotspots.json';
 import product from '../../data/product.json';
 import '../../ui/configurator.css';
@@ -17,6 +18,13 @@ export function initConfigurator(context) {
   const options = document.createElement('div');
   options.className = 'config-options';
   const configuration = { agentId: 'powder_abc', capacityId: '6kg', colorId: 'red', bracketEnabled: false };
+  const saved = initSavedConfigs({ product, getConfiguration: () => configuration,
+    applyConfiguration(next) {
+      Object.assign(configuration, next);
+      syncOptions();
+      ui.refreshTransform(product.options.capacity.find((item) => item.id === configuration.capacityId).scale);
+    },
+  });
   const priceBox = document.createElement('div');
   priceBox.className = 'config-price';
   priceBox.setAttribute('aria-live', 'polite');
@@ -99,7 +107,7 @@ export function initConfigurator(context) {
   source.target = '_blank';
   source.rel = 'noopener noreferrer';
   source.className = 'config-source';
-  options.append(priceBox, ...variantFields.map(({ field }) => field), colors, bracketLabel, status, table, note, source);
+  options.append(priceBox, ...variantFields.map(({ field }) => field), colors, bracketLabel, saved.element, status, table, note, source);
   let model = null;
   let down = null;
   let colorAvailable = false;
@@ -149,6 +157,7 @@ export function initConfigurator(context) {
     note.textContent = t('config.illustrativeNote');
     source.textContent = t('spec.source');
     appearance.apply(configuration, { agent: agentLabel, capacity: capacityLabel });
+    saved.setReady(!!model);
   }
 
   function pointerDown(event) {
@@ -175,6 +184,7 @@ export function initConfigurator(context) {
   const cancel = () => { down = null; };
   function enter() {
     panelBody.appendChild(options);
+    saved.enter();
     syncOptions();
     ui.enter();
     canvas.addEventListener('pointerdown', pointerDown);
@@ -188,6 +198,7 @@ export function initConfigurator(context) {
     canvas.removeEventListener('pointerup', pointerUp);
     canvas.removeEventListener('pointercancel', cancel);
     ui.exit();
+    saved.exit();
     options.remove();
   }
 

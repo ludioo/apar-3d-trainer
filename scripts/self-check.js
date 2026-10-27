@@ -6,6 +6,7 @@ import { nearestHotspot } from '../src/core/picking.js';
 import hotspots from '../src/data/hotspots.json' with { type: 'json' };
 import { Box3, BoxGeometry, Group, Mesh, MeshBasicMaterial, MeshStandardMaterial, PerspectiveCamera, Raycaster, ShaderLib, Texture, Vector3 } from 'three';
 import './product-check.js';
+import './saved-configs-check.js';
 import { projectPin, placePin } from '../src/ui/hotspot-pins.js';
 import { initCameraTween } from '../src/core/cameraTween.js';
 import { initAppearance } from '../src/features/configurator/appearance.js';

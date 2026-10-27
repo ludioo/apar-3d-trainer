@@ -35,12 +35,20 @@ T1.4: `position` + `radius` tetap untuk picking T1.3; `pinPosition` adalah titik
 ## quiz.json
 `[{ "id":"q1", "type":"choice|pick-hotspot", "question":{en,id}, "choices":[{id,label:{en,id}}], "answer":"<choiceId|hotspotId>", "explanation":{en,id} }]`
 
-## localStorage (prefix `apar3d:`, semua menyertakan `schemaVersion: 1`)
+## localStorage (prefix `apar3d:`)
+Data kompleks memakai versi skema sesuai implementasi task terkait. `apar3d:lang` tetap string JSON polos sesuai keputusan T1.1; tidak dibungkus objek versi.
+
 | Key | Isi |
 |---|---|
 | `apar3d:lang` | `"en"` / `"id"` |
-| `apar3d:configs` | `[{ id, name, createdAt(ISO), agent, capacity, color, bracket, priceSnapshot:{IDR,USD} }]` maks 10 |
+| `apar3d:configs` | `{ schemaVersion: 1, configs: [{ id, name, createdAt(ISO), agent, capacity, color, bracket, priceSnapshot:{IDR,USD} }] }` maks 10 |
 | `apar3d:attempts` | `[{ id, startedAt, finishedAt, durationSec, score, total, passed, answers:[{qId, given, correct}] }]` maks 20 |
 | `apar3d:trainingDone` | `true/false` |
 | `apar3d:participantName` | string opsional (untuk PDF) |
 Relasi: tidak ada relasi antar entitas; Results membaca `attempts` dan `configs`.
+
+T1.7 (28 Okt 2026): `agent`/`capacity`/`color` menyimpan ID opsi produk; `bracket` boolean. Pemetaan ke state aktif adalah `{ agentId: agent, capacityId: capacity, colorId: color, bracketEnabled: bracket }`. ID berupa 32 digit hex acak 128-bit dari `crypto.getRandomValues`, tersedia juga pada HTTP LAN. Nama dipangkas spasi tepi, wajib berisi 1–60 unit karakter sesuai maxlength input native; nama duplikat tetap entri berbeda. Default bilingual `Config #n`/`Konfigurasi #n`, n = jumlah simpanan + 1, bukan penghitung permanen. Nama tersimpan tidak diterjemahkan.
+
+Daftar diurutkan berdasarkan `createdAt` terbaru dahulu; timestamp sama mempertahankan urutan entri (simpanan baru di depan). Snapshot harga IDR/USD dicatat saat Save, sedangkan Load menghitung harga/spek dari katalog saat ini. Refresh hanya mempertahankan daftar; state aktif kembali ke default sampai pengguna menekan Muat. Batas 10 menawarkan penggantian entri terlama dengan konfirmasi bernama; Delete juga memerlukan konfirmasi.
+
+`storage.read()` membedakan `empty`/`ok`/`invalid`/`unavailable`; API get/set bahasa tetap kompatibel. Seluruh envelope dan entri divalidasi: versi, array maksimal 10, ID unik, nama, tanggal ISO, ID opsi, boolean bracket, serta harga numerik finite nonnegatif. Data tidak valid/versi asing dipertahankan dan tidak dimigrasi/dihapus otomatis. Tidak ada data configs versi lama yang dirilis sebelum T1.7. Penulisan penggantian menggunakan satu setItem untuk seluruh daftar; UI sukses hanya setelah berhasil. Target Delete/penggantian dibaca ulang dan jika berubah harus dikonfirmasi kembali. Tidak menambahkan sinkronisasi realtime atau transaksi lintas tab.

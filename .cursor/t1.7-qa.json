@@ -1,0 +1,196 @@
+{
+  "date": "2026-10-28",
+  "checks": [
+    {
+      "name": "Empty state, default name, blank validation, Escape and focus return",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Trimmed name persists across refresh; manual Load restores all four choices, specs, price, scale and focus",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Duplicate names, text-only HTML-like names, 60-character name, and Enter save",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "EN/ID summaries, currencies, dialog copy, typed/stored names and persisted language",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Ten-save limit, named oldest confirmation, cancel, successful replacement",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Delete confirmation defaults to Cancel; Escape retains data; confirmed delete updates list/focus",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Stale full-list confirmation requires a second confirmation without deleting another entry",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Stale delete confirms updated name instead of deleting silently",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Quota failure shows error and preserves all ten saved configurations",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Corrupt JSON, unknown schema and invalid entries remain untouched; configurator still works",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Configure/Train lifecycle, About Escape, Load during hotspot camera tween",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Delete all and reload returns to empty state",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Unavailable localStorage leaves app and variant controls usable",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Model failure disables Save; Retry re-enables it",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Save on insecure LAN origin works without crypto.randomUUID",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Mobile dialog EN/ID, text 200%, scroll/hit-tested actions 360x800",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Mobile dialog EN/ID, text 200%, scroll/hit-tested actions 390x844",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Mobile dialog EN/ID, text 200%, scroll/hit-tested actions 768x1024",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Mobile dialog EN/ID, text 200%, scroll/hit-tested actions 844x390",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Mobile dialog EN/ID, text 200%, scroll/hit-tested actions 390x420",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Mobile touch Load, hotspot hides/restores saved UI, reduced motion",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "No unexpected desktop/mobile JavaScript or console errors",
+      "status": "PASS",
+      "detail": {}
+    }
+  ],
+  "errors": [],
+  "production": [
+    {
+      "name": "Production keyboard Space/Tab/Enter saves and loads a second distinct variant",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Production failed Delete retains data; retry succeeds",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Escape closes configuration dialog first and hotspot card second",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Contrast of all new text/input/error/focus pairings meets AA",
+      "status": "PASS",
+      "detail": {
+        "text": 15.868757233675552,
+        "muted": 6.768660625226347,
+        "primary": 12.014709434605603,
+        "error": 5.771983612862361,
+        "focus": 11.210244946725082,
+        "input": 17.160526914336714
+      }
+    },
+    {
+      "name": "Production LAN touch Save, Load, Delete cancel/confirm and empty state",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Short viewport simulating keyboard space can submit a focused form; physical OS keyboard not tested",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Production touch targets at least 44px and expanded sheet screenshot reviewed",
+      "status": "PASS",
+      "detail": [
+        {
+          "width": 356,
+          "height": 44
+        },
+        {
+          "width": 58.375,
+          "height": 44
+        },
+        {
+          "width": 65.15625,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "Special dollar sequences in names remain literal in accessible labels and confirmation",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Saved list with long names and text 200% remains usable at 360x800",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Saved list with long names and text 200% remains usable at 844x390",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "Production desktop and mobile no JavaScript errors",
+      "status": "PASS",
+      "detail": {}
+    }
+  ],
+  "instrumentationNotes": [
+    "Initial contrast probe did not expand minified three-digit hex tokens; corrected the probe and reran successfully."
+  ]
+}
