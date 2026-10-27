@@ -11,7 +11,7 @@ Belum diverifikasi: Sketchfab dan Quaternius untuk APAR — tidak dicek dalam ri
 ## Environment & tekstur
 | Aset | Sumber | Lisensi |
 |---|---|---|
-| HDRI `studio_small_09` (1K .hdr) | https://polyhaven.com/a/studio_small_09 | CC0 |
+| HDRI `studio_small_09` (1K .hdr) → file disk `public/hdri/studio_1k.hdr` (~1577 KB) | https://polyhaven.com/a/studio_small_09 | CC0 |
 | Ikon UI | Lucide (https://lucide.dev, ISC) — SVG inline, hanya yang dipakai | ISC |
 | Font Inter, JetBrains Mono | @fontsource (npm) | OFL-1.1 |
 | Api/semprotan | sprite/particle dibuat procedural di kode | — |
