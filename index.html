@@ -11,12 +11,25 @@
         <span class="topbar__name" data-i18n="app.name"></span>
         <span class="topbar__tagline" data-i18n="app.tagline"></span>
       </div>
-      <div class="lang-toggle" role="group">
-        <button type="button" data-lang="en" data-i18n="lang.en"></button>
-        <button type="button" data-lang="id" data-i18n="lang.id"></button>
+      <nav class="tabs">
+        <a class="tab" href="#configure" data-i18n="tabs.configure"></a>
+        <a class="tab" href="#train" data-i18n="tabs.train"></a>
+        <a class="tab" href="#results" data-i18n="tabs.results"></a>
+      </nav>
+      <div class="topbar__actions">
+        <div class="lang-toggle" role="group">
+          <button type="button" data-lang="en" data-i18n="lang.en"></button>
+          <button type="button" data-lang="id" data-i18n="lang.id"></button>
+        </div>
+        <a class="topbar__about" href="#about" data-i18n="tabs.about"></a>
       </div>
     </header>
     <div id="canvas-root"></div>
+    <section id="panel" class="panel" aria-labelledby="panel-title">
+      <button type="button" class="panel__handle" aria-expanded="false" aria-controls="panel-body"></button>
+      <h2 id="panel-title" class="panel__title"></h2>
+      <div id="panel-body" class="panel__body"></div>
+    </section>
     <div id="app"></div>
     <div id="splash" class="splash" role="status" aria-live="polite">
       <p class="splash__title" data-i18n="app.name"></p>
@@ -27,6 +40,21 @@
       <p class="splash__error" data-i18n="splash.error" hidden></p>
       <button type="button" class="splash__retry" data-i18n="splash.retry" hidden></button>
     </div>
+    <dialog id="about" class="modal" aria-labelledby="about-title">
+      <div class="modal__body">
+        <h2 id="about-title" class="modal__title" data-i18n="tabs.about"></h2>
+        <p data-i18n="disclaimer"></p>
+        <section class="modal__section">
+          <h3 data-i18n="emergency.title"></h3>
+          <p data-i18n="emergency.fire"></p>
+          <p data-i18n="emergency.general"></p>
+          <p class="modal__muted" data-i18n="emergency.source"></p>
+        </section>
+        <p class="modal__muted" data-i18n="credits.assets"></p>
+        <button type="button" class="modal__close" data-i18n="modal.close"></button>
+      </div>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -9,7 +9,7 @@ Status: ⬜ todo · 🟨 in progress · ✅ done · ⛔ blocked
 | T0.3 Pipeline & load model | ✅ | 2026-10-27 | apar.glb 679 KB (Draco + WebP), splash %/slow/error+Retry; divalidasi Barkah. |
 | T0.4 Deploy Vercel + subdomain | ✅ | 2026-10-27 | Live di https://trainer.barkahmauludi.com (HTTPS, Valid Configuration) + apar-3d-trainer.vercel.app; vercel.json cache headers terverifikasi; CNAME di Rumahweb; divalidasi Barkah. |
 | T1.1 i18n | ✅ | 2026-10-27 | i18n.js (t/setLang/lang:change/data-i18n) + storage.js get/set + topbar minimal (nama, tagline, toggle EN\|ID di atas splash); en/id.json 25 key (Copy inti + emergency.*); `npm run check` cek paritas key; divalidasi Barkah. |
-| T1.2 Layout UI & router | ⬜ | | |
+| T1.2 Layout UI & router | ✅ | 2026-10-27 | Topbar 3 tab + About (modal), hash router, panel kanan desktop / bottom sheet HP (30%/80%), toast & modal (toast dipakai di T1.7); build + check sukses; divalidasi Barkah. |
 | T1.3 Hotspot posisi & picking | ⬜ | | |
 | T1.4 Hotspot UI | ⬜ | | |
 | T1.5 Warna & bracket | ⬜ | | |

@@ -13,8 +13,19 @@ body {
 
 #canvas-root {
   position: fixed;
-  inset: 0;
+  top: var(--topbar-h);
+  left: 0;
+  right: 0;
+  height: calc(70vh - var(--topbar-h));
+  height: calc(70dvh - var(--topbar-h));
   background: radial-gradient(ellipse at center, var(--bg-grad), var(--bg));
+}
+
+@media (min-width: 1024px) {
+  #canvas-root {
+    inset: 0;
+    height: auto;
+  }
 }
 
 #canvas-root canvas {

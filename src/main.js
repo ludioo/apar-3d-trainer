@@ -8,6 +8,9 @@ import { initControls } from './core/controls.js';
 import { loadModel } from './core/loader.js';
 import { on } from './core/events.js';
 import { initLang, getLang, setLang, t } from './i18n/i18n.js';
+import { initRouter, closeOverlay } from './core/router.js';
+import { openModal, closeModal } from './ui/modal.js';
+import { initSheet } from './ui/sheet.js';
 
 const MODEL_HEIGHT = 1.2;
 const SLOW_LOAD_MS = 8000;
@@ -22,6 +25,34 @@ langButtons.forEach((b) => b.addEventListener('click', () => setLang(b.dataset.l
 on('lang:change', syncLangToggle);
 initLang();
 syncLangToggle();
+
+const tabs = document.querySelector('.tabs');
+const tabLinks = tabs.querySelectorAll('.tab');
+const panel = document.getElementById('panel');
+const panelTitle = document.getElementById('panel-title');
+const sheetHandle = panel.querySelector('.panel__handle');
+const about = document.getElementById('about');
+let mode;
+
+function syncChrome() {
+  tabs.setAttribute('aria-label', t('nav.label'));
+  sheetHandle.setAttribute('aria-label', t('sheet.toggle'));
+  if (mode) panelTitle.textContent = t(`tabs.${mode}`);
+}
+on('lang:change', syncChrome);
+on('route:change', (route) => {
+  mode = route.mode;
+  tabLinks.forEach((a) => {
+    if (a.hash === `#${mode}`) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
+  });
+  syncChrome();
+});
+on('about:open', () => openModal(about, closeOverlay));
+about.querySelector('.modal__close').addEventListener('click', () => closeModal(about));
+initSheet(panel, sheetHandle);
+syncChrome();
+initRouter({ configure: {}, train: {}, results: {} });
 
 const root = document.getElementById('canvas-root');
 const { scene, camera, renderer } = initScene(root);

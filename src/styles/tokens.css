@@ -37,12 +37,25 @@
 
   /* Shadow */
   --shadow-panel: 0 8px 32px rgba(0, 0, 0, 0.35);
+  --backdrop: rgba(0, 0, 0, 0.6);
+
+  /* Layout */
+  --topbar-row: 56px;
+  --tabs-row: 44px;
+  --topbar-h: calc(var(--topbar-row) + var(--tabs-row));
+  --panel-w: 360px;
 
   /* Motion */
   --dur-ui-min: 150ms;
   --dur-ui-max: 250ms;
   --dur-cam-min: 600ms;
   --dur-cam-max: 800ms;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --topbar-h: var(--topbar-row);
+  }
 }
 
 /* backdrop-filter: blur(12px) applied on panel components later; solid fallback = --surface-solid */
