@@ -76,6 +76,7 @@
   overflow-wrap: anywhere;
 }
 .results .results__button--primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.results__button:disabled { color: var(--text-muted); border-color: var(--border); cursor: not-allowed; }
 .results__name input {
   min-width: 0;
   width: 100%;

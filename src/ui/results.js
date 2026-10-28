@@ -55,7 +55,7 @@ export function initResultsUi(product, actions) {
   input.type = 'text';
   input.maxLength = 60;
   input.autocomplete = 'name';
-  input.setAttribute('aria-describedby', 'participant-hint participant-status');
+  input.setAttribute('aria-describedby', 'participant-hint participant-status participant-pdf-status');
   const nameHint = node('p', nameSection, 'results__muted');
   nameHint.id = 'participant-hint';
   const nameStatus = node('p', nameSection, 'results__muted');
@@ -65,12 +65,21 @@ export function initResultsUi(product, actions) {
     actions.editName();
     nameStatus.textContent = '';
     input.setAttribute('aria-invalid', 'false');
+    exportStatus.textContent = '';
   });
   input.addEventListener('change', actions.saveName);
   input.addEventListener('blur', actions.saveName);
   input.addEventListener('keydown', (event) => {
     if (event.key === 'Enter' && !event.isComposing) { event.preventDefault(); actions.saveName(); }
   });
+  const exportReport = node('button', nameSection, 'results__button');
+  exportReport.type = 'button';
+  exportReport.dataset.pdf = 'report';
+  nameSection.insertBefore(exportReport, nameStatus);
+  exportReport.addEventListener('click', actions.exportReport);
+  const exportStatus = node('p', nameSection, 'results__error');
+  exportStatus.id = 'participant-pdf-status';
+  exportStatus.setAttribute('role', 'status');
   const clear = node('button', element, 'results__button');
   clear.type = 'button';
   clear.dataset.results = 'clear';
@@ -163,8 +172,12 @@ export function initResultsUi(product, actions) {
     label.textContent = t('results.name');
     nameHint.textContent = t('results.nameHint');
     nameStatus.textContent = state.nameStatus ? t(`results.${state.nameStatus}`) : '';
+    exportReport.disabled = !latest || state.exporting;
+    exportReport.textContent = t(state.exporting ? 'pdf.busy' : 'pdf.report');
+    exportReport.setAttribute('aria-busy', String(!!state.exporting));
+    exportStatus.textContent = state.exportStatus ? t(state.exportStatus) : '';
     nameStatus.className = state.nameStatus && state.nameStatus !== 'saved' ? 'results__error' : 'results__muted';
-    input.setAttribute('aria-invalid', String(state.nameStatus === 'nameInvalid' || state.nameStatus === 'invalid'));
+    input.setAttribute('aria-invalid', String(state.nameStatus === 'nameInvalid' || state.nameStatus === 'invalid' || state.exportStatus === 'pdf.nameUnsupported'));
     clear.textContent = dialogHeading.textContent = t('results.clear');
     explanation.textContent = t('results.clearConfirm');
     cancel.textContent = t('saved.cancel');

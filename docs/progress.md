@@ -19,7 +19,7 @@ Status: ⬜ todo · 🟨 in progress · ✅ done · ⛔ blocked
 | T2.2 Efek api & semprotan | ✅ | 2026-10-28 | Barkah mengonfirmasi pemeriksaan T2.2 lolos; kedua checklist acceptance ditutup. Efek api/semprotan, framing, pause/reduced motion dan padam enam lintasan diterima. Selang/nozzle model tetap statis sesuai batas MVP; arah semprotan mengikuti slider, animasi bagian tetap L4. Check/build dan QA dev/produksi desktop/HP emulasi lolos. Commit/push ke develop diminta; T2.3 tidak dimulai. |
 | T2.3 Kuis | ✅ | 2026-10-28 | Barkah mengonfirmasi kuis dan revisi 1=tuas/2=pin pengaman benar serta lolos; seluruh checklist umum/revisi ditutup. Check/build dan QA Configure/PASS/kuis lolos, riwayat lama dipertahankan. Commit/push ke develop diminta; T2.4 belum dimulai. |
 | T2.4 Dashboard Results | ✅ | 2026-10-28 | Barkah mengonfirmasi T2.4 sudah dicek dan lolos; kedua checklist acceptance ditutup. Dashboard skor/ring, SVG 20 riwayat, tabel jawaban, ringkasan konfigurasi, nama opsional dan Clear/reset sesi diterima. Check/build dan QA lokal lolos; commit/push ke develop diminta. T2.5 tetap belum dimulai. |
-| T2.5 Ekspor PDF | ⬜ | | |
+| T2.5 Ekspor PDF | ✅ | 2026-10-28 | Barkah mengonfirmasi T2.5 sudah dicek dan lolos; empat checklist acceptance ditutup. Report terbaru + spec aktif/capture utuh, jsPDF lazy dan bilingual diterima. Check/build serta QA lokal lolos; dokumen diperbarui dan commit/push ke develop diminta. T3.1 tidak dimulai; main tidak diubah. |
 | T3.1 Performa | ⬜ | | |
 | T3.2 Aksesibilitas & About | ⬜ | | |
 | T3.3 SEO | ⬜ | | |

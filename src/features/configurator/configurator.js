@@ -109,10 +109,37 @@ export function initConfigurator(context) {
   source.target = '_blank';
   source.rel = 'noopener noreferrer';
   source.className = 'config-source';
-  options.append(priceBox, ...variantFields.map(({ field }) => field), colors, bracketLabel, saved.element, status, table, note, source);
+  const exportButton = document.createElement('button');
+  exportButton.type = 'button';
+  exportButton.className = 'saved-button';
+  exportButton.dataset.pdf = 'spec';
+  const exportStatus = document.createElement('p');
+  exportStatus.className = 'config-status';
+  exportStatus.setAttribute('role', 'status');
+  options.append(priceBox, ...variantFields.map(({ field }) => field), colors, bracketLabel, saved.element, status, table, note, source, exportButton, exportStatus);
   let model = null;
   let down = null;
   let colorAvailable = false;
+  let active = false;
+  let exporting = false;
+  let exportMessage = '';
+  let exportRequest = 0;
+  let specification;
+  exportButton.addEventListener('click', async () => {
+    if (!active || !model || exporting) return;
+    const request = ++exportRequest;
+    const isCurrent = () => active && request === exportRequest;
+    exporting = true;
+    exportMessage = '';
+    syncOptions();
+    try {
+      await context.exportSpec(specification, isCurrent);
+    } catch {
+      if (isCurrent()) exportMessage = 'pdf.error';
+    } finally {
+      if (isCurrent()) { exporting = false; syncOptions(); }
+    }
+  });
 
   function syncOptions() {
     const lang = getLang();
@@ -156,6 +183,16 @@ export function initConfigurator(context) {
       heading.textContent = t(`spec.${key}`);
       value.textContent = values[key];
     }
+    specification = { rows: [
+      ...specRows.map(({ key, heading, value }) => [heading.textContent,
+        key === 'agent' && configuration.agentId === 'co2' ? t('pdf.co2') : value.textContent]),
+      [t('config.color'), t(`config.color.${configuration.colorId}`)],
+      [t('config.bracket'), t(configuration.bracketEnabled ? 'saved.bracketOn' : 'saved.bracketOff')],
+    ], price: priceValue.textContent, note: t('config.illustrativeNote'), specSource: product.sources.fireClasses };
+    exportButton.disabled = !model || exporting;
+    exportButton.textContent = t(exporting ? 'pdf.busy' : 'pdf.spec');
+    exportButton.setAttribute('aria-busy', String(exporting));
+    exportStatus.textContent = exportMessage ? t(exportMessage) : '';
     note.textContent = t('config.illustrativeNote');
     source.textContent = t('spec.source');
     const display = trainingAppearance ? defaultConfiguration : configuration;
@@ -190,6 +227,8 @@ export function initConfigurator(context) {
 
   const cancel = () => { down = null; };
   function enter() {
+    active = true;
+    exportMessage = '';
     panelBody.appendChild(options);
     saved.enter();
     syncOptions();
@@ -200,6 +239,9 @@ export function initConfigurator(context) {
   }
 
   function exit() {
+    active = false;
+    exportRequest++;
+    exporting = false;
     cancel();
     canvas.removeEventListener('pointerdown', pointerDown);
     canvas.removeEventListener('pointerup', pointerUp);

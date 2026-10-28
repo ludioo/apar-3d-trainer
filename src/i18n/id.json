@@ -148,5 +148,18 @@
   "emergency.title": "Darurat kebakaran di Indonesia",
   "emergency.fire": "Pemadam Kebakaran: 113",
   "emergency.general": "Darurat umum: 112 (gratis, bisa saat ponsel terkunci; tersedia di daerah yang pemdanya menyelenggarakan layanan 112)",
-  "emergency.source": "Source: Komdigi — layanan112.komdigi.go.id"
+  "emergency.source": "Source: Komdigi — layanan112.komdigi.go.id",
+  "pdf.report": "Unduh laporan PDF",
+  "pdf.spec": "Ekspor PDF spesifikasi",
+  "pdf.reportTitle": "Laporan latihan",
+  "pdf.specTitle": "Spesifikasi konfigurasi",
+  "pdf.busy": "Menyiapkan PDF...",
+  "pdf.error": "PDF belum dapat dibuat. Periksa koneksi lalu coba lagi.",
+  "pdf.nameUnsupported": "Font PDF ini tidak mendukung beberapa karakter pada nama peserta. Ubah nama atau kosongkan, lalu coba lagi.",
+  "pdf.date": "Kuis selesai",
+  "pdf.exported": "Diekspor",
+  "pdf.score": "Skor",
+  "pdf.status": "Status",
+  "pdf.page": "Halaman",
+  "pdf.co2": "CO2"
 }

@@ -148,5 +148,18 @@
   "emergency.title": "Fire emergency in Indonesia",
   "emergency.fire": "Fire department: 113",
   "emergency.general": "General emergency: 112 (free, works on a locked phone; available in areas whose local government runs a 112 service)",
-  "emergency.source": "Source: Komdigi — layanan112.komdigi.go.id"
+  "emergency.source": "Source: Komdigi — layanan112.komdigi.go.id",
+  "pdf.report": "Download PDF report",
+  "pdf.spec": "Export spec PDF",
+  "pdf.reportTitle": "Training report",
+  "pdf.specTitle": "Configuration specification",
+  "pdf.busy": "Preparing PDF...",
+  "pdf.error": "The PDF could not be created. Check your connection and try again.",
+  "pdf.nameUnsupported": "This PDF font cannot display some characters in the participant name. Change the name or leave it blank, then try again.",
+  "pdf.date": "Quiz completed",
+  "pdf.exported": "Exported",
+  "pdf.score": "Score",
+  "pdf.status": "Status",
+  "pdf.page": "Page",
+  "pdf.co2": "CO2"
 }

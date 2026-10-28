@@ -11,6 +11,7 @@ import './training-check.js';
 import './effects-check.js';
 import './quiz-check.js';
 import './results-check.js';
+import './pdf-check.js';
 import { projectPin, placePin } from '../src/ui/hotspot-pins.js';
 import { initCameraTween } from '../src/core/cameraTween.js';
 import { initAppearance } from '../src/features/configurator/appearance.js';

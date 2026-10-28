@@ -1,0 +1,9 @@
+{
+  "origin": "http://localhost:4183",
+  "checks": [
+    "Heavy jsPDF import failure shows recoverable message; same-page retry downloads spec.",
+    "Pending spec cancelled after exit; returning to Configure supports a new download.",
+    "Model load failure disables spec; successful Retry enables it."
+  ],
+  "errors": []
+}

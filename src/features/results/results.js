@@ -6,7 +6,7 @@ import { buildResults, readParticipantName, saveParticipantName } from './result
 import questions from '../../data/quiz.json';
 import hotspots from '../../data/hotspots.json';
 
-export function initResults({ panelBody, product, getAttempts, getConfigs, hasUnsavedResult, resetSessions }) {
+export function initResults({ panelBody, product, getAttempts, getConfigs, hasUnsavedResult, resetSessions, exportReport }) {
   let active = false;
   let offLang;
   let attempts;
@@ -14,10 +14,34 @@ export function initResults({ panelBody, product, getAttempts, getConfigs, hasUn
   let nameStatus;
   let clearStatus = '';
   let dirty = false;
+  let exporting = false;
+  let exportStatus = '';
+  let exportRequest = 0;
   const ui = initResultsUi(product, {
-    editName() { dirty = true; nameStatus = ''; },
+    editName() { dirty = true; nameStatus = ''; exportStatus = ''; },
     saveName,
+    async exportReport() {
+      if (exporting) return;
+      refresh();
+      const report = buildResults(attempts.attempts ?? [], questions, hotspots, getLang());
+      if (!report.latest) return;
+      const request = ++exportRequest;
+      const isCurrent = () => active && request === exportRequest;
+      exporting = true;
+      exportStatus = '';
+      render();
+      try {
+        await exportReport({ attempt: report.latest, rows: report.rows, name: ui.input.value.trim() }, isCurrent);
+      } catch (error) {
+        if (isCurrent()) exportStatus = error.message === 'pdf.nameUnsupported' ? 'pdf.nameUnsupported' : 'pdf.error';
+      } finally {
+        if (isCurrent()) { exporting = false; render(); }
+      }
+    },
     clear() {
+      exportRequest++;
+      exporting = false;
+      exportStatus = '';
       dirty = false;
       ui.input.value = '';
       const result = clearUserData();
@@ -29,7 +53,7 @@ export function initResults({ panelBody, product, getAttempts, getConfigs, hasUn
   });
   function render() {
     ui.render({ attempts, configs, report: buildResults(attempts.attempts ?? [], questions, hotspots, getLang()),
-      nameStatus, clearStatus, unsaved: hasUnsavedResult() });
+      nameStatus, clearStatus, unsaved: hasUnsavedResult(), exporting, exportStatus });
   }
   function refresh() {
     attempts = getAttempts();
@@ -51,6 +75,7 @@ export function initResults({ panelBody, product, getAttempts, getConfigs, hasUn
   return {
     enter() {
       active = true;
+      exportStatus = '';
       clearStatus = '';
       panelBody.append(ui.element);
       ui.enter();
@@ -62,6 +87,8 @@ export function initResults({ panelBody, product, getAttempts, getConfigs, hasUn
       if (!active) return;
       saveName();
       active = false;
+      exportRequest++;
+      exporting = false;
       offLang?.();
       ui.exit();
       ui.element.remove();

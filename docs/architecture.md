@@ -33,7 +33,7 @@ apar-3d-trainer/
 │  │  ├─ training/ training.js training-state.js training-gestures.js training-view.js effects.js
 │  │  ├─ quiz/ quiz.js
 │  │  ├─ results/ results.js results-data.js
-│  │  └─ pdf/ pdf-report.js pdf-spec.js
+│  │  └─ pdf/ pdf-report.js pdf-spec.js pdf-common.js
 │  ├─ ui/ toast.js modal.js components.css hotspot-pins.js hotspots.css configurator.css saved-configs.js saved-configs.css training.js training-target.js training.css results.js results-chart.js results.css
 │  └─ styles/ tokens.css base.css layout.css
 ├─ vite.config.js  package.json  vercel.json  README.md  LICENSE (MIT)
@@ -63,7 +63,8 @@ apar-3d-trainer/
    T2.4: `initResults` pada features/results/results.js memakai lifecycle enter/exit dari router. Bootstrap memberikan callback listAttempts/listConfigs(product), hasUnsavedResult milik quiz, serta resetSessions yang memanggil reset training/quiz dan mengembalikan trainStage ke training. Tidak ada import silang antarfitur. Tombol View results pada ringkasan kuis mengubah hash; enter Results membaca data, lang:change merender ulang tanpa mengganti input atau fokus. Exit menyelesaikan edit nama, melepas listener dan dialog.
    `results-data.js` memvalidasi/membaca/menyimpan nama melalui storage dan menyiapkan kartu/urutan grafik/teks jawaban dari data terverifikasi tanpa mengubah riwayat. DOM/dialog pada ui/results.js, SVG aksesibel pada ui/results-chart.js dan token styling pada results.css; setiap modul <300 baris. Grafik/ring statis tanpa loop/renderer/dependency baru; kanvas existing tetap bersama. Data kosong/rusak/tidak tersedia dan kuis belum tersimpan ditampilkan terpisah. Harga ringkasan berasal dari snapshot simpanan, sesuai bahasa.
    Clear memakai dialog native/helper existing dengan fokus Batal dan pengembalian fokus. Setelah konfirmasi, storage.clearUserData mencoba empat key yang diizinkan dan melaporkan ok/partial/unavailable; bootstrap mereset sesi memori dan Results membuang dirty draft nama sebelum baca ulang. Tidak menghapus bahasa/key aplikasi lain. Metode reset session menghapus fase/jawaban/progres; wrapper fitur juga mereset flag saveFailed, Sweep dan efek. Callback hanya dipanggil saat Results aktif sehingga training/quiz sudah exit; tidak mengaktifkan dua mode bersamaan. Reset tidak menyimpan ulang trainingDone/attempt lama.
-6. PDF: `renderer.domElement.toDataURL()` (renderer dibuat dengan `preserveDrawingBuffer: true` hanya saat capture, atau render ulang sebelum capture) → jsPDF.
+6. T2.5 PDF: bootstrap menyuntikkan callback exportReport/exportSpec, mengambil structuredClone data serta snapshot copy/locale/theme/tanggal sebelum lazy import modul PDF dan `import('jspdf')`. Report menerima latest attempt tervalidasi, baris buildResults dan nama input; spec menerima presentasi harga/spek dari helper existing. `pdf-common.js` mengelola Helvetica/WinAnsi, wrapping, pergantian halaman, tabel, sumber dan footer. Builder mengembalikan dokumen jsPDF; bootstrap hanya memanggil save jika token permintaan masih aktif. Exit/Clear membatalkan token; tidak menulis storage atau membuat event analytics.
+   Capture di `core/scene.js` memakai renderer existing, clone kamera dengan aspek 4:3 dan bounding sphere model, lalu render → toDataURL JPEG 1200×900 secara sinkron. Kamera interaktif dan controls tidak disentuh. Ukuran/pixel ratio/background dan visibility highlight/debug disimpan/dipulihkan dalam finally; live view dirender kembali sebelum kontrol dikembalikan. preserveDrawingBuffer tetap default false; tidak membuat renderer/loop/tekstur baru.
 
 ## Performa
 - Render on demand (hanya saat ada perubahan/animasi), pixelRatio maks 2 (HP maks 1.5).

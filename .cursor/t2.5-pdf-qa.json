@@ -1,0 +1,101 @@
+{
+  "checks": [
+    {
+      "file": "t2.5-name-draft.pdf",
+      "lang": "en",
+      "pages": 2,
+      "bytes": 7957,
+      "images": []
+    },
+    {
+      "file": "t2.5-name-empty.pdf",
+      "lang": "en",
+      "pages": 2,
+      "bytes": 7944,
+      "images": []
+    },
+    {
+      "file": "t2.5-name-latin.pdf",
+      "lang": "en",
+      "pages": 2,
+      "bytes": 7960,
+      "images": []
+    },
+    {
+      "file": "t2.5-name-long.pdf",
+      "lang": "en",
+      "pages": 2,
+      "bytes": 7977,
+      "images": []
+    },
+    {
+      "file": "t2.5-report-en.pdf",
+      "lang": "en",
+      "pages": 2,
+      "bytes": 7952,
+      "images": []
+    },
+    {
+      "file": "t2.5-report-id.pdf",
+      "lang": "id",
+      "pages": 2,
+      "bytes": 7957,
+      "images": []
+    },
+    {
+      "file": "t2.5-snapshot-report.pdf",
+      "lang": "id",
+      "pages": 2,
+      "bytes": 7999,
+      "images": []
+    },
+    {
+      "file": "t2.5-snapshot-spec.pdf",
+      "lang": "id",
+      "pages": 2,
+      "bytes": 57134,
+      "images": [
+        [
+          1200,
+          900
+        ],
+        [
+          1200,
+          900
+        ]
+      ]
+    },
+    {
+      "file": "t2.5-spec-en.pdf",
+      "lang": "en",
+      "pages": 2,
+      "bytes": 51447,
+      "images": [
+        [
+          1200,
+          900
+        ],
+        [
+          1200,
+          900
+        ]
+      ]
+    },
+    {
+      "file": "t2.5-spec-id.pdf",
+      "lang": "id",
+      "pages": 2,
+      "bytes": 51406,
+      "images": [
+        [
+          1200,
+          900
+        ],
+        [
+          1200,
+          900
+        ]
+      ]
+    }
+  ]
+}

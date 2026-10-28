@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://localhost:4183",
+  "checks": [
+    {
+      "name": "Pull and Aim / nozzle and fixed particle limits",
+      "detail": {
+        "root": true,
+        "fire": true,
+        "level": 1,
+        "spray": false,
+        "line": true,
+        "nozzleError": 8.028378302569407e-9,
+        "lineEnd": [
+          -0.3840862512588501,
+          0.019999999552965164,
+          0.7678340673446655
+        ],
+        "particles": [
+          24,
+          72
+        ],
+        "memory": {
+          "geometries": 19,
+          "textures": 17
+        },
+        "calls": 16
+      }
+    },
+    {
+      "name": "Effects add three draw calls with fire, spray and aiming line",
+      "detail": {
+        "baseline": 15,
+        "active": 18,
+        "added": 3
+      }
+    },
+    {
+      "name": "Squeeze keyboard early release and one second success",
+      "detail": {
+        "root": true,
+        "fire": true,
+        "level": 1,
+        "spray": false,
+        "line": true,
+        "nozzleError": 8.028378302569407e-9,
+        "lineEnd": [
+          -0.3840862512588501,
+          0.019999999552965164,
+          0.7678340673446655
+        ],
+        "particles": [
+          24,
+          72
+        ],
+        "memory": {
+          "geometries": 20,
+          "textures": 18
+        },
+        "calls": 16
+      }
+    },
+    {
+      "name": "Sweep direction and 180ms spray idle stop",
+      "detail": {
+        "left": [
+          -0.6590862274169922,
+          0.019999999552965164,
+          0.7678340673446655
+        ],
+        "right": [
+          -0.10908625274896622,
+          0.019999999552965164,
+          0.7678340673446655
+        ]
+      }
+    },
+    {
+      "name": "Desktop active fire rendered FPS (Chrome headless, no CPU throttle)",
+      "detail": {
+        "renderedFrames": 197,
+        "durationMs": 1100,
+        "fps": 179.09090909090907,
+        "p95Ms": 6.399999998509884
+      }
+    },
+    {
+      "name": "Six strokes extinguish / Finish remains manual / renderer idle",
+      "detail": {
+        "root": true,
+        "fire": false,
+        "level": 0,
+        "spray": false,
+        "line": false,
+        "nozzleError": 8.028378302569407e-9,
+        "lineEnd": [
+          -0.6590862274169922,
+          0.019999999552965164,
+          0.7678340673446655
+        ],
+        "particles": [
+          24,
+          72
+        ],
+        "memory": {
+          "geometries": 20,
+          "textures": 18
+        },
+        "calls": 14
+      }
+    },
+    {
+      "name": "About, blur and visibility stop effects / resume has no unsolicited spray",
+      "detail": {
+        "root": true,
+        "fire": true,
+        "level": 0.8333333333333334,
+        "spray": false,
+        "line": true,
+        "nozzleError": 8.028378302569407e-9,
+        "lineEnd": [
+          -0.10908625274896622,
+          0.019999999552965164,
+          0.7678340673446655
+        ],
+        "particles": [
+          24,
+          72
+        ],
+        "memory": {
+          "geometries": 20,
+          "textures": 18
+        },
+        "calls": 16
+      }
+    },
+    {
+      "name": "Mode lifecycle / stable resources / Back / Skip keeps actual count",
+      "detail": {
+        "root": true,
+        "fire": false,
+        "level": 0,
+        "spray": false,
+        "line": false,
+        "nozzleError": 8.028378302569407e-9,
+        "lineEnd": [
+          -0.10908625274896622,
+          0.019999999552965164,
+          0.7678340673446655
+        ],
+        "particles": [
+          24,
+          72
+        ],
+        "memory": {
+          "geometries": 20,
+          "textures": 18
+        },
+        "calls": 14
+      }
+    }
+  ],
+  "errors": []
+}

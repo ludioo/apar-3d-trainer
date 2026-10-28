@@ -4,7 +4,7 @@ import './styles/layout.css';
 import './ui/components.css';
 import './ui/hotspots.css';
 import { Box3, Mesh, MeshBasicMaterial, SphereGeometry, Vector3 } from 'three';
-import { initScene, requestRender } from './core/scene.js';
+import { initScene, requestRender, captureModel } from './core/scene.js';
 import { initControls } from './core/controls.js';
 import { loadModel } from './core/loader.js';
 import { on } from './core/events.js';
@@ -19,6 +19,7 @@ import { initQuiz } from './features/quiz/quiz.js';
 import { initResults } from './features/results/results.js';
 import { listAttempts } from './features/quiz/attempts.js';
 import { listConfigs } from './features/configurator/saved-configs.js';
+import { snapshotPdf, validPdfName } from './features/pdf/pdf-common.js';
 import product from './data/product.json';
 import hotspots from './data/hotspots.json';
 
@@ -71,9 +72,23 @@ controls.target.set(0, MODEL_HEIGHT / 2, 0);
 controls.update();
 
 const highlight = initHighlight(scene, camera, requestRender);
+async function exportPdf(type, data, isCurrent) {
+  if (type === 'report' && !validPdfName(data.name)) throw new RangeError('pdf.nameUnsupported');
+  const styles = getComputedStyle(document.documentElement);
+  const theme = Object.fromEntries(['paper', 'ink', 'muted', 'rule'].map((key) => [key, styles.getPropertyValue(`--pdf-${key}`).trim()]));
+  theme.accent = styles.getPropertyValue('--accent').trim();
+  const snapshot = { ...structuredClone(data), ...snapshotPdf(t, getLang(), theme) };
+  if (type === 'spec') snapshot.image = captureModel(model, [highlight.ring]);
+  const doc = type === 'report'
+    ? await (await import('./features/pdf/pdf-report.js')).buildReport(snapshot)
+    : await (await import('./features/pdf/pdf-spec.js')).buildSpec(snapshot);
+  if (!isCurrent()) return;
+  await doc.save(`apar-${type}-${snapshot.lang}-${snapshot.exportedAt.slice(0, 10)}.pdf`, { returnPromise: true });
+}
 const configurator = initConfigurator({
   camera, controls, canvas: renderer.domElement, container: root,
   panelBody: document.getElementById('panel-body'), highlight, requestRender,
+  exportSpec: (data, isCurrent) => exportPdf('spec', data, isCurrent),
 });
 const training = initTraining({
   scene, camera, controls, canvas: renderer.domElement, container: root,
@@ -91,6 +106,7 @@ const results = initResults({
   getAttempts: listAttempts, getConfigs: () => listConfigs(product),
   hasUnsavedResult: quiz.hasUnsavedResult,
   resetSessions() { training.reset(); quiz.reset(); trainStage = training; },
+  exportReport: (data, isCurrent) => exportPdf('report', data, isCurrent),
 });
 on('quiz:start', () => {
   if (getMode() !== 'train' || trainStage !== training) return;

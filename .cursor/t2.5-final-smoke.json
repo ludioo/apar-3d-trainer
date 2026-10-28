@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://localhost:4183",
+  "checks": [
+    "Final production: WinAnsi unsupported U+2015 rejected with linked status/aria-invalid; editing recovers; Space downloads report.",
+    "Final production: unsaved CO2 9kg/silver/bracket spec downloads."
+  ],
+  "errors": []
+}

@@ -1,10 +1,15 @@
 import {
   ACESFilmicToneMapping,
+  Box3,
+  Color,
   DirectionalLight,
   EquirectangularReflectionMapping,
   PerspectiveCamera,
   PlaneGeometry,
   Scene,
+  Sphere,
+  Vector2,
+  Vector3,
   ShadowMaterial,
   WebGLRenderer,
   Mesh,
@@ -24,6 +29,40 @@ export function requestRender() {
     renderQueued = false;
     renderer.render(scene, camera);
   });
+}
+
+export function captureModel(model, excluded = []) {
+  if (!model || renderer.getContext().isContextLost()) throw new Error('Capture unavailable');
+  const size = renderer.getSize(new Vector2());
+  const pixelRatio = renderer.getPixelRatio();
+  const background = scene.background;
+  const hidden = new Map();
+  model.traverse((object) => { if (object.userData.debugMarker) excluded.push(object); });
+  for (const object of excluded) hidden.set(object, object.visible);
+  try {
+    for (const object of hidden.keys()) object.visible = false;
+    const bounds = new Box3().setFromObject(model).getBoundingSphere(new Sphere());
+    const captureCamera = camera.clone();
+    captureCamera.aspect = 4 / 3;
+    const angle = captureCamera.fov * Math.PI / 360;
+    const distance = bounds.radius / Math.sin(angle) * 1.15;
+    captureCamera.position.copy(bounds.center).addScaledVector(new Vector3(0.25, 0.12, 1).normalize(), distance);
+    captureCamera.lookAt(bounds.center);
+    captureCamera.updateProjectionMatrix();
+    scene.background = new Color(getComputedStyle(document.documentElement).getPropertyValue('--bg').trim());
+    renderer.setPixelRatio(1);
+    renderer.setSize(1200, 900, false);
+    renderer.render(scene, captureCamera);
+    const image = renderer.domElement.toDataURL('image/jpeg', 0.9);
+    if (!image.startsWith('data:image/jpeg;base64,') || renderer.getContext().isContextLost()) throw new Error('Capture failed');
+    return image;
+  } finally {
+    for (const [object, visible] of hidden) object.visible = visible;
+    scene.background = background;
+    renderer.setPixelRatio(pixelRatio);
+    renderer.setSize(size.x, size.y, false);
+    if (!renderer.getContext().isContextLost()) renderer.render(scene, camera);
+  }
 }
 
 export function initScene(container) {

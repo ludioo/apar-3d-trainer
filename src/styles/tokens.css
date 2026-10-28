@@ -12,6 +12,10 @@
   --brand-red: #d7263d;
   --success: #2bc48a;
   --danger: #ff5a5f;
+  --pdf-paper: #ffffff;
+  --pdf-ink: #16191e;
+  --pdf-muted: #545b66;
+  --pdf-rule: #c7cbd1;
 
   /* Typography scale */
   --fs-12: 12px;

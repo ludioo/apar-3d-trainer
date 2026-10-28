@@ -130,10 +130,22 @@ Bukti AI: `.cursor/t2.4-check.cjs`, `t2.4-dev-qa.json`, `t2.4-qa.json`, screensh
 28 Okt 2026: Barkah meminta status/checklist T2.4 selesai, dokumen diperbarui, serta commit/push ke develop. Seluruh catatan menunggu acceptance T2.4 pada riwayat sebelumnya ditutup. Tidak ada bug baru yang dilaporkan. Check/build dijalankan ulang sebelum commit; T2.5 tetap belum dimulai dan main tidak diubah.
 
 ## T2.5
-- [ ] Download PDF report → berisi nama, skor, tanggal, disclaimer & sumber.
-- [ ] PDF spec berisi gambar 3D & harga.
-- [ ] Bahasa PDF mengikuti toggle.
-- [ ] PDF report memuat nomor darurat 113 (Pemadam) & 112 (umum) + sumber Komdigi di bawah disclaimer.
+- [x] Download PDF report → berisi nama, skor, tanggal, disclaimer & sumber.
+- [x] PDF spec berisi gambar 3D & harga.
+- [x] Bahasa PDF mengikuti toggle.
+- [x] PDF report memuat nomor darurat 113 (Pemadam) & 112 (umum) + sumber Komdigi di bawah disclaimer.
+
+28 Okt 2026: validasi Q1–Q5 dan rencana disetujui Barkah sebelum implementasi. Barkah kemudian mengonfirmasi T2.5 sudah dicek dan lolos; empat checkbox ditutup berdasarkan konfirmasi tersebut. Check/build lolos. Preview desktop `http://localhost:4183/#results` / `#configure`; HP satu Wi-Fi `http://192.168.100.4:4183/#results` / `#configure` (alamat LAN dapat berubah). Refresh untuk build T2.5.
+
+Langkah cek T2.5:
+1. Hasil tanpa riwayat: Unduh laporan PDF nonaktif. Selesaikan kuis delapan soal, buka Hasil, isi nama atau kosongkan, lalu Unduh laporan PDF. Cek nama, skor/persentase/status, tanggal kuis, durasi, delapan jawaban, disclaimer persis, sumber USFA/Permenaker, 113/112 + keterangan dan sumber Komdigi di bawah disclaimer, URL dan nomor halaman. Skor 5/8 tetap bisa diunduh sebagai Belum lulus; 6/8 Lulus.
+2. Configure: pilih CO2, 9 kg, perak dan bracket; klik Ekspor PDF spesifikasi tanpa harus Save. Gambar harus utuh, pilihan dan delapan baris rincian termasuk warna/bracket cocok, harga ilustrasi IDR 1.100.000 atau USD 71. Putar model atau buka close-up pada desktop, ekspor lagi dan pastikan view kembali sama. Di HP, tutup kartu bagian untuk mengungkap opsi/tombol ekspor existing.
+3. Ganti EN/ID lalu ekspor ulang kedua jenis PDF. Judul/isi/tanggal/mata uang mengikuti bahasa saat klik; nama peserta tetap. Coba nama kosong/panjang; nama seperti aksara non-Latin/emoji memberi pesan khusus, tetap tersimpan di input dan bisa diubah/dikosongkan untuk ekspor.
+4. Di HP coba kedua snap dan portrait/landscape; gulir sampai tombol. Periksa PDF hasil unduh di pembaca PDF perangkat, teks dapat dipilih dan setiap halaman tidak terpotong. Selama proses tombol busy; pindah tab atau Clear sebelum proses selesai membatalkan unduhan yang masih menunggu.
+
+Bukti AI: `.cursor/t2.5-check.cjs`, laporan dev/produksi `t2.5-dev-qa.json`/`t2.5-qa.json`, `t2.5-errors*.json`, PDF/raster dan validasi isi `.cursor/t2.5-pdf-qa.json`. QA empat kelompok mencakup report/snapshot/lifecycle/layout, 24 kombinasi capture dan 40 kombinasi viewport × EN/ID × teks 100/200% × dua snap untuk dua tombol, touch/keyboard, import/capture/model failure dan retry. Pemeriksaan 10 PDF produksi/20 halaman menguji teks, nama Latin/60/kosong/draft, harga, urutan disclaimer/kontak, link dan margin, lalu dirender dan ditinjau visual. Regresi Results/kuis/PASS/efek memiliki bukti T2.5 terpisah. Detail dan batas QA di known-issues; HP fisik, screen reader/AT, Firefox/Safari dan Lighthouse/4G belum diverifikasi. Tidak commit/push/deploy atau lanjut T3.1.
+
+28 Okt 2026: acceptance final T2.5 diterima, status/checklist selesai dan pembaruan dokumen serta commit/push ke develop diminta Barkah. Catatan menunggu acceptance pada riwayat implementasi ditutup. Tidak ada bug baru yang dilaporkan; rincian perangkat pemeriksaan Barkah tidak dicatat sehingga batas QA AI di atas tetap berlaku. Check/build dijalankan ulang sebelum commit. T3.1 tidak dimulai dan main tidak diubah.
 
 ## T3.1
 - [ ] Lighthouse mobile Performance ≥ 85.

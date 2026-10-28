@@ -66,6 +66,14 @@ Nama peserta opsional dan satu untuk browser ini; maksimal 60 unit karakter nati
 
 Clear my data meminta konfirmasi dengan fokus awal Batal; Escape/Batal/backdrop menutup tanpa menghapus dan mengembalikan fokus. Konfirmasi menghapus attempts/configs/participantName/trainingDone, menjaga bahasa dan key aplikasi lain, serta mereset PASS ke intro dan kuis ke idle termasuk hasil belum tersimpan. Clear juga membuang draft nama agar blur/keluar tab tidak menyimpannya kembali. Penghapusan multi-key bukan transaksi: setiap key dicoba; gagal sebagian/total menampilkan pesan sesuai keadaan dan data yang masih dapat dibaca. Sesi memori tetap direset, percobaan ulang hanya lewat konfirmasi Clear berikutnya.
 
+### Ekspor T2.5 (diterima Barkah 28 Okt 2026)
+
+Configure menyediakan Ekspor PDF spesifikasi setelah tabel/catatan/sumber, aktif setelah model siap. PDF memakai pilihan aktif, harga saat ekspor dan spek ilustrasi, tanpa wajib Save. Gambar APAR memakai framing utuh standar dengan model/bracket/warna/label aktif; orbit/kamera/fokus/snap tidak berubah sesudah capture, termasuk bila capture gagal.
+
+Results menyediakan Unduh laporan PDF setelah input nama/petunjuk. Tombol aktif hanya bila ada attempt tersimpan valid; report sama dengan percobaan terbaru pada dashboard, termasuk skor belum lulus, tanggal selesai, durasi dan delapan jawaban. Nama dipangkas dari input saat klik, kosong menjadi tanda -, termasuk draft yang gagal disimpan; nama bukan bukti identitas pemilik riwayat lama. Pesan status simpan berada di bawah tombol agar perubahan teks saat blur tidak menggeser target klik. Nama dengan karakter di luar dukungan Helvetica/WinAnsi menampilkan pesan untuk mengubah/mengosongkan nama; input tetap dipertahankan.
+
+Kedua PDF A4 putih berisi teks selectable, disclaimer existing, kontak 113/112 dan sumber Komdigi di bawah disclaimer, sumber K3, serta URL produksi. Bahasa dan format angka/tanggal/harga memakai pilihan saat klik (ID→IDR, EN→USD); perubahan selama pemuatan library berlaku pada ekspor berikutnya. Nama file apar-report/spec-bahasa-tanggal.pdf tidak memuat nama peserta. Tombol busy mencegah ekspor ganda. Gagal library/capture/pembuatan PDF memberikan pesan dan dapat dicoba lagi. Keluar dari fitur atau Clear membatalkan unduhan yang masih menunggu; masuk lagi memungkinkan permintaan baru. Tidak mengubah simpanan atau hasil historis.
+
 ## UF5 — Bahasa (F10)
 Toggle EN/ID → semua teks UI, data hotspot, soal kuis, mata uang harga, dan PDF berganti tanpa reload. Pilihan disimpan.
 
