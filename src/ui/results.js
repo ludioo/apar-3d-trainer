@@ -16,8 +16,10 @@ export function initResultsUi(product, actions) {
   heading.tabIndex = -1;
   const unsaved = node('p', element, 'results__error');
   const attemptStatus = node('p', element, 'results__muted');
-  const train = node('a', element, 'results__button results__button--primary');
-  train.href = '#train';
+  const train = node('button', element, 'results__button results__button--primary');
+  train.type = 'button';
+  train.dataset.route = 'train';
+  train.addEventListener('click', () => { location.hash = 'train'; });
   const scoreCard = node('section', element, 'results__score-card');
   const ring = node('div', scoreCard, 'results__ring');
   const percentLabel = node('strong', ring);
@@ -45,8 +47,10 @@ export function initResultsUi(product, actions) {
   const configsHeading = node('h3', configsSection);
   const configsStatus = node('p', configsSection, 'results__muted');
   const configsList = node('ul', configsSection, 'results__configs');
-  const manage = node('a', configsSection, 'results__button');
-  manage.href = '#configure';
+  const manage = node('button', configsSection, 'results__button');
+  manage.type = 'button';
+  manage.dataset.route = 'configure';
+  manage.addEventListener('click', () => { location.hash = 'configure'; });
   const nameSection = node('section', element, 'results__name');
   const label = node('label', nameSection);
   label.htmlFor = 'participant-name';

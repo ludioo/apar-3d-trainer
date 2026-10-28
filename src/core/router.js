@@ -29,6 +29,7 @@ function sync() {
     return;
   }
   if (location.hash !== `#${next}`) history.replaceState(null, '', `#${next}`);
+  emit('about:close');
   activate(next);
 }
 

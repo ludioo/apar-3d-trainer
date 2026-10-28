@@ -84,7 +84,7 @@ export function initQuizUi(questions, actions) {
     if (currentId !== question.id) {
       currentId = question.id;
       choices.replaceChildren();
-      for (const choice of question.choices ?? []) {
+      for (const choice of question.choices ?? hotspots) {
         const option = document.createElement('button');
         option.type = 'button';
         option.dataset.choice = choice.id;
@@ -106,10 +106,10 @@ export function initQuizUi(questions, actions) {
     heading.textContent = summary ? t(session.attempt.passed ? 'quiz.passed' : 'quiz.failed') : question.question[lang];
     hint.hidden = summary || !!answer;
     hint.textContent = t(!ready ? 'quiz.loading' : pick ? 'quiz.pickHint' : 'quiz.choiceHint');
-    choices.hidden = summary || pick;
+    choices.hidden = summary;
     [...choices.children].forEach((button, index) => {
-      const choice = question.choices[index];
-      button.textContent = choice.label[lang];
+      const choice = (question.choices ?? hotspots)[index];
+      button.textContent = pick ? t('quiz.part').replace('{n}', index + 1) : choice.label[lang];
       button.disabled = !ready || !!answer;
       button.setAttribute('aria-pressed', String(answer?.given === choice.id));
       button.dataset.result = !answer ? '' : choice.id === question.answer ? 'correct'

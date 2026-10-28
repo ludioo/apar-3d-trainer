@@ -6,13 +6,13 @@
   z-index: 110;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  grid-template-rows: var(--topbar-row) var(--tabs-row);
+  grid-template-rows: minmax(var(--topbar-row), auto) minmax(var(--tabs-row), auto);
   grid-template-areas:
     'brand actions'
     'tabs tabs';
   align-items: center;
   column-gap: var(--space-16);
-  height: var(--topbar-h);
+  min-height: var(--topbar-row);
   padding: 0 var(--space-16);
   background: var(--surface-solid);
   border-bottom: 1px solid var(--border);
@@ -38,14 +38,15 @@
 .topbar__name {
   font-size: var(--fs-16);
   font-weight: 700;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
+  line-height: 1.25;
 }
 
 .topbar__tagline {
   display: none;
   font-size: var(--fs-14);
   color: var(--text-muted);
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .tabs {
@@ -113,10 +114,11 @@
 
 @media (min-width: 1024px) {
   .topbar {
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: var(--topbar-row);
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    grid-template-rows: minmax(var(--topbar-row), auto);
     grid-template-areas: 'brand tabs actions';
   }
+  .topbar__brand { flex-wrap: wrap; gap: var(--space-4) var(--space-12); }
 
   .topbar__tagline {
     display: inline;

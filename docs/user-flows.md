@@ -5,7 +5,7 @@ Navigasi: single page dengan 3 tab di top bar — **Configure**, **Train**, **Re
 ## UF0 — Masuk & loading
 1. Buka URL → splash: logo/nama, progress bar % (dari LoadingManager), teks "Loading 3D model…".
 2. Model tampil, auto-rotate pelan, tab default `Configure`.
-- **Error WebGL tidak didukung**: pesan + gambar statis APAR + link ke video demo.
+- **Error WebGL tidak didukung/gagal membuat renderer saat startup**: pesan bilingual + gambar statis APAR aplikasi sendiri; navigasi fitur/panel/splash disembunyikan. Bahasa dan About tetap bekerja termasuk URL #about. Tautan video ditunda sampai video T3.4 benar-benar tersedia (disetujui Barkah pada T3.2); tidak menampilkan tautan kosong. Gagal model tetap jalur Retry, bukan fallback WebGL.
 - **Error gagal load model**: pesan + tombol "Retry".
 - **Loading > 8 dtk**: tampilkan teks "Slow connection, still loading…".
 
@@ -82,3 +82,8 @@ Tidak terlihat user. Tanpa banner cookie (Umami tidak memakai cookie). Jika Umam
 
 ## UF6 — About (F11)
 Modal/section: penjelasan demo, tech yang dipakai, disclaimer K3, kredit aset (CC0), link barkahmauludi.com, GitHub, kontak.
+
+T3.2: About memuat JavaScript ES modules/three.js/Vite/jsPDF, sumber USFA dan salinan Permenaker PER.04/MEN/1980, disclaimer persis existing, kontak 113/112/sumber Komdigi, tautan dua aset Poly Haven CC0, portfolio/kontak dan repo GitHub. Umami diberi label "Direncanakan" sampai T3.6. Fokus awal judul, Tab/Shift+Tab dibatasi dalam dialog; Tutup/Escape/backdrop mengembalikan fokus ke tautan About. Back/Forward hash juga menutup/membuka overlay tanpa mengganti sesi fitur.
+
+### Akses keyboard T3.2
+Tab/Shift+Tab berpindah kontrol, Enter/Space mengaktifkan tombol, Escape menutup dialog/kartu. Configure menyediakan enam nama bagian sesuai urutan nomor existing; membuka kartu menyembunyikan daftar dan Tutup mengembalikan fokus/scroll. PASS memiliki aksi panel untuk Pull/Aim dan tahan satu detik untuk Squeeze, berbagi handler dengan target 3D; lepas awal membatalkan. Sweep tetap panah/Home/End untuk tiga siklus, Next manual dan Skip terpisah. Soal pick-hotspot menyediakan enam pilihan panel netral Bagian/Part 1–6 dengan penguncian/feedback yang sama. Semua pilihan tetap tersedia ketika pin 3D tertutup sheet/model. Jeda putaran di panel Configure mempertahankan pilihan manual selama sesi; fokus di viewer/panel/dialog juga menjeda, lalu idle lima detik sebelum putaran boleh kembali. Reduced motion dinamis meniadakan gerakan dekoratif.

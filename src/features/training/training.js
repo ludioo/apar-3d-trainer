@@ -31,6 +31,7 @@ export function initTraining(context) {
     },
     skip() { if (canInteract()) complete(true); },
     refocus: focusStep,
+    interact: targetClick,
     quiz() { if (active && model && session.phase === 'complete') emit('quiz:start'); },
   });
   let model = null;
@@ -139,7 +140,7 @@ export function initTraining(context) {
     ui.enter();
     canvas.tabIndex = 0;
     target.enter();
-    gestures = initTrainingGestures({ target: target.button, sweepInput: ui.sweepInput, sweep,
+    gestures = initTrainingGestures({ targets: [target.button, ui.interact], sweepInput: ui.sweepInput, sweep,
       canHold: () => canInteract() && currentStep().interaction === 'hold',
       canSweep: () => canInteract() && currentStep().interaction === 'drag',
       progress(value) { target.progress(value); effects.setSpray(value > 0 && value < 1); },

@@ -18,7 +18,8 @@ export function initCameraTween(camera, controls, requestRender) {
 
     function tick(now) {
       raf = 0;
-      const t = duration ? Math.min(1, (now - start) / duration) : 1;
+      const t = duration && !matchMedia('(prefers-reduced-motion: reduce)').matches
+        ? Math.min(1, (now - start) / duration) : 1;
       const eased = t * t * (3 - 2 * t);
       camera.position.lerpVectors(fromPosition, toPosition, eased);
       controls.target.lerpVectors(fromTarget, toTarget, eased);

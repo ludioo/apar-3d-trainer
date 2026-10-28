@@ -6,7 +6,7 @@ const PULSE_MAX = 1.25;
 const PULSE_HZ = 1.2;
 
 export function initHighlight(scene, camera, requestRender) {
-  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const ring = new Mesh(
     new RingGeometry(0.035, 0.05, 32),
     new MeshBasicMaterial({
@@ -30,7 +30,7 @@ export function initHighlight(scene, camera, requestRender) {
       return;
     }
     ring.lookAt(camera.position);
-    if (!reduceMotion) {
+    if (!motion.matches) {
       const t = ((now - t0) / 1000) * PULSE_HZ * Math.PI * 2;
       const s = PULSE_MIN + (PULSE_MAX - PULSE_MIN) * (0.5 + 0.5 * Math.sin(t));
       ring.scale.setScalar(s);
@@ -50,7 +50,7 @@ export function initHighlight(scene, camera, requestRender) {
     ring.scale.setScalar(1);
     ring.visible = true;
     ring.lookAt(camera.position);
-    if (!reduceMotion) startLoop();
+    if (!motion.matches) startLoop();
     requestRender();
   }
 
@@ -68,5 +68,12 @@ export function initHighlight(scene, camera, requestRender) {
     ring.lookAt(camera.position);
   }
 
+  motion.addEventListener('change', () => {
+    if (raf) cancelAnimationFrame(raf);
+    raf = 0;
+    ring.scale.setScalar(1);
+    if (ring.visible && !motion.matches) startLoop();
+    requestRender();
+  });
   return { show, clear, update, ring };
 }

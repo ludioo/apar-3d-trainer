@@ -14,10 +14,14 @@ export function initControls(camera, domElement, onChange) {
   controls.autoRotate = false;
   controls.autoRotateSpeed = AUTO_ROTATE_SPEED;
 
-  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const motion = matchMedia('(prefers-reduced-motion: reduce)');
   let idleTimer = 0;
   let rotateRaf = 0;
   let paused = false;
+  let userPaused = false;
+  const blocked = () => motion.matches || paused || userPaused || document.hidden ||
+    !!document.querySelector('dialog[open]') ||
+    !!document.activeElement?.closest('#canvas-root, #panel, .viewer-tools');
 
   function stopRotate() {
     controls.autoRotate = false;
@@ -28,7 +32,8 @@ export function initControls(camera, domElement, onChange) {
   }
 
   function rotateTick() {
-    if (!controls.autoRotate) {
+    if (!controls.autoRotate || blocked()) {
+      stopRotate();
       rotateRaf = 0;
       return;
     }
@@ -37,7 +42,7 @@ export function initControls(camera, domElement, onChange) {
   }
 
   function startRotate() {
-    if (reduceMotion || paused || controls.autoRotate) return;
+    if (blocked() || controls.autoRotate) return;
     controls.autoRotate = true;
     if (!rotateRaf) rotateRaf = requestAnimationFrame(rotateTick);
   }
@@ -51,7 +56,7 @@ export function initControls(camera, domElement, onChange) {
 
   function armIdle() {
     clearIdle();
-    if (reduceMotion || paused) return;
+    if (blocked()) return;
     idleTimer = setTimeout(startRotate, IDLE_MS);
   }
 
@@ -71,6 +76,20 @@ export function initControls(camera, domElement, onChange) {
     paused = false;
     armIdle();
   };
+  controls.isRotationPaused = () => userPaused || motion.matches;
+  controls.toggleRotation = () => {
+    userPaused = !userPaused;
+    stopRotate();
+    armIdle();
+  };
+  const sync = () => { stopRotate(); armIdle(); };
+  motion.addEventListener('change', sync);
+  document.addEventListener('focusin', sync);
+  document.addEventListener('focusout', () => queueMicrotask(sync));
+  document.addEventListener('close', sync, true);
+  document.addEventListener('visibilitychange', sync);
+  window.addEventListener('blur', () => { clearIdle(); stopRotate(); });
+  window.addEventListener('focus', sync);
 
   armIdle();
   return controls;

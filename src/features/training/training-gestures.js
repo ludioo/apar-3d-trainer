@@ -1,6 +1,6 @@
 import { holdProgress } from './training-state.js';
 
-export function initTrainingGestures({ target, sweepInput, sweep, canHold, canSweep, progress, held, swept }) {
+export function initTrainingGestures({ targets, sweepInput, sweep, canHold, canSweep, progress, held, swept }) {
   let hold = null;
   let sweepInterrupted = false;
   let raf = 0;
@@ -36,28 +36,30 @@ export function initTrainingGestures({ target, sweepInput, sweep, canHold, canSw
     progress(0);
     raf = requestAnimationFrame(tick);
   }
-  listen(target, 'pointerdown', (event) => {
-    if (event.button !== 0 || !event.isPrimary || !canHold()) return;
-    event.preventDefault();
-    target.focus({ preventScroll: true });
-    target.setPointerCapture(event.pointerId);
-    beginHold(event.pointerId);
-  });
-  listen(target, 'pointerup', (event) => {
-    if (hold?.source === event.pointerId) cancelHold();
-  });
-  listen(target, 'pointercancel', cancelHold);
-  listen(target, 'lostpointercapture', () => { if (typeof hold?.source === 'number') cancelHold(); });
-  listen(target, 'keydown', (event) => {
-    if (![' ', 'Enter'].includes(event.key) || !canHold()) return;
-    event.preventDefault();
-    if (!event.repeat) beginHold(event.key);
-  });
-  listen(target, 'keyup', (event) => {
-    if ([' ', 'Enter'].includes(event.key)) event.preventDefault();
-    if (hold?.source === event.key) cancelHold();
-  });
-  listen(target, 'blur', cancelHold);
+  for (const target of targets) {
+    listen(target, 'pointerdown', (event) => {
+      if (event.button !== 0 || !event.isPrimary || !canHold()) return;
+      event.preventDefault();
+      target.focus({ preventScroll: true });
+      target.setPointerCapture(event.pointerId);
+      beginHold(event.pointerId);
+    });
+    listen(target, 'pointerup', (event) => {
+      if (hold?.source === event.pointerId) cancelHold();
+    });
+    listen(target, 'pointercancel', cancelHold);
+    listen(target, 'lostpointercapture', () => { if (typeof hold?.source === 'number') cancelHold(); });
+    listen(target, 'keydown', (event) => {
+      if (![' ', 'Enter'].includes(event.key) || !canHold()) return;
+      event.preventDefault();
+      if (!event.repeat) beginHold(event.key);
+    });
+    listen(target, 'keyup', (event) => {
+      if ([' ', 'Enter'].includes(event.key)) event.preventDefault();
+      if (hold?.source === event.key) cancelHold();
+    });
+    listen(target, 'blur', cancelHold);
+  }
   const resumeSweep = () => { if (canSweep()) sweepInterrupted = false; };
   listen(sweepInput, 'focus', resumeSweep);
   listen(sweepInput, 'pointerdown', resumeSweep);

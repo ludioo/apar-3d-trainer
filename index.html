@@ -36,6 +36,13 @@
       </div>
     </header>
     <div id="canvas-root"></div>
+    <div class="viewer-tools"><button id="rotation-toggle" type="button"></button></div>
+    <main id="webgl-fallback" class="webgl-fallback" hidden>
+      <h1 data-i18n="fallback.title"></h1>
+      <p data-i18n="fallback.message"></p>
+      <img width="800" height="600" alt="" />
+      <p data-i18n="disclaimer"></p>
+    </main>
     <section id="panel" class="panel" aria-labelledby="panel-title">
       <button type="button" class="panel__handle" aria-expanded="false" aria-controls="panel-body"></button>
       <h2 id="panel-title" class="panel__title"></h2>
@@ -53,15 +60,33 @@
     </div>
     <dialog id="about" class="modal" aria-labelledby="about-title">
       <div class="modal__body">
-        <h2 id="about-title" class="modal__title" data-i18n="tabs.about"></h2>
+        <h2 id="about-title" class="modal__title" tabindex="-1" data-i18n="tabs.about"></h2>
+        <p data-i18n="about.description"></p>
+        <section class="modal__section">
+          <h3 data-i18n="about.stackTitle"></h3>
+          <p data-i18n="about.stack"></p>
+        </section>
         <p data-i18n="disclaimer"></p>
         <section class="modal__section">
-          <h3 data-i18n="emergency.title"></h3>
-          <p data-i18n="emergency.fire"></p>
-          <p data-i18n="emergency.general"></p>
-          <p class="modal__muted" data-i18n="emergency.source"></p>
+          <h3 data-i18n="about.sources"></h3>
+          <a href="https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/" target="_blank" rel="noopener noreferrer" data-i18n="about.usfa"></a>
+          <a href="https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf" target="_blank" rel="noopener noreferrer" data-i18n="about.permenaker"></a>
         </section>
-        <p class="modal__muted" data-i18n="credits.assets"></p>
+        <section class="modal__section">
+          <h3 data-i18n="emergency.title"></h3>
+          <a data-emergency="fire" data-i18n="emergency.fire"></a>
+          <a data-emergency="general" data-i18n="emergency.general"></a>
+          <a data-emergency="source" class="modal__muted" target="_blank" rel="noopener noreferrer" data-i18n="emergency.source"></a>
+        </section>
+        <section class="modal__section">
+          <h3 data-i18n="about.credits"></h3>
+          <p class="modal__muted" data-i18n="credits.assets"></p>
+          <a href="https://polyhaven.com/a/korean_fire_extinguisher_01" target="_blank" rel="noopener noreferrer" data-i18n="about.model"></a>
+          <a href="https://polyhaven.com/a/studio_small_09" target="_blank" rel="noopener noreferrer" data-i18n="about.environment"></a>
+        </section>
+        <p class="modal__muted" data-i18n="about.analytics"></p>
+        <a href="https://barkahmauludi.com" target="_blank" rel="noopener noreferrer" data-i18n="about.portfolio"></a>
+        <a href="https://github.com/ludioo/apar-3d-trainer" target="_blank" rel="noopener noreferrer" data-i18n="about.github"></a>
         <button type="button" class="modal__close" data-i18n="modal.close"></button>
       </div>
     </dialog>

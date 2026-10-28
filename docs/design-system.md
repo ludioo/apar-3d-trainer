@@ -15,7 +15,7 @@ Catatan: hanya halaman di atas yang benar-benar dibuka; tidak ada klaim visual l
 |---|---|---|
 | `--bg` | #0E1013 | latar halaman/kanvas |
 | `--bg-grad` | #1A1D22 | radial gradient tengah kanvas |
-| `--surface` | rgba(22,25,30,0.72) + `backdrop-filter: blur(12px)` | panel |
+| `--surface` | rgba(22,25,30,0.92) + `backdrop-filter: blur(12px)` | panel; T3.2 menaikkan opacity agar teks/error tetap AA di atas model terang |
 | `--border` | rgba(255,255,255,0.08) | garis panel |
 | `--text` | #F2F3F5 | teks utama |
 | `--text-muted` | #9AA1AC | teks sekunder |
@@ -34,7 +34,7 @@ Kontras teks ≥ 4.5:1 (AA). Fallback tanpa backdrop-filter: surface solid #1619
 Grid 4px: 4, 8, 12, 16, 24, 32, 48. Radius: 8 (tombol), 14 (panel), 999 (chip/hotspot). Shadow panel: `0 8px 32px rgba(0,0,0,.35)`.
 
 ## Layout
-- Desktop ≥1024px: topbar 56px; kanvas full-bleed; panel kanan 360px mengambang (margin 16).
+- Desktop ≥1024px: topbar minimum 56px, tinggi aktual mengikuti teks; kanvas full-bleed; panel kanan 360px mengambang (margin 16). T3.2 memakai wrapping nama/tagline dan ResizeObserver topbar untuk memperbarui ruang scene/panel ketika teks diperbesar, termasuk HP.
 - HP: kanvas mengisi ruang antara topbar dan panel ringkas. Bottom sheet memakai tinggi nyata (collapsed sekitar 30%/expanded 80%), minimum ringkas 176px, kedua snap dibatasi ruang di bawah topbar dengan jarak 16px; tombol min 44×44px. Saat hotspot dibuka, opsi konfigurasi dan judul tab di panel disembunyikan sementara; kartu menampilkan judul bagian + Tutup di header tetap dan deskripsi yang bisa di-scroll. Tutup mengembalikan opsi beserta pilihan/posisi scroll; snap tidak diubah otomatis. Desktop mempertahankan opsi di atas kartu.
 
 ## Komponen
@@ -45,6 +45,8 @@ Environment HDRI studio, `ACESFilmicToneMapping`, exposure ~1.0, satu directiona
 
 ## Motion
 Durasi 150–250ms UI, kamera tween 600–800ms ease-in-out. Hormati `prefers-reduced-motion` (matikan auto-rotate & pulse).
+
+T3.2: perubahan preferensi diikuti tanpa reload; tween aktif langsung mencapai tujuan, highlight/efek statis, durasi hold PASS tetap. Tombol jeda/lanjut putaran berada di panel Configure, dengan label penjelasan/nonaktif bila reduced motion aktif. Fokus di viewer/panel/dialog menjeda putaran. Batas kontrol minimal 3:1; opsi konfigurasi memakai text-muted, fokus primer memakai tinta gelap pada kuning.
 
 ## Tone copy
 Singkat, jelas, instruktif, ramah. EN: kalimat aktif ("Pull the pin."). ID: baku santai ("Cabut pin pengaman."). Hindari jargon tanpa penjelasan.

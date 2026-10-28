@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://localhost:5183",
+  "stage": "dev",
+  "checks": [
+    {
+      "name": "All six parts reached by Tab/Enter, Escape restores their trigger; fallback asset absent on normal load"
+    },
+    {
+      "name": "Keyboard save/load/delete, cancel/focus restoration, spec export"
+    },
+    {
+      "name": "PASS completed without Skip, partial and full hold, six keyboard Sweep strokes; quiz 8/8 with neutral choices and answer locking"
+    },
+    {
+      "name": "Results name/report and Clear cancel reachable by keyboard"
+    },
+    {
+      "name": "About from all tabs and direct URL, focus/Tab containment/Escape/history"
+    },
+    {
+      "name": "Live reduced motion stops auto-rotate/pulse/tween; pause/resume control"
+    },
+    {
+      "name": "No WebGL and thrown renderer: bilingual fallback image/About/direct hash, hidden dead controls, storage preserved"
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "t3.2-dev-fallback.png",
+    "t3.2-dev-fallback-throw.png"
+  ]
+}

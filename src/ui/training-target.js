@@ -62,7 +62,7 @@ export function initTrainingTarget({ container, camera, controls, panelBody }) {
   function setStep(next, index, label, done, pulled) {
     hotspot = next;
     number.textContent = String(index + 1);
-    button.setAttribute('aria-label', label);
+    button.setAttribute('aria-label', `${index + 1}. ${label}`);
     button.setAttribute('aria-disabled', String(done || next?.interaction === 'drag'));
     button.dataset.complete = String(done);
     button.dataset.interaction = next?.interaction ?? '';

@@ -130,7 +130,7 @@ export function initHotspotPins({ container, camera, controls, hotspots, open, l
 
   function syncText(lang, selected) {
     for (const [index, { h, button }] of pins.entries()) {
-      button.setAttribute('aria-label', label ? label(h, index) : h.title[lang]);
+      button.setAttribute('aria-label', label ? label(h, index) : `${index + 1}. ${h.title[lang]}`);
       button.setAttribute('aria-pressed', String(h.id === selected?.id));
     }
   }

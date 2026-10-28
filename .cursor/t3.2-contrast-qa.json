@@ -1,0 +1,128 @@
+{
+  "tokens": {
+    "bg": "#0e1013",
+    "bg-grad": "#1a1d22",
+    "surface": "#16191eeb",
+    "surface-solid": "#16191e",
+    "text": "#f2f3f5",
+    "text-muted": "#9aa1ac",
+    "accent": "#ffc629",
+    "accent-ink": "#111",
+    "danger": "#ff5a5f",
+    "success": "#2bc48a"
+  },
+  "alpha": 0.9215686274509803,
+  "worstBackdrop": [
+    40.27450980392158,
+    43.039215686274524,
+    47.64705882352942
+  ],
+  "pairs": [
+    {
+      "foreground": "text",
+      "background": "solid panel",
+      "ratio": 15.868757233675552,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "text-muted",
+      "background": "solid panel",
+      "ratio": 6.768660625226347,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "danger",
+      "background": "solid panel",
+      "ratio": 5.771983612862361,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "success",
+      "background": "solid panel",
+      "ratio": 7.857682483850259,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "accent",
+      "background": "solid panel",
+      "ratio": 11.210244946725082,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "text",
+      "background": "glass over white (worst backdrop)",
+      "ratio": 12.783766866528211,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "text-muted",
+      "background": "glass over white (worst backdrop)",
+      "ratio": 5.452788656185188,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "danger",
+      "background": "glass over white (worst backdrop)",
+      "ratio": 4.649872184550573,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "success",
+      "background": "glass over white (worst backdrop)",
+      "ratio": 6.330097530988406,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "accent",
+      "background": "glass over white (worst backdrop)",
+      "ratio": 9.030899887452364,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "text",
+      "background": "page",
+      "ratio": 17.160526914336714,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "text-muted",
+      "background": "page",
+      "ratio": 7.3196521392812395,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "danger",
+      "background": "page",
+      "ratio": 6.24184229924682,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "success",
+      "background": "page",
+      "ratio": 8.497324003562953,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "accent",
+      "background": "page",
+      "ratio": 12.122796214711828,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "accent-ink",
+      "background": "accent",
+      "ratio": 12.014709434605603,
+      "minimum": 4.5
+    }
+  ],
+  "configurationBoundary": {
+    "color": "rgb(154, 161, 172)",
+    "ratio": 5.452788656185188
+  },
+  "primaryFocus": {
+    "color": "rgb(17, 17, 17)",
+    "background": "rgb(255, 198, 41)",
+    "width": "2px",
+    "ratio": 12.014709434605603
+  }
+}

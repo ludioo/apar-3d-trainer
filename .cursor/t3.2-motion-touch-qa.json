@@ -1,0 +1,9 @@
+{
+  "checks": [
+    {
+      "name": "Panel Pull/Aim/touch partial/full Squeeze, neutral quiz panel tap; live reduced motion during spray stops loops and resumes effects",
+      "frameCount": 0
+    }
+  ],
+  "errors": []
+}

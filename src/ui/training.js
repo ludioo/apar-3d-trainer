@@ -71,6 +71,8 @@ export function initTrainingUi(steps, actions) {
   const start = button('start');
   const restart = button('restart');
   const refocus = button('refocus');
+  const interact = button('interact');
+  interact.setAttribute('aria-describedby', 'training-hint');
   const skip = button('skip');
   const contacts = document.createElement('section');
   contacts.className = 'training__contacts';
@@ -147,6 +149,9 @@ export function initTrainingUi(steps, actions) {
     refocus.hidden = !isStep;
     refocus.disabled = !ready;
     refocus.textContent = t('training.refocus');
+    interact.hidden = !isStep || step.interaction === 'drag';
+    interact.disabled = !ready || !!done;
+    interact.textContent = t(step.interaction === 'hold' ? 'training.holdAction' : 'training.clickAction');
     skip.hidden = !isStep;
     skip.disabled = !ready || !!done;
     skip.textContent = t('training.skip');
@@ -172,7 +177,7 @@ export function initTrainingUi(steps, actions) {
     heading.focus({ preventScroll: true });
     if (!sweepArea.hidden) sweepCount.scrollIntoView({ block: 'nearest' });
   }
-  return { element, sweepInput, render, focusHeading,
+  return { element, sweepInput, interact, render, focusHeading,
     enter() { navObserver.observe(nav); },
     exit() { navObserver.disconnect(); },
   };

@@ -13,6 +13,17 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
   content.className = 'hotspot-info';
   const hint = document.createElement('p');
   hint.className = 'hotspot-info__hint';
+  const parts = document.createElement('div');
+  parts.className = 'hotspot-info__parts';
+  parts.setAttribute('role', 'group');
+  const partButtons = hotspots.map((hotspot, index) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.dataset.part = hotspot.id;
+    button.addEventListener('click', () => open(hotspot, button));
+    parts.appendChild(button);
+    return { button, hotspot, index };
+  });
   const card = document.createElement('section');
   card.className = 'hotspot-info__card';
   card.hidden = true;
@@ -29,7 +40,7 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
   closeButton.className = 'hotspot-info__close';
   header.append(heading, closeButton);
   card.append(header, body);
-  content.append(hint, card);
+  content.append(hint, parts, card);
   const pins = initHotspotPins({ container, camera, controls, hotspots, open });
   let model = null;
   let selected = null;
@@ -64,6 +75,12 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
   function syncText() {
     const lang = getLang();
     hint.textContent = t('hotspot.hint');
+    parts.setAttribute('aria-label', t('hotspot.parts'));
+    parts.hidden = !!selected;
+    for (const { button, hotspot, index } of partButtons) {
+      button.textContent = `${index + 1}. ${hotspot.title[lang]}`;
+      button.disabled = !model;
+    }
     closeButton.textContent = t('modal.close');
     closeButton.setAttribute('aria-label', t('hotspot.close'));
     canvas.setAttribute('aria-label', t('hotspot.viewer'));
@@ -164,6 +181,7 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
   function setModel(next) {
     model = next;
     pins.setModel(next);
+    if (active) syncText();
   }
 
   return { enter, exit, open, setModel, refreshTransform };

@@ -161,8 +161,27 @@ Cara cek implementasi saat ini:
 5. Jalankan `node .cursor/t3.1-audit.cjs <nama-run-baru>` untuk tiga run Lighthouse dan 4G uji memakai alat lokal yang jalurnya dicatat dalam script; HTML/JSON/screenshot disimpan terpisah. Profil 4G uji 9/1,5 Mbps, latency 60ms, CPU 4×, viewport 412×823/DPR 1,75. Pemeriksaan HP fisik tetap diperlukan; hasil headless/emulasi tidak mewakilinya.
 
 ## T3.2
-- [ ] Bisa dipakai dengan Tab/Enter saja.
-- [ ] About menampilkan disclaimer, sumber K3, kredit.
+- [x] Semua alur dapat digunakan dengan keyboard native: Tab/Shift+Tab, Enter/Space, Escape; Sweep memakai panah/Home/End. Keenam bagian Configure, PASS tanpa Skip, kuis, Results dan PDF dapat dijangkau.
+- [x] Fokus terlihat, tidak tertutup footer/panel, urutan masuk akal; dialog membatasi Tab dan memulihkan fokus sesudah Tutup/Escape/backdrop. Label/nomor dan status sesuai aksi.
+- [x] About EN/ID menampilkan penjelasan demo, teknologi, disclaimer persis sumber, USFA/Permenaker, kontak existing, kredit CC0, portfolio/GitHub dan catatan Umami yang masih direncanakan.
+- [x] Reduced motion sejak awal maupun perubahan tanpa reload menghentikan auto-rotate/pulse/tween/animasi dekoratif; hold satu detik dan Sweep tetap dapat diselesaikan. Jeda putaran manual berfungsi.
+- [x] Gagal startup WebGL menampilkan pesan/gambar statis, bahasa/About termasuk #about langsung tetap bekerja, kontrol yang tidak tersedia tersembunyi dan data tersimpan utuh. Gagal model tetap Retry.
+- [x] EN/ID, teks 200%, portrait/landscape dan kedua snap panel tetap terbaca/terjangkau; kontras AA dan Lighthouse Accessibility ≥90. Hasil otomatis tidak menggantikan uji screen reader.
+
+28 Okt 2026: implementasi T3.2 mengikuti validasi Q1–Q3 serta planning yang disetujui Barkah. **Menunggu pemeriksaan/acceptance Barkah**; checklist di atas belum ditutup. Perubahan kriteria keyboard native dan penundaan video sampai T3.4 disetujui saat validasi; Umami belum dipasang sampai T3.6.
+
+Cara cek:
+1. Desktop buka `http://localhost:4183/#configure`; HP satu Wi-Fi buka `http://192.168.100.4:4183/#configure`. Gulir panel ke daftar enam bagian, pilih nomor/nama lalu Tutup. Gunakan Tab/Enter/Space/Escape untuk konfigurasi, Save/Load/Delete dan ekspor spesifikasi. Tombol putaran ada di awal panel Configure, di atas harga; pada reduced motion tombol menjelaskan putaran dijeda.
+2. Train → Mulai → Lakukan langkah ini pada Pull/Aim → tahan tombol panel Squeeze satu detik (lepas lebih cepat harus batal) → Sweep dengan End/Home bergantian tiga kali → Selesai manual → Ikuti kuis. Pilih Bagian/Part bernomor pada dua soal bagian; delapan jawaban tetap dikunci sekali. Buka Results, isi nama, unduh laporan dan coba Batal/Escape pada Clear.
+3. Dari setiap tab buka About; baca/gulir sampai catatan Umami dan dua tautan terakhir. Tab/Shift+Tab harus tetap di dialog, Tutup/Escape mengembalikan fokus ke About; klik area luar menutup. Buka `#about` langsung, coba Back/Forward dan EN/ID sebelum membuka ulang. Cek disclaimer/sumber/kredit/nomor darurat serta tujuan tautan.
+4. Aktifkan pengaturan kurangi gerakan OS/browser ketika halaman sudah terbuka, termasuk saat kamera bergerak atau api aktif. Gerakan dekoratif berhenti, interaksi tetap bekerja. Perbesar teks sampai 200%, coba HP portrait/landscape dan kedua snap; handle/tombol tidak boleh saling menutupi. Putaran manual tersedia kembali ketika preferensi dikembalikan.
+5. Fallback diuji AI dengan konteks WebGL mengembalikan null dan melempar error. Bukti visual di `.cursor/t3.2-production-fallback.png` dan `t3.2-production-fallback-throw.png`; gambar statis adalah screenshot aplikasi sendiri, bukan pengganti latihan 3D. Tidak ada URL demo video kosong. Runtime context loss setelah startup bukan cakupan task.
+
+Bukti AI: `.cursor/t3.2-check.cjs` / `t3.2-production-qa.json`, `t3.2-layout.cjs` / `t3.2-layout-qa.json`, `t3.2-motion-touch.cjs` / hasil QA, serta `t3.2-contrast.cjs` / hasil QA. Matriks layout 160 keadaan, lima viewport × EN/ID × token teks 100/200% × dua snap untuk PASS serta Configure/kuis/Results, ditambah About/backdrop/fokus. Regresi tersimpan terpisah melalui `t3.2-regression.cjs`: PASS 11 kelompok, efek 8, kuis 7, Results 8, PDF 4 dan error/retry PDF 3. Screenshot About/daftar bagian/fallback ditinjau; rincian dan batas pengujian di known-issues. HP fisik/screen reader/Firefox/Safari belum diverifikasi. Tidak commit/push/deploy atau lanjut T3.3.
+
+Audit final Lighthouse 12.8.2/Chrome lokal: Configure, Train, Results, About dan fallback masing-masing Accessibility **100**, tanpa failed audit (`.cursor/t3.2-lighthouse-qa.json`). Kontras 16 pasangan aktif lolos, minimum 4,65:1, batas kontrol 5,45:1, fokus primer 12,01:1 pada build produksi. Check/build lolos dengan 184 key i18n; gate antislop PASS di `.cursor/t3.2-design-gate.md`. Ini bukan audit Performance/4G baru atau bukti screen reader/HP fisik.
+
+28 Okt 2026: **Barkah mengonfirmasi T3.2 sudah dicek dan lolos**, meminta task serta seluruh checklist selesai, dokumen diperbarui, lalu commit/push ke develop. Keenam checklist ditutup berdasarkan acceptance tersebut; catatan menunggu acceptance pada riwayat implementasi di atas ditutup. Tidak ada bug baru yang dilaporkan. Rincian perangkat pemeriksaan Barkah tidak diberikan, sehingga batas QA AI HP fisik/AT/Firefox/Safari dan Performance/4G tetap berlaku. Check/build dijalankan ulang sebelum commit. T3.3 tidak dimulai; main tidak diubah.
 
 ## T3.3
 - [ ] Share link di WhatsApp/LinkedIn → muncul gambar & judul.

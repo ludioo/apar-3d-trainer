@@ -1,0 +1,31 @@
+{
+  "origin": "http://localhost:4183",
+  "lighthouse": "12.8.2",
+  "cases": [
+    {
+      "mode": "configure",
+      "score": 100,
+      "failed": []
+    },
+    {
+      "mode": "train",
+      "score": 100,
+      "failed": []
+    },
+    {
+      "mode": "results",
+      "score": 100,
+      "failed": []
+    },
+    {
+      "mode": "about",
+      "score": 100,
+      "failed": []
+    },
+    {
+      "mode": "fallback",
+      "score": 100,
+      "failed": []
+    }
+  ]
+}

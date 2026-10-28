@@ -179,6 +179,12 @@ try {
   tween.moveTo({ position: [0, 0, 0], target: [0, 0, 0] }, { immediate: true });
   assert.deepEqual(tweenCamera.position.toArray(), [0, 0, 0]);
   assert.equal(frames.size, 0);
+  tween.moveTo(view);
+  advance(100);
+  reduced = true;
+  advance(16);
+  assert.deepEqual(tweenCamera.position.toArray(), view.position, 'live reduced motion finishes an active tween');
+  assert.equal(frames.size, 0, 'live reduced motion leaves no tween loop');
 } finally {
   for (const [key, descriptor] of Object.entries(originalGlobals)) {
     if (descriptor) Object.defineProperty(globalThis, key, descriptor);
