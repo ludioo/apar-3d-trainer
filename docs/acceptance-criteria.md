@@ -148,8 +148,17 @@ Bukti AI: `.cursor/t2.5-check.cjs`, laporan dev/produksi `t2.5-dev-qa.json`/`t2.
 28 Okt 2026: acceptance final T2.5 diterima, status/checklist selesai dan pembaruan dokumen serta commit/push ke develop diminta Barkah. Catatan menunggu acceptance pada riwayat implementasi ditutup. Tidak ada bug baru yang dilaporkan; rincian perangkat pemeriksaan Barkah tidak dicatat sehingga batas QA AI di atas tetap berlaku. Check/build dijalankan ulang sebelum commit. T3.1 tidak dimulai dan main tidak diubah.
 
 ## T3.1
-- [ ] Lighthouse mobile Performance ≥ 85.
-- [ ] APAR tampil < 3 dtk di HP dengan 4G.
+- [x] Lighthouse mobile Performance ≥ 85.
+- [x] APAR tampil < 3 dtk di HP dengan 4G.
+
+28 Okt 2026: **Barkah mengonfirmasi T3.1 sudah dicek dan lolos**, lalu meminta task/checklist selesai, update dokumen dan commit/push ke develop. Kedua checklist ditutup atas acceptance pengguna, bukan hasil audit baru. Angka audit AI tetap: median tiga run baseline → final Performance 42 → 42, APAR siap 5,11 → 4,04 dtk; rentang final 41–42 dan 4,02–4,79 dtk. Target numerik audit lokal belum tercapai; transfer final 2.319.573 byte (<3 MB), GLB 695.084 byte (<2 MB). Rincian perangkat/angka pemeriksaan Barkah tidak diberikan. Bukti lengkap di `.cursor/t3.1-report.md`; usulan revisi tetap belum diterapkan dan tidak menjadi pekerjaan lanjutan otomatis. T3.2 tidak dimulai, main tidak diubah.
+
+Cara cek implementasi saat ini:
+1. Buka desktop `http://localhost:4191/#configure`, atau HP satu Wi-Fi `http://192.168.100.4:4191/#configure`. Server audit dijalankan dengan `node .cursor/t3.1-server.cjs` setelah build; gzip hanya HTML/JS/CSS, binary unchanged. Untuk preview Vite biasa gunakan `npm run preview -- --host 0.0.0.0 --port 4183`; angka audit di atas bukan pengukuran kompresi Vite preview atau Vercel.
+2. Refresh tanpa ?debug. Tunggu APAR terlihat, putar/zoom; coba warna merah/kuning/perak, CO2/9kg/bracket, buka/tutup hotspot, Save lalu Load konfigurasi. Periksa label/gauge dan pencahayaan tetap utuh.
+3. Buka `http://localhost:4191/?debug#configure` (HP ganti localhost dengan 192.168.100.4). Panel FPS berada di bawah topbar, marker/HUD lama tetap ada. Saat halaman benar-benar idle statistik tidak membuat render tambahan; panel FPS dapat mempertahankan angka terakhir sampai ada render baru.
+4. Coba PASS sampai Sweep, kuis, Results dan kedua PDF dalam EN/ID. Pada DevTools Network dengan cache dimatikan, halaman biasa hanya memuat model/HDR satu kali, tidak memuat chunk debug atau jsPDF sebelum ekspor.
+5. Jalankan `node .cursor/t3.1-audit.cjs <nama-run-baru>` untuk tiga run Lighthouse dan 4G uji memakai alat lokal yang jalurnya dicatat dalam script; HTML/JSON/screenshot disimpan terpisah. Profil 4G uji 9/1,5 Mbps, latency 60ms, CPU 4×, viewport 412×823/DPR 1,75. Pemeriksaan HP fisik tetap diperlukan; hasil headless/emulasi tidak mewakilinya.
 
 ## T3.2
 - [ ] Bisa dipakai dengan Tab/Enter saja.

@@ -1,0 +1,317 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://localhost:4191",
+  "checks": [
+    {
+      "name": "Eight questions, manual feedback, pins/keyboard/orbit/reset, interruption, EN/ID, q6 emergency, one complete save, configuration restore"
+    },
+    {
+      "name": "0/8, 5/8 fail and 6/8 pass; retry/new attempt; summary resumes without duplicate; return to training and refresh"
+    },
+    {
+      "name": "Storage write failure and corrupt history preserve existing bytes while displaying final score"
+    },
+    {
+      "name": "40 mobile layout combinations: EN/ID, text 100/200%, five viewports, both snaps, all choices/disclaimer/footer hit-tested",
+      "detail": [
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": true
+        }
+      ]
+    },
+    {
+      "name": "Touch completes both 3D pin questions and all choices; q6 telephone links reachable; reduced-motion frame static"
+    },
+    {
+      "name": "Model load error blocks entry; Retry restores training and quiz"
+    },
+    {
+      "name": "No unexpected page or console errors"
+    }
+  ],
+  "errors": [],
+  "scenario": {
+    "width": 390,
+    "height": 420,
+    "lang": "id",
+    "zoom": 2,
+    "expanded": true
+  }
+}

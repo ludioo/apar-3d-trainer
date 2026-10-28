@@ -1,0 +1,21 @@
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { gunzipSync } from 'node:zlib';
+import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
+
+const source = readFileSync(new URL('../public/hdri/studio_1k.hdr', import.meta.url));
+const compressed = readFileSync(new URL('../public/hdri/studio_1k.hdr.gz', import.meta.url));
+const decoded = gunzipSync(compressed);
+assert.deepEqual(decoded, source, 'compressed HDRI must reproduce the original bytes');
+assert.ok(compressed.length < source.length, 'compression must reduce transfer');
+const loader = new HDRLoader();
+const parse = (bytes) => loader.createDataTexture(bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength));
+const original = parse(source);
+const restored = parse(decoded);
+assert.equal(restored.image.width, 1024);
+assert.equal(restored.image.height, 512);
+assert.deepEqual(restored.image.data, original.image.data, 'HDR pixels must be identical');
+assert.equal(restored.type, original.type);
+assert.equal(restored.colorSpace, original.colorSpace);
+original.dispose(); restored.dispose();
+console.log(`Environment check: ${source.length} -> ${compressed.length} bytes; identical 1K HDR pixels/type/color space`);

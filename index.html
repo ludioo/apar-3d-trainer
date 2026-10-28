@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="/models/apar.glb" as="fetch" crossorigin />
+    <script>
+      {
+        const preload = document.createElement('link');
+        preload.rel = 'preload';
+        preload.as = 'fetch';
+        preload.crossOrigin = 'anonymous';
+        preload.href = '/hdri/studio_1k.hdr' + (typeof DecompressionStream === 'undefined' ? '' : '.gz');
+        document.head.appendChild(preload);
+      }
+    </script>
     <title>APAR 3D Trainer</title>
   </head>
   <body>

@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node scripts/optimize-environment.js && vite build",
+    "optimize:environment": "node scripts/optimize-environment.js",
     "preview": "vite preview",
     "check": "node scripts/self-check.js"
   },

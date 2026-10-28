@@ -3,8 +3,8 @@ import './styles/base.css';
 import './styles/layout.css';
 import './ui/components.css';
 import './ui/hotspots.css';
-import { Box3, Mesh, MeshBasicMaterial, SphereGeometry, Vector3 } from 'three';
-import { initScene, requestRender, captureModel } from './core/scene.js';
+import { Box3, Vector3 } from 'three';
+import { initScene, requestRender, captureModel, prepareModel } from './core/scene.js';
 import { initControls } from './core/controls.js';
 import { loadModel } from './core/loader.js';
 import { on } from './core/events.js';
@@ -70,6 +70,10 @@ const { scene, camera, renderer } = initScene(root);
 const controls = initControls(camera, renderer.domElement, requestRender);
 controls.target.set(0, MODEL_HEIGHT / 2, 0);
 controls.update();
+const debugReady = DEBUG
+  ? import('./core/debug.js').then(({ initDebug }) => initDebug({ scene, renderer, camera, controls, requestRender, hotspots }))
+    .catch((error) => { console.warn('Debug tools unavailable', error); return null; })
+  : Promise.resolve(null);
 
 const highlight = initHighlight(scene, camera, requestRender);
 async function exportPdf(type, data, isCurrent) {
@@ -126,44 +130,6 @@ initRouter({ configure: configurator, train: {
 }, results });
 let model = null;
 
-let debugHud = null;
-if (DEBUG) {
-  debugHud = document.createElement('div');
-  debugHud.id = 'debug-hud';
-  debugHud.className = 'debug-hud';
-  debugHud.textContent = 'Click model for local coords';
-  document.body.appendChild(debugHud);
-}
-
-function addDebugMarkers() {
-  const geo = new SphereGeometry(0.012, 12, 12);
-  const mat = new MeshBasicMaterial({ color: 0xffc629, depthTest: false });
-  for (const h of hotspots) {
-    const m = new Mesh(geo, mat);
-    m.renderOrder = 998;
-    m.position.fromArray(h.position);
-    m.userData.debugMarker = true;
-    m.raycast = () => {};
-    model.add(m);
-  }
-}
-
-on('hotspot:pick', ({ hotspot, local, distance }) => {
-  if (DEBUG && debugHud) {
-    if (!local) {
-      debugHud.textContent = 'miss (no hit)';
-      console.log('[debug] miss');
-    } else {
-      const p = `${local.x.toFixed(3)}, ${local.y.toFixed(3)}, ${local.z.toFixed(3)}`;
-      const near = hotspot
-        ? `${hotspot.id} d=${distance.toFixed(3)} r=${hotspot.radius}`
-        : 'none';
-      debugHud.textContent = `local [${p}]\nnearest: ${near}`;
-      console.log('[debug]', { local: [local.x, local.y, local.z], hotspot: hotspot?.id ?? null, distance });
-    }
-  }
-});
-
 const splash = document.getElementById('splash');
 const fill = splash.querySelector('.splash__fill');
 const percent = splash.querySelector('.splash__percent');
@@ -174,6 +140,7 @@ const retryBtn = splash.querySelector('.splash__retry');
 let slowTimer;
 
 function startLoad() {
+  performance.mark('apar:load-start');
   loadingEls.forEach((el) => (el.hidden = false));
   errorEl.hidden = true;
   retryBtn.hidden = true;
@@ -189,8 +156,7 @@ on('load:progress', (p) => {
   percent.textContent = p === null ? '' : `${p}%`;
 });
 
-on('load:done', (gltf) => {
-  clearTimeout(slowTimer);
+on('load:done', async (gltf) => {
   if (model) scene.remove(model);
   model = gltf.scene;
   const size = new Box3().setFromObject(model).getSize(new Vector3());
@@ -205,15 +171,28 @@ on('load:done', (gltf) => {
   configurator.setModel(model);
   training.setModel(model);
   quiz.setModel(model);
-  if (DEBUG) {
-    addDebugMarkers();
-    window.__aparDebug = { scene, renderer, camera, model, hotspots, Vector3, controls, requestRender };
+  performance.mark('apar:model-ready');
+  try {
+    const [hasEnvironment, debug] = await Promise.all([prepareModel(model), debugReady]);
+    debug?.setModel(model);
+    const off = on('scene:rendered', async () => {
+      off();
+      clearTimeout(slowTimer);
+      splash.classList.add('is-done');
+      await Promise.allSettled(splash.getAnimations().map((animation) => animation.finished));
+      requestAnimationFrame(() => {
+        const mark = hasEnvironment ? 'apar:visible' : 'apar:fallback-visible';
+        performance.mark(mark);
+        performance.measure('apar:load', 'apar:load-start', mark);
+      });
+    });
+    requestRender();
+  } catch (error) {
+    showLoadError(error);
   }
-  requestRender();
-  splash.classList.add('is-done');
 });
 
-on('load:error', (err) => {
+function showLoadError(err) {
   clearTimeout(slowTimer);
   console.error('Model load failed', err);
   loadingEls.forEach((el) => (el.hidden = true));
@@ -221,7 +200,8 @@ on('load:error', (err) => {
   errorEl.hidden = false;
   retryBtn.hidden = false;
   retryBtn.focus();
-});
+}
+on('load:error', showLoadError);
 
 retryBtn.addEventListener('click', startLoad);
 

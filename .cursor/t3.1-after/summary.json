@@ -1,0 +1,236 @@
+{
+  "stage": "after",
+  "chrome": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "lighthouse": "12.8.2",
+  "server": "gzip HTML/JS/CSS only; binary unchanged; no-store",
+  "fourG": {
+    "width": 412,
+    "height": 823,
+    "deviceScaleFactor": 1.75,
+    "downloadMbps": 9,
+    "uploadMbps": 1.5,
+    "latencyMs": 60,
+    "cpuSlowdown": 4
+  },
+  "runs": [
+    {
+      "run": 1,
+      "performance": 43,
+      "accessibility": 100,
+      "lcpMs": 11707.0934,
+      "tbtMs": 2899.4533,
+      "lighthouseTransfer": 2318514,
+      "chromeVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "readyMs": 3930.0999999996275,
+      "probeMs": 3934.300000000745,
+      "entries": [
+        {
+          "url": "http://127.0.0.1:4191/models/apar.glb",
+          "transfer": 695384,
+          "decoded": 695084
+        },
+        {
+          "url": "http://127.0.0.1:4191/hdri/studio_1k.hdr.gz",
+          "transfer": 1187846,
+          "decoded": 1187546
+        },
+        {
+          "url": "http://127.0.0.1:4191/assets/index-P5ZAvEVi.js",
+          "transfer": 224334,
+          "decoded": 818234
+        },
+        {
+          "url": "http://127.0.0.1:4191/assets/index-DNtrYgHn.css",
+          "transfer": 5566,
+          "decoded": 27667
+        },
+        {
+          "url": "http://127.0.0.1:4191/decoders/draco/draco_wasm_wrapper.js",
+          "transfer": 12048,
+          "decoded": 58456
+        },
+        {
+          "url": "http://127.0.0.1:4191/decoders/draco/draco_decoder.wasm",
+          "transfer": 192720,
+          "decoded": 192420
+        },
+        {
+          "url": "http://127.0.0.1:4191/favicon.ico",
+          "transfer": 300,
+          "decoded": 0
+        }
+      ],
+      "documentTransfer": 1210,
+      "marks": [
+        {
+          "name": "apar:load-start",
+          "time": 1203.800000000745
+        },
+        {
+          "name": "apar:environment-ready",
+          "time": 3208.7000000011176
+        },
+        {
+          "name": "apar:model-ready",
+          "time": 3274.800000000745
+        },
+        {
+          "name": "apar:visible",
+          "time": 3930.0999999996275
+        },
+        {
+          "name": "audit:visible",
+          "time": 3934.300000000745
+        }
+      ],
+      "transferBytes": 2319408,
+      "errors": []
+    },
+    {
+      "run": 2,
+      "performance": 43,
+      "accessibility": 100,
+      "lcpMs": 11709.3597,
+      "tbtMs": 2874.32015,
+      "lighthouseTransfer": 2318514,
+      "chromeVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "readyMs": 3874.9000000003725,
+      "probeMs": 3878.800000000745,
+      "entries": [
+        {
+          "url": "http://127.0.0.1:4191/models/apar.glb",
+          "transfer": 695384,
+          "decoded": 695084
+        },
+        {
+          "url": "http://127.0.0.1:4191/hdri/studio_1k.hdr.gz",
+          "transfer": 1187846,
+          "decoded": 1187546
+        },
+        {
+          "url": "http://127.0.0.1:4191/assets/index-P5ZAvEVi.js",
+          "transfer": 224334,
+          "decoded": 818234
+        },
+        {
+          "url": "http://127.0.0.1:4191/assets/index-DNtrYgHn.css",
+          "transfer": 5566,
+          "decoded": 27667
+        },
+        {
+          "url": "http://127.0.0.1:4191/decoders/draco/draco_wasm_wrapper.js",
+          "transfer": 12048,
+          "decoded": 58456
+        },
+        {
+          "url": "http://127.0.0.1:4191/decoders/draco/draco_decoder.wasm",
+          "transfer": 192720,
+          "decoded": 192420
+        },
+        {
+          "url": "http://127.0.0.1:4191/favicon.ico",
+          "transfer": 300,
+          "decoded": 0
+        }
+      ],
+      "documentTransfer": 1210,
+      "marks": [
+        {
+          "name": "apar:load-start",
+          "time": 1217.0999999996275
+        },
+        {
+          "name": "apar:environment-ready",
+          "time": 3057.9000000003725
+        },
+        {
+          "name": "apar:model-ready",
+          "time": 3238.699999999255
+        },
+        {
+          "name": "apar:visible",
+          "time": 3874.9000000003725
+        },
+        {
+          "name": "audit:visible",
+          "time": 3878.800000000745
+        }
+      ],
+      "transferBytes": 2319408,
+      "errors": []
+    },
+    {
+      "run": 3,
+      "performance": 42,
+      "accessibility": 100,
+      "lcpMs": 11706.860499999999,
+      "tbtMs": 3193.5697500000006,
+      "lighthouseTransfer": 2318514,
+      "chromeVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "readyMs": 3815.300000000745,
+      "probeMs": 3819.5999999996275,
+      "entries": [
+        {
+          "url": "http://127.0.0.1:4191/models/apar.glb",
+          "transfer": 695384,
+          "decoded": 695084
+        },
+        {
+          "url": "http://127.0.0.1:4191/hdri/studio_1k.hdr.gz",
+          "transfer": 1187846,
+          "decoded": 1187546
+        },
+        {
+          "url": "http://127.0.0.1:4191/assets/index-P5ZAvEVi.js",
+          "transfer": 224334,
+          "decoded": 818234
+        },
+        {
+          "url": "http://127.0.0.1:4191/assets/index-DNtrYgHn.css",
+          "transfer": 5566,
+          "decoded": 27667
+        },
+        {
+          "url": "http://127.0.0.1:4191/decoders/draco/draco_wasm_wrapper.js",
+          "transfer": 12048,
+          "decoded": 58456
+        },
+        {
+          "url": "http://127.0.0.1:4191/decoders/draco/draco_decoder.wasm",
+          "transfer": 192720,
+          "decoded": 192420
+        },
+        {
+          "url": "http://127.0.0.1:4191/favicon.ico",
+          "transfer": 300,
+          "decoded": 0
+        }
+      ],
+      "documentTransfer": 1210,
+      "marks": [
+        {
+          "name": "apar:load-start",
+          "time": 1234.7000000011176
+        },
+        {
+          "name": "apar:model-ready",
+          "time": 2302.2000000011176
+        },
+        {
+          "name": "apar:environment-ready",
+          "time": 3175.5999999996275
+        },
+        {
+          "name": "apar:visible",
+          "time": 3815.300000000745
+        },
+        {
+          "name": "audit:visible",
+          "time": 3819.5999999996275
+        }
+      ],
+      "transferBytes": 2319408,
+      "errors": []
+    }
+  ]
+}

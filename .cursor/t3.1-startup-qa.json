@@ -1,0 +1,261 @@
+{
+  "origin": "http://localhost:4191",
+  "checks": [
+    {
+      "name": "Normal production: one model/HDR request, no debug/PDF download or global; splash gone/controls enabled; one visible mark",
+      "detail": {
+        "marks": [
+          {
+            "name": "apar:load-start",
+            "time": 276
+          },
+          {
+            "name": "apar:environment-ready",
+            "time": 1518.6000000014901
+          },
+          {
+            "name": "apar:model-ready",
+            "time": 1630.5
+          },
+          {
+            "name": "apar:visible",
+            "time": 1967
+          }
+        ],
+        "measures": 1,
+        "splash": "0",
+        "debug": false,
+        "enabled": true
+      }
+    },
+    {
+      "name": "model completes last: final visible mark waits for both",
+      "detail": {
+        "marks": [
+          {
+            "name": "apar:load-start",
+            "time": 188.5
+          },
+          {
+            "name": "apar:environment-ready",
+            "time": 351.1000000014901
+          },
+          {
+            "name": "apar:model-ready",
+            "time": 2643.60000000149
+          },
+          {
+            "name": "apar:visible",
+            "time": 2762.400000002235
+          }
+        ],
+        "measures": 1,
+        "splash": "0",
+        "debug": false,
+        "enabled": true
+      }
+    },
+    {
+      "name": "environment completes last: final visible mark waits for both",
+      "detail": {
+        "marks": [
+          {
+            "name": "apar:load-start",
+            "time": 219.09999999776483
+          },
+          {
+            "name": "apar:model-ready",
+            "time": 474.69999999925494
+          },
+          {
+            "name": "apar:environment-ready",
+            "time": 2625.300000000745
+          },
+          {
+            "name": "apar:visible",
+            "time": 2745.5
+          }
+        ],
+        "measures": 1,
+        "splash": "0",
+        "debug": false,
+        "enabled": true
+      }
+    },
+    {
+      "name": "corrupt: original HDR fallback succeeds without duplicate original requests",
+      "detail": {
+        "marks": [
+          {
+            "name": "apar:load-start",
+            "time": 182.10000000149012
+          },
+          {
+            "name": "apar:environment-ready",
+            "time": 361.20000000298023
+          },
+          {
+            "name": "apar:model-ready",
+            "time": 428.5
+          },
+          {
+            "name": "apar:visible",
+            "time": 527
+          }
+        ],
+        "measures": 1,
+        "splash": "0",
+        "debug": false,
+        "enabled": true
+      }
+    },
+    {
+      "name": "missing: original HDR fallback succeeds without duplicate original requests",
+      "detail": {
+        "marks": [
+          {
+            "name": "apar:load-start",
+            "time": 185.39999999850988
+          },
+          {
+            "name": "apar:environment-ready",
+            "time": 357.8999999985099
+          },
+          {
+            "name": "apar:model-ready",
+            "time": 428.5999999977648
+          },
+          {
+            "name": "apar:visible",
+            "time": 546.5
+          }
+        ],
+        "measures": 1,
+        "splash": "0",
+        "debug": false,
+        "enabled": true
+      }
+    },
+    {
+      "name": "no-decompression: original HDR fallback succeeds without duplicate original requests",
+      "detail": {
+        "marks": [
+          {
+            "name": "apar:load-start",
+            "time": 174.19999999925494
+          },
+          {
+            "name": "apar:environment-ready",
+            "time": 322.5999999977648
+          },
+          {
+            "name": "apar:model-ready",
+            "time": 412.5
+          },
+          {
+            "name": "apar:visible",
+            "time": 519.1999999992549
+          }
+        ],
+        "measures": 1,
+        "splash": "0",
+        "debug": false,
+        "enabled": true
+      }
+    },
+    {
+      "name": "Both HDR downloads fail: directional-light fallback usable, never counted as success",
+      "detail": {
+        "marks": [
+          {
+            "name": "apar:load-start",
+            "time": 199.10000000149012
+          },
+          {
+            "name": "apar:environment-failed",
+            "time": 308.5
+          },
+          {
+            "name": "apar:model-ready",
+            "time": 398.5
+          },
+          {
+            "name": "apar:fallback-visible",
+            "time": 620.2000000029802
+          }
+        ],
+        "measures": 1,
+        "splash": "0",
+        "debug": false,
+        "enabled": true
+      }
+    },
+    {
+      "name": "Model failure then Retry: two attempts, one successful visible mark, export disabled while failed",
+      "detail": {
+        "marks": [
+          {
+            "name": "apar:load-start",
+            "time": 214.89999999850988
+          },
+          {
+            "name": "apar:environment-ready",
+            "time": 415.79999999701977
+          },
+          {
+            "name": "apar:load-start",
+            "time": 466.19999999925494
+          },
+          {
+            "name": "apar:model-ready",
+            "time": 589.6999999992549
+          },
+          {
+            "name": "apar:visible",
+            "time": 710.5999999977648
+          }
+        ],
+        "measures": 1,
+        "splash": "0",
+        "debug": false,
+        "enabled": true
+      }
+    },
+    {
+      "name": "Debug imports stats once, preserves markers/bridge, lies below navigation, reduced-motion idle renders zero frames",
+      "detail": {
+        "renders": 0,
+        "statsTop": 108,
+        "topbarBottom": 100
+      }
+    },
+    {
+      "name": "Optional debug chunk failure keeps production model and controls usable",
+      "detail": {
+        "marks": [
+          {
+            "name": "apar:load-start",
+            "time": 206.89999999850988
+          },
+          {
+            "name": "apar:environment-ready",
+            "time": 374.80000000074506
+          },
+          {
+            "name": "apar:model-ready",
+            "time": 485.3999999985099
+          },
+          {
+            "name": "apar:visible",
+            "time": 612.1000000014901
+          }
+        ],
+        "measures": 1,
+        "splash": "0",
+        "debug": false,
+        "enabled": true
+      }
+    }
+  ],
+  "errors": []
+}

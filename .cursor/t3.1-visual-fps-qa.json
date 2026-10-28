@@ -1,0 +1,57 @@
+{
+  "origin": "http://localhost:4191",
+  "hardware": "Local Chrome, GPU enabled; no network/CPU throttle; mobile is emulation",
+  "checks": [
+    {
+      "mobile": false,
+      "check": "CO2/9kg/silver/bracket saved and loaded after yellow selection; DPR unchanged",
+      "hardware": {
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 Laptop GPU (0x00002520) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "dpr": 1
+      }
+    },
+    {
+      "mobile": true,
+      "check": "CO2/9kg/silver/bracket saved and loaded after yellow selection; DPR unchanged",
+      "hardware": {
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3060 Laptop GPU (0x00002520) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "dpr": 1.5
+      }
+    }
+  ],
+  "fps": [
+    {
+      "mobile": false,
+      "label": "Configure auto-orbit",
+      "frames": 273,
+      "duration": 2011.1000000014901,
+      "fps": 135.74660633474105,
+      "p95Ms": 8.799999997019768
+    },
+    {
+      "mobile": false,
+      "label": "Squeeze active fire",
+      "frames": 361,
+      "duration": 2001.699999999255,
+      "fps": 180.3467053005617,
+      "p95Ms": 5.899999998509884
+    },
+    {
+      "mobile": true,
+      "label": "Configure auto-orbit",
+      "frames": 315,
+      "duration": 2002.3999999985099,
+      "fps": 157.31122652828327,
+      "p95Ms": 8.099999997764826
+    },
+    {
+      "mobile": true,
+      "label": "Squeeze active fire",
+      "frames": 360,
+      "duration": 2001,
+      "fps": 179.91004497751123,
+      "p95Ms": 5.700000002980232
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,188 @@
+{
+  "stage": "before",
+  "chrome": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "lighthouse": "12.8.2",
+  "server": "gzip HTML/JS/CSS only; binary unchanged; no-store",
+  "fourG": {
+    "width": 412,
+    "height": 823,
+    "deviceScaleFactor": 1.75,
+    "downloadMbps": 9,
+    "uploadMbps": 1.5,
+    "latencyMs": 60,
+    "cpuSlowdown": 4
+  },
+  "runs": [
+    {
+      "run": 1,
+      "performance": 41,
+      "accessibility": 100,
+      "lcpMs": 14255.4691,
+      "tbtMs": 3827,
+      "lighthouseTransfer": 2746036,
+      "chromeVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "readyMs": 6200.5,
+      "probeMs": 6200.5,
+      "entries": [
+        {
+          "url": "http://127.0.0.1:4191/assets/index-DrIAZez-.js",
+          "transfer": 224214,
+          "decoded": 817716
+        },
+        {
+          "url": "http://127.0.0.1:4191/assets/index-BGahbKEB.css",
+          "transfer": 5548,
+          "decoded": 27564
+        },
+        {
+          "url": "http://127.0.0.1:4191/hdri/studio_1k.hdr",
+          "transfer": 1615548,
+          "decoded": 1615248
+        },
+        {
+          "url": "http://127.0.0.1:4191/models/apar.glb",
+          "transfer": 695384,
+          "decoded": 695084
+        },
+        {
+          "url": "http://127.0.0.1:4191/favicon.ico",
+          "transfer": 300,
+          "decoded": 0
+        },
+        {
+          "url": "http://127.0.0.1:4191/decoders/draco/draco_wasm_wrapper.js",
+          "transfer": 12048,
+          "decoded": 58456
+        },
+        {
+          "url": "http://127.0.0.1:4191/decoders/draco/draco_decoder.wasm",
+          "transfer": 192720,
+          "decoded": 192420
+        }
+      ],
+      "documentTransfer": 1160,
+      "marks": [
+        {
+          "name": "audit:visible",
+          "time": 6200.5
+        }
+      ],
+      "transferBytes": 2746922,
+      "errors": []
+    },
+    {
+      "run": 2,
+      "performance": 42,
+      "accessibility": 100,
+      "lcpMs": 14171.4243,
+      "tbtMs": 3378.9999999999995,
+      "lighthouseTransfer": 2746036,
+      "chromeVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "readyMs": 5027.800000000745,
+      "probeMs": 5027.800000000745,
+      "entries": [
+        {
+          "url": "http://127.0.0.1:4191/assets/index-DrIAZez-.js",
+          "transfer": 224214,
+          "decoded": 817716
+        },
+        {
+          "url": "http://127.0.0.1:4191/assets/index-BGahbKEB.css",
+          "transfer": 5548,
+          "decoded": 27564
+        },
+        {
+          "url": "http://127.0.0.1:4191/hdri/studio_1k.hdr",
+          "transfer": 1615548,
+          "decoded": 1615248
+        },
+        {
+          "url": "http://127.0.0.1:4191/models/apar.glb",
+          "transfer": 695384,
+          "decoded": 695084
+        },
+        {
+          "url": "http://127.0.0.1:4191/favicon.ico",
+          "transfer": 300,
+          "decoded": 0
+        },
+        {
+          "url": "http://127.0.0.1:4191/decoders/draco/draco_wasm_wrapper.js",
+          "transfer": 12048,
+          "decoded": 58456
+        },
+        {
+          "url": "http://127.0.0.1:4191/decoders/draco/draco_decoder.wasm",
+          "transfer": 192720,
+          "decoded": 192420
+        }
+      ],
+      "documentTransfer": 1160,
+      "marks": [
+        {
+          "name": "audit:visible",
+          "time": 5027.800000000745
+        }
+      ],
+      "transferBytes": 2746922,
+      "errors": []
+    },
+    {
+      "run": 3,
+      "performance": 42,
+      "accessibility": 100,
+      "lcpMs": 14269.6103,
+      "tbtMs": 3550,
+      "lighthouseTransfer": 2746036,
+      "chromeVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "readyMs": 5113.5999999996275,
+      "probeMs": 5113.5999999996275,
+      "entries": [
+        {
+          "url": "http://127.0.0.1:4191/assets/index-DrIAZez-.js",
+          "transfer": 224214,
+          "decoded": 817716
+        },
+        {
+          "url": "http://127.0.0.1:4191/assets/index-BGahbKEB.css",
+          "transfer": 5548,
+          "decoded": 27564
+        },
+        {
+          "url": "http://127.0.0.1:4191/hdri/studio_1k.hdr",
+          "transfer": 1615548,
+          "decoded": 1615248
+        },
+        {
+          "url": "http://127.0.0.1:4191/models/apar.glb",
+          "transfer": 695384,
+          "decoded": 695084
+        },
+        {
+          "url": "http://127.0.0.1:4191/favicon.ico",
+          "transfer": 300,
+          "decoded": 0
+        },
+        {
+          "url": "http://127.0.0.1:4191/decoders/draco/draco_wasm_wrapper.js",
+          "transfer": 12048,
+          "decoded": 58456
+        },
+        {
+          "url": "http://127.0.0.1:4191/decoders/draco/draco_decoder.wasm",
+          "transfer": 192720,
+          "decoded": 192420
+        }
+      ],
+      "documentTransfer": 1160,
+      "marks": [
+        {
+          "name": "audit:visible",
+          "time": 5113.5999999996275
+        }
+      ],
+      "transferBytes": 2746922,
+      "errors": []
+    }
+  ]
+}

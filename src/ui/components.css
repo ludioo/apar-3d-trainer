@@ -293,6 +293,13 @@
   pointer-events: none;
 }
 
+.debug-stats {
+  position: fixed;
+  top: calc(var(--topbar-h) + var(--space-8));
+  left: var(--space-16);
+  z-index: 90;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .splash,
   .splash__fill,

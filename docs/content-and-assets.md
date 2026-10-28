@@ -12,6 +12,8 @@ Belum diverifikasi: Sketchfab dan Quaternius untuk APAR — tidak dicek dalam ri
 | Aset | Sumber | Lisensi |
 |---|---|---|
 | HDRI `studio_small_09` (1K .hdr) → file disk `public/hdri/studio_1k.hdr` (~1577 KB) | https://polyhaven.com/a/studio_small_09 | CC0 |
+| T3.1 HDRI gzip `public/hdri/studio_1k.hdr.gz` (1.187.546 byte; sumber 1.615.248 byte), byte/piksel 1024×512 identik setelah dekompresi; regenerasi melalui `npm run optimize:environment` atau build | turunan lossless HDRI studio_small_09 existing, tidak menambah gambar sumber | CC0 |
+| T3.1 stats.js bawaan `three/addons/libs/stats.module.js`, hanya dimuat lewat chunk debug saat ?debug; chunk HUD/marker/stats gabungan ~3,00 KB / gzip ~1,50 KB, nol transfer pada halaman normal | https://github.com/mrdoob/stats.js/blob/master/LICENSE (dicek 28 Okt 2026); notice disertakan di `public/licenses/stats.txt` | MIT |
 | Ikon UI | Lucide (https://lucide.dev, ISC) — SVG inline, hanya yang dipakai | ISC |
 | Font Inter, JetBrains Mono | @fontsource (npm) | OFL-1.1 |
 | PDF T2.5 | jsPDF 4.2.1 dari npm, https://github.com/parallax/jsPDF; font standar PDF Helvetica tanpa unduhan/embedding font baru; screenshot JPEG 1200×900 dari model aplikasi sendiri | jsPDF MIT; model/HDRI tetap CC0 |

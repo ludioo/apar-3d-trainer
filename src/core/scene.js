@@ -3,7 +3,6 @@ import {
   Box3,
   Color,
   DirectionalLight,
-  EquirectangularReflectionMapping,
   PerspectiveCamera,
   PlaneGeometry,
   Scene,
@@ -14,13 +13,14 @@ import {
   WebGLRenderer,
   Mesh,
 } from 'three';
-import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
+import { loadEnvironment } from './environment.js';
 import { emit } from './events.js';
 
 let renderer;
 let scene;
 let camera;
 let renderQueued = false;
+let environmentReady;
 
 export function requestRender() {
   if (renderQueued || !renderer) return;
@@ -28,7 +28,19 @@ export function requestRender() {
   requestAnimationFrame(() => {
     renderQueued = false;
     renderer.render(scene, camera);
+    emit('scene:rendered');
   });
+}
+
+export async function prepareModel(model) {
+  model.visible = false;
+  const hasEnvironment = await environmentReady;
+  try {
+    await renderer.compileAsync(model, camera, scene);
+  } finally {
+    model.visible = true;
+  }
+  return hasEnvironment;
 }
 
 export function captureModel(model, excluded = []) {
@@ -106,18 +118,7 @@ export function initScene(container) {
   ground.receiveShadow = true;
   scene.add(ground);
 
-  new HDRLoader().load(
-    '/hdri/studio_1k.hdr',
-    (hdr) => {
-      hdr.mapping = EquirectangularReflectionMapping;
-      scene.environment = hdr;
-      requestRender();
-    },
-    undefined,
-    (err) => {
-      console.warn('HDRI load failed; continuing with directional light only', err);
-    },
-  );
+  environmentReady = loadEnvironment(renderer, scene, requestRender);
 
   const resizeObserver = new ResizeObserver((entries) => {
     const entry = entries[0];

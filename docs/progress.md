@@ -20,7 +20,7 @@ Status: ⬜ todo · 🟨 in progress · ✅ done · ⛔ blocked
 | T2.3 Kuis | ✅ | 2026-10-28 | Barkah mengonfirmasi kuis dan revisi 1=tuas/2=pin pengaman benar serta lolos; seluruh checklist umum/revisi ditutup. Check/build dan QA Configure/PASS/kuis lolos, riwayat lama dipertahankan. Commit/push ke develop diminta; T2.4 belum dimulai. |
 | T2.4 Dashboard Results | ✅ | 2026-10-28 | Barkah mengonfirmasi T2.4 sudah dicek dan lolos; kedua checklist acceptance ditutup. Dashboard skor/ring, SVG 20 riwayat, tabel jawaban, ringkasan konfigurasi, nama opsional dan Clear/reset sesi diterima. Check/build dan QA lokal lolos; commit/push ke develop diminta. T2.5 tetap belum dimulai. |
 | T2.5 Ekspor PDF | ✅ | 2026-10-28 | Barkah mengonfirmasi T2.5 sudah dicek dan lolos; empat checklist acceptance ditutup. Report terbaru + spec aktif/capture utuh, jsPDF lazy dan bilingual diterima. Check/build serta QA lokal lolos; dokumen diperbarui dan commit/push ke develop diminta. T3.1 tidak dimulai; main tidak diubah. |
-| T3.1 Performa | ⬜ | | |
+| T3.1 Performa | ✅ | 2026-10-28 | Barkah mengonfirmasi T3.1 sudah dicek dan lolos; task dan kedua checklist ditutup atas acceptance pengguna. HDRI gzip lossless, preload, shader preparation dan stats hanya ?debug diterima. Hasil audit AI tetap dicatat: median Lighthouse 42, APAR 4,04 dtk, transfer 2.319.573 byte, GLB 695.084 byte; bukan bukti target numerik tercapai. Dokumen diperbarui dan commit/push ke develop diminta. Usulan revisi belum diterapkan; T3.2 tidak dimulai dan main tidak diubah. |
 | T3.2 Aksesibilitas & About | ⬜ | | |
 | T3.3 SEO | ⬜ | | |
 | T3.4 README & video | ⬜ | | |
