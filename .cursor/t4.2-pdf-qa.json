@@ -1,0 +1,410 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://localhost:4192",
+  "checks": [
+    {
+      "name": "Report downloads, latest 5/8, EN/ID, optional/60-character/Latin names, unsupported-name feedback, failed-save draft and corrupt history; PDF libraries load only on export"
+    },
+    {
+      "name": "Active unsaved spec, CO2 9kg/bracket prices EN/ID, 24 capacity/color/bracket captures, 1200x900 nonblank image bounds, orbit/close-up/debug/highlight/resource restoration and failed capture retry"
+    },
+    {
+      "name": "Frozen report/spec data and language across delayed import, duplicate clicks rejected, pending report cancelled on navigation/Clear, failed import feedback and retry"
+    },
+    {
+      "name": "Export buttons reachable at 20 viewport/language/text combinations x three snaps (60 states, 120 button checks), mobile touch downloads, keyboard and reduced motion",
+      "detail": {
+        "combinations": 20,
+        "snapStates": 60,
+        "buttonChecks": 120
+      }
+    }
+  ],
+  "errors": [],
+  "images": [
+    {
+      "capacity": "1kg",
+      "color": "red",
+      "bracket": false,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 27994
+    },
+    {
+      "capacity": "1kg",
+      "color": "red",
+      "bracket": true,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28011
+    },
+    {
+      "capacity": "1kg",
+      "color": "yellow",
+      "bracket": false,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28031
+    },
+    {
+      "capacity": "1kg",
+      "color": "yellow",
+      "bracket": true,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28048
+    },
+    {
+      "capacity": "1kg",
+      "color": "silver",
+      "bracket": false,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28047
+    },
+    {
+      "capacity": "1kg",
+      "color": "silver",
+      "bracket": true,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28065
+    },
+    {
+      "capacity": "3kg",
+      "color": "red",
+      "bracket": false,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 27997
+    },
+    {
+      "capacity": "3kg",
+      "color": "red",
+      "bracket": true,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28015
+    },
+    {
+      "capacity": "3kg",
+      "color": "yellow",
+      "bracket": false,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28032
+    },
+    {
+      "capacity": "3kg",
+      "color": "yellow",
+      "bracket": true,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28050
+    },
+    {
+      "capacity": "3kg",
+      "color": "silver",
+      "bracket": false,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28049
+    },
+    {
+      "capacity": "3kg",
+      "color": "silver",
+      "bracket": true,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28067
+    },
+    {
+      "capacity": "6kg",
+      "color": "red",
+      "bracket": false,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 27993
+    },
+    {
+      "capacity": "6kg",
+      "color": "red",
+      "bracket": true,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28010
+    },
+    {
+      "capacity": "6kg",
+      "color": "yellow",
+      "bracket": false,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28026
+    },
+    {
+      "capacity": "6kg",
+      "color": "yellow",
+      "bracket": true,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28044
+    },
+    {
+      "capacity": "6kg",
+      "color": "silver",
+      "bracket": false,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28043
+    },
+    {
+      "capacity": "6kg",
+      "color": "silver",
+      "bracket": true,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28061
+    },
+    {
+      "capacity": "9kg",
+      "color": "red",
+      "bracket": false,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 27995
+    },
+    {
+      "capacity": "9kg",
+      "color": "red",
+      "bracket": true,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28013
+    },
+    {
+      "capacity": "9kg",
+      "color": "yellow",
+      "bracket": false,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28030
+    },
+    {
+      "capacity": "9kg",
+      "color": "yellow",
+      "bracket": true,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28048
+    },
+    {
+      "capacity": "9kg",
+      "color": "silver",
+      "bracket": false,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28046
+    },
+    {
+      "capacity": "9kg",
+      "color": "silver",
+      "bracket": true,
+      "size": [
+        1200,
+        900
+      ],
+      "bounds": [
+        424,
+        150,
+        740,
+        818
+      ],
+      "count": 28064
+    }
+  ]
+}

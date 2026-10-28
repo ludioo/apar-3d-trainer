@@ -16,8 +16,7 @@ body {
   top: var(--topbar-h);
   left: 0;
   right: 0;
-  height: calc(100vh - var(--topbar-h) - var(--sheet-collapsed-h));
-  height: calc(100dvh - var(--topbar-h) - var(--sheet-collapsed-h));
+  bottom: calc(var(--sheet-bottom) + var(--sheet-visible-h, var(--sheet-half-h)));
   background: radial-gradient(ellipse at center, var(--bg-grad), var(--bg));
 }
 

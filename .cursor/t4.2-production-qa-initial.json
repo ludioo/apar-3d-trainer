@@ -1,0 +1,21 @@
+{
+  "origin": "http://localhost:4192",
+  "stage": "production",
+  "checks": [
+    {
+      "name": "Default half, exact 25/50/75 heights, click cycle, Enter/Space, labels and canvas boundaries"
+    },
+    {
+      "name": "Drag reaches all snaps, canvas follows during drag, pointercancel and lost capture restore previous snap"
+    }
+  ],
+  "errors": [],
+  "images": [
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-mobile-half.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-mobile-full.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-mobile-peek.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-mobile-half.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-configure-yellow-co2.png"
+  ],
+  "failure": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.hotspot-card__close')\u001b[22m\n\n    at D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-check.cjs:111:93"
+}

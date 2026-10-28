@@ -2,6 +2,8 @@
 
 Navigasi: single page dengan 3 tab di top bar — **Configure**, **Train**, **Results** — plus toggle bahasa EN/ID dan link "About". Kanvas 3D tetap satu (dipakai bersama semua mode). URL hash: `#configure`, `#train`, `#results`, `#about`.
 
+T4.2 mobile/narrow (<1024px): sheet bersama Configure/Train/kuis/Results mulai pada 50%; drag handle memilih 25%/50%/75% terdekat, sedangkan tap/Enter/Space menggilir peek→half→full→peek. Kanvas mengikuti tinggi aktual agar perubahan opsi tetap dapat dilihat pada model. Scroll konten tidak mengubah snap. Posisi pilihan bertahan selama tab/bahasa/hotspot/About/resize dan mobile–desktop–mobile; reload kembali 50%, tanpa localStorage baru. Pada layar pendek snap dibatasi minimum 176px/ruang aman di bawah topbar; posisi berimpit dilewati. Perubahan viewport keyboard menjaga input bisa dijangkau melalui scroll. Desktop tetap panel kanan.
+
 ## UF0 — Masuk & loading
 1. Buka URL → splash: logo/nama, progress bar % (dari LoadingManager), teks "Loading 3D model…".
 2. Model tampil, auto-rotate pelan, tab default `Configure`.

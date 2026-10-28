@@ -1,0 +1,31 @@
+{
+  "origin": "http://localhost:4192",
+  "stage": "production",
+  "checks": [
+    {
+      "name": "Default half, exact 25/50/75 heights, click cycle, Enter/Space, labels and canvas boundaries"
+    },
+    {
+      "name": "Drag reaches all snaps, canvas follows during drag, pointercancel and lost capture restore previous snap"
+    },
+    {
+      "name": "Color/agent stay selected, model remains rendered, routes/language/About/hotspot preserve half snap"
+    },
+    {
+      "name": "Desktop panel/canvas unchanged, mobile position survives breakpoint roundtrip, reload returns half"
+    },
+    {
+      "name": "Short screens clamp to safe available height and skip duplicate positions"
+    }
+  ],
+  "errors": [],
+  "images": [
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-mobile-half.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-mobile-full.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-mobile-peek.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-mobile-half.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-configure-yellow-co2.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-desktop.png"
+  ],
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n'peek' !== 'half'\n\n    at D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-check.cjs:145:77"
+}

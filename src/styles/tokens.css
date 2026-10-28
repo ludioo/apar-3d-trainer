@@ -50,9 +50,12 @@
   --topbar-h: calc(var(--topbar-row) + var(--tabs-row));
   --panel-w: 360px;
   --sheet-min-h: 176px;
-  --sheet-available-h: max(0px, calc(100vh - var(--topbar-h) - var(--space-16)));
-  --sheet-collapsed-h: min(max(30vh, var(--sheet-min-h)), var(--sheet-available-h));
-  --sheet-expanded-h: min(80vh, var(--sheet-available-h));
+  --sheet-viewport-h: 100vh;
+  --sheet-bottom: 0px;
+  --sheet-available-h: max(0px, calc(100vh - var(--sheet-bottom) - var(--topbar-h) - var(--space-16)));
+  --sheet-peek-h: min(max(calc(var(--sheet-viewport-h) * 0.25), var(--sheet-min-h)), var(--sheet-available-h));
+  --sheet-half-h: min(max(calc(var(--sheet-viewport-h) * 0.5), var(--sheet-min-h)), var(--sheet-available-h));
+  --sheet-full-h: min(max(calc(var(--sheet-viewport-h) * 0.75), var(--sheet-min-h)), var(--sheet-available-h));
 
   /* Motion */
   --dur-ui-min: 150ms;
@@ -63,9 +66,8 @@
 
 @supports (height: 100dvh) {
   :root {
-    --sheet-available-h: max(0px, calc(100dvh - var(--topbar-h) - var(--space-16)));
-    --sheet-collapsed-h: min(max(30dvh, var(--sheet-min-h)), var(--sheet-available-h));
-    --sheet-expanded-h: min(80dvh, var(--sheet-available-h));
+    --sheet-viewport-h: 100dvh;
+    --sheet-available-h: max(0px, calc(100dvh - var(--sheet-bottom) - var(--topbar-h) - var(--space-16)));
   }
 }
 

@@ -9,6 +9,7 @@ Versi: AI WAJIB memakai versi stabil terbaru saat install (`npm i three@latest` 
 | Tween kamera | Implementasi kecil sendiri (lerp + easing) | Hindari dependensi; cukup untuk fokus hotspot. |
 | PDF | jsPDF (MIT) | Gratis, client-side, dukung gambar (screenshot canvas). |
 | UI | HTML + CSS custom properties (tanpa framework CSS) | Ringan; design token di `design-system.md`. |
+| Sheet mobile | Pointer Events + CSS height existing, tiga snap 25/50/75% | T4.2: default 50%, kanvas mengikuti panel; tanpa dependency atau CSS scroll-driven animation dengan batas Safari 18.2. Pilihan ini disetujui Barkah saat planning. |
 | Font | Inter + JetBrains Mono, self-host via `@fontsource` (OFL) | Gratis, tanpa request ke Google. |
 | Optimasi aset | `@gltf-transform/cli` (MIT) — draco + KTX2 (etc1s/uastc) + resize tekstur | Wajib dari riset: GLB Draco/KTX2. KTX2 butuh `toktx` (KTX-Software, Apache-2.0) terinstall di mesin build. |
 | Storage | `localStorage` | Tanpa login/backend (keputusan Barkah). |

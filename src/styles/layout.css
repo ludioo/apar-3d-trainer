@@ -66,11 +66,11 @@
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: var(--sheet-bottom);
   z-index: 50;
   display: flex;
   flex-direction: column;
-  height: var(--sheet-collapsed-h);
+  height: var(--sheet-half-h);
   max-height: var(--sheet-available-h);
   padding: 0 var(--space-16) var(--space-16);
   background: var(--surface-solid);
@@ -83,8 +83,12 @@
   transition: height var(--dur-ui-max) ease;
 }
 
-.panel.is-expanded {
-  height: var(--sheet-expanded-h);
+.panel[data-snap='peek'] {
+  height: var(--sheet-peek-h);
+}
+
+.panel[data-snap='full'] {
+  height: var(--sheet-full-h);
 }
 
 .panel.is-dragging {
@@ -92,8 +96,7 @@
 }
 
 @supports (backdrop-filter: blur(12px)) {
-  .panel,
-  .panel.is-expanded {
+  .panel {
     background: var(--surface);
     backdrop-filter: blur(12px);
   }
@@ -128,7 +131,8 @@
     align-self: center;
   }
 
-  .panel {
+  .panel,
+  .panel[data-snap] {
     top: calc(var(--topbar-h) + var(--space-16));
     right: var(--space-16);
     bottom: var(--space-16);

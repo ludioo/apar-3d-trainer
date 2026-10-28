@@ -1,0 +1,2864 @@
+[
+  {
+    "time": 1503.7000000029802,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 1503.8999999985099,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 1504.1000000014901,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 1504.2000000029802,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 1504.3000000044703,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 1504.5,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 445,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 1504.7000000029802,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 445,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 1504.7000000029802,
+    "name": "click",
+    "detail": 1,
+    "y": 445,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 1925.3999999985099,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 234,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "full"
+  },
+  {
+    "time": 1925.5,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "full"
+  },
+  {
+    "time": 1925.7000000029802,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 234,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "full"
+  },
+  {
+    "time": 1925.7000000029802,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 234,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "full"
+  },
+  {
+    "time": 1925.7000000029802,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "full"
+  },
+  {
+    "time": 1925.8999999985099,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 234,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "full"
+  },
+  {
+    "time": 1926,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 234,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "full"
+  },
+  {
+    "time": 1926,
+    "name": "click",
+    "detail": 1,
+    "y": 234,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "full"
+  },
+  {
+    "time": 2342,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 2342,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 2342.3000000044703,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 2342.3000000044703,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 2342.3000000044703,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 2342.60000000149,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 2342.60000000149,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 2342.60000000149,
+    "name": "click",
+    "detail": 1,
+    "y": 656,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 2757.39999999851,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 2757.5,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 2769.39999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 466,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 2780.5,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 487,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 2793.5,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 508,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 2814,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 529,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 2834.60000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 550,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 2853.5,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 571,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 2867.39999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 592,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 2881.10000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 613,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 2894.60000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 634,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 2907.7000000029802,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 2920.89999999851,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 2921.39999999851,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 2921.39999999851,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 4037,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 4037,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 4037.3000000044703,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 4037.39999999851,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 4037.39999999851,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 4037.8000000044703,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 4037.8000000044703,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 4037.89999999851,
+    "name": "click",
+    "detail": 1,
+    "y": 656,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 4353.80000000447,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 4354,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 4363.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 466,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 4374.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 487,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 4391.39999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 508,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 4405.10000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 529,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 4417.30000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 550,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 4428.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 571,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 4441.5,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 592,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 4452.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 613,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 4464.60000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 634,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 4476.80000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 4486.5,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 4486.80000000447,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 4486.80000000447,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 5597.70000000298,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 5597.89999999851,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 5598,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 5598,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 5598,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 5598.39999999851,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 5598.39999999851,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 5598.39999999851,
+    "name": "click",
+    "detail": 1,
+    "y": 656,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 5908.30000000447,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 5908.39999999851,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 5921.39999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 466,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 5930.39999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 487,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 5941.5,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 508,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 5952.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 529,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 5963.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 550,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 5974.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 571,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 5985.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 592,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 5997,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 613,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 6008.20000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 634,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 6019.30000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 6029.10000000149,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 6029.30000000447,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 6029.30000000447,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 7141.89999999851,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 7142,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 7142.10000000149,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 7142.10000000149,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 7142.10000000149,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 7142.5,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 7142.5,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 7142.5,
+    "name": "click",
+    "detail": 1,
+    "y": 656,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 7452.20000000298,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 7452.30000000447,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 7463.80000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 466,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 7475,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 487,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 7485.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 508,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 7497,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 529,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 7508.80000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 550,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 7520.20000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 571,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 7530.30000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 592,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 7541.39999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 613,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 7552.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 634,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 7563.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 7574.80000000447,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 7575,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 7575,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 8686.70000000298,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 8686.70000000298,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 8686.89999999851,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 8686.89999999851,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 8686.89999999851,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 8687.39999999851,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 8687.5,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 8687.5,
+    "name": "click",
+    "detail": 1,
+    "y": 656,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 8996.80000000447,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 8996.80000000447,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 9010.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 466,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 9019.30000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 487,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 9030.30000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 508,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 9041.39999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 529,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 9052.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 550,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 9063.60000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 571,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 9074.80000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 592,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 9085.80000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 613,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 9096.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 634,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 9108,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 9119.70000000298,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 9119.89999999851,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 9119.89999999851,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 10230.70000000298,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 10230.80000000447,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 10230.89999999851,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 10230.89999999851,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 10231,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 10231.20000000298,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 10231.20000000298,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 10231.30000000447,
+    "name": "click",
+    "detail": 1,
+    "y": 656,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 10540.89999999851,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 10540.89999999851,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 10552.60000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 466,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 10563.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 487,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 10574.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 508,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 10585.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 529,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 10596.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 550,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 10608,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 571,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 10614,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 592,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 10630.30000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 613,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 10641.5,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 634,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 10652.60000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 10664.20000000298,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 10664.30000000447,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 10664.39999999851,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 11775.20000000298,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 11775.30000000447,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 11775.5,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 11775.5,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 11775.60000000149,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 11775.89999999851,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 11775.89999999851,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 11775.89999999851,
+    "name": "click",
+    "detail": 1,
+    "y": 656,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 12085.60000000149,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 12085.60000000149,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 12099.20000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 466,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 12108.10000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 487,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 12119.20000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 508,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 12130.20000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 529,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 12141.30000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 550,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 12152.5,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 571,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 12163.60000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 592,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 12176.5,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 613,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 12196,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 634,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 12210.60000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 12223.60000000149,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 12223.70000000298,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 12223.80000000447,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 13338.20000000298,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 13338.20000000298,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 13338.30000000447,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 13338.30000000447,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 13338.30000000447,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 13338.60000000149,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 13338.60000000149,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 13338.60000000149,
+    "name": "click",
+    "detail": 1,
+    "y": 656,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 13647.39999999851,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 13647.39999999851,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 13658.10000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 466,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 13669.20000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 487,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 13680.30000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 508,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 13691.30000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 529,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 13702.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 550,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 13713.80000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 571,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 13724.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 592,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 13735.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 613,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 13746.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 634,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 13758,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 13768,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 13768.20000000298,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 13768.20000000298,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 14883.10000000149,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 14883.10000000149,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 14883.30000000447,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 14883.30000000447,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 14883.30000000447,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 14883.60000000149,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 14883.60000000149,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 14883.60000000149,
+    "name": "click",
+    "detail": 1,
+    "y": 656,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 15194.60000000149,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 15194.60000000149,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 15202.5,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 466,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 15213.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 487,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 15224.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 508,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 15230.5,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 529,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 15246.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 550,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 15258.10000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 571,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 15278.39999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 592,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 15294,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 613,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 15313.10000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 634,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 15330.30000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 15346.10000000149,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 15346.30000000447,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 15346.39999999851,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 16458.39999999851,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 16458.5,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 16458.70000000298,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 16458.80000000447,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 16458.80000000447,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 16459.20000000298,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 16459.20000000298,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 16459.20000000298,
+    "name": "click",
+    "detail": 1,
+    "y": 656,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 16770.5,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 16770.70000000298,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 16780.20000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 466,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 16791.30000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 487,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 16802.5,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 508,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 16813.5,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 529,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 16824.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 550,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 16835.70000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 571,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 16846.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 592,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 16858,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 613,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 16869.10000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 634,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 16880.20000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 16890.30000000447,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 16890.39999999851,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 16890.39999999851,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 18003.10000000149,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 18003.10000000149,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 18003.30000000447,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 18003.39999999851,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 18003.39999999851,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 18003.70000000298,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 18003.70000000298,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 18003.70000000298,
+    "name": "click",
+    "detail": 1,
+    "y": 656,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 18314.10000000149,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 18314.10000000149,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 18324.60000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 466,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 18335.80000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 487,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 18346.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 508,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 18358,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 529,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 18369.10000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 550,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 18380.20000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 571,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 18391.30000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 592,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 18397.20000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 613,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 18413.5,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 634,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 18424.60000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 18434.30000000447,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 18434.5,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 18434.60000000149,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 19547.20000000298,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 19547.30000000447,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 19547.39999999851,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 19547.39999999851,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 19547.5,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 19547.70000000298,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 19547.80000000447,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 19547.80000000447,
+    "name": "click",
+    "detail": 1,
+    "y": 656,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 19861.20000000298,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 445,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 19861.39999999851,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 19869.10000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 466,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 19880.20000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 487,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 19891.80000000447,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 508,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 19902.89999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 529,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 19913.39999999851,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 550,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 19926.60000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 571,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 19939,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 592,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 19950.20000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 613,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 19960.60000000149,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 634,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 19970.20000000298,
+    "name": "pointermove",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 19980,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "half"
+  },
+  {
+    "time": 19980.20000000298,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 655,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 19980.20000000298,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 21091.89999999851,
+    "name": "pointerdown",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 21092,
+    "name": "touchstart",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 21092.10000000149,
+    "name": "pointerup",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 21092.10000000149,
+    "name": "lostpointercapture",
+    "detail": 0,
+    "y": 656,
+    "primary": true,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 21092.20000000298,
+    "name": "touchend",
+    "detail": 0,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 21092.5,
+    "name": "mousedown",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 21092.5,
+    "name": "mouseup",
+    "detail": 1,
+    "y": 656,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  },
+  {
+    "time": 21092.5,
+    "name": "click",
+    "detail": 1,
+    "y": 656,
+    "primary": false,
+    "target": "panel__handle",
+    "focused": true,
+    "snap": "peek"
+  }
+]

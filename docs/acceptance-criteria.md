@@ -256,5 +256,26 @@ Cara cek HP satu Wi-Fi: `http://192.168.100.4:4191/#configure`, pembanding `http
 
 Bukti AI: `npm run check` (185 key i18n) dan build sukses; 14 kelompok environment + 11 PASS + delapan efek, empat kondisi kredit/keyboard/teks 200%, serta empat PDF/delapan halaman lolos. Detail di `.cursor/t4.1-report.md`. Transfer produksi lokal baseline 2.323.375 → 1.135.426 byte (-51,13%); median APAR 3,95 → 3,43 dtk pada tiga run 390×844/9 Mbps/60 ms/CPU4×. **Target <3 detik belum tercapai**, tanpa klaim Lighthouse baru/HP fisik/live. Task T4.25 tetap audit menyeluruh. HP fisik/AT/Firefox/Safari belum diuji AI. Tidak commit/push/deploy atau lanjut T4.2 otomatis.
 
+## T4.2 — Bottom sheet tiga posisi
+
+- [x] Mobile/narrow: sheet punya tiga posisi 25%/50%/75%, default sekitar 50%, model APAR masih terlihat saat half-open.
+- [x] Drag antar snap halus; tap/Enter/Space menggilir posisi dan kontrol warna/agent bisa diubah sambil melihat model. Scroll konten terpisah dari drag handle.
+- [x] Full 75% dan peek 25% berfungsi; input/kontrol penting dapat dijangkau lewat scroll. Pada layar pendek posisi boleh dibatasi/berimpit; keyboard/reduced motion dan label EN/ID tetap bekerja.
+- [x] Desktop panel kanan tidak regress; posisi mobile bertahan antar tab/bahasa/hotspot/resize/breakpoint dan reload kembali 50%.
+- [x] Check/build sukses; pilihan tanpa dependency, perubahan ukuran bundle aktual dan batas QA tercatat di decisions/known-issues.
+
+28 Okt 2026: **Barkah mengonfirmasi sudah memvalidasi T4.2 dan lolos**, meminta pembaruan dokumen serta commit/push ke develop. Task dan lima checklist ditutup berdasarkan acceptance tersebut dan bukti QA existing. Rincian perangkat/browser pemeriksaan tidak diberikan; tidak diklaim ada uji HP fisik/Safari/keyboard OS baru oleh AI. Check/build dijalankan ulang sebelum commit. T4.3 belum dimulai, main dan deploy produksi tidak diotorisasi.
+
+Riwayat sebelum acceptance: validasi Q1–Q6 dan planning disetujui sebelum implementasi. Barkah memilih perluasan pointer drag/snap existing tanpa library/CSS scroll-snap; kanvas mengikuti tinggi aktual sheet. Pada penyerahan implementasi, task/checklist masih menunggu acceptance dan commit/push belum diotorisasi; catatan tersebut kini ditutup oleh konfirmasi di atas.
+
+Cara cek:
+1. Desktop buka `http://localhost:4192/#configure`; HP satu Wi-Fi buka `http://192.168.100.4:4192/#configure`. Reload agar memakai revisi T4.2. Desktop harus tetap panel kanan, HP mulai half-open.
+2. HP: gulir isi sheet ke pilihan warna/agent, ubah keduanya dan amati perubahan APAR di atas. Geser handle ke bawah/tengah/atas untuk peek/half/full; tap handle juga menggilir posisi. Model mengecil pada full karena kanvas mengikuti ruang tersisa; pembesaran/framing model tetap T4.7.
+3. Dengan keyboard pada layar narrow, Tab ke handle lalu Enter/Space; fokus terlihat dan posisi bergilir tanpa menjawab kuis. Coba EN/ID serta pengaturan reduced motion, About/Tutup, Configure/Train/Results dan buka/tutup hotspot; pilihan snap tetap. Resize ke desktop lalu kembali mobile mempertahankan posisi, reload kembali 50%.
+4. HP: Results, gulir ke kolom nama lalu buka keyboard; input harus dapat dicapai dan panel tetap di area layar yang tersedia. Coba landscape pendek: snap bisa dibatasi minimum 176px/ruang aman di bawah topbar; tinggi yang sama dilewati. Pastikan kontrol penting tetap bisa digulir.
+5. Coba PASS/kuis, Results dan ekspor PDF; tidak ada jawaban/progres yang berubah hanya karena handle digeser. Catat perangkat/browser saat acceptance, khususnya gesture tap cepat setelah drag.
+
+Bukti lokal dan gate antislop ada di `.cursor/t4.2-report.md`; QA Chrome mencakup 56 keadaan Configure, tiga snap pada matriks regresi PASS/kuis/Results/PDF, serta touch/keyboard/reduced motion. Keyboard virtual adalah simulasi VisualViewport, bukan keyboard OS nyata. Safari/iOS/Firefox, HP fisik, AT dan audit Lighthouse/4G baru belum diuji. Bundle tambahan aktual sekitar 0,55 KB gzip untuk JS+CSS (angka Vite dibulatkan), tanpa dependency baru.
+
 ## Peta fitur → task
 F1: T0.2–T0.3 · F2: T1.3–T1.4 · F3: T1.5–T1.6 · F4: T1.6 · F5: T1.7 · F6: T2.1–T2.2 · F7: T2.3 · F8: T2.4 · F9: T2.5 · F10: T1.1 · F11: T3.2–T3.3 · F15: T3.6 · F16: L4 · Wajib riset (Draco/KTX2, <3 dtk, HP, Vercel, video, GitHub, SEO): T0.3, T3.1, T0.4, T3.4, T3.3

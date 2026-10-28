@@ -40,10 +40,14 @@ assert.equal(parseHash('#toString', modes), 'configure');
 
 assert.equal(nearestSnap(300, [240, 640]), 240);
 assert.equal(nearestSnap(500, [240, 640]), 640);
-assert.deepEqual(sheetBounds(844, 728, 176), [253.2, 675.2]);
-assert.deepEqual(sheetBounds(390, 274, 176), [176, 274], 'landscape keeps room below topbar');
-assert.deepEqual(sheetBounds(240, 124, 176), [124, 124], 'both snaps fit a very short viewport');
-assert.deepEqual(sheetBounds(800, 684, 176), [240, 640]);
+assert.deepEqual(sheetBounds(844, 728, 176), [211, 422, 633]);
+assert.deepEqual(sheetBounds(390, 274, 176), [176, 195, 274], 'landscape keeps room below topbar');
+assert.deepEqual(sheetBounds(240, 124, 176), [124, 124, 124], 'all snaps fit a very short viewport');
+assert.deepEqual(sheetBounds(800, 684, 176), [200, 400, 600]);
+assert.deepEqual(sheetBounds(300, 184, 176), [176, 176, 184], 'clamped adjacent snaps may coincide');
+assert.deepEqual(sheetBounds(200, 0, 176), [0, 0, 0]);
+assert.equal(nearestSnap(300, [200, 400, 600]), 200, 'ties prefer the lower snap');
+assert.equal(nearestSnap(440, [211, 422, 633]), 422, 'drag can stop halfway');
 assert.equal(nearestSnap(180, sheetBounds(390, 274, 176)), 176);
 assert.equal(nearestSnap(260, sheetBounds(390, 274, 176)), 274);
 

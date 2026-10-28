@@ -1,0 +1,71 @@
+{
+  "origin": "http://localhost:4192",
+  "stage": "production",
+  "checks": [
+    {
+      "name": "Default half, exact 25/50/75 heights, click cycle, Enter/Space, labels and canvas boundaries"
+    },
+    {
+      "name": "Drag reaches all snaps, canvas follows during drag, pointercancel and lost capture restore previous snap"
+    },
+    {
+      "name": "Color/agent stay selected, model remains rendered, routes/language/About/hotspot preserve half snap"
+    },
+    {
+      "name": "Desktop panel/canvas unchanged, mobile position survives breakpoint roundtrip, reload returns half"
+    },
+    {
+      "name": "Short screens clamp to safe available height and skip duplicate positions"
+    },
+    {
+      "name": "Native touch drag/tap, content scrolling, reduced motion and simulated keyboard viewport fit",
+      "details": {
+        "keyboard": {
+          "panel": {
+            "x": 0,
+            "y": 250,
+            "width": 390,
+            "height": 250,
+            "top": 250,
+            "right": 390,
+            "bottom": 500,
+            "left": 0
+          },
+          "canvas": {
+            "x": 0,
+            "y": 101,
+            "width": 390,
+            "height": 149,
+            "top": 101,
+            "right": 390,
+            "bottom": 250,
+            "left": 0
+          },
+          "snap": "half",
+          "label": "Panel: half (50%). Change to full (75%).",
+          "expanded": "true",
+          "overflow": false
+        }
+      }
+    },
+    {
+      "name": "Six viewport layouts with EN/ID, text 100/200%, every mobile snap and reachable configuration/PDF controls",
+      "details": {
+        "states": 56
+      }
+    },
+    {
+      "name": "No unexpected page/console errors"
+    }
+  ],
+  "errors": [],
+  "images": [
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-mobile-half.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-mobile-full.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-mobile-peek.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-mobile-half.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-configure-yellow-co2.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-desktop.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.2-production-landscape-200.png"
+  ]
+}

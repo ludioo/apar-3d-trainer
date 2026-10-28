@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://localhost:4192",
+  "checks": [
+    {
+      "name": "Empty Results and Train/Manage configurations links work"
+    },
+    {
+      "name": "Saved-only configuration, 0/5/6/8 scores, 20 chronological bars, bilingual table/price and read-only refresh"
+    },
+    {
+      "name": "Name trim/optional/60 characters, literal HTML, Enter/blur/tab/language, write failure and retry"
+    },
+    {
+      "name": "Corrupt/unavailable data isolated; real failed-save quiz remains in Train and is excluded from Results"
+    },
+    {
+      "name": "Clear Cancel/Escape/focus and confirmed deletion; language/unrelated data kept; quiz/PASS/name/config list stay cleared after navigation/refresh"
+    },
+    {
+      "name": "Partial and total deletion failures show honest messages, remaining data, and explicit successful retry"
+    }
+  ],
+  "errors": [],
+  "failure": "locator.tap: The page does not support tap. Use hasTouch context option to enable touch support.\n    at t42Snap (D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t2.4-check.cjs:230:42)\n    at async D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t2.4-check.cjs:185:31"
+}

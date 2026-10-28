@@ -52,10 +52,13 @@ let mode;
 
 function syncChrome() {
   tabs.setAttribute('aria-label', t('nav.label'));
-  sheetHandle.setAttribute('aria-label', t('sheet.toggle'));
+  const { current = 'half', next = 'full' } = sheetHandle.dataset;
+  sheetHandle.setAttribute('aria-label', current === next ? t('sheet.fixed')
+    : t('sheet.toggle').replace('{current}', t(`sheet.${current}`)).replace('{next}', t(`sheet.${next}`)));
   if (mode) panelTitle.textContent = t(`tabs.${mode}`);
 }
 on('lang:change', syncChrome);
+on('sheet:change', syncChrome);
 on('route:change', (route) => {
   mode = route.mode;
   tabLinks.forEach((a) => {
