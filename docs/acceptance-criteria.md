@@ -220,10 +220,12 @@ Gate antislop untuk scope README (arah: portfolio calon klien, Markdown native d
 - Craftsmanship/Copy PASS: fakta dicocokkan dengan data produk/hotspot, batas simpan, builder PDF dan stack terpasang; kredit/batas demo eksplisit, tanpa buzzword atau em dash. Screenshot hanya diklaim untuk PDF spesifikasi karena laporan latihan berisi teks hasil.
 
 ## T3.6
-- [ ] Di Umami → Events muncul variant_change, training_start, quiz_finish, pdf_export setelah kamu mencobanya di situs live (ad-blocker dimatikan).
-- [ ] Tidak ada banner cookie; nama peserta tidak muncul di Umami.
+- [x] Di Umami → Events muncul variant_change, training_start, quiz_finish, pdf_export setelah kamu mencobanya di situs live (ad-blocker dimatikan).
+- [x] Tidak ada banner cookie; nama peserta tidak muncul di Umami.
 - [x] Skor Lighthouse tidak turun dibanding T3.1. **Pengecualian diterima Barkah 28 Okt 2026:** skor akhir 42 sama dengan historis T3.1, tetapi turun dari baseline baru 43/44; penutupan berdasarkan penerimaan catatan, bukan bukti nonregresi numerik.
-- [ ] Di localhost tidak ada event terkirim.
+- [x] Di localhost tidak ada event terkirim.
+
+28 Okt 2026 — **Acceptance akhir T3.6 diterima Barkah:** setelah deploy produksi, Barkah menyatakan sudah mengecek juga dan Umami sudah terhubung. Seluruh checklist ditutup berdasarkan konfirmasi pengguna dan bukti QA lokal/live sebelumnya; tidak mengarang rincian Events/Properties/perangkat pemeriksaan Barkah atau mengklaim AI membuka dashboard akun. Catatan Lighthouse yang sudah diterima tetap pengecualian, bukan hasil audit numerik baru. Task ✅, dokumentasi penutupan diperbarui dan build diulang; tidak memulai T3.5. Catatan menunggu acceptance pada riwayat di bawah ditutup oleh konfirmasi ini.
 
 28 Okt 2026 — **Merge main/deploy produksi diotorisasi Barkah dan dijalankan.** Main di-fast-forward ke kode T3.6 907ac0f; Vercel Production Ready di https://trainer.barkahmauludi.com. Live QA lolos: HTTP 200 halaman, script sesudah APAR terlihat, delapan nama custom event dan kedua jenis PDF mendapat HTTP 200 dari kolektor; nama uji peserta/konfigurasi tidak ada di payload, cookie kosong, mobile touch/About ID tanpa overflow. Bukti `.cursor/t3.6-live-qa.json` dan `.cursor/t3.6-deploy-report.md`. Dashboard Umami tidak diakses sehingga checklist tampilan Events tetap menunggu pemeriksaan Barkah; localhost sudah dibuktikan lokal. Status 🟨 dan batas Lighthouse yang diterima tetap berlaku, tanpa T3.5. Catatan publikasi tertunda di bawah merupakan riwayat sebelum konfirmasi deploy ini.
 

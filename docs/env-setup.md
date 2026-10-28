@@ -50,7 +50,7 @@ Catatan: verifikasi TXT hanya diperlukan jika domain dipakai akun Vercel lain �
 Sumber: Vercel Docs "Adding & Configuring a Custom Domain" (last updated 16 Sep 2026, dibuka 27 Okt 2026) https://vercel.com/docs/domains/working-with-domains/add-a-domain — subdomain dikonfigurasi dengan CNAME unik per project; Settings → Domains → Add Domain; Hobby: maks 50 custom domain per project.
 
 ## 7. Umami (analytics gratis)
-> Status 28 Okt 2026: env **Production** sudah diisi Barkah; merge `main` dan deploy produksi kemudian diotorisasi dan dijalankan. Kode T3.6 sudah tayang di https://trainer.barkahmauludi.com, Vercel Ready; delapan jenis event dan kedua PDF mendapat HTTP 200 dari kolektor saat live QA. Periksa tampilan **Events/Properties** pada dashboard Anda untuk acceptance akhir. Nilai Website ID tidak dicatat di dokumen/repo.
+> Status 28 Okt 2026: env **Production** sudah diisi Barkah dan kode T3.6 tayang di https://trainer.barkahmauludi.com, Vercel Ready. Setelah live QA delapan jenis event/kedua PDF mendapat HTTP 200, Barkah juga mengonfirmasi sudah mengecek Umami dan terhubung; acceptance T3.6 ditutup. Nilai Website ID tidak dicatat di dokumen/repo.
 
 1. Login https://cloud.umami.is → **Websites**. Jika website sudah dibuat, buka **Edit**; jika belum, pilih **Add website**. Isi **Name** `APAR 3D Trainer`, **Domain** `trainer.barkahmauludi.com` (tanpa `https://`, slash, atau `#configure`) → **Save**. Jangan membuat website kedua untuk project yang sama.
 2. Buka website itu → **Edit → Tracking code** → salin hanya **Website ID** (UUID dari `data-website-id`). Tidak perlu menempelkan script secara manual; aplikasi memasangnya setelah APAR tampil dan browser idle.
