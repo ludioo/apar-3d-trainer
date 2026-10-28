@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-28",
+  "checks": [
+    {
+      "name": "desktop-room: PMREM, orbit/zoom, three colors/bracket, pin focus/close, PDF capture, About EN/ID and routing",
+      "details": {
+        "width": 768,
+        "height": 1024,
+        "exposure": 1,
+        "background": null,
+        "coarse": false
+      }
+    },
+    {
+      "name": "desktop-hdri: PMREM, orbit/zoom, three colors/bracket, pin focus/close, PDF capture, About EN/ID and routing",
+      "details": {
+        "width": 768,
+        "height": 1024,
+        "exposure": 1,
+        "background": null,
+        "coarse": false
+      }
+    },
+    {
+      "name": "mobile-room: PMREM, orbit/zoom, three colors/bracket, pin focus/close, PDF capture, About EN/ID and routing",
+      "details": {
+        "width": 384,
+        "height": 512,
+        "exposure": 1,
+        "background": null,
+        "coarse": true
+      }
+    },
+    {
+      "name": "mobile-hdri: PMREM, orbit/zoom, three colors/bracket, pin focus/close, PDF capture, About EN/ID and routing",
+      "details": {
+        "width": 768,
+        "height": 1024,
+        "exposure": 1,
+        "background": null,
+        "coarse": true
+      }
+    },
+    {
+      "name": "Production (default): no HDRI preload, request or loader chunk"
+    },
+    {
+      "name": "Production ?hdri: no HDRI preload, request or loader chunk"
+    },
+    {
+      "name": "Production ?hdri=0: no HDRI preload, request or loader chunk"
+    },
+    {
+      "name": "Production ?hdri=true: no HDRI preload, request or loader chunk"
+    },
+    {
+      "name": "Production HDRI gzip: expected fallback, splash completes, options enabled",
+      "details": {
+        "warnings": [
+          "Compressed HDRI unavailable; loading original Error: HDRI HTTP 503\n    at Mu (http://127.0.0.1:4191/assets/index-2CgOjnYg.js:4220:60150)"
+        ]
+      }
+    },
+    {
+      "name": "Production HDRI no-decompression: expected fallback, splash completes, options enabled",
+      "details": {
+        "warnings": []
+      }
+    },
+    {
+      "name": "Production HDRI both: expected fallback, splash completes, options enabled",
+      "details": {
+        "warnings": [
+          "Compressed HDRI unavailable; loading original Error: HDRI HTTP 503\n    at Mu (http://127.0.0.1:4191/assets/index-2CgOjnYg.js:4220:60150)",
+          "Environment setup failed; continuing with directional light only so: fetch for \"http://127.0.0.1:4191/hdri/studio_1k.hdr\" responded with 503: Service Unavailable\n    at http://127.0.0.1:4191/assets/index-2CgOjnYg.js:5:27469"
+        ]
+      }
+    },
+    {
+      "name": "Dev injected RoomEnvironment PMREM failure: directional fallback, no HDRI download, model visible"
+    },
+    {
+      "name": "Production model failure then Retry restores default RoomEnvironment viewer"
+    },
+    {
+      "name": "No unexpected page/console errors; favicon 404 and injected network faults excluded"
+    }
+  ],
+  "errors": [],
+  "images": [
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-room-red.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-room-yellow-bracket.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-room-silver-bracket.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-room-pin.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-room-about-id.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-hdri-red.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-hdri-yellow-bracket.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-hdri-silver-bracket.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-hdri-pin.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-hdri-about-id.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-mobile-room-red.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-mobile-room-yellow-bracket.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-mobile-room-silver-bracket.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-mobile-room-pin.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-mobile-room-about-id.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-mobile-hdri-red.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-mobile-hdri-yellow-bracket.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-mobile-hdri-silver-bracket.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-mobile-hdri-pin.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-mobile-hdri-about-id.png"
+  ]
+}

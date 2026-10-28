@@ -3,7 +3,7 @@ Versi: AI WAJIB memakai versi stabil terbaru saat install (`npm i three@latest` 
 
 | Area | Pilihan | Alasan |
 |---|---|---|
-| 3D | three.js (npm `three`) + addons: GLTFLoader, DRACOLoader, KTX2Loader, OrbitControls, RGBELoader/HDR loader | Preferensi Barkah; standar pasar (keyword riset). |
+| 3D | three.js (terpasang 0.186.1) + addons: GLTFLoader, DRACOLoader, KTX2Loader, OrbitControls, RoomEnvironment; PMREMGenerator dari core, HDRLoader lazy hanya `?hdri=1` | T4.1: IBL prosedural menghapus transfer aset HDRI dari jalur default; tanpa dependency baru atau upgrade paket. |
 | Bahasa | JavaScript ES modules, tanpa framework | Preferensi Barkah: ringan, native. |
 | Bundler / dev server | Vite (`npm create vite@latest` template vanilla) | Justifikasi: import npm `three` + addons dengan tree-shaking, minify, hash file untuk cache, hot reload untuk iterasi prompt cepat, copy decoder Draco/Basis ke `public/`. Output tetap HTML/JS statis biasa. |
 | Tween kamera | Implementasi kecil sendiri (lerp + easing) | Hindari dependensi; cukup untuk fokus hotspot. |

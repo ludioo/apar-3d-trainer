@@ -1,0 +1,56 @@
+{
+  "checks": [
+    {
+      "file": "t4.1-desktop-hdri-spec.pdf",
+      "pages": 2,
+      "image": [
+        1200,
+        900
+      ],
+      "min_text_top_pt": [
+        57.266850393700906,
+        57.266850393700906
+      ],
+      "page2_pixel_hash": "8659e0d657e520b7c7ca15cd380a746c378e4d645f3dee0ca57fb381f74c57bb"
+    },
+    {
+      "file": "t4.1-desktop-room-spec.pdf",
+      "pages": 2,
+      "image": [
+        1200,
+        900
+      ],
+      "min_text_top_pt": [
+        57.266850393700906,
+        57.266850393700906
+      ],
+      "page2_pixel_hash": "8659e0d657e520b7c7ca15cd380a746c378e4d645f3dee0ca57fb381f74c57bb"
+    },
+    {
+      "file": "t4.1-mobile-hdri-spec.pdf",
+      "pages": 2,
+      "image": [
+        1200,
+        900
+      ],
+      "min_text_top_pt": [
+        57.266850393700906,
+        57.266850393700906
+      ],
+      "page2_pixel_hash": "8659e0d657e520b7c7ca15cd380a746c378e4d645f3dee0ca57fb381f74c57bb"
+    },
+    {
+      "file": "t4.1-mobile-room-spec.pdf",
+      "pages": 2,
+      "image": [
+        1200,
+        900
+      ],
+      "min_text_top_pt": [
+        57.266850393700906,
+        57.266850393700906
+      ],
+      "page2_pixel_hash": "8659e0d657e520b7c7ca15cd380a746c378e4d645f3dee0ca57fb381f74c57bb"
+    }
+  ]
+}

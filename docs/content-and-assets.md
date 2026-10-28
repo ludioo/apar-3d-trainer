@@ -11,12 +11,13 @@ Belum diverifikasi: Sketchfab dan Quaternius untuk APAR — tidak dicek dalam ri
 ## Environment & tekstur
 | Aset | Sumber | Lisensi |
 |---|---|---|
+| T4.1 RoomEnvironment + PMREM default, three.js terpasang 0.186.1; size 128 pointer coarse / 256 pointer fine, tanpa unduhan gambar environment; kode addon tetap masuk bundle | `three/addons/environments/RoomEnvironment.js`, https://threejs.org/docs/pages/RoomEnvironment.html ; lisensi paket lokal `node_modules/three/LICENSE` | MIT |
 | HDRI `studio_small_09` (1K .hdr) → file disk `public/hdri/studio_1k.hdr` (~1577 KB) | https://polyhaven.com/a/studio_small_09 | CC0 |
-| T3.1 HDRI gzip `public/hdri/studio_1k.hdr.gz` (1.187.546 byte; sumber 1.615.248 byte), byte/piksel 1024×512 identik setelah dekompresi; regenerasi melalui `npm run optimize:environment` atau build | turunan lossless HDRI studio_small_09 existing, tidak menambah gambar sumber | CC0 |
+| T3.1 HDRI gzip `public/hdri/studio_1k.hdr.gz` (1.187.546 byte; sumber 1.615.248 byte), byte/piksel 1024×512 identik setelah dekompresi; regenerasi melalui `npm run optimize:environment` atau build. T4.1: hanya dipreload/dimuat dengan `?hdri=1`, bukan jalur default | turunan lossless HDRI studio_small_09 existing, tidak menambah gambar sumber | CC0 |
 | T3.1 stats.js bawaan `three/addons/libs/stats.module.js`, hanya dimuat lewat chunk debug saat ?debug; chunk HUD/marker/stats gabungan ~3,00 KB / gzip ~1,50 KB, nol transfer pada halaman normal | https://github.com/mrdoob/stats.js/blob/master/LICENSE (dicek 28 Okt 2026); notice disertakan di `public/licenses/stats.txt` | MIT |
 | Ikon UI | Lucide (https://lucide.dev, ISC) — SVG inline, hanya yang dipakai | ISC |
 | Font Inter, JetBrains Mono | @fontsource (npm) | OFL-1.1 |
-| PDF T2.5 | jsPDF 4.2.1 dari npm, https://github.com/parallax/jsPDF; font standar PDF Helvetica tanpa unduhan/embedding font baru; screenshot JPEG 1200×900 dari model aplikasi sendiri | jsPDF MIT; model/HDRI tetap CC0 |
+| PDF T2.5 | jsPDF 4.2.1 dari npm, https://github.com/parallax/jsPDF; font standar PDF Helvetica tanpa unduhan/embedding font baru; screenshot JPEG 1200×900 dari model aplikasi sendiri, sejak T4.1 mengikuti RoomEnvironment default atau HDRI pembanding aktif | jsPDF/RoomEnvironment MIT; model/HDRI tetap CC0 |
 | Api/semprotan T2.2 | `effects.js`: Points maksimal 24 api + 72 semprotan, dua CanvasTexture prosedural 64×64; garis bidik dari hotspot nozzle; palette token, tanpa unduhan aset | kode proyek MIT |
 | Bracket T1.5 | Geometri prosedural `BoxGeometry` + `TorusGeometry` three.js di `appearance.js`; tanpa unduhan aset | kode proyek MIT |
 | Strip/label agent T1.6 | CanvasTexture prosedural 512×128 di shader body; nama agent/kapasitas bilingual, tanpa unduhan. Biru Powder, arang CO2, krem Foam, merah Water = kode visual demo, bukan standar warna APAR | kode proyek MIT |
@@ -31,7 +32,8 @@ Belum diverifikasi: Sketchfab dan Quaternius untuk APAR — tidak dicek dalam ri
 - PASS: Pull — "Pull the pin." / "Cabut pin pengaman." · Aim — "Aim the nozzle at the base of the fire." / "Arahkan nozzle ke pangkal api." · Squeeze — "Squeeze the handle." / "Tekan tuas." · Sweep — "Sweep side to side." / "Sapukan ke kiri dan kanan."
 - Disclaimer: lihat bagian Disclaimer di bawah.
 - Harga: "Illustrative price" / "Harga ilustrasi".
-- Kredit: "3D model & HDRI: Poly Haven (CC0)".
+- Kredit T4.1 EN: "3D model and comparison HDRI: Poly Haven (CC0). Default lighting: three.js RoomEnvironment (MIT)."
+- Kredit T4.1 ID: "Model 3D dan HDRI pembanding: Poly Haven (CC0). Pencahayaan default: three.js RoomEnvironment (MIT)." About menautkan RoomEnvironment MIT dan HDRI pembanding CC0 secara terpisah; OG/fallback screenshot lama tetap turunan HDRI existing.
 
 ## Sumber K3 (dibuka & dicek 27 Okt 2026)
 - **[USFA]** U.S. Fire Administration (FEMA), "Choosing and Using Fire Extinguishers": https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/ — PASS, checklist kapan boleh memadamkan, kelas api, perawatan (gauge, selang, nozzle).

@@ -1,0 +1,177 @@
+{
+  "stage": "after",
+  "profile": {
+    "width": 390,
+    "height": 844,
+    "dpr": 1.75,
+    "downloadMbps": 9,
+    "uploadMbps": 1.5,
+    "latencyMs": 60,
+    "cpuSlowdown": 4
+  },
+  "method": "Fresh browser per run; cache disabled; gzip HTML/JS/CSS; navigation + resource transferSize at apar:visible + network idle 750ms; localhost, no production analytics",
+  "runs": [
+    {
+      "run": 1,
+      "readyMs": 3426,
+      "documentTransfer": 2513,
+      "entries": [
+        {
+          "url": "/models/apar.glb",
+          "transfer": 695384,
+          "encoded": 695084,
+          "decoded": 695084
+        },
+        {
+          "url": "/assets/index-2CgOjnYg.js",
+          "transfer": 226643,
+          "encoded": 226343,
+          "decoded": 827658
+        },
+        {
+          "url": "/assets/index-C4ZKj-Ue.css",
+          "transfer": 5818,
+          "encoded": 5518,
+          "decoded": 29369
+        },
+        {
+          "url": "/decoders/draco/draco_wasm_wrapper.js",
+          "transfer": 12048,
+          "encoded": 11748,
+          "decoded": 58456
+        },
+        {
+          "url": "/decoders/draco/draco_decoder.wasm",
+          "transfer": 192720,
+          "encoded": 192420,
+          "decoded": 192420
+        },
+        {
+          "url": "/favicon.ico",
+          "transfer": 300,
+          "encoded": 0,
+          "decoded": 0
+        }
+      ],
+      "transferBytes": 1135426,
+      "hdri": [],
+      "hdrLoader": [],
+      "errors": []
+    },
+    {
+      "run": 2,
+      "readyMs": 3485.0999999940395,
+      "documentTransfer": 2513,
+      "entries": [
+        {
+          "url": "/models/apar.glb",
+          "transfer": 695384,
+          "encoded": 695084,
+          "decoded": 695084
+        },
+        {
+          "url": "/assets/index-2CgOjnYg.js",
+          "transfer": 226643,
+          "encoded": 226343,
+          "decoded": 827658
+        },
+        {
+          "url": "/assets/index-C4ZKj-Ue.css",
+          "transfer": 5818,
+          "encoded": 5518,
+          "decoded": 29369
+        },
+        {
+          "url": "/decoders/draco/draco_wasm_wrapper.js",
+          "transfer": 12048,
+          "encoded": 11748,
+          "decoded": 58456
+        },
+        {
+          "url": "/decoders/draco/draco_decoder.wasm",
+          "transfer": 192720,
+          "encoded": 192420,
+          "decoded": 192420
+        },
+        {
+          "url": "/favicon.ico",
+          "transfer": 300,
+          "encoded": 0,
+          "decoded": 0
+        }
+      ],
+      "transferBytes": 1135426,
+      "hdri": [],
+      "hdrLoader": [],
+      "errors": []
+    },
+    {
+      "run": 3,
+      "readyMs": 3349.2999999970198,
+      "documentTransfer": 2513,
+      "entries": [
+        {
+          "url": "/models/apar.glb",
+          "transfer": 695384,
+          "encoded": 695084,
+          "decoded": 695084
+        },
+        {
+          "url": "/assets/index-2CgOjnYg.js",
+          "transfer": 226643,
+          "encoded": 226343,
+          "decoded": 827658
+        },
+        {
+          "url": "/assets/index-C4ZKj-Ue.css",
+          "transfer": 5818,
+          "encoded": 5518,
+          "decoded": 29369
+        },
+        {
+          "url": "/decoders/draco/draco_wasm_wrapper.js",
+          "transfer": 12048,
+          "encoded": 11748,
+          "decoded": 58456
+        },
+        {
+          "url": "/decoders/draco/draco_decoder.wasm",
+          "transfer": 192720,
+          "encoded": 192420,
+          "decoded": 192420
+        },
+        {
+          "url": "/favicon.ico",
+          "transfer": 300,
+          "encoded": 0,
+          "decoded": 0
+        }
+      ],
+      "transferBytes": 1135426,
+      "hdri": [],
+      "hdrLoader": [],
+      "errors": []
+    }
+  ],
+  "bundles": [
+    {
+      "name": "HDRLoader-DJVYilt7.js",
+      "bytes": 3280,
+      "gzip": 1558
+    },
+    {
+      "name": "index-2CgOjnYg.js",
+      "bytes": 827658,
+      "gzip": 226343
+    },
+    {
+      "name": "index-C4ZKj-Ue.css",
+      "bytes": 29369,
+      "gzip": 5518
+    }
+  ],
+  "median": {
+    "transferBytes": 1135426,
+    "readyMs": 3426
+  }
+}

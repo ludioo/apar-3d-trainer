@@ -1,0 +1,211 @@
+{
+  "stage": "before",
+  "profile": {
+    "width": 390,
+    "height": 844,
+    "dpr": 1.75,
+    "downloadMbps": 9,
+    "uploadMbps": 1.5,
+    "latencyMs": 60,
+    "cpuSlowdown": 4
+  },
+  "method": "Fresh browser per run; cache disabled; gzip HTML/JS/CSS; navigation + resource transferSize at apar:visible + network idle 750ms; localhost, no production analytics",
+  "runs": [
+    {
+      "run": 1,
+      "readyMs": 3947.39999999851,
+      "documentTransfer": 2434,
+      "entries": [
+        {
+          "url": "/models/apar.glb",
+          "transfer": 695384,
+          "encoded": 695084,
+          "decoded": 695084
+        },
+        {
+          "url": "/assets/index-CmOhLMQh.js",
+          "transfer": 226825,
+          "encoded": 226525,
+          "decoded": 826416
+        },
+        {
+          "url": "/assets/index-C4ZKj-Ue.css",
+          "transfer": 5818,
+          "encoded": 5518,
+          "decoded": 29369
+        },
+        {
+          "url": "/hdri/studio_1k.hdr.gz",
+          "transfer": 1187846,
+          "encoded": 1187546,
+          "decoded": 1187546
+        },
+        {
+          "url": "/decoders/draco/draco_wasm_wrapper.js",
+          "transfer": 12048,
+          "encoded": 11748,
+          "decoded": 58456
+        },
+        {
+          "url": "/decoders/draco/draco_decoder.wasm",
+          "transfer": 192720,
+          "encoded": 192420,
+          "decoded": 192420
+        },
+        {
+          "url": "/favicon.ico",
+          "transfer": 300,
+          "encoded": 0,
+          "decoded": 0
+        }
+      ],
+      "transferBytes": 2323375,
+      "hdri": [
+        {
+          "url": "/hdri/studio_1k.hdr.gz",
+          "transfer": 1187846,
+          "encoded": 1187546,
+          "decoded": 1187546
+        }
+      ],
+      "hdrLoader": [],
+      "errors": []
+    },
+    {
+      "run": 2,
+      "readyMs": 4075.60000000149,
+      "documentTransfer": 2434,
+      "entries": [
+        {
+          "url": "/models/apar.glb",
+          "transfer": 695384,
+          "encoded": 695084,
+          "decoded": 695084
+        },
+        {
+          "url": "/assets/index-CmOhLMQh.js",
+          "transfer": 226825,
+          "encoded": 226525,
+          "decoded": 826416
+        },
+        {
+          "url": "/assets/index-C4ZKj-Ue.css",
+          "transfer": 5818,
+          "encoded": 5518,
+          "decoded": 29369
+        },
+        {
+          "url": "/hdri/studio_1k.hdr.gz",
+          "transfer": 1187846,
+          "encoded": 1187546,
+          "decoded": 1187546
+        },
+        {
+          "url": "/decoders/draco/draco_wasm_wrapper.js",
+          "transfer": 12048,
+          "encoded": 11748,
+          "decoded": 58456
+        },
+        {
+          "url": "/decoders/draco/draco_decoder.wasm",
+          "transfer": 192720,
+          "encoded": 192420,
+          "decoded": 192420
+        },
+        {
+          "url": "/favicon.ico",
+          "transfer": 300,
+          "encoded": 0,
+          "decoded": 0
+        }
+      ],
+      "transferBytes": 2323375,
+      "hdri": [
+        {
+          "url": "/hdri/studio_1k.hdr.gz",
+          "transfer": 1187846,
+          "encoded": 1187546,
+          "decoded": 1187546
+        }
+      ],
+      "hdrLoader": [],
+      "errors": []
+    },
+    {
+      "run": 3,
+      "readyMs": 3794.0999999940395,
+      "documentTransfer": 2434,
+      "entries": [
+        {
+          "url": "/models/apar.glb",
+          "transfer": 695384,
+          "encoded": 695084,
+          "decoded": 695084
+        },
+        {
+          "url": "/assets/index-CmOhLMQh.js",
+          "transfer": 226825,
+          "encoded": 226525,
+          "decoded": 826416
+        },
+        {
+          "url": "/assets/index-C4ZKj-Ue.css",
+          "transfer": 5818,
+          "encoded": 5518,
+          "decoded": 29369
+        },
+        {
+          "url": "/hdri/studio_1k.hdr.gz",
+          "transfer": 1187846,
+          "encoded": 1187546,
+          "decoded": 1187546
+        },
+        {
+          "url": "/decoders/draco/draco_wasm_wrapper.js",
+          "transfer": 12048,
+          "encoded": 11748,
+          "decoded": 58456
+        },
+        {
+          "url": "/decoders/draco/draco_decoder.wasm",
+          "transfer": 192720,
+          "encoded": 192420,
+          "decoded": 192420
+        },
+        {
+          "url": "/favicon.ico",
+          "transfer": 300,
+          "encoded": 0,
+          "decoded": 0
+        }
+      ],
+      "transferBytes": 2323375,
+      "hdri": [
+        {
+          "url": "/hdri/studio_1k.hdr.gz",
+          "transfer": 1187846,
+          "encoded": 1187546,
+          "decoded": 1187546
+        }
+      ],
+      "hdrLoader": [],
+      "errors": []
+    }
+  ],
+  "bundles": [
+    {
+      "name": "index-C4ZKj-Ue.css",
+      "bytes": 29369,
+      "gzip": 5518
+    },
+    {
+      "name": "index-CmOhLMQh.js",
+      "bytes": 826416,
+      "gzip": 226525
+    }
+  ],
+  "median": {
+    "transferBytes": 2323375,
+    "readyMs": 3947.39999999851
+  }
+}

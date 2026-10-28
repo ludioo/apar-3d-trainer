@@ -242,5 +242,19 @@ Cara cek produksi: ikuti `env-setup.md` bagian 7, tunggu APAR dan script siap, c
 ## T3.5
 - [ ] Dari barkahmauludi.com ada link ke demo dan berfungsi.
 
+## T4.1
+- [x] Default load tanpa mengunduh HDRI 1.2 MB (Network tab).
+- [x] APAR tetap terbaca jelas di studio gelap; tidak overexposed/underexposed parah.
+- [x] Orbit/zoom tetap normal; tidak ada error konsol terkait env map.
+- [x] Keputusan (RoomEnvironment atau HDRI terkompres) tercatat di decisions.md.
+
+28 Okt 2026: **Acceptance final diterima Barkah.** Barkah menyatakan sudah memvalidasi dan lolos, lalu meminta update dokumen dan commit/push ke develop saja. Task dan empat checklist ditutup berdasarkan konfirmasi ini serta bukti QA existing. RoomEnvironment diterima sebagai default, HDRI lama tetap pembanding `?hdri=1`. Rincian perangkat acceptance tidak diberikan, sehingga tidak diklaim ada pengujian perangkat/AT/browser baru oleh AI. T3.5 tetap ditunda, T4.2 belum dimulai dan main/deploy produksi tidak diotorisasi. Catatan menunggu acceptance pada laporan implementasi sebelumnya ditutup.
+
+Cara cek desktop: buka `http://localhost:4191/#configure`, lalu F12 → Network → centang Disable cache dan reload. Filter `hdr`: tidak ada file HDRI atau chunk HDRLoader. Bandingkan dengan `http://localhost:4191/?hdri=1#configure` setelah reload, yang memuat satu HDR gzip (atau HDR asli jika DecompressionStream tidak tersedia). Pilih merah/kuning/perak, aktif/nonaktifkan bracket, drag orbit/zoom, buka/tutup pin bagian, pindah Train/Results, ganti EN/ID dan periksa kredit About, lalu Export spec PDF. Pertahankan pilihan/kamera sama ketika membandingkan pantulan.
+
+Cara cek HP satu Wi-Fi: `http://192.168.100.4:4191/#configure`, pembanding `http://192.168.100.4:4191/?hdri=1#configure`. Coba drag satu jari/pinch dua jari, warna/bracket, pin dan ekspor; gulir/perbesar panel existing untuk mencapai opsi. Pastikan body merah dan aksen kuning/detail masih terbaca pada layar fisik. Desktop/mobile screenshot perbandingan berada di `.cursor/t4.1-{desktop,mobile}-{room,hdri}-red.png`.
+
+Bukti AI: `npm run check` (185 key i18n) dan build sukses; 14 kelompok environment + 11 PASS + delapan efek, empat kondisi kredit/keyboard/teks 200%, serta empat PDF/delapan halaman lolos. Detail di `.cursor/t4.1-report.md`. Transfer produksi lokal baseline 2.323.375 → 1.135.426 byte (-51,13%); median APAR 3,95 → 3,43 dtk pada tiga run 390×844/9 Mbps/60 ms/CPU4×. **Target <3 detik belum tercapai**, tanpa klaim Lighthouse baru/HP fisik/live. Task T4.25 tetap audit menyeluruh. HP fisik/AT/Firefox/Safari belum diuji AI. Tidak commit/push/deploy atau lanjut T4.2 otomatis.
+
 ## Peta fitur → task
 F1: T0.2–T0.3 · F2: T1.3–T1.4 · F3: T1.5–T1.6 · F4: T1.6 · F5: T1.7 · F6: T2.1–T2.2 · F7: T2.3 · F8: T2.4 · F9: T2.5 · F10: T1.1 · F11: T3.2–T3.3 · F15: T3.6 · F16: L4 · Wajib riset (Draco/KTX2, <3 dtk, HP, Vercel, video, GitHub, SEO): T0.3, T3.1, T0.4, T3.4, T3.3

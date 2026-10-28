@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-28",
+  "checks": [
+    {
+      "name": "desktop-room: PMREM, orbit/zoom, three colors/bracket, pin focus/close, PDF capture, About EN/ID and routing",
+      "details": {
+        "width": 768,
+        "height": 1024,
+        "exposure": 1,
+        "background": null,
+        "coarse": false
+      }
+    },
+    {
+      "name": "desktop-hdri: PMREM, orbit/zoom, three colors/bracket, pin focus/close, PDF capture, About EN/ID and routing",
+      "details": {
+        "width": 768,
+        "height": 1024,
+        "exposure": 1,
+        "background": null,
+        "coarse": false
+      }
+    }
+  ],
+  "errors": [],
+  "images": [
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-room-red.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-room-yellow-bracket.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-room-silver-bracket.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-room-pin.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-room-about-id.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-hdri-red.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-hdri-yellow-bracket.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-hdri-silver-bracket.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-hdri-pin.png",
+    "D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.1-desktop-hdri-about-id.png"
+  ],
+  "failure": "AssertionError [ERR_ASSERTION]: Expected \"actual\" not to be strictly deep-equal to:\n\n[\n  -1.379641603665596,\n  3.0699154166945304,\n  3.454867129110714\n]\n"
+}

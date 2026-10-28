@@ -41,7 +41,7 @@ Grid 4px: 4, 8, 12, 16, 24, 32, 48. Radius: 8 (tombol), 14 (panel), 999 (chip/ho
 Topbar (logo teks "APAR 3D Trainer", tabs, toggle EN|ID, About) · Tab · Chip pilihan (warna = swatch bulat) · Segmented control (kapasitas) · Toggle switch (bracket) · Spec table (mono) · Price tag besar + label "Illustrative" · Hotspot pin (lingkaran 28px, nomor, pulse ring accent) · Info card · Stepper PASS (4 dot + label) · Hold button dengan progress ring · Quiz option card (state default/selected/correct/wrong) · Score ring · Bar chart SVG · Toast · Modal · Splash loader (progress bar accent).
 
 ## 3D look
-Environment HDRI studio, `ACESFilmicToneMapping`, exposure ~1.0, satu directional light lembut, ground plane dengan shadow lembut, highlight bagian = emissive accent 0.4 + pulse. Api & semprotan: sprite/particle sederhana, bukan simulasi berat.
+T4.1: RoomEnvironment + PMREM sebagai IBL studio default, size 128 untuk pointer coarse / 256 untuk pointer fine. Background studio gelap tetap; `ACESFilmicToneMapping`, exposure 1.0, directional light, material dan ground/shadow existing tidak dituning ulang. Pantulan RoomEnvironment lebih lebar/merata daripada HDRI; merah, kuning, perak serta detail tuas/pin tetap terbaca pada desktop dan HP emulasi 390 px. HDRI studio lama tetap dapat dibandingkan lewat `?hdri=1` lalu reload. Pilihan default diterima Barkah pada 28 Okt 2026 setelah menyatakan validasi lolos; rincian perangkat tidak diberikan. Highlight bagian = emissive accent 0.4 + pulse. Api & semprotan: sprite/particle sederhana, bukan simulasi berat.
 
 ## Motion
 Durasi 150–250ms UI, kamera tween 600–800ms ease-in-out. Hormati `prefers-reduced-motion` (matikan auto-rotate & pulse).

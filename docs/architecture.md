@@ -16,7 +16,8 @@ apar-3d-trainer/
 ├─ src/
 │  ├─ main.js              # bootstrap: i18n → scene → router
 │  ├─ core/
-│  │  ├─ scene.js          # renderer, camera, lights, HDRI, resize, render loop (render on demand)
+│  │  ├─ scene.js          # renderer, camera, lights, resize, render loop (render on demand)
+│  │  ├─ environment.js    # RoomEnvironment + PMREM default; HDRI hanya ?hdri=1
 │  │  ├─ loader.js         # GLTF+Draco+KTX2, LoadingManager → event progress
 │  │  ├─ controls.js       # OrbitControls + batas + idle auto-rotate
 │  │  ├─ cameraTween.js    # fokus kamera ke target
@@ -68,11 +69,12 @@ apar-3d-trainer/
 
 ## Performa
 - Render on demand (hanya saat ada perubahan/animasi), pixelRatio maks 2 (HP maks 1.5).
-- Tekstur 1K (KTX2), HDRI 1K, satu directional light + environment, shadow pakai contact shadow/plane sederhana.
+- Tekstur 1K (fallback WebP existing), satu directional light + environment, shadow memakai plane existing. T4.1 memakai RoomEnvironment default; HDRI 1K hanya pembanding `?hdri=1`.
 - jsPDF di-*lazy import* (`import('jspdf')`) saat tombol PDF diklik.
-- T3.1: `core/environment.js` memuat HDRI gzip lossless dengan DecompressionStream + HDRLoader.createDataTexture, fallback ke HDR asli, lalu directional light bila seluruh pemuatan gagal. Sumber 1024×512 tetap; PMREM memakai generator three existing dengan shader equirectangular dipersiapkan selama preload. HDR sumber/generator dilepas setelah konversi; texture environment dipakai sepanjang umur scene. Build menjalankan optimize-environment.js untuk regenerasi gzip dan assert lossless.
-- `index.html` memulai preload model dan environment; preload environment memilih sumber asli bila DecompressionStream tidak tersedia. `scene.prepareModel(model)` menyembunyikan model selama menunggu environment berhasil/gagal dan compileAsync, lalu mengembalikan status environment. Fitur tetap menyediakan enter/exit/setModel existing. `requestRender` emit scene:rendered setelah render live; capture PDF tidak memakai sinyal tersebut.
-- Bootstrap menutup splash setelah frame model pertama, menunggu transisi splash dan satu rAF berikutnya sebelum mark apar:visible (atau apar:fallback-visible tanpa HDRI). Mark apar:load-start per attempt, apar:model-ready dan apar:environment-ready/failed memberi bukti urutan; measure apar:load untuk attempt, sedangkan waktu navigasi memakai timestamp mark visible. Tidak membuat loop pengukuran permanen.
+- T4.1: `core/environment.js` memakai RoomEnvironment dari three.js + `PMREMGenerator.fromScene` dengan blur bawaan 0, near 0.1/far 100, size 128 untuk `(pointer: coarse)` atau 256 untuk pointer fine. Pilihan ditentukan sekali saat startup, tanpa regenerasi pada resize. Hanya `scene.environment` yang diisi; background, exposure 1, directional light, material dan render on demand existing tetap. Room/generator dilepas setelah konversi; hasil PMREM tetap hidup sepanjang scene.
+- Jalur T3.1 dipertahankan hanya jika `new URLSearchParams(location.search).get('hdri') === '1'`: HDRLoader di-lazy import, HDRI gzip lossless didekompresi dengan DecompressionStream, fallback ke HDR asli jika gzip gagal atau API tidak tersedia. Sumber/piksel 1024×512 tetap; build masih meregenerasi gzip dan memeriksa lossless. Environment gagal pada jalur mana pun mengembalikan false, menandai kegagalan dan melanjutkan dengan directional light; kegagalan RoomEnvironment tidak mengunduh HDRI otomatis.
+- `index.html` selalu memulai preload model; preload HDRI hanya pada `?hdri=1`, memilih sumber asli bila DecompressionStream tidak tersedia. Parameter tanpa nilai/0/true tetap default RoomEnvironment. Membandingkan jalur memerlukan reload, tanpa state storage atau toggle tambahan. `scene.prepareModel(model)` tetap menyembunyikan model selama environment dan compileAsync, lalu mengembalikan status boolean. `requestRender` emit scene:rendered setelah render live; capture PDF tidak memakai sinyal tersebut.
+- Bootstrap menutup splash setelah frame model pertama, menunggu transisi splash dan satu rAF berikutnya sebelum mark apar:visible (atau apar:fallback-visible tanpa environment). Mark apar:load-start per attempt, apar:model-ready dan apar:environment-ready/failed memberi bukti urutan; measure apar:load untuk attempt, sedangkan waktu navigasi memakai timestamp mark visible. Tidak membuat loop pengukuran permanen.
 - Debug dipisah ke `core/debug.js`, dynamic import hanya saat ?debug. Stats bawaan three mengikuti callback scene render tanpa loop sendiri; HUD/marker/bridge existing tetap tersedia. Gagal import debug tidak menggagalkan model. Halaman biasa tidak memuat chunk debug atau memasang window.__aparDebug. T3.1 diterima Barkah 28 Okt 2026; target numerik audit lokal belum terpenuhi dan tetap dicatat di `.cursor/t3.1-report.md`. Usulan revisi belum diterapkan.
 
 ## Aksesibilitas & fallback T3.2

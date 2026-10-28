@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preload" href="/models/apar.glb" as="fetch" crossorigin />
     <script>
-      {
+      if (new URLSearchParams(location.search).get('hdri') === '1') {
         const preload = document.createElement('link');
         preload.rel = 'preload';
         preload.as = 'fetch';
@@ -119,6 +119,7 @@
           <h3 data-i18n="about.credits"></h3>
           <p class="modal__muted" data-i18n="credits.assets"></p>
           <a href="https://polyhaven.com/a/korean_fire_extinguisher_01" target="_blank" rel="noopener noreferrer" data-i18n="about.model"></a>
+          <a href="https://threejs.org/docs/pages/RoomEnvironment.html" target="_blank" rel="noopener noreferrer" data-i18n="about.roomEnvironment"></a>
           <a href="https://polyhaven.com/a/studio_small_09" target="_blank" rel="noopener noreferrer" data-i18n="about.environment"></a>
         </section>
         <p class="modal__muted" data-i18n="about.analytics"></p>
