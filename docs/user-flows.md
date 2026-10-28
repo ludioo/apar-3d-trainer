@@ -42,7 +42,13 @@ About/blur/halaman tersembunyi menjeda api serta menghentikan semprotan dan puls
 2. Tipe A pilihan ganda; Tipe B "klik hotspot yang benar di 3D" (hotspot tampil tanpa label).
 3. Setelah jawab: benar (hijau) / salah (merah) + penjelasan; tombol Next.
 4. Akhir: skor (mis. 6/8 = 75%), lulus jika ≥ 75%, waktu total. Disimpan otomatis ke riwayat.
-5. Tombol: "View results", "Retry quiz".
+5. Tombol T2.3: "Retry quiz" dan "Back to training". Tombol "View results" menyusul ketika dashboard T2.4 tersedia.
+
+Implementasi T2.3 (28 Okt 2026, menunggu acceptance): tombol Ikuti kuis/Take the quiz pada kartu akhir PASS membuka subalur kuis dalam tab Train tanpa hash/tab baru. Latihan dan efek berhenti selama kuis; tampilan sementara ABC 6 kg/merah/tanpa bracket. Keluar tab memulihkan konfigurasi/kamera, masuk lagi mempertahankan soal/feedback/ringkasan. Kembali ke latihan membuka kartu PASS selesai yang tetap menyediakan Ulangi latihan; Retry quiz memulai sesi kuis baru.
+
+Delapan soal tetap urut, tanpa acak/Back/ubah jawaban. Jawaban pertama langsung dikunci; feedback teks benar/salah, jawaban benar, penjelasan dan tautan sumber mendahului Next manual. Pin q2/q5 hanya bernomor, termasuk aria-label netral Bagian/Part 1–6; nama bagian baru muncul dalam feedback. Framing depan sama untuk kedua soal; drag memutar model tanpa menjawab, Pulihkan tampilan mengembalikan framing netral. Pin teroklusi disembunyikan dan posisi tombol dipisahkan; ringkas sheet untuk melihat model yang tertutup panel. Tab/Enter/Space dapat menjawab pin yang terlihat dari framing awal.
+
+Setelah menjawab q6, tampil blok 113/112 + sumber Komdigi, keterangan cakupan 112 dan link telepon. Jawaban q8 menutup waktu serta menyimpan attempt sekali; feedback q8 tetap sampai Lihat skor/View score ditekan. Ringkasan menampilkan skor/persentase, Lulus/Belum lulus, durasi total termasuk jeda, status simpan dan disclaimer. Penyimpanan maksimal 20 terbaru; gagal storage/riwayat rusak tidak menghalangi skor dan tidak menimpa data lama. Bahasa/About/pindah tab tidak membuat attempt tambahan. Refresh menghapus sesi parsial, menjaga riwayat selesai, dan membuka intro PASS. Tidak ada dashboard/grafik/tabel/Clear data/PDF pada T2.3.
 
 ## UF4 — Results (F8, F9)
 1. Kartu skor terbaru + status lulus, grafik bar sederhana riwayat (maks 20 percobaan, CSS/SVG, tanpa library chart).

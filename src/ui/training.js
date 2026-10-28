@@ -84,13 +84,13 @@ export function initTrainingUi(steps, actions) {
   source.target = '_blank';
   source.rel = 'noopener noreferrer';
   contacts.append(emergencyTitle, fire, general, source);
-  const quizNote = document.createElement('p');
+  const quizButton = button('quiz');
   const storageError = document.createElement('p');
   storageError.className = 'training__error';
   storageError.setAttribute('role', 'status');
   const disclaimer = document.createElement('p');
   disclaimer.className = 'training__disclaimer';
-  body.append(heading, instruction, sweepArea, sweepCount, hint, status, controls, contacts, quizNote, storageError, disclaimer);
+  body.append(heading, instruction, sweepArea, sweepCount, hint, status, controls, contacts, storageError, disclaimer);
   const nav = document.createElement('div');
   nav.className = 'training__nav';
   const back = button('back', nav);
@@ -160,8 +160,9 @@ export function initTrainingUi(steps, actions) {
     fire.textContent = t('emergency.fire');
     general.textContent = t('emergency.general');
     source.textContent = t('emergency.source');
-    quizNote.hidden = !isComplete;
-    quizNote.textContent = t('training.quizLater');
+    quizButton.hidden = !isComplete;
+    quizButton.disabled = !ready;
+    quizButton.textContent = t('quiz.start');
     storageError.hidden = !saveFailed;
     storageError.textContent = t('training.storageError');
     disclaimer.textContent = t('disclaimer');

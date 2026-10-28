@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-28",
+  "checks": [
+    "tap: toggles once and does not answer",
+    "click: toggles once and does not answer",
+    "keyboard: toggles once and does not answer",
+    "Touch drag up/down snaps correctly without selecting an answer"
+  ],
+  "inputTrace": [
+    {
+      "type": "pointerdown",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "pointerup",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "blur",
+      "target": "H3",
+      "cls": "",
+      "focus": true
+    },
+    {
+      "type": "focus",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "click",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "pointerdown",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "pointerup",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "click",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "pointerdown",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "pointerup",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "click",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "pointerdown",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "pointerup",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "click",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "click",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "click",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "pointerdown",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "pointerup",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "pointerdown",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "pointerup",
+      "target": "BUTTON",
+      "cls": "panel__handle",
+      "focus": true
+    },
+    {
+      "type": "pointerdown",
+      "target": "BUTTON",
+      "choice": "a",
+      "cls": "",
+      "focus": true
+    },
+    {
+      "type": "pointerup",
+      "target": "BUTTON",
+      "choice": "a",
+      "cls": "",
+      "focus": true
+    }
+  ],
+  "focus": true,
+  "postDragTouchProbe": {
+    "nativeClick": false,
+    "phase": "question",
+    "limitation": "After raw CDP drags Chrome emits pointerdown/up on the answer but no click; this probe cannot verify a normal touch activation. Main quiz tests independently verify Playwright touch pins/choices and panel taps."
+  },
+  "status": "SHEET_CHECKS_PASS_WITH_CDP_TOUCH_LIMITATION"
+}

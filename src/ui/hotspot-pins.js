@@ -36,7 +36,7 @@ export function placePin(anchor, occupied, width, height) {
   ) ?? null;
 }
 
-export function initHotspotPins({ container, camera, controls, hotspots, open }) {
+export function initHotspotPins({ container, camera, controls, hotspots, open, label, panel }) {
   const layer = document.createElement('div');
   layer.className = 'hotspot-pins';
   layer.hidden = true;
@@ -66,18 +66,24 @@ export function initHotspotPins({ container, camera, controls, hotspots, open })
   let active = false;
   let raf = 0;
   let offResize;
+  const observer = panel ? new ResizeObserver(schedule) : null;
 
   function update() {
     raf = 0;
     if (!active || !model) return;
     camera.updateMatrixWorld();
     model.updateWorldMatrix(true, true);
-    const { width, height } = container.getBoundingClientRect();
+    const rect = container.getBoundingClientRect();
+    const { width, height } = rect;
+    const panelRect = panel?.getBoundingClientRect();
+    const desktop = matchMedia('(min-width: 1024px)').matches;
+    const availableWidth = panelRect && desktop ? Math.min(width, panelRect.left - rect.left - 8) : width;
+    const availableHeight = panelRect && !desktop ? Math.min(height, panelRect.top - rect.top - 8) : height;
     const occupied = [];
     for (const { h, button, line } of pins) {
       const world = model.localToWorld(new Vector3(...h.pinPosition));
       const anchor = projectPin(world, camera, meshes, width, height);
-      const point = anchor && placePin(anchor, occupied, width, height);
+      const point = anchor && placePin(anchor, occupied, availableWidth, availableHeight);
       button.hidden = !point;
       line.style.display = point ? '' : 'none';
       if (!point) continue;
@@ -97,7 +103,7 @@ export function initHotspotPins({ container, camera, controls, hotspots, open })
   function setModel(next) {
     model = next;
     meshes = [];
-    model.traverse((object) => {
+    model?.traverse((object) => {
       if (object.isMesh && !object.userData.debugMarker && !object.userData.configuratorAccessory) meshes.push(object);
     });
     schedule();
@@ -108,6 +114,7 @@ export function initHotspotPins({ container, camera, controls, hotspots, open })
     layer.hidden = false;
     controls.addEventListener('change', schedule);
     offResize = on('scene:resize', schedule);
+    if (panel) observer.observe(panel);
     schedule();
   }
 
@@ -116,16 +123,19 @@ export function initHotspotPins({ container, camera, controls, hotspots, open })
     layer.hidden = true;
     controls.removeEventListener('change', schedule);
     offResize?.();
+    observer?.disconnect();
     if (raf) cancelAnimationFrame(raf);
     raf = 0;
   }
 
   function syncText(lang, selected) {
-    for (const { h, button } of pins) {
-      button.setAttribute('aria-label', h.title[lang]);
+    for (const [index, { h, button }] of pins.entries()) {
+      button.setAttribute('aria-label', label ? label(h, index) : h.title[lang]);
       button.setAttribute('aria-pressed', String(h.id === selected?.id));
     }
   }
 
-  return { enter, exit, setModel, syncText, refresh: schedule };
+  return { enter, exit, setModel, syncText, refresh: schedule,
+    setDisabled(disabled) { for (const { button } of pins) button.disabled = disabled; },
+  };
 }

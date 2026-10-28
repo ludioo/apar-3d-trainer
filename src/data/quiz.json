@@ -1,1 +1,301 @@
-{}
+[
+  {
+    "id": "q1",
+    "type": "choice",
+    "question": {
+      "en": "What does PASS stand for?",
+      "id": "Apa kepanjangan PASS?"
+    },
+    "choices": [
+      {
+        "id": "a",
+        "label": {
+          "en": "Pull, Aim, Squeeze, Sweep",
+          "id": "Pull (cabut), Aim (arahkan), Squeeze (tekan tuas), Sweep (sapukan)"
+        }
+      },
+      {
+        "id": "b",
+        "label": {
+          "en": "Push, Aim, Spray, Stop",
+          "id": "Push (dorong), Aim (arahkan), Spray (semprotkan), Stop (berhenti)"
+        }
+      },
+      {
+        "id": "c",
+        "label": {
+          "en": "Pull, Activate, Spray, Sweep",
+          "id": "Pull (cabut), Activate (aktifkan), Spray (semprotkan), Sweep (sapukan)"
+        }
+      }
+    ],
+    "answer": "a",
+    "explanation": {
+      "en": "PASS = Pull the pin, Aim low, Squeeze the lever, Sweep side to side.",
+      "id": "PASS = Pull (cabut pin), Aim (arahkan), Squeeze (tekan tuas), Sweep (sapukan)."
+    },
+    "sources": [
+      {
+        "label": "USFA",
+        "url": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "type": "pick-hotspot",
+    "question": {
+      "en": "Click the part you remove first.",
+      "id": "Klik bagian yang dicabut pertama kali."
+    },
+    "answer": "pin",
+    "explanation": {
+      "en": "The safety pin locks the lever; it must be pulled out first.",
+      "id": "Pin pengaman mengunci tuas; harus dicabut dulu."
+    },
+    "sources": [
+      {
+        "label": "USFA",
+        "url": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "type": "choice",
+    "question": {
+      "en": "Where should you aim?",
+      "id": "Ke mana semprotan diarahkan?"
+    },
+    "choices": [
+      {
+        "id": "a",
+        "label": {
+          "en": "At the top of the flames",
+          "id": "Ke puncak nyala api"
+        }
+      },
+      {
+        "id": "b",
+        "label": {
+          "en": "At the base of the fire",
+          "id": "Ke pangkal api"
+        }
+      },
+      {
+        "id": "c",
+        "label": {
+          "en": "At the smoke",
+          "id": "Ke asap"
+        }
+      }
+    ],
+    "answer": "b",
+    "explanation": {
+      "en": "Aim low, at the base of the fire.",
+      "id": "Arahkan rendah ke pangkal api."
+    },
+    "sources": [
+      {
+        "label": "USFA",
+        "url": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "type": "choice",
+    "question": {
+      "en": "How should you squeeze the lever?",
+      "id": "Bagaimana cara menekan tuas?"
+    },
+    "choices": [
+      {
+        "id": "a",
+        "label": {
+          "en": "Slowly and evenly",
+          "id": "Perlahan dan merata"
+        }
+      },
+      {
+        "id": "b",
+        "label": {
+          "en": "In quick short bursts",
+          "id": "Dengan tekanan singkat dan cepat"
+        }
+      },
+      {
+        "id": "c",
+        "label": {
+          "en": "As hard as possible, once",
+          "id": "Sekuat mungkin, sekali saja"
+        }
+      }
+    ],
+    "answer": "a",
+    "explanation": {
+      "en": "Squeeze the lever slowly and evenly.",
+      "id": "Tekan perlahan dan merata."
+    },
+    "sources": [
+      {
+        "label": "USFA",
+        "url": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "type": "pick-hotspot",
+    "question": {
+      "en": "Click the part that shows if pressure is too high or too low.",
+      "id": "Klik bagian yang menunjukkan tekanan terlalu tinggi/rendah."
+    },
+    "answer": "gauge",
+    "explanation": {
+      "en": "Shows whether pressure is too high or too low. Check it during every inspection.",
+      "id": "Menunjukkan apakah tekanan terlalu tinggi atau terlalu rendah. Periksa setiap inspeksi."
+    },
+    "sources": [
+      {
+        "label": "USFA",
+        "url": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/"
+      },
+      {
+        "label": "PER.04/MEN/1980",
+        "url": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf#page=4"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "type": "choice",
+    "question": {
+      "en": "When is it OK to fight a fire yourself?",
+      "id": "Kapan boleh memadamkan api sendiri?"
+    },
+    "choices": [
+      {
+        "id": "a",
+        "label": {
+          "en": "Others are alerted, the fire is small and contained, and you have a clear escape route",
+          "id": "Orang lain sudah diberi tahu, api kecil dan terbatas, serta jalur keluar Anda bebas hambatan"
+        }
+      },
+      {
+        "id": "b",
+        "label": {
+          "en": "Whenever you have an extinguisher nearby",
+          "id": "Kapan pun ada APAR di dekat Anda"
+        }
+      },
+      {
+        "id": "c",
+        "label": {
+          "en": "When the room is filling with smoke but you are close to the fire",
+          "id": "Saat ruangan dipenuhi asap, tetapi Anda dekat dengan api"
+        }
+      }
+    ],
+    "answer": "a",
+    "emergency": true,
+    "explanation": {
+      "en": "Only if all checklist answers are \"yes\"; otherwise alert others, leave, and call the fire department.",
+      "id": "Hanya jika semua jawaban checklist \"ya\"; jika ragu, beri tahu orang lain, keluar, dan hubungi pemadam kebakaran."
+    },
+    "sources": [
+      {
+        "label": "USFA",
+        "url": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "type": "choice",
+    "question": {
+      "en": "Under Indonesian regulation, a Class C (Golongan C) fire is…",
+      "id": "Menurut regulasi Indonesia, kebakaran Golongan C adalah…"
+    },
+    "choices": [
+      {
+        "id": "a",
+        "label": {
+          "en": "Solid materials like wood or paper",
+          "id": "Bahan padat seperti kayu atau kertas"
+        }
+      },
+      {
+        "id": "b",
+        "label": {
+          "en": "Live electrical installations",
+          "id": "Instalasi listrik bertegangan"
+        }
+      },
+      {
+        "id": "c",
+        "label": {
+          "en": "Burning metals",
+          "id": "Logam yang terbakar"
+        }
+      }
+    ],
+    "answer": "b",
+    "explanation": {
+      "en": "Permenaker 04/1980 Article 2: A solids (excluding metals), B flammable liquids/gases, C live electrical installations, D metals. USFA also: Class C = electrical equipment, nonconductive extinguishing agents.",
+      "id": "Permenaker 04/1980 Ps.2: A padat (bukan logam), B cair/gas mudah terbakar, C instalasi listrik bertegangan, D logam. USFA juga: Class C = peralatan listrik, agen tidak menghantarkan listrik."
+    },
+    "sources": [
+      {
+        "label": "PER.04/MEN/1980",
+        "url": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf#page=2"
+      },
+      {
+        "label": "USFA",
+        "url": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "type": "choice",
+    "question": {
+      "en": "In Indonesia, how often must an APAR be inspected?",
+      "id": "Di Indonesia, berapa kali APAR wajib diperiksa?"
+    },
+    "choices": [
+      {
+        "id": "a",
+        "label": {
+          "en": "Once every 5 years",
+          "id": "Sekali setiap 5 tahun"
+        }
+      },
+      {
+        "id": "b",
+        "label": {
+          "en": "Twice a year (6- and 12-month checks)",
+          "id": "Dua kali setahun (pemeriksaan 6 dan 12 bulan)"
+        }
+      },
+      {
+        "id": "c",
+        "label": {
+          "en": "Only after it is used",
+          "id": "Hanya setelah digunakan"
+        }
+      }
+    ],
+    "answer": "b",
+    "explanation": {
+      "en": "Permenaker 04/1980 Article 11(1). Each fire extinguisher must be inspected twice a year, with 6- and 12-month checks.",
+      "id": "Permenaker 04/1980 Ps.11(1). Setiap APAR wajib diperiksa dua kali setahun, yaitu pemeriksaan 6 dan 12 bulan."
+    },
+    "sources": [
+      {
+        "label": "PER.04/MEN/1980",
+        "url": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf#page=4"
+      }
+    ]
+  }
+]

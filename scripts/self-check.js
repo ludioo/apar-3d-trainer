@@ -9,6 +9,7 @@ import './product-check.js';
 import './saved-configs-check.js';
 import './training-check.js';
 import './effects-check.js';
+import './quiz-check.js';
 import { projectPin, placePin } from '../src/ui/hotspot-pins.js';
 import { initCameraTween } from '../src/core/cameraTween.js';
 import { initAppearance } from '../src/features/configurator/appearance.js';
@@ -48,6 +49,22 @@ assert.deepEqual(
 );
 
 const pin = hotspots.find((h) => h.id === 'pin');
+assert.deepEqual(hotspots.map((h) => h.id), ['handle', 'pin', 'nozzle', 'gauge', 'label', 'body'], 'part 1 is the lever, part 2 the safety pin');
+// Fixed landmarks from the close-up approved by Barkah, independent of the hotspot lookup under test.
+for (const [index, landmark] of [
+  { position: [0.085, 0.652, 0.03], anchor: [0.09043, 0.655, 0.04113], radius: 0.028,
+    view: { position: [0.45, 1.35, 0.55], target: [0.155, 1.187, -0.055] } },
+  { position: [0, 0.612, 0], anchor: [0.00994, 0.61787, 0.02013], radius: 0.04,
+    view: { position: [0.4, 1.35, 0.7], target: [0, 1.114, -0.11] } },
+].entries()) {
+  const hotspot = hotspots[index];
+  assert.deepEqual(hotspot.position, landmark.position, `${hotspot.id}: physical picking landmark`);
+  assert.deepEqual(hotspot.pinPosition, landmark.anchor, `${hotspot.id}: physical surface landmark`);
+  assert.equal(hotspot.radius, landmark.radius);
+  assert.deepEqual(hotspot.cameraView, landmark.view);
+  assert.equal(nearestHotspot({ x: landmark.position[0], y: landmark.position[1], z: landmark.position[2] }, hotspots)?.id,
+    index === 0 ? 'handle' : 'pin');
+}
 assert.equal(nearestHotspot({ x: pin.position[0], y: pin.position[1], z: pin.position[2] }, hotspots)?.id, 'pin');
 
 const label = hotspots.find((h) => h.id === 'label');

@@ -31,6 +31,7 @@ export function initTraining(context) {
     },
     skip() { if (canInteract()) complete(true); },
     refocus: focusStep,
+    quiz() { if (active && model && session.phase === 'complete') emit('quiz:start'); },
   });
   let model = null;
   let active = false;

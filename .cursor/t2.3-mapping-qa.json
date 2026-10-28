@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://localhost:4183",
+  "checks": [
+    {
+      "name": "Configure 1=lever / 2=safety pin; EN/ID cards, labels, focus and close"
+    },
+    {
+      "name": "Direct mesh picking at independent physical landmarks across 1/3/6/9 kg"
+    },
+    {
+      "name": "PASS Pull uses physical safety pin and removal overlay; Squeeze step 3 uses physical lever and keyboard hold"
+    },
+    {
+      "name": "q2: part 1 wrong / part 2 correct in separate sessions; first answer locked; q5 part 4; score 8/8 saved"
+    },
+    {
+      "name": "Touch Pull/one-second lever hold; quiz part 2 touch, EN/ID portrait/landscape/both snaps/reduced motion",
+      "detail": [
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "expanded": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "expanded": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "expanded": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "expanded": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "expanded": false
+        }
+      ]
+    },
+    {
+      "name": "No unexpected page or console errors"
+    }
+  ],
+  "errors": [],
+  "scenario": {
+    "width": 844,
+    "height": 390,
+    "lang": "en",
+    "expanded": false
+  }
+}

@@ -1,6 +1,6 @@
 [
   {
-    "id": "pin",
+    "id": "handle",
     "position": [0.085, 0.652, 0.03],
     "pinPosition": [0.09043, 0.655, 0.04113],
     "radius": 0.028,
@@ -9,17 +9,17 @@
       "target": [0.155, 1.187, -0.055]
     },
     "title": {
-      "en": "Safety pin",
-      "id": "Pin pengaman"
+      "en": "Handle / lever",
+      "id": "Tuas"
     },
     "body": {
-      "en": "Locks the handle so it can't be squeezed by accident. Step 1 of PASS: pull the pin, keeping the nozzle pointed away from you.",
-      "id": "Mengunci tuas agar tidak tertekan tanpa sengaja. Langkah 1 PASS: cabut pin, dengan nozzle mengarah menjauhi tubuh."
+      "en": "Squeeze it slowly and evenly to discharge the agent. Release it to stop.",
+      "id": "Tekan perlahan dan merata untuk menyemprotkan isi. Lepaskan untuk berhenti."
     },
     "sources": ["usfa"]
   },
   {
-    "id": "handle",
+    "id": "pin",
     "position": [0, 0.612, 0],
     "pinPosition": [0.00994, 0.61787, 0.02013],
     "radius": 0.04,
@@ -28,12 +28,12 @@
       "target": [0, 1.114, -0.11]
     },
     "title": {
-      "en": "Handle / lever",
-      "id": "Tuas"
+      "en": "Safety pin",
+      "id": "Pin pengaman"
     },
     "body": {
-      "en": "Squeeze it slowly and evenly to discharge the agent. Release it to stop.",
-      "id": "Tekan perlahan dan merata untuk menyemprotkan isi. Lepaskan untuk berhenti."
+      "en": "Locks the handle so it can't be squeezed by accident. Step 1 of PASS: pull the pin, keeping the nozzle pointed away from you.",
+      "id": "Mengunci tuas agar tidak tertekan tanpa sengaja. Langkah 1 PASS: cabut pin, dengan nozzle mengarah menjauhi tubuh."
     },
     "sources": ["usfa"]
   },

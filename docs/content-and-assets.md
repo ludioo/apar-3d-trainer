@@ -78,6 +78,30 @@ Sumber: USFA.
    Penjelasan: Permenaker 04/1980 Ps.11(1). [PERMENAKER]
 Lulus: ≥ 6/8 (75%).
 
+### Pelengkap bilingual T2.3 (disetujui Barkah 28 Okt 2026)
+Pertanyaan, pilihan EN, kunci dan penjelasan existing tetap. Pilihan ID berikut mengikuti urutan a/b/c; pilihan pengecoh tetap salah. Istilah Inggris q1 dipertahankan untuk kepanjangan PASS.
+
+| Soal | a (ID) | b (ID) | c (ID) |
+|---|---|---|---|
+| q1 | Pull (cabut), Aim (arahkan), Squeeze (tekan tuas), Sweep (sapukan) | Push (dorong), Aim (arahkan), Spray (semprotkan), Stop (berhenti) | Pull (cabut), Activate (aktifkan), Spray (semprotkan), Sweep (sapukan) |
+| q3 | Ke puncak nyala api | Ke pangkal api | Ke asap |
+| q4 | Perlahan dan merata | Dengan tekanan singkat dan cepat | Sekuat mungkin, sekali saja |
+| q6 | Orang lain sudah diberi tahu, api kecil dan terbatas, serta jalur keluar Anda bebas hambatan | Kapan pun ada APAR di dekat Anda | Saat ruangan dipenuhi asap, tetapi Anda dekat dengan api |
+| q7 | Bahan padat seperti kayu atau kertas | Instalasi listrik bertegangan | Logam yang terbakar |
+| q8 | Sekali setiap 5 tahun | Dua kali setahun (pemeriksaan 6 dan 12 bulan) | Hanya setelah digunakan |
+
+| Soal/bahasa | Penjelasan pelengkap |
+|---|---|
+| q2 EN | The safety pin locks the lever; it must be pulled out first. |
+| q5 EN | Shows whether pressure is too high or too low. Check it during every inspection. |
+| q5 ID | Menunjukkan apakah tekanan terlalu tinggi atau terlalu rendah. Periksa setiap inspeksi. |
+| q7 EN | Permenaker 04/1980 Article 2: A solids (excluding metals), B flammable liquids/gases, C live electrical installations, D metals. USFA also: Class C = electrical equipment, nonconductive extinguishing agents. |
+| q8 EN | Permenaker 04/1980 Article 11(1). Each fire extinguisher must be inspected twice a year, with 6- and 12-month checks. |
+| q8 ID | Permenaker 04/1980 Ps.11(1). Setiap APAR wajib diperiksa dua kali setahun, yaitu pemeriksaan 6 dan 12 bulan. |
+
+q2 ID tetap: Pin pengaman mengunci tuas; harus dicabut dulu. q5 menyalin body gauge existing, sumber USFA + Permenaker Ps.12(1)a. q7 EN menerjemahkan penjelasan existing, sumber Permenaker Ps.2 + USFA. q8 melengkapi rujukan Ps.11(1) dengan isi pasalnya. Sumber USFA dan salinan Permenaker pada bagian Sumber K3 dibuka ulang 28 Okt 2026 saat planning.
+
+
 ## Disclaimer (tetap tampil di Train, Results, PDF)
 EN: "Demo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training." / ID: "Demo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat."
 

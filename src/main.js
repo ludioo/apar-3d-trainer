@@ -9,12 +9,13 @@ import { initControls } from './core/controls.js';
 import { loadModel } from './core/loader.js';
 import { on } from './core/events.js';
 import { initLang, getLang, setLang, t } from './i18n/i18n.js';
-import { initRouter, closeOverlay } from './core/router.js';
+import { initRouter, closeOverlay, getMode } from './core/router.js';
 import { openModal, closeModal } from './ui/modal.js';
 import { initSheet } from './ui/sheet.js';
 import { initHighlight } from './core/highlight.js';
 import { initConfigurator } from './features/configurator/configurator.js';
 import { initTraining } from './features/training/training.js';
+import { initQuiz } from './features/quiz/quiz.js';
 import hotspots from './data/hotspots.json';
 
 const MODEL_HEIGHT = 1.2;
@@ -75,7 +76,28 @@ const training = initTraining({
   panelBody: document.getElementById('panel-body'), highlight, requestRender,
   setTrainingAppearance: configurator.setTrainingAppearance,
 });
-initRouter({ configure: configurator, train: training, results: {} });
+const quiz = initQuiz({
+  camera, controls, canvas: renderer.domElement, container: root,
+  panelBody: document.getElementById('panel-body'), requestRender,
+  setTrainingAppearance: configurator.setTrainingAppearance,
+});
+let trainStage = training;
+on('quiz:start', () => {
+  if (getMode() !== 'train' || trainStage !== training) return;
+  training.exit();
+  quiz.start();
+  trainStage = quiz;
+  quiz.enter();
+});
+on('quiz:training', () => {
+  if (getMode() !== 'train' || trainStage !== quiz) return;
+  quiz.exit();
+  trainStage = training;
+  training.enter();
+});
+initRouter({ configure: configurator, train: {
+  enter() { trainStage.enter(); }, exit() { trainStage.exit(); },
+}, results: {} });
 let model = null;
 
 let debugHud = null;
@@ -156,6 +178,7 @@ on('load:done', (gltf) => {
   scene.add(model);
   configurator.setModel(model);
   training.setModel(model);
+  quiz.setModel(model);
   if (DEBUG) {
     addDebugMarkers();
     window.__aparDebug = { scene, renderer, camera, model, hotspots, Vector3, controls, requestRender };

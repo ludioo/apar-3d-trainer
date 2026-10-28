@@ -17,6 +17,7 @@ export function initSheet(panel, handle) {
   let startY = null;
   let startVisible = 0;
   let visible = 0;
+  let tapPending = false;
 
   const setExpanded = (on) => {
     panel.classList.toggle('is-expanded', on);
@@ -34,6 +35,7 @@ export function initSheet(panel, handle) {
 
   handle.addEventListener('pointerdown', (e) => {
     if (desktop.matches) return;
+    tapPending = false;
     handle.setPointerCapture(e.pointerId);
     startY = e.clientY;
     startVisible = panel.getBoundingClientRect().height;
@@ -53,7 +55,8 @@ export function initSheet(panel, handle) {
     const moved = Math.abs(e.clientY - startY);
     reset();
     if (moved < TAP_PX) {
-      setExpanded(!panel.classList.contains('is-expanded'));
+      // Keep the handle in place until click; moving it on pointerup can retarget a touch click to an answer underneath.
+      tapPending = true;
       return;
     }
     const [min, max] = limits();
@@ -64,7 +67,8 @@ export function initSheet(panel, handle) {
   handle.addEventListener('lostpointercapture', reset);
 
   handle.addEventListener('click', (event) => {
-    if (event.detail === 0) setExpanded(!panel.classList.contains('is-expanded'));
+    if (event.detail === 0 || tapPending) setExpanded(!panel.classList.contains('is-expanded'));
+    tapPending = false;
   });
 
   desktop.addEventListener('change', reset);

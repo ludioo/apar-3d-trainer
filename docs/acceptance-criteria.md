@@ -89,11 +89,27 @@ Dikonfirmasi lolos oleh Barkah pada 28 Okt 2026: revisi slider Sweep dinyatakan 
 Dikonfirmasi lolos oleh Barkah pada 28 Okt 2026, kedua checklist ditutup dan commit/push ke develop diminta. Screenshot Squeeze yang dikirim sesuai implementasi: selang/nozzle tetap statis pada model utuh, arah semprotan mengikuti slider saat Sweep; animasi selang/bagian tetap L4. Rincian perangkat pemeriksaan Barkah tidak dicatat, sehingga acceptance tidak dianggap pengukuran ≥30 fps pada HP fisik. T2.3 tidak dimulai.
 
 ## T2.3
-- [ ] 8 soal sesuai content-and-assets.md, feedback + penjelasan, skor akhir.
-- [ ] Soal 'klik bagian' bisa dijawab dengan klik pin di 3D.
-- [ ] 6/8 → Lulus, 5/8 → Belum lulus.
+- [x] 8 soal sesuai content-and-assets.md, feedback + penjelasan, skor akhir.
+- [x] Soal 'klik bagian' bisa dijawab dengan klik pin di 3D.
+- [x] 6/8 → Lulus, 5/8 → Belum lulus.
 
-- [ ] Setelah feedback q6 tampil blok nomor darurat 113 & 112 + sumber Komdigi (EN/ID).
+- [x] Setelah feedback q6 tampil blok nomor darurat 113 & 112 + sumber Komdigi (EN/ID).
+
+28 Okt 2026: validasi Q1–Q4, planning dan pelengkap teks bilingual disetujui Barkah sebelum implementasi. Implementasi/QA lokal tersedia, status tetap menunggu acceptance Barkah; checkbox di atas belum ditutup. Cek dari tab Train: Start → selesaikan/Skip empat langkah → Selesai → Ikuti kuis. Jawab delapan soal, uji pin bernomor q2/q5, ganti bahasa, periksa kontak sesudah q6 serta skor 5/8 dan 6/8. Ulangi kuis membuat attempt baru; Kembali ke latihan membuka kartu selesai. Refresh menjaga riwayat selesai, bukan sesi parsial.
+
+Bukti AI di `.cursor/t2.3-qa.json`, `t2.3-dev-qa.json`, `t2.3-layout-qa.json`, `t2.3-training-regression-qa.json`, `t2.3-effects-regression-qa.json` dan screenshot T2.3. QA Chrome desktop/HP emulasi mencakup pin/keyboard/touch, sesi/skor/storage, EN/ID/teks kuis 100/200%/kedua snap pada lima viewport; uji layout tambahan mencakup pin, feedback darurat dan ringkasan. Tap sheet yang sempat memilih jawaban diperbaiki pada shared sheet dan diuji ulang. Preview `http://localhost:4183/#train`; HP satu Wi-Fi `http://192.168.100.4:4183/#train` (alamat LAN dapat berubah). HP fisik/AT/Firefox/Safari dan benchmark performa belum diverifikasi. T2.4 tidak dimulai.
+
+28 Okt 2026: Barkah menyatakan pemeriksaan umum T2.3 lolos; empat checklist umum di atas ditutup berdasarkan konfirmasi tersebut. Barkah juga menemukan posisi nomor 1/2 keliru terhadap nama bagian. Pemeriksaan close-up dan percobaan klik membenarkan laporan; validasi serta rencana koreksi 1=tuas, 2=pin disetujui sebelum implementasi revisi. Catatan menunggu acceptance umum di riwayat sebelumnya ditutup, sedangkan task tetap 🟨 sampai revisi ini diterima.
+
+Checklist revisi pemetaan (dikonfirmasi lolos oleh Barkah pada 28 Okt 2026):
+- [x] Configure: nomor 1 membuka Tuas dan nomor 2 Pin pengaman; klik model serta fokus kamera cocok.
+- [x] PASS: Pull menunjuk pin pengaman dan overlay pencabutan di lokasi bagian 2; Squeeze menargetkan tuas bagian 1. Nomor langkah tetap 1 dan 3.
+- [x] Kuis q2: nomor 2 Benar dan nomor 1 Salah pada sesi terpisah; q5 tetap nomor 4.
+- [x] EN/ID, desktop/HP, kedua snap panel serta keyboard/sentuhan tetap bekerja.
+
+Muat ulang preview 4183 untuk mengambil build revisi. Cek Configure dahulu, lalu Train → Mulai → lakukan Pull/Aim/Squeeze/Sweep atau Skip → Selesai → Ikuti kuis. Gunakan sesi baru/refresh untuk mencoba jawaban q2 yang berbeda karena jawaban pertama terkunci. Bukti revisi memakai prefix `.cursor/t2.3-mapping-*`, termasuk close-up posisi fisik. Riwayat lama dipertahankan apa adanya dan tidak dihitung ulang; hasil sebelum revisi memakai pemetaan visual lama. Tidak commit/push/deploy atau lanjut T2.4 pada revisi ini.
+
+28 Okt 2026: Barkah mengonfirmasi revisi nomor 1=tuas dan nomor 2=pin pengaman sudah benar dan lolos, meminta T2.3 ditandai selesai, dokumen/checklist ditutup serta commit/push ke develop. Seluruh catatan menunggu acceptance T2.3 pada riwayat di atas ditutup; checklist umum dan revisi selesai. Rincian perangkat pemeriksaan Barkah tidak dicatat, sehingga tidak diasumsikan sebagai uji HP fisik/AT/browser lain atau benchmark performa. Check/build dijalankan ulang sebelum commit. T2.4 tetap belum dimulai; main tidak diubah.
 
 ## T2.4
 - [ ] Setelah kuis: skor, grafik riwayat, tabel jawaban tampil.

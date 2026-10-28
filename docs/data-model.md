@@ -27,7 +27,11 @@ Harga total = basePrice + tambahan agent + kapasitas + warna + bracket (jika akt
 ## hotspots.json
 `[{ "id":"pin", "position":[x,y,z], "pinPosition":[x,y,z], "radius":0.04, "cameraView":{ "position":[x,y,z], "target":[x,y,z] }, "title":{en,id}, "body":{en,id}, "sources":["usfa","permenaker"] }]` — posisi dalam koordinat lokal model (meter), diisi AI dengan cara tes klik (mode `?debug` menampilkan koordinat titik yang diklik).
 
-T1.4: `position` + `radius` tetap untuk picking T1.3; `pinPosition` adalah titik di permukaan bagian untuk pin HTML, oklusi, dan highlight, ditransformasikan memakai `localToWorld`. Keduanya terpisah karena titik picking dapat berada di dalam model. `cameraView.position` dan `cameraView.target` memakai koordinat dunia setelah normalisasi tinggi model 1,2. Nomor pin mengikuti urutan array: pin, handle, nozzle, gauge, label, body. Tidak ada perubahan skema localStorage.
+T1.4: `position` + `radius` dipakai untuk picking; `pinPosition` adalah titik di permukaan bagian untuk pin HTML, oklusi, dan highlight, ditransformasikan memakai `localToWorld`. Keduanya terpisah karena titik picking dapat berada di dalam model. `cameraView.position` dan `cameraView.target` memakai koordinat dunia setelah normalisasi tinggi model 1,2. Nomor bagian mengikuti urutan array terkoreksi: handle, pin, nozzle, gauge, label, body. Tidak ada perubahan skema localStorage.
+
+Revisi T2.3 (28 Okt 2026, validasi dan rencana disetujui Barkah): lokasi nomor 1 adalah tuas (`handle`), lokasi nomor 2 adalah pin pengaman (`pin`). Entri pada dua lokasi mempertahankan position/pinPosition/radius/cameraView yang telah dilihat dalam close-up; ID, judul, body dan sumber mengikuti bagian fisik yang benar. Ini mengoreksi pemetaan pin/handle T1.3–T2.3 awal. Satu data bersama dipakai Configure, PASS dan kuis; tanpa pengecualian ID atau perubahan kunci soal q2=`pin`. Nomor target latihan tetap nomor langkah: Pull 1 menargetkan bagian 2/pin, Squeeze 3 menargetkan bagian 1/tuas.
+
+Riwayat attempts sebelum koreksi tetap memakai ID dan skor saat dikerjakan; tidak dihapus, dihitung ulang atau dimigrasi. Hasil lama mungkin dipengaruhi pemetaan visual lama dan tidak boleh diasumsikan sudah dinilai memakai lokasi terkoreksi.
 
 ## pass-steps.json
 `[{ "id":"pull", "hotspot":"pin", "interaction":"click|hold|drag", "title":{en,id}, "instruction":{en,id} }]`
@@ -45,7 +49,11 @@ Posisi parsial, target dan lintasan sah dipertahankan ketika melepas pegangan, m
 `emergency.json` diisi sesuai dokumen sumber: `{ "fire": "113", "general": "112", "sourceUrl": "https://layanan112.komdigi.go.id/tentang" }`. Train memakai nomor untuk href telepon, sedangkan copy/keterangan layanan memakai key i18n existing.
 
 ## quiz.json
-`[{ "id":"q1", "type":"choice|pick-hotspot", "question":{en,id}, "choices":[{id,label:{en,id}}], "answer":"<choiceId|hotspotId>", "explanation":{en,id} }]`
+`[{ "id":"q1", "type":"choice|pick-hotspot", "question":{en,id}, "choices":[{id,label:{en,id}}], "answer":"<choiceId|hotspotId>", "explanation":{en,id}, "sources":[{label,url}] }]`
+
+T2.3 (28 Okt 2026): array q1–q8, enam choice (ID pilihan a/b/c) dan dua pick-hotspot (q2/pin, q5/gauge). Entri pick-hotspot tidak memiliki choices. q6 memiliki `emergency: true`; blok kontak membaca emergency.json dan i18n existing. Sumber setiap soal memiliki label nama sumber dan URL HTTPS, PDF bertaut ke halaman pasal. Seluruh teks soal/pilihan/penjelasan persis content-and-assets termasuk pelengkap bilingual yang disetujui Barkah.
+
+Sesi kuis hanya memori: fase idle/question/feedback/summary, indeks, answers dan attempt. Start/Retry membuat ID acak 128-bit via crypto.getRandomValues serta startedAt ISO. Jawaban pertama yang valid dikunci, Next manual; q8 membuat finishedAt, durationSec (detik dibulatkan, tidak negatif), score (jumlah benar), total 8 dan passed (≥6). Waktu termasuk feedback, About dan jeda pindah tab, berhenti saat menjawab q8, sebelum membuka ringkasan. Bahasa/tab/About menjaga sesi; refresh kembali intro PASS, Retry mulai kosong. Sesi tidak memulihkan jawaban dari localStorage.
 
 ## localStorage (prefix `apar3d:`)
 Data kompleks memakai versi skema sesuai implementasi task terkait. `apar3d:lang` tetap string JSON polos sesuai keputusan T1.1; tidak dibungkus objek versi.
@@ -54,10 +62,12 @@ Data kompleks memakai versi skema sesuai implementasi task terkait. `apar3d:lang
 |---|---|
 | `apar3d:lang` | `"en"` / `"id"` |
 | `apar3d:configs` | `{ schemaVersion: 1, configs: [{ id, name, createdAt(ISO), agent, capacity, color, bracket, priceSnapshot:{IDR,USD} }] }` maks 10 |
-| `apar3d:attempts` | `[{ id, startedAt, finishedAt, durationSec, score, total, passed, answers:[{qId, given, correct}] }]` maks 20 |
+| `apar3d:attempts` | `{ schemaVersion: 1, attempts: [{ id, startedAt, finishedAt, durationSec, score, total, passed, answers:[{qId, given, correct}] }] }` maks 20 |
 | `apar3d:trainingDone` | `true/false` |
 | `apar3d:participantName` | string opsional (untuk PDF) |
 Relasi: tidak ada relasi antar entitas; Results membaca `attempts` dan `configs`.
+
+T2.3 attempts: `given` adalah ID pilihan/hotspot, bukan teks terjemahan; `correct` boolean. Validasi seluruh envelope/entri mencakup versi, batas/ID unik, ISO/urutan tanggal/durasi, delapan qId berurutan, jawaban valid dan konsistensi skor/status. Riwayat dibaca ulang sebelum setiap simpan, terbaru dahulu menurut finishedAt; timestamp sama menempatkan entri baru di depan. Attempt ke-21 membuang yang tertua lewat satu setItem. ID sama dengan isi sama tidak ditulis lagi; ID sama dengan isi berbeda ditolak. Tidak menimpa JSON rusak, versi asing atau entri invalid dan tidak memigrasi array polos yang belum pernah dirilis. Gagal baca/tulis tetap menampilkan hasil dengan pesan belum tersimpan; tidak ada retry tulis otomatis. Baca–ubah–tulis localStorage bukan transaksi antar tab simultan.
 
 T1.7 (28 Okt 2026): `agent`/`capacity`/`color` menyimpan ID opsi produk; `bracket` boolean. Pemetaan ke state aktif adalah `{ agentId: agent, capacityId: capacity, colorId: color, bracketEnabled: bracket }`. ID berupa 32 digit hex acak 128-bit dari `crypto.getRandomValues`, tersedia juga pada HTTP LAN. Nama dipangkas spasi tepi, wajib berisi 1–60 unit karakter sesuai maxlength input native; nama duplikat tetap entri berbeda. Default bilingual `Config #n`/`Konfigurasi #n`, n = jumlah simpanan + 1, bukan penghitung permanen. Nama tersimpan tidak diterjemahkan.
 

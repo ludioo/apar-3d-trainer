@@ -17,7 +17,7 @@ Status: ⬜ todo · 🟨 in progress · ✅ done · ⛔ blocked
 | T1.7 Simpan konfigurasi | ✅ | 2026-10-28 | Simpan bernama, daftar/muat/hapus, batas 10 dengan konfirmasi penggantian, schemaVersion dan fallback storage diterima Barkah. Check 96 kombinasi + build serta 22 kelompok QA dev/11 produksi desktop dan HP emulasi lolos. Acceptance dikonfirmasi di chat; commit/push ke develop diminta. Task berikutnya belum dimulai. |
 | T2.1 Mode Train PASS | ✅ | 2026-10-28 | PASS dan revisi slider Sweep diterima Barkah: interaksi dinyatakan lebih jelas dan lolos. Checklist acceptance ditutup. Check/build, 7 kelompok QA slider (termasuk 40 kombinasi layar/bahasa/teks/snap), serta 11 kelompok regresi produksi desktop/HP emulasi lolos. Commit/push ke develop diminta; T2.2 tetap belum dimulai dan main tidak diubah. |
 | T2.2 Efek api & semprotan | ✅ | 2026-10-28 | Barkah mengonfirmasi pemeriksaan T2.2 lolos; kedua checklist acceptance ditutup. Efek api/semprotan, framing, pause/reduced motion dan padam enam lintasan diterima. Selang/nozzle model tetap statis sesuai batas MVP; arah semprotan mengikuti slider, animasi bagian tetap L4. Check/build dan QA dev/produksi desktop/HP emulasi lolos. Commit/push ke develop diminta; T2.3 tidak dimulai. |
-| T2.3 Kuis | ⬜ | | |
+| T2.3 Kuis | ✅ | 2026-10-28 | Barkah mengonfirmasi kuis dan revisi 1=tuas/2=pin pengaman benar serta lolos; seluruh checklist umum/revisi ditutup. Check/build dan QA Configure/PASS/kuis lolos, riwayat lama dipertahankan. Commit/push ke develop diminta; T2.4 belum dimulai. |
 | T2.4 Dashboard Results | ⬜ | | |
 | T2.5 Ekspor PDF | ⬜ | | |
 | T3.1 Performa | ⬜ | | |
