@@ -26,7 +26,7 @@
 - T3.1 Performa: audit Lighthouse, ukuran aset, pixelRatio, target < 3 dtk.
 - T3.2 Aksesibilitas & reduced motion, fallback WebGL, About + disclaimer + kredit.
 - T3.3 SEO: meta, OG image, sitemap, robots, JSON-LD, keyword.
-- T3.4 README portfolio (GIF/screenshot, fitur, stack, link live) + script rekam video 30 dtk.
+- T3.4 README portfolio (GIF/screenshot, fitur, stack, link live). README diterima Barkah 28 Okt 2026; video 30 dtk beserta script/checklist rekam ditunda atas keputusan Barkah karena UX masih akan dievaluasi, dikecualikan dari acceptance T3.4 saat ini. Video belum direkam; dilanjutkan setelah keputusan baru.
 - T3.6 Analytics Umami (script defer setelah load, custom events, env var).
 - T3.5 Link dari barkahmauludi.com (dikerjakan di repo situs utama, lihat prompt).
 

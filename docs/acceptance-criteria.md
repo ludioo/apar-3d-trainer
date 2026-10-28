@@ -199,8 +199,25 @@ Cara cek lokal:
 Bukti lokal: `npm run check` dan `npm run build` sukses, `node scripts/seo-check.js dist/index.html` lolos. `.cursor/t3.3-check.cjs` / `t3.3-production-qa.json` mencatat 10 kelompok pemeriksaan: metadata tanpa JavaScript, HTTP/MIME/byte tiga aset, parse XML/dimensi JPEG, Configure/bahasa/About/PDF spec serta PASS tanpa Skip/kuis 8/8/Results/PDF report/Clear cancel pada desktop dan HP emulasi. Tidak ada pageerror/console error/requestfailed; gambar OG tidak diminta saat app dibuka. Screenshot OG dan dua screenshot Results ditinjau. HP fisik/AT/Firefox/Safari, Lighthouse/performa baru, crawler live dan share platform belum diuji. Gate scope T3.3 di `.cursor/t3.3-design-gate.md`.
 
 ## T3.4
-- [ ] README di GitHub menampilkan gambar, fitur, link live.
-- [ ] Video 30 dtk sudah direkam.
+- [x] README di GitHub menampilkan gambar, fitur, link live.
+- [x] Video 30 dtk beserta script/checklist rekam ditunda atas keputusan Barkah dan dikecualikan dari acceptance T3.4 saat ini; video belum direkam.
+
+28 Okt 2026: **Barkah mengonfirmasi T3.4 sudah dicek dan lolos**, meminta task/checklist selesai, dokumen diperbarui serta commit/push ke develop. README ditutup berdasarkan acceptance pengguna; tidak diklaim sebagai pengujian GitHub live baru oleh AI. Penundaan video karena evaluasi UX tetap berlaku: kriteria kedua diperjelas menjadi pengecualian scope yang ditutup secara administratif, bukan bukti rekaman. T3.4 selesai untuk scope README yang disepakati; video menunggu keputusan baru. T3.6 tidak dimulai dan main tidak diubah.
+
+Riwayat implementasi sebelum acceptance: 28 Okt 2026, validasi dan planning disetujui Barkah sebelum implementasi. README portfolio EN memakai screenshot T3.3 existing, fitur/stack aktual, link demo/portfolio, cara run, kredit aset/sumber K3 dan disclaimer EN persis sumber. Pada penyerahan implementasi, README masih menunggu pemeriksaan Barkah dan kedua checklist belum ditutup; catatan tersebut kini ditutup oleh acceptance di atas.
+
+Cara cek README:
+1. Buka README.md di editor lalu pilih Markdown Preview. Pastikan screenshot muncul, teks/daftar/blok perintah terbaca, serta link demo dan portfolio menuju alamat yang benar. Periksa juga kredit, sumber K3, batas demo dan dokumentasi.
+2. Setelah commit/push diotorisasi dan dilakukan, buka https://github.com/ludioo/apar-3d-trainer pada branch yang memuat perubahan. Gulir ke README dan pastikan gambar, fitur serta link live tampil; cek di desktop dan browser HP. Preview lokal bukan bukti README sudah terpublikasi di GitHub.
+3. Acceptance README sudah dikonfirmasi Barkah. Bagian video tetap menunggu keputusan Barkah untuk melanjutkan rekaman; belum ada checklist/storyboard baru pada scope ini.
+
+Bukti AI 28 Okt 2026: npm run check (184 key i18n) dan npm run build sukses, warning chunk >500 KB existing tetap. Preview lokal melalui marked/Chrome pada 1280×900 serta 390×844: screenshot asli termuat, dua blok perintah terbaca, tanpa overflow horizontal; kedua capture ditinjau. Sepuluh path relatif tersedia dan sembilan URL eksternal sesuai rujukan repo; bukan bukti HTTP/live baru. Disclaimer EN cocok persis dengan kamus dan dokumen sumber. Bukti sementara: %TEMP%/apar-t3.4-readme-qa. Rendering GitHub aktual, HP fisik dan instalasi bersih npm ci belum diperiksa; tidak commit/push/deploy.
+
+Gate antislop untuk scope README (arah: portfolio calon klien, Markdown native dan screenshot aplikasi; ENERGY 1 / RHYTHM 1 / MOTION 1):
+- Hard Gate PASS: tanpa klaim fitur/performa rekaan, disclaimer persis sumber, gambar existing dan seluruh path relatif valid; preview dua lebar tanpa overflow. UI aplikasi tidak diubah; interaksi/kontras aplikasi bukan audit ulang task ini.
+- Purpose Gate PASS: screenshot memperlihatkan produk dan kontrol aktual; format heading/list/code native memudahkan pemindaian, tanpa dekorasi/aset baru.
+- Liveliness PASS: screenshot menjadi fokus, heading/spasi memisahkan isi dan gaya teks teknis sederhana mengikuti arah README; tidak menambah gerakan.
+- Craftsmanship/Copy PASS: fakta dicocokkan dengan data produk/hotspot, batas simpan, builder PDF dan stack terpasang; kredit/batas demo eksplisit, tanpa buzzword atau em dash. Screenshot hanya diklaim untuk PDF spesifikasi karena laporan latihan berisi teks hasil.
 
 ## T3.6
 - [ ] Di Umami → Events muncul variant_change, training_start, quiz_finish, pdf_export setelah kamu mencobanya di situs live (ad-blocker dimatikan).
