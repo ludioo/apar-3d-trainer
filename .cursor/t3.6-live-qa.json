@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-28",
+  "origin": "https://trainer.barkahmauludi.com",
+  "checks": [
+    {
+      "name": "Public HTTPS app and configured Umami script load after APAR visible",
+      "detail": {
+        "src": "https://cloud.umami.is/script.js",
+        "defer": true,
+        "domain": "trainer.barkahmauludi.com",
+        "websiteIdValid": true,
+        "visibleMs": 3389.89999999851,
+        "scriptStartMs": 3390.599999997765
+      }
+    },
+    {
+      "name": "Eight custom event types and both PDF types accepted by live collector; private inputs absent; no cookies",
+      "detail": {
+        "events": 13,
+        "statuses": [
+          200
+        ],
+        "dashboardVerified": false
+      }
+    },
+    {
+      "name": "Live mobile touch, Indonesian About copy and no horizontal overflow"
+    }
+  ],
+  "events": [
+    {
+      "name": "lang_change",
+      "data": {
+        "lang": "id"
+      },
+      "status": 200
+    },
+    {
+      "name": "variant_change",
+      "data": {
+        "option": "bracket",
+        "value": true
+      },
+      "status": 200
+    },
+    {
+      "name": "variant_change",
+      "data": {
+        "option": "capacity",
+        "value": "9kg"
+      },
+      "status": 200
+    },
+    {
+      "name": "variant_change",
+      "data": {
+        "option": "agent",
+        "value": "co2"
+      },
+      "status": 200
+    },
+    {
+      "name": "pdf_export",
+      "data": {
+        "type": "spec"
+      },
+      "status": 200
+    },
+    {
+      "name": "lang_change",
+      "data": {
+        "lang": "en"
+      },
+      "status": 200
+    },
+    {
+      "name": "variant_change",
+      "data": {
+        "option": "color",
+        "value": "silver"
+      },
+      "status": 200
+    },
+    {
+      "name": "hotspot_open",
+      "data": {
+        "id": "body"
+      },
+      "status": 200
+    },
+    {
+      "name": "config_save",
+      "data": {
+        "agent": "co2",
+        "capacity": "9kg",
+        "color": "silver"
+      },
+      "status": 200
+    },
+    {
+      "name": "training_start",
+      "data": {},
+      "status": 200
+    },
+    {
+      "name": "training_finish",
+      "data": {
+        "durationSec": 0,
+        "skipped": 4
+      },
+      "status": 200
+    },
+    {
+      "name": "quiz_finish",
+      "data": {
+        "score": 8,
+        "total": 8,
+        "passed": true
+      },
+      "status": 200
+    },
+    {
+      "name": "pdf_export",
+      "data": {
+        "type": "report"
+      },
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "pageviewsAccepted": 1
+}
