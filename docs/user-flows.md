@@ -42,7 +42,7 @@ About/blur/halaman tersembunyi menjeda api serta menghentikan semprotan dan puls
 2. Tipe A pilihan ganda; Tipe B "klik hotspot yang benar di 3D" (hotspot tampil tanpa label).
 3. Setelah jawab: benar (hijau) / salah (merah) + penjelasan; tombol Next.
 4. Akhir: skor (mis. 6/8 = 75%), lulus jika ≥ 75%, waktu total. Disimpan otomatis ke riwayat.
-5. Tombol T2.3: "Retry quiz" dan "Back to training". Tombol "View results" menyusul ketika dashboard T2.4 tersedia.
+5. Tombol ringkasan: "Retry quiz", "Back to training", dan "View results" (tersedia sejak T2.4).
 
 Implementasi T2.3 (28 Okt 2026, menunggu acceptance): tombol Ikuti kuis/Take the quiz pada kartu akhir PASS membuka subalur kuis dalam tab Train tanpa hash/tab baru. Latihan dan efek berhenti selama kuis; tampilan sementara ABC 6 kg/merah/tanpa bracket. Keluar tab memulihkan konfigurasi/kamera, masuk lagi mempertahankan soal/feedback/ringkasan. Kembali ke latihan membuka kartu PASS selesai yang tetap menyediakan Ulangi latihan; Retry quiz memulai sesi kuis baru.
 
@@ -57,6 +57,14 @@ Setelah menjawab q6, tampil blok 113/112 + sumber Komdigi, keterangan cakupan 11
 4. Input nama peserta (opsional) → **Download PDF report** (sertifikat latihan + rincian).
 5. Tombol "Clear my data" (konfirmasi).
 - **Empty**: belum ada kuis → "Complete the training quiz to see your results" + tombol ke Train.
+
+Implementasi T2.4 (diterima Barkah 28 Okt 2026): ringkasan kuis menyediakan Lihat hasil/View results menuju #results. Dashboard memakai panel/bottom sheet existing tanpa mengganti snap pengguna. Kartu memuat skor tersimpan terbaru, ring persentase, status lulus, tanggal dan durasi. Grafik SVG membaca maksimal 20 simpanan terlama→terbaru dengan garis batas 75% dan deskripsi aksesibel; tabel delapan jawaban selalu percobaan terbaru, tidak memilih percobaan dengan klik bar. Persentase kuis/Results memakai maksimal satu desimal agar 5/8 tetap 62,5%, tanpa mengubah skor atau ambang lulus.
+
+Konfigurasi diringkas baca saja (maksimal 10): nama, agent, kapasitas, warna, bracket dan harga ilustrasi saat simpan, IDR/USD menurut bahasa. Kelola konfigurasi menuju Configure. Tidak ada riwayat kuis tetap menampilkan konfigurasi/nama; data rusak atau storage tidak tersedia diberi pesan terpisah per bagian, bukan dianggap kosong. Hasil kuis gagal simpan tetap di ringkasan Train selama sesi; Results memberi keterangan dan hanya menampilkan riwayat yang tersimpan. Refresh tetap menghapus sesi sementara.
+
+Nama peserta opsional dan satu untuk browser ini; maksimal 60 unit karakter native maxlength, trim spasi tepi, simpan pada blur/change/Enter/keluar tab. Ganti bahasa menjaga input/fokus; gagal tulis mempertahankan draft untuk dicoba lagi. Nama bukan identitas historis tiap attempt, dan belum ada tombol PDF sampai T2.5. Disclaimer serta 113/112/sumber Komdigi tetap tersedia di bawah konten.
+
+Clear my data meminta konfirmasi dengan fokus awal Batal; Escape/Batal/backdrop menutup tanpa menghapus dan mengembalikan fokus. Konfirmasi menghapus attempts/configs/participantName/trainingDone, menjaga bahasa dan key aplikasi lain, serta mereset PASS ke intro dan kuis ke idle termasuk hasil belum tersimpan. Clear juga membuang draft nama agar blur/keluar tab tidak menyimpannya kembali. Penghapusan multi-key bukan transaksi: setiap key dicoba; gagal sebagian/total menampilkan pesan sesuai keadaan dan data yang masih dapat dibaca. Sesi memori tetap direset, percobaan ulang hanya lewat konfirmasi Clear berikutnya.
 
 ## UF5 — Bahasa (F10)
 Toggle EN/ID → semua teks UI, data hotspot, soal kuis, mata uang harga, dan PDF berganti tanpa reload. Pilihan disimpan.

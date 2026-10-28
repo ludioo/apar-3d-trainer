@@ -28,3 +28,15 @@ export function set(key, value) {
     return false;
   }
 }
+
+export function clearUserData() {
+  let removed = 0;
+  // shortcut: deleting multiple localStorage keys is not atomic; report partial failure and allow an explicit retry.
+  for (const key of ['attempts', 'configs', 'participantName', 'trainingDone']) {
+    try {
+      localStorage.removeItem(PREFIX + key);
+      removed++;
+    } catch { /* Continue so one blocked key does not prevent the other deletions. */ }
+  }
+  return { status: removed === 4 ? 'ok' : removed ? 'partial' : 'unavailable' };
+}

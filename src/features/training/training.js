@@ -211,5 +211,12 @@ export function initTraining(context) {
     target.setModel(next);
     if (active) { sync(); focusStep(); }
   }
-  return { enter, exit, setModel };
+  function reset() {
+    cancel();
+    session.reset();
+    sweep.reset();
+    saveFailed = false;
+    effects.sync(session, sweep, false);
+  }
+  return { enter, exit, setModel, reset };
 }

@@ -28,6 +28,10 @@ export function createTrainingSession(stepCount) {
       session.status.fill(null);
       session.phase = 'steps';
     },
+    reset() {
+      session.restart();
+      session.phase = 'intro';
+    },
   };
   return session;
 }

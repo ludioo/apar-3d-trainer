@@ -29,6 +29,7 @@ export function initQuiz(context) {
     restart() { if (canInteract() && model) start(); },
     resetView,
     training() { if (canInteract()) emit('quiz:training'); },
+    results() { if (canInteract()) location.hash = 'results'; },
   });
   let model = null;
   let active = false;
@@ -142,5 +143,8 @@ export function initQuiz(context) {
     pins.setModel(next);
     if (active) { sync(); resetView(); }
   }
-  return { start, enter, exit, setModel };
+  function reset() { session.reset(); saveFailed = false; suspended = false; }
+  return { start, enter, exit, setModel, reset,
+    hasUnsavedResult: () => !!session.attempt && saveFailed,
+  };
 }

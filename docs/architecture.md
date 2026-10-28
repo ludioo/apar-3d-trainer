@@ -32,9 +32,9 @@ apar-3d-trainer/
 │  │  ├─ configurator/ configurator.js appearance.js pricing.js hotspots.js saved-configs.js
 │  │  ├─ training/ training.js training-state.js training-gestures.js training-view.js effects.js
 │  │  ├─ quiz/ quiz.js
-│  │  ├─ results/ results.js
+│  │  ├─ results/ results.js results-data.js
 │  │  └─ pdf/ pdf-report.js pdf-spec.js
-│  ├─ ui/ toast.js modal.js components.css hotspot-pins.js hotspots.css configurator.css saved-configs.js saved-configs.css training.js training-target.js training.css
+│  ├─ ui/ toast.js modal.js components.css hotspot-pins.js hotspots.css configurator.css saved-configs.js saved-configs.css training.js training-target.js training.css results.js results-chart.js results.css
 │  └─ styles/ tokens.css base.css layout.css
 ├─ vite.config.js  package.json  vercel.json  README.md  LICENSE (MIT)
 ```
@@ -60,6 +60,9 @@ apar-3d-trainer/
    `quiz-state.js` mengelola fase/locking jawaban/skor/waktu/attempt tanpa DOM; `attempts.js` memvalidasi dan menyimpan riwayat versi 1 via storage read/set. `ui/quiz.js` dan quiz.css mengelola teks/opsi/feedback/kontak/ringkasan dalam scroll panel existing dengan footer Next sticky dan scroll-padding dari ResizeObserver. Fokus pindah ke feedback atau judul soal; status feedback juga diumumkan melalui role=status. Teks UI lewat i18n, konten K3/sumber lewat quiz.json. Tidak ada renderer, efek, loop animasi, dependency atau aset baru.
    `initHotspotPins` dipakai ulang dengan callback label netral dan panel opsional; default Configure tetap. Panel membatasi area tombol pin dan ResizeObserver memperbarui layout saat sheet berubah. setDisabled mengunci pin sesudah jawab/interupsi. Framing kedua soal pin memakai overview depan yang sama dari Box3/FOV/aspek/ruang panel melalui cameraTween; tidak fokus pada jawaban benar. About/blur/visibility menghentikan tween dan menolak input; resume memerlukan dokumen fokus/terlihat tanpa dialog. Semua listener/observer/pin dilepas saat exit.
    Koreksi sheet T2.3: tap mengubah snap pada click, bukan pointerup, agar posisi handle tetap sampai browser menentukan target click. Drag tetap snap pada release; flag tapPending memisahkan tap dari drag/keyboard dan bertahan melewati lostpointercapture. Ini mencegah tap handle memilih jawaban yang bergeser ke bawah jari; enam nomor pin tetap tidak mengubah hash atau membuka kartu Configure.
+   T2.4: `initResults` pada features/results/results.js memakai lifecycle enter/exit dari router. Bootstrap memberikan callback listAttempts/listConfigs(product), hasUnsavedResult milik quiz, serta resetSessions yang memanggil reset training/quiz dan mengembalikan trainStage ke training. Tidak ada import silang antarfitur. Tombol View results pada ringkasan kuis mengubah hash; enter Results membaca data, lang:change merender ulang tanpa mengganti input atau fokus. Exit menyelesaikan edit nama, melepas listener dan dialog.
+   `results-data.js` memvalidasi/membaca/menyimpan nama melalui storage dan menyiapkan kartu/urutan grafik/teks jawaban dari data terverifikasi tanpa mengubah riwayat. DOM/dialog pada ui/results.js, SVG aksesibel pada ui/results-chart.js dan token styling pada results.css; setiap modul <300 baris. Grafik/ring statis tanpa loop/renderer/dependency baru; kanvas existing tetap bersama. Data kosong/rusak/tidak tersedia dan kuis belum tersimpan ditampilkan terpisah. Harga ringkasan berasal dari snapshot simpanan, sesuai bahasa.
+   Clear memakai dialog native/helper existing dengan fokus Batal dan pengembalian fokus. Setelah konfirmasi, storage.clearUserData mencoba empat key yang diizinkan dan melaporkan ok/partial/unavailable; bootstrap mereset sesi memori dan Results membuang dirty draft nama sebelum baca ulang. Tidak menghapus bahasa/key aplikasi lain. Metode reset session menghapus fase/jawaban/progres; wrapper fitur juga mereset flag saveFailed, Sweep dan efek. Callback hanya dipanggil saat Results aktif sehingga training/quiz sudah exit; tidak mengaktifkan dua mode bersamaan. Reset tidak menyimpan ulang trainingDone/attempt lama.
 6. PDF: `renderer.domElement.toDataURL()` (renderer dibuat dengan `preserveDrawingBuffer: true` hanya saat capture, atau render ulang sebelum capture) → jsPDF.
 
 ## Performa

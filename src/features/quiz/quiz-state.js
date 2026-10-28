@@ -18,6 +18,14 @@ export function createQuizSession() {
     get phase() { return phase; },
     get answers() { return answers; },
     get attempt() { return attempt; },
+    reset() {
+      index = 0;
+      phase = 'idle';
+      startedAt = undefined;
+      answers = [];
+      attempt = null;
+      id = undefined;
+    },
     start(now = Date.now()) {
       id = Array.from(crypto.getRandomValues(new Uint32Array(4)), (value) => value.toString(16).padStart(8, '0')).join('');
       startedAt = new Date(now).toISOString();

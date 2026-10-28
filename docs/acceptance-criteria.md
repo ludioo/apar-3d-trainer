@@ -112,8 +112,22 @@ Muat ulang preview 4183 untuk mengambil build revisi. Cek Configure dahulu, lalu
 28 Okt 2026: Barkah mengonfirmasi revisi nomor 1=tuas dan nomor 2=pin pengaman sudah benar dan lolos, meminta T2.3 ditandai selesai, dokumen/checklist ditutup serta commit/push ke develop. Seluruh catatan menunggu acceptance T2.3 pada riwayat di atas ditutup; checklist umum dan revisi selesai. Rincian perangkat pemeriksaan Barkah tidak dicatat, sehingga tidak diasumsikan sebagai uji HP fisik/AT/browser lain atau benchmark performa. Check/build dijalankan ulang sebelum commit. T2.4 tetap belum dimulai; main tidak diubah.
 
 ## T2.4
-- [ ] Setelah kuis: skor, grafik riwayat, tabel jawaban tampil.
-- [ ] Clear my data → data hilang setelah konfirmasi.
+- [x] Setelah kuis: skor, grafik riwayat, tabel jawaban tampil.
+- [x] Clear my data → data hilang setelah konfirmasi.
+
+28 Okt 2026: Barkah menyetujui validasi Q1–Q5 lalu rencana sebelum meminta implementasi. Setelah memeriksa hasil, Barkah mengonfirmasi T2.4 lolos; kedua checkbox ditutup berdasarkan konfirmasi tersebut. Preview desktop: `http://localhost:4183/#results`; HP satu Wi-Fi: `http://192.168.100.4:4183/#results` (alamat LAN dapat berubah). Muat ulang untuk build T2.4.
+
+Langkah cek:
+1. Tanpa riwayat, buka Hasil: pesan kosong + tombol Latihan; konfigurasi tersimpan dan nama opsional tetap tersedia. Kelola konfigurasi membuka Configure.
+2. Train → Mulai → lakukan/Skip empat langkah → Selesai → Ikuti kuis → jawab delapan soal → Lihat skor → Lihat hasil. Periksa skor/ring, tanggal/durasi, Lulus pada ≥6/8, grafik dan delapan baris jawaban. Ulangi kuis untuk menambah riwayat; tabel selalu percobaan tersimpan terbaru. Grafik maksimal 20, terlama di kiri.
+3. Simpan konfigurasi dari Configure, lalu buka Hasil. Ringkasan memuat nama/agent/kapasitas/warna/bracket/harga ilustrasi saat simpan. Ganti EN/ID: teks, tanggal dan mata uang mengikuti bahasa. Nama konfigurasi tidak diterjemahkan.
+4. Isi nama peserta, tekan Enter atau pindah fokus/tab, lalu refresh. Nama opsional, maksimal 60 karakter dan spasi tepi dipangkas. Nama adalah isian laporan pada browser ini, bukan identitas pemilik percobaan lama. PDF tetap T2.5.
+5. Gunakan data uji untuk Clear: Batal/Escape menjaga data dan mengembalikan fokus. Konfirmasi menghapus riwayat/configs/nama/trainingDone dan mereset sesi kuis/PASS; bahasa tetap. Masuk Train kembali ke intro, daftar Configure kosong, refresh tidak memunculkan data lama.
+6. Di HP, gulir konten atau perbesar sheet untuk grafik/tabel/nama/Clear/kontak. Coba kedua snap, portrait/landscape, serta keyboard dan teks diperbesar.
+
+Bukti AI: `.cursor/t2.4-check.cjs`, `t2.4-dev-qa.json`, `t2.4-qa.json`, screenshot `t2.4-*.png`, dan `t2.4-design-gate.md`. QA Results mencakup delapan kelompok, termasuk 40 kombinasi lima viewport × EN/ID × teks 100/200% × kedua snap; sentuhan, data rusak/tidak tersedia, gagal simpan nama/kuis, Clear gagal sebagian/total dan retry eksplisit. Regresi produksi kuis/PASS/efek memakai wrapper `t2.4-regression.cjs` dengan bukti terpisah agar laporan task lama tidak ditimpa. Batas QA AI tetap: HP fisik, screen reader/AT, Firefox/Safari serta Lighthouse/4G belum diverifikasi. Acceptance Barkah diterima; rincian perangkat pemeriksaannya tidak dicatat.
+
+28 Okt 2026: Barkah meminta status/checklist T2.4 selesai, dokumen diperbarui, serta commit/push ke develop. Seluruh catatan menunggu acceptance T2.4 pada riwayat sebelumnya ditutup. Tidak ada bug baru yang dilaporkan. Check/build dijalankan ulang sebelum commit; T2.5 tetap belum dimulai dan main tidak diubah.
 
 ## T2.5
 - [ ] Download PDF report → berisi nama, skor, tanggal, disclaimer & sumber.

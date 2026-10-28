@@ -60,6 +60,7 @@ export function initQuizUi(questions, actions) {
   const resetView = button('resetView', tools);
   const restart = button('restart', tools);
   const training = button('training', tools);
+  const results = button('results', tools);
   const disclaimer = document.createElement('p');
   disclaimer.className = 'quiz__muted';
   const nav = document.createElement('div');
@@ -130,14 +131,15 @@ export function initQuizUi(questions, actions) {
     resetView.hidden = summary || !pick;
     resetView.disabled = !ready;
     resetView.textContent = t('quiz.resetView');
-    restart.hidden = training.hidden = !summary;
+    restart.hidden = training.hidden = results.hidden = !summary;
     restart.disabled = !ready;
     restart.textContent = t('quiz.restart');
     training.textContent = t('quiz.training');
+    results.textContent = t('results.view');
     score.hidden = duration.hidden = !summary;
     if (summary) {
       const attempt = session.attempt;
-      score.textContent = `${attempt.score}/${attempt.total} · ${new Intl.NumberFormat(lang, { style: 'percent' }).format(attempt.score / attempt.total)}`;
+      score.textContent = `${attempt.score}/${attempt.total} · ${new Intl.NumberFormat(lang, { style: 'percent', maximumFractionDigits: 1 }).format(attempt.score / attempt.total)}`;
       duration.textContent = t('quiz.duration').replace('{seconds}', new Intl.NumberFormat(lang).format(attempt.durationSec));
     }
     saved.hidden = !session.attempt;

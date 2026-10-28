@@ -16,6 +16,10 @@ import { initHighlight } from './core/highlight.js';
 import { initConfigurator } from './features/configurator/configurator.js';
 import { initTraining } from './features/training/training.js';
 import { initQuiz } from './features/quiz/quiz.js';
+import { initResults } from './features/results/results.js';
+import { listAttempts } from './features/quiz/attempts.js';
+import { listConfigs } from './features/configurator/saved-configs.js';
+import product from './data/product.json';
 import hotspots from './data/hotspots.json';
 
 const MODEL_HEIGHT = 1.2;
@@ -82,6 +86,12 @@ const quiz = initQuiz({
   setTrainingAppearance: configurator.setTrainingAppearance,
 });
 let trainStage = training;
+const results = initResults({
+  panelBody: document.getElementById('panel-body'), product,
+  getAttempts: listAttempts, getConfigs: () => listConfigs(product),
+  hasUnsavedResult: quiz.hasUnsavedResult,
+  resetSessions() { training.reset(); quiz.reset(); trainStage = training; },
+});
 on('quiz:start', () => {
   if (getMode() !== 'train' || trainStage !== training) return;
   training.exit();
@@ -97,7 +107,7 @@ on('quiz:training', () => {
 });
 initRouter({ configure: configurator, train: {
   enter() { trainStage.enter(); }, exit() { trainStage.exit(); },
-}, results: {} });
+}, results });
 let model = null;
 
 let debugHud = null;
