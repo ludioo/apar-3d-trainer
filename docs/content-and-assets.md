@@ -21,7 +21,7 @@ Belum diverifikasi: Sketchfab dan Quaternius untuk APAR — tidak dicek dalam ri
 | Bracket T1.5 | Geometri prosedural `BoxGeometry` + `TorusGeometry` three.js di `appearance.js`; tanpa unduhan aset | kode proyek MIT |
 | Strip/label agent T1.6 | CanvasTexture prosedural 512×128 di shader body; nama agent/kapasitas bilingual, tanpa unduhan. Biru Powder, arang CO2, krem Foam, merah Water = kode visual demo, bukan standar warna APAR | kode proyek MIT |
 | Overlay pin T2.1 | SVG inline digambar di `ui/training-target.js` (lingkaran + batang pin); hanya ilustrasi pin terlepas, tanpa unduhan atau animasi mesh | kode proyek MIT |
-| OG image | screenshot dari app sendiri (1200×630) | milik Barkah |
+| OG image T3.3 | `public/og-image.jpg`, screenshot aplikasi sendiri 1200×630 DPR1, JPEG quality 85, 50.855 byte; Configure EN Powder ABC 6 kg/merah/tanpa bracket, putaran dijeda dan zoom melalui kontrol viewer; sesi browser bersih. Capture/probe: `.cursor/t3.3-check.cjs --capture` dengan origin sebagai argumen pertama | milik Barkah; turunan model/HDRI Poly Haven CC0, kode aplikasi MIT |
 | Fallback WebGL T3.2 | `public/images/apar-fallback.webp`, 800×600, 11.596 byte; JPEG dari capture ekspor spesifikasi aplikasi sendiri, diperkecil dan dikompresi WebP quality 82; bukan gambar generatif | turunan model Korean Fire Extinguisher 01 + HDRI studio_small_09 Poly Haven, CC0; kode capture proyek MIT |
 
 ## Copy inti (EN / ID) — disimpan di `src/i18n/*.json`

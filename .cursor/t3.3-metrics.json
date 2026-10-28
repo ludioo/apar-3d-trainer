@@ -1,0 +1,19 @@
+{
+  "ogBytes": 50855,
+  "beforeHtmlBytes": 4970,
+  "beforeHtmlGzip": 1471,
+  "builtHtmlBytes": 7876,
+  "builtHtmlGzip": 2134,
+  "assets": [
+    {
+      "name": "index-C4ZKj-Ue.css",
+      "bytes": 29369,
+      "gzip": 5518
+    },
+    {
+      "name": "index-CXsLSlOU.js",
+      "bytes": 824996,
+      "gzip": 226010
+    }
+  ]
+}

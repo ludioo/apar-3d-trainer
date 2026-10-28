@@ -184,7 +184,19 @@ Audit final Lighthouse 12.8.2/Chrome lokal: Configure, Train, Results, About dan
 28 Okt 2026: **Barkah mengonfirmasi T3.2 sudah dicek dan lolos**, meminta task serta seluruh checklist selesai, dokumen diperbarui, lalu commit/push ke develop. Keenam checklist ditutup berdasarkan acceptance tersebut; catatan menunggu acceptance pada riwayat implementasi di atas ditutup. Tidak ada bug baru yang dilaporkan. Rincian perangkat pemeriksaan Barkah tidak diberikan, sehingga batas QA AI HP fisik/AT/Firefox/Safari dan Performance/4G tetap berlaku. Check/build dijalankan ulang sebelum commit. T3.3 tidak dimulai; main tidak diubah.
 
 ## T3.3
-- [ ] Share link di WhatsApp/LinkedIn → muncul gambar & judul.
+- [x] Share link di WhatsApp/LinkedIn → muncul gambar & judul.
+
+28 Okt 2026: **Barkah mengonfirmasi T3.3 sudah dicek dan lolos**, meminta task/checklist selesai, dokumen diperbarui serta commit/push ke develop. Checklist ditutup berdasarkan acceptance tersebut. Catatan menunggu acceptance pada riwayat implementasi di bawah ditutup; rincian perangkat, URL dan hasil tiap platform tidak diberikan, sehingga tidak diklaim sebagai pengujian crawler live baru oleh AI. T3.4 tidak dimulai dan main tidak diubah.
+
+Riwayat implementasi sebelum acceptance: 28 Okt 2026, validasi Q1–Q3 dan planning disetujui sebelum implementasi. Keyword WebXR/digital twin dikecualikan sesuai persetujuan karena fitur Later. Metadata/share EN statis, judul browser/UI tetap bilingual. Saat penyerahan implementasi, checklist masih terbuka dan belum ada otorisasi commit/push/deploy; otorisasi commit/push ke develop kini diberikan pada acceptance di atas.
+
+Cara cek lokal:
+1. Desktop buka `http://localhost:4184/#configure`; HP satu Wi-Fi buka `http://192.168.100.4:4184/#configure`. Coba EN/ID, ubah warna/bracket, pindah Train/Results, buka About lalu Escape/Tutup; aplikasi tetap berfungsi.
+2. Buka `http://localhost:4184/og-image.jpg` (HP: ganti localhost dengan `192.168.100.4`). Gambar harus menampilkan aplikasi Configure EN dengan APAR merah dan panel konfigurasi; dimensi 1200×630. Bukan gambar generatif atau capture riwayat/nama peserta.
+3. Buka `http://localhost:4184/robots.txt` dan `http://localhost:4184/sitemap.xml`; sitemap hanya berisi `https://trainer.barkahmauludi.com/`. Klik kanan halaman app → View page source/Lihat sumber halaman, cari description, canonical, og:title, twitter:card, dan application/ld+json; semuanya tersedia pada HTML awal, meskipun alamat canonical/gambar metadata memang menunjuk produksi.
+4. Setelah publikasi diotorisasi dan selesai, cek halaman/gambar/robots/sitemap pada domain produksi bisa diakses tanpa login. Tempel tautan root `https://trainer.barkahmauludi.com/` pada kolom pesan WhatsApp dan composer LinkedIn; tunggu pratinjau, pastikan judul EN serta gambar muncul. Tidak perlu mengirim pesan atau menerbitkan post untuk memeriksa pratinjau. Bila cache platform masih lama, minta pengambilan ulang metadata melalui alat inspeksi platform yang tersedia; jangan menandai lulus sebelum hasil aktual terlihat.
+
+Bukti lokal: `npm run check` dan `npm run build` sukses, `node scripts/seo-check.js dist/index.html` lolos. `.cursor/t3.3-check.cjs` / `t3.3-production-qa.json` mencatat 10 kelompok pemeriksaan: metadata tanpa JavaScript, HTTP/MIME/byte tiga aset, parse XML/dimensi JPEG, Configure/bahasa/About/PDF spec serta PASS tanpa Skip/kuis 8/8/Results/PDF report/Clear cancel pada desktop dan HP emulasi. Tidak ada pageerror/console error/requestfailed; gambar OG tidak diminta saat app dibuka. Screenshot OG dan dua screenshot Results ditinjau. HP fisik/AT/Firefox/Safari, Lighthouse/performa baru, crawler live dan share platform belum diuji. Gate scope T3.3 di `.cursor/t3.3-design-gate.md`.
 
 ## T3.4
 - [ ] README di GitHub menampilkan gambar, fitur, link live.

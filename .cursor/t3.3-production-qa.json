@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://localhost:4184",
+  "checks": [
+    {
+      "name": "Built HTML exposes EN title, metadata, canonical and parseable JSON-LD with JavaScript disabled"
+    },
+    {
+      "name": "Public asset HTTP 200, MIME and exact bytes: robots.txt",
+      "details": {
+        "bytes": 79
+      }
+    },
+    {
+      "name": "Public asset HTTP 200, MIME and exact bytes: sitemap.xml",
+      "details": {
+        "bytes": 177
+      }
+    },
+    {
+      "name": "Public asset HTTP 200, MIME and exact bytes: og-image.jpg",
+      "details": {
+        "bytes": 50855
+      }
+    },
+    {
+      "name": "Sitemap parsed as XML with one root URL; browser decoded JPEG at 1200x630"
+    },
+    {
+      "name": "desktop: Configure color/bracket, bilingual title/UI, stable EN OG, About/Escape/focus and spec PDF"
+    },
+    {
+      "name": "desktop: PASS without Skip, 8/8 quiz, Results name/report, Clear cancel; no OG image request or horizontal overflow"
+    },
+    {
+      "name": "mobile: Configure color/bracket, bilingual title/UI, stable EN OG, About/Escape/focus and spec PDF"
+    },
+    {
+      "name": "mobile: PASS without Skip, 8/8 quiz, Results name/report, Clear cancel; no OG image request or horizontal overflow"
+    },
+    {
+      "name": "No page errors or failed requests; only existing favicon 404 console error allowed",
+      "details": {
+        "consoleErrors": []
+      }
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "failedRequests": []
+}

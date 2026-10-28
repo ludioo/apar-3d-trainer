@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://localhost:5184",
+  "checks": [
+    {
+      "name": "OG capture: actual Configure EN, red Powder ABC 6 kg, no bracket, paused rotation, clean context, 1200x630 DPR1 JPEG q85",
+      "details": {
+        "bytes": 50855
+      }
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "failedRequests": []
+}
