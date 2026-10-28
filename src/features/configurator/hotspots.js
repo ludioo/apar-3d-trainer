@@ -1,6 +1,7 @@
 import { Vector3 } from 'three';
 import { initCameraTween } from '../../core/cameraTween.js';
 import { on } from '../../core/events.js';
+import { track } from '../../core/analytics.js';
 import { getLang, t } from '../../i18n/i18n.js';
 import { initHotspotPins } from '../../ui/hotspot-pins.js';
 import hotspots from '../../data/hotspots.json';
@@ -112,6 +113,7 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
     syncText();
     focusSelected();
     closeButton.focus({ preventScroll: true });
+    track('hotspot_open', { id: hotspot.id });
   }
 
   function finishRestore(returnFocus) {

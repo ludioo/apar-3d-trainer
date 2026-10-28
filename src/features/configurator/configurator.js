@@ -1,5 +1,6 @@
 import { pickFromNdc } from '../../core/picking.js';
 import { emit, on } from '../../core/events.js';
+import { track } from '../../core/analytics.js';
 import { getLang, t } from '../../i18n/i18n.js';
 import { initHotspots } from './hotspots.js';
 import { initAppearance } from './appearance.js';
@@ -50,6 +51,7 @@ export function initConfigurator(context) {
         configuration[`${key}Id`] = item.id;
         syncOptions();
         if (key === 'capacity' && changed) ui.refreshTransform(item.scale);
+        if (changed) track('variant_change', { option: key, value: item.id });
       });
       choices.appendChild(button);
       return { button, item };
@@ -68,8 +70,10 @@ export function initConfigurator(context) {
     button.dataset.color = option.id;
     button.style.setProperty('--swatch', option.hex);
     button.addEventListener('click', () => {
+      const changed = configuration.colorId !== option.id;
       configuration.colorId = option.id;
       syncOptions();
+      if (changed) track('variant_change', { option: 'color', value: option.id });
     });
     chips.appendChild(button);
     return button;
@@ -83,8 +87,10 @@ export function initConfigurator(context) {
   const bracketText = document.createElement('span');
   bracketLabel.append(bracketToggle, bracketText);
   bracketToggle.addEventListener('change', () => {
+    const changed = configuration.bracketEnabled !== bracketToggle.checked;
     configuration.bracketEnabled = bracketToggle.checked;
     syncOptions();
+    if (changed) track('variant_change', { option: 'bracket', value: bracketToggle.checked });
   });
   const status = document.createElement('p');
   status.className = 'config-status';

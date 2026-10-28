@@ -1,0 +1,47 @@
+{
+  "stage": "before",
+  "origin": "http://trainer.barkahmauludi.com:4196",
+  "lighthouse": "12.8.2",
+  "collector": "intercepted; no dashboard writes",
+  "runs": [
+    {
+      "run": 1,
+      "performance": 43,
+      "accessibility": 100,
+      "lcpMs": 11814.0341,
+      "tbtMs": 1736.9829500000005,
+      "lighthouseTransfer": 2321967,
+      "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "collectorRequests": 0,
+      "readyMs": 3964.900000002235,
+      "transferBytes": 2322560,
+      "scriptLoaded": false
+    },
+    {
+      "run": 2,
+      "performance": 44,
+      "accessibility": 100,
+      "lcpMs": 11708.6027,
+      "tbtMs": 1441.6986499999998,
+      "lighthouseTransfer": 2321967,
+      "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "collectorRequests": 0,
+      "readyMs": 2957.800000000745,
+      "transferBytes": 2322560,
+      "scriptLoaded": false
+    },
+    {
+      "run": 3,
+      "performance": 43,
+      "accessibility": 100,
+      "lcpMs": 11708.3364,
+      "tbtMs": 2032.8318,
+      "lighthouseTransfer": 2321967,
+      "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "collectorRequests": 0,
+      "readyMs": 2895.099999997765,
+      "transferBytes": 2322560,
+      "scriptLoaded": false
+    }
+  ]
+}

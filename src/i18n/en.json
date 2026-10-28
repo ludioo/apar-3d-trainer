@@ -179,7 +179,7 @@
   "about.credits": "Asset credits",
   "about.model": "3D model: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
   "about.environment": "Studio lighting: studio_small_09 (Poly Haven, CC0)",
-  "about.analytics": "Planned: cookie-free analytics using Umami.",
+  "about.analytics": "Cookie-free Umami analytics runs only on trainer.barkahmauludi.com when configured. Participant and configuration names are not sent.",
   "about.portfolio": "Barkah Mauludi: portfolio and contact",
   "about.github": "Source code on GitHub",
   "viewer.reduced": "Rotation paused: reduced motion"

@@ -16,8 +16,9 @@ Perintah yang dipakai AI (untuk referensi): `npm run dev` (jalan lokal), `npm ru
 ## 3. Env variables (hanya nama, nilai TIDAK di repo)
 | Nama | Isi | Di mana diisi |
 |---|---|---|
-| `VITE_UMAMI_WEBSITE_ID` | Website ID dari Umami (lihat bagian 6) | Vercel → Project → Settings → Environment Variables (Production), dan file `.env.local` di komputermu (AI yang buat, file ini di-.gitignore) |
+| `VITE_UMAMI_WEBSITE_ID` | Website ID dari Umami (lihat bagian 7) | Vercel → Project → Settings → Environment Variables (Production). `.env.local` opsional untuk pengujian khusus oleh AI; file ini di-.gitignore dan localhost tetap tidak mengirim analytics. |
 Kalau kosong, analytics otomatis mati; app tetap jalan.
+Nilai `VITE_*` masuk bundle publik saat build; Website ID adalah identitas website, bukan API key/login. Jangan isi API key/token akun. Mengubah env di Vercel memerlukan build/deploy ulang yang memuat kode analytics.
 
 ## 4. Upload ke GitHub (repo publik)
 1. Di Cursor minta AI: "buat commit pertama dan siapkan repo untuk GitHub dengan nama `apar-3d-trainer`".
@@ -49,11 +50,19 @@ Catatan: verifikasi TXT hanya diperlukan jika domain dipakai akun Vercel lain �
 Sumber: Vercel Docs "Adding & Configuring a Custom Domain" (last updated 16 Sep 2026, dibuka 27 Okt 2026) https://vercel.com/docs/domains/working-with-domains/add-a-domain — subdomain dikonfigurasi dengan CNAME unik per project; Settings → Domains → Add Domain; Hobby: maks 50 custom domain per project.
 
 ## 7. Umami (analytics gratis)
-1. Login https://cloud.umami.is → **Add website** (Settings → Websites) → Name `APAR 3D Trainer`, Domain `trainer.barkahmauludi.com` → Save.
-2. Buka website itu → **Edit / Tracking code** → salin **Website ID** (format UUID).
-3. Vercel → project apar-3d-trainer → Settings → Environment Variables → `VITE_UMAMI_WEBSITE_ID` = Website ID → Save → tab Deployments → titik tiga deployment terbaru → **Redeploy**.
-4. Cek: buka situs, klik beberapa varian → di Umami menu **Events** muncul `variant_change` (bisa tertunda beberapa menit). Jika kamu memakai ad-blocker, matikan dulu untuk tes.
-Batas paket Hobby (dicek 27 Okt 2026, https://umami.is/pricing): 100K events/bulan, 1 website, retensi 6 bulan.
+> Status 28 Okt 2026: Barkah mengonfirmasi env **Production** sudah diisi dan meminta commit/push `develop`. Merge `main`/deploy produksi masih menunggu konfirmasi; dashboard live belum diuji. Nilai Website ID tidak dicatat di dokumen/repo.
+
+1. Login https://cloud.umami.is → **Websites**. Jika website sudah dibuat, buka **Edit**; jika belum, pilih **Add website**. Isi **Name** `APAR 3D Trainer`, **Domain** `trainer.barkahmauludi.com` (tanpa `https://`, slash, atau `#configure`) → **Save**. Jangan membuat website kedua untuk project yang sama.
+2. Buka website itu → **Edit → Tracking code** → salin hanya **Website ID** (UUID dari `data-website-id`). Tidak perlu menempelkan script secara manual; aplikasi memasangnya setelah APAR tampil dan browser idle.
+3. Setelah kode T3.6 siap dan publikasi disetujui Barkah: Vercel → project **apar-3d-trainer** → **Settings → Environment Variables** → tambah `VITE_UMAMI_WEBSITE_ID` = Website ID, pilih **Production** → **Save**. Tidak perlu mengaktifkan pada Preview/Development. Jangan ubah project situs utama.
+4. Pastikan kode T3.6 masuk build produksi: sesuai alur branch, commit/push/fast-forward `main` dilakukan hanya setelah instruksi Barkah. Deploy ulang **build produksi yang memuat kode T3.6** setelah env diisi. Redeploy commit lama yang belum memuat analytics tidak cukup. Jika kode sudah di produksi, **Deployments → deployment Production terkait → … → Redeploy** memakai env terbaru.
+5. Buka https://trainer.barkahmauludi.com/#configure dengan ad-blocker dimatikan untuk tes. Tunggu APAR tampil dan tracker siap, ubah agent/kapasitas/warna/bracket, buka bagian dan simpan konfigurasi. Ganti EN/ID. Masuk Train → Mulai → selesaikan PASS → kuis sampai jawaban kedelapan. Unduh spec di Configure dan report di Results. Di Umami pilih website serta rentang waktu saat tes → **Events**, periksa delapan nama event pada architecture.md dan **Properties**. Pembaruan dashboard bisa tertunda; nama peserta maupun nama konfigurasi tidak boleh muncul di payload.
+6. Bandingkan dengan http://localhost:4186: aplikasi tetap bekerja, tetapi **Network** tidak meminta `cloud.umami.is/script.js` atau mengirim event. Preview `*.vercel.app` juga tidak melacak. Jika alamat preview lokal berubah, gunakan alamat terbaru yang diberikan AI.
+7. Bila event tidak muncul: pastikan domain dan Website ID tepat, env **Production** sudah tersimpan sebelum build baru, kode T3.6 masuk deployment, filter tanggal/website benar, dan script tidak diblokir. F12 → **Network** → cari `umami`; script baru diminta setelah APAR tampil/idle. Beri waktu sampai script selesai sebelum aksi tes. Jangan mematikan proteksi domain atau menambahkan API key agar localhost bisa mengirim.
+
+Tracker tidak memakai cookie/banner atau input bebas. Event sebelum script siap atau saat diblokir dibuang tanpa antrean; data pengujian lokal tidak membuktikan event sudah masuk dashboard live. Pengujian Lighthouse lengkap dan acceptance produksi tetap dilaporkan terpisah.
+
+Batas paket Hobby (dicek 28 Okt 2026, https://umami.is/pricing): $0, 100K events/bulan, 1 website, retensi 6 bulan. Sumber langkah: https://docs.umami.is/docs/add-a-website dan https://docs.umami.is/docs/collect-data; env build: https://vite.dev/guide/env-and-mode.
 
 ## 8. Link dari barkahmauludi.com
 Lihat prompt T3.5 (dikerjakan di repo situs utama / Sanity Studio).

@@ -1,0 +1,214 @@
+[
+  {
+    "run": 1,
+    "trackerCpuMsSampled": 7.826,
+    "ready": 4114.699999999255,
+    "script": {
+      "name": "https://cloud.umami.is/script.js",
+      "entryType": "resource",
+      "startTime": 4120.800000000745,
+      "duration": 161.89999999850988,
+      "navigationId": 9061,
+      "initiatorType": "script",
+      "deliveryType": "",
+      "nextHopProtocol": "",
+      "renderBlockingStatus": "non-blocking",
+      "contentType": "",
+      "contentEncoding": "",
+      "workerStart": 0,
+      "workerRouterEvaluationStart": 0,
+      "workerCacheLookupStart": 0,
+      "workerMatchedSourceType": "",
+      "workerFinalSourceType": "",
+      "redirectStart": 0,
+      "redirectEnd": 0,
+      "fetchStart": 4120.800000000745,
+      "domainLookupStart": 0,
+      "domainLookupEnd": 0,
+      "connectStart": 0,
+      "secureConnectionStart": 0,
+      "connectEnd": 0,
+      "requestStart": 0,
+      "responseStart": 0,
+      "firstInterimResponseStart": 0,
+      "finalResponseHeadersStart": 0,
+      "responseEnd": 4282.699999999255,
+      "transferSize": 0,
+      "encodedBodySize": 0,
+      "decodedBodySize": 0,
+      "responseStatus": 0,
+      "serverTiming": []
+    },
+    "tasks": [
+      {
+        "start": 804.6999999992549,
+        "duration": 692
+      },
+      {
+        "start": 1497.199999999255,
+        "duration": 323
+      },
+      {
+        "start": 1980.699999999255,
+        "duration": 92
+      },
+      {
+        "start": 2144,
+        "duration": 1121
+      },
+      {
+        "start": 3399,
+        "duration": 106
+      },
+      {
+        "start": 3506.300000000745,
+        "duration": 89
+      },
+      {
+        "start": 3718.89999999851,
+        "duration": 141
+      }
+    ],
+    "postScriptLongTasks": []
+  },
+  {
+    "run": 2,
+    "trackerCpuMsSampled": 7.297,
+    "ready": 3751.099999997765,
+    "script": {
+      "name": "https://cloud.umami.is/script.js",
+      "entryType": "resource",
+      "startTime": 3756.89999999851,
+      "duration": 168.90000000223517,
+      "navigationId": 309,
+      "initiatorType": "script",
+      "deliveryType": "",
+      "nextHopProtocol": "",
+      "renderBlockingStatus": "non-blocking",
+      "contentType": "",
+      "contentEncoding": "",
+      "workerStart": 0,
+      "workerRouterEvaluationStart": 0,
+      "workerCacheLookupStart": 0,
+      "workerMatchedSourceType": "",
+      "workerFinalSourceType": "",
+      "redirectStart": 0,
+      "redirectEnd": 0,
+      "fetchStart": 3756.89999999851,
+      "domainLookupStart": 0,
+      "domainLookupEnd": 0,
+      "connectStart": 0,
+      "secureConnectionStart": 0,
+      "connectEnd": 0,
+      "requestStart": 0,
+      "responseStart": 0,
+      "firstInterimResponseStart": 0,
+      "finalResponseHeadersStart": 0,
+      "responseEnd": 3925.800000000745,
+      "transferSize": 0,
+      "encodedBodySize": 0,
+      "decodedBodySize": 0,
+      "responseStatus": 0,
+      "serverTiming": []
+    },
+    "tasks": [
+      {
+        "start": 804.5,
+        "duration": 523
+      },
+      {
+        "start": 1328.800000000745,
+        "duration": 231
+      },
+      {
+        "start": 1690.199999999255,
+        "duration": 57
+      },
+      {
+        "start": 2216.099999997765,
+        "duration": 58
+      },
+      {
+        "start": 2276.699999999255,
+        "duration": 90
+      },
+      {
+        "start": 2390.5,
+        "duration": 795
+      },
+      {
+        "start": 3377.800000000745,
+        "duration": 117
+      }
+    ],
+    "postScriptLongTasks": []
+  },
+  {
+    "run": 3,
+    "trackerCpuMsSampled": 6.242,
+    "ready": 3761,
+    "script": {
+      "name": "https://cloud.umami.is/script.js",
+      "entryType": "resource",
+      "startTime": 3766.5,
+      "duration": 163.39999999850988,
+      "navigationId": 4763,
+      "initiatorType": "script",
+      "deliveryType": "",
+      "nextHopProtocol": "",
+      "renderBlockingStatus": "non-blocking",
+      "contentType": "",
+      "contentEncoding": "",
+      "workerStart": 0,
+      "workerRouterEvaluationStart": 0,
+      "workerCacheLookupStart": 0,
+      "workerMatchedSourceType": "",
+      "workerFinalSourceType": "",
+      "redirectStart": 0,
+      "redirectEnd": 0,
+      "fetchStart": 3766.5,
+      "domainLookupStart": 0,
+      "domainLookupEnd": 0,
+      "connectStart": 0,
+      "secureConnectionStart": 0,
+      "connectEnd": 0,
+      "requestStart": 0,
+      "responseStart": 0,
+      "firstInterimResponseStart": 0,
+      "finalResponseHeadersStart": 0,
+      "responseEnd": 3929.89999999851,
+      "transferSize": 0,
+      "encodedBodySize": 0,
+      "decodedBodySize": 0,
+      "responseStatus": 0,
+      "serverTiming": []
+    },
+    "tasks": [
+      {
+        "start": 797.5999999977648,
+        "duration": 549
+      },
+      {
+        "start": 1346.7999999970198,
+        "duration": 234
+      },
+      {
+        "start": 1707.2999999970198,
+        "duration": 62
+      },
+      {
+        "start": 2292.599999997765,
+        "duration": 77
+      },
+      {
+        "start": 2370.7999999970198,
+        "duration": 826
+      },
+      {
+        "start": 3387.099999997765,
+        "duration": 126
+      }
+    ],
+    "postScriptLongTasks": []
+  }
+]

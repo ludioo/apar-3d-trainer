@@ -8,6 +8,7 @@ import { initScene, requestRender, captureModel, prepareModel } from './core/sce
 import { initControls } from './core/controls.js';
 import { loadModel } from './core/loader.js';
 import { on } from './core/events.js';
+import { initAnalytics, track } from './core/analytics.js';
 import { initLang, getLang, setLang, t } from './i18n/i18n.js';
 import { initRouter, closeOverlay, getMode } from './core/router.js';
 import { openModal, closeModal } from './ui/modal.js';
@@ -132,6 +133,7 @@ function startViewer() {
       : await (await import('./features/pdf/pdf-spec.js')).buildSpec(snapshot);
     if (!isCurrent()) return;
     await doc.save(`apar-${type}-${snapshot.lang}-${snapshot.exportedAt.slice(0, 10)}.pdf`, { returnPromise: true });
+    track('pdf_export', { type });
   }
   const configurator = initConfigurator({
     camera, controls, canvas: renderer.domElement, container: root,
@@ -230,6 +232,7 @@ function startViewer() {
           const mark = hasEnvironment ? 'apar:visible' : 'apar:fallback-visible';
           performance.mark(mark);
           performance.measure('apar:load', 'apar:load-start', mark);
+          initAnalytics();
         });
       });
       requestRender();

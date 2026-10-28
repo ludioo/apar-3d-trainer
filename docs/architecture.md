@@ -84,6 +84,10 @@ apar-3d-trainer/
 ## Layanan eksternal
 Vercel (hosting), GitHub (repo), Umami Cloud (analytics). Umami disisipkan oleh `analytics.js` secara dinamis setelah event `load:done` + `requestIdleCallback`, dengan `data-website-id` dari env `VITE_UMAMI_WEBSITE_ID` dan `data-domains="trainer.barkahmauludi.com"` (tidak melacak localhost/preview).
 
+T3.6: `load:done` belum berarti model tampil. Bootstrap memanggil `initAnalytics()` pada rAF setelah render dan transisi splash selesai, sesudah penandaan `apar:visible`/`apar:fallback-visible`; inisialisasi baru menjadwalkan idle (fallback `setTimeout(..., 0)` jika API tidak tersedia). Satu flag modul mencegah jadwal/script ganda pada Retry. Gagal model atau WebGL sebelum titik ini tidak memuat tracker. Script memakai `defer`; pageview bawaan dipertahankan, tanpa identify/replay/pelacakan input.
+
+Semua custom event lewat `track(name, data)`, yang memeriksa env/domain dan event load script. Tracker belum siap, diblokir/tidak tersedia, exception sinkron maupun Promise ditolak menjadi no-op; tidak ada antrean/replay atau penulisan storage. Setiap pemanggil membentuk payload eksplisit dari field tabel, tanpa objek hasil/konfigurasi utuh atau input bebas. Nama peserta dan nama konfigurasi tidak dikirim.
+
 ## Analytics events (nama ≤ 50 karakter, aturan Umami)
 | Event | Data |
 |---|---|
@@ -96,3 +100,5 @@ Vercel (hosting), GitHub (repo), Umami Cloud (analytics). Umami disisipkan oleh 
 | `pdf_export` | `{ type: "report"|"spec" }` |
 | `lang_change` | `{ lang }` |
 Tidak ada data pribadi (nama peserta TIDAK dikirim).
+
+Semantik T3.6: variant hanya perubahan manual agent/capacity/color/bracket (ID stabil/boolean), bukan klik sama/Load/restore Train; hotspot hanya aksi membuka kartu Configure melalui canvas/pin/daftar. Config save hanya sukses, termasuk penggantian terkonfirmasi; gagal/batal/Load/Delete diam. Training start pada Mulai/Ulangi, finish pada Next terakhir; `durationSec` selisih jam dari Mulai/Ulangi dibulatkan ke detik, minimum 0, termasuk jeda/About/perpindahan tab, dan `skipped` hitungan status skipped 0–4. Waktu hanya dalam memori dan Ulangi mereset awalnya. Finish latihan/kuis tetap dicatat saat penyimpanan lokal gagal; quiz finish tepat ketika jawaban kedelapan terkunci. PDF hanya setelah `doc.save` berhasil menyerahkan unduhan ke browser (bukan bukti tersimpan di disk); batal/gagal tidak dihitung. Bahasa hanya perubahan nilai, bukan init/klik bahasa aktif.

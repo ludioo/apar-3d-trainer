@@ -1,0 +1,13 @@
+{
+  "checks": [
+    {
+      "origin": "http://localhost:4186",
+      "result": "env-empty build works; zero tracker scripts/requests/calls even with pre-existing window.umami"
+    },
+    {
+      "origin": "http://trainer.barkahmauludi.com:4196",
+      "result": "env-empty build works; zero tracker scripts/requests/calls even with pre-existing window.umami"
+    }
+  ],
+  "errors": []
+}

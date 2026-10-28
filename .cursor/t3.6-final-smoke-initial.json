@@ -1,0 +1,10 @@
+{
+  "checks": [
+    {
+      "origin": "http://localhost:4186",
+      "result": "env-empty build works; zero tracker scripts/requests/calls even with pre-existing window.umami"
+    }
+  ],
+  "errors": [],
+  "failure": "page.waitForFunction: Timeout 30000ms exceeded.\n    at D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t3.6-final-smoke.cjs:16:53"
+}

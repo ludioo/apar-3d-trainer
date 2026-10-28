@@ -1,0 +1,43 @@
+{
+  "checks": [
+    "Delayed script drops early variant/language events; never replays",
+    "Failed PDF import emits nothing; successful same-page retry emits once",
+    "Exit while spec import pending cancels download and event",
+    "Clear during pending report cancels download and event",
+    "Confirmed ten-item replacement emits one payload without saved names",
+    "Mobile native touch, bilingual About copy, no horizontal overflow, PASS events",
+    "Original cloud tracker sends expected custom payload; collector intercepted; zero cookies"
+  ],
+  "errors": [],
+  "realPayloads": [
+    {
+      "type": "event",
+      "payload": {
+        "website": "00000000-0000-4000-8000-000000000036",
+        "screen": "1280x720",
+        "language": "en-US",
+        "title": "Interactive 3D Fire Extinguisher Trainer & Configurator",
+        "hostname": "trainer.barkahmauludi.com",
+        "url": "http://trainer.barkahmauludi.com:4196/#configure",
+        "referrer": ""
+      }
+    },
+    {
+      "type": "event",
+      "payload": {
+        "website": "00000000-0000-4000-8000-000000000036",
+        "screen": "1280x720",
+        "language": "en-US",
+        "title": "Interactive 3D Fire Extinguisher Trainer & Configurator",
+        "hostname": "trainer.barkahmauludi.com",
+        "url": "http://trainer.barkahmauludi.com:4196/#configure",
+        "referrer": "",
+        "name": "variant_change",
+        "data": {
+          "option": "agent",
+          "value": "co2"
+        }
+      }
+    }
+  ]
+}

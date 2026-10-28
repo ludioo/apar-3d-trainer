@@ -1,5 +1,6 @@
 import { Box3, Vector3 } from 'three';
 import { on, emit } from '../../core/events.js';
+import { track } from '../../core/analytics.js';
 import { initCameraTween } from '../../core/cameraTween.js';
 import { getLang, t } from '../../i18n/i18n.js';
 import { initHotspotPins } from '../../ui/hotspot-pins.js';
@@ -44,7 +45,11 @@ export function initQuiz(context) {
 
   function answer(given) {
     if (!canInteract() || !model || !session.answer(given)) return;
-    if (session.attempt) saveFailed = saveAttempt(session.attempt).status !== 'ok';
+    if (session.attempt) {
+      saveFailed = saveAttempt(session.attempt).status !== 'ok';
+      const { score, total, passed } = session.attempt;
+      track('quiz_finish', { score, total, passed });
+    }
     sync();
     ui.focusFeedback();
   }

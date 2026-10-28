@@ -1,6 +1,7 @@
 import { listConfigs, saveConfig, loadConfig, deleteConfig, MAX_CONFIGS, MAX_NAME_LENGTH } from '../features/configurator/saved-configs.js';
 import { t } from '../i18n/i18n.js';
 import { on } from '../core/events.js';
+import { track } from '../core/analytics.js';
 import { openModal, closeModal } from './modal.js';
 import { showToast } from './toast.js';
 import './saved-configs.css';
@@ -174,6 +175,8 @@ export function initSavedConfigs({ product, getConfiguration, applyConfiguration
     const next = saving ? saveConfig(product, input.value, pending.configuration, pending.oldest)
       : deleteConfig(product, pending.entry);
     if (next.status === 'ok') {
+      if (saving) track('config_save', { agent: pending.configuration.agentId,
+        capacity: pending.configuration.capacityId, color: pending.configuration.colorId });
       result = next;
       render();
       closeModal(dialog);

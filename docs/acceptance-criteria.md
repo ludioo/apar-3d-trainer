@@ -222,8 +222,18 @@ Gate antislop untuk scope README (arah: portfolio calon klien, Markdown native d
 ## T3.6
 - [ ] Di Umami → Events muncul variant_change, training_start, quiz_finish, pdf_export setelah kamu mencobanya di situs live (ad-blocker dimatikan).
 - [ ] Tidak ada banner cookie; nama peserta tidak muncul di Umami.
-- [ ] Skor Lighthouse tidak turun dibanding T3.1.
+- [x] Skor Lighthouse tidak turun dibanding T3.1. **Pengecualian diterima Barkah 28 Okt 2026:** skor akhir 42 sama dengan historis T3.1, tetapi turun dari baseline baru 43/44; penutupan berdasarkan penerimaan catatan, bukan bukti nonregresi numerik.
 - [ ] Di localhost tidak ada event terkirim.
+
+28 Okt 2026 — **Barkah menerima catatan Lighthouse dan mengotorisasi commit/push ke develop saja.** Env Production sudah diisi menurut konfirmasi Barkah; tidak diklaim diverifikasi nilainya oleh AI. Merge ke main/deploy produksi menunggu konfirmasi selanjutnya. Checklist live tetap belum dicentang; localhost sudah dibuktikan QA namun belum ditutup sebagai acceptance pengguna. Task T3.6 tetap 🟨 sampai pemeriksaan/acceptance yang tersisa, tanpa memulai T3.5. Check/build dijalankan ulang sebelum commit. Pembacaan catatan historis di bawah mengikuti pembaruan ini.
+
+28 Okt 2026 — Implementasi T3.6 mengikuti validasi Q1–Q5 dan planning yang disetujui Barkah; **menunggu validasi/acceptance**, tanpa commit/push/deploy atau lanjut T3.5. Check/build dan QA analytics lokal (delapan payload, no-op, privasi, PDF batal/gagal, Retry, touch EN/ID dan tracker asli dengan kolektor dicegat) dicatat di `.cursor/t3.6-report.md`. Tidak ada event QA yang dikirim ke dashboard. Checklist live tetap kosong sampai Website ID/env Production diisi, kode ini dipublikasikan atas instruksi Barkah, dan dashboard diperiksa.
+
+**Performa belum lolos pembanding baru:** Lighthouse awal median 43→42; audit tambahan berselang 44→42. Nilai akhir sama dengan historis T3.1 (42), tetapi tidak dianggap bukti tidak turun. Penyebab belum terisolasi; semua run dan batas metode dipertahankan dalam laporan.
+
+Cara cek lokal: buka `http://localhost:4186/#configure`, ganti opsi/bahasa, buka bagian, Save/Load, jalankan PASS/kuis dan ekspor PDF. Di F12 → Network cari `umami`: tidak ada permintaan script/event di localhost. Periksa About EN/ID. HP satu Wi-Fi memakai alamat LAN yang diberikan AI; pemeriksaan LAN juga tidak mengirim analytics.
+
+Cara cek produksi: ikuti `env-setup.md` bagian 7, tunggu APAR dan script siap, coba delapan aksi pada tabel architecture; periksa Events/Properties terutama variant_change, training_start, quiz_finish dan kedua pdf_export. Nama peserta/nama konfigurasi tidak boleh ada, banner cookie tidak muncul. Pengujian produksi dan konfirmasi Barkah diperlukan untuk penutupan checklist.
 
 ## T3.5
 - [ ] Dari barkahmauludi.com ada link ke demo dan berfungsi.

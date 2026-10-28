@@ -1,5 +1,6 @@
 import { Vector3 } from 'three';
 import { on, emit } from '../../core/events.js';
+import { track } from '../../core/analytics.js';
 import { initCameraTween } from '../../core/cameraTween.js';
 import { pickFromNdc } from '../../core/picking.js';
 import { set } from '../../core/storage.js';
@@ -21,12 +22,17 @@ export function initTraining(context) {
   const target = initTrainingTarget({ container, camera, controls, panelBody });
   const effects = initEffects(context);
   const ui = initTrainingUi(steps, {
-    start() { if (!model) return; session.start(); changeStep(); },
-    restart() { if (!model) return; session.restart(); sweep.reset(); saveFailed = false; changeStep(); },
+    start() { if (!model) return; session.start(); startedAt = Date.now(); track('training_start', {}); changeStep(); },
+    restart() { if (!model) return; session.restart(); startedAt = Date.now(); track('training_start', {});
+      sweep.reset(); saveFailed = false; changeStep(); },
     back() { session.back(); changeStep(); },
     next() {
       if (!model || !session.next()) return;
-      if (session.phase === 'complete') saveFailed = !set('trainingDone', true);
+      if (session.phase === 'complete') {
+        saveFailed = !set('trainingDone', true);
+        track('training_finish', { durationSec: Math.max(0, Math.round((Date.now() - startedAt) / 1000)),
+          skipped: session.status.filter((status) => status === 'skipped').length });
+      }
       changeStep();
     },
     skip() { if (canInteract()) complete(true); },
@@ -37,6 +43,7 @@ export function initTraining(context) {
   let model = null;
   let active = false;
   let saveFailed = false;
+  let startedAt = 0;
   let snapshot = null;
   let gestures = null;
   let down = null;
