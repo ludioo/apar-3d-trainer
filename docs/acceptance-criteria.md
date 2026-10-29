@@ -277,5 +277,18 @@ Cara cek:
 
 Bukti lokal dan gate antislop ada di `.cursor/t4.2-report.md`; QA Chrome mencakup 56 keadaan Configure, tiga snap pada matriks regresi PASS/kuis/Results/PDF, serta touch/keyboard/reduced motion. Keyboard virtual adalah simulasi VisualViewport, bukan keyboard OS nyata. Safari/iOS/Firefox, HP fisik, AT dan audit Lighthouse/4G baru belum diuji. Bundle tambahan aktual sekitar 0,55 KB gzip untuk JS+CSS (angka Vite dibulatkan), tanpa dependency baru.
 
+## T4.3 — Layout kuis mobile (29 Okt 2026)
+
+Status: **selesai — acceptance Barkah diterima 29 Okt 2026**. Barkah mengonfirmasi sudah mengecek T4.3 dan lolos, lalu meminta pembaruan dokumen serta commit/push ke develop. Empat checklist ditutup berdasarkan konfirmasi pengguna dan bukti QA existing. Rincian perangkat/browser pengguna tidak diberikan; batas pemeriksaan AI tetap dicatat.
+
+- [x] Mobile sekitar 390px: semua opsi choice dapat digulir hingga terbaca utuh dan ditekan tanpa tertutup sticky Next, termasuk opsi keempat pada fixture UI terisolasi. Data produksi tetap tiga opsi; pada sheet pendek/teks 200% satu opsi panjang boleh membutuhkan scroll untuk dibaca seluruhnya.
+- [x] Setelah memilih jawaban, pertanyaan yang masih terlihat tidak terdorong keluar karena auto-scroll; feedback dekat jawaban dan penjelasan/sumber dapat digulir. Posisi baca manual dipertahankan, tanpa perubahan snap otomatis.
+- [x] Desktop tidak regress; Tab/Enter/Space, penguncian jawaban, Next/Lihat skor dan ulangi tetap berjalan. Tombol minimal 44×44px.
+- [x] Soal pick-hotspot q2/q5 tetap berfungsi melalui pin 3D dan enam pilihan panel; status, sumber dan penilaian tetap benar.
+
+Cara cek: buka desktop `http://localhost:4193/#train` atau HP satu Wi-Fi `http://192.168.100.4:4193/#train`. Mulai latihan, gunakan Lewati lalu Berikutnya untuk empat langkah PASS, kemudian Ikuti kuis. Pada HP uji sheet 25/50/75%, opsi pertama/terakhir, jawaban benar/salah, EN/ID dan teks besar. Pada desktop ulangi dengan keyboard. Selesaikan delapan soal sampai skor, lalu Ulangi kuis. Nomor 2/pin pada q2 dan nomor 4/manometer pada q5 tetap menjadi jawaban benar. Fixture empat opsi hanya dijalankan oleh QA, bukan ditambahkan ke kuis pengguna.
+
+Bukti dan batas pemeriksaan ada di `.cursor/t4.3-report.md`. Check/build dijalankan ulang sebelum commit. Commit/push ke develop diotorisasi oleh acceptance di atas; T4.4 tetap tidak dimulai, main dan deploy produksi tidak diotorisasi.
+
 ## Peta fitur → task
 F1: T0.2–T0.3 · F2: T1.3–T1.4 · F3: T1.5–T1.6 · F4: T1.6 · F5: T1.7 · F6: T2.1–T2.2 · F7: T2.3 · F8: T2.4 · F9: T2.5 · F10: T1.1 · F11: T3.2–T3.3 · F15: T3.6 · F16: L4 · Wajib riset (Draco/KTX2, <3 dtk, HP, Vercel, video, GitHub, SEO): T0.3, T3.1, T0.4, T3.4, T3.3

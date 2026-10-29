@@ -1,0 +1,134 @@
+{
+  "before": {
+    "scroll": 0,
+    "heading": {
+      "x": 17,
+      "y": 508,
+      "width": 356,
+      "height": 24,
+      "top": 508,
+      "right": 373,
+      "bottom": 532,
+      "left": 17
+    },
+    "root": {
+      "x": 17,
+      "y": 467,
+      "width": 356,
+      "height": 361,
+      "top": 467,
+      "right": 373,
+      "bottom": 828,
+      "left": 17
+    },
+    "nav": {
+      "x": 17,
+      "y": 776,
+      "width": 356,
+      "height": 52,
+      "top": 776,
+      "right": 373,
+      "bottom": 828,
+      "left": 17
+    },
+    "options": [
+      {
+        "x": 17,
+        "y": 577,
+        "width": 356,
+        "height": 56,
+        "top": 577,
+        "right": 373,
+        "bottom": 633,
+        "left": 17
+      },
+      {
+        "x": 17,
+        "y": 641,
+        "width": 356,
+        "height": 56,
+        "top": 641,
+        "right": 373,
+        "bottom": 697,
+        "left": 17
+      },
+      {
+        "x": 17,
+        "y": 705,
+        "width": 356,
+        "height": 56,
+        "top": 705,
+        "right": 373,
+        "bottom": 761,
+        "left": 17
+      }
+    ],
+    "snap": "half"
+  },
+  "after": {
+    "scroll": 254,
+    "heading": {
+      "x": 17,
+      "y": 254,
+      "width": 356,
+      "height": 24,
+      "top": 254,
+      "right": 373,
+      "bottom": 278,
+      "left": 17
+    },
+    "root": {
+      "x": 17,
+      "y": 467,
+      "width": 356,
+      "height": 361,
+      "top": 467,
+      "right": 373,
+      "bottom": 828,
+      "left": 17
+    },
+    "nav": {
+      "x": 17,
+      "y": 776,
+      "width": 356,
+      "height": 52,
+      "top": 776,
+      "right": 373,
+      "bottom": 828,
+      "left": 17
+    },
+    "options": [
+      {
+        "x": 17,
+        "y": 290,
+        "width": 356,
+        "height": 58,
+        "top": 290,
+        "right": 373,
+        "bottom": 348,
+        "left": 17
+      },
+      {
+        "x": 17,
+        "y": 356,
+        "width": 356,
+        "height": 56,
+        "top": 356,
+        "right": 373,
+        "bottom": 412,
+        "left": 17
+      },
+      {
+        "x": 17,
+        "y": 420,
+        "width": 356,
+        "height": 56,
+        "top": 420,
+        "right": 373,
+        "bottom": 476,
+        "left": 17
+      }
+    ],
+    "snap": "half"
+  }
+}

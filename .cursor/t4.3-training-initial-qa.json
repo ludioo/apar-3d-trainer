@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-28",
+  "origin": "http://localhost:4193",
+  "production": false,
+  "checks": [
+    {
+      "name": "Train uses default appearance while language changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Pull/Aim click and keyboard, pin overlay, Back preserves completion",
+      "status": "PASS"
+    },
+    {
+      "name": "Early release resets, one-second keyboard hold, six-stroke Sweep without orbit, completion storage and bilingual emergency links",
+      "status": "PASS"
+    },
+    {
+      "name": "Configure choices, scale, bracket and camera restored",
+      "status": "PASS"
+    },
+    {
+      "name": "Blur/About/exit cancel partial hold; step preserved across routes; refocus and mouse hold work",
+      "status": "PASS"
+    },
+    {
+      "name": "Skip completion and storage failure keep walkthrough usable; refresh returns to intro without clearing completion",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "failure": "page.evaluate: TypeError: Failed to fetch dynamically imported module: http://localhost:4193/src/core/picking.js\n    at D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t2.1-check.cjs:169:29"
+}

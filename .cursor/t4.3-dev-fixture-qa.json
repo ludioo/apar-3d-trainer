@@ -1,0 +1,12 @@
+{
+  "origin": "http://localhost:5193",
+  "stage": "dev",
+  "checks": [
+    {
+      "name": "Isolated four-option fixture: fourth option fully reachable, real tap, no scroll jump; production data unchanged"
+    }
+  ],
+  "states": [],
+  "tallOptions": [],
+  "errors": []
+}

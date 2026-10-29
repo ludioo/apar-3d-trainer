@@ -1,0 +1,1417 @@
+{
+  "origin": "http://localhost:4193",
+  "stage": "production",
+  "checks": [
+    {
+      "name": "390x844: no feedback scroll jump, heading fixed, feedback directly after selected answer",
+      "detail": {
+        "before": {
+          "scroll": 0,
+          "heading": {
+            "x": 17,
+            "y": 508,
+            "width": 356,
+            "height": 24,
+            "top": 508,
+            "right": 373,
+            "bottom": 532,
+            "left": 17
+          },
+          "root": {
+            "x": 17,
+            "y": 467,
+            "width": 356,
+            "height": 361,
+            "top": 467,
+            "right": 373,
+            "bottom": 828,
+            "left": 17
+          },
+          "nav": {
+            "x": 17,
+            "y": 776,
+            "width": 356,
+            "height": 52,
+            "top": 776,
+            "right": 373,
+            "bottom": 828,
+            "left": 17
+          },
+          "snap": "half"
+        },
+        "after": {
+          "scroll": 0,
+          "heading": {
+            "x": 17,
+            "y": 508,
+            "width": 356,
+            "height": 24,
+            "top": 508,
+            "right": 373,
+            "bottom": 532,
+            "left": 17
+          },
+          "root": {
+            "x": 17,
+            "y": 467,
+            "width": 356,
+            "height": 361,
+            "top": 467,
+            "right": 373,
+            "bottom": 828,
+            "left": 17
+          },
+          "nav": {
+            "x": 17,
+            "y": 776,
+            "width": 356,
+            "height": 52,
+            "top": 776,
+            "right": 373,
+            "bottom": 828,
+            "left": 17
+          },
+          "snap": "half"
+        }
+      }
+    },
+    {
+      "name": "Complete eight questions via panel including six choices q2/q5; score, emergency and restart flow preserved"
+    },
+    {
+      "name": "40 layout states x eight questions: every option/source/footer reachable, no answer-induced scroll, no page overflow",
+      "detail": {
+        "states": 40,
+        "tallOptions": 104
+      }
+    },
+    {
+      "name": "Keyboard Enter/Space, focus feedback -> Tab -> Next; q2 keyboard pin and q5 native touch pin, score 8/8"
+    }
+  ],
+  "states": [
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "en",
+      "scale": 1,
+      "position": "peek"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "en",
+      "scale": 1,
+      "position": "half"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "en",
+      "scale": 1,
+      "position": "full"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "en",
+      "scale": 2,
+      "position": "half"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "en",
+      "scale": 2,
+      "position": "full"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "id",
+      "scale": 1,
+      "position": "peek"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "id",
+      "scale": 1,
+      "position": "half"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "id",
+      "scale": 1,
+      "position": "full"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "id",
+      "scale": 2,
+      "position": "half"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "id",
+      "scale": 2,
+      "position": "full"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "scale": 1,
+      "position": "peek"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "scale": 1,
+      "position": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "scale": 1,
+      "position": "full"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "scale": 2,
+      "position": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "scale": 2,
+      "position": "full"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "id",
+      "scale": 1,
+      "position": "peek"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "id",
+      "scale": 1,
+      "position": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "id",
+      "scale": 1,
+      "position": "full"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "id",
+      "scale": 2,
+      "position": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "id",
+      "scale": 2,
+      "position": "full"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "scale": 1,
+      "position": "peek"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "scale": 1,
+      "position": "half"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "scale": 1,
+      "position": "full"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "scale": 2,
+      "position": "half"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "scale": 2,
+      "position": "full"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "id",
+      "scale": 1,
+      "position": "peek"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "id",
+      "scale": 1,
+      "position": "half"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "id",
+      "scale": 1,
+      "position": "full"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "id",
+      "scale": 2,
+      "position": "half"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "id",
+      "scale": 2,
+      "position": "full"
+    },
+    {
+      "width": 1365,
+      "height": 900,
+      "lang": "en",
+      "scale": 1,
+      "position": "desktop"
+    },
+    {
+      "width": 1365,
+      "height": 900,
+      "lang": "en",
+      "scale": 2,
+      "position": "desktop"
+    },
+    {
+      "width": 1365,
+      "height": 900,
+      "lang": "id",
+      "scale": 1,
+      "position": "desktop"
+    },
+    {
+      "width": 1365,
+      "height": 900,
+      "lang": "id",
+      "scale": 2,
+      "position": "desktop"
+    }
+  ],
+  "tallOptions": [
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 203,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 129,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 166,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 166,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 166,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 203,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 129,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 129,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 166,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 129,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 129,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 166,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 166,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "b",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 166,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 129,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 87
+    },
+    {
+      "width": 390,
+      "height": 129,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 87
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "handle",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "pin",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "nozzle",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "gauge",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "label",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "body",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "a",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "b",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "c",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "a",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "b",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "handle",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "pin",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "nozzle",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "gauge",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "label",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "body",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "c",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "a",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "c",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 71
+    },
+    {
+      "width": 844,
+      "height": 92,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 71
+    },
+    {
+      "width": 844,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "handle",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "pin",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "nozzle",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "gauge",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "label",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "body",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "a",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "b",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "c",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "a",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "b",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "handle",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "pin",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "nozzle",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "gauge",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "label",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "body",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "c",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "a",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 55,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "c",
+      "viewportSpace": 52
+    },
+    {
+      "width": 844,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 71
+    },
+    {
+      "width": 844,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 71
+    },
+    {
+      "width": 844,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 71
+    },
+    {
+      "width": 844,
+      "height": 92,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 71
+    }
+  ],
+  "errors": []
+}

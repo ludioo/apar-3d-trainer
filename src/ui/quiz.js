@@ -13,7 +13,7 @@ export function initQuizUi(questions, actions) {
   const heading = document.createElement('h3');
   heading.tabIndex = -1;
   const hint = document.createElement('p');
-  hint.className = 'quiz__muted';
+  hint.className = 'quiz__hint quiz__muted';
   const choices = document.createElement('div');
   choices.className = 'quiz__choices';
   choices.setAttribute('role', 'group');
@@ -70,10 +70,11 @@ export function initQuizUi(questions, actions) {
   element.append(body, nav);
   let currentId;
   const observer = new ResizeObserver(() => {
-    element.style.setProperty('--quiz-nav-height', `${nav.getBoundingClientRect().height + 8}px`);
+    element.style.setProperty('--quiz-nav-height', `${nav.getBoundingClientRect().height}px`);
   });
 
   function render({ session, ready, saveFailed }) {
+    const scrollTop = element.scrollTop;
     const lang = getLang();
     const question = questions[session.index];
     const answer = session.answers[session.index];
@@ -83,6 +84,7 @@ export function initQuizUi(questions, actions) {
     element.dataset.question = question.id;
     if (currentId !== question.id) {
       currentId = question.id;
+      choices.after(feedback);
       choices.replaceChildren();
       for (const choice of question.choices ?? hotspots) {
         const option = document.createElement('button');
@@ -104,10 +106,11 @@ export function initQuizUi(questions, actions) {
     progress.hidden = summary;
     progress.textContent = t('quiz.progress').replace('{n}', session.index + 1).replace('{total}', questions.length);
     heading.textContent = summary ? t(session.attempt.passed ? 'quiz.passed' : 'quiz.failed') : question.question[lang];
-    hint.hidden = summary || !!answer;
+    hint.hidden = summary;
     hint.textContent = t(!ready ? 'quiz.loading' : pick ? 'quiz.pickHint' : 'quiz.choiceHint');
     choices.hidden = summary;
-    [...choices.children].forEach((button, index) => {
+    const options = [...choices.querySelectorAll(':scope > button')];
+    options.forEach((button, index) => {
       const choice = (question.choices ?? hotspots)[index];
       button.textContent = pick ? t('quiz.part').replace('{n}', index + 1) : choice.label[lang];
       button.disabled = !ready || !!answer;
@@ -116,6 +119,10 @@ export function initQuizUi(questions, actions) {
         : choice.id === answer.given ? 'wrong' : '';
     });
     feedback.hidden = summary || !answer;
+    if (answer && !summary) {
+      const selected = options.find((option) => option.dataset.choice === answer.given);
+      if (feedback.previousElementSibling !== selected) selected.after(feedback);
+    }
     feedback.dataset.correct = String(answer?.correct);
     feedbackTitle.textContent = t(answer?.correct ? 'quiz.correct' : 'quiz.incorrect');
     const label = pick ? hotspots.find((hotspot) => hotspot.id === question.answer).title[lang]
@@ -149,10 +156,11 @@ export function initQuizUi(questions, actions) {
     next.disabled = !answer;
     next.textContent = t(session.index === questions.length - 1 ? 'quiz.viewScore' : 'quiz.next');
     disclaimer.textContent = t('disclaimer');
+    element.scrollTop = scrollTop;
   }
   return { element, render,
     focusHeading() { element.scrollTop = 0; heading.focus({ preventScroll: true }); },
-    focusFeedback() { feedback.focus({ preventScroll: true }); feedback.scrollIntoView({ block: 'start' }); },
+    focusFeedback() { feedback.focus({ preventScroll: true }); },
     enter() { observer.observe(nav); },
     exit() { observer.disconnect(); },
   };
