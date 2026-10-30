@@ -216,7 +216,7 @@
 .modal__close { position: sticky; bottom: 0; }
 .modal { max-height: 85dvh; }
 .viewer-tools { margin-bottom: var(--space-12); font-family: Inter, system-ui, sans-serif; }
-.viewer-tools button, .hotspot-info__parts button { min-height: 44px; min-width: 44px; padding: var(--space-8) var(--space-12); border: 1px solid var(--text-muted); border-radius: var(--radius-8); background: var(--surface-solid); color: var(--text); font: inherit; font-size: var(--fs-14); cursor: pointer; overflow-wrap: anywhere; }
+.viewer-tools button, .hotspot-info__parts button { min-height: 44px; min-width: 44px; padding: var(--space-8) var(--space-12); border: 1px solid var(--text-muted); border-radius: var(--radius-8); background: var(--surface-solid); color: var(--text); font: inherit; font-size: var(--panel-fs-body); cursor: pointer; overflow-wrap: anywhere; }
 .hotspot-info__parts { display: grid; gap: var(--space-8); margin: var(--space-12) 0; }
 .hotspot-info__parts button { text-align: left; }
 .viewer-tools button:disabled { cursor: default; color: var(--text-muted); }

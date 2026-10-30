@@ -128,6 +128,7 @@
 .emergency-chrome a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 .panel {
+  --text-muted: var(--panel-text-muted);
   position: fixed;
   left: 0;
   right: 0;
@@ -145,6 +146,8 @@
   box-shadow: var(--shadow-panel);
   color: var(--text);
   font-family: Inter, system-ui, sans-serif;
+  font-size: var(--panel-fs-body);
+  line-height: 1.5;
   transition: height var(--dur-ui-max) ease;
 }
 
@@ -169,7 +172,7 @@
 
 .panel__title {
   margin: 0 0 var(--space-12);
-  font-size: var(--fs-20);
+  font-size: var(--panel-fs-heading);
   font-weight: 600;
   line-height: 1.2;
 }

@@ -12,13 +12,13 @@
   overflow-wrap: anywhere;
 }
 
-.saved-configs h3 { font-size: var(--fs-16); }
-.saved-configs h4 { font-size: var(--fs-14); }
+.saved-configs h3 { font-size: var(--panel-fs-heading); line-height: 1.2; }
+.saved-configs h4 { font-size: var(--panel-fs-subheading); line-height: 1.2; }
 
 .saved-status,
 .saved-summary {
   color: var(--text-muted);
-  font-size: var(--fs-14);
+  font-size: var(--panel-fs-meta);
   line-height: 1.5;
 }
 
@@ -51,7 +51,7 @@
   background: var(--surface-solid);
   color: var(--text);
   font: inherit;
-  font-size: var(--fs-14);
+  font-size: var(--panel-fs-body);
   cursor: pointer;
   overflow-wrap: anywhere;
 }
@@ -77,11 +77,14 @@
 }
 
 .saved-dialog {
+  --text-muted: var(--panel-text-muted);
+  font-size: var(--panel-fs-body);
+  line-height: 1.5;
   max-height: calc(100dvh - var(--space-32));
   overflow-y: auto;
 }
 
-.saved-dialog label { font-size: var(--fs-14); }
+.saved-dialog label { font-size: var(--panel-fs-body); }
 
 .saved-dialog input {
   box-sizing: border-box;

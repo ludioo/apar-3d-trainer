@@ -1,10 +1,12 @@
-import { Vector3 } from 'three';
+import { Box3, Vector3 } from 'three';
 import { initCameraTween } from '../../core/cameraTween.js';
 import { on } from '../../core/events.js';
 import { track } from '../../core/analytics.js';
 import { getLang, t } from '../../i18n/i18n.js';
 import { initHotspotPins } from '../../ui/hotspot-pins.js';
 import hotspots from '../../data/hotspots.json';
+import product from '../../data/product.json';
+import { overviewView } from './overview-view.js';
 
 export function initHotspots({ camera, controls, canvas, container, panelBody, highlight, requestRender }) {
   const tween = initCameraTween(camera, controls, requestRender);
@@ -51,6 +53,35 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
   let offLang;
   let optionsScrollTop = 0;
   let capacityScale = 1;
+  let referenceBounds = null;
+  let manualView = false;
+  let gesture = null;
+  let offResize;
+  let resizePending = false;
+  let firstOverview = true;
+  const initialDirection = camera.position.clone().sub(controls.target);
+
+  function fitOverview() {
+    if (!active || !referenceBounds || manualView || selected || snapshot || gesture) return;
+    const rect = container.getBoundingClientRect();
+    const margin = Math.min(16, rect.width / 4, rect.height / 4);
+    const available = { left: margin, right: rect.width - margin,
+      top: margin, bottom: rect.height - margin };
+    if (desktop.matches) {
+      available.right = panel.getBoundingClientRect().left - rect.left - margin;
+      available.top = document.querySelector('.topbar').getBoundingClientRect().bottom - rect.top + margin;
+    }
+    const direction = firstOverview ? initialDirection : camera.position.clone().sub(controls.target);
+    const view = overviewView(referenceBounds, camera, rect, available, direction,
+      Math.max(...product.options.capacity.map((capacity) => capacity.scale)));
+    if (view) {
+      resizePending = false;
+      firstOverview = false;
+      controls.maxDistance = Math.max(8, new Vector3(...view.position).distanceTo(new Vector3(...view.target)) * 1.5);
+      tween.moveTo(view, { immediate: true });
+    }
+  }
+  const resizeOverview = () => { resizePending = true; fitOverview(); };
 
   function focusSelected() {
     controls.minDistance = 0.35 * capacityScale;
@@ -63,6 +94,12 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
 
   function refreshTransform(scale) {
     capacityScale = scale;
+    if (model && !referenceBounds) {
+      referenceBounds = new Box3().setFromObject(model);
+      referenceBounds.min.divideScalar(scale);
+      referenceBounds.max.divideScalar(scale);
+      fitOverview();
+    }
     pins.refresh();
     if (active && selected && model) focusSelected();
   }
@@ -121,6 +158,7 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
     controls.maxDistance = snapshot.maxDistance;
     controls.enabled = true;
     snapshot = null;
+    fitOverview();
     controls.resumeAutoRotate();
     if (returnFocus) {
       const target = trigger?.isConnected && !trigger.hidden ? trigger : canvas;
@@ -142,7 +180,18 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
     tween.moveTo(snapshot, { immediate, onComplete: () => finishRestore(returnFocus) });
   }
 
-  const cancelFocus = () => tween.cancel();
+  function cancelFocus() {
+    tween.cancel();
+    if (!selected && !snapshot) gesture = {
+      position: camera.position.clone(), target: controls.target.clone(), zoom: camera.zoom,
+    };
+  }
+  function finishGesture() {
+    if (gesture && (gesture.position.distanceToSquared(camera.position) > 1e-10 ||
+        gesture.target.distanceToSquared(controls.target) > 1e-10 || gesture.zoom !== camera.zoom)) manualView = true;
+    gesture = null;
+    if (resizePending) fitOverview();
+  }
   const escape = (event) => {
     if (event.key !== 'Escape' || document.querySelector('dialog[open]') || !selected) return;
     event.preventDefault();
@@ -157,23 +206,29 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
     syncText();
     pins.enter();
     controls.addEventListener('start', cancelFocus);
+    controls.addEventListener('end', finishGesture);
     controls.addEventListener('change', highlight.update);
     document.addEventListener('keydown', escape);
     offLang = on('lang:change', syncText);
     desktop.addEventListener('change', revealCard);
     window.addEventListener('resize', revealCard);
+    offResize = on('scene:resize', resizeOverview);
+    fitOverview();
   }
 
   function exit() {
     active = false;
+    gesture = null;
     tween.cancel();
     close(true, false);
     pins.exit();
     content.remove();
     controls.removeEventListener('start', cancelFocus);
+    controls.removeEventListener('end', finishGesture);
     controls.removeEventListener('change', highlight.update);
     document.removeEventListener('keydown', escape);
     offLang?.();
+    offResize?.();
     desktop.removeEventListener('change', revealCard);
     window.removeEventListener('resize', revealCard);
     canvas.removeAttribute('tabindex');
@@ -182,6 +237,10 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
 
   function setModel(next) {
     model = next;
+    referenceBounds = null;
+    manualView = false;
+    resizePending = false;
+    firstOverview = true;
     pins.setModel(next);
     if (active) syncText();
   }

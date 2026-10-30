@@ -30,6 +30,12 @@ Kontras teks ≥ 4.5:1 (AA). Fallback tanpa backdrop-filter: surface solid #1619
 - Inter (400/500/600/700) — UI. JetBrains Mono (500) — angka spek, harga, skor, step counter.
 - Skala: 12 / 14 / 16 / 20 / 28 / 40 px; line-height 1.5 teks, 1.2 judul.
 
+T4.7 (acceptance Barkah diterima 30 Okt 2026): panel Configure/hotspot/PASS/kuis/Results memakai token semantik `--panel-fs-body` 16px untuk body/kontrol, `--panel-fs-meta` 14px untuk sumber/status/stepper, `--panel-fs-heading` 20px dan `--panel-fs-subheading` 16px. Harga/skor besar tetap. `--panel-text-muted` #B0B7C2 hanya pada panel/dialog terkait; topbar/PDF/pin tidak diperbesar global. Kontras aktif terburuk 4,63:1 pada komposit panel di atas putih. Label grafik memakai font14px aktual dan ruang sumbu mengikuti ukuran teks.
+
+Overview T4.7 menargetkan APAR default6kg sekitar70% tinggi area bebas, dengan rentang60–75% pada desktop normal dan390×844/half. Pusat orbit tetap pusat model; area di bawah header dan sebelum panel kanan/di atas sheet diperhitungkan dengan margin16px, menyusut bila dimensi kanvas sangat pendek. Kapasitas lain tetap berbeda ukuran. Resize mengikuti ruang sampai orbit/zoom manual; tap dan idle rotation tidak mengunci kamera. Pembatasan aspek/ruang dapat mengecilkan model untuk mencegah clipping. Strip landscape16px existing tetap batas ruang, tanpa perubahan header/snap.
+
+Pembacaan kartu hotspot mobile T4.7 menyembunyikan kontrol putaran bersama opsi konfigurasi, agar judul dan Tutup tetap utuh pada peek/teks200%. Keduanya pulih setelah kartu ditutup; kontrol putaran desktop tetap tampil. Deskripsi tetap scroll dalam ruang tersisa. Arah Industrial Safety Studio ENERGY1/RHYTHM1/MOTION1 dipertahankan.
+
 ## Spacing, radius, shadow
 Grid 4px: 4, 8, 12, 16, 24, 32, 48. Radius: 8 (tombol), 14 (panel), 999 (chip/hotspot). Shadow panel: `0 8px 32px rgba(0,0,0,.35)`.
 

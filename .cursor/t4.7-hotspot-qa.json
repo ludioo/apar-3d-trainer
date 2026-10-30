@@ -1,0 +1,8575 @@
+{
+  "origin": "http://localhost:4247",
+  "date": "2026-10-30",
+  "states": [
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "peek",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 280.921875,
+        "height": 24,
+        "top": 678,
+        "right": 297.921875,
+        "bottom": 702,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 678,
+        "width": 63.078125,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "peek",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 280.921875,
+        "height": 24,
+        "top": 678,
+        "right": 297.921875,
+        "bottom": 702,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 678,
+        "width": 63.078125,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "peek",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 280.921875,
+        "height": 24,
+        "top": 678,
+        "right": 297.921875,
+        "bottom": 702,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 678,
+        "width": 63.078125,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "peek",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 280.921875,
+        "height": 24,
+        "top": 678,
+        "right": 297.921875,
+        "bottom": 702,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 678,
+        "width": 63.078125,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "peek",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 280.921875,
+        "height": 24,
+        "top": 678,
+        "right": 297.921875,
+        "bottom": 702,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 678,
+        "width": 63.078125,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "peek",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 280.921875,
+        "height": 24,
+        "top": 678,
+        "right": 297.921875,
+        "bottom": 702,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 678,
+        "width": 63.078125,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 467,
+        "width": 280.921875,
+        "height": 24,
+        "top": 467,
+        "right": 297.921875,
+        "bottom": 491,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 361,
+        "top": 467,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 467,
+        "width": 63.078125,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 467,
+        "width": 280.921875,
+        "height": 24,
+        "top": 467,
+        "right": 297.921875,
+        "bottom": 491,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 361,
+        "top": 467,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 467,
+        "width": 63.078125,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 467,
+        "width": 280.921875,
+        "height": 24,
+        "top": 467,
+        "right": 297.921875,
+        "bottom": 491,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 361,
+        "top": 467,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 467,
+        "width": 63.078125,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 467,
+        "width": 280.921875,
+        "height": 24,
+        "top": 467,
+        "right": 297.921875,
+        "bottom": 491,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 361,
+        "top": 467,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 467,
+        "width": 63.078125,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 467,
+        "width": 280.921875,
+        "height": 24,
+        "top": 467,
+        "right": 297.921875,
+        "bottom": 491,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 361,
+        "top": 467,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 467,
+        "width": 63.078125,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 467,
+        "width": 280.921875,
+        "height": 24,
+        "top": 467,
+        "right": 297.921875,
+        "bottom": 491,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 361,
+        "top": 467,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 467,
+        "width": 63.078125,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "full",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 280.921875,
+        "height": 24,
+        "top": 267,
+        "right": 297.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 561,
+        "top": 267,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "full",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 280.921875,
+        "height": 24,
+        "top": 267,
+        "right": 297.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 561,
+        "top": 267,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "full",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 280.921875,
+        "height": 24,
+        "top": 267,
+        "right": 297.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 561,
+        "top": 267,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "full",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 280.921875,
+        "height": 24,
+        "top": 267,
+        "right": 297.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 561,
+        "top": 267,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "full",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 280.921875,
+        "height": 24,
+        "top": 267,
+        "right": 297.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 561,
+        "top": 267,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "full",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 280.921875,
+        "height": 24,
+        "top": 267,
+        "right": 297.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 561,
+        "top": 267,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 309.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 309.921875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "peek",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 241.859375,
+        "height": 96,
+        "top": 678,
+        "right": 258.859375,
+        "bottom": 774,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 96,
+        "top": 678,
+        "right": 373,
+        "bottom": 774,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 678,
+        "width": 102.140625,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "peek",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 241.859375,
+        "height": 48,
+        "top": 678,
+        "right": 258.859375,
+        "bottom": 726,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 678,
+        "width": 102.140625,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "peek",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 241.859375,
+        "height": 96,
+        "top": 678,
+        "right": 258.859375,
+        "bottom": 774,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 96,
+        "top": 678,
+        "right": 373,
+        "bottom": 774,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 678,
+        "width": 102.140625,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "peek",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 241.859375,
+        "height": 96,
+        "top": 678,
+        "right": 258.859375,
+        "bottom": 774,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 96,
+        "top": 678,
+        "right": 373,
+        "bottom": 774,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 678,
+        "width": 102.140625,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "peek",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 241.859375,
+        "height": 48,
+        "top": 678,
+        "right": 258.859375,
+        "bottom": 726,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 678,
+        "width": 102.140625,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "peek",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 241.859375,
+        "height": 48,
+        "top": 678,
+        "right": 258.859375,
+        "bottom": 726,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 678,
+        "width": 102.140625,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 553,
+        "width": 241.859375,
+        "height": 96,
+        "top": 553,
+        "right": 258.859375,
+        "bottom": 649,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 96,
+        "top": 553,
+        "right": 373,
+        "bottom": 649,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 275,
+        "top": 553,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 553,
+        "width": 102.140625,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 553,
+        "width": 241.859375,
+        "height": 48,
+        "top": 553,
+        "right": 258.859375,
+        "bottom": 601,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 275,
+        "top": 553,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 553,
+        "width": 102.140625,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 553,
+        "width": 241.859375,
+        "height": 96,
+        "top": 553,
+        "right": 258.859375,
+        "bottom": 649,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 96,
+        "top": 553,
+        "right": 373,
+        "bottom": 649,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 275,
+        "top": 553,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 553,
+        "width": 102.140625,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 553,
+        "width": 241.859375,
+        "height": 96,
+        "top": 553,
+        "right": 258.859375,
+        "bottom": 649,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 96,
+        "top": 553,
+        "right": 373,
+        "bottom": 649,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 275,
+        "top": 553,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 553,
+        "width": 102.140625,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 553,
+        "width": 241.859375,
+        "height": 48,
+        "top": 553,
+        "right": 258.859375,
+        "bottom": 601,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 275,
+        "top": 553,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 553,
+        "width": 102.140625,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 553,
+        "width": 241.859375,
+        "height": 48,
+        "top": 553,
+        "right": 258.859375,
+        "bottom": 601,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 275,
+        "top": 553,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 553,
+        "width": 102.140625,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "full",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 553,
+        "width": 241.859375,
+        "height": 96,
+        "top": 553,
+        "right": 258.859375,
+        "bottom": 649,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 96,
+        "top": 553,
+        "right": 373,
+        "bottom": 649,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 275,
+        "top": 553,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 553,
+        "width": 102.140625,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "full",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 553,
+        "width": 241.859375,
+        "height": 48,
+        "top": 553,
+        "right": 258.859375,
+        "bottom": 601,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 275,
+        "top": 553,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 553,
+        "width": 102.140625,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "full",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 553,
+        "width": 241.859375,
+        "height": 96,
+        "top": 553,
+        "right": 258.859375,
+        "bottom": 649,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 96,
+        "top": 553,
+        "right": 373,
+        "bottom": 649,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 275,
+        "top": 553,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 553,
+        "width": 102.140625,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "full",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 553,
+        "width": 241.859375,
+        "height": 96,
+        "top": 553,
+        "right": 258.859375,
+        "bottom": 649,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 96,
+        "top": 553,
+        "right": 373,
+        "bottom": 649,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 275,
+        "top": 553,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 553,
+        "width": 102.140625,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "full",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 553,
+        "width": 241.859375,
+        "height": 48,
+        "top": 553,
+        "right": 258.859375,
+        "bottom": 601,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 275,
+        "top": 553,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 553,
+        "width": 102.140625,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "full",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 553,
+        "width": 241.859375,
+        "height": 48,
+        "top": 553,
+        "right": 258.859375,
+        "bottom": 601,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 553,
+        "width": 356,
+        "height": 275,
+        "top": 553,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 270.859375,
+        "y": 553,
+        "width": 102.140625,
+        "height": 64,
+        "top": 553,
+        "right": 373,
+        "bottom": 617,
+        "left": 270.859375
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "peek",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 278.328125,
+        "height": 24,
+        "top": 678,
+        "right": 295.328125,
+        "bottom": 702,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 678,
+        "width": 65.671875,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "peek",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 278.328125,
+        "height": 24,
+        "top": 678,
+        "right": 295.328125,
+        "bottom": 702,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 678,
+        "width": 65.671875,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "peek",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 278.328125,
+        "height": 24,
+        "top": 678,
+        "right": 295.328125,
+        "bottom": 702,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 678,
+        "width": 65.671875,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "peek",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 278.328125,
+        "height": 24,
+        "top": 678,
+        "right": 295.328125,
+        "bottom": 702,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 678,
+        "width": 65.671875,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "peek",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 278.328125,
+        "height": 24,
+        "top": 678,
+        "right": 295.328125,
+        "bottom": 702,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 678,
+        "width": 65.671875,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "peek",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 278.328125,
+        "height": 24,
+        "top": 678,
+        "right": 295.328125,
+        "bottom": 702,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 678,
+        "width": 65.671875,
+        "height": 44,
+        "top": 678,
+        "right": 373,
+        "bottom": 722,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 467,
+        "width": 278.328125,
+        "height": 24,
+        "top": 467,
+        "right": 295.328125,
+        "bottom": 491,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 361,
+        "top": 467,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 467,
+        "width": 65.671875,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 467,
+        "width": 278.328125,
+        "height": 24,
+        "top": 467,
+        "right": 295.328125,
+        "bottom": 491,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 361,
+        "top": 467,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 467,
+        "width": 65.671875,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 467,
+        "width": 278.328125,
+        "height": 24,
+        "top": 467,
+        "right": 295.328125,
+        "bottom": 491,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 361,
+        "top": 467,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 467,
+        "width": 65.671875,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 467,
+        "width": 278.328125,
+        "height": 24,
+        "top": 467,
+        "right": 295.328125,
+        "bottom": 491,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 361,
+        "top": 467,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 467,
+        "width": 65.671875,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 467,
+        "width": 278.328125,
+        "height": 24,
+        "top": 467,
+        "right": 295.328125,
+        "bottom": 491,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 361,
+        "top": 467,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 467,
+        "width": 65.671875,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 467,
+        "width": 278.328125,
+        "height": 24,
+        "top": 467,
+        "right": 295.328125,
+        "bottom": 491,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 467,
+        "width": 356,
+        "height": 361,
+        "top": 467,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 467,
+        "width": 65.671875,
+        "height": 44,
+        "top": 467,
+        "right": 373,
+        "bottom": 511,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "full",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 278.328125,
+        "height": 24,
+        "top": 267,
+        "right": 295.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 561,
+        "top": 267,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "full",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 278.328125,
+        "height": 24,
+        "top": 267,
+        "right": 295.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 561,
+        "top": 267,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "full",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 278.328125,
+        "height": 24,
+        "top": 267,
+        "right": 295.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 561,
+        "top": 267,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "full",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 278.328125,
+        "height": 24,
+        "top": 267,
+        "right": 295.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 561,
+        "top": 267,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "full",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 278.328125,
+        "height": 24,
+        "top": 267,
+        "right": 295.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 561,
+        "top": 267,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "full",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 278.328125,
+        "height": 24,
+        "top": 267,
+        "right": 295.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 356,
+        "height": 561,
+        "top": 267,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 307.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 373,
+        "bottom": 311,
+        "left": 307.328125
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "peek",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 236.671875,
+        "height": 48,
+        "top": 678,
+        "right": 253.671875,
+        "bottom": 726,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 678,
+        "width": 107.328125,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "peek",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 236.671875,
+        "height": 96,
+        "top": 678,
+        "right": 253.671875,
+        "bottom": 774,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 96,
+        "top": 678,
+        "right": 373,
+        "bottom": 774,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 678,
+        "width": 107.328125,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "peek",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 236.671875,
+        "height": 96,
+        "top": 678,
+        "right": 253.671875,
+        "bottom": 774,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 96,
+        "top": 678,
+        "right": 373,
+        "bottom": 774,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 678,
+        "width": 107.328125,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "peek",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 236.671875,
+        "height": 96,
+        "top": 678,
+        "right": 253.671875,
+        "bottom": 774,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 96,
+        "top": 678,
+        "right": 373,
+        "bottom": 774,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 678,
+        "width": 107.328125,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "peek",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 236.671875,
+        "height": 48,
+        "top": 678,
+        "right": 253.671875,
+        "bottom": 726,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 678,
+        "width": 107.328125,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "peek",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 678,
+        "width": 236.671875,
+        "height": 48,
+        "top": 678,
+        "right": 253.671875,
+        "bottom": 726,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 678,
+        "width": 356,
+        "height": 150,
+        "top": 678,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 678,
+        "width": 107.328125,
+        "height": 64,
+        "top": 678,
+        "right": 373,
+        "bottom": 742,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 511,
+        "width": 236.671875,
+        "height": 48,
+        "top": 511,
+        "right": 253.671875,
+        "bottom": 559,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 317,
+        "top": 511,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 511,
+        "width": 107.328125,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 511,
+        "width": 236.671875,
+        "height": 96,
+        "top": 511,
+        "right": 253.671875,
+        "bottom": 607,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 96,
+        "top": 511,
+        "right": 373,
+        "bottom": 607,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 317,
+        "top": 511,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 511,
+        "width": 107.328125,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 511,
+        "width": 236.671875,
+        "height": 96,
+        "top": 511,
+        "right": 253.671875,
+        "bottom": 607,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 96,
+        "top": 511,
+        "right": 373,
+        "bottom": 607,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 317,
+        "top": 511,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 511,
+        "width": 107.328125,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 511,
+        "width": 236.671875,
+        "height": 96,
+        "top": 511,
+        "right": 253.671875,
+        "bottom": 607,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 96,
+        "top": 511,
+        "right": 373,
+        "bottom": 607,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 317,
+        "top": 511,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 511,
+        "width": 107.328125,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 511,
+        "width": 236.671875,
+        "height": 48,
+        "top": 511,
+        "right": 253.671875,
+        "bottom": 559,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 317,
+        "top": 511,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 511,
+        "width": 107.328125,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 511,
+        "width": 236.671875,
+        "height": 48,
+        "top": 511,
+        "right": 253.671875,
+        "bottom": 559,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 317,
+        "top": 511,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 511,
+        "width": 107.328125,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "full",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 511,
+        "width": 236.671875,
+        "height": 48,
+        "top": 511,
+        "right": 253.671875,
+        "bottom": 559,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 317,
+        "top": 511,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 511,
+        "width": 107.328125,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "full",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 511,
+        "width": 236.671875,
+        "height": 96,
+        "top": 511,
+        "right": 253.671875,
+        "bottom": 607,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 96,
+        "top": 511,
+        "right": 373,
+        "bottom": 607,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 317,
+        "top": 511,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 511,
+        "width": 107.328125,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "full",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 511,
+        "width": 236.671875,
+        "height": 96,
+        "top": 511,
+        "right": 253.671875,
+        "bottom": 607,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 96,
+        "top": 511,
+        "right": 373,
+        "bottom": 607,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 317,
+        "top": 511,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 511,
+        "width": 107.328125,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "full",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 511,
+        "width": 236.671875,
+        "height": 96,
+        "top": 511,
+        "right": 253.671875,
+        "bottom": 607,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 96,
+        "top": 511,
+        "right": 373,
+        "bottom": 607,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 317,
+        "top": 511,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 511,
+        "width": 107.328125,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "full",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 511,
+        "width": 236.671875,
+        "height": 48,
+        "top": 511,
+        "right": 253.671875,
+        "bottom": 559,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 317,
+        "top": 511,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 511,
+        "width": 107.328125,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "full",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 511,
+        "width": 236.671875,
+        "height": 48,
+        "top": 511,
+        "right": 253.671875,
+        "bottom": 559,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 511,
+        "width": 356,
+        "height": 317,
+        "top": 511,
+        "right": 373,
+        "bottom": 828,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 265.671875,
+        "y": 511,
+        "width": 107.328125,
+        "height": 64,
+        "top": 511,
+        "right": 373,
+        "bottom": 575,
+        "left": 265.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "peek",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "peek",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "peek",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "peek",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "peek",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "peek",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "full",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "full",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "full",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "full",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "full",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "full",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 734.921875,
+        "height": 24,
+        "top": 267,
+        "right": 751.921875,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 763.921875,
+        "y": 267,
+        "width": 63.078125,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 763.921875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "peek",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "peek",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "peek",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "peek",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "peek",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "peek",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "full",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "full",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "full",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "full",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "full",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "full",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 695.859375,
+        "height": 48,
+        "top": 275,
+        "right": 712.859375,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 724.859375,
+        "y": 275,
+        "width": 102.140625,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 724.859375
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "peek",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "peek",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "peek",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "peek",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "peek",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "peek",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "full",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "full",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "full",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "full",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "full",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "full",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 267,
+        "width": 732.328125,
+        "height": 24,
+        "top": 267,
+        "right": 749.328125,
+        "bottom": 291,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 267,
+        "width": 810,
+        "height": 107,
+        "top": 267,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 761.328125,
+        "y": 267,
+        "width": 65.671875,
+        "height": 44,
+        "top": 267,
+        "right": 827,
+        "bottom": 311,
+        "left": 761.328125
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "peek",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "peek",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "peek",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "peek",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "peek",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "peek",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "full",
+      "id": "handle",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "full",
+      "id": "pin",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "full",
+      "id": "nozzle",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "full",
+      "id": "gauge",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "full",
+      "id": "label",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "full",
+      "id": "body",
+      "title": {
+        "x": 17,
+        "y": 275,
+        "width": 690.671875,
+        "height": 48,
+        "top": 275,
+        "right": 707.671875,
+        "bottom": 323,
+        "left": 17
+      },
+      "header": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 17
+      },
+      "body": {
+        "x": 17,
+        "y": 275,
+        "width": 810,
+        "height": 99,
+        "top": 275,
+        "right": 827,
+        "bottom": 374,
+        "left": 17
+      },
+      "rotation": "none",
+      "close": {
+        "x": 719.671875,
+        "y": 275,
+        "width": 107.328125,
+        "height": 64,
+        "top": 275,
+        "right": 827,
+        "bottom": 339,
+        "left": 719.671875
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "handle",
+      "title": {
+        "x": 921,
+        "y": 762.59375,
+        "width": 250.921875,
+        "height": 24,
+        "top": 762.59375,
+        "right": 1171.921875,
+        "bottom": 786.59375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 762.59375,
+        "width": 326,
+        "height": 44,
+        "top": 762.59375,
+        "right": 1247,
+        "bottom": 806.59375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 187,
+        "width": 326,
+        "height": 680,
+        "top": 187,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1183.921875,
+        "y": 762.59375,
+        "width": 63.078125,
+        "height": 44,
+        "top": 762.59375,
+        "right": 1247,
+        "bottom": 806.59375,
+        "left": 1183.921875
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "pin",
+      "title": {
+        "x": 921,
+        "y": 738.59375,
+        "width": 250.921875,
+        "height": 24,
+        "top": 738.59375,
+        "right": 1171.921875,
+        "bottom": 762.59375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 738.59375,
+        "width": 326,
+        "height": 44,
+        "top": 738.59375,
+        "right": 1247,
+        "bottom": 782.59375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 187,
+        "width": 326,
+        "height": 680,
+        "top": 187,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1183.921875,
+        "y": 738.59375,
+        "width": 63.078125,
+        "height": 44,
+        "top": 738.59375,
+        "right": 1247,
+        "bottom": 782.59375,
+        "left": 1183.921875
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "nozzle",
+      "title": {
+        "x": 921,
+        "y": 738.59375,
+        "width": 250.921875,
+        "height": 24,
+        "top": 738.59375,
+        "right": 1171.921875,
+        "bottom": 762.59375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 738.59375,
+        "width": 326,
+        "height": 44,
+        "top": 738.59375,
+        "right": 1247,
+        "bottom": 782.59375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 187,
+        "width": 326,
+        "height": 680,
+        "top": 187,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1183.921875,
+        "y": 738.59375,
+        "width": 63.078125,
+        "height": 44,
+        "top": 738.59375,
+        "right": 1247,
+        "bottom": 782.59375,
+        "left": 1183.921875
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "gauge",
+      "title": {
+        "x": 921,
+        "y": 762.59375,
+        "width": 250.921875,
+        "height": 24,
+        "top": 762.59375,
+        "right": 1171.921875,
+        "bottom": 786.59375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 762.59375,
+        "width": 326,
+        "height": 44,
+        "top": 762.59375,
+        "right": 1247,
+        "bottom": 806.59375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 187,
+        "width": 326,
+        "height": 680,
+        "top": 187,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1183.921875,
+        "y": 762.59375,
+        "width": 63.078125,
+        "height": 44,
+        "top": 762.59375,
+        "right": 1247,
+        "bottom": 806.59375,
+        "left": 1183.921875
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "label",
+      "title": {
+        "x": 921,
+        "y": 714.59375,
+        "width": 250.921875,
+        "height": 24,
+        "top": 714.59375,
+        "right": 1171.921875,
+        "bottom": 738.59375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 714.59375,
+        "width": 326,
+        "height": 44,
+        "top": 714.59375,
+        "right": 1247,
+        "bottom": 758.59375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 187,
+        "width": 326,
+        "height": 680,
+        "top": 187,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1183.921875,
+        "y": 714.59375,
+        "width": 63.078125,
+        "height": 44,
+        "top": 714.59375,
+        "right": 1247,
+        "bottom": 758.59375,
+        "left": 1183.921875
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "en",
+      "scale": 1,
+      "snap": "half",
+      "id": "body",
+      "title": {
+        "x": 921,
+        "y": 714.59375,
+        "width": 250.921875,
+        "height": 24,
+        "top": 714.59375,
+        "right": 1171.921875,
+        "bottom": 738.59375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 714.59375,
+        "width": 326,
+        "height": 44,
+        "top": 714.59375,
+        "right": 1247,
+        "bottom": 758.59375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 187,
+        "width": 326,
+        "height": 680,
+        "top": 187,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1183.921875,
+        "y": 714.59375,
+        "width": 63.078125,
+        "height": 44,
+        "top": 714.59375,
+        "right": 1247,
+        "bottom": 758.59375,
+        "left": 1183.921875
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "handle",
+      "title": {
+        "x": 921,
+        "y": 567.1875,
+        "width": 211.859375,
+        "height": 96,
+        "top": 567.1875,
+        "right": 1132.859375,
+        "bottom": 663.1875,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 567.1875,
+        "width": 326,
+        "height": 96,
+        "top": 567.1875,
+        "right": 1247,
+        "bottom": 663.1875,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 244,
+        "width": 326,
+        "height": 623,
+        "top": 244,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1144.859375,
+        "y": 567.1875,
+        "width": 102.140625,
+        "height": 64,
+        "top": 567.1875,
+        "right": 1247,
+        "bottom": 631.1875,
+        "left": 1144.859375
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "pin",
+      "title": {
+        "x": 921,
+        "y": 455.1875,
+        "width": 211.859375,
+        "height": 48,
+        "top": 455.1875,
+        "right": 1132.859375,
+        "bottom": 503.1875,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 455.1875,
+        "width": 326,
+        "height": 64,
+        "top": 455.1875,
+        "right": 1247,
+        "bottom": 519.1875,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 244,
+        "width": 326,
+        "height": 623,
+        "top": 244,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1144.859375,
+        "y": 455.1875,
+        "width": 102.140625,
+        "height": 64,
+        "top": 455.1875,
+        "right": 1247,
+        "bottom": 519.1875,
+        "left": 1144.859375
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "nozzle",
+      "title": {
+        "x": 921,
+        "y": 519.1875,
+        "width": 211.859375,
+        "height": 96,
+        "top": 519.1875,
+        "right": 1132.859375,
+        "bottom": 615.1875,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 519.1875,
+        "width": 326,
+        "height": 96,
+        "top": 519.1875,
+        "right": 1247,
+        "bottom": 615.1875,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 244,
+        "width": 326,
+        "height": 623,
+        "top": 244,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1144.859375,
+        "y": 519.1875,
+        "width": 102.140625,
+        "height": 64,
+        "top": 519.1875,
+        "right": 1247,
+        "bottom": 583.1875,
+        "left": 1144.859375
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "gauge",
+      "title": {
+        "x": 921,
+        "y": 519.1875,
+        "width": 211.859375,
+        "height": 96,
+        "top": 519.1875,
+        "right": 1132.859375,
+        "bottom": 615.1875,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 519.1875,
+        "width": 326,
+        "height": 96,
+        "top": 519.1875,
+        "right": 1247,
+        "bottom": 615.1875,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 244,
+        "width": 326,
+        "height": 623,
+        "top": 244,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1144.859375,
+        "y": 519.1875,
+        "width": 102.140625,
+        "height": 64,
+        "top": 519.1875,
+        "right": 1247,
+        "bottom": 583.1875,
+        "left": 1144.859375
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "label",
+      "title": {
+        "x": 921,
+        "y": 407.1875,
+        "width": 211.859375,
+        "height": 48,
+        "top": 407.1875,
+        "right": 1132.859375,
+        "bottom": 455.1875,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 407.1875,
+        "width": 326,
+        "height": 64,
+        "top": 407.1875,
+        "right": 1247,
+        "bottom": 471.1875,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 244,
+        "width": 326,
+        "height": 623,
+        "top": 244,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1144.859375,
+        "y": 407.1875,
+        "width": 102.140625,
+        "height": 64,
+        "top": 407.1875,
+        "right": 1247,
+        "bottom": 471.1875,
+        "left": 1144.859375
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "en",
+      "scale": 2,
+      "snap": "half",
+      "id": "body",
+      "title": {
+        "x": 921,
+        "y": 455.1875,
+        "width": 211.859375,
+        "height": 48,
+        "top": 455.1875,
+        "right": 1132.859375,
+        "bottom": 503.1875,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 455.1875,
+        "width": 326,
+        "height": 64,
+        "top": 455.1875,
+        "right": 1247,
+        "bottom": 519.1875,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 244,
+        "width": 326,
+        "height": 623,
+        "top": 244,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1144.859375,
+        "y": 455.1875,
+        "width": 102.140625,
+        "height": 64,
+        "top": 455.1875,
+        "right": 1247,
+        "bottom": 519.1875,
+        "left": 1144.859375
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "handle",
+      "title": {
+        "x": 921,
+        "y": 762.59375,
+        "width": 248.328125,
+        "height": 24,
+        "top": 762.59375,
+        "right": 1169.328125,
+        "bottom": 786.59375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 762.59375,
+        "width": 326,
+        "height": 44,
+        "top": 762.59375,
+        "right": 1247,
+        "bottom": 806.59375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 187,
+        "width": 326,
+        "height": 680,
+        "top": 187,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1181.328125,
+        "y": 762.59375,
+        "width": 65.671875,
+        "height": 44,
+        "top": 762.59375,
+        "right": 1247,
+        "bottom": 806.59375,
+        "left": 1181.328125
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "pin",
+      "title": {
+        "x": 921,
+        "y": 738.59375,
+        "width": 248.328125,
+        "height": 24,
+        "top": 738.59375,
+        "right": 1169.328125,
+        "bottom": 762.59375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 738.59375,
+        "width": 326,
+        "height": 44,
+        "top": 738.59375,
+        "right": 1247,
+        "bottom": 782.59375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 187,
+        "width": 326,
+        "height": 680,
+        "top": 187,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1181.328125,
+        "y": 738.59375,
+        "width": 65.671875,
+        "height": 44,
+        "top": 738.59375,
+        "right": 1247,
+        "bottom": 782.59375,
+        "left": 1181.328125
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "nozzle",
+      "title": {
+        "x": 921,
+        "y": 738.59375,
+        "width": 248.328125,
+        "height": 24,
+        "top": 738.59375,
+        "right": 1169.328125,
+        "bottom": 762.59375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 738.59375,
+        "width": 326,
+        "height": 44,
+        "top": 738.59375,
+        "right": 1247,
+        "bottom": 782.59375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 187,
+        "width": 326,
+        "height": 680,
+        "top": 187,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1181.328125,
+        "y": 738.59375,
+        "width": 65.671875,
+        "height": 44,
+        "top": 738.59375,
+        "right": 1247,
+        "bottom": 782.59375,
+        "left": 1181.328125
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "gauge",
+      "title": {
+        "x": 921,
+        "y": 762.59375,
+        "width": 248.328125,
+        "height": 24,
+        "top": 762.59375,
+        "right": 1169.328125,
+        "bottom": 786.59375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 762.59375,
+        "width": 326,
+        "height": 44,
+        "top": 762.59375,
+        "right": 1247,
+        "bottom": 806.59375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 187,
+        "width": 326,
+        "height": 680,
+        "top": 187,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1181.328125,
+        "y": 762.59375,
+        "width": 65.671875,
+        "height": 44,
+        "top": 762.59375,
+        "right": 1247,
+        "bottom": 806.59375,
+        "left": 1181.328125
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "label",
+      "title": {
+        "x": 921,
+        "y": 690.59375,
+        "width": 248.328125,
+        "height": 24,
+        "top": 690.59375,
+        "right": 1169.328125,
+        "bottom": 714.59375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 690.59375,
+        "width": 326,
+        "height": 44,
+        "top": 690.59375,
+        "right": 1247,
+        "bottom": 734.59375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 187,
+        "width": 326,
+        "height": 680,
+        "top": 187,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1181.328125,
+        "y": 690.59375,
+        "width": 65.671875,
+        "height": 44,
+        "top": 690.59375,
+        "right": 1247,
+        "bottom": 734.59375,
+        "left": 1181.328125
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "id",
+      "scale": 1,
+      "snap": "half",
+      "id": "body",
+      "title": {
+        "x": 921,
+        "y": 714.59375,
+        "width": 248.328125,
+        "height": 24,
+        "top": 714.59375,
+        "right": 1169.328125,
+        "bottom": 738.59375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 714.59375,
+        "width": 326,
+        "height": 44,
+        "top": 714.59375,
+        "right": 1247,
+        "bottom": 758.59375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 187,
+        "width": 326,
+        "height": 680,
+        "top": 187,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1181.328125,
+        "y": 714.59375,
+        "width": 65.671875,
+        "height": 44,
+        "top": 714.59375,
+        "right": 1247,
+        "bottom": 758.59375,
+        "left": 1181.328125
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "handle",
+      "title": {
+        "x": 921,
+        "y": 551.375,
+        "width": 206.671875,
+        "height": 48,
+        "top": 551.375,
+        "right": 1127.671875,
+        "bottom": 599.375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 551.375,
+        "width": 326,
+        "height": 64,
+        "top": 551.375,
+        "right": 1247,
+        "bottom": 615.375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 244,
+        "width": 326,
+        "height": 623,
+        "top": 244,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1139.671875,
+        "y": 551.375,
+        "width": 107.328125,
+        "height": 64,
+        "top": 551.375,
+        "right": 1247,
+        "bottom": 615.375,
+        "left": 1139.671875
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "pin",
+      "title": {
+        "x": 921,
+        "y": 423.375,
+        "width": 206.671875,
+        "height": 96,
+        "top": 423.375,
+        "right": 1127.671875,
+        "bottom": 519.375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 423.375,
+        "width": 326,
+        "height": 96,
+        "top": 423.375,
+        "right": 1247,
+        "bottom": 519.375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 244,
+        "width": 326,
+        "height": 623,
+        "top": 244,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1139.671875,
+        "y": 423.375,
+        "width": 107.328125,
+        "height": 64,
+        "top": 423.375,
+        "right": 1247,
+        "bottom": 487.375,
+        "left": 1139.671875
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "nozzle",
+      "title": {
+        "x": 921,
+        "y": 471.375,
+        "width": 206.671875,
+        "height": 96,
+        "top": 471.375,
+        "right": 1127.671875,
+        "bottom": 567.375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 471.375,
+        "width": 326,
+        "height": 96,
+        "top": 471.375,
+        "right": 1247,
+        "bottom": 567.375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 244,
+        "width": 326,
+        "height": 623,
+        "top": 244,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1139.671875,
+        "y": 471.375,
+        "width": 107.328125,
+        "height": 64,
+        "top": 471.375,
+        "right": 1247,
+        "bottom": 535.375,
+        "left": 1139.671875
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "gauge",
+      "title": {
+        "x": 921,
+        "y": 567.375,
+        "width": 206.671875,
+        "height": 96,
+        "top": 567.375,
+        "right": 1127.671875,
+        "bottom": 663.375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 567.375,
+        "width": 326,
+        "height": 96,
+        "top": 567.375,
+        "right": 1247,
+        "bottom": 663.375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 244,
+        "width": 326,
+        "height": 623,
+        "top": 244,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1139.671875,
+        "y": 567.375,
+        "width": 107.328125,
+        "height": 64,
+        "top": 567.375,
+        "right": 1247,
+        "bottom": 631.375,
+        "left": 1139.671875
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "label",
+      "title": {
+        "x": 921,
+        "y": 311.375,
+        "width": 206.671875,
+        "height": 48,
+        "top": 311.375,
+        "right": 1127.671875,
+        "bottom": 359.375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 311.375,
+        "width": 326,
+        "height": 64,
+        "top": 311.375,
+        "right": 1247,
+        "bottom": 375.375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 244,
+        "width": 326,
+        "height": 623,
+        "top": 244,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1139.671875,
+        "y": 311.375,
+        "width": 107.328125,
+        "height": 64,
+        "top": 311.375,
+        "right": 1247,
+        "bottom": 375.375,
+        "left": 1139.671875
+      }
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "lang": "id",
+      "scale": 2,
+      "snap": "half",
+      "id": "body",
+      "title": {
+        "x": 921,
+        "y": 359.375,
+        "width": 206.671875,
+        "height": 48,
+        "top": 359.375,
+        "right": 1127.671875,
+        "bottom": 407.375,
+        "left": 921
+      },
+      "header": {
+        "x": 921,
+        "y": 359.375,
+        "width": 326,
+        "height": 64,
+        "top": 359.375,
+        "right": 1247,
+        "bottom": 423.375,
+        "left": 921
+      },
+      "body": {
+        "x": 921,
+        "y": 244,
+        "width": 326,
+        "height": 623,
+        "top": 244,
+        "right": 1247,
+        "bottom": 867,
+        "left": 921
+      },
+      "rotation": "block",
+      "close": {
+        "x": 1139.671875,
+        "y": 359.375,
+        "width": 107.328125,
+        "height": 64,
+        "top": 359.375,
+        "right": 1247,
+        "bottom": 423.375,
+        "left": 1139.671875
+      }
+    }
+  ],
+  "errors": []
+}

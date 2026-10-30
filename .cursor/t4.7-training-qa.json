@@ -1,0 +1,639 @@
+{
+  "date": "2026-10-30",
+  "origin": "http://localhost:4247",
+  "production": true,
+  "checks": [
+    {
+      "name": "Train uses default appearance while language changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Pull/Aim click and keyboard, pin overlay, Back preserves completion",
+      "status": "PASS"
+    },
+    {
+      "name": "Early release resets, one-second keyboard hold, six-stroke Sweep without orbit, completion storage and bilingual emergency links",
+      "status": "PASS"
+    },
+    {
+      "name": "Configure choices, scale, bracket and camera restored",
+      "status": "PASS"
+    },
+    {
+      "name": "Blur/About/exit cancel partial hold; step preserved across routes; refocus and mouse hold work",
+      "status": "PASS"
+    },
+    {
+      "name": "Skip completion and storage failure keep walkthrough usable; refresh returns to intro without clearing completion",
+      "status": "PASS"
+    },
+    {
+      "name": "Touch Pull/Aim/hold/Sweep and hit-tested mobile telephone links",
+      "status": "PASS"
+    },
+    {
+      "name": "EN/ID × 100/200% training text × five viewports × three sheet snaps; disclaimer and Skip reachable",
+      "detail": [
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "peek",
+          "scrollHeight": 139
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "half",
+          "scrollHeight": 339
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "full",
+          "scrollHeight": 509
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "peek",
+          "scrollHeight": 139
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "half",
+          "scrollHeight": 339
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "full",
+          "scrollHeight": 509
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "peek",
+          "scrollHeight": 139
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "half",
+          "scrollHeight": 339
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "full",
+          "scrollHeight": 517
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "peek",
+          "scrollHeight": 139
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "half",
+          "scrollHeight": 339
+        },
+        {
+          "width": 360,
+          "height": 800,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "full",
+          "scrollHeight": 517
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "peek",
+          "scrollHeight": 150
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "half",
+          "scrollHeight": 361
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "full",
+          "scrollHeight": 561
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "peek",
+          "scrollHeight": 150
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "half",
+          "scrollHeight": 361
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "full",
+          "scrollHeight": 561
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "peek",
+          "scrollHeight": 150
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "half",
+          "scrollHeight": 361
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "full",
+          "scrollHeight": 561
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "peek",
+          "scrollHeight": 150
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "half",
+          "scrollHeight": 361
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "full",
+          "scrollHeight": 561
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "peek",
+          "scrollHeight": 195
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "half",
+          "scrollHeight": 451
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "full",
+          "scrollHeight": 707
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "peek",
+          "scrollHeight": 195
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "half",
+          "scrollHeight": 451
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "full",
+          "scrollHeight": 707
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "peek",
+          "scrollHeight": 195
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "half",
+          "scrollHeight": 451
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "full",
+          "scrollHeight": 707
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "peek",
+          "scrollHeight": 195
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "half",
+          "scrollHeight": 451
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "full",
+          "scrollHeight": 707
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "peek",
+          "scrollHeight": 107
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "half",
+          "scrollHeight": 107
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "full",
+          "scrollHeight": 107
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "peek",
+          "scrollHeight": 107
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "half",
+          "scrollHeight": 107
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "full",
+          "scrollHeight": 107
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "peek",
+          "scrollHeight": 107
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "half",
+          "scrollHeight": 107
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "full",
+          "scrollHeight": 107
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "peek",
+          "scrollHeight": 107
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "half",
+          "scrollHeight": 107
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "full",
+          "scrollHeight": 107
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "peek",
+          "scrollHeight": 115
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "half",
+          "scrollHeight": 137
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 1,
+          "expanded": "full",
+          "scrollHeight": 137
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "peek",
+          "scrollHeight": 115
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "half",
+          "scrollHeight": 137
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "en",
+          "zoom": 2,
+          "expanded": "full",
+          "scrollHeight": 137
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "peek",
+          "scrollHeight": 115
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "half",
+          "scrollHeight": 137
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 1,
+          "expanded": "full",
+          "scrollHeight": 137
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "peek",
+          "scrollHeight": 115
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "half",
+          "scrollHeight": 137
+        },
+        {
+          "width": 390,
+          "height": 420,
+          "lang": "id",
+          "zoom": 2,
+          "expanded": "full",
+          "scrollHeight": 137
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Reduced motion: immediate focus, static highlight/frame and unanimated pin overlay",
+      "status": "PASS"
+    },
+    {
+      "name": "Model failure disables Start; Retry enables training",
+      "status": "PASS"
+    },
+    {
+      "name": "No unexpected page/console errors",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "scenario": {
+    "width": 390,
+    "height": 420,
+    "lang": "id",
+    "zoom": 2,
+    "expanded": "full"
+  },
+  "collapsedSnaps": [
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "peek",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "half",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "peek",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "half",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "peek",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "half",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "peek",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "half",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 420
+      },
+      "requested": "full",
+      "actual": "half"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 420
+      },
+      "requested": "full",
+      "actual": "half"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 420
+      },
+      "requested": "full",
+      "actual": "half"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 420
+      },
+      "requested": "full",
+      "actual": "half"
+    }
+  ]
+}

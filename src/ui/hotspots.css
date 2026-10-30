@@ -68,7 +68,7 @@
 .hotspot-info__card p {
   margin: 0;
   color: var(--text);
-  font-size: var(--fs-14);
+  font-size: var(--panel-fs-body);
   line-height: 1.5;
   overflow-wrap: anywhere;
 }
@@ -99,8 +99,8 @@
   min-width: 0;
   margin: 0;
   color: var(--accent);
-  font-size: var(--fs-16);
-  line-height: 1.5;
+  font-size: var(--panel-fs-heading);
+  line-height: 1.2;
   overflow-wrap: anywhere;
 }
 
@@ -114,13 +114,14 @@
   background: var(--accent);
   color: var(--accent-ink);
   font: inherit;
-  font-size: var(--fs-14);
+  font-size: var(--panel-fs-body);
   font-weight: 600;
   cursor: pointer;
 }
 
 .panel.is-reading-hotspot > .panel__title,
-.panel.is-reading-hotspot .config-options {
+.panel.is-reading-hotspot .config-options,
+.panel.is-reading-hotspot .viewer-tools {
   display: none;
 }
 
@@ -151,6 +152,10 @@
 
   .panel.is-reading-hotspot .config-options {
     display: flex;
+  }
+
+  .panel.is-reading-hotspot .viewer-tools {
+    display: block;
   }
 
   .panel.is-reading-hotspot .panel__body {

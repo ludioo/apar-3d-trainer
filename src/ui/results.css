@@ -3,17 +3,18 @@
   flex-direction: column;
   gap: var(--space-24);
   min-width: 0;
-  font-size: var(--fs-14);
+  font-size: var(--panel-fs-body);
   line-height: 1.5;
   padding: var(--space-4);
 }
 
 .results [hidden] { display: none; }
 .results h3, .results h4, .results p { margin: 0; overflow-wrap: anywhere; }
-.results h3, .results caption { font-size: var(--fs-16); font-weight: 600; }
-.results h4 { font-size: var(--fs-14); }
+.results h3, .results caption { font-size: var(--panel-fs-heading); font-weight: 600; line-height: 1.2; }
+.results h4 { font-size: var(--panel-fs-subheading); line-height: 1.2; }
 .results section { min-width: 0; }
 .results__muted, .results-chart__label { color: var(--text-muted); }
+.results__muted { font-size: var(--panel-fs-meta); }
 .results__error { color: var(--danger); }
 .results__correct { color: var(--success); }
 .results__score-card { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-16); }
@@ -38,8 +39,8 @@
   background: var(--surface-solid);
 }
 .results__ring strong { position: relative; }
-.results-chart { display: block; width: 100%; height: auto; margin-block: var(--space-8); overflow: visible; }
-.results-chart__label { fill: currentColor; font: var(--fs-12) var(--font-mono); }
+.results-chart { display: block; width: 100%; height: auto; margin-block: var(--space-8); overflow: visible; font-size: var(--panel-fs-meta); }
+.results-chart__label { fill: currentColor; font: var(--panel-fs-meta) var(--font-mono); }
 .results-chart__bar { fill: var(--accent); }
 .results-chart__axis { stroke: var(--border); }
 .results-chart__threshold { stroke: var(--text-muted); stroke-dasharray: 4 4; }
@@ -91,5 +92,5 @@
 }
 .results :focus-visible, .results-dialog :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .results__actions { display: flex; flex-wrap: wrap; gap: var(--space-8); }
-.results-dialog { max-height: calc(100dvh - var(--space-32)); overflow-y: auto; }
+.results-dialog { --text-muted: var(--panel-text-muted); font-size: var(--panel-fs-body); line-height: 1.5; max-height: calc(100dvh - var(--space-32)); overflow-y: auto; }
 .results-dialog p { overflow-wrap: anywhere; }

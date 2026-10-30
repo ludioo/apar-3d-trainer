@@ -17,7 +17,7 @@
 .config-options legend {
   margin-bottom: var(--space-8);
   padding: 0;
-  font-size: var(--fs-16);
+  font-size: var(--panel-fs-subheading);
   font-weight: 600;
 }
 
@@ -42,7 +42,7 @@
   background: var(--surface-solid);
   color: var(--text);
   font: inherit;
-  font-size: var(--fs-14);
+  font-size: var(--panel-fs-body);
   cursor: pointer;
 }
 
@@ -74,7 +74,7 @@
   align-items: center;
   gap: var(--space-12);
   min-height: 44px;
-  font-size: var(--fs-16);
+  font-size: var(--panel-fs-body);
   cursor: pointer;
 }
 
@@ -125,7 +125,7 @@
 .config-status {
   margin: 0;
   color: var(--text-muted);
-  font-size: var(--fs-14);
+  font-size: var(--panel-fs-meta);
   line-height: 1.5;
   overflow-wrap: anywhere;
 }
@@ -154,7 +154,7 @@
 
 .config-price p {
   margin: 0;
-  font-size: var(--fs-14);
+  font-size: var(--panel-fs-meta);
 }
 
 .config-price .config-price__value {
@@ -167,7 +167,7 @@
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  font: var(--fs-14)/1.5 var(--font-mono);
+  font: var(--panel-fs-body)/1.5 var(--font-mono);
 }
 
 .config-specs caption {
@@ -195,7 +195,7 @@
 .config-note,
 .config-source {
   margin: 0;
-  font-size: var(--fs-12);
+  font-size: var(--panel-fs-meta);
   line-height: 1.5;
   overflow-wrap: anywhere;
 }

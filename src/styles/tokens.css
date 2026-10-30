@@ -24,6 +24,11 @@
   --fs-20: 20px;
   --fs-28: 28px;
   --fs-40: 40px;
+  --panel-fs-body: var(--fs-16);
+  --panel-fs-meta: var(--fs-14);
+  --panel-fs-heading: var(--fs-20);
+  --panel-fs-subheading: var(--fs-16);
+  --panel-text-muted: #b0b7c2;
   --font-mono: ui-monospace, 'Cascadia Mono', Consolas, monospace;
 
   /* Spacing (4px grid) */

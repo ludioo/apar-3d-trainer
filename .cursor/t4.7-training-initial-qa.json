@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-30",
+  "origin": "http://localhost:4247",
+  "production": true,
+  "checks": [
+    {
+      "name": "Train uses default appearance while language changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Pull/Aim click and keyboard, pin overlay, Back preserves completion",
+      "status": "PASS"
+    },
+    {
+      "name": "Early release resets, one-second keyboard hold, six-stroke Sweep without orbit, completion storage and bilingual emergency links",
+      "status": "PASS"
+    },
+    {
+      "name": "Configure choices, scale, bracket and camera restored",
+      "status": "PASS"
+    },
+    {
+      "name": "Blur/About/exit cancel partial hold; step preserved across routes; refocus and mouse hold work",
+      "status": "PASS"
+    },
+    {
+      "name": "Skip completion and storage failure keep walkthrough usable; refresh returns to intro without clearing completion",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "failure": "locator.scrollIntoViewIfNeeded: Error: strict mode violation: locator('[href=\"tel:113\"]:visible') resolved to 2 elements:\n    1) <a href=\"tel:113\" data-emergency=\"fire\" data-i18n=\"emergency.chip.fire\">Pemadam 113</a> aka getByRole('link', { name: 'Pemadam 113' })\n    2) <a href=\"tel:113\">Pemadam Kebakaran: 113</a> aka getByRole('link', { name: 'Pemadam Kebakaran:' })\n\nCall log:\n\u001b[2m  - waiting for locator('[href=\"tel:113\"]:visible')\u001b[22m\n\n    at hit (D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t2.1-check.cjs:62:17)\n    at D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t2.1-check.cjs:201:11"
+}

@@ -30,7 +30,7 @@ apar-3d-trainer/
 │  ├─ i18n/ i18n.js en.json id.json
 │  ├─ data/ product.json hotspots.json pass-steps.json quiz.json emergency.json
 │  ├─ features/
-│  │  ├─ configurator/ configurator.js appearance.js pricing.js hotspots.js saved-configs.js
+│  │  ├─ configurator/ configurator.js appearance.js pricing.js hotspots.js overview-view.js saved-configs.js
 │  │  ├─ training/ training.js training-state.js training-gestures.js training-view.js effects.js
 │  │  ├─ quiz/ quiz.js
 │  │  ├─ results/ results.js results-data.js
@@ -41,6 +41,10 @@ apar-3d-trainer/
 ```
 
 ## Alur data
+
+T4.7 (30 Okt 2026): `features/configurator/overview-view.js` merupakan helper proyeksi murni, menerima bbox acuan6kg, kamera, ukuran viewport/area bebas, arah dan skala maksimum dari product.json; mengembalikan `{position,target}` atau null ketika ruang tidak valid. Target pusat bbox menjaga orbit berpusat pada produk. Bbox acuan dinormalisasi dari model/skala aktif sekali per load; envelope terbesar mencadangkan idle rotation. `hotspots.js` mengelola fit awal sebelum splash, enter/scene:resize serta kepemilikan otomatis/manual. Posisi/target/zoom pada controls start/end dibandingkan agar tap tidak mengunci kamera; resize selama gesture ditunda. Selected/snapshot menangguhkan overview, exit melepas listener dan tidak menyentuh kamera fitur lain. Close memakai snapshot lalu fit bila masih otomatis; load baru/Retry mereset status/arah. Semua penempatan tetap melalui cameraTween, tanpa perubahan API publik atau renderer/loop baru.
+
+T4.7 UI: token panel semantik mengatur ukuran body/meta/judul dan muted scoped; aturan mobile reader menyembunyikan viewer-tools selama kartu hotspot aktif. `results-chart.js` menghitung viewBox dari lebar aktual, margin/tinggi dari font agar14px tidak menyusut dan200% tidak bertumpuk. Observer chart di `ui/results.js` hanya aktif selama enter Results dan dilepas saat exit, memakai history/formatter hasil render yang sama, tanpa storage atau perhitungan skor baru.
 
 T4.12 (30 Okt 2026): shell index.html memuat section emergency-chrome di dalam topbar, terpisah dari subtree fitur. ui/emergency-chrome.js memasang dua tel: dan sourceUrl dari emergency.json sekali setelah initLang, sebelum viewer. Empat key emergency.chip.* mengikuti applyDom existing; About dan kontak fitur/PDF tetap memakai jalur lama. ResizeObserver topbar existing mencadangkan tinggi aktual bagi panel/sheet. placePin(anchor, occupied, width, height, top = 0) menambahkan batas atas internal opsional; hotspot-pins dan training-target meneruskan tinggi topbar desktop dalam koordinat lokal container agar seluruh hitbox terhindar dari header. Oklusi/anchor garis/kamera/model tidak berubah; tanpa API publik atau skema storage baru.
 

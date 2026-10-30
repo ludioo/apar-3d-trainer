@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-30",
+  "checked": [
+    "AGENTS.md",
+    "docs/implementation-plan.md",
+    "docs/prompts.md",
+    "docs/library-research.md",
+    "package.json",
+    "package-lock.json",
+    "vite.config.js",
+    "vercel.json",
+    "public/og-image.jpg",
+    "public/models/apar.glb",
+    "src/data/product.json",
+    "src/data/hotspots.json",
+    "src/data/pass-steps.json",
+    "src/data/quiz.json",
+    "src/data/emergency.json",
+    "src/i18n/en.json",
+    "src/i18n/id.json",
+    "src/core/analytics.js",
+    "src/core/scene.js",
+    "public/favicon.svg",
+    "public/favicon.ico"
+  ]
+}

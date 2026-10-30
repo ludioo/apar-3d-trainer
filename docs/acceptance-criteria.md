@@ -362,5 +362,23 @@ Bukti AI: check/build dan sembilan kelompok QA produksi lokal lolos, enam keadaa
 
 Batas QA AI: Computer Use menghentikan capture bilah tab native karena URL browser tidak dapat dipastikan untuk pemeriksaan policy. Chrome nyata sudah meminta SVG dengan200, namun itu bukan bukti visual bilah tab oleh AI. Acceptance visual ditutup berdasarkan konfirmasi Barkah di atas; rincian perangkat/browser pengguna tidak diberikan. HP fisik/Safari/Firefox/AT dan produksi live belum diuji AI; warning chunk besar/shader existing tetap. Browser tidak diuji ulang pada penutupan dokumentasi. Commit/push ke develop diotorisasi, tanpa lanjut task berikutnya atau mengubah main/deploy produksi.
 
+## T4.7: Framing model dan tipografi panel (30 Okt 2026)
+
+**Acceptance final diterima 30 Oktober 2026.** Barkah mengonfirmasi sudah mengecek T4.7 dan lolos, meminta task serta tiga checklist selesai, pembaruan dokumen dan commit/push ke develop. Validasi Q1–Q4, perilaku resize dan planning telah disetujui sebelum implementasi. Tiga cek inline prompt menjadi checklist task ini:
+
+- [x] Desktop: APAR memenuhi porsi kanvas yang wajar saat load, bukan mini di tengah.
+- [x] Teks panel terbaca; kontras AA; tidak overflow aneh.
+- [x] Mobile sekitar390px: model dan teks tetap nyaman; sheet tidak memotong judul penting.
+
+Cara cek:
+1. Desktop buka `http://localhost:4247/#configure`, refresh. Default6kg harus lebih besar (sekitar68% area bebas); coba1/3/6/9kg dan bracket. Buka keenam bagian dari daftar lalu Tutup. Kamera kembali, ukuran antar kapasitas tetap berbeda.
+2. Ubah ukuran jendela sebelum menggeser model: framing mengikuti ruang. Setelah orbit atau zoom, ubah ukuran lagi: kamera pilihan Anda dipertahankan. Coba Train lalu kembali Configure. Tap biasa tidak mengunci framing.
+3. HP satu Wi-Fi buka `http://192.168.100.4:4247/#configure`, refresh pada portrait sekitar390px. Default half memperlihatkan model lebih besar; coba peek/half/full. Buka kartu bagian: judul/Tutup tetap terlihat, kontrol putaran sementara disembunyikan dan kembali setelah Tutup. Deskripsi panjang digulir.
+4. Ganti EN/ID, periksa Configure, PASS/kuis dan Results; coba pembesaran teks. Font utama/kontrol16px, pendukung14px, judul20px/subjudul16px. Coba tahan Squeeze, soal pin, input nama dan ekspor PDF. Tidak ada perubahan arti konten K3.
+
+Bukti AI: check/build196 key dan self-check framing lolos; QA produksi12 kelompok/200 keadaan pada1280×900,1024×900,390×844,844×390 × EN/ID × token100/200% × reduced motion × snap tersedia. Regresi11 PASS/delapan Squeeze/tujuh kuis/delapan Results/empat PDF lolos; 11 pasangan kontras aktif minimal4,63:1, muted komposit6,99:1. Matriks168 keadaan judul hotspot terpisah dan screenshot normal produksi ada di `.cursor/t4.7-report.md`. Dua URL merespons HTTP200 pada30 Oktober2026.
+
+Batas QA AI: area landscape pendek dapat tersisa16px seperti existing; tidak diklaim nyaman untuk model. Pada peek/teks besar, deskripsi memiliki ruang scroll terbatas. Posisi snap yang tingginya sama bukan posisi visual berbeda. Teks200 adalah perubahan token, bukan zoom OS. HP fisik/Safari/Firefox/AT/Lighthouse/4G/FPS baru belum diuji AI. Rincian perangkat pemeriksaan Barkah tidak diberikan; acceptance tidak dianggap bukti pengujian perangkat tambahan oleh AI. Task dan tiga checklist ditutup berdasarkan konfirmasi pengguna. Check/build dijalankan ulang sebelum commit; browser tidak diuji ulang karena penutupan hanya dokumentasi. Commit/push ke develop diotorisasi, tanpa lanjut task berikutnya atau mengubah main/deploy produksi.
+
 ## Peta fitur → task
 F1: T0.2–T0.3 · F2: T1.3–T1.4 · F3: T1.5–T1.6 · F4: T1.6 · F5: T1.7 · F6: T2.1–T2.2 · F7: T2.3 · F8: T2.4 · F9: T2.5 · F10: T1.1 · F11: T3.2–T3.3 · F15: T3.6 · F16: L4 · Wajib riset (Draco/KTX2, <3 dtk, HP, Vercel, video, GitHub, SEO): T0.3, T3.1, T0.4, T3.4, T3.3

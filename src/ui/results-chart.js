@@ -11,18 +11,24 @@ function svgNode(tag, attributes, text) {
 export function renderHistory(chart, history, formatDate) {
   const percent = new Intl.NumberFormat(getLang(), { style: 'percent', maximumFractionDigits: 1 });
   chart.replaceChildren();
-  chart.setAttribute('viewBox', '0 0 320 180');
+  const width = chart.getBoundingClientRect().width || 320;
+  const fontSize = parseFloat(getComputedStyle(chart).fontSize);
+  const left = Math.max(48, fontSize * 4);
+  const plotWidth = Math.max(1, width - left - 4);
+  const plotHeight = Math.max(120, fontSize * 6);
+  const baseline = Math.max(24, fontSize * 1.5) + plotHeight;
+  chart.setAttribute('viewBox', `0 0 ${width} ${baseline + Math.max(36, fontSize * 2)}`);
   chart.setAttribute('role', 'img');
   chart.setAttribute('aria-labelledby', 'results-chart-title results-chart-description');
   const description = [];
   chart.append(svgNode('title', { id: 'results-chart-title' }, t('results.history')));
   for (const level of [0, 0.75, 1]) {
-    const y = 144 - level * 120;
+    const y = baseline - level * plotHeight;
     chart.append(svgNode('text', { x: 0, y: y + 4, class: 'results-chart__label' }, percent.format(level)));
-    chart.append(svgNode('line', { x1: 48, x2: 316, y1: y, y2: y,
+    chart.append(svgNode('line', { x1: left, x2: width - 4, y1: y, y2: y,
       class: level === 0.75 ? 'results-chart__threshold' : 'results-chart__axis' }));
   }
-  const step = 268 / history.length;
+  const step = plotWidth / history.length;
   history.forEach((attempt, index) => {
     const ratio = attempt.score / attempt.total;
     const text = t('results.attempt').replace('{n}', index + 1)
@@ -30,14 +36,15 @@ export function renderHistory(chart, history, formatDate) {
       .replace('{score}', attempt.score).replace('{total}', attempt.total)
       .replace('{percent}', percent.format(ratio));
     description.push(text);
-    const bar = svgNode('rect', { x: 48 + index * step + step * 0.15,
-      y: 144 - ratio * 120, width: step * 0.7, height: ratio * 120,
+    const bar = svgNode('rect', { x: left + index * step + step * 0.15,
+      y: baseline - ratio * plotHeight, width: step * 0.7, height: ratio * plotHeight,
       class: 'results-chart__bar', 'data-id': attempt.id, 'data-score': attempt.score });
     bar.append(svgNode('title', {}, text));
     chart.append(bar);
     if (index === 0 || index === history.length - 1) {
-      chart.append(svgNode('text', { x: 48 + (index + 0.5) * step, y: 164,
-        'text-anchor': 'middle', class: 'results-chart__label' }, new Intl.NumberFormat(getLang()).format(index + 1)));
+      chart.append(svgNode('text', { x: left + (index + 0.5) * step, y: baseline + Math.max(20, fontSize * 1.5),
+        'text-anchor': history.length === 1 ? 'middle' : index === 0 ? 'start' : 'end',
+        class: 'results-chart__label' }, new Intl.NumberFormat(getLang()).format(index + 1)));
     }
   });
   chart.append(svgNode('desc', { id: 'results-chart-description' }, description.join('. ')));

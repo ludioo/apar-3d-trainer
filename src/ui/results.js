@@ -34,6 +34,10 @@ export function initResultsUi(product, actions) {
   const chart = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   chart.classList.add('results-chart');
   historySection.append(chart);
+  let historyView = null;
+  const chartResize = new ResizeObserver(() => {
+    if (historyView && !historySection.hidden) renderHistory(chart, ...historyView);
+  });
   const historyHint = node('p', historySection, 'results__muted');
   const table = node('table', element, 'results__answers');
   const caption = node('caption', table);
@@ -147,7 +151,8 @@ export function initResultsUi(product, actions) {
       duration.textContent = t('quiz.duration').replace('{seconds}', new Intl.NumberFormat(lang).format(latest.durationSec));
       historyHeading.textContent = t('results.history');
       historyHint.textContent = t('results.historyHint');
-      renderHistory(chart, state.report.history, formatDate);
+      historyView = [state.report.history, formatDate];
+      renderHistory(chart, ...historyView);
       caption.textContent = t('results.answers');
       headers.forEach((th, i) => { th.textContent = t(`results.${['question', 'answer', 'outcome'][i]}`); });
       rows.replaceChildren();
@@ -197,8 +202,8 @@ export function initResultsUi(product, actions) {
     source.textContent = t('emergency.source');
   }
   return { element, input, render,
-    enter() { active = true; document.body.append(dialog); },
-    exit() { active = false; if (dialog.open) closeModal(dialog); dialog.remove(); },
+    enter() { active = true; document.body.append(dialog); chartResize.observe(chart); },
+    exit() { active = false; chartResize.disconnect(); historyView = null; if (dialog.open) closeModal(dialog); dialog.remove(); },
     closeDialog() { closeModal(dialog); },
     focusHeading() { heading.focus({ preventScroll: true }); element.parentElement.scrollTop = 0; },
   };

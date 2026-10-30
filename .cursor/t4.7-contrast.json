@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-30",
+  "results": [
+    {
+      "foreground": "text",
+      "background": "solid",
+      "ratio": 15.868757233675552
+    },
+    {
+      "foreground": "text",
+      "background": "panel over white",
+      "ratio": 12.72067629698448
+    },
+    {
+      "foreground": "panel-text-muted",
+      "background": "solid",
+      "ratio": 8.724136645875273
+    },
+    {
+      "foreground": "panel-text-muted",
+      "background": "panel over white",
+      "ratio": 6.993422144446946
+    },
+    {
+      "foreground": "accent",
+      "background": "solid",
+      "ratio": 11.210244946725082
+    },
+    {
+      "foreground": "accent",
+      "background": "panel over white",
+      "ratio": 8.986330503221522
+    },
+    {
+      "foreground": "danger",
+      "background": "solid",
+      "ratio": 5.771983612862361
+    },
+    {
+      "foreground": "danger",
+      "background": "panel over white",
+      "ratio": 4.626924090495685
+    },
+    {
+      "foreground": "success",
+      "background": "solid",
+      "ratio": 7.857682483850259
+    },
+    {
+      "foreground": "success",
+      "background": "panel over white",
+      "ratio": 6.298857172597399
+    },
+    {
+      "foreground": "accent-ink",
+      "background": "accent",
+      "ratio": 12.014709434605603
+    }
+  ]
+}

@@ -1,0 +1,2231 @@
+{
+  "date": "2026-10-30",
+  "origin": "http://localhost:4247",
+  "checks": [
+    {
+      "name": "Initial default 6kg framing is 60–75% on desktop and mobile half"
+    },
+    {
+      "name": "Capacity size differences and largest bracket overview",
+      "data": [
+        0.4576812561620434,
+        0.5772986593324242,
+        0.7040918281015768,
+        0.7887550036666855
+      ]
+    },
+    {
+      "name": "Tap, six hotspot snapshots, resize while focused and restoration"
+    },
+    {
+      "name": "Real orbit and wheel gestures disable automatic fit; reload resets ownership"
+    }
+  ],
+  "states": [
+    {
+      "tag": "default-desktop",
+      "safe": {
+        "left": 16,
+        "top": 134,
+        "right": 888,
+        "bottom": 884
+      },
+      "points": [
+        {
+          "x": 636.0206611127252,
+          "y": 592.7877750890724
+        },
+        {
+          "x": 495.1942500505389,
+          "y": 670.3466189639064
+        },
+        {
+          "x": 635.6184094381239,
+          "y": 213.5991326079404
+        },
+        {
+          "x": 477.70287438319895,
+          "y": 226.60208180763127
+        },
+        {
+          "x": 774.1691551162376,
+          "y": 631.8964425945542
+        },
+        {
+          "x": 645.1602862844893,
+          "y": 725.0789646217407
+        },
+        {
+          "x": 789.0531816626698,
+          "y": 220.09814107901448
+        },
+        {
+          "x": 645.8575902681202,
+          "y": 236.06181587122995
+        }
+      ],
+      "text": [
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "config-price__value",
+          "font": 28
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button saved-button--primary",
+          "font": 16
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "font": 20
+        },
+        {
+          "tag": "P",
+          "cls": "saved-status",
+          "font": 14
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "config-note",
+          "font": 14
+        },
+        {
+          "tag": "A",
+          "cls": "config-source",
+          "font": 14
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "hotspot-info__hint",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        }
+      ],
+      "scrollers": [
+        {
+          "cls": "panel__body",
+          "width": 326,
+          "scrollWidth": 326
+        }
+      ],
+      "root": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900,
+        "top": 0,
+        "right": 1280,
+        "bottom": 900,
+        "left": 0
+      },
+      "overflow": false,
+      "ratio": 0.6819731093517337,
+      "font": "16px"
+    },
+    {
+      "tag": "default-mobile",
+      "safe": {
+        "left": 16,
+        "top": 222,
+        "right": 374,
+        "bottom": 406
+      },
+      "points": [
+        {
+          "x": 194.00154370710754,
+          "y": 349.8268940204356
+        },
+        {
+          "x": 158.37719058912162,
+          "y": 369.7278439113295
+        },
+        {
+          "x": 193.89553948769404,
+          "y": 254.41081214178763
+        },
+        {
+          "x": 153.68500170614192,
+          "y": 257.13094225241355
+        },
+        {
+          "x": 228.79915874514344,
+          "y": 359.82235561596804
+        },
+        {
+          "x": 196.31246955195357,
+          "y": 383.96370851247775
+        },
+        {
+          "x": 232.75659543423225,
+          "y": 255.76366193576152
+        },
+        {
+          "x": 196.50194921489438,
+          "y": 259.1439460631214
+        }
+      ],
+      "text": [
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "config-price__value",
+          "font": 28
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button saved-button--primary",
+          "font": 16
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "font": 20
+        },
+        {
+          "tag": "P",
+          "cls": "saved-status",
+          "font": 14
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "config-note",
+          "font": 14
+        },
+        {
+          "tag": "A",
+          "cls": "config-source",
+          "font": 14
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "hotspot-info__hint",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        }
+      ],
+      "scrollers": [
+        {
+          "cls": "panel__body",
+          "width": 356,
+          "scrollWidth": 356
+        }
+      ],
+      "root": {
+        "x": 0,
+        "y": 206,
+        "width": 390,
+        "height": 216,
+        "top": 206,
+        "right": 390,
+        "bottom": 422,
+        "left": 0
+      },
+      "overflow": false,
+      "ratio": 0.7040918281015768,
+      "font": "16px"
+    },
+    {
+      "tag": "capacity-1kg",
+      "safe": {
+        "left": 16,
+        "top": 222,
+        "right": 374,
+        "bottom": 406
+      },
+      "points": [
+        {
+          "x": 194.32264749343253,
+          "y": 354.57054911764214
+        },
+        {
+          "x": 171.53815342407682,
+          "y": 367.8768293925354
+        },
+        {
+          "x": 194.27547230612083,
+          "y": 292.3078400345613
+        },
+        {
+          "x": 169.69718142852963,
+          "y": 298.7731188481266
+        },
+        {
+          "x": 217.2699742435265,
+          "y": 361.44422430383383
+        },
+        {
+          "x": 195.80861379389177,
+          "y": 376.5211911683773
+        },
+        {
+          "x": 218.922063929202,
+          "y": 295.6343728979062
+        },
+        {
+          "x": 195.8767597123717,
+          "y": 303.0306978739931
+        }
+      ],
+      "text": [
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "config-price__value",
+          "font": 28
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button saved-button--primary",
+          "font": 16
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "font": 20
+        },
+        {
+          "tag": "P",
+          "cls": "saved-status",
+          "font": 14
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "config-note",
+          "font": 14
+        },
+        {
+          "tag": "A",
+          "cls": "config-source",
+          "font": 14
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "hotspot-info__hint",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        }
+      ],
+      "scrollers": [
+        {
+          "cls": "panel__body",
+          "width": 356,
+          "scrollWidth": 356
+        }
+      ],
+      "root": {
+        "x": 0,
+        "y": 206,
+        "width": 390,
+        "height": 216,
+        "top": 206,
+        "right": 390,
+        "bottom": 422,
+        "left": 0
+      },
+      "overflow": false,
+      "ratio": 0.4576812561620434,
+      "font": "16px"
+    },
+    {
+      "tag": "capacity-3kg",
+      "safe": {
+        "left": 16,
+        "top": 222,
+        "right": 374,
+        "bottom": 406
+      },
+      "points": [
+        {
+          "x": 194.16325107633367,
+          "y": 352.21579137684654
+        },
+        {
+          "x": 165.19338661492998,
+          "y": 368.7691847338104
+        },
+        {
+          "x": 194.09006115720203,
+          "y": 273.8136980667729
+        },
+        {
+          "x": 162.15765877324597,
+          "y": 279.16541150896086
+        },
+        {
+          "x": 222.90899870515682,
+          "y": 360.6509542158111
+        },
+        {
+          "x": 196.04660919114156,
+          "y": 380.03665138393893
+        },
+        {
+          "x": 225.55334466447147,
+          "y": 276.52321778516284
+        },
+        {
+          "x": 196.16367628772505,
+          "y": 282.88986620271805
+        }
+      ],
+      "text": [
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "config-price__value",
+          "font": 28
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button saved-button--primary",
+          "font": 16
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "font": 20
+        },
+        {
+          "tag": "P",
+          "cls": "saved-status",
+          "font": 14
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "config-note",
+          "font": 14
+        },
+        {
+          "tag": "A",
+          "cls": "config-source",
+          "font": 14
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "hotspot-info__hint",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        }
+      ],
+      "scrollers": [
+        {
+          "cls": "panel__body",
+          "width": 356,
+          "scrollWidth": 356
+        }
+      ],
+      "root": {
+        "x": 0,
+        "y": 206,
+        "width": 390,
+        "height": 216,
+        "top": 206,
+        "right": 390,
+        "bottom": 422,
+        "left": 0
+      },
+      "overflow": false,
+      "ratio": 0.5772986593324242,
+      "font": "16px"
+    },
+    {
+      "tag": "capacity-6kg",
+      "safe": {
+        "left": 16,
+        "top": 222,
+        "right": 374,
+        "bottom": 406
+      },
+      "points": [
+        {
+          "x": 194.00154370710754,
+          "y": 349.8268940204356
+        },
+        {
+          "x": 158.37719058912162,
+          "y": 369.7278439113295
+        },
+        {
+          "x": 193.89553948769404,
+          "y": 254.41081214178763
+        },
+        {
+          "x": 153.68500170614192,
+          "y": 257.13094225241355
+        },
+        {
+          "x": 228.79915874514344,
+          "y": 359.82235561596804
+        },
+        {
+          "x": 196.31246955195357,
+          "y": 383.96370851247775
+        },
+        {
+          "x": 232.75659543423225,
+          "y": 255.76366193576152
+        },
+        {
+          "x": 196.50194921489438,
+          "y": 259.1439460631214
+        }
+      ],
+      "text": [
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "config-price__value",
+          "font": 28
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button saved-button--primary",
+          "font": 16
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "font": 20
+        },
+        {
+          "tag": "P",
+          "cls": "saved-status",
+          "font": 14
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "config-note",
+          "font": 14
+        },
+        {
+          "tag": "A",
+          "cls": "config-source",
+          "font": 14
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "hotspot-info__hint",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        }
+      ],
+      "scrollers": [
+        {
+          "cls": "panel__body",
+          "width": 356,
+          "scrollWidth": 356
+        }
+      ],
+      "root": {
+        "x": 0,
+        "y": 206,
+        "width": 390,
+        "height": 216,
+        "top": 206,
+        "right": 390,
+        "bottom": 422,
+        "left": 0
+      },
+      "overflow": false,
+      "ratio": 0.7040918281015768,
+      "font": "16px"
+    },
+    {
+      "tag": "capacity-9kg",
+      "safe": {
+        "left": 16,
+        "top": 222,
+        "right": 374,
+        "bottom": 406
+      },
+      "points": [
+        {
+          "x": 193.8975523631662,
+          "y": 348.29063350355193
+        },
+        {
+          "x": 153.77583405610034,
+          "y": 370.3749985196648
+        },
+        {
+          "x": 193.76687210166185,
+          "y": 241.57667073346354
+        },
+        {
+          "x": 147.73323389950878,
+          "y": 241.6524396152012
+        },
+        {
+          "x": 232.68072158122493,
+          "y": 359.27631654243766
+        },
+        {
+          "x": 196.498229441048,
+          "y": 386.7075914081337
+        },
+        {
+          "x": 237.66635069857327,
+          "y": 241.61389235605205
+        },
+        {
+          "x": 196.75029105896647,
+          "y": 241.71096481333007
+        }
+      ],
+      "text": [
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "config-price__value",
+          "font": 28
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button saved-button--primary",
+          "font": 16
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "font": 20
+        },
+        {
+          "tag": "P",
+          "cls": "saved-status",
+          "font": 14
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "config-note",
+          "font": 14
+        },
+        {
+          "tag": "A",
+          "cls": "config-source",
+          "font": 14
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "hotspot-info__hint",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        }
+      ],
+      "scrollers": [
+        {
+          "cls": "panel__body",
+          "width": 356,
+          "scrollWidth": 356
+        }
+      ],
+      "root": {
+        "x": 0,
+        "y": 206,
+        "width": 390,
+        "height": 216,
+        "top": 206,
+        "right": 390,
+        "bottom": 422,
+        "left": 0
+      },
+      "overflow": false,
+      "ratio": 0.7887550036666855,
+      "font": "16px"
+    },
+    {
+      "tag": "9kg-bracket",
+      "safe": {
+        "left": 16,
+        "top": 222,
+        "right": 374,
+        "bottom": 406
+      },
+      "points": [
+        {
+          "x": 193.8975523631662,
+          "y": 348.29063350355193
+        },
+        {
+          "x": 153.77583405610034,
+          "y": 370.3749985196648
+        },
+        {
+          "x": 193.76687210166185,
+          "y": 241.57667073346354
+        },
+        {
+          "x": 147.73323389950878,
+          "y": 241.6524396152012
+        },
+        {
+          "x": 232.68072158122493,
+          "y": 359.27631654243766
+        },
+        {
+          "x": 196.498229441048,
+          "y": 386.7075914081337
+        },
+        {
+          "x": 237.66635069857327,
+          "y": 241.61389235605205
+        },
+        {
+          "x": 196.75029105896647,
+          "y": 241.71096481333007
+        }
+      ],
+      "text": [
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "config-price__value",
+          "font": 28
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button saved-button--primary",
+          "font": 16
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "font": 20
+        },
+        {
+          "tag": "P",
+          "cls": "saved-status",
+          "font": 14
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "config-note",
+          "font": 14
+        },
+        {
+          "tag": "A",
+          "cls": "config-source",
+          "font": 14
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "hotspot-info__hint",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        }
+      ],
+      "scrollers": [
+        {
+          "cls": "panel__body",
+          "width": 356,
+          "scrollWidth": 356
+        }
+      ],
+      "root": {
+        "x": 0,
+        "y": 206,
+        "width": 390,
+        "height": 216,
+        "top": 206,
+        "right": 390,
+        "bottom": 422,
+        "left": 0
+      },
+      "overflow": false,
+      "ratio": 0.7887550036666855,
+      "font": "16px"
+    },
+    {
+      "tag": "close-after-resize",
+      "safe": {
+        "left": 16,
+        "top": 134,
+        "right": 888,
+        "bottom": 884
+      },
+      "points": [
+        {
+          "x": 636.0206611127252,
+          "y": 592.7877750890724
+        },
+        {
+          "x": 495.1942500505389,
+          "y": 670.3466189639064
+        },
+        {
+          "x": 635.6184094381239,
+          "y": 213.5991326079404
+        },
+        {
+          "x": 477.70287438319895,
+          "y": 226.60208180763127
+        },
+        {
+          "x": 774.1691551162376,
+          "y": 631.8964425945542
+        },
+        {
+          "x": 645.1602862844893,
+          "y": 725.0789646217407
+        },
+        {
+          "x": 789.0531816626698,
+          "y": 220.09814107901448
+        },
+        {
+          "x": 645.8575902681202,
+          "y": 236.06181587122995
+        }
+      ],
+      "text": [
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "font": 14
+        },
+        {
+          "tag": "P",
+          "cls": "config-price__value",
+          "font": 28
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-choice",
+          "font": 16
+        },
+        {
+          "tag": "LEGEND",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "config-color",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button saved-button--primary",
+          "font": 16
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "font": 20
+        },
+        {
+          "tag": "P",
+          "cls": "saved-status",
+          "font": 14
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "config-note",
+          "font": 14
+        },
+        {
+          "tag": "A",
+          "cls": "config-source",
+          "font": 14
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "saved-button",
+          "font": 16
+        },
+        {
+          "tag": "P",
+          "cls": "hotspot-info__hint",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "",
+          "font": 16
+        }
+      ],
+      "scrollers": [
+        {
+          "cls": "panel__body",
+          "width": 326,
+          "scrollWidth": 326
+        }
+      ],
+      "root": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 900,
+        "top": 0,
+        "right": 1280,
+        "bottom": 900,
+        "left": 0
+      },
+      "overflow": false,
+      "ratio": 0.6819731093517337,
+      "font": "16px"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+  ],
+  "failure": "locator.focus: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#export-spec')\u001b[22m\n\n    at key (D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.7-check.cjs:14:81)\n    at D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.7-check.cjs:123:11"
+}

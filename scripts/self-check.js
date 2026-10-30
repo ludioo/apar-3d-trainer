@@ -15,6 +15,7 @@ import './pdf-check.js';
 import './environment-check.js';
 import './seo-check.js';
 import './analytics-check.js';
+import './overview-check.js';
 import { projectPin, placePin } from '../src/ui/hotspot-pins.js';
 import { initCameraTween } from '../src/core/cameraTween.js';
 import { initAppearance } from '../src/features/configurator/appearance.js';
