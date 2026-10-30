@@ -347,5 +347,20 @@ Cara cek HP satu Wi-Fi: buka `http://192.168.100.4:4202/#train`, ulangi alur ter
 
 Bukti AI: sembilan kelompok khusus pada dev dan produksi, tujuh regresi kuis serta delapan Results lolos; check/build lolos dengan196 key. Screenshot, matriks ringkasan16 permintaan keadaan, click-through, gate antislop, kegagalan probe awal dan batas QA dicatat di `.cursor/t4.11-report.md`. URL lokal/LAN merespons HTTP200 pada30 Oktober2026. HP fisik/AT/Safari/Firefox/zoom OS/Lighthouse/4G/FPS baru belum diuji; simulasi teks memakai token100/200%, bukan pengaturan OS.
 
+## T4.14: Favicon (30 Okt 2026)
+
+Status: **selesai, acceptance Barkah diterima 30 Oktober 2026**. Barkah mengonfirmasi sudah mengecek T4.14 dan lolos, lalu meminta task/dua checklist selesai, pembaruan dokumen serta commit/push ke develop. Checklist mengikuti prompt dan ditutup berdasarkan konfirmasi pengguna serta QA existing. Validasi Q1–Q2 dan planning disetujui sebelum implementasi. SVG utama341 byte dan ICO fallback16/32/48px1.554 byte menampilkan siluet APAR kuning pada bidang gelap. Check/build dijalankan ulang sebelum commit; tidak lanjut task berikutnya atau mengubah main/deploy produksi.
+
+- [x] Favicon terlihat di tab browser; Network tidak menunjukkan favicon404.
+- [x] Tampilan desktop/mobile serta OG image tetap benar; asumsi PWA existing tidak berubah.
+
+Cara cek desktop: buka `http://localhost:4214/#configure` pada tab biasa, periksa ikon APAR kuning di sebelah judul tab. Klik Latihan/Train dan Hasil/Results, lalu reload. Jika browser masih menyimpan ikon lama, coba jendela Incognito. Untuk Network: tekan F12, pilih Network, centang Disable cache lalu reload, filter `favicon`; SVG harus200, tanpa404. Buka `/favicon.ico` pada origin yang sama bila ingin memeriksa fallback langsung.
+
+Cara cek HP satu Wi-Fi: buka `http://192.168.100.4:4214/#configure`, pindah ketiga tab dan reload. Pada desktop, ulangi melalui mode perangkat390px. Pada browser HP yang tidak menampilkan bilah tab seperti desktop, periksa ikon melalui daftar tab sesuai browser. Kedua alamat preview lokal/LAN telah merespons200 pada30 Oktober2026, bukan URL deployment baru.
+
+Bukti AI: check/build dan sembilan kelompok QA produksi lokal lolos, enam keadaan desktop1280×900/mobile390×844,12 respons favicon otomatis seluruhnya200; kedua file terverifikasi MIME/byte dan ICO berisi tiga PNG yang dapat didekode. Klik tiga tab dan toggle bahasa berhasil, tanpa overflow/pageerror/console error/request gagal. Metadata OG/Twitter/JSON-LD serta hash gambar share identik dengan baseline; manifest dan service worker tetap tidak ada. Bukti `.cursor/t4.14-production-qa.json`, screenshot dan gate antislop ada di `.cursor/t4.14-report.md`.
+
+Batas QA AI: Computer Use menghentikan capture bilah tab native karena URL browser tidak dapat dipastikan untuk pemeriksaan policy. Chrome nyata sudah meminta SVG dengan200, namun itu bukan bukti visual bilah tab oleh AI. Acceptance visual ditutup berdasarkan konfirmasi Barkah di atas; rincian perangkat/browser pengguna tidak diberikan. HP fisik/Safari/Firefox/AT dan produksi live belum diuji AI; warning chunk besar/shader existing tetap. Browser tidak diuji ulang pada penutupan dokumentasi. Commit/push ke develop diotorisasi, tanpa lanjut task berikutnya atau mengubah main/deploy produksi.
+
 ## Peta fitur → task
 F1: T0.2–T0.3 · F2: T1.3–T1.4 · F3: T1.5–T1.6 · F4: T1.6 · F5: T1.7 · F6: T2.1–T2.2 · F7: T2.3 · F8: T2.4 · F9: T2.5 · F10: T1.1 · F11: T3.2–T3.3 · F15: T3.6 · F16: L4 · Wajib riset (Draco/KTX2, <3 dtk, HP, Vercel, video, GitHub, SEO): T0.3, T3.1, T0.4, T3.4, T3.3

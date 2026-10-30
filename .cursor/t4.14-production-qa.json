@@ -1,0 +1,338 @@
+{
+  "date": "2026-10-30",
+  "origin": "http://localhost:4214",
+  "checks": [
+    {
+      "name": "Preserved SEO, OG, model, config, dependencies and existing local edits",
+      "detail": {
+        "AGENTS.md": "5f6a4ce296dac3d89c6b6d9c49876cb99f7dd3dd777a93859660455213bd50d8",
+        "docs/implementation-plan.md": "a90b5ebec56236e1ee8a8c41acd43fe0811f6dc10ddf346419491c3cbbedc3d2",
+        "docs/prompts.md": "4f158570afe262b8098749f45b4b55086006e023fe27f71a933bf8b79471ee6d",
+        "docs/library-research.md": "22c0ef7b201b7a38c7cd04162936c6327f631d72abdc15b303031342cea2ea9f",
+        "package.json": "b8f0a68cbc63af95a9a68e783a4e6a4d0f09bb323a7a16d95660bd06e886b681",
+        "package-lock.json": "1d8c1f0c4ee5dd1fad9833d4a3c0ba559814ff927816ea3f832434109f8b3098",
+        "vite.config.js": "589d12a84e3033d879caef763755746f5201e6d212da5fa21ad165a377f4cc99",
+        "vercel.json": "ab6749f0bd15a211f3458ab3f77f3686b3dff9068b74aa53e09621b436e7bf0f",
+        "public/og-image.jpg": "f11c0c65d86bbfd3d5911fb9e7a5dc50c2fccfb90c6f787a2c9341fe251421e8",
+        "public/models/apar.glb": "acae4515492613fad07a98bf8d7d4043461284a1535652d883a16b1a3a7618a2"
+      }
+    },
+    {
+      "name": "Build copies and ICO directory/PNG dimensions",
+      "detail": {
+        "sizes": [
+          16,
+          32,
+          48
+        ],
+        "svgBytes": 341,
+        "icoBytes": 1554,
+        "totalBytes": 1895
+      }
+    },
+    {
+      "name": "HTTP asset favicon.svg",
+      "detail": {
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "bytes": 341
+      }
+    },
+    {
+      "name": "HTTP asset favicon.ico",
+      "detail": {
+        "status": 200,
+        "contentType": "image/x-icon",
+        "bytes": 1554
+      }
+    },
+    {
+      "name": "HTTP asset og-image.jpg",
+      "detail": {
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 50855
+      }
+    },
+    {
+      "name": "All embedded ICO images decode with approved palette",
+      "detail": [
+        {
+          "size": 16,
+          "width": 16,
+          "height": 16,
+          "background": [
+            14,
+            16,
+            19,
+            255
+          ],
+          "body": [
+            255,
+            198,
+            41,
+            255
+          ]
+        },
+        {
+          "size": 32,
+          "width": 32,
+          "height": 32,
+          "background": [
+            14,
+            16,
+            19,
+            255
+          ],
+          "body": [
+            255,
+            198,
+            41,
+            255
+          ]
+        },
+        {
+          "size": 48,
+          "width": 48,
+          "height": 48,
+          "background": [
+            14,
+            16,
+            19,
+            255
+          ],
+          "body": [
+            255,
+            198,
+            41,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop routes, reload, bilingual and layout",
+      "detail": {
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "routes": [
+          "configure",
+          "train",
+          "results"
+        ]
+      }
+    },
+    {
+      "name": "mobile routes, reload, bilingual and layout",
+      "detail": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "routes": [
+          "configure",
+          "train",
+          "results"
+        ]
+      }
+    },
+    {
+      "name": "LAN preview reachable",
+      "detail": {
+        "url": "http://192.168.100.4:4214/",
+        "faviconStatus": 200
+      }
+    }
+  ],
+  "states": [
+    {
+      "name": "desktop",
+      "route": "configure",
+      "reload": true,
+      "links": [
+        {
+          "href": "/favicon.ico",
+          "sizes": "16x16 32x32 48x48",
+          "type": null
+        },
+        {
+          "href": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ],
+      "overflow": false,
+      "serviceWorkers": 0
+    },
+    {
+      "name": "desktop",
+      "route": "train",
+      "reload": true,
+      "links": [
+        {
+          "href": "/favicon.ico",
+          "sizes": "16x16 32x32 48x48",
+          "type": null
+        },
+        {
+          "href": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ],
+      "overflow": false,
+      "serviceWorkers": 0
+    },
+    {
+      "name": "desktop",
+      "route": "results",
+      "reload": true,
+      "links": [
+        {
+          "href": "/favicon.ico",
+          "sizes": "16x16 32x32 48x48",
+          "type": null
+        },
+        {
+          "href": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ],
+      "overflow": false,
+      "serviceWorkers": 0
+    },
+    {
+      "name": "mobile",
+      "route": "configure",
+      "reload": true,
+      "links": [
+        {
+          "href": "/favicon.ico",
+          "sizes": "16x16 32x32 48x48",
+          "type": null
+        },
+        {
+          "href": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ],
+      "overflow": false,
+      "serviceWorkers": 0
+    },
+    {
+      "name": "mobile",
+      "route": "train",
+      "reload": true,
+      "links": [
+        {
+          "href": "/favicon.ico",
+          "sizes": "16x16 32x32 48x48",
+          "type": null
+        },
+        {
+          "href": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ],
+      "overflow": false,
+      "serviceWorkers": 0
+    },
+    {
+      "name": "mobile",
+      "route": "results",
+      "reload": true,
+      "links": [
+        {
+          "href": "/favicon.ico",
+          "sizes": "16x16 32x32 48x48",
+          "type": null
+        },
+        {
+          "href": "/favicon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ],
+      "overflow": false,
+      "serviceWorkers": 0
+    }
+  ],
+  "faviconResponses": [
+    {
+      "name": "desktop",
+      "url": "http://localhost:4214/favicon.svg",
+      "status": 200
+    },
+    {
+      "name": "desktop",
+      "url": "http://localhost:4214/favicon.svg",
+      "status": 200
+    },
+    {
+      "name": "desktop",
+      "url": "http://localhost:4214/favicon.svg",
+      "status": 200
+    },
+    {
+      "name": "desktop",
+      "url": "http://localhost:4214/favicon.svg",
+      "status": 200
+    },
+    {
+      "name": "desktop",
+      "url": "http://localhost:4214/favicon.svg",
+      "status": 200
+    },
+    {
+      "name": "desktop",
+      "url": "http://localhost:4214/favicon.svg",
+      "status": 200
+    },
+    {
+      "name": "mobile",
+      "url": "http://localhost:4214/favicon.svg",
+      "status": 200
+    },
+    {
+      "name": "mobile",
+      "url": "http://localhost:4214/favicon.svg",
+      "status": 200
+    },
+    {
+      "name": "mobile",
+      "url": "http://localhost:4214/favicon.svg",
+      "status": 200
+    },
+    {
+      "name": "mobile",
+      "url": "http://localhost:4214/favicon.svg",
+      "status": 200
+    },
+    {
+      "name": "mobile",
+      "url": "http://localhost:4214/favicon.svg",
+      "status": 200
+    },
+    {
+      "name": "mobile",
+      "url": "http://localhost:4214/favicon.svg",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "name": "desktop",
+      "warning": "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+    },
+    {
+      "name": "mobile",
+      "warning": "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+    }
+  ]
+}
