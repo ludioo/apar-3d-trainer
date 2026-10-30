@@ -16,6 +16,9 @@
 .training button { min-width: 44px; min-height: 44px; padding: var(--space-8) var(--space-12); border: 1px solid var(--text-muted); border-radius: var(--radius-8); background: var(--surface-solid); color: var(--text); font: inherit; font-size: var(--fs-14); cursor: pointer; overflow-wrap: anywhere; touch-action: manipulation; }
 .training [data-training='start'], .training [data-training='next'], .training [data-training='restart'], .training [data-training='quiz'] { background: var(--accent); color: var(--accent-ink); font-weight: 600; }
 .training button:disabled { cursor: default; opacity: 0.55; }
+.training [data-training='interact'][data-interaction='hold'] { display: inline-flex; align-items: center; gap: var(--space-8); touch-action: none; user-select: none; }
+.training__hold-ring { --hold-progress: 0deg; position: relative; flex: 0 0 var(--space-24); width: var(--space-24); height: var(--space-24); border-radius: var(--radius-pill); background: conic-gradient(var(--accent) var(--hold-progress), var(--surface-solid) 0); box-shadow: inset 0 0 0 1px var(--text-muted); }
+.training__hold-ring::after { content: ''; position: absolute; inset: var(--space-4); border-radius: inherit; background: var(--surface-solid); }
 .training [data-training='start']:focus-visible,
 .training [data-training='next']:focus-visible,
 .training [data-training='restart']:focus-visible,

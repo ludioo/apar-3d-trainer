@@ -290,5 +290,19 @@ Cara cek: buka desktop `http://localhost:4193/#train` atau HP satu Wi-Fi `http:/
 
 Bukti dan batas pemeriksaan ada di `.cursor/t4.3-report.md`. Check/build dijalankan ulang sebelum commit. Commit/push ke develop diotorisasi oleh acceptance di atas; T4.4 tetap tidak dimulai, main dan deploy produksi tidak diotorisasi.
 
+## T4.8 — Squeeze press-and-hold (30 Okt 2026)
+
+Status: **selesai — acceptance Barkah diterima 30 Oktober 2026**. Barkah mengonfirmasi sudah mengecek T4.8 dan lolos, lalu meminta pembaruan dokumen serta commit/push ke develop. Lima checklist ditutup berdasarkan konfirmasi tersebut dan QA existing. Validasi dan planning disetujui sebelum implementasi. Bug timer awal belum tereproduksi pada baseline lokal; celah ring panel sudah diperbaiki, tanpa mengklaim akar masalah timer ditemukan. Rincian perangkat/browser pengguna tidak diberikan; batas QA AI tetap berlaku.
+
+- [x] Desktop mouse: tahan tombol Squeeze satu detik, ring pada tombol terisi penuh, status berhasil dan Next/Lanjut aktif tanpa Skip; perpindahan tetap manual.
+- [x] Mobile touch sekitar 390px: lepas terlalu cepat membatalkan/reset ring, bisa mencoba lagi sampai berhasil; perubahan progres tidak menggeser tombol.
+- [x] Keyboard: Tab menuju tombol dan tahan Space maupun Enter menyelesaikan hold; keyup lebih awal membatalkan, key repeat tidak mereset/menggandakan timer.
+- [x] Interupsi pointercancel/kehilangan capture/fokus, About, halaman tersembunyi dan keluar Train membatalkan hold parsial; kembali memerlukan input baru.
+- [x] Skip tetap tersedia dan menampilkan status dilewati tanpa ring penuh; Back menjaga hasil, Ulangi mereset sesi; Pull/Aim/Sweep, semprotan, EN/ID, tiga snap, teks besar dan reduced motion tetap berjalan.
+
+Cara cek: desktop buka `http://localhost:4198/#train`; HP satu Wi-Fi buka `http://192.168.100.4:4198/#train`. Mulai latihan, gunakan aksi panel untuk Pull/Cabut dan Aim/Arahkan lalu Next/Lanjut, sampai langkah 3/4 Squeeze/Tekan. Tahan tombol **Tahan selama 1 detik / Hold for 1 second**, lepas lebih awal lalu ulangi sampai ring penuh. Tekan Lanjut secara manual untuk masuk Sweep. Ulangi latihan untuk pemeriksaan keyboard dan Skip; coba Tentang/About atau pindah tab di tengah hold, lalu kembali. Pada HP coba sheet 25/50/75% dan gulir isi untuk mencapai tombol. Refresh selalu memulai sesi dari intro.
+
+Bukti AI: delapan kelompok khusus produksi, 11 regresi PASS, delapan efek, empat smoke normal dev/produksi, self-check 189 key dan build lolos. Detail, batas perangkat/browser, warning dan bukti awal yang gagal ada di `.cursor/t4.8-report.md`. Check/build dijalankan ulang sebelum commit; browser tidak diuji ulang karena penutupan ini hanya mengubah dokumentasi. Checklist ditutup berdasarkan acceptance Barkah; rincian perangkat pemeriksaannya tidak dicatat. Commit/push ke develop diotorisasi, tanpa lanjut task lain atau mengubah main/deploy produksi.
+
 ## Peta fitur → task
 F1: T0.2–T0.3 · F2: T1.3–T1.4 · F3: T1.5–T1.6 · F4: T1.6 · F5: T1.7 · F6: T2.1–T2.2 · F7: T2.3 · F8: T2.4 · F9: T2.5 · F10: T1.1 · F11: T3.2–T3.3 · F15: T3.6 · F16: L4 · Wajib riset (Draco/KTX2, <3 dtk, HP, Vercel, video, GitHub, SEO): T0.3, T3.1, T0.4, T3.4, T3.3

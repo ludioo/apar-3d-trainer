@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-30",
+  "origin": "http://localhost:4198",
+  "stage": "production",
+  "checks": [
+    {
+      "name": "Mouse partial ring/spray, unchanged button geometry, release outside, retry, persistent full ring and manual Next",
+      "detail": {
+        "before": {
+          "panel": 0,
+          "target": 0,
+          "box": [
+            1062.953125,
+            264,
+            168.390625,
+            44
+          ],
+          "size": [
+            24,
+            24
+          ],
+          "touchAction": "none",
+          "userSelect": "none",
+          "label": "Hold for 1 second",
+          "children": 2,
+          "decorative": "true",
+          "spray": false,
+          "status": "Interaction complete. Use the button below to continue."
+        },
+        "partial": {
+          "panel": 106.95600000013404,
+          "target": 106.95600000013404,
+          "box": [
+            1062.953125,
+            264,
+            168.390625,
+            44
+          ],
+          "size": [
+            24,
+            24
+          ],
+          "touchAction": "none",
+          "userSelect": "none",
+          "label": "Hold for 1 second",
+          "children": 2,
+          "decorative": "true",
+          "spray": true,
+          "status": "Interaction complete. Use the button below to continue."
+        },
+        "success": {
+          "panel": 360,
+          "target": 360,
+          "box": [
+            1062.953125,
+            243,
+            168.390625,
+            44
+          ],
+          "size": [
+            24,
+            24
+          ],
+          "touchAction": "none",
+          "userSelect": "none",
+          "label": "Hold for 1 second",
+          "children": 2,
+          "decorative": "true",
+          "spray": false,
+          "status": "Interaction complete. Use the button below to continue."
+        }
+      }
+    },
+    {
+      "name": "Tab/focus, Space and Enter early release, repeat and completion"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+  ],
+  "screenshots": [
+    "t4.8-production-desktop-holding.png",
+    "t4.8-production-desktop-success.png"
+  ],
+  "scenario": "lostpointercapture",
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at incomplete (D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.8-check.cjs:59:10)\n    at async D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.8-check.cjs:146:36"
+}

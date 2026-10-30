@@ -39,6 +39,8 @@ Implementasi T2.2 (diterima Barkah 28 Okt 2026): api/garis muncul setelah Aim be
 
 About/blur/halaman tersembunyi menjeda api serta menghentikan semprotan dan pulse target. Kembali ke halaman/menutup About melanjutkan api sesuai progres; semprotan menunggu input baru. Keluar Train menyembunyikan seluruh efek. Reduced motion memakai api/semprotan statis, perubahan ukuran/arah langsung mengikuti input, tanpa loop partikel atau transisi padam. Efek prosedural tetap ilustrasi pada model/nozzle yang tidak bergerak. Pin terlepas tetap overlay T2.1. Kartu akhir memuat 113/112 + sumber Komdigi, tautan telepon, Ulangi latihan dan informasi kuis menyusul; tombol kuis diaktifkan saat T2.3 diimplementasikan. Status trainingDone menandai alur selesai termasuk Skip, bukan penilaian kompetensi.
 
+T4.8 (acceptance Barkah diterima 30 Okt 2026): tombol Squeeze pada panel mempunyai ring 24px di samping label, berbagi progres satu detik dengan target bernomor 3D. Mouse/touch atau tahan Space/Enter pada tombol menjalankan hold; lepas lebih awal, pointercancel/kehilangan capture/fokus, About, halaman tersembunyi atau keluar Train mengembalikan progres parsial ke nol. Sukses mempertahankan kedua ring penuh dan mengaktifkan Next/Lanjut manual; Back dan ganti bahasa menjaga keberhasilan. Skip tetap tersedia, menampilkan status dilewati tanpa ring penuh. Tombol/label/ring tidak diganti selama hold; area tombol menahan gesture scroll/seleksi teks, sementara panel lainnya tetap dapat digulir. Reduced motion mempertahankan progres fungsional dan durasi satu detik. Tidak ada perubahan konten K3 atau penyimpanan.
+
 ## UF3 — Quiz (F7)
 1. 8 soal, satu per layar, progress "3/8".
 2. Tipe A pilihan ganda; Tipe B "klik hotspot yang benar di 3D" (hotspot tampil tanpa label).

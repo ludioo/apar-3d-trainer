@@ -41,6 +41,9 @@ apar-3d-trainer/
 ```
 
 ## Alur data
+
+T4.8 (30 Okt 2026): fitur training meneruskan satu progres hold ke target 3D dan `ui/training.js` melalui metode internal `progress(value)`. Span label dan ring 24px dibuat sekali; render bahasa/status tidak mengganti tombol atau ring. Tampilan penuh berasal dari status sesi `done`, bukan timer atau state keberhasilan kedua; `skipped` tetap nol. Pembaruan visual saat sinkronisasi tidak mengubah emisi Sweep. Gesture/timer existing tetap menjadi sumber input dan semprotan hold, tanpa loop, dependency, data atau API publik baru.
+
 1. `main.js` load i18n (bahasa dari storage → navigator.language → `en`) lalu buat scene, mulai load model.
 2. `loader.js` emit `load:progress`, `load:done`(gltf), `load:error`.
 3. Model Poly Haven diperlakukan sebagai **satu mesh**. Bagian (pin, handle, nozzle, gauge, label, body) didefinisikan sebagai **hotspot posisi** di `hotspots.json` (koordinat lokal model + radius klik). Klik → raycast ke model → titik kena dibandingkan ke hotspot terdekat dalam radius. T1.5 memakai tint selektif pada material `bodyMaterialName` lewat `onBeforeCompile`, menggantikan multiplier global atas persetujuan Barkah: atlas sudah merah dan juga mencakup bagian noncat. `appearance.js` menetralkan hue hanya pada cat tabung/alas dengan mask dominasi merah, tinggi lokal, dan pengecualian UV label/strap/nozzle/selang. Seluruh map dan properti PBR asli tetap; merah melewati recolor untuk mengembalikan tampilan asli. Mask dikalibrasi khusus `apar.glb`, perlu diperiksa ulang bila model/atlas diganti.

@@ -1,0 +1,21 @@
+before {
+  events: [
+    { type: 'pointermove', pointerId: 1, capture: false },
+    { type: 'pointerdown', pointerId: 1, capture: true },
+    { type: 'gotpointercapture', pointerId: 1, capture: true },
+    { type: 'pointermove', pointerId: 1, capture: true }
+  ],
+  capture1: true
+}
+release { id: 1, capture: false }
+after {
+  events: [
+    { type: 'pointermove', pointerId: 1, capture: false },
+    { type: 'pointerdown', pointerId: 1, capture: true },
+    { type: 'gotpointercapture', pointerId: 1, capture: true },
+    { type: 'pointermove', pointerId: 1, capture: true },
+    { type: 'lostpointercapture', pointerId: 1, capture: false }
+  ],
+  nextDisabled: true,
+  ring: '--hold-progress: 0deg;'
+}

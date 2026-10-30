@@ -73,6 +73,11 @@ export function initTrainingUi(steps, actions) {
   const refocus = button('refocus');
   const interact = button('interact');
   interact.setAttribute('aria-describedby', 'training-hint');
+  const interactLabel = document.createElement('span');
+  const holdRing = document.createElement('span');
+  holdRing.className = 'training__hold-ring';
+  holdRing.setAttribute('aria-hidden', 'true');
+  interact.append(interactLabel, holdRing);
   const skip = button('skip');
   const contacts = document.createElement('section');
   contacts.className = 'training__contacts';
@@ -151,7 +156,9 @@ export function initTrainingUi(steps, actions) {
     refocus.textContent = t('training.refocus');
     interact.hidden = !isStep || step.interaction === 'drag';
     interact.disabled = !ready || !!done;
-    interact.textContent = t(step.interaction === 'hold' ? 'training.holdAction' : 'training.clickAction');
+    interact.dataset.interaction = step.interaction;
+    holdRing.hidden = step.interaction !== 'hold';
+    interactLabel.textContent = t(step.interaction === 'hold' ? 'training.holdAction' : 'training.clickAction');
     skip.hidden = !isStep;
     skip.disabled = !ready || !!done;
     skip.textContent = t('training.skip');
@@ -178,6 +185,7 @@ export function initTrainingUi(steps, actions) {
     if (!sweepArea.hidden) sweepCount.scrollIntoView({ block: 'nearest' });
   }
   return { element, sweepInput, interact, render, focusHeading,
+    progress(value) { holdRing.style.setProperty('--hold-progress', `${value * 360}deg`); },
     enter() { navObserver.observe(nav); },
     exit() { navObserver.disconnect(); },
   };

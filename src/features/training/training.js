@@ -57,11 +57,18 @@ export function initTraining(context) {
     return active && !!model && session.phase === 'steps' && !session.status[session.index] &&
       !document.hidden && !document.querySelector('dialog[open]');
   }
+  function updateHoldProgress(value) {
+    const completed = currentStep().interaction === 'hold' && session.status[session.index] === 'done';
+    const visible = completed ? 1 : value;
+    target.progress(visible);
+    ui.progress(visible);
+  }
   function sync() {
     ui.render({ session, ready: !!model, sweep, saveFailed });
     const step = currentStep();
     const inStep = session.phase === 'steps';
     const done = !!session.status[session.index];
+    if (done || step.interaction !== 'hold') updateHoldProgress(0);
     target.setStep(inStep ? { ...currentHotspot(), interaction: step.interaction } : null, session.index,
       `${step.title[getLang()]}. ${step.instruction[getLang()]} ${t(`training.hint.${step.interaction}`)}`,
       done, inStep && step.id === 'pull' && session.status[0] === 'done');
@@ -150,7 +157,7 @@ export function initTraining(context) {
     gestures = initTrainingGestures({ targets: [target.button, ui.interact], sweepInput: ui.sweepInput, sweep,
       canHold: () => canInteract() && currentStep().interaction === 'hold',
       canSweep: () => canInteract() && currentStep().interaction === 'drag',
-      progress(value) { target.progress(value); effects.setSpray(value > 0 && value < 1); },
+      progress(value) { updateHoldProgress(value); effects.setSpray(value > 0 && value < 1); },
       held: () => complete(),
       swept(count) {
         if (count >= SWEEP_STROKES) complete(); else sync();
