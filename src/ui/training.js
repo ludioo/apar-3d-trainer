@@ -24,6 +24,9 @@ export function initTrainingUi(steps, actions) {
   const status = document.createElement('p');
   status.className = 'training__status';
   status.setAttribute('role', 'status');
+  const feedback = document.createElement('div');
+  feedback.className = 'training__feedback';
+  feedback.append(hint, status);
   const sweepArea = document.createElement('div');
   sweepArea.className = 'training__sweep';
   const sweepLabel = document.createElement('label');
@@ -97,7 +100,7 @@ export function initTrainingUi(steps, actions) {
   storageError.setAttribute('role', 'status');
   const disclaimer = document.createElement('p');
   disclaimer.className = 'training__disclaimer';
-  body.append(heading, instruction, sweepArea, sweepCount, hint, status, controls, contacts, storageError, disclaimer);
+  body.append(heading, instruction, sweepArea, sweepCount, feedback, controls, contacts, storageError, disclaimer);
   const nav = document.createElement('div');
   nav.className = 'training__nav';
   const back = button('back', nav);
@@ -124,9 +127,10 @@ export function initTrainingUi(steps, actions) {
     });
     heading.textContent = isStep ? `${session.index + 1}/4 · ${step.title[lang]}` : t(isComplete ? 'training.complete' : 'training.intro');
     instruction.textContent = isStep ? step.instruction[lang] : t(isComplete ? 'training.completeNote' : 'training.introNote');
-    hint.hidden = !isStep || !!done;
+    feedback.hidden = !isStep;
+    hint.classList.toggle('is-inactive', !!done);
     hint.textContent = t(`training.hint.${step.interaction}`);
-    status.hidden = !isStep || !done;
+    status.classList.toggle('is-inactive', !done);
     status.textContent = t(done === 'skipped' ? 'training.skipped' : 'training.success');
     sweepArea.hidden = !isStep || step.interaction !== 'drag';
     sweepArea.dataset.target = done ? '' : sweep.target;
@@ -141,7 +145,7 @@ export function initTrainingUi(steps, actions) {
       .replace('{n}', number.format(sweep.cycles));
     sweepInput.setAttribute('aria-valuetext', done ? valueText : `${valueText} ${goalText}`);
     if (sweepGoal.textContent !== goalText) sweepGoal.textContent = goalText;
-    sweepGoal.hidden = !!done;
+    sweepGoal.classList.toggle('is-inactive', !!done);
     sweepCount.hidden = sweepArea.hidden;
     const cycleText = t('training.cycles').replace('{n}', number.format(sweep.cycles));
     if (sweepCount.textContent !== cycleText) sweepCount.textContent = cycleText;

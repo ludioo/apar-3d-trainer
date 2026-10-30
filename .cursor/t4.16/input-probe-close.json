@@ -1,0 +1,54 @@
+{
+  "origin": "http://localhost:4276",
+  "checks": [
+    "Chrome accessibility tree excludes inactive hint/status; active status retains role=status; action target geometry unchanged"
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "before": [
+        {
+          "selector": "#training-hint",
+          "ignored": false,
+          "role": "paragraph"
+        },
+        {
+          "selector": ".training__status",
+          "ignored": true,
+          "role": "none",
+          "reasons": [
+            {
+              "name": "notVisible",
+              "value": {
+                "type": "boolean",
+                "value": true
+              }
+            }
+          ]
+        }
+      ],
+      "after": [
+        {
+          "selector": "#training-hint",
+          "ignored": true,
+          "role": "none",
+          "reasons": [
+            {
+              "name": "notVisible",
+              "value": {
+                "type": "boolean",
+                "value": true
+              }
+            }
+          ]
+        },
+        {
+          "selector": ".training__status",
+          "ignored": false,
+          "role": "status"
+        }
+      ]
+    }
+  ],
+  "failure": "AssertionError [ERR_ASSERTION]: false == true\n    at D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.16-input.cjs:37:5"
+}

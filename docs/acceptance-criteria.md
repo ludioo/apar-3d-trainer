@@ -406,5 +406,19 @@ Cara cek HP satu Wi-Fi: buka `http://192.168.100.4:4269/#configure`, pilih Tenta
 
 Bukti AI: check196 key/build,12 kombinasi layar/bahasa/teks,36 sampel scroll,120 klik/tap seluruh10 tautan,1080 hit-test, keyboard/hash serta regresi Simpan/Hapus EN/ID lolos. Wheel desktop dan swipe sentuh emulasi dengan motion normal juga lolos. Screenshot, rincian/gate antislop dan kegagalan probe awal ada di `.cursor/t4.19-report.md`. HP fisik/AT/Safari/Firefox/zoom OS/performa baru belum diuji AI; teks200% disimulasikan lewat ukuran font computed. Acceptance pengguna tidak dianggap bukti perangkat tambahan oleh AI. Check/build dijalankan ulang sebelum commit; browser tidak diuji ulang karena penutupan hanya mengubah dokumentasi. Commit/push ke develop diotorisasi, tanpa lanjut task berikutnya atau mengubah main/deploy produksi.
 
+## T4.16: Tinggi stabil Train/Kuis (30 Okt 2026)
+
+Status: **selesai, acceptance Barkah diterima 30 Oktober 2026**. Barkah mengonfirmasi sudah mengecek T4.16 dan lolos, lalu meminta task/tiga checklist selesai, pembaruan dokumen serta commit/push ke develop. Validasi Q1–Q3, kemudian planning disetujui sebelum implementasi. Checklist ditutup berdasarkan konfirmasi pengguna dan bukti QA existing; rincian perangkat/browser pemeriksaan pengguna tidak diberikan sehingga batas QA AI tetap berlaku.
+
+- [x] Ganti langkah PASS → chrome/tombol tidak meloncat jauh.
+- [x] Ganti soal kuis → posisi progress/Next stabil.
+- [x] Mobile ~390 px: tidak ada "jump" yang membuat salah tap.
+
+Cara cek desktop: buka `http://localhost:4276/#train`, pilih ID dan Mulai latihan. Jalankan Cabut/Arahkan, tahan target3 selama satu detik pada Tekan (coba juga lepas awal), lalu slider Sapukan tiga siklus. Perhatikan posisi Kembali/Lanjut/Selesai saat instruksi berubah dan status muncul; coba Kembali dan Lewati interaksi. Setelah Selesai, pilih Ikuti kuis; jawab delapan soal termasuk benar/salah dan pin3D, lalu Berikutnya secara manual. Progress setiap soal mulai dari posisi yang sama, footer tetap di bawah, feedback sesudah opsi terpilih. Konten panjang/sumber tetap bisa digulir melewati footer. Coba EN dan teks diperbesar.
+
+Cara cek HP satu Wi-Fi: buka `http://192.168.100.4:4276/#train` pada lebar sekitar390px. Ulangi PASS dan kuis pada sheet25/50/75%, EN/ID dan teks besar. Gulir untuk menemukan kontrol/sumber ketika tidak muat. Setelah status muncul, tap Lanjut/Berikutnya sekali: hanya maju satu langkah/soal dan tidak memilih kontrol lain. Sheet tidak otomatis membesar; intro/ringkasan mengikuti kebutuhan konten, opsi di bawah feedback boleh bergeser sesuai T4.3. URL ini preview lokal, bukan deployment baru.
+
+Bukti AI: check196 key/build lolos; matriks dev dan produksi masing-masing16 keadaan/192 transisi dengan drift footer0px (batas2px), baseline desktop PASS195px/kuis205px menjadi0px. Regresi T4.3 produksi40 keadaan, delapan kelompok Squeeze, empat kelompok input/AX serta delapan screenshot produksi lolos. Rincian, perintah ulang, probe gagal dan gate antislop di `.cursor/t4.16-report.md`. HP fisik/AT/Safari/Firefox/zoom OS/performa baru belum diuji. Acceptance pengguna tidak dianggap bukti perangkat tambahan oleh AI. Check196 key/build dijalankan ulang sebelum commit; browser tidak diulang karena penutupan hanya dokumentasi. Commit/push ke develop diotorisasi; tidak lanjut task berikutnya atau mengubah main/deploy produksi.
+
 ## Peta fitur → task
 F1: T0.2–T0.3 · F2: T1.3–T1.4 · F3: T1.5–T1.6 · F4: T1.6 · F5: T1.7 · F6: T2.1–T2.2 · F7: T2.3 · F8: T2.4 · F9: T2.5 · F10: T1.1 · F11: T3.2–T3.3 · F15: T3.6 · F16: L4 · Wajib riset (Draco/KTX2, <3 dtk, HP, Vercel, video, GitHub, SEO): T0.3, T3.1, T0.4, T3.4, T3.3

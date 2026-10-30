@@ -1,0 +1,12 @@
+{
+  "origin": "http://localhost:5276",
+  "stage": "dev",
+  "states": [],
+  "checks": [],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+  ],
+  "screenshots": [],
+  "failure": "locator.evaluate: Error: strict mode violation: locator('.quiz__body > .quiz__muted') resolved to 3 elements:\n    1) <p class=\"quiz__hint quiz__muted\">Choose one answer. Your first answer is final.</p> aka getByText('Choose one answer. Your first')\n    2) <p hidden=\"\" role=\"status\" class=\"quiz__muted\">Result saved in this browser.</p> aka getByText('Result saved in this browser.')\n    3) <p class=\"quiz__muted\">Demo for portfolio purposes. Based on USFA guidan…</p> aka getByLabel('Train').getByText('Demo for portfolio purposes.')\n\nCall log:\n\u001b[2m  - waiting for locator('.quiz__body > .quiz__muted')\u001b[22m\n\n    at expose (D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.16-check.cjs:38:17)\n    at D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t4.16-check.cjs:148:25"
+}

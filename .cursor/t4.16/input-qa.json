@@ -1,0 +1,58 @@
+{
+  "origin": "http://localhost:4276",
+  "checks": [
+    "Chrome accessibility tree excludes inactive hint/status; active status retains role=status; action target geometry unchanged",
+    "Normal motion: language change and About Escape/focus return preserve completed step; route away/back keeps session",
+    "Normal motion: wheel and CDP touch swipe scroll existing PASS root while footer stays fixed; document stays at scrollY=0",
+    "One native tap on Next advances exactly one step; next interaction remains required"
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "before": [
+        {
+          "selector": "#training-hint",
+          "ignored": false,
+          "role": "paragraph"
+        },
+        {
+          "selector": ".training__status",
+          "ignored": true,
+          "role": "none",
+          "reasons": [
+            {
+              "name": "notVisible",
+              "value": {
+                "type": "boolean",
+                "value": true
+              }
+            }
+          ]
+        }
+      ],
+      "after": [
+        {
+          "selector": "#training-hint",
+          "ignored": true,
+          "role": "none",
+          "reasons": [
+            {
+              "name": "notVisible",
+              "value": {
+                "type": "boolean",
+                "value": true
+              }
+            }
+          ]
+        },
+        {
+          "selector": ".training__status",
+          "ignored": false,
+          "role": "status"
+        }
+      ]
+    }
+  ],
+  "wheelScroll": 137,
+  "touchScroll": 137
+}

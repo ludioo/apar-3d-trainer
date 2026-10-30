@@ -1,0 +1,3139 @@
+{
+  "origin": "http://localhost:4276",
+  "stage": "production",
+  "checks": [
+    {
+      "name": "390x844: no feedback scroll jump, heading fixed, feedback directly after selected answer",
+      "detail": {
+        "before": {
+          "scroll": 0,
+          "heading": {
+            "x": 17,
+            "y": 508,
+            "width": 356,
+            "height": 24,
+            "top": 508,
+            "right": 373,
+            "bottom": 532,
+            "left": 17
+          },
+          "root": {
+            "x": 17,
+            "y": 467,
+            "width": 356,
+            "height": 361,
+            "top": 467,
+            "right": 373,
+            "bottom": 828,
+            "left": 17
+          },
+          "nav": {
+            "x": 17,
+            "y": 776,
+            "width": 356,
+            "height": 52,
+            "top": 776,
+            "right": 373,
+            "bottom": 828,
+            "left": 17
+          },
+          "snap": "half"
+        },
+        "after": {
+          "scroll": 0,
+          "heading": {
+            "x": 17,
+            "y": 508,
+            "width": 356,
+            "height": 24,
+            "top": 508,
+            "right": 373,
+            "bottom": 532,
+            "left": 17
+          },
+          "root": {
+            "x": 17,
+            "y": 467,
+            "width": 356,
+            "height": 361,
+            "top": 467,
+            "right": 373,
+            "bottom": 828,
+            "left": 17
+          },
+          "nav": {
+            "x": 17,
+            "y": 776,
+            "width": 356,
+            "height": 52,
+            "top": 776,
+            "right": 373,
+            "bottom": 828,
+            "left": 17
+          },
+          "snap": "half"
+        }
+      }
+    },
+    {
+      "name": "Complete eight questions via panel including six choices q2/q5; score, emergency and restart flow preserved"
+    },
+    {
+      "name": "40 layout states x eight questions: every option/source/footer reachable, no answer-induced scroll, no page overflow",
+      "detail": {
+        "states": 40,
+        "tallOptions": 268
+      }
+    },
+    {
+      "name": "Keyboard Enter/Space, focus feedback -> Tab -> Next; q2 keyboard pin and q5 native touch pin, score 8/8"
+    }
+  ],
+  "states": [
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "en",
+      "scale": 1,
+      "position": "peek"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "en",
+      "scale": 1,
+      "position": "half"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "en",
+      "scale": 1,
+      "position": "full"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "en",
+      "scale": 2,
+      "position": "half"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "en",
+      "scale": 2,
+      "position": "full"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "id",
+      "scale": 1,
+      "position": "peek"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "id",
+      "scale": 1,
+      "position": "half"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "id",
+      "scale": 1,
+      "position": "full"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "id",
+      "scale": 2,
+      "position": "half"
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "lang": "id",
+      "scale": 2,
+      "position": "full"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "scale": 1,
+      "position": "peek"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "scale": 1,
+      "position": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "scale": 1,
+      "position": "full"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "scale": 2,
+      "position": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "scale": 2,
+      "position": "full"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "id",
+      "scale": 1,
+      "position": "peek"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "id",
+      "scale": 1,
+      "position": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "id",
+      "scale": 1,
+      "position": "full"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "id",
+      "scale": 2,
+      "position": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "id",
+      "scale": 2,
+      "position": "full"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "scale": 1,
+      "position": "peek"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "scale": 1,
+      "position": "half"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "scale": 1,
+      "position": "full"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "scale": 2,
+      "position": "half"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "scale": 2,
+      "position": "full"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "id",
+      "scale": 1,
+      "position": "peek"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "id",
+      "scale": 1,
+      "position": "half"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "id",
+      "scale": 1,
+      "position": "full"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "id",
+      "scale": 2,
+      "position": "half"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "lang": "id",
+      "scale": 2,
+      "position": "full"
+    },
+    {
+      "width": 1365,
+      "height": 900,
+      "lang": "en",
+      "scale": 1,
+      "position": "desktop"
+    },
+    {
+      "width": 1365,
+      "height": 900,
+      "lang": "en",
+      "scale": 2,
+      "position": "desktop"
+    },
+    {
+      "width": 1365,
+      "height": 900,
+      "lang": "id",
+      "scale": 1,
+      "position": "desktop"
+    },
+    {
+      "width": 1365,
+      "height": 900,
+      "lang": "id",
+      "scale": 2,
+      "position": "desktop"
+    }
+  ],
+  "tallOptions": [
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "en",
+      "scale": 1,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 87
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "handle",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "pin",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "nozzle",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "gauge",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "label",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "body",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "a",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "b",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "c",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "a",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "b",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "handle",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "pin",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "nozzle",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "gauge",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "label",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "body",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 260,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 164,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 212,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "c",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "a",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "c",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 260,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 217
+    },
+    {
+      "width": 360,
+      "height": 260,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 217
+    },
+    {
+      "width": 360,
+      "height": 92,
+      "lang": "id",
+      "scale": 1,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 87
+    },
+    {
+      "width": 360,
+      "height": 212,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 212,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 212,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "handle",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "pin",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "nozzle",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "gauge",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "label",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "body",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "a",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "b",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "c",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "a",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "b",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "handle",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "pin",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "nozzle",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "gauge",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "label",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "body",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 260,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 212,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "c",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "a",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 164,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "c",
+      "viewportSpace": 65
+    },
+    {
+      "width": 360,
+      "height": 260,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 259
+    },
+    {
+      "width": 360,
+      "height": 260,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 259
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "a",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 260,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 212,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 212,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 212,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 212,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 260,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 164,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 164,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 76
+    },
+    {
+      "width": 390,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "c",
+      "viewportSpace": 76
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "handle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "pin",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "nozzle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "gauge",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "label",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "body",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "handle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "pin",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "nozzle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "gauge",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "label",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "body",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q2",
+      "id": "handle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q2",
+      "id": "pin",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q2",
+      "id": "nozzle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q2",
+      "id": "gauge",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q2",
+      "id": "label",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q2",
+      "id": "body",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q3",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q3",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q3",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q4",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q4",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q5",
+      "id": "handle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q5",
+      "id": "pin",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q5",
+      "id": "nozzle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q5",
+      "id": "gauge",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q5",
+      "id": "label",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q5",
+      "id": "body",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q7",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q8",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "half",
+      "question": "q8",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q2",
+      "id": "handle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q2",
+      "id": "pin",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q2",
+      "id": "nozzle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q2",
+      "id": "gauge",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q2",
+      "id": "label",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q2",
+      "id": "body",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q3",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q3",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q3",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q4",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q4",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q5",
+      "id": "handle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q5",
+      "id": "pin",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q5",
+      "id": "nozzle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q5",
+      "id": "gauge",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q5",
+      "id": "label",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q5",
+      "id": "body",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q7",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q8",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "en",
+      "scale": 2,
+      "position": "full",
+      "question": "q8",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "handle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "pin",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "nozzle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "gauge",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "label",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q2",
+      "id": "body",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q3",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "handle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "pin",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "nozzle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "gauge",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "label",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q5",
+      "id": "body",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q7",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "peek",
+      "question": "q8",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q2",
+      "id": "handle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q2",
+      "id": "pin",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q2",
+      "id": "nozzle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q2",
+      "id": "gauge",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q2",
+      "id": "label",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q2",
+      "id": "body",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q3",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q3",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q3",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q4",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q4",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q5",
+      "id": "handle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q5",
+      "id": "pin",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q5",
+      "id": "nozzle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q5",
+      "id": "gauge",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q5",
+      "id": "label",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q5",
+      "id": "body",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q7",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q8",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "half",
+      "question": "q8",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q1",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q1",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q1",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q2",
+      "id": "handle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q2",
+      "id": "pin",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q2",
+      "id": "nozzle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q2",
+      "id": "gauge",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q2",
+      "id": "label",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q2",
+      "id": "body",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q3",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q3",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q3",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q4",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q4",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q4",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q5",
+      "id": "handle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q5",
+      "id": "pin",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q5",
+      "id": "nozzle",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q5",
+      "id": "gauge",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q5",
+      "id": "label",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q5",
+      "id": "body",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q6",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q6",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 116,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q6",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q7",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q7",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q7",
+      "id": "c",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q8",
+      "id": "a",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q8",
+      "id": "b",
+      "viewportSpace": 25
+    },
+    {
+      "width": 844,
+      "height": 68,
+      "lang": "id",
+      "scale": 2,
+      "position": "full",
+      "question": "q8",
+      "id": "c",
+      "viewportSpace": 25
+    }
+  ],
+  "errors": [],
+  "collapsedSnaps": [
+    {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "requested": "full",
+      "actual": "half"
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "requested": "full",
+      "actual": "half"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "peek",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "half",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "peek",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "half",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "peek",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "half",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "peek",
+      "actual": "full"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "requested": "half",
+      "actual": "full"
+    }
+  ]
+}
