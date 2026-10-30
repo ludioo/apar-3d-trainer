@@ -318,5 +318,15 @@ Cara cek: desktop buka `http://localhost:4198/#configure`; HP satu Wi-Fi buka `h
 
 Bukti AI: check/build, delapan kelompok khusus/310 keadaan produksi, 11 regresi PASS, delapan Squeeze, tujuh kuis dan dua smoke normal produksi lolos. URL desktop/LAN di atas merespons HTTP 200 pada 30 Oktober 2026. Detail screenshot, perintah ulang, gate antislop, probe awal yang gagal, warning serta batas perangkat/browser ada di `.cursor/t4.4-report.md`. Check/build dijalankan ulang sebelum commit; browser tidak diuji ulang karena penutupan hanya mengubah dokumentasi. Commit/push ke develop diotorisasi oleh acceptance ini, tanpa lanjut task berikutnya atau mengubah main/deploy produksi.
 
+## T4.12: Chip nomor darurat persisten (30 Okt 2026)
+
+Status: **selesai, acceptance Barkah diterima 30 Oktober 2026**. Barkah mengonfirmasi sudah mengecek T4.12 dan lolos, lalu meminta status/checklist selesai, pembaruan dokumen serta commit/push ke develop. Tiga checklist ditutup berdasarkan konfirmasi tersebut dan bukti QA existing; rincian perangkat/browser pemeriksaan pengguna tidak diberikan sehingga batas QA AI tetap berlaku. Validasi Q1–Q3 dan planning disetujui sebelum implementasi.
+
+- [x] Chip 113/112 terlihat pada Configure, sepanjang Train/kuis, dan Results, termasuk saat panel digulir.
+- [x] HP: tap nomor membuka dialer dengan nomor yang benar (tidak perlu menekan Panggil). Desktop menampilkan nomor, sumber Komdigi dan catatan 112 belum tersedia di semua daerah; EN/ID berganti tanpa reload.
+- [x] Chip tidak menutupi tab, Next, handle sheet atau pin yang terlihat. Coba desktop, HP sekitar 390px, serta sheet 25/50/75%; About dan konfirmasi tetap memakai perilaku modal.
+
+Cara cek: desktop buka `http://localhost:4202/#configure`, HP satu Wi-Fi buka `http://192.168.100.4:4202/#configure`. Refresh lalu ganti EN/ID, gulir Configure, buka kartu tabung dari daftar bagian dan coba pin di dekat topbar. Masuk Latihan/Train, lakukan PASS hingga kuis, kemudian buka Hasil/Results dan gulir. Dua chip, sumber dan catatan harus tetap tersedia. Tap chip di HP hanya sampai dialer terbuka; batalkan tanpa menelepon layanan darurat. Rincian QA/batas perangkat, screenshot dan gate antislop ada di `.cursor/t4.12-report.md`. Check/build dijalankan ulang sebelum commit; browser tidak diuji ulang karena penutupan hanya mengubah dokumentasi. Commit/push ke develop diotorisasi oleh acceptance ini, tanpa lanjut task berikutnya atau mengubah main/deploy produksi.
+
 ## Peta fitur → task
 F1: T0.2–T0.3 · F2: T1.3–T1.4 · F3: T1.5–T1.6 · F4: T1.6 · F5: T1.7 · F6: T2.1–T2.2 · F7: T2.3 · F8: T2.4 · F9: T2.5 · F10: T1.1 · F11: T3.2–T3.3 · F15: T3.6 · F16: L4 · Wajib riset (Draco/KTX2, <3 dtk, HP, Vercel, video, GitHub, SEO): T0.3, T3.1, T0.4, T3.4, T3.3

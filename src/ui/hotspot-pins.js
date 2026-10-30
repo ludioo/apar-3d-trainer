@@ -19,9 +19,9 @@ export function projectPin(world, camera, meshes, width, height) {
   return { x: (ndc.x + 1) * width / 2, y: (1 - ndc.y) * height / 2 };
 }
 
-export function placePin(anchor, occupied, width, height) {
+export function placePin(anchor, occupied, width, height, top = 0) {
   const x = Math.max(MARGIN, Math.min(width - MARGIN, anchor.x));
-  const y = Math.max(MARGIN, Math.min(height - MARGIN, anchor.y));
+  const y = Math.max(top + MARGIN, Math.min(height - MARGIN, anchor.y));
   const candidates = [];
   // shortcut: six pins use a small greedy search; use a label layout solver if the catalog grows.
   for (let row = -6; row <= 6; row++) {
@@ -31,7 +31,7 @@ export function placePin(anchor, occupied, width, height) {
   }
   candidates.sort((a, b) => a.distance - b.distance);
   return candidates.find((p) =>
-    p.x >= MARGIN && p.x <= width - MARGIN && p.y >= MARGIN && p.y <= height - MARGIN &&
+    p.x >= MARGIN && p.x <= width - MARGIN && p.y >= top + MARGIN && p.y <= height - MARGIN &&
     occupied.every((q) => Math.abs(p.x - q.x) >= SPACING || Math.abs(p.y - q.y) >= SPACING),
   ) ?? null;
 }
@@ -77,13 +77,14 @@ export function initHotspotPins({ container, camera, controls, hotspots, open, l
     const { width, height } = rect;
     const panelRect = panel?.getBoundingClientRect();
     const desktop = matchMedia('(min-width: 1024px)').matches;
+    const top = desktop ? Math.max(0, parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--topbar-h')) - rect.top) : 0;
     const availableWidth = panelRect && desktop ? Math.min(width, panelRect.left - rect.left - 8) : width;
     const availableHeight = panelRect && !desktop ? Math.min(height, panelRect.top - rect.top - 8) : height;
     const occupied = [];
     for (const { h, button, line } of pins) {
       const world = model.localToWorld(new Vector3(...h.pinPosition));
       const anchor = projectPin(world, camera, meshes, width, height);
-      const point = anchor && placePin(anchor, occupied, availableWidth, availableHeight);
+      const point = anchor && placePin(anchor, occupied, availableWidth, availableHeight, top);
       button.hidden = !point;
       line.style.display = point ? '' : 'none';
       if (!point) continue;

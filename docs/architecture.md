@@ -42,6 +42,8 @@ apar-3d-trainer/
 
 ## Alur data
 
+T4.12 (30 Okt 2026): shell index.html memuat section emergency-chrome di dalam topbar, terpisah dari subtree fitur. ui/emergency-chrome.js memasang dua tel: dan sourceUrl dari emergency.json sekali setelah initLang, sebelum viewer. Empat key emergency.chip.* mengikuti applyDom existing; About dan kontak fitur/PDF tetap memakai jalur lama. ResizeObserver topbar existing mencadangkan tinggi aktual bagi panel/sheet. placePin(anchor, occupied, width, height, top = 0) menambahkan batas atas internal opsional; hotspot-pins dan training-target meneruskan tinggi topbar desktop dalam koordinat lokal container agar seluruh hitbox terhindar dari header. Oklusi/anchor garis/kamera/model tidak berubah; tanpa API publik atau skema storage baru.
+
 T4.8 (30 Okt 2026): fitur training meneruskan satu progres hold ke target 3D dan `ui/training.js` melalui metode internal `progress(value)`. Span label dan ring 24px dibuat sekali; render bahasa/status tidak mengganti tombol atau ring. Tampilan penuh berasal dari status sesi `done`, bukan timer atau state keberhasilan kedua; `skipped` tetap nol. Pembaruan visual saat sinkronisasi tidak mengubah emisi Sweep. Gesture/timer existing tetap menjadi sumber input dan semprotan hold, tanpa loop, dependency, data atau API publik baru.
 
 1. `main.js` load i18n (bahasa dari storage → navigator.language → `en`) lalu buat scene, mulai load model.

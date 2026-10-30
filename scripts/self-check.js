@@ -25,6 +25,9 @@ const en = load('en');
 const id = load('id');
 
 assert.deepEqual(Object.keys(id).sort(), Object.keys(en).sort(), 'en.json and id.json must have the same keys');
+const belowChrome = placePin({ x: 100, y: 90 }, [], 360, 900, 118);
+assert.ok(belowChrome.y - 22 >= 118 + 4, 'entire 44px hitbox clears the measured topbar');
+assert.equal(placePin({ x: 100, y: 90 }, [], 360, 140, 118), null, 'hide a pin if no space remains below the topbar');
 for (const [lang, dict] of Object.entries({ en, id })) {
   for (const [key, value] of Object.entries(dict)) {
     assert.ok(typeof value === 'string' && value.trim(), `${lang}.json "${key}" is empty`);

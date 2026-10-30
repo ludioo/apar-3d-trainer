@@ -25,6 +25,7 @@ import product from './data/product.json';
 import hotspots from './data/hotspots.json';
 import { showWebglFallback } from './ui/webgl-fallback.js';
 import { initAbout } from './ui/about.js';
+import { initEmergencyChrome } from './ui/emergency-chrome.js';
 
 const MODEL_HEIGHT = 1.2;
 const SLOW_LOAD_MS = 8000;
@@ -40,6 +41,7 @@ langButtons.forEach((b) => b.addEventListener('click', () => setLang(b.dataset.l
 on('lang:change', syncLangToggle);
 initLang();
 syncLangToggle();
+initEmergencyChrome(document.querySelector('.emergency-chrome'));
 
 const tabs = document.querySelector('.tabs');
 const tabLinks = tabs.querySelectorAll('.tab');

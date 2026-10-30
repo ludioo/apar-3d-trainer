@@ -39,7 +39,8 @@ export function initTrainingTarget({ container, camera, controls, panelBody }) {
     const desktop = matchMedia('(min-width: 1024px)').matches;
     const width = desktop ? Math.min(rect.width, panel.left - rect.left - 8) : rect.width;
     const height = desktop ? rect.height : Math.min(rect.height, panel.top - rect.top - 8);
-    const point = anchor && placePin(anchor, [], width, height);
+    const top = desktop ? Math.max(0, parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--topbar-h')) - rect.top) : 0;
+    const point = anchor && placePin(anchor, [], width, height, top);
     button.hidden = !point;
     pin.hidden = !point || !showPin;
     if (!point) return;

@@ -131,3 +131,12 @@ Key i18n `emergency.*`:
 - `emergency.source` — EN/ID: Source: Komdigi — layanan112.komdigi.go.id
 
 Tampil di: (1) Train mode, kartu akhir setelah langkah Sweep; (2) Quiz, setelah feedback q6; (3) Results; (4) About; (5) PDF report, di bawah disclaimer. Data nomor di `src/data/emergency.json` (`{ "fire": "113", "general": "112", "sourceUrl": "https://layanan112.komdigi.go.id/tentang" }`). Di HP nomor boleh berupa link `tel:113` / `tel:112`.
+
+T4.12 (acceptance Barkah diterima 30 Okt 2026): tambahan akses persisten di topbar Configure, seluruh PASS/kuis dan Results, juga loading/error/fallback WebGL. Dua chip memakai nomor/URL dari data yang sama; sumber dan catatan selalu terlihat. Kontak lengkap serta teks K3 di lokasi existing tetap dipertahankan. Copy ringkas berikut disetujui Barkah saat planning, bersumber dari keterangan cakupan [KOMDIGI112] di atas:
+
+| Key | EN | ID |
+|---|---|---|
+| `emergency.chip.fire` | Fire department 113 | Pemadam 113 |
+| `emergency.chip.general` | General emergency 112 | Darurat umum 112 |
+| `emergency.chip.source` | Source: Komdigi | Sumber: Komdigi |
+| `emergency.chip.note` | 112 is not available in all areas of Indonesia. | 112 belum tersedia di semua daerah Indonesia. |
