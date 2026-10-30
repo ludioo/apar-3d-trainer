@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-30",
+  "origin": "http://localhost:4202",
+  "checks": [
+    {
+      "name": "0/8: status, threshold, full ordered review EN/ID, results table, round-trip and unchanged storage"
+    },
+    {
+      "name": "5/8: status, threshold, full ordered review EN/ID, results table, round-trip and unchanged storage"
+    },
+    {
+      "name": "6/8: status, threshold, full ordered review EN/ID, results table, round-trip and unchanged storage"
+    },
+    {
+      "name": "8/8: status, threshold, full ordered review EN/ID, results table, round-trip and unchanged storage"
+    },
+    {
+      "name": "16 summary layout states: desktop/mobile390, EN/ID, text100/200, all three mobile snaps; every review row and final controls reachable",
+      "detail": 16
+    },
+    {
+      "name": "Keyboard restart clears prior review; wrong handle displays Tuas; return to training and new quiz work"
+    },
+    {
+      "name": "Refresh discards session and opens PASS intro"
+    },
+    {
+      "name": "Mobile native touch, failed save: complete live review survives language/tab changes; Results keeps previous saved6/8"
+    },
+    {
+      "name": "Review text, correct and incorrect statuses meet AA against panel surface",
+      "detail": {
+        "f2f3f5": 15.868757233675552,
+        "2bc48a": 7.857682483850259,
+        "ff5a5f": 5.771983612862361
+      }
+    }
+  ],
+  "states": [
+    {
+      "width": 1280,
+      "height": 900,
+      "scale": 1,
+      "lang": "en",
+      "position": "desktop",
+      "effectiveSnap": "half"
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "scale": 1,
+      "lang": "id",
+      "position": "desktop",
+      "effectiveSnap": "half"
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "scale": 2,
+      "lang": "en",
+      "position": "desktop",
+      "effectiveSnap": "half"
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "scale": 2,
+      "lang": "id",
+      "position": "desktop",
+      "effectiveSnap": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1,
+      "lang": "en",
+      "position": "peek",
+      "effectiveSnap": "peek"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1,
+      "lang": "en",
+      "position": "half",
+      "effectiveSnap": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1,
+      "lang": "en",
+      "position": "full",
+      "effectiveSnap": "full"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1,
+      "lang": "id",
+      "position": "peek",
+      "effectiveSnap": "peek"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1,
+      "lang": "id",
+      "position": "half",
+      "effectiveSnap": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 1,
+      "lang": "id",
+      "position": "full",
+      "effectiveSnap": "full"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 2,
+      "lang": "en",
+      "position": "peek",
+      "effectiveSnap": "peek"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 2,
+      "lang": "en",
+      "position": "half",
+      "effectiveSnap": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 2,
+      "lang": "en",
+      "position": "full",
+      "effectiveSnap": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 2,
+      "lang": "id",
+      "position": "peek",
+      "effectiveSnap": "peek"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 2,
+      "lang": "id",
+      "position": "half",
+      "effectiveSnap": "half"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scale": 2,
+      "lang": "id",
+      "position": "full",
+      "effectiveSnap": "half"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+  ]
+}

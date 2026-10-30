@@ -44,9 +44,17 @@ export function initQuizUi(questions, actions) {
   contacts.append(emergencyTitle, fire, general, emergencySource);
   const score = document.createElement('p');
   score.className = 'quiz__score';
+  const passingScore = document.createElement('p');
   const duration = document.createElement('p');
   const saved = document.createElement('p');
   saved.setAttribute('role', 'status');
+  const review = document.createElement('section');
+  review.className = 'quiz__review';
+  const reviewHeading = document.createElement('h4');
+  reviewHeading.id = 'quiz-review-heading';
+  review.setAttribute('aria-labelledby', reviewHeading.id);
+  const reviewList = document.createElement('ol');
+  review.append(reviewHeading, reviewList);
   const tools = document.createElement('div');
   tools.className = 'quiz__tools';
   function button(action, parent) {
@@ -66,12 +74,39 @@ export function initQuizUi(questions, actions) {
   const nav = document.createElement('div');
   nav.className = 'quiz__nav';
   const next = button('next', nav);
-  body.append(progress, heading, hint, choices, feedback, contacts, score, duration, saved, tools, disclaimer);
+  body.append(progress, heading, hint, choices, feedback, contacts, score, passingScore, duration, saved, review, tools, disclaimer);
   element.append(body, nav);
   let currentId;
   const observer = new ResizeObserver(() => {
     element.style.setProperty('--quiz-nav-height', `${nav.getBoundingClientRect().height}px`);
   });
+
+  function renderReview(attempt, lang) {
+    reviewList.replaceChildren();
+    if (!attempt) return;
+    for (const answer of attempt.answers) {
+      const question = questions.find((entry) => entry.id === answer.qId);
+      const answerLabel = (id) => question.type === 'pick-hotspot'
+        ? hotspots.find((hotspot) => hotspot.id === id).title[lang]
+        : question.choices.find((choice) => choice.id === id).label[lang];
+      const item = document.createElement('li');
+      const title = document.createElement('h5');
+      title.textContent = question.question[lang];
+      const given = document.createElement('p');
+      given.textContent = t('quiz.yourAnswer').replace('{answer}', () => answerLabel(answer.given));
+      const outcome = document.createElement('p');
+      outcome.className = 'quiz__review-outcome';
+      outcome.dataset.correct = String(answer.correct);
+      outcome.textContent = t(answer.correct ? 'quiz.correct' : 'quiz.incorrect');
+      item.append(title, given, outcome);
+      if (!answer.correct) {
+        const correction = document.createElement('p');
+        correction.textContent = t('quiz.correctAnswer').replace('{answer}', () => answerLabel(question.answer));
+        item.append(correction);
+      }
+      reviewList.append(item);
+    }
+  }
 
   function render({ session, ready, saveFailed }) {
     const scrollTop = element.scrollTop;
@@ -143,7 +178,10 @@ export function initQuizUi(questions, actions) {
     restart.textContent = t('quiz.restart');
     training.textContent = t('quiz.training');
     results.textContent = t('results.view');
-    score.hidden = duration.hidden = !summary;
+    score.hidden = passingScore.hidden = duration.hidden = review.hidden = !summary;
+    passingScore.textContent = t('quiz.passingScore');
+    reviewHeading.textContent = t('quiz.review');
+    renderReview(summary ? session.attempt : null, lang);
     if (summary) {
       const attempt = session.attempt;
       score.textContent = `${attempt.score}/${attempt.total} · ${new Intl.NumberFormat(lang, { style: 'percent', maximumFractionDigits: 1 }).format(attempt.score / attempt.total)}`;

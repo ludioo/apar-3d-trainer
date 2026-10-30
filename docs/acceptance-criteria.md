@@ -328,5 +328,24 @@ Status: **selesai, acceptance Barkah diterima 30 Oktober 2026**. Barkah mengonfi
 
 Cara cek: desktop buka `http://localhost:4202/#configure`, HP satu Wi-Fi buka `http://192.168.100.4:4202/#configure`. Refresh lalu ganti EN/ID, gulir Configure, buka kartu tabung dari daftar bagian dan coba pin di dekat topbar. Masuk Latihan/Train, lakukan PASS hingga kuis, kemudian buka Hasil/Results dan gulir. Dua chip, sumber dan catatan harus tetap tersedia. Tap chip di HP hanya sampai dialer terbuka; batalkan tanpa menelepon layanan darurat. Rincian QA/batas perangkat, screenshot dan gate antislop ada di `.cursor/t4.12-report.md`. Check/build dijalankan ulang sebelum commit; browser tidak diuji ulang karena penutupan hanya mengubah dokumentasi. Commit/push ke develop diotorisasi oleh acceptance ini, tanpa lanjut task berikutnya atau mengubah main/deploy produksi.
 
+## T4.11: Ambang kelulusan dan review kuis (30 Okt 2026)
+
+Status: **selesai, acceptance Barkah diterima 30 Oktober 2026**. Barkah mengonfirmasi sudah mengecek T4.11 dan lolos, lalu meminta task/checklist selesai, pembaruan dokumen serta commit/push ke develop. Enam checklist ditutup berdasarkan konfirmasi ini dan bukti QA existing; rincian perangkat/browser pemeriksaan pengguna tidak diberikan sehingga batas QA AI tetap berlaku. Validasi Q1–Q3 dan planning disetujui sebelum implementasi. Check/build dijalankan ulang sebelum commit; browser tidak diuji ulang karena penutupan hanya mengubah dokumentasi. Tidak lanjut task berikutnya atau mengubah main/deploy produksi.
+
+- [x] Ambang ≥75% (6/8) terlihat dekat skor pada ringkasan kuis dan Results.
+- [x] Review delapan soal memuat jawaban Anda, Benar/Salah, serta jawaban benar untuk soal salah.
+- [x] Review memakai nama bagian; pilihan dan pin saat menjawab tetap bernomor.
+- [x] 6/8 lulus; 5/8 belum lulus dan tampil 62,5% ID/62.5% EN.
+- [x] EN/ID berganti tanpa reload; hasil/review tetap sama saat pindah tab.
+- [x] Mobile sekitar 390 px: review sampai soal terakhir dan tombol aksi dapat digulir tanpa tertutup kontrol, pada semua tinggi snap yang tersedia.
+
+Cara cek desktop: buka `http://localhost:4202/#train`, refresh, Mulai latihan, selesaikan PASS atau gunakan Lewati lalu Berikutnya pada empat langkah, kemudian Ikuti kuis. Jawab delapan soal, tekan Berikutnya setelah setiap jawaban dan Lihat skor pada akhir. Periksa ambang, gulir review sampai soal8 dan tombol Ulangi kuis/Kembali ke latihan/Lihat hasil. Ganti EN/ID, buka Lihat hasil untuk memeriksa ambang dekat skor Results, lalu kembali ke Latihan untuk melihat review sesi yang sama.
+
+Untuk 6/8, jawab benar enam soal pertama: PASS; Bagian2/Pin pengaman; pangkal api; perlahan dan merata; Bagian4/Indikator tekanan; orang lain sudah diberi tahu, api kecil dan terbatas, jalur keluar bebas hambatan. Jawab salah dua soal terakhir. Untuk 5/8, Ulangi kuis dan jawab benar hanya lima soal pertama. Pilihan bernomor tetap mengikuti pemetaan existing 1=tuas, 2=pin, 3=nozzle, 4=tekanan, 5=label, 6=tabung.
+
+Cara cek HP satu Wi-Fi: buka `http://192.168.100.4:4202/#train`, ulangi alur tersebut, lalu coba handle sheet 25/50/75% dan scroll sampai bagian terakhir. Konten tidak wajib muat sekaligus pada sheet pendek; tinggi snap yang berimpit karena ruang di bawah header tetap dilewati. Pada desktop, mode perangkat browser sekitar390px juga dapat dipakai.
+
+Bukti AI: sembilan kelompok khusus pada dev dan produksi, tujuh regresi kuis serta delapan Results lolos; check/build lolos dengan196 key. Screenshot, matriks ringkasan16 permintaan keadaan, click-through, gate antislop, kegagalan probe awal dan batas QA dicatat di `.cursor/t4.11-report.md`. URL lokal/LAN merespons HTTP200 pada30 Oktober2026. HP fisik/AT/Safari/Firefox/zoom OS/Lighthouse/4G/FPS baru belum diuji; simulasi teks memakai token100/200%, bukan pengaturan OS.
+
 ## Peta fitur → task
 F1: T0.2–T0.3 · F2: T1.3–T1.4 · F3: T1.5–T1.6 · F4: T1.6 · F5: T1.7 · F6: T2.1–T2.2 · F7: T2.3 · F8: T2.4 · F9: T2.5 · F10: T1.1 · F11: T3.2–T3.3 · F15: T3.6 · F16: L4 · Wajib riset (Draco/KTX2, <3 dtk, HP, Vercel, video, GitHub, SEO): T0.3, T3.1, T0.4, T3.4, T3.3

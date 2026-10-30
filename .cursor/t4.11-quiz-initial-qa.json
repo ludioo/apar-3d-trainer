@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-30",
+  "origin": "http://localhost:4202",
+  "checks": [
+    {
+      "name": "Eight questions, manual feedback, pins/keyboard/orbit/reset, interruption, EN/ID, q6 emergency, one complete save, configuration restore"
+    },
+    {
+      "name": "0/8, 5/8 fail and 6/8 pass; retry/new attempt; summary resumes without duplicate; return to training and refresh"
+    },
+    {
+      "name": "Storage write failure and corrupt history preserve existing bytes while displaying final score"
+    }
+  ],
+  "errors": [],
+  "scenario": {
+    "width": 768,
+    "height": 1024,
+    "lang": "id",
+    "zoom": 2,
+    "expanded": "full"
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n'full' !== 'peek'\n\n    at t42Snap (D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t2.3-check.cjs:199:33)\n    at async D:\\Work\\Tools\\apar-3d-trainer\\.cursor\\t2.3-check.cjs:153:55"
+}

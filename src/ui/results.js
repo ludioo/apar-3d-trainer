@@ -26,6 +26,7 @@ export function initResultsUi(product, actions) {
   const scoreDetails = node('div', scoreCard, 'results__score-details');
   const score = node('p', scoreDetails, 'results__score');
   const passed = node('p', scoreDetails);
+  const passingScore = node('p', scoreDetails);
   const date = node('p', scoreDetails, 'results__muted');
   const duration = node('p', scoreDetails, 'results__muted');
   const historySection = node('section', element);
@@ -141,6 +142,7 @@ export function initResultsUi(product, actions) {
       percentLabel.textContent = percent.format(state.report.ratio);
       score.textContent = `${new Intl.NumberFormat(lang).format(latest.score)}/${new Intl.NumberFormat(lang).format(latest.total)}`;
       passed.textContent = t(latest.passed ? 'quiz.passed' : 'quiz.failed');
+      passingScore.textContent = t('quiz.passingScore');
       date.textContent = formatDate(latest.finishedAt);
       duration.textContent = t('quiz.duration').replace('{seconds}', new Intl.NumberFormat(lang).format(latest.durationSec));
       historyHeading.textContent = t('results.history');
