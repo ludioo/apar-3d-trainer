@@ -1,0 +1,636 @@
+{
+  "date": "2026-10-30",
+  "origin": "http://localhost:4257",
+  "checks": [
+    {
+      "name": "EN, identifiers, geometry, answers and non-translated data unchanged; targeted ID terms absent"
+    },
+    {
+      "name": "desktop: save ID/EN/custom, six hotspots, language changes, reload and storage preservation"
+    },
+    {
+      "name": "desktop: all PASS/quiz feedback, summary, populated Results and About bilingual",
+      "detail": {
+        "score": "7/8",
+        "states": 42
+      }
+    },
+    {
+      "name": "mobile: save ID/EN/custom, six hotspots, language changes, reload and storage preservation"
+    },
+    {
+      "name": "mobile: all PASS/quiz feedback, summary, populated Results and About bilingual",
+      "detail": {
+        "score": "7/8",
+        "states": 84
+      }
+    },
+    {
+      "name": "No page errors or console errors; four desktop PDF exports downloaded",
+      "detail": {
+        "pdfs": [
+          "desktop-en-report.pdf",
+          "desktop-en-spec.pdf",
+          "desktop-id-report.pdf",
+          "desktop-id-spec.pdf"
+        ]
+      }
+    }
+  ],
+  "states": [
+    {
+      "name": "desktop-id-configure",
+      "text": "Putaran dijeda: kurangi gerakan\n\nHarga ilustrasi\n\nIDR 650.000\n\nJenis isi\nSerbuk Kimia ABC\nCO₂\nBusa AFFF\nAir\nKapasitas\n1 kg\n3 kg\n6 kg\n9 kg\nWarna tabung\nMerah\nKuning\nPerak\nBraket\nSimpan konfigurasi\nKonfigurasi saya\n\nGudang #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nKonfigurasi #2\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nConfig #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nSpek ilustrasi\nJenis isi\tSerbuk Kimia ABC\nKapasitas\t6 kg\nGolongan api (acuan umum)\tA / B / C\nWaktu semprot\t18 dtk\nJarak semprot\t4 m\nBerat unit berisi\t9 kg\n\nSpek dan kode visual adalah ilustrasi, bukan katalog produk nyata atau peringkat tersertifikasi. Semua jenis isi memakai model, nozel, dan indikator tekanan yang sama; penjelasan bagian mengacu pada model dasar ABC. Semua kapasitas dalam demo ini memakai kg. Berat tidak termasuk braket.\n\nAcuan golongan api: Damkar Banda Aceh\nEkspor PDF spesifikasi\n\nPilih nomor atau bagian APAR untuk membaca penjelasannya. Putar tampilan untuk menemukan bagian di sisi lainnya.\n\n1. Tuas\n2. Pin pengaman\n3. Selang & nozel\n4. Indikator tekanan\n5. Label\n6. Tabung",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-hotspot-handle",
+      "text": "Putaran dijeda: kurangi gerakan\n\nHarga ilustrasi\n\nIDR 650.000\n\nJenis isi\nSerbuk Kimia ABC\nCO₂\nBusa AFFF\nAir\nKapasitas\n1 kg\n3 kg\n6 kg\n9 kg\nWarna tabung\nMerah\nKuning\nPerak\nBraket\nSimpan konfigurasi\nKonfigurasi saya\n\nGudang #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nKonfigurasi #2\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nConfig #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nSpek ilustrasi\nJenis isi\tSerbuk Kimia ABC\nKapasitas\t6 kg\nGolongan api (acuan umum)\tA / B / C\nWaktu semprot\t18 dtk\nJarak semprot\t4 m\nBerat unit berisi\t9 kg\n\nSpek dan kode visual adalah ilustrasi, bukan katalog produk nyata atau peringkat tersertifikasi. Semua jenis isi memakai model, nozel, dan indikator tekanan yang sama; penjelasan bagian mengacu pada model dasar ABC. Semua kapasitas dalam demo ini memakai kg. Berat tidak termasuk braket.\n\nAcuan golongan api: Damkar Banda Aceh\nEkspor PDF spesifikasi\n\nTuas\nTutup\n\nTekan perlahan dan merata untuk menyemprotkan isi. Lepaskan untuk berhenti.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-hotspot-pin",
+      "text": "Putaran dijeda: kurangi gerakan\n\nHarga ilustrasi\n\nIDR 650.000\n\nJenis isi\nSerbuk Kimia ABC\nCO₂\nBusa AFFF\nAir\nKapasitas\n1 kg\n3 kg\n6 kg\n9 kg\nWarna tabung\nMerah\nKuning\nPerak\nBraket\nSimpan konfigurasi\nKonfigurasi saya\n\nGudang #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nKonfigurasi #2\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nConfig #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nSpek ilustrasi\nJenis isi\tSerbuk Kimia ABC\nKapasitas\t6 kg\nGolongan api (acuan umum)\tA / B / C\nWaktu semprot\t18 dtk\nJarak semprot\t4 m\nBerat unit berisi\t9 kg\n\nSpek dan kode visual adalah ilustrasi, bukan katalog produk nyata atau peringkat tersertifikasi. Semua jenis isi memakai model, nozel, dan indikator tekanan yang sama; penjelasan bagian mengacu pada model dasar ABC. Semua kapasitas dalam demo ini memakai kg. Berat tidak termasuk braket.\n\nAcuan golongan api: Damkar Banda Aceh\nEkspor PDF spesifikasi\n\nPin pengaman\nTutup\n\nMengunci tuas agar tidak tertekan tanpa sengaja. Langkah 1 PASS: cabut pin, dengan nozel mengarah menjauhi tubuh.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-hotspot-nozzle",
+      "text": "Putaran dijeda: kurangi gerakan\n\nHarga ilustrasi\n\nIDR 650.000\n\nJenis isi\nSerbuk Kimia ABC\nCO₂\nBusa AFFF\nAir\nKapasitas\n1 kg\n3 kg\n6 kg\n9 kg\nWarna tabung\nMerah\nKuning\nPerak\nBraket\nSimpan konfigurasi\nKonfigurasi saya\n\nGudang #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nKonfigurasi #2\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nConfig #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nSpek ilustrasi\nJenis isi\tSerbuk Kimia ABC\nKapasitas\t6 kg\nGolongan api (acuan umum)\tA / B / C\nWaktu semprot\t18 dtk\nJarak semprot\t4 m\nBerat unit berisi\t9 kg\n\nSpek dan kode visual adalah ilustrasi, bukan katalog produk nyata atau peringkat tersertifikasi. Semua jenis isi memakai model, nozel, dan indikator tekanan yang sama; penjelasan bagian mengacu pada model dasar ABC. Semua kapasitas dalam demo ini memakai kg. Berat tidak termasuk braket.\n\nAcuan golongan api: Damkar Banda Aceh\nEkspor PDF spesifikasi\n\nSelang & nozel\nTutup\n\nArahkan rendah ke pangkal api, lalu sapukan ke kiri dan kanan. Pastikan tidak tersumbat, retak, atau rusak.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-hotspot-gauge",
+      "text": "Putaran dijeda: kurangi gerakan\n\nHarga ilustrasi\n\nIDR 650.000\n\nJenis isi\nSerbuk Kimia ABC\nCO₂\nBusa AFFF\nAir\nKapasitas\n1 kg\n3 kg\n6 kg\n9 kg\nWarna tabung\nMerah\nKuning\nPerak\nBraket\nSimpan konfigurasi\nKonfigurasi saya\n\nGudang #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nKonfigurasi #2\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nConfig #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nSpek ilustrasi\nJenis isi\tSerbuk Kimia ABC\nKapasitas\t6 kg\nGolongan api (acuan umum)\tA / B / C\nWaktu semprot\t18 dtk\nJarak semprot\t4 m\nBerat unit berisi\t9 kg\n\nSpek dan kode visual adalah ilustrasi, bukan katalog produk nyata atau peringkat tersertifikasi. Semua jenis isi memakai model, nozel, dan indikator tekanan yang sama; penjelasan bagian mengacu pada model dasar ABC. Semua kapasitas dalam demo ini memakai kg. Berat tidak termasuk braket.\n\nAcuan golongan api: Damkar Banda Aceh\nEkspor PDF spesifikasi\n\nIndikator tekanan\nTutup\n\nMenunjukkan apakah tekanan terlalu tinggi atau terlalu rendah. Periksa setiap inspeksi.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-hotspot-label",
+      "text": "Putaran dijeda: kurangi gerakan\n\nHarga ilustrasi\n\nIDR 650.000\n\nJenis isi\nSerbuk Kimia ABC\nCO₂\nBusa AFFF\nAir\nKapasitas\n1 kg\n3 kg\n6 kg\n9 kg\nWarna tabung\nMerah\nKuning\nPerak\nBraket\nSimpan konfigurasi\nKonfigurasi saya\n\nGudang #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nKonfigurasi #2\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nConfig #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nSpek ilustrasi\nJenis isi\tSerbuk Kimia ABC\nKapasitas\t6 kg\nGolongan api (acuan umum)\tA / B / C\nWaktu semprot\t18 dtk\nJarak semprot\t4 m\nBerat unit berisi\t9 kg\n\nSpek dan kode visual adalah ilustrasi, bukan katalog produk nyata atau peringkat tersertifikasi. Semua jenis isi memakai model, nozel, dan indikator tekanan yang sama; penjelasan bagian mengacu pada model dasar ABC. Semua kapasitas dalam demo ini memakai kg. Berat tidak termasuk braket.\n\nAcuan golongan api: Damkar Banda Aceh\nEkspor PDF spesifikasi\n\nLabel\nTutup\n\nMenunjukkan golongan kebakaran yang bisa dipadamkan. APAR serbaguna \"ABC\" untuk bahan padat, cairan/gas mudah terbakar, dan instalasi listrik bertegangan. Label harus selalu terbaca.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-hotspot-body",
+      "text": "Putaran dijeda: kurangi gerakan\n\nHarga ilustrasi\n\nIDR 650.000\n\nJenis isi\nSerbuk Kimia ABC\nCO₂\nBusa AFFF\nAir\nKapasitas\n1 kg\n3 kg\n6 kg\n9 kg\nWarna tabung\nMerah\nKuning\nPerak\nBraket\nSimpan konfigurasi\nKonfigurasi saya\n\nGudang #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nKonfigurasi #2\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nConfig #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nSpek ilustrasi\nJenis isi\tSerbuk Kimia ABC\nKapasitas\t6 kg\nGolongan api (acuan umum)\tA / B / C\nWaktu semprot\t18 dtk\nJarak semprot\t4 m\nBerat unit berisi\t9 kg\n\nSpek dan kode visual adalah ilustrasi, bukan katalog produk nyata atau peringkat tersertifikasi. Semua jenis isi memakai model, nozel, dan indikator tekanan yang sama; penjelasan bagian mengacu pada model dasar ABC. Semua kapasitas dalam demo ini memakai kg. Berat tidak termasuk braket.\n\nAcuan golongan api: Damkar Banda Aceh\nEkspor PDF spesifikasi\n\nTabung\nTutup\n\nTidak boleh penyok atau berkarat. Di Indonesia, APAR diperiksa 2 kali setahun (pemeriksaan 6 dan 12 bulan) dan dipasang dengan puncak 1,2 m dari lantai.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-configure",
+      "text": "Rotation paused: reduced motion\n\nIllustrative price\n\nUSD 41\n\nExtinguishing agent\nDry Powder ABC\nCO₂\nFoam AFFF\nWater\nCapacity\n1 kg\n3 kg\n6 kg\n9 kg\nBody color\nRed\nYellow\nSilver\nBracket\nSave configuration\nMy configurations\n\nGudang #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nKonfigurasi #2\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nConfig #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nIllustrative specifications\nAgent\tDry Powder ABC\nCapacity\t6 kg\nFire classes (general reference)\tA / B / C\nDischarge time\t18 s\nDischarge range\t4 m\nFilled unit weight\t9 kg\n\nIllustrative specifications and visual codes, not a real product catalog or certified ratings. All agents share the same model, nozzle and gauge; part details describe the base ABC model. Capacities use kg throughout this demo. Weight excludes the bracket.\n\nFire class reference: Banda Aceh Fire Department\nExport spec PDF\n\nSelect a numbered marker or a part of the extinguisher to read about it. Rotate the view to find parts on the other side.\n\n1. Handle / lever\n2. Safety pin\n3. Hose & nozzle\n4. Pressure gauge\n5. Label\n6. Cylinder",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-hotspot-handle",
+      "text": "Rotation paused: reduced motion\n\nIllustrative price\n\nUSD 41\n\nExtinguishing agent\nDry Powder ABC\nCO₂\nFoam AFFF\nWater\nCapacity\n1 kg\n3 kg\n6 kg\n9 kg\nBody color\nRed\nYellow\nSilver\nBracket\nSave configuration\nMy configurations\n\nGudang #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nKonfigurasi #2\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nConfig #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nIllustrative specifications\nAgent\tDry Powder ABC\nCapacity\t6 kg\nFire classes (general reference)\tA / B / C\nDischarge time\t18 s\nDischarge range\t4 m\nFilled unit weight\t9 kg\n\nIllustrative specifications and visual codes, not a real product catalog or certified ratings. All agents share the same model, nozzle and gauge; part details describe the base ABC model. Capacities use kg throughout this demo. Weight excludes the bracket.\n\nFire class reference: Banda Aceh Fire Department\nExport spec PDF\n\nHandle / lever\nClose\n\nSqueeze it slowly and evenly to discharge the agent. Release it to stop.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-hotspot-pin",
+      "text": "Rotation paused: reduced motion\n\nIllustrative price\n\nUSD 41\n\nExtinguishing agent\nDry Powder ABC\nCO₂\nFoam AFFF\nWater\nCapacity\n1 kg\n3 kg\n6 kg\n9 kg\nBody color\nRed\nYellow\nSilver\nBracket\nSave configuration\nMy configurations\n\nGudang #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nKonfigurasi #2\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nConfig #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nIllustrative specifications\nAgent\tDry Powder ABC\nCapacity\t6 kg\nFire classes (general reference)\tA / B / C\nDischarge time\t18 s\nDischarge range\t4 m\nFilled unit weight\t9 kg\n\nIllustrative specifications and visual codes, not a real product catalog or certified ratings. All agents share the same model, nozzle and gauge; part details describe the base ABC model. Capacities use kg throughout this demo. Weight excludes the bracket.\n\nFire class reference: Banda Aceh Fire Department\nExport spec PDF\n\nSafety pin\nClose\n\nLocks the handle so it can't be squeezed by accident. Step 1 of PASS: pull the pin, keeping the nozzle pointed away from you.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-hotspot-nozzle",
+      "text": "Rotation paused: reduced motion\n\nIllustrative price\n\nUSD 41\n\nExtinguishing agent\nDry Powder ABC\nCO₂\nFoam AFFF\nWater\nCapacity\n1 kg\n3 kg\n6 kg\n9 kg\nBody color\nRed\nYellow\nSilver\nBracket\nSave configuration\nMy configurations\n\nGudang #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nKonfigurasi #2\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nConfig #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nIllustrative specifications\nAgent\tDry Powder ABC\nCapacity\t6 kg\nFire classes (general reference)\tA / B / C\nDischarge time\t18 s\nDischarge range\t4 m\nFilled unit weight\t9 kg\n\nIllustrative specifications and visual codes, not a real product catalog or certified ratings. All agents share the same model, nozzle and gauge; part details describe the base ABC model. Capacities use kg throughout this demo. Weight excludes the bracket.\n\nFire class reference: Banda Aceh Fire Department\nExport spec PDF\n\nHose & nozzle\nClose\n\nAim low, at the base of the fire, and sweep side to side. Check it is not blocked, cracked or damaged.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-hotspot-gauge",
+      "text": "Rotation paused: reduced motion\n\nIllustrative price\n\nUSD 41\n\nExtinguishing agent\nDry Powder ABC\nCO₂\nFoam AFFF\nWater\nCapacity\n1 kg\n3 kg\n6 kg\n9 kg\nBody color\nRed\nYellow\nSilver\nBracket\nSave configuration\nMy configurations\n\nGudang #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nKonfigurasi #2\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nConfig #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nIllustrative specifications\nAgent\tDry Powder ABC\nCapacity\t6 kg\nFire classes (general reference)\tA / B / C\nDischarge time\t18 s\nDischarge range\t4 m\nFilled unit weight\t9 kg\n\nIllustrative specifications and visual codes, not a real product catalog or certified ratings. All agents share the same model, nozzle and gauge; part details describe the base ABC model. Capacities use kg throughout this demo. Weight excludes the bracket.\n\nFire class reference: Banda Aceh Fire Department\nExport spec PDF\n\nPressure gauge\nClose\n\nShows whether pressure is too high or too low. Check it during every inspection.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-hotspot-label",
+      "text": "Rotation paused: reduced motion\n\nIllustrative price\n\nUSD 41\n\nExtinguishing agent\nDry Powder ABC\nCO₂\nFoam AFFF\nWater\nCapacity\n1 kg\n3 kg\n6 kg\n9 kg\nBody color\nRed\nYellow\nSilver\nBracket\nSave configuration\nMy configurations\n\nGudang #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nKonfigurasi #2\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nConfig #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nIllustrative specifications\nAgent\tDry Powder ABC\nCapacity\t6 kg\nFire classes (general reference)\tA / B / C\nDischarge time\t18 s\nDischarge range\t4 m\nFilled unit weight\t9 kg\n\nIllustrative specifications and visual codes, not a real product catalog or certified ratings. All agents share the same model, nozzle and gauge; part details describe the base ABC model. Capacities use kg throughout this demo. Weight excludes the bracket.\n\nFire class reference: Banda Aceh Fire Department\nExport spec PDF\n\nLabel\nClose\n\nShows which fire classes it can fight. A multipurpose \"A-B-C\" unit covers ordinary solids, flammable liquids/gases, and live electrical fires. Keep the label readable.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-hotspot-body",
+      "text": "Rotation paused: reduced motion\n\nIllustrative price\n\nUSD 41\n\nExtinguishing agent\nDry Powder ABC\nCO₂\nFoam AFFF\nWater\nCapacity\n1 kg\n3 kg\n6 kg\n9 kg\nBody color\nRed\nYellow\nSilver\nBracket\nSave configuration\nMy configurations\n\nGudang #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nKonfigurasi #2\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nConfig #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nIllustrative specifications\nAgent\tDry Powder ABC\nCapacity\t6 kg\nFire classes (general reference)\tA / B / C\nDischarge time\t18 s\nDischarge range\t4 m\nFilled unit weight\t9 kg\n\nIllustrative specifications and visual codes, not a real product catalog or certified ratings. All agents share the same model, nozzle and gauge; part details describe the base ABC model. Capacities use kg throughout this demo. Weight excludes the bracket.\n\nFire class reference: Banda Aceh Fire Department\nExport spec PDF\n\nCylinder\nClose\n\nMust be free of dents and rust. In Indonesia, APAR is inspected twice a year (6- and 12-month checks) and mounted with its top 1.2 m above the floor.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-pass-pull",
+      "text": "1 Cabut\n2 Arahkan\n3 Tekan\n4 Sapukan\n1/4 · Cabut\n\nCabut pin pengaman. Jaga nozel mengarah menjauhi tubuh.\n\nKlik target yang disorot atau bagian model yang sesuai, lalu pilih Lanjut.\n\nFokus ke bagian\nLakukan langkah ini\nLewati interaksi\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nKembali\nLanjut",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-pass-pull",
+      "text": "1 Pull\n2 Aim\n3 Squeeze\n4 Sweep\n1/4 · Pull\n\nPull the pin. Keep the nozzle pointed away from you.\n\nClick the highlighted target or the corresponding part of the model, then select Next.\n\nFocus on the part\nPerform this step\nSkip interaction\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nBack\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-pass-aim",
+      "text": "1 Cabut\n2 Arahkan\n3 Tekan\n4 Sapukan\n2/4 · Arahkan\n\nArahkan rendah, ke pangkal api.\n\nKlik target yang disorot atau bagian model yang sesuai, lalu pilih Lanjut.\n\nFokus ke bagian\nLakukan langkah ini\nLewati interaksi\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nKembali\nLanjut",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-pass-aim",
+      "text": "1 Pull\n2 Aim\n3 Squeeze\n4 Sweep\n2/4 · Aim\n\nAim low, at the base of the fire.\n\nClick the highlighted target or the corresponding part of the model, then select Next.\n\nFocus on the part\nPerform this step\nSkip interaction\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nBack\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-pass-squeeze",
+      "text": "1 Cabut\n2 Arahkan\n3 Tekan\n4 Sapukan\n3/4 · Tekan\n\nTekan tuas perlahan dan merata.\n\nTahan target 3 selama satu detik penuh dengan sentuhan, tetikus, Space, atau Enter. Lepas lebih awal mengulang cincin progres dari nol.\n\nFokus ke bagian\nTahan selama 1 detik\nLewati interaksi\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nKembali\nLanjut",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-pass-squeeze",
+      "text": "1 Pull\n2 Aim\n3 Squeeze\n4 Sweep\n3/4 · Squeeze\n\nSqueeze the lever slowly and evenly.\n\nHold target 3 for one full second using touch, mouse, Space or Enter. Releasing early resets the ring.\n\nFocus on the part\nHold for 1 second\nSkip interaction\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nBack\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-pass-sweep",
+      "text": "1 Cabut\n2 Arahkan\n3 Tekan\n4 Sapukan\n4/4 · Sapukan\n\nSapukan nozel ke kiri dan kanan.\n\nKontrol sapuan\nKiri\nKanan\n\nTujuan: Kanan\n\nSiklus: 0/3\n\nGerakkan pegangan ke ujung yang disorot, lalu kembali ke ujung lainnya. Kanan lalu kembali ke kiri dihitung satu siklus. Selesaikan tiga siklus. Anda dapat menggeser, mengetuk rel, atau memakai tombol panah, Home dan End.\n\nFokus ke bagian\nLewati interaksi\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nKembali\nSelesai",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-pass-sweep",
+      "text": "1 Pull\n2 Aim\n3 Squeeze\n4 Sweep\n4/4 · Sweep\n\nSweep the nozzle from side to side.\n\nSweep control\nLeft\nRight\n\nTarget: Right\n\nCycles: 0/3\n\nMove the handle to the highlighted end, then back to the other end. Right and back to left is one cycle. Complete three cycles. You can drag, tap the track, or use the arrow, Home and End keys.\n\nFocus on the part\nSkip interaction\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nBack\nFinish",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-q1-feedback",
+      "text": "Soal 1/8\n\nApa kepanjangan PASS?\nPull (cabut), Aim (arahkan), Squeeze (tekan tuas), Sweep (sapukan)\nBenar\n\nJawaban benar: Pull (cabut), Aim (arahkan), Squeeze (tekan tuas), Sweep (sapukan)\n\nPASS = Pull (cabut pin), Aim (arahkan), Squeeze (tekan tuas), Sweep (sapukan).\n\nUSFA\nPush (dorong), Aim (arahkan), Spray (semprotkan), Stop (berhenti)\nPull (cabut), Activate (aktifkan), Spray (semprotkan), Sweep (sapukan)\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-q1-feedback",
+      "text": "Question 1/8\n\nWhat does PASS stand for?\nPull, Aim, Squeeze, Sweep\nCorrect\n\nCorrect answer: Pull, Aim, Squeeze, Sweep\n\nPASS = Pull the pin, Aim low, Squeeze the lever, Sweep side to side.\n\nUSFA\nPush, Aim, Spray, Stop\nPull, Activate, Spray, Sweep\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-q2-feedback",
+      "text": "Soal 2/8\n\nKlik bagian yang dicabut pertama kali.\nBagian 1\nBagian 2\nBagian 3\nSalah\n\nJawaban benar: Pin pengaman\n\nPin pengaman mengunci tuas; harus dicabut dulu.\n\nUSFA\nBagian 4\nBagian 5\nBagian 6\nPulihkan tampilan\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-q2-feedback",
+      "text": "Question 2/8\n\nClick the part you remove first.\nPart 1\nPart 2\nPart 3\nIncorrect\n\nCorrect answer: Safety pin\n\nThe safety pin locks the lever; it must be pulled out first.\n\nUSFA\nPart 4\nPart 5\nPart 6\nReset view\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-q3-feedback",
+      "text": "Soal 3/8\n\nKe mana semprotan diarahkan?\nKe puncak nyala api\nKe pangkal api\nBenar\n\nJawaban benar: Ke pangkal api\n\nArahkan rendah ke pangkal api.\n\nUSFA\nKe asap\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-q3-feedback",
+      "text": "Question 3/8\n\nWhere should you aim?\nAt the top of the flames\nAt the base of the fire\nCorrect\n\nCorrect answer: At the base of the fire\n\nAim low, at the base of the fire.\n\nUSFA\nAt the smoke\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-q4-feedback",
+      "text": "Soal 4/8\n\nBagaimana cara menekan tuas?\nPerlahan dan merata\nBenar\n\nJawaban benar: Perlahan dan merata\n\nTekan perlahan dan merata.\n\nUSFA\nDengan tekanan singkat dan cepat\nSekuat mungkin, sekali saja\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-q4-feedback",
+      "text": "Question 4/8\n\nHow should you squeeze the lever?\nSlowly and evenly\nCorrect\n\nCorrect answer: Slowly and evenly\n\nSqueeze the lever slowly and evenly.\n\nUSFA\nIn quick short bursts\nAs hard as possible, once\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-q5-feedback",
+      "text": "Soal 5/8\n\nKlik bagian yang menunjukkan tekanan terlalu tinggi/rendah.\nBagian 1\nBagian 2\nBagian 3\nBagian 4\nBenar\n\nJawaban benar: Indikator tekanan\n\nMenunjukkan apakah tekanan terlalu tinggi atau terlalu rendah. Periksa setiap inspeksi.\n\nUSFA\nPER.04/MEN/1980\nBagian 5\nBagian 6\nPulihkan tampilan\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-q5-feedback",
+      "text": "Question 5/8\n\nClick the part that shows if pressure is too high or too low.\nPart 1\nPart 2\nPart 3\nPart 4\nCorrect\n\nCorrect answer: Pressure gauge\n\nShows whether pressure is too high or too low. Check it during every inspection.\n\nUSFA\nPER.04/MEN/1980\nPart 5\nPart 6\nReset view\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-q6-feedback",
+      "text": "Soal 6/8\n\nKapan boleh memadamkan api sendiri?\nOrang lain sudah diberi tahu, api kecil dan terbatas, serta jalur keluar Anda bebas hambatan\nBenar\n\nJawaban benar: Orang lain sudah diberi tahu, api kecil dan terbatas, serta jalur keluar Anda bebas hambatan\n\nHanya jika semua jawaban daftar periksa \"ya\"; jika ragu, beri tahu orang lain, keluar, dan hubungi pemadam kebakaran.\n\nUSFA\nKapan pun ada APAR di dekat Anda\nSaat ruangan dipenuhi asap, tetapi Anda dekat dengan api\nDarurat kebakaran di Indonesia\nPemadam Kebakaran: 113\nDarurat umum: 112 (gratis, bisa saat ponsel terkunci; tersedia di daerah yang pemdanya menyelenggarakan layanan 112)\nSumber: Komdigi — layanan112.komdigi.go.id\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-q6-feedback",
+      "text": "Question 6/8\n\nWhen is it OK to fight a fire yourself?\nOthers are alerted, the fire is small and contained, and you have a clear escape route\nCorrect\n\nCorrect answer: Others are alerted, the fire is small and contained, and you have a clear escape route\n\nOnly if all checklist answers are \"yes\"; otherwise alert others, leave, and call the fire department.\n\nUSFA\nWhenever you have an extinguisher nearby\nWhen the room is filling with smoke but you are close to the fire\nFire emergency in Indonesia\nFire department: 113\nGeneral emergency: 112 (free, works on a locked phone; available in areas whose local government runs a 112 service)\nSource: Komdigi — layanan112.komdigi.go.id\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-q7-feedback",
+      "text": "Soal 7/8\n\nMenurut regulasi Indonesia, kebakaran Golongan C adalah…\nBahan padat seperti kayu atau kertas\nInstalasi listrik bertegangan\nBenar\n\nJawaban benar: Instalasi listrik bertegangan\n\nPermenaker 04/1980 Ps.2: A padat (bukan logam), B cair/gas mudah terbakar, C instalasi listrik bertegangan, D logam. USFA juga: Golongan C = peralatan listrik, agen tidak menghantarkan listrik.\n\nPER.04/MEN/1980\nUSFA\nLogam yang terbakar\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-q7-feedback",
+      "text": "Question 7/8\n\nUnder Indonesian regulation, a Class C (Golongan C) fire is…\nSolid materials like wood or paper\nLive electrical installations\nCorrect\n\nCorrect answer: Live electrical installations\n\nPermenaker 04/1980 Article 2: A solids (excluding metals), B flammable liquids/gases, C live electrical installations, D metals. USFA also: Class C = electrical equipment, nonconductive extinguishing agents.\n\nPER.04/MEN/1980\nUSFA\nBurning metals\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-q8-feedback",
+      "text": "Soal 8/8\n\nDi Indonesia, berapa kali APAR wajib diperiksa?\nSekali setiap 5 tahun\nDua kali setahun (pemeriksaan 6 dan 12 bulan)\nBenar\n\nJawaban benar: Dua kali setahun (pemeriksaan 6 dan 12 bulan)\n\nPermenaker 04/1980 Ps.11(1). Setiap APAR wajib diperiksa dua kali setahun, yaitu pemeriksaan 6 dan 12 bulan.\n\nPER.04/MEN/1980\nHanya setelah digunakan\n\nHasil tersimpan di browser ini.\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nLihat skor",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-q8-feedback",
+      "text": "Question 8/8\n\nIn Indonesia, how often must an APAR be inspected?\nOnce every 5 years\nTwice a year (6- and 12-month checks)\nCorrect\n\nCorrect answer: Twice a year (6- and 12-month checks)\n\nPermenaker 04/1980 Article 11(1). Each fire extinguisher must be inspected twice a year, with 6- and 12-month checks.\n\nPER.04/MEN/1980\nOnly after it is used\n\nResult saved in this browser.\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nView score",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-quiz-summary",
+      "text": "Lulus\n\n7/8 · 87,5%\n\nAmbang lulus: ≥75% (6/8)\n\nWaktu total: 4 detik\n\nHasil tersimpan di browser ini.\n\nUlasan jawaban Anda\nApa kepanjangan PASS?\n\nJawaban Anda: Pull (cabut), Aim (arahkan), Squeeze (tekan tuas), Sweep (sapukan)\n\nBenar\n\nKlik bagian yang dicabut pertama kali.\n\nJawaban Anda: Selang & nozel\n\nSalah\n\nJawaban benar: Pin pengaman\n\nKe mana semprotan diarahkan?\n\nJawaban Anda: Ke pangkal api\n\nBenar\n\nBagaimana cara menekan tuas?\n\nJawaban Anda: Perlahan dan merata\n\nBenar\n\nKlik bagian yang menunjukkan tekanan terlalu tinggi/rendah.\n\nJawaban Anda: Indikator tekanan\n\nBenar\n\nKapan boleh memadamkan api sendiri?\n\nJawaban Anda: Orang lain sudah diberi tahu, api kecil dan terbatas, serta jalur keluar Anda bebas hambatan\n\nBenar\n\nMenurut regulasi Indonesia, kebakaran Golongan C adalah…\n\nJawaban Anda: Instalasi listrik bertegangan\n\nBenar\n\nDi Indonesia, berapa kali APAR wajib diperiksa?\n\nJawaban Anda: Dua kali setahun (pemeriksaan 6 dan 12 bulan)\n\nBenar\n\nUlangi kuis\nKembali ke latihan\nLihat hasil\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-quiz-summary",
+      "text": "Passed\n\n7/8 · 87.5%\n\nPassing score: ≥75% (6/8)\n\nTotal time: 4 seconds\n\nResult saved in this browser.\n\nReview your answers\nWhat does PASS stand for?\n\nYour answer: Pull, Aim, Squeeze, Sweep\n\nCorrect\n\nClick the part you remove first.\n\nYour answer: Hose & nozzle\n\nIncorrect\n\nCorrect answer: Safety pin\n\nWhere should you aim?\n\nYour answer: At the base of the fire\n\nCorrect\n\nHow should you squeeze the lever?\n\nYour answer: Slowly and evenly\n\nCorrect\n\nClick the part that shows if pressure is too high or too low.\n\nYour answer: Pressure gauge\n\nCorrect\n\nWhen is it OK to fight a fire yourself?\n\nYour answer: Others are alerted, the fire is small and contained, and you have a clear escape route\n\nCorrect\n\nUnder Indonesian regulation, a Class C (Golongan C) fire is…\n\nYour answer: Live electrical installations\n\nCorrect\n\nIn Indonesia, how often must an APAR be inspected?\n\nYour answer: Twice a year (6- and 12-month checks)\n\nCorrect\n\nRetry quiz\nBack to training\nView results\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-id-results",
+      "text": "Hasil tersimpan terbaru\n87,5%\n\n7/8\n\nLulus\n\nAmbang lulus: ≥75% (6/8)\n\n30 Okt 2026, 17.51\n\nWaktu total: 4 detik\n\nRiwayat kuis\n0%\n75%\n100%\n1\n\nMaksimal 20 percobaan tersimpan, dari terlama ke terbaru. Garis putus-putus menandai batas lulus 75%.\n\nJawaban dari percobaan tersimpan terbaru\nSoal\tJawaban Anda\tHasil\nApa kepanjangan PASS?\tPull (cabut), Aim (arahkan), Squeeze (tekan tuas), Sweep (sapukan)\tBenar\nKlik bagian yang dicabut pertama kali.\tSelang & nozel\tSalah\nKe mana semprotan diarahkan?\tKe pangkal api\tBenar\nBagaimana cara menekan tuas?\tPerlahan dan merata\tBenar\nKlik bagian yang menunjukkan tekanan terlalu tinggi/rendah.\tIndikator tekanan\tBenar\nKapan boleh memadamkan api sendiri?\tOrang lain sudah diberi tahu, api kecil dan terbatas, serta jalur keluar Anda bebas hambatan\tBenar\nMenurut regulasi Indonesia, kebakaran Golongan C adalah…\tInstalasi listrik bertegangan\tBenar\nDi Indonesia, berapa kali APAR wajib diperiksa?\tDua kali setahun (pemeriksaan 6 dan 12 bulan)\tBenar\nKonfigurasi saya\n\nGudang #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nHarga ilustrasi saat disimpan: Rp 600.000\n\nKonfigurasi #2\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nHarga ilustrasi saat disimpan: Rp 600.000\n\nConfig #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nHarga ilustrasi saat disimpan: Rp 600.000\n\nKelola konfigurasi\nNama peserta (opsional)\n\nMaksimal 60 karakter. Disimpan setelah selesai mengedit. Browser ini memakai satu nama untuk laporan berikutnya; nama tidak menunjukkan siapa yang mengerjakan kuis sebelumnya.\n\nUnduh laporan PDF\n\nHapus data saya\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nDarurat kebakaran di Indonesia\nPemadam Kebakaran: 113\nDarurat umum: 112 (gratis, bisa saat ponsel terkunci; tersedia di daerah yang pemdanya menyelenggarakan layanan 112)\nSumber: Komdigi — layanan112.komdigi.go.id",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "desktop-en-results",
+      "text": "Latest saved result\n87.5%\n\n7/8\n\nPassed\n\nPassing score: ≥75% (6/8)\n\nOct 30, 2026, 5:51 PM\n\nTotal time: 4 seconds\n\nQuiz history\n0%\n75%\n100%\n1\n\nUp to 20 saved attempts, oldest to newest. The dashed line marks 75%, the passing score.\n\nAnswers from the latest saved attempt\nQuestion\tYour answer\tResult\nWhat does PASS stand for?\tPull, Aim, Squeeze, Sweep\tCorrect\nClick the part you remove first.\tHose & nozzle\tIncorrect\nWhere should you aim?\tAt the base of the fire\tCorrect\nHow should you squeeze the lever?\tSlowly and evenly\tCorrect\nClick the part that shows if pressure is too high or too low.\tPressure gauge\tCorrect\nWhen is it OK to fight a fire yourself?\tOthers are alerted, the fire is small and contained, and you have a clear escape route\tCorrect\nUnder Indonesian regulation, a Class C (Golongan C) fire is…\tLive electrical installations\tCorrect\nIn Indonesia, how often must an APAR be inspected?\tTwice a year (6- and 12-month checks)\tCorrect\nMy configurations\n\nGudang #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nIllustrative price when saved: $38\n\nKonfigurasi #2\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nIllustrative price when saved: $38\n\nConfig #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nIllustrative price when saved: $38\n\nManage configurations\nParticipant name (optional)\n\nUp to 60 characters. Saved when you finish editing. This browser uses one name for future reports; it does not identify who took earlier quizzes.\n\nDownload PDF report\n\nClear my data\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nFire emergency in Indonesia\nFire department: 113\nGeneral emergency: 112 (free, works on a locked phone; available in areas whose local government runs a 112 service)\nSource: Komdigi — layanan112.komdigi.go.id",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-configure",
+      "text": "Putaran dijeda: kurangi gerakan\n\nHarga ilustrasi\n\nIDR 650.000\n\nJenis isi\nSerbuk Kimia ABC\nCO₂\nBusa AFFF\nAir\nKapasitas\n1 kg\n3 kg\n6 kg\n9 kg\nWarna tabung\nMerah\nKuning\nPerak\nBraket\nSimpan konfigurasi\nKonfigurasi saya\n\nGudang #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nKonfigurasi #2\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nConfig #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nMuat\nHapus\nSpek ilustrasi\nJenis isi\tSerbuk Kimia ABC\nKapasitas\t6 kg\nGolongan api (acuan umum)\tA / B / C\nWaktu semprot\t18 dtk\nJarak semprot\t4 m\nBerat unit berisi\t9 kg\n\nSpek dan kode visual adalah ilustrasi, bukan katalog produk nyata atau peringkat tersertifikasi. Semua jenis isi memakai model, nozel, dan indikator tekanan yang sama; penjelasan bagian mengacu pada model dasar ABC. Semua kapasitas dalam demo ini memakai kg. Berat tidak termasuk braket.\n\nAcuan golongan api: Damkar Banda Aceh\nEkspor PDF spesifikasi\n\nPilih nomor atau bagian APAR untuk membaca penjelasannya. Putar tampilan untuk menemukan bagian di sisi lainnya.\n\n1. Tuas\n2. Pin pengaman\n3. Selang & nozel\n4. Indikator tekanan\n5. Label\n6. Tabung",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-hotspot-handle",
+      "text": "Tuas\nTutup\n\nTekan perlahan dan merata untuk menyemprotkan isi. Lepaskan untuk berhenti.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-hotspot-pin",
+      "text": "Pin pengaman\nTutup\n\nMengunci tuas agar tidak tertekan tanpa sengaja. Langkah 1 PASS: cabut pin, dengan nozel mengarah menjauhi tubuh.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-hotspot-nozzle",
+      "text": "Selang & nozel\nTutup\n\nArahkan rendah ke pangkal api, lalu sapukan ke kiri dan kanan. Pastikan tidak tersumbat, retak, atau rusak.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-hotspot-gauge",
+      "text": "Indikator tekanan\nTutup\n\nMenunjukkan apakah tekanan terlalu tinggi atau terlalu rendah. Periksa setiap inspeksi.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-hotspot-label",
+      "text": "Label\nTutup\n\nMenunjukkan golongan kebakaran yang bisa dipadamkan. APAR serbaguna \"ABC\" untuk bahan padat, cairan/gas mudah terbakar, dan instalasi listrik bertegangan. Label harus selalu terbaca.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-hotspot-body",
+      "text": "Tabung\nTutup\n\nTidak boleh penyok atau berkarat. Di Indonesia, APAR diperiksa 2 kali setahun (pemeriksaan 6 dan 12 bulan) dan dipasang dengan puncak 1,2 m dari lantai.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-configure",
+      "text": "Rotation paused: reduced motion\n\nIllustrative price\n\nUSD 41\n\nExtinguishing agent\nDry Powder ABC\nCO₂\nFoam AFFF\nWater\nCapacity\n1 kg\n3 kg\n6 kg\n9 kg\nBody color\nRed\nYellow\nSilver\nBracket\nSave configuration\nMy configurations\n\nGudang #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nKonfigurasi #2\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nConfig #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nLoad\nDelete\nIllustrative specifications\nAgent\tDry Powder ABC\nCapacity\t6 kg\nFire classes (general reference)\tA / B / C\nDischarge time\t18 s\nDischarge range\t4 m\nFilled unit weight\t9 kg\n\nIllustrative specifications and visual codes, not a real product catalog or certified ratings. All agents share the same model, nozzle and gauge; part details describe the base ABC model. Capacities use kg throughout this demo. Weight excludes the bracket.\n\nFire class reference: Banda Aceh Fire Department\nExport spec PDF\n\nSelect a numbered marker or a part of the extinguisher to read about it. Rotate the view to find parts on the other side.\n\n1. Handle / lever\n2. Safety pin\n3. Hose & nozzle\n4. Pressure gauge\n5. Label\n6. Cylinder",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-hotspot-handle",
+      "text": "Handle / lever\nClose\n\nSqueeze it slowly and evenly to discharge the agent. Release it to stop.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-hotspot-pin",
+      "text": "Safety pin\nClose\n\nLocks the handle so it can't be squeezed by accident. Step 1 of PASS: pull the pin, keeping the nozzle pointed away from you.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-hotspot-nozzle",
+      "text": "Hose & nozzle\nClose\n\nAim low, at the base of the fire, and sweep side to side. Check it is not blocked, cracked or damaged.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-hotspot-gauge",
+      "text": "Pressure gauge\nClose\n\nShows whether pressure is too high or too low. Check it during every inspection.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-hotspot-label",
+      "text": "Label\nClose\n\nShows which fire classes it can fight. A multipurpose \"A-B-C\" unit covers ordinary solids, flammable liquids/gases, and live electrical fires. Keep the label readable.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-hotspot-body",
+      "text": "Cylinder\nClose\n\nMust be free of dents and rust. In Indonesia, APAR is inspected twice a year (6- and 12-month checks) and mounted with its top 1.2 m above the floor.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-pass-pull",
+      "text": "1 Cabut\n2 Arahkan\n3 Tekan\n4 Sapukan\n1/4 · Cabut\n\nCabut pin pengaman. Jaga nozel mengarah menjauhi tubuh.\n\nKlik target yang disorot atau bagian model yang sesuai, lalu pilih Lanjut.\n\nFokus ke bagian\nLakukan langkah ini\nLewati interaksi\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nKembali\nLanjut",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-pass-pull",
+      "text": "1 Pull\n2 Aim\n3 Squeeze\n4 Sweep\n1/4 · Pull\n\nPull the pin. Keep the nozzle pointed away from you.\n\nClick the highlighted target or the corresponding part of the model, then select Next.\n\nFocus on the part\nPerform this step\nSkip interaction\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nBack\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-pass-aim",
+      "text": "1 Cabut\n2 Arahkan\n3 Tekan\n4 Sapukan\n2/4 · Arahkan\n\nArahkan rendah, ke pangkal api.\n\nKlik target yang disorot atau bagian model yang sesuai, lalu pilih Lanjut.\n\nFokus ke bagian\nLakukan langkah ini\nLewati interaksi\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nKembali\nLanjut",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-pass-aim",
+      "text": "1 Pull\n2 Aim\n3 Squeeze\n4 Sweep\n2/4 · Aim\n\nAim low, at the base of the fire.\n\nClick the highlighted target or the corresponding part of the model, then select Next.\n\nFocus on the part\nPerform this step\nSkip interaction\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nBack\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-pass-squeeze",
+      "text": "1 Cabut\n2 Arahkan\n3 Tekan\n4 Sapukan\n3/4 · Tekan\n\nTekan tuas perlahan dan merata.\n\nTahan target 3 selama satu detik penuh dengan sentuhan, tetikus, Space, atau Enter. Lepas lebih awal mengulang cincin progres dari nol.\n\nFokus ke bagian\nTahan selama 1 detik\nLewati interaksi\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nKembali\nLanjut",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-pass-squeeze",
+      "text": "1 Pull\n2 Aim\n3 Squeeze\n4 Sweep\n3/4 · Squeeze\n\nSqueeze the lever slowly and evenly.\n\nHold target 3 for one full second using touch, mouse, Space or Enter. Releasing early resets the ring.\n\nFocus on the part\nHold for 1 second\nSkip interaction\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nBack\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-pass-sweep",
+      "text": "1 Cabut\n2 Arahkan\n3 Tekan\n4 Sapukan\n4/4 · Sapukan\n\nSapukan nozel ke kiri dan kanan.\n\nKontrol sapuan\nKiri\nKanan\n\nTujuan: Kanan\n\nSiklus: 0/3\n\nGerakkan pegangan ke ujung yang disorot, lalu kembali ke ujung lainnya. Kanan lalu kembali ke kiri dihitung satu siklus. Selesaikan tiga siklus. Anda dapat menggeser, mengetuk rel, atau memakai tombol panah, Home dan End.\n\nFokus ke bagian\nLewati interaksi\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nKembali\nSelesai",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-pass-sweep",
+      "text": "1 Pull\n2 Aim\n3 Squeeze\n4 Sweep\n4/4 · Sweep\n\nSweep the nozzle from side to side.\n\nSweep control\nLeft\nRight\n\nTarget: Right\n\nCycles: 0/3\n\nMove the handle to the highlighted end, then back to the other end. Right and back to left is one cycle. Complete three cycles. You can drag, tap the track, or use the arrow, Home and End keys.\n\nFocus on the part\nSkip interaction\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nBack\nFinish",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-q1-feedback",
+      "text": "Soal 1/8\n\nApa kepanjangan PASS?\nPull (cabut), Aim (arahkan), Squeeze (tekan tuas), Sweep (sapukan)\nBenar\n\nJawaban benar: Pull (cabut), Aim (arahkan), Squeeze (tekan tuas), Sweep (sapukan)\n\nPASS = Pull (cabut pin), Aim (arahkan), Squeeze (tekan tuas), Sweep (sapukan).\n\nUSFA\nPush (dorong), Aim (arahkan), Spray (semprotkan), Stop (berhenti)\nPull (cabut), Activate (aktifkan), Spray (semprotkan), Sweep (sapukan)\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-q1-feedback",
+      "text": "Question 1/8\n\nWhat does PASS stand for?\nPull, Aim, Squeeze, Sweep\nCorrect\n\nCorrect answer: Pull, Aim, Squeeze, Sweep\n\nPASS = Pull the pin, Aim low, Squeeze the lever, Sweep side to side.\n\nUSFA\nPush, Aim, Spray, Stop\nPull, Activate, Spray, Sweep\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-q2-feedback",
+      "text": "Soal 2/8\n\nKlik bagian yang dicabut pertama kali.\nBagian 1\nBagian 2\nBagian 3\nSalah\n\nJawaban benar: Pin pengaman\n\nPin pengaman mengunci tuas; harus dicabut dulu.\n\nUSFA\nBagian 4\nBagian 5\nBagian 6\nPulihkan tampilan\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-q2-feedback",
+      "text": "Question 2/8\n\nClick the part you remove first.\nPart 1\nPart 2\nPart 3\nIncorrect\n\nCorrect answer: Safety pin\n\nThe safety pin locks the lever; it must be pulled out first.\n\nUSFA\nPart 4\nPart 5\nPart 6\nReset view\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-q3-feedback",
+      "text": "Soal 3/8\n\nKe mana semprotan diarahkan?\nKe puncak nyala api\nKe pangkal api\nBenar\n\nJawaban benar: Ke pangkal api\n\nArahkan rendah ke pangkal api.\n\nUSFA\nKe asap\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-q3-feedback",
+      "text": "Question 3/8\n\nWhere should you aim?\nAt the top of the flames\nAt the base of the fire\nCorrect\n\nCorrect answer: At the base of the fire\n\nAim low, at the base of the fire.\n\nUSFA\nAt the smoke\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-q4-feedback",
+      "text": "Soal 4/8\n\nBagaimana cara menekan tuas?\nPerlahan dan merata\nBenar\n\nJawaban benar: Perlahan dan merata\n\nTekan perlahan dan merata.\n\nUSFA\nDengan tekanan singkat dan cepat\nSekuat mungkin, sekali saja\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-q4-feedback",
+      "text": "Question 4/8\n\nHow should you squeeze the lever?\nSlowly and evenly\nCorrect\n\nCorrect answer: Slowly and evenly\n\nSqueeze the lever slowly and evenly.\n\nUSFA\nIn quick short bursts\nAs hard as possible, once\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-q5-feedback",
+      "text": "Soal 5/8\n\nKlik bagian yang menunjukkan tekanan terlalu tinggi/rendah.\nBagian 1\nBagian 2\nBagian 3\nBagian 4\nBenar\n\nJawaban benar: Indikator tekanan\n\nMenunjukkan apakah tekanan terlalu tinggi atau terlalu rendah. Periksa setiap inspeksi.\n\nUSFA\nPER.04/MEN/1980\nBagian 5\nBagian 6\nPulihkan tampilan\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-q5-feedback",
+      "text": "Question 5/8\n\nClick the part that shows if pressure is too high or too low.\nPart 1\nPart 2\nPart 3\nPart 4\nCorrect\n\nCorrect answer: Pressure gauge\n\nShows whether pressure is too high or too low. Check it during every inspection.\n\nUSFA\nPER.04/MEN/1980\nPart 5\nPart 6\nReset view\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-q6-feedback",
+      "text": "Soal 6/8\n\nKapan boleh memadamkan api sendiri?\nOrang lain sudah diberi tahu, api kecil dan terbatas, serta jalur keluar Anda bebas hambatan\nBenar\n\nJawaban benar: Orang lain sudah diberi tahu, api kecil dan terbatas, serta jalur keluar Anda bebas hambatan\n\nHanya jika semua jawaban daftar periksa \"ya\"; jika ragu, beri tahu orang lain, keluar, dan hubungi pemadam kebakaran.\n\nUSFA\nKapan pun ada APAR di dekat Anda\nSaat ruangan dipenuhi asap, tetapi Anda dekat dengan api\nDarurat kebakaran di Indonesia\nPemadam Kebakaran: 113\nDarurat umum: 112 (gratis, bisa saat ponsel terkunci; tersedia di daerah yang pemdanya menyelenggarakan layanan 112)\nSumber: Komdigi — layanan112.komdigi.go.id\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-q6-feedback",
+      "text": "Question 6/8\n\nWhen is it OK to fight a fire yourself?\nOthers are alerted, the fire is small and contained, and you have a clear escape route\nCorrect\n\nCorrect answer: Others are alerted, the fire is small and contained, and you have a clear escape route\n\nOnly if all checklist answers are \"yes\"; otherwise alert others, leave, and call the fire department.\n\nUSFA\nWhenever you have an extinguisher nearby\nWhen the room is filling with smoke but you are close to the fire\nFire emergency in Indonesia\nFire department: 113\nGeneral emergency: 112 (free, works on a locked phone; available in areas whose local government runs a 112 service)\nSource: Komdigi — layanan112.komdigi.go.id\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-q7-feedback",
+      "text": "Soal 7/8\n\nMenurut regulasi Indonesia, kebakaran Golongan C adalah…\nBahan padat seperti kayu atau kertas\nInstalasi listrik bertegangan\nBenar\n\nJawaban benar: Instalasi listrik bertegangan\n\nPermenaker 04/1980 Ps.2: A padat (bukan logam), B cair/gas mudah terbakar, C instalasi listrik bertegangan, D logam. USFA juga: Golongan C = peralatan listrik, agen tidak menghantarkan listrik.\n\nPER.04/MEN/1980\nUSFA\nLogam yang terbakar\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nBerikutnya",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-q7-feedback",
+      "text": "Question 7/8\n\nUnder Indonesian regulation, a Class C (Golongan C) fire is…\nSolid materials like wood or paper\nLive electrical installations\nCorrect\n\nCorrect answer: Live electrical installations\n\nPermenaker 04/1980 Article 2: A solids (excluding metals), B flammable liquids/gases, C live electrical installations, D metals. USFA also: Class C = electrical equipment, nonconductive extinguishing agents.\n\nPER.04/MEN/1980\nUSFA\nBurning metals\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nNext",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-q8-feedback",
+      "text": "Soal 8/8\n\nDi Indonesia, berapa kali APAR wajib diperiksa?\nSekali setiap 5 tahun\nDua kali setahun (pemeriksaan 6 dan 12 bulan)\nBenar\n\nJawaban benar: Dua kali setahun (pemeriksaan 6 dan 12 bulan)\n\nPermenaker 04/1980 Ps.11(1). Setiap APAR wajib diperiksa dua kali setahun, yaitu pemeriksaan 6 dan 12 bulan.\n\nPER.04/MEN/1980\nHanya setelah digunakan\n\nHasil tersimpan di browser ini.\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nLihat skor",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-q8-feedback",
+      "text": "Question 8/8\n\nIn Indonesia, how often must an APAR be inspected?\nOnce every 5 years\nTwice a year (6- and 12-month checks)\nCorrect\n\nCorrect answer: Twice a year (6- and 12-month checks)\n\nPermenaker 04/1980 Article 11(1). Each fire extinguisher must be inspected twice a year, with 6- and 12-month checks.\n\nPER.04/MEN/1980\nOnly after it is used\n\nResult saved in this browser.\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nView score",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-quiz-summary",
+      "text": "Lulus\n\n7/8 · 87,5%\n\nAmbang lulus: ≥75% (6/8)\n\nWaktu total: 3 detik\n\nHasil tersimpan di browser ini.\n\nUlasan jawaban Anda\nApa kepanjangan PASS?\n\nJawaban Anda: Pull (cabut), Aim (arahkan), Squeeze (tekan tuas), Sweep (sapukan)\n\nBenar\n\nKlik bagian yang dicabut pertama kali.\n\nJawaban Anda: Selang & nozel\n\nSalah\n\nJawaban benar: Pin pengaman\n\nKe mana semprotan diarahkan?\n\nJawaban Anda: Ke pangkal api\n\nBenar\n\nBagaimana cara menekan tuas?\n\nJawaban Anda: Perlahan dan merata\n\nBenar\n\nKlik bagian yang menunjukkan tekanan terlalu tinggi/rendah.\n\nJawaban Anda: Indikator tekanan\n\nBenar\n\nKapan boleh memadamkan api sendiri?\n\nJawaban Anda: Orang lain sudah diberi tahu, api kecil dan terbatas, serta jalur keluar Anda bebas hambatan\n\nBenar\n\nMenurut regulasi Indonesia, kebakaran Golongan C adalah…\n\nJawaban Anda: Instalasi listrik bertegangan\n\nBenar\n\nDi Indonesia, berapa kali APAR wajib diperiksa?\n\nJawaban Anda: Dua kali setahun (pemeriksaan 6 dan 12 bulan)\n\nBenar\n\nUlangi kuis\nKembali ke latihan\nLihat hasil\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-quiz-summary",
+      "text": "Passed\n\n7/8 · 87.5%\n\nPassing score: ≥75% (6/8)\n\nTotal time: 3 seconds\n\nResult saved in this browser.\n\nReview your answers\nWhat does PASS stand for?\n\nYour answer: Pull, Aim, Squeeze, Sweep\n\nCorrect\n\nClick the part you remove first.\n\nYour answer: Hose & nozzle\n\nIncorrect\n\nCorrect answer: Safety pin\n\nWhere should you aim?\n\nYour answer: At the base of the fire\n\nCorrect\n\nHow should you squeeze the lever?\n\nYour answer: Slowly and evenly\n\nCorrect\n\nClick the part that shows if pressure is too high or too low.\n\nYour answer: Pressure gauge\n\nCorrect\n\nWhen is it OK to fight a fire yourself?\n\nYour answer: Others are alerted, the fire is small and contained, and you have a clear escape route\n\nCorrect\n\nUnder Indonesian regulation, a Class C (Golongan C) fire is…\n\nYour answer: Live electrical installations\n\nCorrect\n\nIn Indonesia, how often must an APAR be inspected?\n\nYour answer: Twice a year (6- and 12-month checks)\n\nCorrect\n\nRetry quiz\nBack to training\nView results\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-id-results",
+      "text": "Hasil tersimpan terbaru\n87,5%\n\n7/8\n\nLulus\n\nAmbang lulus: ≥75% (6/8)\n\n30 Okt 2026, 17.51\n\nWaktu total: 3 detik\n\nRiwayat kuis\n0%\n75%\n100%\n1\n\nMaksimal 20 percobaan tersimpan, dari terlama ke terbaru. Garis putus-putus menandai batas lulus 75%.\n\nJawaban dari percobaan tersimpan terbaru\nSoal\tJawaban Anda\tHasil\nApa kepanjangan PASS?\tPull (cabut), Aim (arahkan), Squeeze (tekan tuas), Sweep (sapukan)\tBenar\nKlik bagian yang dicabut pertama kali.\tSelang & nozel\tSalah\nKe mana semprotan diarahkan?\tKe pangkal api\tBenar\nBagaimana cara menekan tuas?\tPerlahan dan merata\tBenar\nKlik bagian yang menunjukkan tekanan terlalu tinggi/rendah.\tIndikator tekanan\tBenar\nKapan boleh memadamkan api sendiri?\tOrang lain sudah diberi tahu, api kecil dan terbatas, serta jalur keluar Anda bebas hambatan\tBenar\nMenurut regulasi Indonesia, kebakaran Golongan C adalah…\tInstalasi listrik bertegangan\tBenar\nDi Indonesia, berapa kali APAR wajib diperiksa?\tDua kali setahun (pemeriksaan 6 dan 12 bulan)\tBenar\nKonfigurasi saya\n\nGudang #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nHarga ilustrasi saat disimpan: Rp 600.000\n\nKonfigurasi #2\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nHarga ilustrasi saat disimpan: Rp 600.000\n\nConfig #1\n\nSerbuk Kimia ABC · 6 kg · Merah · Tanpa braket\n\nHarga ilustrasi saat disimpan: Rp 600.000\n\nKelola konfigurasi\nNama peserta (opsional)\n\nMaksimal 60 karakter. Disimpan setelah selesai mengedit. Browser ini memakai satu nama untuk laporan berikutnya; nama tidak menunjukkan siapa yang mengerjakan kuis sebelumnya.\n\nUnduh laporan PDF\n\nHapus data saya\n\nDemo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat.\n\nDarurat kebakaran di Indonesia\nPemadam Kebakaran: 113\nDarurat umum: 112 (gratis, bisa saat ponsel terkunci; tersedia di daerah yang pemdanya menyelenggarakan layanan 112)\nSumber: Komdigi — layanan112.komdigi.go.id",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    },
+    {
+      "name": "mobile-en-results",
+      "text": "Latest saved result\n87.5%\n\n7/8\n\nPassed\n\nPassing score: ≥75% (6/8)\n\nOct 30, 2026, 5:51 PM\n\nTotal time: 3 seconds\n\nQuiz history\n0%\n75%\n100%\n1\n\nUp to 20 saved attempts, oldest to newest. The dashed line marks 75%, the passing score.\n\nAnswers from the latest saved attempt\nQuestion\tYour answer\tResult\nWhat does PASS stand for?\tPull, Aim, Squeeze, Sweep\tCorrect\nClick the part you remove first.\tHose & nozzle\tIncorrect\nWhere should you aim?\tAt the base of the fire\tCorrect\nHow should you squeeze the lever?\tSlowly and evenly\tCorrect\nClick the part that shows if pressure is too high or too low.\tPressure gauge\tCorrect\nWhen is it OK to fight a fire yourself?\tOthers are alerted, the fire is small and contained, and you have a clear escape route\tCorrect\nUnder Indonesian regulation, a Class C (Golongan C) fire is…\tLive electrical installations\tCorrect\nIn Indonesia, how often must an APAR be inspected?\tTwice a year (6- and 12-month checks)\tCorrect\nMy configurations\n\nGudang #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nIllustrative price when saved: $38\n\nKonfigurasi #2\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nIllustrative price when saved: $38\n\nConfig #1\n\nDry Powder ABC · 6 kg · Red · Without bracket\n\nIllustrative price when saved: $38\n\nManage configurations\nParticipant name (optional)\n\nUp to 60 characters. Saved when you finish editing. This browser uses one name for future reports; it does not identify who took earlier quizzes.\n\nDownload PDF report\n\nClear my data\n\nDemo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training.\n\nFire emergency in Indonesia\nFire department: 113\nGeneral emergency: 112 (free, works on a locked phone; available in areas whose local government runs a 112 service)\nSource: Komdigi — layanan112.komdigi.go.id",
+      "pageOverflow": false,
+      "panelOverflow": false,
+      "bad": []
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision",
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision",
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+  ]
+}

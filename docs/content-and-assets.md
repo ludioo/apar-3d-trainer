@@ -30,7 +30,7 @@ Belum diverifikasi: Sketchfab dan Quaternius untuk APAR — tidak dicek dalam ri
 - Title: "Interactive 3D Fire Extinguisher Trainer & Configurator" / "Pelatihan & Konfigurator APAR 3D Interaktif"
 - Tagline: "Configure it. Learn PASS. Prove it." / "Konfigurasi. Pelajari PASS. Buktikan."
 - Tabs: Configure/Konfigurasi · Train/Latihan · Results/Hasil · About/Tentang
-- PASS: Pull — "Pull the pin." / "Cabut pin pengaman." · Aim — "Aim the nozzle at the base of the fire." / "Arahkan nozzle ke pangkal api." · Squeeze — "Squeeze the handle." / "Tekan tuas." · Sweep — "Sweep side to side." / "Sapukan ke kiri dan kanan."
+- PASS: Pull — "Pull the pin." / "Cabut pin pengaman." · Aim — "Aim the nozzle at the base of the fire." / "Arahkan nozel ke pangkal api." · Squeeze — "Squeeze the handle." / "Tekan tuas." · Sweep — "Sweep side to side." / "Sapukan ke kiri dan kanan."
 - Disclaimer: lihat bagian Disclaimer di bawah.
 - Harga: "Illustrative price" / "Harga ilustrasi".
 - Kredit T4.1 EN: "3D model and comparison HDRI: Poly Haven (CC0). Default lighting: three.js RoomEnvironment (MIT)."
@@ -45,9 +45,9 @@ Belum diverifikasi: Sketchfab dan Quaternius untuk APAR — tidak dicek dalam ri
 ## Teks hotspot (salin persis ke `src/data/hotspots.json`)
 | id | EN | ID | Sumber |
 |---|---|---|---|
-| `pin` | **Safety pin** — Locks the handle so it can't be squeezed by accident. Step 1 of PASS: pull the pin, keeping the nozzle pointed away from you. | **Pin pengaman** — Mengunci tuas agar tidak tertekan tanpa sengaja. Langkah 1 PASS: cabut pin, dengan nozzle mengarah menjauhi tubuh. | USFA |
+| `pin` | **Safety pin** — Locks the handle so it can't be squeezed by accident. Step 1 of PASS: pull the pin, keeping the nozzle pointed away from you. | **Pin pengaman** — Mengunci tuas agar tidak tertekan tanpa sengaja. Langkah 1 PASS: cabut pin, dengan nozel mengarah menjauhi tubuh. | USFA |
 | `handle` | **Handle / lever** — Squeeze it slowly and evenly to discharge the agent. Release it to stop. | **Tuas** — Tekan perlahan dan merata untuk menyemprotkan isi. Lepaskan untuk berhenti. | USFA (lepas untuk berhenti = cara kerja tuas; deskriptif) |
-| `nozzle` | **Hose & nozzle** — Aim low, at the base of the fire, and sweep side to side. Check it is not blocked, cracked or damaged. | **Selang & nozzle** — Arahkan rendah ke pangkal api, lalu sapukan ke kiri dan kanan. Pastikan tidak tersumbat, retak, atau rusak. | USFA; PERMENAKER Ps.12(1)c |
+| `nozzle` | **Hose & nozzle** — Aim low, at the base of the fire, and sweep side to side. Check it is not blocked, cracked or damaged. | **Selang & nozel** — Arahkan rendah ke pangkal api, lalu sapukan ke kiri dan kanan. Pastikan tidak tersumbat, retak, atau rusak. | USFA; PERMENAKER Ps.12(1)c |
 | `gauge` | **Pressure gauge** — Shows whether pressure is too high or too low. Check it during every inspection. | **Indikator tekanan** — Menunjukkan apakah tekanan terlalu tinggi atau terlalu rendah. Periksa setiap inspeksi. | USFA; PERMENAKER Ps.12(1)a |
 | `label` | **Label** — Shows which fire classes it can fight. A multipurpose "A-B-C" unit covers ordinary solids, flammable liquids/gases, and live electrical fires. Keep the label readable. | **Label** — Menunjukkan golongan kebakaran yang bisa dipadamkan. APAR serbaguna "ABC" untuk bahan padat, cairan/gas mudah terbakar, dan instalasi listrik bertegangan. Label harus selalu terbaca. | USFA; PERMENAKER Ps.2 & Ps.12(1)b |
 | `body` | **Cylinder** — Must be free of dents and rust. In Indonesia, APAR is inspected twice a year (6- and 12-month checks) and mounted with its top 1.2 m above the floor. | **Tabung** — Tidak boleh penyok atau berkarat. Di Indonesia, APAR diperiksa 2 kali setahun (pemeriksaan 6 dan 12 bulan) dan dipasang dengan puncak 1,2 m dari lantai. | USFA; PERMENAKER Ps.8, Ps.11 |
@@ -55,10 +55,10 @@ Belum diverifikasi: Sketchfab dan Quaternius untuk APAR — tidak dicek dalam ri
 ## Langkah PASS (`pass-steps.json`)
 | id | hotspot | EN | ID |
 |---|---|---|---|
-| `pull` | pin | Pull the pin. Keep the nozzle pointed away from you. | Cabut pin pengaman. Jaga nozzle mengarah menjauhi tubuh. |
+| `pull` | pin | Pull the pin. Keep the nozzle pointed away from you. | Cabut pin pengaman. Jaga nozel mengarah menjauhi tubuh. |
 | `aim` | nozzle | Aim low, at the base of the fire. | Arahkan rendah, ke pangkal api. |
 | `squeeze` | handle | Squeeze the lever slowly and evenly. | Tekan tuas perlahan dan merata. |
-| `sweep` | nozzle | Sweep the nozzle from side to side. | Sapukan nozzle ke kiri dan kanan. |
+| `sweep` | nozzle | Sweep the nozzle from side to side. | Sapukan nozel ke kiri dan kanan. |
 Sumber: USFA.
 
 ## Kuis 8 soal (`quiz.json`) — jawaban benar ditandai ✅
@@ -75,11 +75,11 @@ Sumber: USFA.
 5. `q5` pick-hotspot — EN: Click the part that shows if pressure is too high or too low. / ID: Klik bagian yang menunjukkan tekanan terlalu tinggi/rendah. → `gauge` ✅ [USFA]
 6. `q6` choice — EN: When is it OK to fight a fire yourself? / ID: Kapan boleh memadamkan api sendiri?
    a) Others are alerted, the fire is small and contained, and you have a clear escape route ✅ · b) Whenever you have an extinguisher nearby · c) When the room is filling with smoke but you are close to the fire
-   Penjelasan EN: Only if all checklist answers are "yes"; otherwise alert others, leave, and call the fire department. / ID: Hanya jika semua jawaban checklist "ya"; jika ragu, beri tahu orang lain, keluar, dan hubungi pemadam kebakaran. [USFA]
+   Penjelasan EN: Only if all checklist answers are "yes"; otherwise alert others, leave, and call the fire department. / ID: Hanya jika semua jawaban daftar periksa "ya"; jika ragu, beri tahu orang lain, keluar, dan hubungi pemadam kebakaran. [USFA]
    Catatan UI: setelah feedback q6 tampilkan blok nomor darurat (lihat §Nomor darurat). [KOMDIGI112]
 7. `q7` choice — EN: Under Indonesian regulation, a Class C (Golongan C) fire is… / ID: Menurut regulasi Indonesia, kebakaran Golongan C adalah…
    a) Solid materials like wood or paper · b) Live electrical installations ✅ · c) Burning metals
-   Penjelasan: Permenaker 04/1980 Ps.2: A padat (bukan logam), B cair/gas mudah terbakar, C instalasi listrik bertegangan, D logam. USFA juga: Class C = peralatan listrik, agen tidak menghantarkan listrik. [PERMENAKER, USFA]
+   Penjelasan: Permenaker 04/1980 Ps.2: A padat (bukan logam), B cair/gas mudah terbakar, C instalasi listrik bertegangan, D logam. USFA juga: Golongan C = peralatan listrik, agen tidak menghantarkan listrik. [PERMENAKER, USFA]
 8. `q8` choice — EN: In Indonesia, how often must an APAR be inspected? / ID: Di Indonesia, berapa kali APAR wajib diperiksa?
    a) Once every 5 years · b) Twice a year (6- and 12-month checks) ✅ · c) Only after it is used
    Penjelasan: Permenaker 04/1980 Ps.11(1). [PERMENAKER]
@@ -108,6 +108,12 @@ Pertanyaan, pilihan EN, kunci dan penjelasan existing tetap. Pilihan ID berikut 
 
 q2 ID tetap: Pin pengaman mengunci tuas; harus dicabut dulu. q5 menyalin body gauge existing, sumber USFA + Permenaker Ps.12(1)a. q7 EN menerjemahkan penjelasan existing, sumber Permenaker Ps.2 + USFA. q8 melengkapi rujukan Ps.11(1) dengan isi pasalnya. Sumber USFA dan salinan Permenaker pada bagian Sumber K3 dibuka ulang 28 Okt 2026 saat planning.
 
+
+### Padanan istilah ID T4.17 (disetujui Barkah 30 Oktober 2026)
+
+- Ejaan `nozel` mengikuti KBBI VI Daring: https://kbbi.kemendikdasmen.go.id/entri/nozel (diperiksa 30 Oktober 2026). Judul bagian ID menjadi **Selang & nozel**; `gauge` tetap **Indikator tekanan**.
+- Padanan `nozzle` → `nozel`, `checklist` → `daftar periksa`, dan `Class C` → `Golongan C` hanya mengganti istilah pada teks ID di atas. Makna instruksi, kunci jawaban, teks EN dan rujukan USFA/Permenaker tetap. Identifier data tetap `nozzle`/`gauge`.
+- Copy UI memakai Braket/braket, indikator tekanan, Ulasan, Sumber, tetikus, cincin progres, pita warna dan peringkat. Default ID tetap `Konfigurasi #{n}`; nama yang sudah disimpan, termasuk `Config #1` dari mode EN atau input pengguna, dipertahankan apa adanya.
 
 ## Disclaimer (tetap tampil di Train, Results, PDF)
 EN: "Demo for portfolio purposes. Based on USFA guidance and Permenakertrans PER.04/MEN/1980. Not a substitute for certified fire-safety training." / ID: "Demo untuk portfolio. Mengacu pada panduan USFA dan Permenakertrans PER.04/MEN/1980. Bukan pengganti pelatihan K3 kebakaran bersertifikat."

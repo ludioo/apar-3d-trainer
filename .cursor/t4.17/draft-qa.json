@@ -1,0 +1,11 @@
+{
+  "initialDefault": "Konfigurasi #1",
+  "defaultAfterLanguage": "Konfigurasi #1",
+  "draftAfterLanguage": "Draft gudang",
+  "noteState": {
+    "text": "Spek dan kode visual adalah ilustrasi, bukan katalog produk nyata atau peringkat tersertifikasi. Semua jenis isi memakai model, nozel, dan indikator tekanan yang sama; penjelasan bagian mengacu pada model dasar ABC. Semua kapasitas dalam demo ini memakai kg. Berat tidak termasuk braket.",
+    "width": 356,
+    "scrollWidth": 356
+  },
+  "method": "Synthetic language-button click because normal modal makes the topbar inert; draft state is preserved."
+}

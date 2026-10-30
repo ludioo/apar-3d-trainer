@@ -2,7 +2,7 @@
   {
     "id": "pull", "hotspot": "pin", "interaction": "click",
     "title": { "en": "Pull", "id": "Cabut" },
-    "instruction": { "en": "Pull the pin. Keep the nozzle pointed away from you.", "id": "Cabut pin pengaman. Jaga nozzle mengarah menjauhi tubuh." }
+    "instruction": { "en": "Pull the pin. Keep the nozzle pointed away from you.", "id": "Cabut pin pengaman. Jaga nozel mengarah menjauhi tubuh." }
   },
   {
     "id": "aim", "hotspot": "nozzle", "interaction": "click",
@@ -17,6 +17,6 @@
   {
     "id": "sweep", "hotspot": "nozzle", "interaction": "drag",
     "title": { "en": "Sweep", "id": "Sapukan" },
-    "instruction": { "en": "Sweep the nozzle from side to side.", "id": "Sapukan nozzle ke kiri dan kanan." }
+    "instruction": { "en": "Sweep the nozzle from side to side.", "id": "Sapukan nozel ke kiri dan kanan." }
   }
 ]

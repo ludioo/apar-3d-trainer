@@ -201,7 +201,7 @@
     "emergency": true,
     "explanation": {
       "en": "Only if all checklist answers are \"yes\"; otherwise alert others, leave, and call the fire department.",
-      "id": "Hanya jika semua jawaban checklist \"ya\"; jika ragu, beri tahu orang lain, keluar, dan hubungi pemadam kebakaran."
+      "id": "Hanya jika semua jawaban daftar periksa \"ya\"; jika ragu, beri tahu orang lain, keluar, dan hubungi pemadam kebakaran."
     },
     "sources": [
       {
@@ -243,7 +243,7 @@
     "answer": "b",
     "explanation": {
       "en": "Permenaker 04/1980 Article 2: A solids (excluding metals), B flammable liquids/gases, C live electrical installations, D metals. USFA also: Class C = electrical equipment, nonconductive extinguishing agents.",
-      "id": "Permenaker 04/1980 Ps.2: A padat (bukan logam), B cair/gas mudah terbakar, C instalasi listrik bertegangan, D logam. USFA juga: Class C = peralatan listrik, agen tidak menghantarkan listrik."
+      "id": "Permenaker 04/1980 Ps.2: A padat (bukan logam), B cair/gas mudah terbakar, C instalasi listrik bertegangan, D logam. USFA juga: Golongan C = peralatan listrik, agen tidak menghantarkan listrik."
     },
     "sources": [
       {

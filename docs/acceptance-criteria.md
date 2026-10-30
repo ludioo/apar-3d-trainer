@@ -380,5 +380,17 @@ Bukti AI: check/build196 key dan self-check framing lolos; QA produksi12 kelompo
 
 Batas QA AI: area landscape pendek dapat tersisa16px seperti existing; tidak diklaim nyaman untuk model. Pada peek/teks besar, deskripsi memiliki ruang scroll terbatas. Posisi snap yang tingginya sama bukan posisi visual berbeda. Teks200 adalah perubahan token, bukan zoom OS. HP fisik/Safari/Firefox/AT/Lighthouse/4G/FPS baru belum diuji AI. Rincian perangkat pemeriksaan Barkah tidak diberikan; acceptance tidak dianggap bukti pengujian perangkat tambahan oleh AI. Task dan tiga checklist ditutup berdasarkan konfirmasi pengguna. Check/build dijalankan ulang sebelum commit; browser tidak diuji ulang karena penutupan hanya dokumentasi. Commit/push ke develop diotorisasi, tanpa lanjut task berikutnya atau mengubah main/deploy produksi.
 
+## T4.17 — Terjemahan ID istilah sisa (30 Okt 2026)
+
+Status: **selesai — acceptance Barkah diterima 30 Oktober 2026**. Barkah mengonfirmasi sudah mengecek T4.17 dan lolos, lalu meminta task/checklist selesai, pembaruan dokumen serta commit/push ke develop. Tiga checklist inline prompt ditutup berdasarkan konfirmasi tersebut dan QA existing. Validasi Q1–Q3 dan planning disetujui sebelum implementasi. Rincian perangkat/browser pengguna tidak diberikan; batas QA AI tetap berlaku.
+
+- [x] Mode ID: tidak ada sisa Bracket/nozzle/gauge/Config #1 pada copy UI utama Configure/Train/Results. Nama baru memakai Konfigurasi #n. Nama tersimpan EN/custom, identifier, nama diri/produk/sumber dan kepanjangan PASS dikecualikan sesuai persetujuan; tidak ada penggantian nama otomatis atau migrasi.
+- [x] Mode EN tetap English.
+- [x] npm run check paritas key EN/ID lolos.
+
+Cara cek ulang: desktop buka `http://localhost:4257/#configure`; HP satu Wi-Fi buka `http://192.168.100.4:4257/#configure`. Pilih ID, periksa Braket/catatan spek dan enam hotspot, lalu simpan konfigurasi baru. Buka Latihan untuk instruksi PASS, kuis/ulasan serta Hasil. Periksa sumber pada Tentang dan ekspor laporan/spec PDF. Ganti EN dan ulangi; gulir isi panjang. Nama tersimpan seperti Config #1 tetap literal sesuai keputusan pengguna.
+
+Bukti: check196 key/build, enam kelompok QA/84 keadaan Chrome desktop1280×900 dan mobile emulasi390×844, draft nama serta empat PDF bilingual/delapan halaman lolos. Detail dan gate antislop ada di `.cursor/t4.17-report.md`. HP fisik/Safari/Firefox/AT/zoom OS/performa baru dan ekspor PDF mobile belum diuji AI; acceptance pengguna tidak dianggap bukti perangkat tambahan. Check/build dijalankan ulang sebelum commit; browser tidak diulang karena penutupan hanya dokumentasi. Commit/push ke develop diotorisasi, tanpa lanjut task berikutnya atau mengubah main/deploy produksi.
+
 ## Peta fitur → task
 F1: T0.2–T0.3 · F2: T1.3–T1.4 · F3: T1.5–T1.6 · F4: T1.6 · F5: T1.7 · F6: T2.1–T2.2 · F7: T2.3 · F8: T2.4 · F9: T2.5 · F10: T1.1 · F11: T3.2–T3.3 · F15: T3.6 · F16: L4 · Wajib riset (Draco/KTX2, <3 dtk, HP, Vercel, video, GitHub, SEO): T0.3, T3.1, T0.4, T3.4, T3.3
