@@ -1,0 +1,16 @@
+[
+  {
+    "device": "desktop",
+    "reducedMotion": false,
+    "input": "mouse wheel",
+    "scroll": 220,
+    "closeStable": true
+  },
+  {
+    "device": "mobile",
+    "reducedMotion": false,
+    "input": "CDP touchStart/Move/End swipe",
+    "scroll": 322,
+    "closeStable": true
+  }
+]

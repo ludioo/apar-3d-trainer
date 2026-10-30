@@ -392,5 +392,19 @@ Cara cek ulang: desktop buka `http://localhost:4257/#configure`; HP satu Wi-Fi b
 
 Bukti: check196 key/build, enam kelompok QA/84 keadaan Chrome desktop1280×900 dan mobile emulasi390×844, draft nama serta empat PDF bilingual/delapan halaman lolos. Detail dan gate antislop ada di `.cursor/t4.17-report.md`. HP fisik/Safari/Firefox/AT/zoom OS/performa baru dan ekspor PDF mobile belum diuji AI; acceptance pengguna tidak dianggap bukti perangkat tambahan. Check/build dijalankan ulang sebelum commit; browser tidak diulang karena penutupan hanya dokumentasi. Commit/push ke develop diotorisasi, tanpa lanjut task berikutnya atau mengubah main/deploy produksi.
 
+## T4.19 — About: Close tidak menimpa link (30 Okt 2026)
+
+Status: **selesai, acceptance Barkah diterima 30 Oktober 2026**. Barkah mengonfirmasi sudah mengecek T4.19 dan lolos, lalu meminta task/tiga checklist selesai, pembaruan dokumen serta commit/push ke develop. Validasi dan planning disetujui sebelum implementasi. Checklist ditutup berdasarkan konfirmasi pengguna serta bukti QA existing; rincian perangkat/browser pemeriksaan pengguna tidak diberikan sehingga batas QA AI tetap berlaku.
+
+- [x] Semua link About bisa diklik; Close tidak overlapping.
+- [x] Mobile ~390 px: scroll isi About OK; Close tetap terjangkau.
+- [x] Esc / tombol Close menutup modal.
+
+Cara cek desktop: buka `http://localhost:4269/#configure`, pilih ID lalu Tentang. Gulir isi sampai kredit, portfolio dan GitHub; judul/Tutup harus tetap di atas, terpisah dari isi. Coba tautan sumber/kredit/portfolio/GitHub, lalu Tutup. Ulangi dalam EN, coba Esc dan Tab/Shift+Tab; fokus kembali ke About/Tentang saat ditutup. Coba juga dari Latihan/Train dan Hasil/Results.
+
+Cara cek HP satu Wi-Fi: buka `http://192.168.100.4:4269/#configure`, pilih Tentang/About, geser isi sampai bawah dan tap Tutup. Ulangi EN/ID, portrait sekitar390px, landscape dan teks diperbesar. Untuk dua tautan telepon, cukup periksa penyerahan ke dialer lalu batalkan tanpa menelepon layanan darurat. Kedua URL lokal/LAN telah merespons HTTP200 pada30 Oktober2026; bukan deployment baru.
+
+Bukti AI: check196 key/build,12 kombinasi layar/bahasa/teks,36 sampel scroll,120 klik/tap seluruh10 tautan,1080 hit-test, keyboard/hash serta regresi Simpan/Hapus EN/ID lolos. Wheel desktop dan swipe sentuh emulasi dengan motion normal juga lolos. Screenshot, rincian/gate antislop dan kegagalan probe awal ada di `.cursor/t4.19-report.md`. HP fisik/AT/Safari/Firefox/zoom OS/performa baru belum diuji AI; teks200% disimulasikan lewat ukuran font computed. Acceptance pengguna tidak dianggap bukti perangkat tambahan oleh AI. Check/build dijalankan ulang sebelum commit; browser tidak diuji ulang karena penutupan hanya mengubah dokumentasi. Commit/push ke develop diotorisasi, tanpa lanjut task berikutnya atau mengubah main/deploy produksi.
+
 ## Peta fitur → task
 F1: T0.2–T0.3 · F2: T1.3–T1.4 · F3: T1.5–T1.6 · F4: T1.6 · F5: T1.7 · F6: T2.1–T2.2 · F7: T2.3 · F8: T2.4 · F9: T2.5 · F10: T1.1 · F11: T3.2–T3.3 · F15: T3.6 · F16: L4 · Wajib riset (Draco/KTX2, <3 dtk, HP, Vercel, video, GitHub, SEO): T0.3, T3.1, T0.4, T3.4, T3.3

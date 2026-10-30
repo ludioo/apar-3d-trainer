@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-30",
+  "viewport": [
+    390,
+    844
+  ],
+  "close": {
+    "left": 256.328125,
+    "top": 735.6875,
+    "right": 346,
+    "bottom": 779.6875,
+    "width": 89.671875,
+    "height": 44
+  },
+  "position": "sticky",
+  "links": 10,
+  "overlaps": [
+    {
+      "text": "Model 3D dan HDRI pembanding: Poly Haven (CC0). Pencahayaan default: three.js RoomEnvironment (MIT).",
+      "rect": {
+        "left": 44,
+        "top": 757.296875,
+        "right": 346,
+        "bottom": 793.296875,
+        "width": 302,
+        "height": 36
+      },
+      "intersection": {
+        "left": 256.328125,
+        "top": 757.296875,
+        "right": 346,
+        "bottom": 779.6875
+      },
+      "coveredByClose": true
+    }
+  ],
+  "sharedModalStyles": [
+    {
+      "selector": ".saved-dialog",
+      "dialog": {
+        "display": "none",
+        "maxHeight": "812px",
+        "overflowY": "auto"
+      },
+      "body": {
+        "display": "flex",
+        "overflowY": "visible",
+        "padding": "24px",
+        "gap": "12px"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4413 @@
+{
+  "date": "2026-10-30",
+  "origin": "http://localhost:4269",
+  "states": [
+    {
+      "name": "desktop-en-100",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "language": "en",
+      "scale": 100,
+      "scrolls": [
+        {
+          "dialog": {
+            "x": 400,
+            "y": 67.5,
+            "width": 480,
+            "height": 765,
+            "right": 880,
+            "bottom": 832.5
+          },
+          "body": {
+            "x": 401,
+            "y": 144.5,
+            "width": 478,
+            "height": 687,
+            "right": 879,
+            "bottom": 831.5
+          },
+          "header": {
+            "x": 401,
+            "y": 68.5,
+            "width": 478,
+            "height": 76,
+            "right": 879,
+            "bottom": 144.5
+          },
+          "close": {
+            "x": 767.921875,
+            "y": 84.5,
+            "width": 87.078125,
+            "height": 44,
+            "right": 855,
+            "bottom": 128.5
+          },
+          "title": {
+            "x": 425,
+            "y": 94.5,
+            "width": 326.921875,
+            "height": 24,
+            "right": 751.921875,
+            "bottom": 118.5
+          },
+          "bodyScroll": 0,
+          "bodyHeight": 923,
+          "dialogScroll": 0,
+          "scrollRange": 236,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 400,
+            "y": 67.5,
+            "width": 480,
+            "height": 765,
+            "right": 880,
+            "bottom": 832.5
+          },
+          "body": {
+            "x": 401,
+            "y": 144.5,
+            "width": 478,
+            "height": 687,
+            "right": 879,
+            "bottom": 831.5
+          },
+          "header": {
+            "x": 401,
+            "y": 68.5,
+            "width": 478,
+            "height": 76,
+            "right": 879,
+            "bottom": 144.5
+          },
+          "close": {
+            "x": 767.921875,
+            "y": 84.5,
+            "width": 87.078125,
+            "height": 44,
+            "right": 855,
+            "bottom": 128.5
+          },
+          "title": {
+            "x": 425,
+            "y": 94.5,
+            "width": 326.921875,
+            "height": 24,
+            "right": 751.921875,
+            "bottom": 118.5
+          },
+          "bodyScroll": 118,
+          "bodyHeight": 923,
+          "dialogScroll": 0,
+          "scrollRange": 236,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 400,
+            "y": 67.5,
+            "width": 480,
+            "height": 765,
+            "right": 880,
+            "bottom": 832.5
+          },
+          "body": {
+            "x": 401,
+            "y": 144.5,
+            "width": 478,
+            "height": 687,
+            "right": 879,
+            "bottom": 831.5
+          },
+          "header": {
+            "x": 401,
+            "y": 68.5,
+            "width": 478,
+            "height": 76,
+            "right": 879,
+            "bottom": 144.5
+          },
+          "close": {
+            "x": 767.921875,
+            "y": 84.5,
+            "width": 87.078125,
+            "height": 44,
+            "right": 855,
+            "bottom": 128.5
+          },
+          "title": {
+            "x": 425,
+            "y": 94.5,
+            "width": 326.921875,
+            "height": 24,
+            "right": 751.921875,
+            "bottom": 118.5
+          },
+          "bodyScroll": 236,
+          "bodyHeight": 923,
+          "dialogScroll": 0,
+          "scrollRange": 236,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/",
+          "label": "USFA: Choosing and Using Fire Extinguishers",
+          "x": 640,
+          "y": 413.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf",
+          "label": "Permenakertrans PER.04/MEN/1980 (PDF copy)",
+          "x": 640,
+          "y": 461.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:113",
+          "label": "Fire department: 113",
+          "x": 640,
+          "y": 487.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:112",
+          "label": "General emergency: 112 (free, works on a locked phone; available in areas whose local government runs a 112 service)",
+          "x": 640,
+          "y": 487.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://layanan112.komdigi.go.id/tentang",
+          "label": "Source: Komdigi — layanan112.komdigi.go.id",
+          "x": 640,
+          "y": 487.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/korean_fire_extinguisher_01",
+          "label": "3D model: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
+          "x": 640,
+          "y": 529.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://threejs.org/docs/pages/RoomEnvironment.html",
+          "label": "Default lighting: RoomEnvironment (three.js, MIT)",
+          "x": 640,
+          "y": 577.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/studio_small_09",
+          "label": "Comparison HDRI (?hdri=1): studio_small_09 (Poly Haven, CC0)",
+          "x": 640,
+          "y": 625.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://barkahmauludi.com/",
+          "label": "Barkah Mauludi: portfolio and contact",
+          "x": 640,
+          "y": 729.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://github.com/ludioo/apar-3d-trainer",
+          "label": "Source code on GitHub",
+          "x": 640,
+          "y": 785.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-en-200",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "language": "en",
+      "scale": 200,
+      "scrolls": [
+        {
+          "dialog": {
+            "x": 400,
+            "y": 67.5,
+            "width": 480,
+            "height": 765,
+            "right": 880,
+            "bottom": 832.5
+          },
+          "body": {
+            "x": 401,
+            "y": 159.5,
+            "width": 478,
+            "height": 672,
+            "right": 879,
+            "bottom": 831.5
+          },
+          "header": {
+            "x": 401,
+            "y": 68.5,
+            "width": 478,
+            "height": 91,
+            "right": 879,
+            "bottom": 159.5
+          },
+          "close": {
+            "x": 728.859375,
+            "y": 84.5,
+            "width": 126.140625,
+            "height": 59,
+            "right": 855,
+            "bottom": 143.5
+          },
+          "title": {
+            "x": 425,
+            "y": 90,
+            "width": 287.859375,
+            "height": 48,
+            "right": 712.859375,
+            "bottom": 138
+          },
+          "bodyScroll": 0,
+          "bodyHeight": 2074,
+          "dialogScroll": 0,
+          "scrollRange": 1402,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 400,
+            "y": 67.5,
+            "width": 480,
+            "height": 765,
+            "right": 880,
+            "bottom": 832.5
+          },
+          "body": {
+            "x": 401,
+            "y": 159.5,
+            "width": 478,
+            "height": 672,
+            "right": 879,
+            "bottom": 831.5
+          },
+          "header": {
+            "x": 401,
+            "y": 68.5,
+            "width": 478,
+            "height": 91,
+            "right": 879,
+            "bottom": 159.5
+          },
+          "close": {
+            "x": 728.859375,
+            "y": 84.5,
+            "width": 126.140625,
+            "height": 59,
+            "right": 855,
+            "bottom": 143.5
+          },
+          "title": {
+            "x": 425,
+            "y": 90,
+            "width": 287.859375,
+            "height": 48,
+            "right": 712.859375,
+            "bottom": 138
+          },
+          "bodyScroll": 701,
+          "bodyHeight": 2074,
+          "dialogScroll": 0,
+          "scrollRange": 1402,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 400,
+            "y": 67.5,
+            "width": 480,
+            "height": 765,
+            "right": 880,
+            "bottom": 832.5
+          },
+          "body": {
+            "x": 401,
+            "y": 159.5,
+            "width": 478,
+            "height": 672,
+            "right": 879,
+            "bottom": 831.5
+          },
+          "header": {
+            "x": 401,
+            "y": 68.5,
+            "width": 478,
+            "height": 91,
+            "right": 879,
+            "bottom": 159.5
+          },
+          "close": {
+            "x": 728.859375,
+            "y": 84.5,
+            "width": 126.140625,
+            "height": 59,
+            "right": 855,
+            "bottom": 143.5
+          },
+          "title": {
+            "x": 425,
+            "y": 90,
+            "width": 287.859375,
+            "height": 48,
+            "right": 712.859375,
+            "bottom": 138
+          },
+          "bodyScroll": 1402,
+          "bodyHeight": 2074,
+          "dialogScroll": 0,
+          "scrollRange": 1402,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/",
+          "label": "USFA: Choosing and Using Fire Extinguishers",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf",
+          "label": "Permenakertrans PER.04/MEN/1980 (PDF copy)",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:113",
+          "label": "Fire department: 113",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:112",
+          "label": "General emergency: 112 (free, works on a locked phone; available in areas whose local government runs a 112 service)",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 168,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://layanan112.komdigi.go.id/tentang",
+          "label": "Source: Komdigi — layanan112.komdigi.go.id",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 72,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/korean_fire_extinguisher_01",
+          "label": "3D model: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://threejs.org/docs/pages/RoomEnvironment.html",
+          "label": "Default lighting: RoomEnvironment (three.js, MIT)",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/studio_small_09",
+          "label": "Comparison HDRI (?hdri=1): studio_small_09 (Poly Haven, CC0)",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://barkahmauludi.com/",
+          "label": "Barkah Mauludi: portfolio and contact",
+          "x": 640,
+          "y": 709.5,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://github.com/ludioo/apar-3d-trainer",
+          "label": "Source code on GitHub",
+          "x": 640,
+          "y": 785.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-id-100",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "language": "id",
+      "scale": 100,
+      "scrolls": [
+        {
+          "dialog": {
+            "x": 400,
+            "y": 67.5,
+            "width": 480,
+            "height": 765,
+            "right": 880,
+            "bottom": 832.5
+          },
+          "body": {
+            "x": 401,
+            "y": 144.5,
+            "width": 478,
+            "height": 687,
+            "right": 879,
+            "bottom": 831.5
+          },
+          "header": {
+            "x": 401,
+            "y": 68.5,
+            "width": 478,
+            "height": 76,
+            "right": 879,
+            "bottom": 144.5
+          },
+          "close": {
+            "x": 765.328125,
+            "y": 84.5,
+            "width": 89.671875,
+            "height": 44,
+            "right": 855,
+            "bottom": 128.5
+          },
+          "title": {
+            "x": 425,
+            "y": 94.5,
+            "width": 324.328125,
+            "height": 24,
+            "right": 749.328125,
+            "bottom": 118.5
+          },
+          "bodyScroll": 0,
+          "bodyHeight": 944,
+          "dialogScroll": 0,
+          "scrollRange": 257,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 400,
+            "y": 67.5,
+            "width": 480,
+            "height": 765,
+            "right": 880,
+            "bottom": 832.5
+          },
+          "body": {
+            "x": 401,
+            "y": 144.5,
+            "width": 478,
+            "height": 687,
+            "right": 879,
+            "bottom": 831.5
+          },
+          "header": {
+            "x": 401,
+            "y": 68.5,
+            "width": 478,
+            "height": 76,
+            "right": 879,
+            "bottom": 144.5
+          },
+          "close": {
+            "x": 765.328125,
+            "y": 84.5,
+            "width": 89.671875,
+            "height": 44,
+            "right": 855,
+            "bottom": 128.5
+          },
+          "title": {
+            "x": 425,
+            "y": 94.5,
+            "width": 324.328125,
+            "height": 24,
+            "right": 749.328125,
+            "bottom": 118.5
+          },
+          "bodyScroll": 129,
+          "bodyHeight": 944,
+          "dialogScroll": 0,
+          "scrollRange": 257,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 400,
+            "y": 67.5,
+            "width": 480,
+            "height": 765,
+            "right": 880,
+            "bottom": 832.5
+          },
+          "body": {
+            "x": 401,
+            "y": 144.5,
+            "width": 478,
+            "height": 687,
+            "right": 879,
+            "bottom": 831.5
+          },
+          "header": {
+            "x": 401,
+            "y": 68.5,
+            "width": 478,
+            "height": 76,
+            "right": 879,
+            "bottom": 144.5
+          },
+          "close": {
+            "x": 765.328125,
+            "y": 84.5,
+            "width": 89.671875,
+            "height": 44,
+            "right": 855,
+            "bottom": 128.5
+          },
+          "title": {
+            "x": 425,
+            "y": 94.5,
+            "width": 324.328125,
+            "height": 24,
+            "right": 749.328125,
+            "bottom": 118.5
+          },
+          "bodyScroll": 257,
+          "bodyHeight": 944,
+          "dialogScroll": 0,
+          "scrollRange": 257,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/",
+          "label": "USFA: Choosing and Using Fire Extinguishers",
+          "x": 640,
+          "y": 434.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf",
+          "label": "Permenakertrans PER.04/MEN/1980 (salinan PDF)",
+          "x": 640,
+          "y": 482.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:113",
+          "label": "Pemadam Kebakaran: 113",
+          "x": 640,
+          "y": 487.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:112",
+          "label": "Darurat umum: 112 (gratis, bisa saat ponsel terkunci; tersedia di daerah yang pemdanya menyelenggarakan layanan 112)",
+          "x": 640,
+          "y": 487.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://layanan112.komdigi.go.id/tentang",
+          "label": "Sumber: Komdigi — layanan112.komdigi.go.id",
+          "x": 640,
+          "y": 487.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/korean_fire_extinguisher_01",
+          "label": "Model 3D: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
+          "x": 640,
+          "y": 529.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://threejs.org/docs/pages/RoomEnvironment.html",
+          "label": "Pencahayaan default: RoomEnvironment (three.js, MIT)",
+          "x": 640,
+          "y": 577.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/studio_small_09",
+          "label": "HDRI pembanding (?hdri=1): studio_small_09 (Poly Haven, CC0)",
+          "x": 640,
+          "y": 625.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://barkahmauludi.com/",
+          "label": "Barkah Mauludi: portfolio dan kontak",
+          "x": 640,
+          "y": 729.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://github.com/ludioo/apar-3d-trainer",
+          "label": "Kode sumber di GitHub",
+          "x": 640,
+          "y": 785.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-id-200",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "language": "id",
+      "scale": 200,
+      "scrolls": [
+        {
+          "dialog": {
+            "x": 400,
+            "y": 67.5,
+            "width": 480,
+            "height": 765,
+            "right": 880,
+            "bottom": 832.5
+          },
+          "body": {
+            "x": 401,
+            "y": 159.5,
+            "width": 478,
+            "height": 672,
+            "right": 879,
+            "bottom": 831.5
+          },
+          "header": {
+            "x": 401,
+            "y": 68.5,
+            "width": 478,
+            "height": 91,
+            "right": 879,
+            "bottom": 159.5
+          },
+          "close": {
+            "x": 723.671875,
+            "y": 84.5,
+            "width": 131.328125,
+            "height": 59,
+            "right": 855,
+            "bottom": 143.5
+          },
+          "title": {
+            "x": 425,
+            "y": 90,
+            "width": 282.671875,
+            "height": 48,
+            "right": 707.671875,
+            "bottom": 138
+          },
+          "bodyScroll": 0,
+          "bodyHeight": 2122,
+          "dialogScroll": 0,
+          "scrollRange": 1450,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 400,
+            "y": 67.5,
+            "width": 480,
+            "height": 765,
+            "right": 880,
+            "bottom": 832.5
+          },
+          "body": {
+            "x": 401,
+            "y": 159.5,
+            "width": 478,
+            "height": 672,
+            "right": 879,
+            "bottom": 831.5
+          },
+          "header": {
+            "x": 401,
+            "y": 68.5,
+            "width": 478,
+            "height": 91,
+            "right": 879,
+            "bottom": 159.5
+          },
+          "close": {
+            "x": 723.671875,
+            "y": 84.5,
+            "width": 131.328125,
+            "height": 59,
+            "right": 855,
+            "bottom": 143.5
+          },
+          "title": {
+            "x": 425,
+            "y": 90,
+            "width": 282.671875,
+            "height": 48,
+            "right": 707.671875,
+            "bottom": 138
+          },
+          "bodyScroll": 725,
+          "bodyHeight": 2122,
+          "dialogScroll": 0,
+          "scrollRange": 1450,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 400,
+            "y": 67.5,
+            "width": 480,
+            "height": 765,
+            "right": 880,
+            "bottom": 832.5
+          },
+          "body": {
+            "x": 401,
+            "y": 159.5,
+            "width": 478,
+            "height": 672,
+            "right": 879,
+            "bottom": 831.5
+          },
+          "header": {
+            "x": 401,
+            "y": 68.5,
+            "width": 478,
+            "height": 91,
+            "right": 879,
+            "bottom": 159.5
+          },
+          "close": {
+            "x": 723.671875,
+            "y": 84.5,
+            "width": 131.328125,
+            "height": 59,
+            "right": 855,
+            "bottom": 143.5
+          },
+          "title": {
+            "x": 425,
+            "y": 90,
+            "width": 282.671875,
+            "height": 48,
+            "right": 707.671875,
+            "bottom": 138
+          },
+          "bodyScroll": 1450,
+          "bodyHeight": 2122,
+          "dialogScroll": 0,
+          "scrollRange": 1450,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/",
+          "label": "USFA: Choosing and Using Fire Extinguishers",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf",
+          "label": "Permenakertrans PER.04/MEN/1980 (salinan PDF)",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:113",
+          "label": "Pemadam Kebakaran: 113",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:112",
+          "label": "Darurat umum: 112 (gratis, bisa saat ponsel terkunci; tersedia di daerah yang pemdanya menyelenggarakan layanan 112)",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 168,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://layanan112.komdigi.go.id/tentang",
+          "label": "Sumber: Komdigi — layanan112.komdigi.go.id",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 72,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/korean_fire_extinguisher_01",
+          "label": "Model 3D: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://threejs.org/docs/pages/RoomEnvironment.html",
+          "label": "Pencahayaan default: RoomEnvironment (three.js, MIT)",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/studio_small_09",
+          "label": "HDRI pembanding (?hdri=1): studio_small_09 (Poly Haven, CC0)",
+          "x": 640,
+          "y": 495.5,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://barkahmauludi.com/",
+          "label": "Barkah Mauludi: portfolio dan kontak",
+          "x": 640,
+          "y": 709.5,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://github.com/ludioo/apar-3d-trainer",
+          "label": "Kode sumber di GitHub",
+          "x": 640,
+          "y": 785.5,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-en-100",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "language": "en",
+      "scale": 100,
+      "scrolls": [
+        {
+          "dialog": {
+            "x": 19,
+            "y": 63.296875,
+            "width": 352,
+            "height": 717.390625,
+            "right": 371,
+            "bottom": 780.6875
+          },
+          "body": {
+            "x": 20,
+            "y": 140.296875,
+            "width": 350,
+            "height": 639.390625,
+            "right": 370,
+            "bottom": 779.6875
+          },
+          "header": {
+            "x": 20,
+            "y": 64.296875,
+            "width": 350,
+            "height": 76,
+            "right": 370,
+            "bottom": 140.296875
+          },
+          "close": {
+            "x": 258.921875,
+            "y": 80.296875,
+            "width": 87.078125,
+            "height": 44,
+            "right": 346,
+            "bottom": 124.296875
+          },
+          "title": {
+            "x": 44,
+            "y": 90.296875,
+            "width": 198.921875,
+            "height": 24,
+            "right": 242.921875,
+            "bottom": 114.296875
+          },
+          "bodyScroll": 0,
+          "bodyHeight": 1023,
+          "dialogScroll": 0,
+          "scrollRange": 384,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 19,
+            "y": 63.296875,
+            "width": 352,
+            "height": 717.390625,
+            "right": 371,
+            "bottom": 780.6875
+          },
+          "body": {
+            "x": 20,
+            "y": 140.296875,
+            "width": 350,
+            "height": 639.390625,
+            "right": 370,
+            "bottom": 779.6875
+          },
+          "header": {
+            "x": 20,
+            "y": 64.296875,
+            "width": 350,
+            "height": 76,
+            "right": 370,
+            "bottom": 140.296875
+          },
+          "close": {
+            "x": 258.921875,
+            "y": 80.296875,
+            "width": 87.078125,
+            "height": 44,
+            "right": 346,
+            "bottom": 124.296875
+          },
+          "title": {
+            "x": 44,
+            "y": 90.296875,
+            "width": 198.921875,
+            "height": 24,
+            "right": 242.921875,
+            "bottom": 114.296875
+          },
+          "bodyScroll": 192,
+          "bodyHeight": 1023,
+          "dialogScroll": 0,
+          "scrollRange": 384,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 19,
+            "y": 63.296875,
+            "width": 352,
+            "height": 717.390625,
+            "right": 371,
+            "bottom": 780.6875
+          },
+          "body": {
+            "x": 20,
+            "y": 140.296875,
+            "width": 350,
+            "height": 639.390625,
+            "right": 370,
+            "bottom": 779.6875
+          },
+          "header": {
+            "x": 20,
+            "y": 64.296875,
+            "width": 350,
+            "height": 76,
+            "right": 370,
+            "bottom": 140.296875
+          },
+          "close": {
+            "x": 258.921875,
+            "y": 80.296875,
+            "width": 87.078125,
+            "height": 44,
+            "right": 346,
+            "bottom": 124.296875
+          },
+          "title": {
+            "x": 44,
+            "y": 90.296875,
+            "width": 198.921875,
+            "height": 24,
+            "right": 242.921875,
+            "bottom": 114.296875
+          },
+          "bodyScroll": 384,
+          "bodyHeight": 1023,
+          "dialogScroll": 0,
+          "scrollRange": 384,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/",
+          "label": "USFA: Choosing and Using Fire Extinguishers",
+          "x": 195,
+          "y": 460.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf",
+          "label": "Permenakertrans PER.04/MEN/1980 (PDF copy)",
+          "x": 195,
+          "y": 460.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:113",
+          "label": "Fire department: 113",
+          "x": 195,
+          "y": 460.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:112",
+          "label": "General emergency: 112 (free, works on a locked phone; available in areas whose local government runs a 112 service)",
+          "x": 195,
+          "y": 459.796875,
+          "contained": true,
+          "height": 63,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://layanan112.komdigi.go.id/tentang",
+          "label": "Source: Komdigi — layanan112.komdigi.go.id",
+          "x": 195,
+          "y": 460.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/korean_fire_extinguisher_01",
+          "label": "3D model: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
+          "x": 195,
+          "y": 460.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://threejs.org/docs/pages/RoomEnvironment.html",
+          "label": "Default lighting: RoomEnvironment (three.js, MIT)",
+          "x": 195,
+          "y": 507.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/studio_small_09",
+          "label": "Comparison HDRI (?hdri=1): studio_small_09 (Poly Haven, CC0)",
+          "x": 195,
+          "y": 555.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://barkahmauludi.com/",
+          "label": "Barkah Mauludi: portfolio and contact",
+          "x": 195,
+          "y": 677.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://github.com/ludioo/apar-3d-trainer",
+          "label": "Source code on GitHub",
+          "x": 195,
+          "y": 733.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-en-200",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "language": "en",
+      "scale": 200,
+      "scrolls": [
+        {
+          "dialog": {
+            "x": 35,
+            "y": 63.296875,
+            "width": 320,
+            "height": 717.390625,
+            "right": 355,
+            "bottom": 780.6875
+          },
+          "body": {
+            "x": 36,
+            "y": 155.296875,
+            "width": 318,
+            "height": 624.390625,
+            "right": 354,
+            "bottom": 779.6875
+          },
+          "header": {
+            "x": 36,
+            "y": 64.296875,
+            "width": 318,
+            "height": 91,
+            "right": 354,
+            "bottom": 155.296875
+          },
+          "close": {
+            "x": 203.859375,
+            "y": 80.296875,
+            "width": 126.140625,
+            "height": 59,
+            "right": 330,
+            "bottom": 139.296875
+          },
+          "title": {
+            "x": 60,
+            "y": 85.796875,
+            "width": 127.859375,
+            "height": 48,
+            "right": 187.859375,
+            "bottom": 133.796875
+          },
+          "bodyScroll": 0,
+          "bodyHeight": 3140,
+          "dialogScroll": 0,
+          "scrollRange": 2516,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 35,
+            "y": 63.296875,
+            "width": 320,
+            "height": 717.390625,
+            "right": 355,
+            "bottom": 780.6875
+          },
+          "body": {
+            "x": 36,
+            "y": 155.296875,
+            "width": 318,
+            "height": 624.390625,
+            "right": 354,
+            "bottom": 779.6875
+          },
+          "header": {
+            "x": 36,
+            "y": 64.296875,
+            "width": 318,
+            "height": 91,
+            "right": 354,
+            "bottom": 155.296875
+          },
+          "close": {
+            "x": 203.859375,
+            "y": 80.296875,
+            "width": 126.140625,
+            "height": 59,
+            "right": 330,
+            "bottom": 139.296875
+          },
+          "title": {
+            "x": 60,
+            "y": 85.796875,
+            "width": 127.859375,
+            "height": 48,
+            "right": 187.859375,
+            "bottom": 133.796875
+          },
+          "bodyScroll": 1258,
+          "bodyHeight": 3140,
+          "dialogScroll": 0,
+          "scrollRange": 2516,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 35,
+            "y": 63.296875,
+            "width": 320,
+            "height": 717.390625,
+            "right": 355,
+            "bottom": 780.6875
+          },
+          "body": {
+            "x": 36,
+            "y": 155.296875,
+            "width": 318,
+            "height": 624.390625,
+            "right": 354,
+            "bottom": 779.6875
+          },
+          "header": {
+            "x": 36,
+            "y": 64.296875,
+            "width": 318,
+            "height": 91,
+            "right": 354,
+            "bottom": 155.296875
+          },
+          "close": {
+            "x": 203.859375,
+            "y": 80.296875,
+            "width": 126.140625,
+            "height": 59,
+            "right": 330,
+            "bottom": 139.296875
+          },
+          "title": {
+            "x": 60,
+            "y": 85.796875,
+            "width": 127.859375,
+            "height": 48,
+            "right": 187.859375,
+            "bottom": 133.796875
+          },
+          "bodyScroll": 2516,
+          "bodyHeight": 3140,
+          "dialogScroll": 0,
+          "scrollRange": 2516,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/",
+          "label": "USFA: Choosing and Using Fire Extinguishers",
+          "x": 195,
+          "y": 467.296875,
+          "contained": true,
+          "height": 126,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf",
+          "label": "Permenakertrans PER.04/MEN/1980 (PDF copy)",
+          "x": 195,
+          "y": 467.296875,
+          "contained": true,
+          "height": 126,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:113",
+          "label": "Fire department: 113",
+          "x": 195,
+          "y": 467.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:112",
+          "label": "General emergency: 112 (free, works on a locked phone; available in areas whose local government runs a 112 service)",
+          "x": 195,
+          "y": 467.296875,
+          "contained": true,
+          "height": 294,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://layanan112.komdigi.go.id/tentang",
+          "label": "Source: Komdigi — layanan112.komdigi.go.id",
+          "x": 195,
+          "y": 467.296875,
+          "contained": true,
+          "height": 108,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/korean_fire_extinguisher_01",
+          "label": "3D model: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
+          "x": 195,
+          "y": 467.296875,
+          "contained": true,
+          "height": 126,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://threejs.org/docs/pages/RoomEnvironment.html",
+          "label": "Default lighting: RoomEnvironment (three.js, MIT)",
+          "x": 195,
+          "y": 467.296875,
+          "contained": true,
+          "height": 126,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/studio_small_09",
+          "label": "Comparison HDRI (?hdri=1): studio_small_09 (Poly Haven, CC0)",
+          "x": 195,
+          "y": 467.296875,
+          "contained": true,
+          "height": 168,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://barkahmauludi.com/",
+          "label": "Barkah Mauludi: portfolio and contact",
+          "x": 195,
+          "y": 617.296875,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://github.com/ludioo/apar-3d-trainer",
+          "label": "Source code on GitHub",
+          "x": 195,
+          "y": 713.296875,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-id-100",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "language": "id",
+      "scale": 100,
+      "scrolls": [
+        {
+          "dialog": {
+            "x": 19,
+            "y": 63.296875,
+            "width": 352,
+            "height": 717.390625,
+            "right": 371,
+            "bottom": 780.6875
+          },
+          "body": {
+            "x": 20,
+            "y": 140.296875,
+            "width": 350,
+            "height": 639.390625,
+            "right": 370,
+            "bottom": 779.6875
+          },
+          "header": {
+            "x": 20,
+            "y": 64.296875,
+            "width": 350,
+            "height": 76,
+            "right": 370,
+            "bottom": 140.296875
+          },
+          "close": {
+            "x": 256.328125,
+            "y": 80.296875,
+            "width": 89.671875,
+            "height": 44,
+            "right": 346,
+            "bottom": 124.296875
+          },
+          "title": {
+            "x": 44,
+            "y": 90.296875,
+            "width": 196.328125,
+            "height": 24,
+            "right": 240.328125,
+            "bottom": 114.296875
+          },
+          "bodyScroll": 0,
+          "bodyHeight": 1023,
+          "dialogScroll": 0,
+          "scrollRange": 384,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 19,
+            "y": 63.296875,
+            "width": 352,
+            "height": 717.390625,
+            "right": 371,
+            "bottom": 780.6875
+          },
+          "body": {
+            "x": 20,
+            "y": 140.296875,
+            "width": 350,
+            "height": 639.390625,
+            "right": 370,
+            "bottom": 779.6875
+          },
+          "header": {
+            "x": 20,
+            "y": 64.296875,
+            "width": 350,
+            "height": 76,
+            "right": 370,
+            "bottom": 140.296875
+          },
+          "close": {
+            "x": 256.328125,
+            "y": 80.296875,
+            "width": 89.671875,
+            "height": 44,
+            "right": 346,
+            "bottom": 124.296875
+          },
+          "title": {
+            "x": 44,
+            "y": 90.296875,
+            "width": 196.328125,
+            "height": 24,
+            "right": 240.328125,
+            "bottom": 114.296875
+          },
+          "bodyScroll": 192,
+          "bodyHeight": 1023,
+          "dialogScroll": 0,
+          "scrollRange": 384,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 19,
+            "y": 63.296875,
+            "width": 352,
+            "height": 717.390625,
+            "right": 371,
+            "bottom": 780.6875
+          },
+          "body": {
+            "x": 20,
+            "y": 140.296875,
+            "width": 350,
+            "height": 639.390625,
+            "right": 370,
+            "bottom": 779.6875
+          },
+          "header": {
+            "x": 20,
+            "y": 64.296875,
+            "width": 350,
+            "height": 76,
+            "right": 370,
+            "bottom": 140.296875
+          },
+          "close": {
+            "x": 256.328125,
+            "y": 80.296875,
+            "width": 89.671875,
+            "height": 44,
+            "right": 346,
+            "bottom": 124.296875
+          },
+          "title": {
+            "x": 44,
+            "y": 90.296875,
+            "width": 196.328125,
+            "height": 24,
+            "right": 240.328125,
+            "bottom": 114.296875
+          },
+          "bodyScroll": 384,
+          "bodyHeight": 1023,
+          "dialogScroll": 0,
+          "scrollRange": 384,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/",
+          "label": "USFA: Choosing and Using Fire Extinguishers",
+          "x": 195,
+          "y": 460.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf",
+          "label": "Permenakertrans PER.04/MEN/1980 (salinan PDF)",
+          "x": 195,
+          "y": 460.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:113",
+          "label": "Pemadam Kebakaran: 113",
+          "x": 195,
+          "y": 460.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:112",
+          "label": "Darurat umum: 112 (gratis, bisa saat ponsel terkunci; tersedia di daerah yang pemdanya menyelenggarakan layanan 112)",
+          "x": 195,
+          "y": 459.796875,
+          "contained": true,
+          "height": 63,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://layanan112.komdigi.go.id/tentang",
+          "label": "Sumber: Komdigi — layanan112.komdigi.go.id",
+          "x": 195,
+          "y": 460.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/korean_fire_extinguisher_01",
+          "label": "Model 3D: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
+          "x": 195,
+          "y": 460.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://threejs.org/docs/pages/RoomEnvironment.html",
+          "label": "Pencahayaan default: RoomEnvironment (three.js, MIT)",
+          "x": 195,
+          "y": 507.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/studio_small_09",
+          "label": "HDRI pembanding (?hdri=1): studio_small_09 (Poly Haven, CC0)",
+          "x": 195,
+          "y": 555.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://barkahmauludi.com/",
+          "label": "Barkah Mauludi: portfolio dan kontak",
+          "x": 195,
+          "y": 677.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://github.com/ludioo/apar-3d-trainer",
+          "label": "Kode sumber di GitHub",
+          "x": 195,
+          "y": 733.296875,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-id-200",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "language": "id",
+      "scale": 200,
+      "scrolls": [
+        {
+          "dialog": {
+            "x": 35,
+            "y": 63.296875,
+            "width": 320,
+            "height": 717.390625,
+            "right": 355,
+            "bottom": 780.6875
+          },
+          "body": {
+            "x": 36,
+            "y": 192.296875,
+            "width": 318,
+            "height": 587.390625,
+            "right": 354,
+            "bottom": 779.6875
+          },
+          "header": {
+            "x": 36,
+            "y": 64.296875,
+            "width": 318,
+            "height": 128,
+            "right": 354,
+            "bottom": 192.296875
+          },
+          "close": {
+            "x": 198.671875,
+            "y": 98.796875,
+            "width": 131.328125,
+            "height": 59,
+            "right": 330,
+            "bottom": 157.796875
+          },
+          "title": {
+            "x": 60,
+            "y": 80.296875,
+            "width": 122.671875,
+            "height": 96,
+            "right": 182.671875,
+            "bottom": 176.296875
+          },
+          "bodyScroll": 0,
+          "bodyHeight": 3192,
+          "dialogScroll": 0,
+          "scrollRange": 2605,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 35,
+            "y": 63.296875,
+            "width": 320,
+            "height": 717.390625,
+            "right": 355,
+            "bottom": 780.6875
+          },
+          "body": {
+            "x": 36,
+            "y": 192.296875,
+            "width": 318,
+            "height": 587.390625,
+            "right": 354,
+            "bottom": 779.6875
+          },
+          "header": {
+            "x": 36,
+            "y": 64.296875,
+            "width": 318,
+            "height": 128,
+            "right": 354,
+            "bottom": 192.296875
+          },
+          "close": {
+            "x": 198.671875,
+            "y": 98.796875,
+            "width": 131.328125,
+            "height": 59,
+            "right": 330,
+            "bottom": 157.796875
+          },
+          "title": {
+            "x": 60,
+            "y": 80.296875,
+            "width": 122.671875,
+            "height": 96,
+            "right": 182.671875,
+            "bottom": 176.296875
+          },
+          "bodyScroll": 1303,
+          "bodyHeight": 3192,
+          "dialogScroll": 0,
+          "scrollRange": 2605,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 35,
+            "y": 63.296875,
+            "width": 320,
+            "height": 717.390625,
+            "right": 355,
+            "bottom": 780.6875
+          },
+          "body": {
+            "x": 36,
+            "y": 192.296875,
+            "width": 318,
+            "height": 587.390625,
+            "right": 354,
+            "bottom": 779.6875
+          },
+          "header": {
+            "x": 36,
+            "y": 64.296875,
+            "width": 318,
+            "height": 128,
+            "right": 354,
+            "bottom": 192.296875
+          },
+          "close": {
+            "x": 198.671875,
+            "y": 98.796875,
+            "width": 131.328125,
+            "height": 59,
+            "right": 330,
+            "bottom": 157.796875
+          },
+          "title": {
+            "x": 60,
+            "y": 80.296875,
+            "width": 122.671875,
+            "height": 96,
+            "right": 182.671875,
+            "bottom": 176.296875
+          },
+          "bodyScroll": 2605,
+          "bodyHeight": 3192,
+          "dialogScroll": 0,
+          "scrollRange": 2605,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/",
+          "label": "USFA: Choosing and Using Fire Extinguishers",
+          "x": 195,
+          "y": 486.296875,
+          "contained": true,
+          "height": 126,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf",
+          "label": "Permenakertrans PER.04/MEN/1980 (salinan PDF)",
+          "x": 195,
+          "y": 486.296875,
+          "contained": true,
+          "height": 126,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:113",
+          "label": "Pemadam Kebakaran: 113",
+          "x": 195,
+          "y": 486.296875,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:112",
+          "label": "Darurat umum: 112 (gratis, bisa saat ponsel terkunci; tersedia di daerah yang pemdanya menyelenggarakan layanan 112)",
+          "x": 195,
+          "y": 486.296875,
+          "contained": true,
+          "height": 294,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://layanan112.komdigi.go.id/tentang",
+          "label": "Sumber: Komdigi — layanan112.komdigi.go.id",
+          "x": 195,
+          "y": 486.296875,
+          "contained": true,
+          "height": 108,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/korean_fire_extinguisher_01",
+          "label": "Model 3D: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
+          "x": 195,
+          "y": 486.296875,
+          "contained": true,
+          "height": 126,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://threejs.org/docs/pages/RoomEnvironment.html",
+          "label": "Pencahayaan default: RoomEnvironment (three.js, MIT)",
+          "x": 195,
+          "y": 486.296875,
+          "contained": true,
+          "height": 126,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/studio_small_09",
+          "label": "HDRI pembanding (?hdri=1): studio_small_09 (Poly Haven, CC0)",
+          "x": 195,
+          "y": 486.296875,
+          "contained": true,
+          "height": 168,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://barkahmauludi.com/",
+          "label": "Barkah Mauludi: portfolio dan kontak",
+          "x": 195,
+          "y": 617.296875,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://github.com/ludioo/apar-3d-trainer",
+          "label": "Kode sumber di GitHub",
+          "x": 195,
+          "y": 713.296875,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "landscape-en-100",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "language": "en",
+      "scale": 100,
+      "scrolls": [
+        {
+          "dialog": {
+            "x": 182,
+            "y": 29.25,
+            "width": 480,
+            "height": 331.5,
+            "right": 662,
+            "bottom": 360.75
+          },
+          "body": {
+            "x": 183,
+            "y": 106.25,
+            "width": 478,
+            "height": 253.5,
+            "right": 661,
+            "bottom": 359.75
+          },
+          "header": {
+            "x": 183,
+            "y": 30.25,
+            "width": 478,
+            "height": 76,
+            "right": 661,
+            "bottom": 106.25
+          },
+          "close": {
+            "x": 549.921875,
+            "y": 46.25,
+            "width": 87.078125,
+            "height": 44,
+            "right": 637,
+            "bottom": 90.25
+          },
+          "title": {
+            "x": 207,
+            "y": 56.25,
+            "width": 326.921875,
+            "height": 24,
+            "right": 533.921875,
+            "bottom": 80.25
+          },
+          "bodyScroll": 0,
+          "bodyHeight": 923,
+          "dialogScroll": 0,
+          "scrollRange": 669,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 182,
+            "y": 29.25,
+            "width": 480,
+            "height": 331.5,
+            "right": 662,
+            "bottom": 360.75
+          },
+          "body": {
+            "x": 183,
+            "y": 106.25,
+            "width": 478,
+            "height": 253.5,
+            "right": 661,
+            "bottom": 359.75
+          },
+          "header": {
+            "x": 183,
+            "y": 30.25,
+            "width": 478,
+            "height": 76,
+            "right": 661,
+            "bottom": 106.25
+          },
+          "close": {
+            "x": 549.921875,
+            "y": 46.25,
+            "width": 87.078125,
+            "height": 44,
+            "right": 637,
+            "bottom": 90.25
+          },
+          "title": {
+            "x": 207,
+            "y": 56.25,
+            "width": 326.921875,
+            "height": 24,
+            "right": 533.921875,
+            "bottom": 80.25
+          },
+          "bodyScroll": 335,
+          "bodyHeight": 923,
+          "dialogScroll": 0,
+          "scrollRange": 669,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 182,
+            "y": 29.25,
+            "width": 480,
+            "height": 331.5,
+            "right": 662,
+            "bottom": 360.75
+          },
+          "body": {
+            "x": 183,
+            "y": 106.25,
+            "width": 478,
+            "height": 253.5,
+            "right": 661,
+            "bottom": 359.75
+          },
+          "header": {
+            "x": 183,
+            "y": 30.25,
+            "width": 478,
+            "height": 76,
+            "right": 661,
+            "bottom": 106.25
+          },
+          "close": {
+            "x": 549.921875,
+            "y": 46.25,
+            "width": 87.078125,
+            "height": 44,
+            "right": 637,
+            "bottom": 90.25
+          },
+          "title": {
+            "x": 207,
+            "y": 56.25,
+            "width": 326.921875,
+            "height": 24,
+            "right": 533.921875,
+            "bottom": 80.25
+          },
+          "bodyScroll": 669,
+          "bodyHeight": 923,
+          "dialogScroll": 0,
+          "scrollRange": 669,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/",
+          "label": "USFA: Choosing and Using Fire Extinguishers",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf",
+          "label": "Permenakertrans PER.04/MEN/1980 (PDF copy)",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:113",
+          "label": "Fire department: 113",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:112",
+          "label": "General emergency: 112 (free, works on a locked phone; available in areas whose local government runs a 112 service)",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://layanan112.komdigi.go.id/tentang",
+          "label": "Source: Komdigi — layanan112.komdigi.go.id",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/korean_fire_extinguisher_01",
+          "label": "3D model: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://threejs.org/docs/pages/RoomEnvironment.html",
+          "label": "Default lighting: RoomEnvironment (three.js, MIT)",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/studio_small_09",
+          "label": "Comparison HDRI (?hdri=1): studio_small_09 (Poly Haven, CC0)",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://barkahmauludi.com/",
+          "label": "Barkah Mauludi: portfolio and contact",
+          "x": 422,
+          "y": 258.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://github.com/ludioo/apar-3d-trainer",
+          "label": "Source code on GitHub",
+          "x": 422,
+          "y": 314.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "landscape-en-200",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "language": "en",
+      "scale": 200,
+      "scrolls": [
+        {
+          "dialog": {
+            "x": 182,
+            "y": 29.25,
+            "width": 480,
+            "height": 331.5,
+            "right": 662,
+            "bottom": 360.75
+          },
+          "body": {
+            "x": 183,
+            "y": 121.25,
+            "width": 478,
+            "height": 238.5,
+            "right": 661,
+            "bottom": 359.75
+          },
+          "header": {
+            "x": 183,
+            "y": 30.25,
+            "width": 478,
+            "height": 91,
+            "right": 661,
+            "bottom": 121.25
+          },
+          "close": {
+            "x": 510.859375,
+            "y": 46.25,
+            "width": 126.140625,
+            "height": 59,
+            "right": 637,
+            "bottom": 105.25
+          },
+          "title": {
+            "x": 207,
+            "y": 51.75,
+            "width": 287.859375,
+            "height": 48,
+            "right": 494.859375,
+            "bottom": 99.75
+          },
+          "bodyScroll": 0,
+          "bodyHeight": 2074,
+          "dialogScroll": 0,
+          "scrollRange": 1835,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 182,
+            "y": 29.25,
+            "width": 480,
+            "height": 331.5,
+            "right": 662,
+            "bottom": 360.75
+          },
+          "body": {
+            "x": 183,
+            "y": 121.25,
+            "width": 478,
+            "height": 238.5,
+            "right": 661,
+            "bottom": 359.75
+          },
+          "header": {
+            "x": 183,
+            "y": 30.25,
+            "width": 478,
+            "height": 91,
+            "right": 661,
+            "bottom": 121.25
+          },
+          "close": {
+            "x": 510.859375,
+            "y": 46.25,
+            "width": 126.140625,
+            "height": 59,
+            "right": 637,
+            "bottom": 105.25
+          },
+          "title": {
+            "x": 207,
+            "y": 51.75,
+            "width": 287.859375,
+            "height": 48,
+            "right": 494.859375,
+            "bottom": 99.75
+          },
+          "bodyScroll": 918,
+          "bodyHeight": 2074,
+          "dialogScroll": 0,
+          "scrollRange": 1835,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 182,
+            "y": 29.25,
+            "width": 480,
+            "height": 331.5,
+            "right": 662,
+            "bottom": 360.75
+          },
+          "body": {
+            "x": 183,
+            "y": 121.25,
+            "width": 478,
+            "height": 238.5,
+            "right": 661,
+            "bottom": 359.75
+          },
+          "header": {
+            "x": 183,
+            "y": 30.25,
+            "width": 478,
+            "height": 91,
+            "right": 661,
+            "bottom": 121.25
+          },
+          "close": {
+            "x": 510.859375,
+            "y": 46.25,
+            "width": 126.140625,
+            "height": 59,
+            "right": 637,
+            "bottom": 105.25
+          },
+          "title": {
+            "x": 207,
+            "y": 51.75,
+            "width": 287.859375,
+            "height": 48,
+            "right": 494.859375,
+            "bottom": 99.75
+          },
+          "bodyScroll": 1835,
+          "bodyHeight": 2074,
+          "dialogScroll": 0,
+          "scrollRange": 1835,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/",
+          "label": "USFA: Choosing and Using Fire Extinguishers",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf",
+          "label": "Permenakertrans PER.04/MEN/1980 (PDF copy)",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:113",
+          "label": "Fire department: 113",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:112",
+          "label": "General emergency: 112 (free, works on a locked phone; available in areas whose local government runs a 112 service)",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 168,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://layanan112.komdigi.go.id/tentang",
+          "label": "Source: Komdigi — layanan112.komdigi.go.id",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 72,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/korean_fire_extinguisher_01",
+          "label": "3D model: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://threejs.org/docs/pages/RoomEnvironment.html",
+          "label": "Default lighting: RoomEnvironment (three.js, MIT)",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/studio_small_09",
+          "label": "Comparison HDRI (?hdri=1): studio_small_09 (Poly Haven, CC0)",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://barkahmauludi.com/",
+          "label": "Barkah Mauludi: portfolio and contact",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://github.com/ludioo/apar-3d-trainer",
+          "label": "Source code on GitHub",
+          "x": 422,
+          "y": 314.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "landscape-id-100",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "language": "id",
+      "scale": 100,
+      "scrolls": [
+        {
+          "dialog": {
+            "x": 182,
+            "y": 29.25,
+            "width": 480,
+            "height": 331.5,
+            "right": 662,
+            "bottom": 360.75
+          },
+          "body": {
+            "x": 183,
+            "y": 106.25,
+            "width": 478,
+            "height": 253.5,
+            "right": 661,
+            "bottom": 359.75
+          },
+          "header": {
+            "x": 183,
+            "y": 30.25,
+            "width": 478,
+            "height": 76,
+            "right": 661,
+            "bottom": 106.25
+          },
+          "close": {
+            "x": 547.328125,
+            "y": 46.25,
+            "width": 89.671875,
+            "height": 44,
+            "right": 637,
+            "bottom": 90.25
+          },
+          "title": {
+            "x": 207,
+            "y": 56.25,
+            "width": 324.328125,
+            "height": 24,
+            "right": 531.328125,
+            "bottom": 80.25
+          },
+          "bodyScroll": 0,
+          "bodyHeight": 944,
+          "dialogScroll": 0,
+          "scrollRange": 690,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 182,
+            "y": 29.25,
+            "width": 480,
+            "height": 331.5,
+            "right": 662,
+            "bottom": 360.75
+          },
+          "body": {
+            "x": 183,
+            "y": 106.25,
+            "width": 478,
+            "height": 253.5,
+            "right": 661,
+            "bottom": 359.75
+          },
+          "header": {
+            "x": 183,
+            "y": 30.25,
+            "width": 478,
+            "height": 76,
+            "right": 661,
+            "bottom": 106.25
+          },
+          "close": {
+            "x": 547.328125,
+            "y": 46.25,
+            "width": 89.671875,
+            "height": 44,
+            "right": 637,
+            "bottom": 90.25
+          },
+          "title": {
+            "x": 207,
+            "y": 56.25,
+            "width": 324.328125,
+            "height": 24,
+            "right": 531.328125,
+            "bottom": 80.25
+          },
+          "bodyScroll": 345,
+          "bodyHeight": 944,
+          "dialogScroll": 0,
+          "scrollRange": 690,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 182,
+            "y": 29.25,
+            "width": 480,
+            "height": 331.5,
+            "right": 662,
+            "bottom": 360.75
+          },
+          "body": {
+            "x": 183,
+            "y": 106.25,
+            "width": 478,
+            "height": 253.5,
+            "right": 661,
+            "bottom": 359.75
+          },
+          "header": {
+            "x": 183,
+            "y": 30.25,
+            "width": 478,
+            "height": 76,
+            "right": 661,
+            "bottom": 106.25
+          },
+          "close": {
+            "x": 547.328125,
+            "y": 46.25,
+            "width": 89.671875,
+            "height": 44,
+            "right": 637,
+            "bottom": 90.25
+          },
+          "title": {
+            "x": 207,
+            "y": 56.25,
+            "width": 324.328125,
+            "height": 24,
+            "right": 531.328125,
+            "bottom": 80.25
+          },
+          "bodyScroll": 690,
+          "bodyHeight": 944,
+          "dialogScroll": 0,
+          "scrollRange": 690,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/",
+          "label": "USFA: Choosing and Using Fire Extinguishers",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf",
+          "label": "Permenakertrans PER.04/MEN/1980 (salinan PDF)",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:113",
+          "label": "Pemadam Kebakaran: 113",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:112",
+          "label": "Darurat umum: 112 (gratis, bisa saat ponsel terkunci; tersedia di daerah yang pemdanya menyelenggarakan layanan 112)",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://layanan112.komdigi.go.id/tentang",
+          "label": "Sumber: Komdigi — layanan112.komdigi.go.id",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/korean_fire_extinguisher_01",
+          "label": "Model 3D: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://threejs.org/docs/pages/RoomEnvironment.html",
+          "label": "Pencahayaan default: RoomEnvironment (three.js, MIT)",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/studio_small_09",
+          "label": "HDRI pembanding (?hdri=1): studio_small_09 (Poly Haven, CC0)",
+          "x": 422,
+          "y": 233.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://barkahmauludi.com/",
+          "label": "Barkah Mauludi: portfolio dan kontak",
+          "x": 422,
+          "y": 258.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://github.com/ludioo/apar-3d-trainer",
+          "label": "Kode sumber di GitHub",
+          "x": 422,
+          "y": 314.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "landscape-id-200",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "language": "id",
+      "scale": 200,
+      "scrolls": [
+        {
+          "dialog": {
+            "x": 182,
+            "y": 29.25,
+            "width": 480,
+            "height": 331.5,
+            "right": 662,
+            "bottom": 360.75
+          },
+          "body": {
+            "x": 183,
+            "y": 121.25,
+            "width": 478,
+            "height": 238.5,
+            "right": 661,
+            "bottom": 359.75
+          },
+          "header": {
+            "x": 183,
+            "y": 30.25,
+            "width": 478,
+            "height": 91,
+            "right": 661,
+            "bottom": 121.25
+          },
+          "close": {
+            "x": 505.671875,
+            "y": 46.25,
+            "width": 131.328125,
+            "height": 59,
+            "right": 637,
+            "bottom": 105.25
+          },
+          "title": {
+            "x": 207,
+            "y": 51.75,
+            "width": 282.671875,
+            "height": 48,
+            "right": 489.671875,
+            "bottom": 99.75
+          },
+          "bodyScroll": 0,
+          "bodyHeight": 2122,
+          "dialogScroll": 0,
+          "scrollRange": 1883,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 182,
+            "y": 29.25,
+            "width": 480,
+            "height": 331.5,
+            "right": 662,
+            "bottom": 360.75
+          },
+          "body": {
+            "x": 183,
+            "y": 121.25,
+            "width": 478,
+            "height": 238.5,
+            "right": 661,
+            "bottom": 359.75
+          },
+          "header": {
+            "x": 183,
+            "y": 30.25,
+            "width": 478,
+            "height": 91,
+            "right": 661,
+            "bottom": 121.25
+          },
+          "close": {
+            "x": 505.671875,
+            "y": 46.25,
+            "width": 131.328125,
+            "height": 59,
+            "right": 637,
+            "bottom": 105.25
+          },
+          "title": {
+            "x": 207,
+            "y": 51.75,
+            "width": 282.671875,
+            "height": 48,
+            "right": 489.671875,
+            "bottom": 99.75
+          },
+          "bodyScroll": 942,
+          "bodyHeight": 2122,
+          "dialogScroll": 0,
+          "scrollRange": 1883,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        },
+        {
+          "dialog": {
+            "x": 182,
+            "y": 29.25,
+            "width": 480,
+            "height": 331.5,
+            "right": 662,
+            "bottom": 360.75
+          },
+          "body": {
+            "x": 183,
+            "y": 121.25,
+            "width": 478,
+            "height": 238.5,
+            "right": 661,
+            "bottom": 359.75
+          },
+          "header": {
+            "x": 183,
+            "y": 30.25,
+            "width": 478,
+            "height": 91,
+            "right": 661,
+            "bottom": 121.25
+          },
+          "close": {
+            "x": 505.671875,
+            "y": 46.25,
+            "width": 131.328125,
+            "height": 59,
+            "right": 637,
+            "bottom": 105.25
+          },
+          "title": {
+            "x": 207,
+            "y": 51.75,
+            "width": 282.671875,
+            "height": 48,
+            "right": 489.671875,
+            "bottom": 99.75
+          },
+          "bodyScroll": 1883,
+          "bodyHeight": 2122,
+          "dialogScroll": 0,
+          "scrollRange": 1883,
+          "overflow": false,
+          "clipped": [],
+          "closeHits": true,
+          "position": "static",
+          "focusRing": {
+            "style": "none",
+            "width": "3px"
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/",
+          "label": "USFA: Choosing and Using Fire Extinguishers",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf",
+          "label": "Permenakertrans PER.04/MEN/1980 (salinan PDF)",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:113",
+          "label": "Pemadam Kebakaran: 113",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "tel:112",
+          "label": "Darurat umum: 112 (gratis, bisa saat ponsel terkunci; tersedia di daerah yang pemdanya menyelenggarakan layanan 112)",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 168,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://layanan112.komdigi.go.id/tentang",
+          "label": "Sumber: Komdigi — layanan112.komdigi.go.id",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 72,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/korean_fire_extinguisher_01",
+          "label": "Model 3D: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://threejs.org/docs/pages/RoomEnvironment.html",
+          "label": "Pencahayaan default: RoomEnvironment (three.js, MIT)",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://polyhaven.com/a/studio_small_09",
+          "label": "HDRI pembanding (?hdri=1): studio_small_09 (Poly Haven, CC0)",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://barkahmauludi.com/",
+          "label": "Barkah Mauludi: portfolio dan kontak",
+          "x": 422,
+          "y": 240.25,
+          "contained": true,
+          "height": 84,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "href": "https://github.com/ludioo/apar-3d-trainer",
+          "label": "Kode sumber di GitHub",
+          "x": 422,
+          "y": 314.25,
+          "contained": true,
+          "height": 44,
+          "points": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "layout matrix",
+      "detail": "12 states; 36 scroll samples; 120 trusted link activations with navigation prevented; 1080 link hit-tests"
+    },
+    {
+      "name": "hash navigation",
+      "detail": "Direct #about, Back/Forward and restore all three mode hashes"
+    },
+    {
+      "name": "shared dialogs EN/ID",
+      "detail": "Save/Cancel/Escape and Clear/Cancel/Escape/Confirm in isolated browser storage; dialog display and body overflow unchanged"
+    },
+    {
+      "name": "content invariants",
+      "detail": "About i18n keys, href destinations and emergency bindings identical to HEAD"
+    },
+    {
+      "name": "browser errors",
+      "detail": "Zero pageerror/console error in matrix; regression pageerror captured"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision",
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+  ]
+}

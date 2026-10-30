@@ -109,8 +109,11 @@
       <button type="button" class="splash__retry" data-i18n="splash.retry" hidden></button>
     </div>
     <dialog id="about" class="modal" aria-labelledby="about-title">
-      <div class="modal__body">
+      <header class="modal__header">
         <h2 id="about-title" class="modal__title" tabindex="-1" data-i18n="tabs.about"></h2>
+        <button type="button" class="modal__close" data-i18n="modal.close"></button>
+      </header>
+      <div class="modal__body">
         <p data-i18n="about.description"></p>
         <section class="modal__section">
           <h3 data-i18n="about.stackTitle"></h3>
@@ -138,7 +141,6 @@
         <p class="modal__muted" data-i18n="about.analytics"></p>
         <a href="https://barkahmauludi.com" target="_blank" rel="noopener noreferrer" data-i18n="about.portfolio"></a>
         <a href="https://github.com/ludioo/apar-3d-trainer" target="_blank" rel="noopener noreferrer" data-i18n="about.github"></a>
-        <button type="button" class="modal__close" data-i18n="modal.close"></button>
       </div>
     </dialog>
     <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
