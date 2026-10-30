@@ -42,7 +42,7 @@ export function initHotspots({ camera, controls, canvas, container, panelBody, h
   header.append(heading, closeButton);
   card.append(header, body);
   content.append(hint, parts, card);
-  const pins = initHotspotPins({ container, camera, controls, hotspots, open });
+  const pins = initHotspotPins({ container, camera, controls, hotspots, open, panel });
   let model = null;
   let selected = null;
   let snapshot = null;

@@ -1,0 +1,29 @@
+{
+  "hidden": false,
+  "box": {
+    "x": 864.035888671875,
+    "y": 221.45819091796875,
+    "width": 44,
+    "height": 44,
+    "top": 221.45819091796875,
+    "right": 908.035888671875,
+    "bottom": 265.45819091796875,
+    "left": 864.035888671875
+  },
+  "panel": {
+    "x": 904,
+    "y": 73,
+    "width": 360,
+    "height": 811,
+    "top": 73,
+    "right": 1264,
+    "bottom": 884,
+    "left": 904
+  },
+  "point": [
+    906.035888671875,
+    243.45819091796875
+  ],
+  "hit": "<section id=\"panel\" class=\"panel is-reading-hotspot\" aria-labelledby=\"panel-title\" data-snap=\"half\">\n      <button type=\"button\" class=\"panel__handle\" aria-expanded=\"true\" aria-controls=\"panel-body\" aria-label=\"Panel: half (50%). Change to full (75%).\"></button>\n      <h2 id=\"panel-title\" class=\"pan",
+  "correct": false
+}

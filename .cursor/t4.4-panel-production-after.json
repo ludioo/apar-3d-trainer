@@ -1,0 +1,29 @@
+{
+  "hidden": false,
+  "box": {
+    "x": 848,
+    "y": 221.45819091796875,
+    "width": 44,
+    "height": 44,
+    "top": 221.45819091796875,
+    "right": 892,
+    "bottom": 265.45819091796875,
+    "left": 848
+  },
+  "panel": {
+    "x": 904,
+    "y": 73,
+    "width": 360,
+    "height": 811,
+    "top": 73,
+    "right": 1264,
+    "bottom": 884,
+    "left": 904
+  },
+  "point": [
+    890,
+    243.45819091796875
+  ],
+  "hit": "<button type=\"button\" class=\"hotspot-pin\" data-hotspot=\"handle\" aria-label=\"1. Handle / lever\" aria-pressed=\"false\" style=\"transform: translate(848px, 221.458px);\"><span>1</span></button>",
+  "correct": true
+}

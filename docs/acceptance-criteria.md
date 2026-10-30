@@ -304,5 +304,19 @@ Cara cek: desktop buka `http://localhost:4198/#train`; HP satu Wi-Fi buka `http:
 
 Bukti AI: delapan kelompok khusus produksi, 11 regresi PASS, delapan efek, empat smoke normal dev/produksi, self-check 189 key dan build lolos. Detail, batas perangkat/browser, warning dan bukti awal yang gagal ada di `.cursor/t4.8-report.md`. Check/build dijalankan ulang sebelum commit; browser tidak diuji ulang karena penutupan ini hanya mengubah dokumentasi. Checklist ditutup berdasarkan acceptance Barkah; rincian perangkat pemeriksaannya tidak dicatat. Commit/push ke develop diotorisasi, tanpa lanjut task lain atau mengubah main/deploy produksi.
 
+## T4.4 — Area tap dan pemisahan hotspot (30 Okt 2026)
+
+Status: **selesai — acceptance Barkah diterima 30 Oktober 2026**. Barkah mengonfirmasi sudah mengecek T4.4 dan lolos, lalu meminta task/checklist selesai, pembaruan dokumen serta commit/push ke develop. Lima checklist ditutup berdasarkan konfirmasi tersebut dan QA existing; rincian perangkat/browser pengguna tidak diberikan sehingga batas QA AI tetap berlaku. Validasi Q1–Q3 dan planning disetujui sebelum implementasi. Visual 28px/hitbox 44×44px dipertahankan; Configure memakai batas panel existing agar area tap tuas pada close-up indikator tekanan tidak tertutup.
+
+- [x] Mobile: area tap pin minimal 44×44px, mudah ditekan termasuk dekat tepi, dan tidak salah memilih pin tetangga.
+- [x] Pin dekat tuas/pin pengaman/nozzle tidak bertumpuk tak terbaca; garis menghubungkan posisi layar ke bagian 3D yang benar pada sheet 25/50/75%.
+- [x] Oklusi tetap benar saat orbit: pin bagian belakang tersembunyi dan muncul kembali saat terlihat. Nomor tetap 1 tuas, 2 pin pengaman, 3 nozzle, 4 indikator tekanan, 5 label, 6 tabung.
+- [x] Desktop: pin tetap rapi dan seluruh area tap terhindar dari panel, termasuk close-up indikator tekanan. Klik/keyboard membuka info bagian yang benar, tween tetap bekerja, Tutup/Escape mengembalikan kamera.
+- [x] Kuis q2/q5 dan target PASS/Squeeze tetap berfungsi; EN/ID, kapasitas, resize dan reduced motion tidak merusak interaksi.
+
+Cara cek: desktop buka `http://localhost:4198/#configure`; HP satu Wi-Fi buka `http://192.168.100.4:4198/#configure`. Muat ulang, coba pin 1/2/3 termasuk tap sedikit di luar lingkaran kuning, lalu Tutup. Gulir panel sampai daftar bagian dan pilih **4. Indikator tekanan / Pressure gauge**; pada desktop coba pin 1 dekat panel. Orbit ke sisi/belakang lalu kembali, ubah kapasitas dan EN/ID. Di HP ulangi pada sheet 25/50/75% melalui handle. Jika pin tersembunyi karena oklusi/ruang sempit, pilih bagian melalui enam tombol panel. Pada desktop gunakan Tab, Enter/Space dan Escape. Di tab Latihan/Train coba PASS termasuk tahan Squeeze, kemudian kuis: nomor 2 untuk pin pengaman (q2), nomor 4 untuk indikator tekanan (q5).
+
+Bukti AI: check/build, delapan kelompok khusus/310 keadaan produksi, 11 regresi PASS, delapan Squeeze, tujuh kuis dan dua smoke normal produksi lolos. URL desktop/LAN di atas merespons HTTP 200 pada 30 Oktober 2026. Detail screenshot, perintah ulang, gate antislop, probe awal yang gagal, warning serta batas perangkat/browser ada di `.cursor/t4.4-report.md`. Check/build dijalankan ulang sebelum commit; browser tidak diuji ulang karena penutupan hanya mengubah dokumentasi. Commit/push ke develop diotorisasi oleh acceptance ini, tanpa lanjut task berikutnya atau mengubah main/deploy produksi.
+
 ## Peta fitur → task
 F1: T0.2–T0.3 · F2: T1.3–T1.4 · F3: T1.5–T1.6 · F4: T1.6 · F5: T1.7 · F6: T2.1–T2.2 · F7: T2.3 · F8: T2.4 · F9: T2.5 · F10: T1.1 · F11: T3.2–T3.3 · F15: T3.6 · F16: L4 · Wajib riset (Draco/KTX2, <3 dtk, HP, Vercel, video, GitHub, SEO): T0.3, T3.1, T0.4, T3.4, T3.3
