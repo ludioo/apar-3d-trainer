@@ -394,16 +394,16 @@ Bukti: check196 key/build, enam kelompok QA/84 keadaan Chrome desktop1280×900 d
 
 ## T4.26 — Polish Results, About, dan loader (31 Okt 2026)
 
-Status: **implementasi siap diperiksa, menunggu acceptance Barkah**. Validasi dan planning disetujui sebelum implementasi. Checklist berikut tetap terbuka sampai dikonfirmasi pengguna; QA otomatis sudah lolos dan tidak menggantikan acceptance.
+Status: **selesai, acceptance Barkah diterima 31 Oktober 2026**. Barkah mengonfirmasi sudah mengecek dan lolos, lalu meminta task/checklist ditutup, dokumen diperbarui, commit/push ke develop, penggabungan/push main dan deploy Vercel. Empat checklist ditutup berdasarkan konfirmasi pengguna serta QA existing; rincian perangkat/browser pemeriksaan Barkah tidak diberikan sehingga batas QA AI tetap berlaku.
 
-- [ ] Status Correct/Incorrect dan Benar/Salah utuh satu baris pada Results, desktop dan mobile360px, termasuk pembesaran teks200%, tanpa overflow/tumpang tindih.
-- [ ] Close/Tutup About terlihat, target≥44×44px dan tidak menutupi tautan; seluruh isi/tautan dapat dijangkau lewat scroll.
-- [ ] Close, Escape dan backdrop menutup About lalu fokus kembali ke About/Tentang; Tab/Shift+Tab tetap dalam modal saat terbuka.
-- [ ] Loading hanya tampil selama pemuatan; setelah model tampil/fade selesai splash hilang dari DOM. Error/Retry, pesan loading lambat dan fallback WebGL tetap berfungsi.
+- [x] Status Correct/Incorrect dan Benar/Salah utuh satu baris pada Results, desktop dan mobile360px, termasuk pembesaran teks200%, tanpa overflow/tumpang tindih.
+- [x] Close/Tutup About terlihat, target≥44×44px dan tidak menutupi tautan; seluruh isi/tautan dapat dijangkau lewat scroll.
+- [x] Close, Escape dan backdrop menutup About lalu fokus kembali ke About/Tentang; Tab/Shift+Tab tetap dalam modal saat terbuka.
+- [x] Loading hanya tampil selama pemuatan; setelah model tampil/fade selesai splash hilang dari DOM. Error/Retry, pesan loading lambat dan fallback WebGL tetap berfungsi.
 
 Cara cek: buka `http://localhost:4276/#results` atau HP satu Wi-Fi `http://192.168.100.4:4276/#results`. Jika belum ada hasil, jalankan Train/Latihan dan kuis delapan soal, jawab sebagian salah lalu buka Results/Hasil. Gulir tabel dan ganti EN/ID; periksa label status pada desktop dan mobile360px. Buka About/Tentang, gulir semua tautan, coba Close/Tutup, buka lagi lalu Esc, buka lagi lalu tap area luar. Dengan keyboard, coba Tab/Shift+Tab; fokus kembali ke About setiap ditutup. Reload dan tunggu model, kemudian cari `#splash` di Inspect→Elements: elemen tidak ada setelah selesai. Fault loading/Retry/slow/fallback diperiksa otomatis, tanpa perlu mengubah data pengguna.
 
-Bukti AI: check196 key/build,12 keadaan layout EN/ID/font100/200% pada360/390/1365px,120 klik/tap tautan per matriks, fokus dan tiga route serta loader motion normal/reduce/error/Retry/slow/fallback lolos di dev/preview produksi; nol error tak terduga. Rincian/screenshot/gate di `.cursor/t4.26-report.md`. HP fisik/AT/browser lain/zoom OS/performa baru belum diuji. Commit lokal diminta dengan pesan `polish: results label, about modal, loader cleanup`; tidak push/deploy atau lanjut task lain.
+Bukti AI: check196 key/build,12 keadaan layout EN/ID/font100/200% pada360/390/1365px,120 klik/tap tautan per matriks, fokus dan tiga route serta loader motion normal/reduce/error/Retry/slow/fallback lolos di dev/preview produksi; nol error tak terduga. Rincian/screenshot/gate di `.cursor/t4.26-report.md`. Check/build diulang sebelum commit penutupan; kode aplikasi tidak diubah lagi. HP fisik/AT/browser lain/zoom OS/performa baru belum diuji. Implementasi berada pada commit `761d4a3` dengan pesan `polish: results label, about modal, loader cleanup`. Publikasi develop→main/Vercel kini diotorisasi; task berikutnya tidak dimulai.
 
 ## T4.19 — About: Close tidak menimpa link (30 Okt 2026)
 
