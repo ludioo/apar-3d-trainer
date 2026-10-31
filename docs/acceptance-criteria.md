@@ -396,6 +396,8 @@ Bukti: check196 key/build, enam kelompok QA/84 keadaan Chrome desktop1280×900 d
 
 Status: **selesai, acceptance Barkah diterima 31 Oktober 2026**. Barkah mengonfirmasi sudah mengecek dan lolos, lalu meminta task/checklist ditutup, dokumen diperbarui, commit/push ke develop, penggabungan/push main dan deploy Vercel. Empat checklist ditutup berdasarkan konfirmasi pengguna serta QA existing; rincian perangkat/browser pemeriksaan Barkah tidak diberikan sehingga batas QA AI tetap berlaku.
 
+Publikasi terverifikasi: implementasi761d4a3 dan penutupan4bcaa1f sudah dipush develop→main; Vercel Production Ready. Buka `https://trainer.barkahmauludi.com/#results` untuk hasil live. Enam belas kelompok QA live/12 keadaan layout, loader dan HTTP/hash aset lolos tanpa error tak terduga. Bukti serta batas pada `.cursor/t4.26-deploy-report.md`; dokumentasi publikasi disinkronkan ke kedua branch tanpa mengubah aplikasi.
+
 - [x] Status Correct/Incorrect dan Benar/Salah utuh satu baris pada Results, desktop dan mobile360px, termasuk pembesaran teks200%, tanpa overflow/tumpang tindih.
 - [x] Close/Tutup About terlihat, target≥44×44px dan tidak menutupi tautan; seluruh isi/tautan dapat dijangkau lewat scroll.
 - [x] Close, Escape dan backdrop menutup About lalu fokus kembali ke About/Tentang; Tab/Shift+Tab tetap dalam modal saat terbuka.

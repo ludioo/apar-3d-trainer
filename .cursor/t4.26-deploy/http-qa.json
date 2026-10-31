@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-31",
+  "origins": [
+    {
+      "origin": "https://trainer.barkahmauludi.com",
+      "status": 200,
+      "assets": [
+        "/assets/index-Dj_5p5Ov.js",
+        "/assets/index-B6ztM6wA.css"
+      ]
+    },
+    {
+      "origin": "https://apar-3d-trainer.vercel.app",
+      "status": 200,
+      "assets": [
+        "/assets/index-Dj_5p5Ov.js",
+        "/assets/index-B6ztM6wA.css"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "path": "/assets/index-Dj_5p5Ov.js",
+      "status": 200,
+      "bytes": 834863,
+      "sha256": "9d1456b7e7e30f00bbbfd2c4c90d2bc3daa3a56e2aa1b06b0c2f30e5066da5b5",
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=31536000, immutable",
+      "matchesLocal": false,
+      "localPath": "/assets/index-BbhMkcYq.js",
+      "localBytes": 834799,
+      "localSha256": "9b43654341ef28c7c4a4d74ee791d7bc6a8808c8f1d5253396efd7ba52433183",
+      "note": "Vercel Production build uses configured production environment; local build uses local environment."
+    },
+    {
+      "path": "/assets/index-B6ztM6wA.css",
+      "status": 200,
+      "bytes": 34424,
+      "sha256": "f41d90e47d89ae5a741ebb07e0571d23655c27ef166665e3435a5c2de73f8661",
+      "type": "text/css; charset=utf-8",
+      "cache": "public, max-age=31536000, immutable",
+      "matchesLocal": true
+    },
+    {
+      "path": "/models/apar.glb",
+      "status": 200,
+      "bytes": 695084,
+      "sha256": "acae4515492613fad07a98bf8d7d4043461284a1535652d883a16b1a3a7618a2",
+      "type": "model/gltf-binary",
+      "cache": "public, max-age=86400",
+      "matchesLocal": true
+    }
+  ]
+}
