@@ -1,0 +1,16 @@
+{
+  "id": "dpl_8dmzy31xUAwBe22THDXi8QMeH9fE",
+  "url": "apar-3d-trainer-nn03inxjc-hakuryuukous-projects.vercel.app",
+  "readyState": "READY",
+  "target": "production",
+  "alias": [
+    "trainer.barkahmauludi.com",
+    "apar-3d-trainer.vercel.app",
+    "apar-3d-trainer-hakuryuukous-projects.vercel.app",
+    "apar-3d-trainer-git-main-hakuryuukous-projects.vercel.app"
+  ],
+  "githubCommitSha": "67570bead42449c2f9fdd6d82a6f74618523f03b",
+  "githubCommitRef": "main",
+  "createdAt": 1793447801468,
+  "ready": 1793447813183
+}

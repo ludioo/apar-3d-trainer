@@ -422,6 +422,8 @@ Bukti AI: check196 key/build lolos; matriks dev dan produksi masing-masing16 kea
 
 ## T4.25 — Audit Lighthouse mobile & budget akhir (31 Okt 2026)
 
+31 Oktober 2026 — **Publikasi main/produksi diotorisasi Barkah dan dijalankan.** Develop sampai 67570be (13 commit setelah main sebelumnya) di-fast-forward ke main dan dipush; Vercel Production Ready pada domain publik. Check196 key/build dan enam kelompok smoke live desktop/HP emulasi lolos, kedua alias HTTP200 dan hash aset cocok. Bukti serta batas di `.cursor/t4.25-deploy-report.md`. Catatan publikasi disinkronkan develop→main dengan source aplikasi identik. Ini bukan audit Lighthouse/4G baru atau bukti target numerik tercapai; task berikutnya tidak dimulai. Catatan otorisasi hanya develop pada penutupan di bawah merupakan riwayat sebelum instruksi publikasi ini.
+
 Status: **selesai, acceptance Barkah diterima 31 Oktober 2026**. Barkah mengonfirmasi sudah mengecek T4.25 dan lolos, lalu meminta task/tiga checklist selesai, update dokumen serta commit/push ke develop. Checklist ditutup berdasarkan konfirmasi ini dan bukti audit existing; penerimaan audit tidak mengubah kegagalan budget numerik. Validasi Q1–Q2 dan planning disetujui sebelum pelaksanaan, dua belas task prasyarat sudah ✅. Rincian perangkat/browser pemeriksaan pengguna tidak diberikan; batas QA AI tetap berlaku. Check/build diulang sebelum commit, tanpa benchmark baru karena penutupan hanya dokumentasi.
 
 - [x] Angka Lighthouse mobile + transfer awal dilaporkan ke Barkah.

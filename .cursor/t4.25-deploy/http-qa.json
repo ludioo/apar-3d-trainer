@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-10-31T12:00:13.188Z",
+  "pages": [
+    {
+      "origin": "https://trainer.barkahmauludi.com",
+      "status": 200,
+      "js": "/assets/index-Cl-GF_cC.js",
+      "css": "/assets/index-ML-WrRYb.css"
+    },
+    {
+      "origin": "https://apar-3d-trainer.vercel.app",
+      "status": 200,
+      "js": "/assets/index-Cl-GF_cC.js",
+      "css": "/assets/index-ML-WrRYb.css"
+    }
+  ],
+  "assets": [
+    {
+      "pathname": "/assets/index-Cl-GF_cC.js",
+      "status": 200,
+      "bytes": 834852,
+      "sha256": "d6f4b1b28853239dd13b1c7a5b9df101360b03e8650ce069c062a68aab25d810",
+      "mime": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "pathname": "/assets/index-ML-WrRYb.css",
+      "status": 200,
+      "bytes": 34406,
+      "sha256": "a244eb0ecf1418d9801168f249baed62db45b1021a723ab4d0c66223d758e026",
+      "mime": "text/css; charset=utf-8",
+      "cache": "public, max-age=31536000, immutable"
+    },
+    {
+      "pathname": "/models/apar.glb",
+      "status": 200,
+      "bytes": 695084,
+      "sha256": "acae4515492613fad07a98bf8d7d4043461284a1535652d883a16b1a3a7618a2",
+      "mime": "model/gltf-binary",
+      "cache": "public, max-age=86400"
+    },
+    {
+      "pathname": "/favicon.svg",
+      "status": 200,
+      "bytes": 341,
+      "sha256": "01bd5acfcdb054176fb3296f22e835e40febad1361762cac5d761fd253b61c86",
+      "mime": "image/svg+xml",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "pathname": "/favicon.ico",
+      "status": 200,
+      "bytes": 1554,
+      "sha256": "bbdf6f51e27890a0636ef1c88b261fabb2b07dfc5517715dd9b47a955c65b000",
+      "mime": "image/vnd.microsoft.icon",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "pathname": "/decoders/draco/draco_decoder.wasm",
+      "status": 200,
+      "bytes": 192420,
+      "sha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac",
+      "mime": "application/wasm",
+      "cache": "public, max-age=86400"
+    }
+  ]
+}
