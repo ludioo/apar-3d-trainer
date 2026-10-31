@@ -420,5 +420,21 @@ Cara cek HP satu Wi-Fi: buka `http://192.168.100.4:4276/#train` pada lebar sekit
 
 Bukti AI: check196 key/build lolos; matriks dev dan produksi masing-masing16 keadaan/192 transisi dengan drift footer0px (batas2px), baseline desktop PASS195px/kuis205px menjadi0px. Regresi T4.3 produksi40 keadaan, delapan kelompok Squeeze, empat kelompok input/AX serta delapan screenshot produksi lolos. Rincian, perintah ulang, probe gagal dan gate antislop di `.cursor/t4.16-report.md`. HP fisik/AT/Safari/Firefox/zoom OS/performa baru belum diuji. Acceptance pengguna tidak dianggap bukti perangkat tambahan oleh AI. Check196 key/build dijalankan ulang sebelum commit; browser tidak diulang karena penutupan hanya dokumentasi. Commit/push ke develop diotorisasi; tidak lanjut task berikutnya atau mengubah main/deploy produksi.
 
+## T4.25 — Audit Lighthouse mobile & budget akhir (31 Okt 2026)
+
+Status: **selesai, acceptance Barkah diterima 31 Oktober 2026**. Barkah mengonfirmasi sudah mengecek T4.25 dan lolos, lalu meminta task/tiga checklist selesai, update dokumen serta commit/push ke develop. Checklist ditutup berdasarkan konfirmasi ini dan bukti audit existing; penerimaan audit tidak mengubah kegagalan budget numerik. Validasi Q1–Q2 dan planning disetujui sebelum pelaksanaan, dua belas task prasyarat sudah ✅. Rincian perangkat/browser pemeriksaan pengguna tidak diberikan; batas QA AI tetap berlaku. Check/build diulang sebelum commit, tanpa benchmark baru karena penutupan hanya dokumentasi.
+
+- [x] Angka Lighthouse mobile + transfer awal dilaporkan ke Barkah.
+- [x] Lolos atau tidaknya budget <3 dtk / <3 MB dinyatakan eksplisit.
+- [x] `npm run build` + `npm run check` sukses.
+
+Hasil AI: tiga Lighthouse Performance47/48/47 (median**47**, target≥85 **GAGAL**), Accessibility100, LCP median**5,56dtk** pada judul splash, bukan model. Enam4G valid: median APAR**3,62dtk**412×823 dan**4,28dtk**390×844, kedua target<3dtk **GAGAL**; transfer seluruh run**1.140.807byte** (~1,14MB), target<3MB **LOLOS**. GLB695.084byte (<2MB). Check196 key/build lolos; warning chunk>500KB existing tetap. Enam percobaan decoder ERR_ABORTED tetap invalid, dipertahankan di bukti dan tidak dihitung PASS.
+
+Cara cek desktop: buka `http://localhost:4191/#configure`, tunggu APAR tampil/splash hilang. Buka `.cursor/t4.25/final/lighthouse-1.report.html`, `lighthouse-2.report.html`, `lighthouse-3.report.html` di browser dan cocokkan Performance/Accessibility/LCP dengan laporan `.cursor/t4.25-report.md`. Periksa `summary.json` untuk agregat/budget, masing-masing run serta kegagalan; screenshot valid harus memperlihatkan APAR. Pemeriksaan visual biasa tidak menggantikan angka simulasi4G.
+
+Cara cek HP satu Wi-Fi: buka `http://192.168.100.4:4191/#configure`. Kedua URL telah merespons HTTP200 dari host pada31 Oktober2026; bukan bukti HP fisik sudah diuji, dan Wi-Fi bukan jaringan simulasi4G benchmark. Protokol APAR:9/1,5Mbps,60ms,CPU4×,DPR1,75; Lighthouse memakai Slow4G bawaan terpisah. Tidak mengukur hosting/CDN/Umami produksi, FPS atau AT/browser lain.
+
+Perbandingan: T3.1 median42/APAR4,04dtk412px/transfer2,32MB; T4.1 APAR3,43dtk390px/transfer1,14MB. Waktu390px kini lebih lambat dan tidak dianggap nonregresi; perbedaan versi/host/controller/idle serta6/12 run invalid membatasi kesimpulan sebab. Dua usulan (lazy init/import fitur non-Configure dan uji PMREM coarse64) dicatat beserta konsekuensi, belum diterapkan. Task dan checklist ditutup berdasarkan acceptance Barkah; budget gagal tetap dicatat. Commit/push ke develop diotorisasi, tanpa perubahan aplikasi/library, task berikutnya atau perubahan main/deploy produksi.
+
 ## Peta fitur → task
 F1: T0.2–T0.3 · F2: T1.3–T1.4 · F3: T1.5–T1.6 · F4: T1.6 · F5: T1.7 · F6: T2.1–T2.2 · F7: T2.3 · F8: T2.4 · F9: T2.5 · F10: T1.1 · F11: T3.2–T3.3 · F15: T3.6 · F16: L4 · Wajib riset (Draco/KTX2, <3 dtk, HP, Vercel, video, GitHub, SEO): T0.3, T3.1, T0.4, T3.4, T3.3

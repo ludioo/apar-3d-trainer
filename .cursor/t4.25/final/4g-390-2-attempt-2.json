@@ -1,0 +1,353 @@
+{
+  "name": "4g-390-2-attempt-2",
+  "width": 390,
+  "height": 844,
+  "run": 2,
+  "valid": true,
+  "errors": [],
+  "consoleErrors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+  ],
+  "requests": [
+    "http://127.0.0.1:4191/#configure",
+    "http://127.0.0.1:4191/models/apar.glb",
+    "http://127.0.0.1:4191/assets/index-BH67CCGF.js",
+    "http://127.0.0.1:4191/assets/index-ML-WrRYb.css",
+    "http://127.0.0.1:4191/decoders/draco/draco_wasm_wrapper.js",
+    "http://127.0.0.1:4191/decoders/draco/draco_decoder.wasm",
+    "blob:http://127.0.0.1:4191/cae0a082-0221-4853-a2f2-0a34854741ee",
+    "blob:http://127.0.0.1:4191/9fa29f9a-a15f-4fc5-bdfc-b7a9363212b6",
+    "blob:http://127.0.0.1:4191/69bfa532-50a5-4edb-bb7e-898205476136",
+    "blob:http://127.0.0.1:4191/02c7a8d8-044b-4713-b379-7c98df6116af",
+    "blob:http://127.0.0.1:4191/f935a5ab-a189-41ef-bf65-928831c34a24",
+    "blob:http://127.0.0.1:4191/22574279-65c6-4550-a240-5cb2560542a1",
+    "blob:http://127.0.0.1:4191/86884ff8-4030-4072-8a97-c2870a1f5a62",
+    "blob:http://127.0.0.1:4191/93261f46-ef9e-4c1e-8008-1de87b46ed18",
+    "blob:http://127.0.0.1:4191/94d4a3d7-2fd9-4c84-9e36-1fff60b6a439",
+    "http://127.0.0.1:4191/favicon.svg",
+    "http://127.0.0.1:4191/favicon.ico",
+    "blob:http://127.0.0.1:4191/6ebeb70e-9e06-4fe1-8743-7ea41f8f934b",
+    "blob:http://127.0.0.1:4191/6ebeb70e-9e06-4fe1-8743-7ea41f8f934b",
+    "blob:http://127.0.0.1:4191/6ebeb70e-9e06-4fe1-8743-7ea41f8f934b"
+  ],
+  "failedRequests": [],
+  "badResponses": [],
+  "chrome": "Chrome/156.0.8078.76",
+  "network": [
+    {
+      "event": "request",
+      "id": "0171015147957EE8A6EBA1A53CE371D4",
+      "time": 5786.908511,
+      "url": "http://127.0.0.1:4191/"
+    },
+    {
+      "event": "request",
+      "id": "19716.2",
+      "time": 5787.000417,
+      "url": "http://127.0.0.1:4191/models/apar.glb"
+    },
+    {
+      "event": "request",
+      "id": "19716.3",
+      "time": 5787.003119,
+      "url": "http://127.0.0.1:4191/assets/index-BH67CCGF.js"
+    },
+    {
+      "event": "request",
+      "id": "19716.4",
+      "time": 5787.003967,
+      "url": "http://127.0.0.1:4191/assets/index-ML-WrRYb.css"
+    },
+    {
+      "event": "finished",
+      "id": "0171015147957EE8A6EBA1A53CE371D4",
+      "time": 5786.974952,
+      "encodedBytes": 2590
+    },
+    {
+      "event": "finished",
+      "id": "19716.4",
+      "time": 5787.086873,
+      "encodedBytes": 6495
+    },
+    {
+      "event": "finished",
+      "id": "19716.3",
+      "time": 5787.480207,
+      "encodedBytes": 228779
+    },
+    {
+      "event": "finished",
+      "id": "19716.2",
+      "time": 5787.901125,
+      "encodedBytes": 695269
+    },
+    {
+      "event": "request",
+      "id": "19716.9",
+      "time": 5790.0934,
+      "url": "http://127.0.0.1:4191/decoders/draco/draco_wasm_wrapper.js"
+    },
+    {
+      "event": "request",
+      "id": "19716.10",
+      "time": 5790.095053,
+      "url": "http://127.0.0.1:4191/decoders/draco/draco_decoder.wasm"
+    },
+    {
+      "event": "request",
+      "id": "19716.11",
+      "time": 5790.133011,
+      "url": "blob:http://127.0.0.1:4191/cae0a082-0221-4853-a2f2-0a34854741ee"
+    },
+    {
+      "event": "request",
+      "id": "19716.12",
+      "time": 5790.134382,
+      "url": "blob:http://127.0.0.1:4191/9fa29f9a-a15f-4fc5-bdfc-b7a9363212b6"
+    },
+    {
+      "event": "request",
+      "id": "19716.13",
+      "time": 5790.135015,
+      "url": "blob:http://127.0.0.1:4191/69bfa532-50a5-4edb-bb7e-898205476136"
+    },
+    {
+      "event": "request",
+      "id": "19716.14",
+      "time": 5790.136071,
+      "url": "blob:http://127.0.0.1:4191/02c7a8d8-044b-4713-b379-7c98df6116af"
+    },
+    {
+      "event": "request",
+      "id": "19716.15",
+      "time": 5790.136874,
+      "url": "blob:http://127.0.0.1:4191/f935a5ab-a189-41ef-bf65-928831c34a24"
+    },
+    {
+      "event": "request",
+      "id": "19716.16",
+      "time": 5790.137866,
+      "url": "blob:http://127.0.0.1:4191/22574279-65c6-4550-a240-5cb2560542a1"
+    },
+    {
+      "event": "request",
+      "id": "19716.17",
+      "time": 5790.138673,
+      "url": "blob:http://127.0.0.1:4191/86884ff8-4030-4072-8a97-c2870a1f5a62"
+    },
+    {
+      "event": "request",
+      "id": "19716.18",
+      "time": 5790.139608,
+      "url": "blob:http://127.0.0.1:4191/93261f46-ef9e-4c1e-8008-1de87b46ed18"
+    },
+    {
+      "event": "request",
+      "id": "19716.19",
+      "time": 5790.140837,
+      "url": "blob:http://127.0.0.1:4191/94d4a3d7-2fd9-4c84-9e36-1fff60b6a439"
+    },
+    {
+      "event": "request",
+      "id": "19716.20",
+      "time": 5790.168204,
+      "url": "http://127.0.0.1:4191/favicon.svg"
+    },
+    {
+      "event": "finished",
+      "id": "19716.11",
+      "time": 5790.134529,
+      "encodedBytes": 0
+    },
+    {
+      "event": "finished",
+      "id": "19716.12",
+      "time": 5790.135019,
+      "encodedBytes": 0
+    },
+    {
+      "event": "finished",
+      "id": "19716.13",
+      "time": 5790.135709,
+      "encodedBytes": 0
+    },
+    {
+      "event": "finished",
+      "id": "19716.14",
+      "time": 5790.136725,
+      "encodedBytes": 0
+    },
+    {
+      "event": "finished",
+      "id": "19716.15",
+      "time": 5790.137289,
+      "encodedBytes": 0
+    },
+    {
+      "event": "finished",
+      "id": "19716.16",
+      "time": 5790.138304,
+      "encodedBytes": 0
+    },
+    {
+      "event": "finished",
+      "id": "19716.17",
+      "time": 5790.139311,
+      "encodedBytes": 0
+    },
+    {
+      "event": "finished",
+      "id": "19716.18",
+      "time": 5790.140395,
+      "encodedBytes": 0
+    },
+    {
+      "event": "finished",
+      "id": "19716.19",
+      "time": 5790.141443,
+      "encodedBytes": 0
+    },
+    {
+      "event": "finished",
+      "id": "19716.9",
+      "time": 5790.177359,
+      "encodedBytes": 11954
+    },
+    {
+      "event": "finished",
+      "id": "19716.20",
+      "time": 5790.232314,
+      "encodedBytes": 530
+    },
+    {
+      "event": "request",
+      "id": "19716.21",
+      "time": 5790.276875,
+      "url": "http://127.0.0.1:4191/favicon.ico"
+    },
+    {
+      "event": "finished",
+      "id": "19716.21",
+      "time": 5790.343062,
+      "encodedBytes": 1744
+    },
+    {
+      "event": "finished",
+      "id": "19716.10",
+      "time": 5790.345904,
+      "encodedBytes": 192604
+    },
+    {
+      "event": "request",
+      "id": "6C9F47AD418CB8CA3E8495B3C5709FEF",
+      "time": 5790.37051,
+      "url": "blob:http://127.0.0.1:4191/6ebeb70e-9e06-4fe1-8743-7ea41f8f934b"
+    },
+    {
+      "event": "request",
+      "id": "66BA054B6ABC48DAF54B82DD65242C87",
+      "time": 5790.371948,
+      "url": "blob:http://127.0.0.1:4191/6ebeb70e-9e06-4fe1-8743-7ea41f8f934b"
+    },
+    {
+      "event": "request",
+      "id": "A51B39F24EDBB618044C36AAF5D78E7A",
+      "time": 5790.372713,
+      "url": "blob:http://127.0.0.1:4191/6ebeb70e-9e06-4fe1-8743-7ea41f8f934b"
+    }
+  ],
+  "readyMs": 4804.9000000003725,
+  "marks": [
+    {
+      "name": "apar:environment-ready",
+      "time": 1934
+    },
+    {
+      "name": "apar:load-start",
+      "time": 2539.600000000559
+    },
+    {
+      "name": "apar:model-ready",
+      "time": 3840.9000000003725
+    },
+    {
+      "name": "apar:visible",
+      "time": 4804.9000000003725
+    }
+  ],
+  "documentTransferBytes": 2691,
+  "entries": [
+    {
+      "url": "http://127.0.0.1:4191/models/apar.glb",
+      "initiator": "link",
+      "transferBytes": 695384,
+      "encodedBytes": 695084,
+      "decodedBytes": 695084,
+      "responseEnd": 993.2999999998137
+    },
+    {
+      "url": "http://127.0.0.1:4191/assets/index-BH67CCGF.js",
+      "initiator": "script",
+      "transferBytes": 228872,
+      "encodedBytes": 228572,
+      "decodedBytes": 834788,
+      "responseEnd": 572.4000000003725
+    },
+    {
+      "url": "http://127.0.0.1:4191/assets/index-ML-WrRYb.css",
+      "initiator": "link",
+      "transferBytes": 6597,
+      "encodedBytes": 6297,
+      "decodedBytes": 34406,
+      "responseEnd": 179.1000000005588
+    },
+    {
+      "url": "http://127.0.0.1:4191/decoders/draco/draco_wasm_wrapper.js",
+      "initiator": "fetch",
+      "transferBytes": 12048,
+      "encodedBytes": 11748,
+      "decodedBytes": 58456,
+      "responseEnd": 3269.5
+    },
+    {
+      "url": "http://127.0.0.1:4191/decoders/draco/draco_decoder.wasm",
+      "initiator": "fetch",
+      "transferBytes": 192720,
+      "encodedBytes": 192420,
+      "decodedBytes": 192420,
+      "responseEnd": 3438.100000000559
+    },
+    {
+      "url": "http://127.0.0.1:4191/favicon.svg",
+      "initiator": "other",
+      "transferBytes": 641,
+      "encodedBytes": 341,
+      "decodedBytes": 341,
+      "responseEnd": 3324.5
+    },
+    {
+      "url": "http://127.0.0.1:4191/favicon.ico",
+      "initiator": "other",
+      "transferBytes": 1854,
+      "encodedBytes": 1554,
+      "decodedBytes": 1554,
+      "responseEnd": 3435.2999999998137
+    }
+  ],
+  "transferBytes": 1140807,
+  "splash": {
+    "opacity": "0",
+    "hidden": "true",
+    "inert": true
+  },
+  "canvas": {
+    "width": 585,
+    "height": 324
+  },
+  "sampledAtMs": 5567.200000000186,
+  "language": "en",
+  "coarse": true,
+  "debugBridge": false
+}

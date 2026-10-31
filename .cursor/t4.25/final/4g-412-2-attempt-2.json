@@ -1,0 +1,129 @@
+{
+  "name": "4g-412-2-attempt-2",
+  "width": 412,
+  "height": 823,
+  "run": 2,
+  "valid": true,
+  "errors": [],
+  "consoleErrors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,86-138): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,39-65): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,87-113): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+  ],
+  "requests": [
+    "http://127.0.0.1:4191/#configure",
+    "http://127.0.0.1:4191/models/apar.glb",
+    "http://127.0.0.1:4191/assets/index-BH67CCGF.js",
+    "http://127.0.0.1:4191/assets/index-ML-WrRYb.css",
+    "http://127.0.0.1:4191/decoders/draco/draco_wasm_wrapper.js",
+    "http://127.0.0.1:4191/decoders/draco/draco_decoder.wasm",
+    "blob:http://127.0.0.1:4191/a32e0fc2-3371-4241-8347-a3bb4bf29a76",
+    "blob:http://127.0.0.1:4191/e9ba9f0a-f4c6-49da-9c1f-0cdeef040a12",
+    "blob:http://127.0.0.1:4191/4e9d1c3e-8b03-466c-bd44-8f5d9d21706d",
+    "blob:http://127.0.0.1:4191/6c4f8a1f-abdd-49b9-a3a8-5f4a0d9efe0b",
+    "blob:http://127.0.0.1:4191/609e8e30-fa7d-4bc1-a315-80c2e3fb1a17",
+    "blob:http://127.0.0.1:4191/c94079cc-64e7-421e-97cd-25ab66c0e48d",
+    "blob:http://127.0.0.1:4191/e1ccbbb8-313f-415a-8dbb-b5bce6f702a9",
+    "blob:http://127.0.0.1:4191/1aeb62ba-90eb-4a53-93cf-32ef15f5aca8",
+    "blob:http://127.0.0.1:4191/d6d8003b-fb18-43c4-bca4-6e2e74bd821b",
+    "http://127.0.0.1:4191/favicon.svg",
+    "http://127.0.0.1:4191/favicon.ico",
+    "blob:http://127.0.0.1:4191/e6181e96-9279-4670-8b8d-b28cd75c2eeb",
+    "blob:http://127.0.0.1:4191/e6181e96-9279-4670-8b8d-b28cd75c2eeb",
+    "blob:http://127.0.0.1:4191/e6181e96-9279-4670-8b8d-b28cd75c2eeb"
+  ],
+  "failedRequests": [],
+  "badResponses": [],
+  "chrome": "Chrome/156.0.8078.76",
+  "readyMs": 3715.7000000001863,
+  "marks": [
+    {
+      "name": "apar:environment-ready",
+      "time": 1887.4000000003725
+    },
+    {
+      "name": "apar:load-start",
+      "time": 2013.7000000001863
+    },
+    {
+      "name": "apar:model-ready",
+      "time": 3019.100000000559
+    },
+    {
+      "name": "apar:visible",
+      "time": 3715.7000000001863
+    }
+  ],
+  "documentTransferBytes": 2691,
+  "entries": [
+    {
+      "url": "http://127.0.0.1:4191/models/apar.glb",
+      "initiator": "link",
+      "transferBytes": 695384,
+      "encodedBytes": 695084,
+      "decodedBytes": 695084,
+      "responseEnd": 1013.7000000001863
+    },
+    {
+      "url": "http://127.0.0.1:4191/assets/index-BH67CCGF.js",
+      "initiator": "script",
+      "transferBytes": 228872,
+      "encodedBytes": 228572,
+      "decodedBytes": 834788,
+      "responseEnd": 584.7000000001863
+    },
+    {
+      "url": "http://127.0.0.1:4191/assets/index-ML-WrRYb.css",
+      "initiator": "link",
+      "transferBytes": 6597,
+      "encodedBytes": 6297,
+      "decodedBytes": 34406,
+      "responseEnd": 191.40000000037253
+    },
+    {
+      "url": "http://127.0.0.1:4191/decoders/draco/draco_wasm_wrapper.js",
+      "initiator": "fetch",
+      "transferBytes": 12048,
+      "encodedBytes": 11748,
+      "decodedBytes": 58456,
+      "responseEnd": 2708.4000000003725
+    },
+    {
+      "url": "http://127.0.0.1:4191/decoders/draco/draco_decoder.wasm",
+      "initiator": "fetch",
+      "transferBytes": 192720,
+      "encodedBytes": 192420,
+      "decodedBytes": 192420,
+      "responseEnd": 2888.4000000003725
+    },
+    {
+      "url": "http://127.0.0.1:4191/favicon.svg",
+      "initiator": "other",
+      "transferBytes": 641,
+      "encodedBytes": 341,
+      "decodedBytes": 341,
+      "responseEnd": 2764
+    },
+    {
+      "url": "http://127.0.0.1:4191/favicon.ico",
+      "initiator": "other",
+      "transferBytes": 1854,
+      "encodedBytes": 1554,
+      "decodedBytes": 1554,
+      "responseEnd": 2953.7000000001863
+    }
+  ],
+  "transferBytes": 1140807,
+  "splash": {
+    "opacity": "0",
+    "hidden": "true",
+    "inert": true
+  },
+  "canvas": {
+    "width": 618,
+    "height": 308
+  },
+  "sampledAtMs": 4477.9000000003725,
+  "language": "en",
+  "coarse": true,
+  "debugBridge": false
+}

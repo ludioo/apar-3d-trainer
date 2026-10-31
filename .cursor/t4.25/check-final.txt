@@ -1,0 +1,17 @@
+
+> apar-3d-trainer@0.0.1 check
+> node scripts/self-check.js
+
+product-check ok: 96 configurations, both currencies, approved specifications, invalid IDs
+Saved configurations: persistence, validation, 10-item limit, stale confirmation and storage failures PASS
+training-check ok: PASS source, session navigation, skip/restart, hold boundary, slider zones/cycles/position/reset
+effects-check ok: nozzle transform, particle limits, six strokes, Skip/Back/reset, pause/model/exit, reduced motion, responsive framing
+Quiz: approved bilingual content, answer locking, 0/5/6/8 scores, duration, retry and safe 20-attempt storage passed.
+Results checks passed: scores/history, bilingual answers, participant name, session reset and scoped/partial deletion.
+Environment check: 1615248 -> 1187546 bytes; identical 1K HDR pixels/type/color space
+SEO: static metadata, canonical, JSON-LD, robots, sitemap and JPEG passed
+Overview: projected bounds, capacity sizes, idle directions, narrow/short viewports and zero-size safety passed.
+Analytics: domain/env gates, idle/timer, one script, no early replay, blocked/throw/rejection safety passed
+PDF checks passed: latest result, 0/5/6/8 scores, EN/ID, names, sources, emergency and multipage output.
+Environment routes/preload, PMREM sizes, HDR fallbacks, failure marks and resource cleanup passed
+self-check ok: 196 i18n keys, router, sheet, 6 hotspots, K3 copy, occlusion, pin layout, camera tween, selective paint, bracket lifecycle

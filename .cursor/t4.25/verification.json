@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-10-31T06:13:08.702Z",
+  "validLighthouseRuns": 3,
+  "validFourGRuns": 6,
+  "invalidFourGAttempts": 6,
+  "aggregateChecked": true,
+  "rawTransfersChecked": true,
+  "buildManifestUnchanged": true,
+  "applicationDiffEmpty": true,
+  "existingUserDiffPreserved": true,
+  "screenshotsReviewed": [
+    "4g-412-1.png",
+    "4g-412-2-attempt-2.png",
+    "4g-412-3.png",
+    "4g-390-1-attempt-5.png",
+    "4g-390-2-attempt-2.png",
+    "4g-390-3.png"
+  ],
+  "endpoints": [
+    {
+      "url": "http://localhost:4191/#configure",
+      "status": 200,
+      "encoding": "gzip",
+      "contentLength": "2391",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://192.168.100.4:4191/#configure",
+      "status": 200,
+      "encoding": "gzip",
+      "contentLength": "2391",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:4191/assets/index-BH67CCGF.js",
+      "status": 200,
+      "encoding": "gzip",
+      "contentLength": "228572",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:4191/models/apar.glb",
+      "status": 200,
+      "encoding": null,
+      "contentLength": "695084",
+      "cacheControl": "no-store"
+    }
+  ],
+  "budgets": {
+    "performance85": false,
+    "aparUnder3Seconds": false,
+    "transferUnder3MB": true,
+    "glbUnder2MB": true
+  },
+  "harnessSha256": "f6c8be8419758193f5357b29aace6dd87e9d56e1b319d9fa60e2b3b3bab8b91e"
+}
