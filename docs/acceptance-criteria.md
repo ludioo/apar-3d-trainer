@@ -392,6 +392,19 @@ Cara cek ulang: desktop buka `http://localhost:4257/#configure`; HP satu Wi-Fi b
 
 Bukti: check196 key/build, enam kelompok QA/84 keadaan Chrome desktop1280×900 dan mobile emulasi390×844, draft nama serta empat PDF bilingual/delapan halaman lolos. Detail dan gate antislop ada di `.cursor/t4.17-report.md`. HP fisik/Safari/Firefox/AT/zoom OS/performa baru dan ekspor PDF mobile belum diuji AI; acceptance pengguna tidak dianggap bukti perangkat tambahan. Check/build dijalankan ulang sebelum commit; browser tidak diulang karena penutupan hanya dokumentasi. Commit/push ke develop diotorisasi, tanpa lanjut task berikutnya atau mengubah main/deploy produksi.
 
+## T4.26 — Polish Results, About, dan loader (31 Okt 2026)
+
+Status: **implementasi siap diperiksa, menunggu acceptance Barkah**. Validasi dan planning disetujui sebelum implementasi. Checklist berikut tetap terbuka sampai dikonfirmasi pengguna; QA otomatis sudah lolos dan tidak menggantikan acceptance.
+
+- [ ] Status Correct/Incorrect dan Benar/Salah utuh satu baris pada Results, desktop dan mobile360px, termasuk pembesaran teks200%, tanpa overflow/tumpang tindih.
+- [ ] Close/Tutup About terlihat, target≥44×44px dan tidak menutupi tautan; seluruh isi/tautan dapat dijangkau lewat scroll.
+- [ ] Close, Escape dan backdrop menutup About lalu fokus kembali ke About/Tentang; Tab/Shift+Tab tetap dalam modal saat terbuka.
+- [ ] Loading hanya tampil selama pemuatan; setelah model tampil/fade selesai splash hilang dari DOM. Error/Retry, pesan loading lambat dan fallback WebGL tetap berfungsi.
+
+Cara cek: buka `http://localhost:4276/#results` atau HP satu Wi-Fi `http://192.168.100.4:4276/#results`. Jika belum ada hasil, jalankan Train/Latihan dan kuis delapan soal, jawab sebagian salah lalu buka Results/Hasil. Gulir tabel dan ganti EN/ID; periksa label status pada desktop dan mobile360px. Buka About/Tentang, gulir semua tautan, coba Close/Tutup, buka lagi lalu Esc, buka lagi lalu tap area luar. Dengan keyboard, coba Tab/Shift+Tab; fokus kembali ke About setiap ditutup. Reload dan tunggu model, kemudian cari `#splash` di Inspect→Elements: elemen tidak ada setelah selesai. Fault loading/Retry/slow/fallback diperiksa otomatis, tanpa perlu mengubah data pengguna.
+
+Bukti AI: check196 key/build,12 keadaan layout EN/ID/font100/200% pada360/390/1365px,120 klik/tap tautan per matriks, fokus dan tiga route serta loader motion normal/reduce/error/Retry/slow/fallback lolos di dev/preview produksi; nol error tak terduga. Rincian/screenshot/gate di `.cursor/t4.26-report.md`. HP fisik/AT/browser lain/zoom OS/performa baru belum diuji. Commit lokal diminta dengan pesan `polish: results label, about modal, loader cleanup`; tidak push/deploy atau lanjut task lain.
+
 ## T4.19 — About: Close tidak menimpa link (30 Okt 2026)
 
 Status: **selesai, acceptance Barkah diterima 30 Oktober 2026**. Barkah mengonfirmasi sudah mengecek T4.19 dan lolos, lalu meminta task/tiga checklist selesai, pembaruan dokumen serta commit/push ke develop. Validasi dan planning disetujui sebelum implementasi. Checklist ditutup berdasarkan konfirmasi pengguna serta bukti QA existing; rincian perangkat/browser pemeriksaan pengguna tidak diberikan sehingga batas QA AI tetap berlaku.

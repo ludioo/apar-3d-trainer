@@ -30,5 +30,8 @@
 - T3.6 Analytics Umami (script defer setelah load, custom events, env var).
 - T3.5 Link dari barkahmauludi.com (dikerjakan di repo situs utama, lihat prompt).
 
+## Follow-up penutupan (31 Okt 2026)
+- T4.26 Polish Results, About, dan loader: label status kuis utuh pada mobile/desktop EN/ID, regresi Close/Escape/backdrop/fokus About, hapus splash setelah fade sukses. Validasi dan planning disetujui Barkah sebelum implementasi; tanpa dependency atau fitur baru. Status implementasi menunggu acceptance Barkah; tidak push/deploy.
+
 ## Later
 - L1 Panel sensor dummy (digital twin). L2 WebXR AR/VR. L3 Alat tambahan. L4 Pisah mesh di Blender + animasi bagian (pin tercabut, tuas ditekan, selang bergerak).

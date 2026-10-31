@@ -44,7 +44,7 @@
 .results-chart__bar { fill: var(--accent); }
 .results-chart__axis { stroke: var(--border); }
 .results-chart__threshold { stroke: var(--text-muted); stroke-dasharray: 4 4; }
-.results__answers { width: 100%; table-layout: fixed; border-collapse: collapse; }
+.results__answers { width: 100%; table-layout: auto; border-collapse: collapse; }
 .results__answers caption { text-align: left; margin-bottom: var(--space-12); }
 .results__answers th, .results__answers td {
   padding: var(--space-8) var(--space-4);
@@ -53,8 +53,11 @@
   overflow-wrap: anywhere;
   border-bottom: 1px solid var(--border);
 }
-.results__answers th:first-child { width: 46%; }
-.results__answers th:nth-child(2) { width: 30%; }
+.results__answers th:last-child, .results__answers td:last-child {
+  min-width: 9ch;
+  width: 1%;
+  white-space: nowrap;
+}
 .results__configs { list-style: none; padding: 0; margin: var(--space-8) 0; }
 .results__configs li { padding-block: var(--space-12); border-top: 1px solid var(--border); }
 .results__name, .results__contacts { display: flex; flex-direction: column; gap: var(--space-8); }

@@ -233,6 +233,7 @@ function startViewer() {
         splash.inert = true;
         splash.setAttribute('aria-hidden', 'true');
         await Promise.allSettled(splash.getAnimations().map((animation) => animation.finished));
+        splash.remove();
         requestAnimationFrame(() => {
           const mark = hasEnvironment ? 'apar:visible' : 'apar:fallback-visible';
           performance.mark(mark);
