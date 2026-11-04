@@ -2,6 +2,16 @@ import { emit } from '../core/events.js';
 
 const SNAP_NAMES = ['peek', 'half', 'full'];
 const TAP_PX = 6;
+const SHORT_LANDSCAPE_MAX_H = 500;
+const DESKTOP_MIN_W = 1024;
+
+export function isShortLandscape(width = innerWidth, height = innerHeight) {
+  return height <= SHORT_LANDSCAPE_MAX_H && width < DESKTOP_MIN_W;
+}
+
+export function defaultSnapIndex(width = innerWidth, height = innerHeight) {
+  return isShortLandscape(width, height) ? 0 : 1;
+}
 
 export function sheetBounds(viewportHeight, availableHeight, minimumHeight) {
   return [0.25, 0.5, 0.75].map((fraction) =>
@@ -15,13 +25,14 @@ export function nearestSnap(visiblePx, snapsPx) {
 export function initSheet(panel, handle) {
   const desktop = matchMedia('(min-width: 1024px)');
   const root = document.documentElement;
-  let snap = 1;
+  let snap = defaultSnapIndex();
   let pointerId = null;
   let startY = null;
   let startVisible = 0;
   let visible = 0;
   let tapPending = false;
   let distance = 0;
+  let shortLandscape = isShortLandscape();
 
   const limits = () => {
     const style = getComputedStyle(panel);
@@ -52,6 +63,14 @@ export function initSheet(panel, handle) {
     panel.style.height = '';
     pointerId = null;
   };
+  const syncShortLandscape = () => {
+    const next = isShortLandscape();
+    root.classList.toggle('is-short-landscape', next);
+    if (next !== shortLandscape) {
+      shortLandscape = next;
+      if (!desktop.matches) setSnap(defaultSnapIndex());
+    }
+  };
   const syncViewport = () => {
     tapPending = false;
     reset();
@@ -60,6 +79,7 @@ export function initSheet(panel, handle) {
     const bottom = viewport?.scale === 1 ? Math.max(0, innerHeight - viewport.height - viewport.offsetTop) : 0;
     root.style.setProperty('--sheet-viewport-h', `${height}px`);
     root.style.setProperty('--sheet-bottom', `${bottom}px`);
+    syncShortLandscape();
     syncHandle();
   };
 

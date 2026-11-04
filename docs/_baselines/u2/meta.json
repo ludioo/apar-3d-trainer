@@ -1,0 +1,291 @@
+{
+  "date": "2026-11-04",
+  "origin": "http://127.0.0.1:4174",
+  "route": "#configure",
+  "minLandscapeCanvasPct": 40,
+  "viewports": [
+    {
+      "id": "iphone13-390x844",
+      "width": 390,
+      "height": 844,
+      "httpStatus": 200,
+      "screenshot": "docs/_baselines/u2/configure-iphone13-390x844.png",
+      "title": "FireDrill — Interactive 3D Fire Extinguisher Trainer",
+      "viewportMeta": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+      "shortLandscape": false,
+      "emergencyDisplay": "block",
+      "snap": "half",
+      "overflowHidden": true,
+      "scrollY": 0,
+      "canvasRoot": {
+        "w": 390,
+        "h": 268,
+        "top": 154,
+        "bottom": 422
+      },
+      "canvas": {
+        "w": 390,
+        "h": 268,
+        "top": 154,
+        "bottom": 422
+      },
+      "topbar": {
+        "w": 390,
+        "h": 154,
+        "top": 0,
+        "bottom": 154
+      },
+      "panel": {
+        "w": 390,
+        "h": 422,
+        "top": 422,
+        "bottom": 844
+      },
+      "panelBody": {
+        "scrollHeight": 1637,
+        "clientHeight": 325,
+        "canScroll": true
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "topbarPadTop": "0px",
+      "panelPadBottom": "16px",
+      "canvasPctViewportH": 31.8
+    },
+    {
+      "id": "iphone-se-375x667",
+      "width": 375,
+      "height": 667,
+      "httpStatus": 200,
+      "screenshot": "docs/_baselines/u2/configure-iphone-se-375x667.png",
+      "title": "FireDrill — Interactive 3D Fire Extinguisher Trainer",
+      "viewportMeta": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+      "shortLandscape": false,
+      "emergencyDisplay": "block",
+      "snap": "half",
+      "overflowHidden": true,
+      "scrollY": 0,
+      "canvasRoot": {
+        "w": 375,
+        "h": 179.5,
+        "top": 154,
+        "bottom": 333.5
+      },
+      "canvas": {
+        "w": 375,
+        "h": 179.5,
+        "top": 154,
+        "bottom": 333.5
+      },
+      "topbar": {
+        "w": 375,
+        "h": 154,
+        "top": 0,
+        "bottom": 154
+      },
+      "panel": {
+        "w": 375,
+        "h": 333.5,
+        "top": 333.5,
+        "bottom": 667
+      },
+      "panelBody": {
+        "scrollHeight": 1637,
+        "clientHeight": 237,
+        "canScroll": true
+      },
+      "viewport": {
+        "w": 375,
+        "h": 667
+      },
+      "topbarPadTop": "0px",
+      "panelPadBottom": "16px",
+      "canvasPctViewportH": 26.9
+    },
+    {
+      "id": "landscape-844x390",
+      "width": 844,
+      "height": 390,
+      "httpStatus": 200,
+      "screenshot": "docs/_baselines/u2/configure-landscape-844x390.png",
+      "title": "FireDrill — Interactive 3D Fire Extinguisher Trainer",
+      "viewportMeta": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+      "shortLandscape": true,
+      "emergencyDisplay": "none",
+      "snap": "peek",
+      "overflowHidden": true,
+      "scrollY": 0,
+      "canvasRoot": {
+        "w": 844,
+        "h": 197.5,
+        "top": 95,
+        "bottom": 292.5
+      },
+      "canvas": {
+        "w": 844,
+        "h": 197.5,
+        "top": 95,
+        "bottom": 292.5
+      },
+      "topbar": {
+        "w": 844,
+        "h": 95,
+        "top": 0,
+        "bottom": 95
+      },
+      "panel": {
+        "w": 844,
+        "h": 97.5,
+        "top": 292.5,
+        "bottom": 390
+      },
+      "panelBody": {
+        "scrollHeight": 1474,
+        "clientHeight": 1,
+        "canScroll": true
+      },
+      "viewport": {
+        "w": 844,
+        "h": 390
+      },
+      "topbarPadTop": "0px",
+      "panelPadBottom": "16px",
+      "canvasPctViewportH": 50.6
+    },
+    {
+      "id": "desktop-1440x900",
+      "width": 1440,
+      "height": 900,
+      "httpStatus": 200,
+      "screenshot": "docs/_baselines/u2/configure-desktop-1440x900.png",
+      "title": "FireDrill — Interactive 3D Fire Extinguisher Trainer",
+      "viewportMeta": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+      "shortLandscape": false,
+      "emergencyDisplay": "flex",
+      "snap": "half",
+      "overflowHidden": true,
+      "scrollY": 0,
+      "canvasRoot": {
+        "w": 1440,
+        "h": 900,
+        "top": 0,
+        "bottom": 900
+      },
+      "canvas": {
+        "w": 1440,
+        "h": 900,
+        "top": 0,
+        "bottom": 900
+      },
+      "topbar": {
+        "w": 1440,
+        "h": 118,
+        "top": 0,
+        "bottom": 118
+      },
+      "panel": {
+        "w": 360,
+        "h": 750,
+        "top": 134,
+        "bottom": 884
+      },
+      "panelBody": {
+        "scrollHeight": 1661,
+        "clientHeight": 680,
+        "canScroll": true
+      },
+      "viewport": {
+        "w": 1440,
+        "h": 900
+      },
+      "topbarPadTop": "0px",
+      "panelPadBottom": "16px",
+      "canvasPctViewportH": 100
+    }
+  ],
+  "asserts": [
+    {
+      "ok": true,
+      "msg": "iphone13-390x844: viewport-fit=cover"
+    },
+    {
+      "ok": true,
+      "msg": "iphone13-390x844: overflow hidden"
+    },
+    {
+      "ok": true,
+      "msg": "iphone13-390x844: scrollY 0"
+    },
+    {
+      "ok": true,
+      "msg": "iphone-se-375x667: viewport-fit=cover"
+    },
+    {
+      "ok": true,
+      "msg": "iphone-se-375x667: overflow hidden"
+    },
+    {
+      "ok": true,
+      "msg": "iphone-se-375x667: scrollY 0"
+    },
+    {
+      "ok": true,
+      "msg": "iphone-se-375x667: panel body scrollable or fits (scrollH=1637, clientH=237)"
+    },
+    {
+      "ok": true,
+      "msg": "iphone-se-375x667: snap half"
+    },
+    {
+      "ok": true,
+      "msg": "landscape-844x390: viewport-fit=cover"
+    },
+    {
+      "ok": true,
+      "msg": "landscape-844x390: overflow hidden"
+    },
+    {
+      "ok": true,
+      "msg": "landscape-844x390: scrollY 0"
+    },
+    {
+      "ok": true,
+      "msg": "landscape-844x390: is-short-landscape"
+    },
+    {
+      "ok": true,
+      "msg": "landscape-844x390: snap peek"
+    },
+    {
+      "ok": true,
+      "msg": "landscape-844x390: emergency hidden (unobstructed canvas)"
+    },
+    {
+      "ok": true,
+      "msg": "landscape-844x390: canvas 50.6% ≥ 40%"
+    },
+    {
+      "ok": true,
+      "msg": "desktop-1440x900: viewport-fit=cover"
+    },
+    {
+      "ok": true,
+      "msg": "desktop-1440x900: overflow hidden"
+    },
+    {
+      "ok": true,
+      "msg": "desktop-1440x900: scrollY 0"
+    },
+    {
+      "ok": true,
+      "msg": "desktop-1440x900: panel width 360"
+    },
+    {
+      "ok": true,
+      "msg": "desktop-1440x900: not short-landscape"
+    }
+  ],
+  "errors": []
+}

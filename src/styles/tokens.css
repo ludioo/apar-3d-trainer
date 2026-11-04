@@ -50,6 +50,10 @@
   --backdrop: rgba(0, 0, 0, 0.6);
 
   /* Layout */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
   --topbar-row: 56px;
   --tabs-row: 44px;
   --topbar-h: calc(var(--topbar-row) + var(--tabs-row));
@@ -69,6 +73,12 @@
   --dur-cam-max: 800ms;
 }
 
+@supports (height: 100svh) {
+  :root {
+    --sheet-viewport-h: 100svh;
+  }
+}
+
 @supports (height: 100dvh) {
   :root {
     --sheet-viewport-h: 100dvh;
@@ -80,6 +90,13 @@
   :root {
     --topbar-h: var(--topbar-row);
   }
+}
+
+/* Short landscape: lower peek floor so canvas can stay ≥ ~40% vh */
+html.is-short-landscape {
+  --sheet-min-h: 88px;
+  --topbar-row: 44px;
+  --tabs-row: 44px;
 }
 
 /* backdrop-filter: blur(12px) applied on panel components later; solid fallback = --surface-solid */

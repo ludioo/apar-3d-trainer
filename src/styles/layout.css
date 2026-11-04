@@ -14,7 +14,7 @@
   align-items: center;
   column-gap: var(--space-16);
   min-height: var(--topbar-row);
-  padding: 0 var(--space-16);
+  padding: var(--safe-top) max(var(--space-16), var(--safe-right)) 0 max(var(--space-16), var(--safe-left));
   background: var(--surface-solid);
   border-bottom: 1px solid var(--border);
   color: var(--text);
@@ -127,6 +127,29 @@
 .emergency-chrome__details p { margin: 0; overflow-wrap: anywhere; }
 .emergency-chrome a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
+/* Compact emergency on mobile: keep tel chips, collapse source/note (still in About). */
+@media (max-width: 1023px) {
+  .emergency-chrome__details {
+    display: none;
+  }
+
+  .emergency-chrome {
+    padding: var(--space-4) 0;
+  }
+}
+
+/* Short landscape: hide chrome row so canvas stays ≥ ~40% unobstructed; tel remains in About/PASS/Results. */
+html.is-short-landscape .topbar {
+  grid-template-rows: minmax(var(--topbar-row), auto) minmax(var(--tabs-row), auto);
+  grid-template-areas:
+    'brand actions'
+    'tabs tabs';
+}
+
+html.is-short-landscape .emergency-chrome {
+  display: none;
+}
+
 .panel {
   --text-muted: var(--panel-text-muted);
   position: fixed;
@@ -138,7 +161,7 @@
   flex-direction: column;
   height: var(--sheet-half-h);
   max-height: var(--sheet-available-h);
-  padding: 0 var(--space-16) var(--space-16);
+  padding: 0 max(var(--space-16), var(--safe-right)) max(var(--space-16), var(--safe-bottom)) max(var(--space-16), var(--safe-left));
   background: var(--surface-solid);
   border: 1px solid var(--border);
   border-bottom: 0;

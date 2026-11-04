@@ -80,10 +80,10 @@ Sumber: Playwright + Lighthouse di box terhadap `https://apar-3d-trainer.vercel.
 
 1. ~~**Brand** "APAR 3D Trainer"~~ — **done U1** (FireDrill).
 2. ~~**Tidak ada** `theme-color`, `apple-touch-icon`, `manifest`~~ — **done U1**.
-3. **Viewport** tanpa `viewport-fit=cover`; **nol** pemakaian `env(safe-area-inset-*)` di CSS (U2).
-4. **Landscape 844×390**: tinggi canvas **16px** — model tidak usable; sheet half + topbar emergency terlalu tinggi (U2).
-5. **iPhone SE**: canvas ~120px (audit live) / **127,5px** (baseline lokal U0 half); opsi "Water" terpotong di tepi sheet — perlu peek default lebih rendah atau scroll jelas (U2).
-6. **Topbar mobile ~206px** karena emergency chrome selalu fully expanded (U2).
+3. ~~**Viewport** tanpa `viewport-fit=cover`; **nol** `env(safe-area-inset-*)`~~ — **done U2**.
+4. ~~**Landscape 844×390** canvas **16px**~~ — **done U2** (peek + compact; baseline **197,5px / 50,6%**).
+5. ~~**iPhone SE** opsi terpotong tanpa scroll~~ — **done U2** (panel body scroll; half tetap default portrait).
+6. ~~**Topbar mobile ~206px** emergency fully expanded~~ — **done U2** (details collapsed mobile; short-landscape overlay).
 7. **Onboarding tour** belum ada (backlog T4.6 → U3).
 8. ~~**About** tanpa CTA "Work with me"~~ — **done U1**.
 9. **QA toolchain** belum setara RoomFit: tidak ada Vitest / Playwright config / ESLint / Prettier / LHCI / GitHub Actions (U4–U5). Hanya `npm run check` + skrip ad-hoc di `.cursor/`.

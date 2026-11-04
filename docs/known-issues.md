@@ -253,13 +253,14 @@ Format: tanggal — masalah — penyebab — solusi.
 - 2026-11-04 — U0 baseline (lokal `npm run build` + preview + Playwright, bukti `docs/_baselines/u0/`): reproduksi angka spek tanpa ubah UI. Isu `mobile-ux-spec.md` current issues #1–#11 (masih terbuka; diperbaiki U1–U6):
   1. ~~Brand masih "APAR 3D Trainer"~~ → **ditutup U1** (FireDrill + `siteConfig`).
   2. ~~Tidak ada `theme-color`, `apple-touch-icon`, `manifest`~~ → **ditutup U1**.
-  3. Viewport tanpa `viewport-fit=cover`; nol `env(safe-area-inset-*)` (U2) — meta `width=device-width, initial-scale=1.0`.
-  4. Landscape 844×390 canvas **16px** / 4,1% vh (U2) — `configure-landscape-844x390.png`.
-  5. iPhone SE canvas ~120px (audit live) / 127,5px (baseline lokal half); opsi Water berisiko terpotong (U2) — `configure-iphone-se-375x667.png`.
-  6. Topbar mobile **206px** (emergency fully expanded) (U2) — 390 & 375.
+  3. ~~Viewport tanpa `viewport-fit=cover`; nol safe-area~~ → **ditutup U2**.
+  4. ~~Landscape canvas 16px~~ → **ditutup U2** (peek; **197,5px / 50,6%**; emergency disembunyikan short-landscape).
+  5. ~~SE opsi Water terpotong tanpa scroll~~ → **ditutup U2** (panel body scrollH≫clientH).
+  6. ~~Topbar mobile 206px~~ → **ditutup U2** (details collapsed; portrait ~154px; short-landscape ~95px).
   7. Onboarding tour belum ada (U3).
   8. ~~About tanpa CTA "Work with me"~~ → **ditutup U1** (CTA → `CONTACT_URL`).
   9. QA toolchain belum RoomFit: no Vitest/Playwright-config/ESLint/Prettier/LHCI/GHA (U4–U5).
   10. Perf mobile **36** (live alias Neo); target ≥80 (U6). A11y/BP/SEO 100.
   11. ~~OG/Twitter brand/`SITE_ORIGIN` trainer~~ → **ditutup U1** (`firedrill.` + FireDrill; `og-image.jpg` reuse).
 - 2026-11-04 — U1: Umami cloud `data-domains`/allowed host harus mencakup `firedrill.barkahmauludi.com` (ops Barkah); hostname lama `trainer.` tidak lagi memuat script. TLS/DNS firedrill tetap di luar kode.
+- 2026-11-04 — U2: short-landscape menyembunyikan chip darurat topbar agar canvas ≥40% tanpa overlay; nomor 113/112 tetap di About/PASS/Results/PDF. Toast naik di atas sheet via `--sheet-visible-h`. Playwright formal tetap U4; bukti ad-hoc `.cursor/u2/verify-layout.cjs` + `docs/_baselines/u2/`. HP fisik/notch belum diuji.

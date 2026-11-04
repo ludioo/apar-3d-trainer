@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseHash } from '../src/core/router.js';
-import { nearestSnap, sheetBounds } from '../src/ui/sheet.js';
+import { defaultSnapIndex, isShortLandscape, nearestSnap, sheetBounds } from '../src/ui/sheet.js';
 import { nearestHotspot } from '../src/core/picking.js';
 import hotspots from '../src/data/hotspots.json' with { type: 'json' };
 import { Box3, BoxGeometry, Group, Mesh, MeshBasicMaterial, MeshStandardMaterial, PerspectiveCamera, Raycaster, ShaderLib, Texture, Vector3 } from 'three';
@@ -46,6 +46,7 @@ assert.equal(nearestSnap(300, [240, 640]), 240);
 assert.equal(nearestSnap(500, [240, 640]), 640);
 assert.deepEqual(sheetBounds(844, 728, 176), [211, 422, 633]);
 assert.deepEqual(sheetBounds(390, 274, 176), [176, 195, 274], 'landscape keeps room below topbar');
+assert.deepEqual(sheetBounds(390, 286, 88), [97.5, 195, 286], 'short-landscape peek uses lower min');
 assert.deepEqual(sheetBounds(240, 124, 176), [124, 124, 124], 'all snaps fit a very short viewport');
 assert.deepEqual(sheetBounds(800, 684, 176), [200, 400, 600]);
 assert.deepEqual(sheetBounds(300, 184, 176), [176, 176, 184], 'clamped adjacent snaps may coincide');
@@ -54,6 +55,13 @@ assert.equal(nearestSnap(300, [200, 400, 600]), 200, 'ties prefer the lower snap
 assert.equal(nearestSnap(440, [211, 422, 633]), 422, 'drag can stop halfway');
 assert.equal(nearestSnap(180, sheetBounds(390, 274, 176)), 176);
 assert.equal(nearestSnap(260, sheetBounds(390, 274, 176)), 274);
+assert.equal(isShortLandscape(844, 390), true);
+assert.equal(isShortLandscape(390, 844), false);
+assert.equal(isShortLandscape(1024, 390), false);
+assert.equal(defaultSnapIndex(844, 390), 0, 'short-landscape defaults to peek');
+assert.equal(defaultSnapIndex(390, 844), 1, 'portrait defaults to half');
+/* U2 acceptance math: compact topbar ~88 + peek 97.5 leaves canvas ≥ 40% of 390 */
+assert.ok((390 - 88 - 97.5) / 390 >= 0.4, 'short-landscape canvas budget ≥ 40%');
 
 assert.equal(hotspots.length, 6);
 assert.deepEqual(
