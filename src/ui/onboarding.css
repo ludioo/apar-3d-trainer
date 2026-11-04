@@ -1,0 +1,74 @@
+/* Tour theme — tokens only; driver.css loaded with the lazy chunk. */
+.driver-popover.firedrill-tour {
+  background: var(--surface-solid);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md, 8px);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.28);
+  font-family: Inter, system-ui, sans-serif;
+  max-width: min(300px, calc(100vw - 32px));
+}
+
+.driver-popover.firedrill-tour .driver-popover-title {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.driver-popover.firedrill-tour .driver-popover-description {
+  color: var(--muted, #6b7280);
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.driver-popover.firedrill-tour .driver-popover-progress-text {
+  color: var(--muted, #6b7280);
+  font-size: 0.75rem;
+}
+
+.driver-popover.firedrill-tour .driver-popover-next-btn,
+.driver-popover.firedrill-tour .driver-popover-done-btn {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border: 0;
+  border-radius: var(--radius-sm, 4px);
+  font-weight: 600;
+  text-shadow: none;
+}
+
+.driver-popover.firedrill-tour .driver-popover-close-btn {
+  color: var(--muted, #6b7280);
+}
+
+.driver-popover.firedrill-tour .driver-popover-close-btn:hover,
+.driver-popover.firedrill-tour .driver-popover-close-btn:focus {
+  color: var(--text);
+}
+
+.driver-popover.firedrill-tour .driver-popover-arrow-side-left,
+.driver-popover.firedrill-tour .driver-popover-arrow-side-right,
+.driver-popover.firedrill-tour .driver-popover-arrow-side-top,
+.driver-popover.firedrill-tour .driver-popover-arrow-side-bottom {
+  border-color: var(--surface-solid);
+}
+
+/*
+ * Driver sets pointer-events:none on non-stage chrome. Lift topbar above the SVG
+ * overlay (z-index 10000) so emergency chips can receive hits; keep pe:none on the
+ * bar so tabs/lang do not bypass the tour — only tel anchors re-enable clicks.
+ */
+html.is-onboarding .topbar {
+  z-index: 10001;
+}
+
+html.is-onboarding .emergency-chrome a[data-emergency] {
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .driver-overlay-animated,
+  .driver-popover.firedrill-tour {
+    transition: none !important;
+    animation: none !important;
+  }
+}

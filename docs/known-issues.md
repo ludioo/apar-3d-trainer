@@ -257,7 +257,7 @@ Format: tanggal — masalah — penyebab — solusi.
   4. ~~Landscape canvas 16px~~ → **ditutup U2** (peek; **197,5px / 50,6%**; emergency disembunyikan short-landscape).
   5. ~~SE opsi Water terpotong tanpa scroll~~ → **ditutup U2** (panel body scrollH≫clientH).
   6. ~~Topbar mobile 206px~~ → **ditutup U2** (details collapsed; portrait ~154px; short-landscape ~95px).
-  7. Onboarding tour belum ada (U3).
+  7. ~~Onboarding tour belum ada (U3)~~ → **ditutup U3** (`driver.js` lazy; bukti `docs/_baselines/u3/`).
   8. ~~About tanpa CTA "Work with me"~~ → **ditutup U1** (CTA → `CONTACT_URL`).
   9. QA toolchain belum RoomFit: no Vitest/Playwright-config/ESLint/Prettier/LHCI/GHA (U4–U5).
   10. Perf mobile **36** (live alias Neo); target ≥80 (U6). A11y/BP/SEO 100.

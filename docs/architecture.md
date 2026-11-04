@@ -34,8 +34,9 @@ apar-3d-trainer/
 │  │  ├─ training/ training.js training-state.js training-gestures.js training-view.js effects.js
 │  │  ├─ quiz/ quiz.js
 │  │  ├─ results/ results.js results-data.js
-│  │  └─ pdf/ pdf-report.js pdf-spec.js pdf-common.js
-│  ├─ ui/ toast.js modal.js components.css hotspot-pins.js hotspots.css configurator.css saved-configs.js saved-configs.css training.js training-target.js training.css results.js results-chart.js results.css
+│  │  ├─ pdf/ pdf-report.js pdf-spec.js pdf-common.js
+│  │  └─ onboarding/ onboarding-gate.js onboarding.js   # U3: driver.js lazy first visit
+│  ├─ ui/ toast.js modal.js components.css hotspot-pins.js hotspots.css configurator.css saved-configs.js saved-configs.css training.js training-target.js training.css results.js results-chart.js results.css onboarding.css
 │  └─ styles/ tokens.css base.css layout.css
 ├─ vite.config.js  package.json  vercel.json  README.md  LICENSE (MIT)
 ```

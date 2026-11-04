@@ -1,0 +1,97 @@
+{
+  "origin": "http://127.0.0.1:4176",
+  "runs": [
+    {
+      "id": "first-mobile",
+      "first": {
+        "hasOverlay": true,
+        "hasPopover": true,
+        "onboardingClass": true,
+        "storage": null,
+        "topbarZ": 10001,
+        "fire": {
+          "href": "tel:113",
+          "hitSelfOrChild": true,
+          "topTag": "A"
+        },
+        "general": {
+          "href": "tel:112",
+          "hitSelfOrChild": true,
+          "topTag": "A"
+        }
+      },
+      "afterSkip": {
+        "hasOverlay": false,
+        "hasPopover": false,
+        "onboardingClass": false,
+        "storage": "true",
+        "topbarZ": 110,
+        "fire": {
+          "href": "tel:113",
+          "hitSelfOrChild": true,
+          "topTag": "A"
+        },
+        "general": {
+          "href": "tel:112",
+          "hitSelfOrChild": true,
+          "topTag": "A"
+        }
+      },
+      "driverReqs": [
+        "http://127.0.0.1:4176/assets/onboarding-Bwe0HWpg.js",
+        "http://127.0.0.1:4176/assets/driver-CWXCubYt.css",
+        "http://127.0.0.1:4176/assets/onboarding-B4kbW3Mp.css",
+        "http://127.0.0.1:4176/assets/driver.js-DKIJqIsv.js"
+      ]
+    },
+    {
+      "id": "second-mobile",
+      "second": {
+        "hasOverlay": false,
+        "hasPopover": false,
+        "onboardingClass": false,
+        "storage": "true",
+        "topbarZ": 110,
+        "fire": {
+          "href": "tel:113",
+          "hitSelfOrChild": true,
+          "topTag": "A"
+        },
+        "general": {
+          "href": "tel:112",
+          "hitSelfOrChild": true,
+          "topTag": "A"
+        }
+      },
+      "driverReqs": []
+    },
+    {
+      "id": "reduced-desktop",
+      "reduced": {
+        "hasPopover": true,
+        "mq": true,
+        "animatedClass": true
+      }
+    },
+    {
+      "id": "first-desktop",
+      "desk": {
+        "hasOverlay": true,
+        "hasPopover": true,
+        "onboardingClass": true,
+        "storage": null,
+        "topbarZ": 10001,
+        "fire": {
+          "href": "tel:113",
+          "hitSelfOrChild": true,
+          "topTag": "A"
+        },
+        "general": {
+          "href": "tel:112",
+          "hitSelfOrChild": true,
+          "topTag": "A"
+        }
+      }
+    }
+  ]
+}

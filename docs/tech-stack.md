@@ -24,7 +24,7 @@ Versi: AI WAJIB memakai versi stabil terbaru saat install (`npm i three@latest` 
 | Area | Pilihan | Catatan |
 |---|---|---|
 | Brand / URL | `src/core/siteConfig.js` (`SITE_ORIGIN`, `SITE_NAME`, `CONTACT_URL`) | Domain DNS manual; jangan sebar hardcode. |
-| Onboarding | `driver.js` (MIT), **dynamic import** first visit | Diangkat dari backlog T4.6; ~5KB gzip. |
+| Onboarding | `driver.js@1.10.2` (MIT), **dynamic import** first visit | U3 / backlog T4.6; chunk terpisah dari entry. |
 | Sheet mobile | Pointer Events + CSS existing (T4.2) | **Tidak** diganti `pure-web-bottom-sheet` di Fase 5. |
 | Unit test | Vitest | Pure functions: sheet math, pricing, storage, i18n. |
 | E2E | Playwright | Matrix mobile+desktop; video on. |

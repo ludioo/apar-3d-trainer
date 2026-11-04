@@ -26,6 +26,8 @@ import hotspots from './data/hotspots.json';
 import { showWebglFallback } from './ui/webgl-fallback.js';
 import { initAbout } from './ui/about.js';
 import { initEmergencyChrome } from './ui/emergency-chrome.js';
+import { get } from './core/storage.js';
+import { ONBOARDING_KEY, shouldStartOnboarding } from './features/onboarding/onboarding-gate.js';
 
 const MODEL_HEIGHT = 1.2;
 const SLOW_LOAD_MS = 8000;
@@ -239,6 +241,12 @@ function startViewer() {
           performance.mark(mark);
           performance.measure('apar:load', 'apar:load-start', mark);
           initAnalytics();
+          // First visit only — onboarding + driver.js stay off the critical path.
+          if (shouldStartOnboarding(get(ONBOARDING_KEY, false))) {
+            import('./features/onboarding/onboarding.js')
+              .then((m) => m.maybeStartOnboarding())
+              .catch(() => {});
+          }
         });
       });
       requestRender();

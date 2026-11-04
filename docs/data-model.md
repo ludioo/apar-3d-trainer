@@ -65,6 +65,7 @@ Data kompleks memakai versi skema sesuai implementasi task terkait. `apar3d:lang
 | `apar3d:attempts` | `{ schemaVersion: 1, attempts: [{ id, startedAt, finishedAt, durationSec, score, total, passed, answers:[{qId, given, correct}] }] }` maks 20 |
 | `apar3d:trainingDone` | `true/false` |
 | `apar3d:participantName` | string opsional (untuk PDF) |
+| `apar3d:onboarding` | `true` setelah Skip/Done tur kunjungan pertama (U3); tidak dihapus `clearUserData` |
 Relasi: tidak ada relasi antar entitas; Results membaca `attempts` dan `configs`.
 
 T2.4 (28 Okt 2026): `participantName` adalah string opsional, maksimal 60 unit karakter sesuai native maxlength, spasi tepi dipangkas; string kosong valid. Nama satu per browser untuk laporan berikutnya, tidak ditambahkan ke attempt dan tidak menetapkan siapa yang mengerjakan riwayat lama. Baca JSON/tipe/panjang invalid memberi status invalid tanpa menulis ulang; hanya edit pengguna menulis nama. Draft gagal tulis bertahan di memori antar-tab/bahasa sampai berhasil atau Clear, tetapi tidak bertahan refresh.

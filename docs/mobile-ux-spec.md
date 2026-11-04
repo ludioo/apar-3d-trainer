@@ -84,7 +84,7 @@ Sumber: Playwright + Lighthouse di box terhadap `https://apar-3d-trainer.vercel.
 4. ~~**Landscape 844×390** canvas **16px**~~ — **done U2** (peek + compact; baseline **197,5px / 50,6%**).
 5. ~~**iPhone SE** opsi terpotong tanpa scroll~~ — **done U2** (panel body scroll; half tetap default portrait).
 6. ~~**Topbar mobile ~206px** emergency fully expanded~~ — **done U2** (details collapsed mobile; short-landscape overlay).
-7. **Onboarding tour** belum ada (backlog T4.6 → U3).
+7. ~~**Onboarding tour** belum ada~~ — **done U3** (`driver.js@1.10.2` lazy; flag `apar3d:onboarding`).
 8. ~~**About** tanpa CTA "Work with me"~~ — **done U1**.
 9. **QA toolchain** belum setara RoomFit: tidak ada Vitest / Playwright config / ESLint / Prettier / LHCI / GitHub Actions (U4–U5). Hanya `npm run check` + skrip ad-hoc di `.cursor/`.
 10. **Perf mobile 36** (historis T4.25 median ~47) — di bawah target 80 (U6).
