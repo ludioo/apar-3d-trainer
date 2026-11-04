@@ -7,12 +7,12 @@ alwaysApply: false
 # Testing & quality (Fase 5)
 
 ## Tools (lihat `docs/tech-stack.md`)
-- **Vitest** — unit: pricing, storage, i18n, sheetBounds/nearestSnap. `npm test`.
-- **Playwright** — matrix: `mobile-pixel7` / `mobile-iphone13` / `mobile-iphone-se` / `mobile-landscape` + `desktop`; `video: on`. `npm run e2e`, `npm run e2e:mobile`.
-- **ESLint flat** + **Prettier** — `npm run lint` / `npm run format`.
-- **@lhci/cli** — `npm run lhci`; form factor **mobile**; Perf ≥ 80, A11y ≥ 90.
-- **GitHub Actions** — lint → test → build pada push/PR. LHCI manual.
-- Pertahankan `npm run check` (paritas i18n) yang sudah ada.
+- **Vitest** — unit di `tests/`: pricing, storage, i18n, sheetBounds/nearestSnap. `npm test`.
+- **Playwright** — `playwright.config.js` projects: `mobile-pixel7` / `mobile-iphone13` / `mobile-iphone-se` / `mobile-landscape` + `desktop`; `video: on`. `npm run e2e`, `npm run e2e:mobile`. Browser: `npx playwright install` (dokumentasikan di progress).
+- **ESLint flat** (`eslint.config.js`) + **Prettier** — `npm run lint` / `npm run format`.
+- **@lhci/cli** — `lighthouserc.cjs` form factor **mobile**; `npm run lhci`; Perf ≥ 80, A11y ≥ 90 (hijau penuh = U6).
+- **GitHub Actions** — `.github/workflows/ci.yml`: lint → test → build. LHCI manual, bukan wajib GHA.
+- Pertahankan `npm run check` (paritas i18n + assert Node) yang sudah ada.
 
 ## Aturan
 - Jangan menambah Jest, Cypress, atau Storybook.

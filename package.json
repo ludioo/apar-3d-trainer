@@ -8,11 +8,25 @@
     "build": "node scripts/optimize-environment.js && vite build",
     "optimize:environment": "node scripts/optimize-environment.js",
     "preview": "vite preview",
-    "check": "node scripts/self-check.js"
+    "check": "node scripts/self-check.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "e2e:mobile": "playwright test --project=mobile-pixel7 --project=mobile-iphone13 --project=mobile-iphone-se --project=mobile-landscape",
+    "lhci": "npm run build && lhci autorun --config=lighthouserc.cjs"
   },
+
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@gltf-transform/cli": "4.5.1",
-    "vite": "^8.3.5"
+    "@lhci/cli": "^0.15.1",
+    "@playwright/test": "^1.64.1",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.10",
+    "vite": "^8.3.5",
+    "vitest": "^5.1.0"
   },
   "dependencies": {
     "driver.js": "^1.10.2",

@@ -47,5 +47,5 @@ Abaikan frontmatter (`description`/`globs`/`alwaysApply`) di file .mdc; isinya y
 
 ## Fase 5 addendum
 - Untuk task `U0`–`U6`: baca juga `docs/mobile-ux-spec.md`, `docs/mobile-testing.md`, `.cursor/rules/mobile.mdc`, dan (saat menyentuh tes/tooling) `.cursor/rules/testing.mdc`.
-- Scripts tambahan setelah U4: `npm test`, `npm run e2e`, `npm run e2e:mobile`, `npm run lint`, `npm run format`, `npm run lhci` — selain `npm run check` / `build` yang sudah ada.
+- Scripts QA (U4+): `npm test` (Vitest), `npm run e2e` / `e2e:mobile` (Playwright; sekali: `npx playwright install`), `npm run lint`, `npm run format`, `npm run lhci` (`lighthouserc.cjs` mobile) — selain `npm run check` / `build`. CI GHA: lint → test → build (tanpa LHCI wajib).
 - Brand tampilan **FireDrill**; URL publik hanya lewat `src/core/siteConfig.js`. Jangan mengubah domain Vercel/DNS kecuali task eksplisit (bukan Fase 5).

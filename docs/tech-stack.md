@@ -26,10 +26,10 @@ Versi: AI WAJIB memakai versi stabil terbaru saat install (`npm i three@latest` 
 | Brand / URL | `src/core/siteConfig.js` (`SITE_ORIGIN`, `SITE_NAME`, `CONTACT_URL`) | Domain DNS manual; jangan sebar hardcode. |
 | Onboarding | `driver.js@1.10.2` (MIT), **dynamic import** first visit | U3 / backlog T4.6; chunk terpisah dari entry. |
 | Sheet mobile | Pointer Events + CSS existing (T4.2) | **Tidak** diganti `pure-web-bottom-sheet` di Fase 5. |
-| Unit test | Vitest | Pure functions: sheet math, pricing, storage, i18n. |
-| E2E | Playwright | Matrix mobile+desktop; video on. |
-| Lint/format | ESLint flat + Prettier | |
-| Perf CI | `@lhci/cli` mobile | Perf ≥80, A11y ≥90; GHA tanpa LHCI wajib. |
-| CI | GitHub Actions | lint → test → build. |
+| Unit test | Vitest (terpasang ^5.1) | Pure: `tests/*.test.js` (sheetBounds/nearestSnap, pricing, storage, i18n). `npm test`. |
+| E2E | Playwright (`@playwright/test` ^1.64) | Projects: mobile-pixel7 / mobile-iphone13 / mobile-iphone-se / mobile-landscape / desktop; `video: on`. `npm run e2e` / `e2e:mobile`. Perlu `npx playwright install` sekali per mesin. |
+| Lint/format | ESLint flat (`eslint` ^10 + `@eslint/js`) + Prettier ^3 | `npm run lint` / `npm run format`. |
+| Perf CI | `@lhci/cli` ^0.15, `lighthouserc.cjs` formFactor mobile | Perf ≥80, A11y ≥90; `npm run lhci` manual. GHA tanpa LHCI wajib. |
+| CI | GitHub Actions (`.github/workflows/ci.yml`) | lint → test → build pada push/PR develop/main. |
 
 Jangan menambah: React, Tailwind, Cypress, Jest, GSAP, Shepherd, Motion+, `lucide-static` penuh.

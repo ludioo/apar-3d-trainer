@@ -86,7 +86,7 @@ Sumber: Playwright + Lighthouse di box terhadap `https://apar-3d-trainer.vercel.
 6. ~~**Topbar mobile ~206px** emergency fully expanded~~ — **done U2** (details collapsed mobile; short-landscape overlay).
 7. ~~**Onboarding tour** belum ada~~ — **done U3** (`driver.js@1.10.2` lazy; flag `apar3d:onboarding`).
 8. ~~**About** tanpa CTA "Work with me"~~ — **done U1**.
-9. **QA toolchain** belum setara RoomFit: tidak ada Vitest / Playwright config / ESLint / Prettier / LHCI / GitHub Actions (U4–U5). Hanya `npm run check` + skrip ad-hoc di `.cursor/`.
+9. **QA toolchain** (U4 ●): ESLint/Prettier/Vitest/Playwright config/LHCI/GHA terpasang. Suite skenario e2e penuh = U5; skor LHCI Perf ≥80 = U6. `npm run check` tetap.
 10. **Perf mobile 36** (historis T4.25 median ~47) — di bawah target 80 (U6).
 11. ~~OG/Twitter refresh FireDrill + `SITE_ORIGIN`~~ — **done U1** (`og-image.jpg` reuse).
 

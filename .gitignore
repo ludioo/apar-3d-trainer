@@ -7,3 +7,7 @@ dist/
 *.log
 .vite/
 assets-src/
+test-results/
+playwright-report/
+coverage/
+.lighthouseci/

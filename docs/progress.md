@@ -55,7 +55,7 @@ Status: ○ todo · ◐ in progress · ● done · ✕ blocked
 | U1 Brand FireDrill + siteConfig + PWA + About CTA | ● | 2026-11-04 | `siteConfig` SITE_ORIGIN=`https://firedrill.barkahmauludi.com`; brand/i18n/OG/JSON-LD/PDF/analytics FireDrill; theme-color + apple-touch 180 + webmanifest; About CTA Work with me / Kerja sama dengan saya → CONTACT_URL. Bukti: `docs/_baselines/u1/` + check 197 key + build. DNS/Vercel tidak diubah. |
 | U2 Layout polish mobile+desktop | ● | 2026-11-04 | viewport-fit=cover; safe-area topbar/sheet/toast; short-landscape peek + emergency out-of-flow; canvas landscape **197,5px / 50,6%** (was 16px); SE panel scrollH 1637; desktop panel 360. Bukti `docs/_baselines/u2/` + `.cursor/u2/verify-layout.cjs`. check 197 key + build hijau. |
 | U3 Onboarding driver.js | ● | 2026-11-04 | `driver.js@1.10.2` lazy chunk; 4 langkah; Skip/Done → `apar3d:onboarding`; second visit tanpa fetch driver; reduced-motion `animate:false`; tel 113/112 hittable. Bukti `docs/_baselines/u3/` + `.cursor/u3/verify-tour.cjs`. check 208 key + build (chunk `driver.js-*.js` / `onboarding-*.js`). |
-| U4 QA toolchain | ○ | | |
+| U4 QA toolchain | ● | 2026-11-04 | ESLint flat + Prettier; Vitest 4 file/9 test (sheet/pricing/storage/i18n); Playwright 5 projects + `e2e/toolchain.spec.js`; `lighthouserc.cjs` mobile; GHA lint→test→build. Perintah: `npm run lint`, `npm test`, `npm run check`, `npm run build` (hijau). Browser e2e: `npx playwright install` lalu `npm run e2e` / `e2e:mobile`. LHCI: `npm run lhci` (manual; Perf hijau = U6). `npm run check` tetap. |
 | U5 Playwright suite | ○ | | |
 | U6 Perf + LHCI | ○ | | Target Perf ≥80; baseline 36. |
 

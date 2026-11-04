@@ -1,0 +1,17 @@
+dist
+node_modules
+public
+coverage
+test-results
+playwright-report
+.lighthouseci
+package-lock.json
+docs/_backup
+docs/_baselines
+*.glb
+*.hdr
+*.png
+*.jpg
+*.webp
+*.ico
+*.pdf

@@ -67,11 +67,12 @@ Jangan `sleep` panjang — locator + `expect`.
 ```bash
 npm run build
 npm run check
+npm run lint
 npm test
+npx playwright install   # sekali per mesin / CI image
 npm run e2e
 npm run e2e:mobile
-npm run lhci
-npm run lint
+npm run lhci             # manual; GHA tidak wajibkan
 ```
 
 Jelaskan ke Barkah (ID): beda emulasi Playwright vs HP fisik.
