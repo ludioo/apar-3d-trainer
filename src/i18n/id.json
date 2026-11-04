@@ -1,6 +1,6 @@
 {
-  "app.name": "APAR 3D Trainer",
-  "app.title": "Pelatihan & Konfigurator APAR 3D Interaktif",
+  "app.name": "FireDrill",
+  "app.title": "FireDrill — Pelatihan & Konfigurator APAR 3D Interaktif",
   "app.tagline": "Konfigurasi. Pelajari PASS. Buktikan.",
   "lang.label": "Bahasa",
   "lang.en": "EN",
@@ -181,7 +181,7 @@
   "fallback.title": "3D tidak tersedia di browser ini",
   "fallback.message": "WebGL tidak dapat dimulai. Coba aktifkan akselerasi perangkat keras atau buka demo ini di browser lain. Anda tetap dapat mengganti bahasa dan membaca Tentang.",
   "fallback.image": "Tampilan statis APAR demo, diambil dari aplikasi ini.",
-  "about.description": "Demo portfolio untuk mengonfigurasi APAR ilustrasi, berlatih PASS, dan meninjau hasil kuis yang disimpan di browser ini.",
+  "about.description": "FireDrill adalah demo portfolio untuk mengonfigurasi APAR ilustrasi, berlatih PASS, dan meninjau hasil kuis yang disimpan di browser ini.",
   "about.stackTitle": "Teknologi",
   "about.stack": "Vanilla JavaScript (ES modules), three.js, Vite, dan jsPDF. Tanpa backend atau akun; konfigurasi dan hasil yang disimpan tetap di browser ini.",
   "about.sources": "Sumber K3 kebakaran",
@@ -191,8 +191,9 @@
   "about.model": "Model 3D: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
   "about.roomEnvironment": "Pencahayaan default: RoomEnvironment (three.js, MIT)",
   "about.environment": "HDRI pembanding (?hdri=1): studio_small_09 (Poly Haven, CC0)",
-  "about.analytics": "Analytics Umami tanpa cookie hanya aktif di trainer.barkahmauludi.com jika dikonfigurasi. Nama peserta dan nama konfigurasi tidak dikirim.",
-  "about.portfolio": "Barkah Mauludi: portfolio dan kontak",
+  "about.analytics": "Analytics Umami tanpa cookie hanya aktif di firedrill.barkahmauludi.com jika dikonfigurasi. Nama peserta dan nama konfigurasi tidak dikirim.",
+  "about.workWithMe": "Kerja sama dengan saya",
+  "about.portfolio": "Barkah Mauludi: portfolio",
   "about.github": "Kode sumber di GitHub",
   "viewer.reduced": "Putaran dijeda: kurangi gerakan"
 }

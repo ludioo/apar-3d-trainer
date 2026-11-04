@@ -1,6 +1,6 @@
 {
-  "app.name": "APAR 3D Trainer",
-  "app.title": "Interactive 3D Fire Extinguisher Trainer & Configurator",
+  "app.name": "FireDrill",
+  "app.title": "FireDrill — Interactive 3D Fire Extinguisher Trainer",
   "app.tagline": "Configure it. Learn PASS. Prove it.",
   "lang.label": "Language",
   "lang.en": "EN",
@@ -181,7 +181,7 @@
   "fallback.title": "3D is unavailable in this browser",
   "fallback.message": "WebGL could not start. Try enabling hardware acceleration or opening this demo in another browser. You can still change the language and read About.",
   "fallback.image": "Static view of the demo fire extinguisher, captured from this application.",
-  "about.description": "A portfolio demo for configuring an illustrative fire extinguisher, practising PASS and reviewing quiz results stored in this browser.",
+  "about.description": "FireDrill is a portfolio demo for configuring an illustrative fire extinguisher, practising PASS and reviewing quiz results stored in this browser.",
   "about.stackTitle": "Technology",
   "about.stack": "Vanilla JavaScript (ES modules), three.js, Vite and jsPDF. No backend or account; saved configurations and results stay in this browser.",
   "about.sources": "Fire-safety sources",
@@ -191,8 +191,9 @@
   "about.model": "3D model: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
   "about.roomEnvironment": "Default lighting: RoomEnvironment (three.js, MIT)",
   "about.environment": "Comparison HDRI (?hdri=1): studio_small_09 (Poly Haven, CC0)",
-  "about.analytics": "Cookie-free Umami analytics runs only on trainer.barkahmauludi.com when configured. Participant and configuration names are not sent.",
-  "about.portfolio": "Barkah Mauludi: portfolio and contact",
+  "about.analytics": "Cookie-free Umami analytics runs only on firedrill.barkahmauludi.com when configured. Participant and configuration names are not sent.",
+  "about.workWithMe": "Work with me",
+  "about.portfolio": "Barkah Mauludi: portfolio",
   "about.github": "Source code on GitHub",
   "viewer.reduced": "Rotation paused: reduced motion"
 }

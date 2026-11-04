@@ -1,7 +1,8 @@
 import questions from '../../data/quiz.json' with { type: 'json' };
 import emergency from '../../data/emergency.json' with { type: 'json' };
+import { SITE_ORIGIN } from '../../core/siteConfig.js';
 
-export const APP_URL = 'https://trainer.barkahmauludi.com';
+export const APP_URL = SITE_ORIGIN;
 const COPY_KEYS = ['app.name', 'disclaimer', 'emergency.title', 'emergency.fire', 'emergency.general',
   'emergency.source', 'quiz.sources', 'quiz.passed', 'quiz.failed', 'quiz.correct', 'quiz.incorrect',
   'quiz.duration', 'results.question', 'results.answer', 'results.outcome', 'results.answers',

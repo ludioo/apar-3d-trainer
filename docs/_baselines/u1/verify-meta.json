@@ -1,0 +1,91 @@
+{
+  "title": "FireDrill — Interactive 3D Fire Extinguisher Trainer",
+  "brand": "FireDrill",
+  "theme": "#0E1013",
+  "apple": "/apple-touch-icon.png",
+  "manifest": {
+    "name": "FireDrill",
+    "short_name": "FireDrill",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0E1013",
+    "theme_color": "#0E1013",
+    "icons": [
+      {
+        "src": "/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      },
+      {
+        "src": "/favicon.svg",
+        "sizes": "any",
+        "type": "image/svg+xml",
+        "purpose": "any"
+      }
+    ]
+  },
+  "cta": {
+    "text": "Work with me",
+    "href": "https://barkahmauludi.com/contact",
+    "className": "about-cta",
+    "h": 44,
+    "w": 415.20001220703125
+  },
+  "links": [
+    {
+      "i18n": "about.usfa",
+      "text": "USFA: Choosing and Using Fire Extinguishers",
+      "href": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/fire-extinguishers/"
+    },
+    {
+      "i18n": "about.permenaker",
+      "text": "Permenakertrans PER.04/MEN/1980 (PDF copy)",
+      "href": "https://www.its.ac.id/burb/wp-content/uploads/sites/106/2023/07/PER.04-1980-APAR.pdf"
+    },
+    {
+      "i18n": "emergency.fire",
+      "text": "Fire department: 113",
+      "href": "tel:113"
+    },
+    {
+      "i18n": "emergency.general",
+      "text": "General emergency: 112 (free, works on a locked phone; available in areas whose local government runs a 112 service)",
+      "href": "tel:112"
+    },
+    {
+      "i18n": "emergency.source",
+      "text": "Source: Komdigi — layanan112.komdigi.go.id",
+      "href": "https://layanan112.komdigi.go.id/tentang"
+    },
+    {
+      "i18n": "about.model",
+      "text": "3D model: Korean Fire Extinguisher 01 (Poly Haven, CC0)",
+      "href": "https://polyhaven.com/a/korean_fire_extinguisher_01"
+    },
+    {
+      "i18n": "about.roomEnvironment",
+      "text": "Default lighting: RoomEnvironment (three.js, MIT)",
+      "href": "https://threejs.org/docs/pages/RoomEnvironment.html"
+    },
+    {
+      "i18n": "about.environment",
+      "text": "Comparison HDRI (?hdri=1): studio_small_09 (Poly Haven, CC0)",
+      "href": "https://polyhaven.com/a/studio_small_09"
+    },
+    {
+      "i18n": "about.workWithMe",
+      "text": "Work with me",
+      "href": "https://barkahmauludi.com/contact"
+    },
+    {
+      "i18n": "about.portfolio",
+      "text": "Barkah Mauludi: portfolio",
+      "href": "https://barkahmauludi.com/"
+    },
+    {
+      "i18n": "about.github",
+      "text": "Source code on GitHub",
+      "href": "https://github.com/ludioo/apar-3d-trainer"
+    }
+  ]
+}

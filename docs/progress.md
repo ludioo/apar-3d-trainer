@@ -52,7 +52,7 @@ Status: ○ todo · ◐ in progress · ● done · ✕ blocked
 | Task | Status | Tanggal | Catatan |
 |---|---|---|---|
 | U0 Baseline bukti + spek | ● | 2026-11-04 | Spek/rules konsisten. Baseline Configure lokal preview: `docs/_baselines/u0/configure-{iphone13-390x844,iphone-se-375x667,landscape-844x390,desktop-1440x900}.png` + `meta.json`. Ukur: topbar mobile 206px; landscape canvas **16px** (4,1% vh); SE canvas 127,5px; tanpa theme-color/apple-touch/manifest. LH mobile (audit Neo live alias 4 Nov): **Perf 36 / A11y 100 / BP 100 / SEO 100**. Isu spek #1–#11 di known-issues. App UI tidak diubah. check 196 key + build hijau. |
-| U1 Brand FireDrill + siteConfig + PWA + About CTA | ○ | | Domain/DNS manual Barkah (trainer→firedrill sudah 307). |
+| U1 Brand FireDrill + siteConfig + PWA + About CTA | ● | 2026-11-04 | `siteConfig` SITE_ORIGIN=`https://firedrill.barkahmauludi.com`; brand/i18n/OG/JSON-LD/PDF/analytics FireDrill; theme-color + apple-touch 180 + webmanifest; About CTA Work with me / Kerja sama dengan saya → CONTACT_URL. Bukti: `docs/_baselines/u1/` + check 197 key + build. DNS/Vercel tidak diubah. |
 | U2 Layout polish mobile+desktop | ○ | | |
 | U3 Onboarding driver.js | ○ | | Diangkat dari backlog T4.6. |
 | U4 QA toolchain | ○ | | |

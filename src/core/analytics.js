@@ -1,8 +1,9 @@
-const DOMAIN = 'trainer.barkahmauludi.com';
+import { SITE_HOST } from './siteConfig.js';
+
 const websiteId = import.meta.env?.VITE_UMAMI_WEBSITE_ID;
 let scheduled = false;
 let ready = false;
-const enabled = () => !!websiteId && globalThis.location?.hostname === DOMAIN;
+const enabled = () => !!websiteId && globalThis.location?.hostname === SITE_HOST;
 
 export function initAnalytics() {
   if (!enabled() || scheduled) return;
@@ -13,7 +14,7 @@ export function initAnalytics() {
       script.src = 'https://cloud.umami.is/script.js';
       script.defer = true;
       script.dataset.websiteId = websiteId;
-      script.dataset.domains = DOMAIN;
+      script.dataset.domains = SITE_HOST;
       script.addEventListener('load', () => { ready = true; }, { once: true });
       document.head.appendChild(script);
     } catch { /* Analytics must not interrupt the trainer. */ }

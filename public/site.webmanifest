@@ -1,0 +1,21 @@
+{
+  "name": "FireDrill",
+  "short_name": "FireDrill",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0E1013",
+  "theme_color": "#0E1013",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

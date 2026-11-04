@@ -1,9 +1,11 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
+import { SITE_HOST } from '../src/core/siteConfig.js';
 
-const source = readFileSync(new URL('../src/core/analytics.js', import.meta.url), 'utf8');
-function setup({ id = 'test-website', hostname = 'trainer.barkahmauludi.com', idle = true, appendFails = false } = {}) {
+const source = readFileSync(new URL('../src/core/analytics.js', import.meta.url), 'utf8')
+  .replace(/import\s+\{[^}]+\}\s+from\s+['"]\.\/siteConfig\.js['"];?\s*/, `const SITE_HOST = ${JSON.stringify(SITE_HOST)};\n`);
+function setup({ id = 'test-website', hostname = SITE_HOST, idle = true, appendFails = false } = {}) {
   const scripts = [], tasks = [], calls = [];
   const window = { umami: { track: (...args) => { calls.push(args); } } };
   if (idle) window.requestIdleCallback = (fn) => tasks.push(fn);
@@ -17,7 +19,8 @@ function setup({ id = 'test-website', hostname = 'trainer.barkahmauludi.com', id
 
 for (const options of [{ id: '' }, { id: null }, { hostname: 'localhost' },
   { hostname: '127.0.0.1' }, { hostname: 'apar-3d-trainer.vercel.app' },
-  { hostname: 'trainer.barkahmauludi.com.evil.example' }]) {
+  { hostname: 'trainer.barkahmauludi.com' },
+  { hostname: `${SITE_HOST}.evil.example` }]) {
   const s = setup(options);
   s.initAnalytics(); s.track('training_start', {});
   assert.equal(s.tasks.length + s.scripts.length + s.calls.length, 0, 'disabled analytics is silent');
@@ -33,7 +36,7 @@ for (const idle of [true, false]) {
   assert.equal(script.src, 'https://cloud.umami.is/script.js');
   assert.equal(script.defer, true);
   assert.equal(script.dataset.websiteId, 'test-website');
-  assert.equal(script.dataset.domains, 'trainer.barkahmauludi.com');
+  assert.equal(script.dataset.domains, SITE_HOST);
   s.track('training_start', {});
   assert.equal(s.calls.length, 0, 'no early calls, even with pre-existing umami');
   script.load();

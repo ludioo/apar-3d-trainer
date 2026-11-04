@@ -78,16 +78,16 @@ Jangan hanya cek `matchMedia` sekali di mount — rotasi harus merespon (`src/ui
 
 Sumber: Playwright + Lighthouse di box terhadap `https://apar-3d-trainer.vercel.app` (alias produksi). `trainer.barkahmauludi.com` sudah 307 → `firedrill.barkahmauludi.com` (TLS/DNS firedrill belum stabil dari jaringan audit).
 
-1. **Brand** masih "APAR 3D Trainer" / title panjang — rename in-app ke **FireDrill** (U1).
-2. **Tidak ada** `theme-color`, `apple-touch-icon`, `manifest` (U1).
+1. ~~**Brand** "APAR 3D Trainer"~~ — **done U1** (FireDrill).
+2. ~~**Tidak ada** `theme-color`, `apple-touch-icon`, `manifest`~~ — **done U1**.
 3. **Viewport** tanpa `viewport-fit=cover`; **nol** pemakaian `env(safe-area-inset-*)` di CSS (U2).
 4. **Landscape 844×390**: tinggi canvas **16px** — model tidak usable; sheet half + topbar emergency terlalu tinggi (U2).
 5. **iPhone SE**: canvas ~120px (audit live) / **127,5px** (baseline lokal U0 half); opsi "Water" terpotong di tepi sheet — perlu peek default lebih rendah atau scroll jelas (U2).
 6. **Topbar mobile ~206px** karena emergency chrome selalu fully expanded (U2).
 7. **Onboarding tour** belum ada (backlog T4.6 → U3).
-8. **About** punya link portfolio, belum CTA "Work with me" (U1).
+8. ~~**About** tanpa CTA "Work with me"~~ — **done U1**.
 9. **QA toolchain** belum setara RoomFit: tidak ada Vitest / Playwright config / ESLint / Prettier / LHCI / GitHub Actions (U4–U5). Hanya `npm run check` + skrip ad-hoc di `.cursor/`.
 10. **Perf mobile 36** (historis T4.25 median ~47) — di bawah target 80 (U6).
-11. OG/Twitter **sudah ada** + `public/og-image.jpg` — cukup refresh copy/brand FireDrill + `SITE_ORIGIN`, jangan over-engineer gambar kecuali rusak.
+11. ~~OG/Twitter refresh FireDrill + `SITE_ORIGIN`~~ — **done U1** (`og-image.jpg` reuse).
 
 Out of scope Fase 5: ganti dependency sheet ke `pure-web-bottom-sheet`, `motion/mini`, `@floating-ui/dom` hotspot cards, Blender mesh split (L4), WebXR (L2), ubah DNS/Vercel domain (manual Barkah).

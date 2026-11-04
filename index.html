@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0E1013" />
     <link rel="preload" href="/models/apar.glb" as="fetch" crossorigin />
     <script>
       if (new URLSearchParams(location.search).get('hdri') === '1') {
@@ -16,33 +19,34 @@
         document.head.appendChild(preload);
       }
     </script>
-    <title>Interactive 3D Fire Extinguisher Trainer &amp; Configurator</title>
-    <meta name="description" content="Configure a 3D fire extinguisher, explore its parts, practice PASS, take an eight-question quiz, and export results to PDF. Built with Three.js and WebGL." />
+    <!-- Origin/brand literals below must match src/core/siteConfig.js -->
+    <title>FireDrill — Interactive 3D Fire Extinguisher Trainer</title>
+    <meta name="description" content="FireDrill helps you configure a 3D fire extinguisher, explore its parts, practice PASS, take an eight-question quiz, and export results to PDF. Built with Three.js and WebGL." />
     <meta name="keywords" content="Three.js, WebGL, GLTF/GLB, 3D product configurator, interactive 3D viewer, hotspots, real-time material swapping, browser-based training simulation" />
-    <link rel="canonical" href="https://trainer.barkahmauludi.com/" />
-    <meta property="og:title" content="Interactive 3D Fire Extinguisher Trainer &amp; Configurator" />
-    <meta property="og:description" content="Configure a 3D fire extinguisher, explore its parts, practice PASS, take an eight-question quiz, and export results to PDF. Built with Three.js and WebGL." />
+    <link rel="canonical" href="https://firedrill.barkahmauludi.com/" />
+    <meta property="og:title" content="FireDrill — Interactive 3D Fire Extinguisher Trainer" />
+    <meta property="og:description" content="FireDrill helps you configure a 3D fire extinguisher, explore its parts, practice PASS, take an eight-question quiz, and export results to PDF. Built with Three.js and WebGL." />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="APAR 3D Trainer" />
-    <meta property="og:url" content="https://trainer.barkahmauludi.com/" />
-    <meta property="og:image" content="https://trainer.barkahmauludi.com/og-image.jpg" />
+    <meta property="og:site_name" content="FireDrill" />
+    <meta property="og:url" content="https://firedrill.barkahmauludi.com/" />
+    <meta property="og:image" content="https://firedrill.barkahmauludi.com/og-image.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="APAR 3D Trainer showing a red fire extinguisher and its configuration controls." />
+    <meta property="og:image:alt" content="FireDrill showing a red fire extinguisher and its configuration controls." />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Interactive 3D Fire Extinguisher Trainer &amp; Configurator" />
-    <meta name="twitter:description" content="Configure a 3D fire extinguisher, explore its parts, practice PASS, take an eight-question quiz, and export results to PDF. Built with Three.js and WebGL." />
-    <meta name="twitter:image" content="https://trainer.barkahmauludi.com/og-image.jpg" />
-    <meta name="twitter:image:alt" content="APAR 3D Trainer showing a red fire extinguisher and its configuration controls." />
+    <meta name="twitter:title" content="FireDrill — Interactive 3D Fire Extinguisher Trainer" />
+    <meta name="twitter:description" content="FireDrill helps you configure a 3D fire extinguisher, explore its parts, practice PASS, take an eight-question quiz, and export results to PDF. Built with Three.js and WebGL." />
+    <meta name="twitter:image" content="https://firedrill.barkahmauludi.com/og-image.jpg" />
+    <meta name="twitter:image:alt" content="FireDrill showing a red fire extinguisher and its configuration controls." />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Interactive 3D Fire Extinguisher Trainer & Configurator",
-        "description": "Configure a 3D fire extinguisher, explore its parts, practice PASS, take an eight-question quiz, and export results to PDF. Built with Three.js and WebGL.",
-        "url": "https://trainer.barkahmauludi.com/",
-        "screenshot": "https://trainer.barkahmauludi.com/og-image.jpg",
+        "name": "FireDrill — Interactive 3D Fire Extinguisher Trainer",
+        "description": "FireDrill helps you configure a 3D fire extinguisher, explore its parts, practice PASS, take an eight-question quiz, and export results to PDF. Built with Three.js and WebGL.",
+        "url": "https://firedrill.barkahmauludi.com/",
+        "screenshot": "https://firedrill.barkahmauludi.com/og-image.jpg",
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Any",
         "inLanguage": ["en", "id"],
@@ -139,6 +143,7 @@
           <a href="https://polyhaven.com/a/studio_small_09" target="_blank" rel="noopener noreferrer" data-i18n="about.environment"></a>
         </section>
         <p class="modal__muted" data-i18n="about.analytics"></p>
+        <a class="about-cta" data-about="contact" href="https://barkahmauludi.com/contact" target="_blank" rel="noopener noreferrer" data-i18n="about.workWithMe"></a>
         <a href="https://barkahmauludi.com" target="_blank" rel="noopener noreferrer" data-i18n="about.portfolio"></a>
         <a href="https://github.com/ludioo/apar-3d-trainer" target="_blank" rel="noopener noreferrer" data-i18n="about.github"></a>
       </div>
