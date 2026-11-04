@@ -17,7 +17,9 @@ export function getLang() {
 
 export function applyDom(root = document) {
   root.querySelectorAll('[data-i18n]').forEach((el) => {
-    el.textContent = t(el.dataset.i18n);
+    const next = t(el.dataset.i18n);
+    // Skip no-op writes so static splash LCP text is not invalidated before first paint commits.
+    if (el.textContent !== next) el.textContent = next;
   });
   document.title = t('app.title');
   document.documentElement.lang = lang;

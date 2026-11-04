@@ -26,7 +26,7 @@ export async function loadEnvironment(renderer, scene, requestRender) {
       environment = generator.fromEquirectangular(hdr);
     } else {
       room = new RoomEnvironment();
-      const size = matchMedia('(pointer: coarse)').matches ? 128 : 256;
+      const size = matchMedia('(pointer: coarse)').matches ? 64 : 256;
       environment = generator.fromScene(room, 0, 0.1, 100, { size });
     }
     scene.environment = environment.texture;

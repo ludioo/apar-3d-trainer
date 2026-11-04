@@ -8,6 +8,35 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#0E1013" />
+    <!-- Critical splash only — full tokens/CSS still load via main.js; keep literals in sync with tokens.css / en app.name -->
+    <style>
+      #splash.splash {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 24px;
+        margin: 0;
+        background: #16191e;
+        color: #f2f3f5;
+        font-family: system-ui, sans-serif;
+        text-align: center;
+      }
+      #splash .splash__title {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 700;
+      }
+      #splash .splash__text {
+        margin: 0;
+        font-size: 14px;
+        color: #9aa1ac;
+      }
+    </style>
     <link rel="preload" href="/models/apar.glb" as="fetch" crossorigin />
     <script>
       if (new URLSearchParams(location.search).get('hdri') === '1') {
@@ -104,8 +133,8 @@
     </section>
     <div id="app"></div>
     <div id="splash" class="splash" role="status" aria-live="polite">
-      <p class="splash__title" data-i18n="app.name"></p>
-      <p class="splash__text" data-i18n="splash.loading"></p>
+      <p class="splash__title" data-i18n="app.name">FireDrill</p>
+      <p class="splash__text" data-i18n="splash.loading">Loading 3D model…</p>
       <div class="splash__bar"><div class="splash__fill"></div></div>
       <p class="splash__percent"></p>
       <p class="splash__slow" data-i18n="splash.slow" hidden></p>

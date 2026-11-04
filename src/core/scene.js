@@ -33,14 +33,17 @@ export function requestRender() {
 }
 
 export async function prepareModel(model) {
+  // Compile without waiting on PMREM — env finishes in parallel; first paint is not gated on IBL.
   model.visible = false;
-  const hasEnvironment = await environmentReady;
   try {
     await renderer.compileAsync(model, camera, scene);
   } finally {
     model.visible = true;
   }
-  return hasEnvironment;
+}
+
+export function whenEnvironmentReady() {
+  return environmentReady;
 }
 
 export function captureModel(model, excluded = []) {

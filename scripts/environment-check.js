@@ -71,7 +71,7 @@ for (const options of [{}, { coarse: true }, { search: '?hdri=0' }, { fail: true
   assert.equal(calls.includes('render'), !options.fail);
   assert.ok(calls.includes('generator:dispose'));
   if (!options.search?.includes('hdri=1')) {
-    assert.ok(calls.includes(`room:${options.coarse ? 128 : 256}`));
+    assert.ok(calls.includes(`room:${options.coarse ? 64 : 256}`));
     assert.ok(calls.includes('room:dispose'));
     assert.ok(!calls.some(call => call.startsWith('/hdri/') || call === 'import:HDRLoader'));
   } else {

@@ -4,7 +4,8 @@ const baseURL = process.env.PLAYWRIGHT_BASE_URL || 'http://127.0.0.1:4173';
 
 /** Viewport/UA from device presets; always Chromium so Windows/CI need no WebKit binary. */
 function chromiumDevice(device) {
-  const { defaultBrowserType: _ignored, ...rest } = device;
+  const rest = { ...device };
+  delete rest.defaultBrowserType;
   return { ...rest, browserName: 'chromium' };
 }
 
