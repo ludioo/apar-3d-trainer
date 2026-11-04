@@ -34,3 +34,18 @@ Aturan rinci ada di `.cursor/rules/*.mdc` (core-rules, lazy-senior-dev selalu ak
 3. Catat keputusan teknis baru di `docs/decisions.md` (tanggal + alasan).
 4. Catat bug/solusi di `docs/known-issues.md`.
 5. Tulis ringkasan untuk Barkah dalam Bahasa Indonesia: apa yang berubah, cara mengecek (langkah klik), dan commit message yang disarankan.
+
+## Untuk Codex (dan agent selain Cursor)
+Codex tidak memuat `.cursor/rules` otomatis, jadi baca sendiri file-file itu sebagai aturan yang sama wajibnya:
+- **Selalu**, di awal setiap task: `.cursor/rules/core-rules.mdc` dan `.cursor/rules/lazy-senior-dev.mdc`.
+- Saat menyentuh `src/**`, `index.html`, `vite.config.js`, `vercel.json`, `scripts/**`: `.cursor/rules/architecture-conventions.mdc`.
+- Saat menyentuh teks UI, `src/i18n`, `src/data`, PDF: `.cursor/rules/i18n-content.mdc`.
+- Saat menyentuh render/aset/efek/loading: `.cursor/rules/performance-budget.mdc`.
+- Saat menyentuh analytics atau tracking event: `.cursor/rules/analytics.mdc`.
+- **Setiap task selesai**: `.cursor/rules/step-validation.mdc` (checklist, langkah cek, tunggu konfirmasi Barkah).
+Abaikan frontmatter (`description`/`globs`/`alwaysApply`) di file .mdc; isinya yang berlaku. Sebelum mulai, baca `docs/progress.md` untuk tahu task terakhir yang selesai, lalu lanjutkan dari situ.
+
+## Fase 5 addendum
+- Untuk task `U0`–`U6`: baca juga `docs/mobile-ux-spec.md`, `docs/mobile-testing.md`, `.cursor/rules/mobile.mdc`, dan (saat menyentuh tes/tooling) `.cursor/rules/testing.mdc`.
+- Scripts tambahan setelah U4: `npm test`, `npm run e2e`, `npm run e2e:mobile`, `npm run lint`, `npm run format`, `npm run lhci` — selain `npm run check` / `build` yang sudah ada.
+- Brand tampilan **FireDrill**; URL publik hanya lewat `src/core/siteConfig.js`. Jangan mengubah domain Vercel/DNS kecuali task eksplisit (bukan Fase 5).

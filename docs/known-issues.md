@@ -248,3 +248,17 @@ Format: tanggal — masalah — penyebab — solusi.
 - localStorage bisa throw (Safari private/kuota) → selalu try/catch di storage.js.
 - jsPDF font default tidak mendukung semua karakter; teks Indonesia aman (Latin), hindari emoji di PDF.
 - DNS subdomain bisa butuh beberapa menit–jam untuk propagasi.
+
+- 2026-11-04 - Audit upgrade vs RoomFit (Neo): live dicek lewat `https://apar-3d-trainer.vercel.app` karena `trainer.barkahmauludi.com` 307 ke `firedrill.barkahmauludi.com` dan TLS firedrill belum stabil dari jaringan audit (resolve 198.18.0.1 / handshake EOF). Temuan: brand masih "APAR 3D Trainer"; tanpa theme-color/apple-touch/manifest; viewport tanpa fit=cover; CSS tanpa safe-area insets; topbar mobile ~206px (emergency fully expanded); iPhone SE canvas ~120px pada half; **landscape 844×390 canvas height 16px**; About tanpa CTA "Work with me"; tidak ada Vitest/Playwright-config/ESLint/Prettier/LHCI/GHA; onboarding driver.js belum; LH mobile Perf **36**, A11y/BP/SEO **100**, pageerror/console error kosong. OG/Twitter + og-image.jpg sudah ada. Sheet custom 3-snap dipertahankan (tidak diganti pure-web-bottom-sheet). Fase 5 task U0–U6 dicatat di implementation-plan; spek di mobile-ux-spec.md / mobile-testing.md.
+- 2026-11-04 — U0 baseline (lokal `npm run build` + preview + Playwright, bukti `docs/_baselines/u0/`): reproduksi angka spek tanpa ubah UI. Isu `mobile-ux-spec.md` current issues #1–#11 (masih terbuka; diperbaiki U1–U6):
+  1. Brand masih "APAR 3D Trainer" / title panjang → FireDrill (U1).
+  2. Tidak ada `theme-color`, `apple-touch-icon`, `manifest` (U1) — meta.json baseline: ketiga false.
+  3. Viewport tanpa `viewport-fit=cover`; nol `env(safe-area-inset-*)` (U2) — meta `width=device-width, initial-scale=1.0`.
+  4. Landscape 844×390 canvas **16px** / 4,1% vh (U2) — `configure-landscape-844x390.png`.
+  5. iPhone SE canvas ~120px (audit live) / 127,5px (baseline lokal half); opsi Water berisiko terpotong (U2) — `configure-iphone-se-375x667.png`.
+  6. Topbar mobile **206px** (emergency fully expanded) (U2) — 390 & 375.
+  7. Onboarding tour belum ada (U3).
+  8. About tanpa CTA "Work with me" (U1).
+  9. QA toolchain belum RoomFit: no Vitest/Playwright-config/ESLint/Prettier/LHCI/GHA (U4–U5).
+  10. Perf mobile **36** (live alias Neo); target ≥80 (U6). A11y/BP/SEO 100.
+  11. OG/Twitter + `og-image.jpg` sudah ada — cukup refresh brand/`SITE_ORIGIN` (U1), jangan over-engineer.

@@ -1,0 +1,159 @@
+{
+  "date": "2026-11-04",
+  "origin": "http://127.0.0.1:4280",
+  "route": "#configure",
+  "lighthouseAuditNeo2026_11_04": {
+    "source": "https://apar-3d-trainer.vercel.app",
+    "performance": 36,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100
+  },
+  "viewports": [
+    {
+      "id": "iphone13-390x844",
+      "width": 390,
+      "height": 844,
+      "httpStatus": 200,
+      "screenshot": "docs/_baselines/u0/configure-iphone13-390x844.png",
+      "title": "Interactive 3D Fire Extinguisher Trainer & Configurator",
+      "brandText": "APAR 3D Trainer\n        Configure it. Learn PASS. Prove it.",
+      "canvas": {
+        "w": 390,
+        "h": 216,
+        "top": 206,
+        "bottom": 422
+      },
+      "topbar": {
+        "w": 390,
+        "h": 206,
+        "top": 0,
+        "bottom": 206
+      },
+      "panel": {
+        "w": 390,
+        "h": 422,
+        "top": 422,
+        "bottom": 844
+      },
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "hasThemeColor": false,
+      "hasAppleTouch": false,
+      "hasManifest": false,
+      "viewportMeta": "width=device-width, initial-scale=1.0",
+      "canvasPctViewportH": 25.6
+    },
+    {
+      "id": "iphone-se-375x667",
+      "width": 375,
+      "height": 667,
+      "httpStatus": 200,
+      "screenshot": "docs/_baselines/u0/configure-iphone-se-375x667.png",
+      "title": "Interactive 3D Fire Extinguisher Trainer & Configurator",
+      "brandText": "APAR 3D Trainer\n        Configure it. Learn PASS. Prove it.",
+      "canvas": {
+        "w": 375,
+        "h": 127.5,
+        "top": 206,
+        "bottom": 333.5
+      },
+      "topbar": {
+        "w": 375,
+        "h": 206,
+        "top": 0,
+        "bottom": 206
+      },
+      "panel": {
+        "w": 375,
+        "h": 333.5,
+        "top": 333.5,
+        "bottom": 667
+      },
+      "viewport": {
+        "w": 375,
+        "h": 667
+      },
+      "hasThemeColor": false,
+      "hasAppleTouch": false,
+      "hasManifest": false,
+      "viewportMeta": "width=device-width, initial-scale=1.0",
+      "canvasPctViewportH": 19.1
+    },
+    {
+      "id": "landscape-844x390",
+      "width": 844,
+      "height": 390,
+      "httpStatus": 200,
+      "screenshot": "docs/_baselines/u0/configure-landscape-844x390.png",
+      "title": "Interactive 3D Fire Extinguisher Trainer & Configurator",
+      "brandText": "APAR 3D Trainer\n        Configure it. Learn PASS. Prove it.",
+      "canvas": {
+        "w": 844,
+        "h": 16,
+        "top": 206,
+        "bottom": 222
+      },
+      "topbar": {
+        "w": 844,
+        "h": 206,
+        "top": 0,
+        "bottom": 206
+      },
+      "panel": {
+        "w": 844,
+        "h": 168,
+        "top": 222,
+        "bottom": 390
+      },
+      "viewport": {
+        "w": 844,
+        "h": 390
+      },
+      "hasThemeColor": false,
+      "hasAppleTouch": false,
+      "hasManifest": false,
+      "viewportMeta": "width=device-width, initial-scale=1.0",
+      "canvasPctViewportH": 4.1
+    },
+    {
+      "id": "desktop-1440x900",
+      "width": 1440,
+      "height": 900,
+      "httpStatus": 200,
+      "screenshot": "docs/_baselines/u0/configure-desktop-1440x900.png",
+      "title": "Interactive 3D Fire Extinguisher Trainer & Configurator",
+      "brandText": "APAR 3D Trainer\n        Configure it. Learn PASS. Prove it.",
+      "canvas": {
+        "w": 1440,
+        "h": 900,
+        "top": 0,
+        "bottom": 900
+      },
+      "topbar": {
+        "w": 1440,
+        "h": 118,
+        "top": 0,
+        "bottom": 118
+      },
+      "panel": {
+        "w": 360,
+        "h": 750,
+        "top": 134,
+        "bottom": 884
+      },
+      "viewport": {
+        "w": 1440,
+        "h": 900
+      },
+      "hasThemeColor": false,
+      "hasAppleTouch": false,
+      "hasManifest": false,
+      "viewportMeta": "width=device-width, initial-scale=1.0",
+      "canvasPctViewportH": 100
+    }
+  ],
+  "errors": []
+}

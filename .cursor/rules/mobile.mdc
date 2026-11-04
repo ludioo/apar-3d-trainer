@@ -1,0 +1,23 @@
+---
+description: Mobile + desktop UI — sheet, safe-area, tap 44px, landscape canvas, Playwright evidence
+globs:
+alwaysApply: true
+---
+
+# Mobile + desktop (Fase 5 / FireDrill)
+
+Baca `docs/mobile-ux-spec.md` dan `docs/mobile-testing.md` sebelum mengubah UI shell/sheet/topbar/toast/tour atau e2e.
+
+## Wajib
+- Layout `< 1024px` = bottom sheet custom existing; `≥ 1024px` = panel kanan. Respon ke perubahan viewport/orientasi.
+- Short landscape: default peek; canvas tinggi usable (≥ ~40% viewport). Jangan biarkan canvas ~16px.
+- Tap target ≥ 44px. Jangan info penting hanya via `:hover` / `pointerenter`.
+- Meta viewport + `viewport-fit=cover`; pakai `env(safe-area-inset-*)` dan `dvh`/`svh` (hindari `100vh` mentah untuk panel).
+- Toast satu instance; tidak overlap handle sheet.
+- Brand in-app **FireDrill**; URL publik lewat `src/core/siteConfig.js` saja — jangan hardcode domain di banyak file. Domain/DNS/Vercel subdomain = manual Barkah.
+- Setiap task UI: bukti Playwright (screenshot mobile+desktop) + update `docs/progress.md`, `decisions.md`, `known-issues.md`.
+
+## Dilarang
+- Menambah framework UI / Tailwind / dependency di luar `docs/tech-stack.md`.
+- Mengganti sheet custom dengan `pure-web-bottom-sheet` di Fase 5 tanpa keputusan baru.
+- Menganggap tour/perf "lulus" tanpa bukti di progress.

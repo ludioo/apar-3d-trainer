@@ -1,0 +1,25 @@
+---
+description: Vitest unit, Playwright e2e, ESLint flat, Prettier, Lighthouse CI, GitHub Actions — quality toolchain
+globs: tests/**,e2e/**,eslint.config.js,vitest.config.js,playwright.config.js,lighthouserc.js,lighthouserc.cjs,.github/workflows/**,package.json,docs/mobile-testing.md,scripts/self-check.js
+alwaysApply: false
+---
+
+# Testing & quality (Fase 5)
+
+## Tools (lihat `docs/tech-stack.md`)
+- **Vitest** — unit: pricing, storage, i18n, sheetBounds/nearestSnap. `npm test`.
+- **Playwright** — matrix: `mobile-pixel7` / `mobile-iphone13` / `mobile-iphone-se` / `mobile-landscape` + `desktop`; `video: on`. `npm run e2e`, `npm run e2e:mobile`.
+- **ESLint flat** + **Prettier** — `npm run lint` / `npm run format`.
+- **@lhci/cli** — `npm run lhci`; form factor **mobile**; Perf ≥ 80, A11y ≥ 90.
+- **GitHub Actions** — lint → test → build pada push/PR. LHCI manual.
+- Pertahankan `npm run check` (paritas i18n) yang sudah ada.
+
+## Aturan
+- Jangan menambah Jest, Cypress, atau Storybook.
+- Unit test tanpa WebGL berat; mock `localStorage` / pure functions.
+- E2E jangan flaky: locator + assert, bukan `sleep` panjang.
+- CI merah = jangan bilang task selesai sebelum diperbaiki atau blocker dicatat di `known-issues.md`.
+- Mobile+desktop evidence wajib untuk task U2/U5/U6.
+
+## Baseline audit
+- 2026-11-04 live alias: Perf 36 / A11y 100 / BP 100 / SEO 100. Landscape canvas 16px. Lihat `docs/mobile-ux-spec.md` current issues.

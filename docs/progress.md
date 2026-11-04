@@ -44,3 +44,19 @@ Status: ⬜ todo · 🟨 in progress · ✅ done · ⛔ blocked
 | L2 WebXR | ⬜ later | | |
 | L3 Alat tambahan | ⬜ later | | |
 | L4 Pisah mesh (Blender) + animasi bagian | ⬜ later | | |
+
+## Fase 5 — Upgrade to RoomFit standard (FireDrill)
+
+Status: ○ todo · ◐ in progress · ● done · ✕ blocked
+
+| Task | Status | Tanggal | Catatan |
+|---|---|---|---|
+| U0 Baseline bukti + spek | ● | 2026-11-04 | Spek/rules konsisten. Baseline Configure lokal preview: `docs/_baselines/u0/configure-{iphone13-390x844,iphone-se-375x667,landscape-844x390,desktop-1440x900}.png` + `meta.json`. Ukur: topbar mobile 206px; landscape canvas **16px** (4,1% vh); SE canvas 127,5px; tanpa theme-color/apple-touch/manifest. LH mobile (audit Neo live alias 4 Nov): **Perf 36 / A11y 100 / BP 100 / SEO 100**. Isu spek #1–#11 di known-issues. App UI tidak diubah. check 196 key + build hijau. |
+| U1 Brand FireDrill + siteConfig + PWA + About CTA | ○ | | Domain/DNS manual Barkah (trainer→firedrill sudah 307). |
+| U2 Layout polish mobile+desktop | ○ | | |
+| U3 Onboarding driver.js | ○ | | Diangkat dari backlog T4.6. |
+| U4 QA toolchain | ○ | | |
+| U5 Playwright suite | ○ | | |
+| U6 Perf + LHCI | ○ | | Target Perf ≥80; baseline 36. |
+
+Audit curated screenshots (box Neo, bukan repo): lihat percakapan / `/workspace/qa-apar/out/curated/` pada mesin agent.

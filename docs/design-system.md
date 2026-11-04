@@ -58,3 +58,11 @@ T3.2: perubahan preferensi diikuti tanpa reload; tween aktif langsung mencapai t
 
 ## Tone copy
 Singkat, jelas, instruktif, ramah. EN: kalimat aktif ("Pull the pin."). ID: baku santai ("Cabut pin pengaman."). Hindari jargon tanpa penjelasan.
+
+## Fase 5 addendum (FireDrill / RoomFit standard)
+
+- Nama produk tampilan: **FireDrill** (tagline boleh tetap menyampaikan Configure / PASS / Prove). Jangan hardcode URL; pakai `siteConfig`.
+- Mobile+desktop rules: `docs/mobile-ux-spec.md`. Short-landscape wajib menjaga kanvas usable; emergency chrome boleh dipadatkan.
+- PWA chrome: theme-color gelap studio (`#0E1013` atau dekat `--bg`), apple-touch-icon, webmanifest short_name `FireDrill`.
+- About: CTA primer "Work with me" (accent button) di atas tautan sekunder portfolio/GitHub.
+- Tour onboarding: highlight ring accent; overlay tidak menutupi chip `tel:` secara permanen.

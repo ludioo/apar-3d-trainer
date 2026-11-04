@@ -18,3 +18,18 @@ Versi: AI WAJIB memakai versi stabil terbaru saat install (`npm i three@latest` 
 | Analytics | Umami Cloud — paket **Hobby $0**: hingga 100K events/bulan, 1 website, retensi 6 bulan, custom events & event properties, tanpa cookie banner (dicek di https://umami.is/pricing, 27 Okt 2026) | Gratis, privasi-ramah, cukup rinci (permintaan Barkah). Script dimuat `defer` setelah model tampil agar tidak mengganggu target < 3 dtk. |
 | QA | Lighthouse (Chrome DevTools), `stats.js` hanya di mode dev (`?debug`) | Ukur load < 3 dtk & fps. |
 | Video demo | OBS Studio (gratis) atau screen recorder bawaan OS | Video 30 dtk. |
+
+## Fase 5 addendum — libs & QA (selaras RoomFit, tetap hemat)
+
+| Area | Pilihan | Catatan |
+|---|---|---|
+| Brand / URL | `src/core/siteConfig.js` (`SITE_ORIGIN`, `SITE_NAME`, `CONTACT_URL`) | Domain DNS manual; jangan sebar hardcode. |
+| Onboarding | `driver.js` (MIT), **dynamic import** first visit | Diangkat dari backlog T4.6; ~5KB gzip. |
+| Sheet mobile | Pointer Events + CSS existing (T4.2) | **Tidak** diganti `pure-web-bottom-sheet` di Fase 5. |
+| Unit test | Vitest | Pure functions: sheet math, pricing, storage, i18n. |
+| E2E | Playwright | Matrix mobile+desktop; video on. |
+| Lint/format | ESLint flat + Prettier | |
+| Perf CI | `@lhci/cli` mobile | Perf ≥80, A11y ≥90; GHA tanpa LHCI wajib. |
+| CI | GitHub Actions | lint → test → build. |
+
+Jangan menambah: React, Tailwind, Cypress, Jest, GSAP, Shepherd, Motion+, `lucide-static` penuh.
